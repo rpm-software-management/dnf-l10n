@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-02-28 09:18-0500\n"
-"PO-Revision-Date: 2020-02-25 18:38+0000\n"
+"PO-Revision-Date: 2020-03-04 17:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -64,7 +64,7 @@ msgstr "'%s' komutu çalıştırılamadı: %d yanıtı döndürüldü"
 #: dnf/automatic/main.py:156 dnf/conf/config.py:151
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr ""
+msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
 
 #: dnf/automatic/main.py:160 dnf/conf/config.py:158
 #, python-format
@@ -73,12 +73,12 @@ msgstr "Bilinmeyen yapılandırma seçeneği: %s = %s içinde %s"
 
 #: dnf/automatic/main.py:236
 msgid "Started dnf-automatic."
-msgstr ""
+msgstr "dnf-automatic başlatıldı."
 
 #: dnf/automatic/main.py:240
 #, python-format
 msgid "Sleep for %s seconds"
-msgstr ""
+msgstr "%s saniye uykuda bekle"
 
 #: dnf/automatic/main.py:271 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -88,7 +88,7 @@ msgstr "Hata: %s"
 
 #: dnf/base.py:146
 msgid "loading repo '{}' failure: {}"
-msgstr "depo yükleniyor '{}' başarısız: {}"
+msgstr "'{}' depo yükleme hatası: {}"
 
 #: dnf/base.py:148
 msgid "Loading repository '{}' has failed"
@@ -115,7 +115,7 @@ msgstr "Üstveri önbelleği yakın zamanda yenilendi."
 
 #: dnf/base.py:341 dnf/cli/commands/__init__.py:100
 msgid "There are no enabled repositories in \"{}\"."
-msgstr "Etkin depo yok \"{}\"."
+msgstr "\"{}\" içinde etkin depo yok."
 
 #: dnf/base.py:348
 #, python-format
@@ -163,7 +163,7 @@ msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
-"İndirilen paketlerler bir sonraki başarılı işleme dek önbellekte kaydedildi."
+"İndirilen paketler bir sonraki başarılı işleme kadar önbelleğe kaydedildi."
 
 #: dnf/base.py:444
 #, python-format
@@ -194,19 +194,19 @@ msgstr "İşlem denetimi başarılı."
 
 #: dnf/base.py:838
 msgid "Running transaction test"
-msgstr "İşlem sınama çalıştırılıyor"
+msgstr "İşlem testi çalıştırılıyor"
 
 #: dnf/base.py:848 dnf/base.py:995
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:849
 msgid "Transaction test error:"
-msgstr ""
+msgstr "İşlem testi hatası:"
 
 #: dnf/base.py:860
 msgid "Transaction test succeeded."
-msgstr "İşlem sınaması başarılı."
+msgstr "İşlem testi başarılı."
 
 #: dnf/base.py:881
 msgid "Running transaction"
@@ -220,7 +220,8 @@ msgstr "Disk Gereksinimleri:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
+msgstr[1] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
 
 #: dnf/base.py:919
 msgid "Error Summary"
@@ -229,15 +230,15 @@ msgstr "Hata Özeti"
 #: dnf/base.py:945
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB {prog} dışında değiştirildi."
 
 #: dnf/base.py:996 dnf/base.py:1004
 msgid "Could not run transaction."
-msgstr "İşlem çalıştırılamıyor."
+msgstr "İşlem çalıştırılamadı."
 
 #: dnf/base.py:999
 msgid "Transaction couldn't start:"
-msgstr "İşlem çalışamıyor:"
+msgstr "İşlem başlatılamadı:"
 
 #: dnf/base.py:1013
 #, python-format
@@ -265,7 +266,7 @@ msgstr ""
 
 #: dnf/base.py:1170
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "İşlem görevi zaten mevcut olduğundan yerel paketler eklenemiyor"
 
 #: dnf/base.py:1184
 msgid "Could not open: {}"
@@ -366,7 +367,7 @@ msgstr "%s paketi kurulu değil, güncellenemez."
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr ""
+msgstr "%s'nin aynı veya daha yüksek sürümü zaten yüklü, güncellenemiyor."
 
 #: dnf/base.py:2017 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -494,7 +495,7 @@ msgstr "  * Belki bunu demek istedin: {}"
 
 #: dnf/base.py:2483
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" yerel deposundan) yanlış"
 
 #: dnf/base.py:2486
 msgid "Some packages from local repository have incorrect checksum"
@@ -502,13 +503,15 @@ msgstr "Yerel paket deposundaki bazı paketlerin sağlama değeri hatalı"
 
 #: dnf/base.py:2489
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" deposundan) yanlış"
 
 #: dnf/base.py:2492
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Bazı paketler geçersiz önbelleğe sahip, ancak \"--cacheonly\" seçeneği "
+"nedeniyle indirilemiyor"
 
 #: dnf/base.py:2510 dnf/base.py:2530
 msgid "No match for argument"
@@ -516,15 +519,15 @@ msgstr "Argüman için eşleşme yok"
 
 #: dnf/base.py:2518 dnf/base.py:2538
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Argüman için tüm eşleşmeler hariç tutma filtresi ile filtrelendi"
 
 #: dnf/base.py:2520
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Argüman için tüm eşleşmeler modüler filtreleme ile filtrelendi"
 
 #: dnf/base.py:2536
 msgid "All matches were installed from a different repository for argument"
-msgstr ""
+msgstr "Argüman için tüm eşleşmeler farklı bir depodan yüklendi"
 
 #: dnf/base.py:2552
 #, python-format
@@ -534,7 +537,7 @@ msgstr "%s paketi zaten kurulu."
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Beklenmeyen ortam değişkeni değeri: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:457
 #, python-format
@@ -544,7 +547,7 @@ msgstr "\"%s\" dosyası ayrıştırılamadı: %s"
 #: dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "\"%s\" dosyası okunamıyor: %s"
 
 #: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:898
 #: dnf/cli/cli.py:902 dnf/cli/commands/alias.py:108
@@ -675,15 +678,15 @@ msgstr "Eşleşme Bulunamadı"
 
 #: dnf/cli/cli.py:608
 msgid "No transaction ID given"
-msgstr "İşlem ID'si verilmedi"
+msgstr "İşlem kimliği belirtilmedi"
 
 #: dnf/cli/cli.py:613
 msgid "Not found given transaction ID"
-msgstr "Verilen işlem ID'si bulunamadı"
+msgstr "Verilen işlem kimliği bulunamadı"
 
 #: dnf/cli/cli.py:622
 msgid "Found more than one transaction ID!"
-msgstr "Birden çok işlem ID'si bulundu!"
+msgstr "Birden fazla işlem kimliği bulundu!"
 
 #: dnf/cli/cli.py:639
 #, python-format
@@ -1191,7 +1194,7 @@ msgstr ""
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr "yüklenen paketleri uygun olan en son sürüme eşzamanla"
+msgstr "kurulu paketleri mevcut en son sürümlerle senkronize et"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1567,7 +1570,7 @@ msgstr ""
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr ""
+msgstr "Depo-yansıları       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
@@ -1714,6 +1717,8 @@ msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
 msgstr ""
+"belirli bir isim.mimari için N adet en son paketi göster (veya N tanesi "
+"hariç en son, eğer N negatifse)"
 
 #: dnf/cli/commands/repoquery.py:181
 msgid "list also packages of inactive module streams"
@@ -3106,7 +3111,7 @@ msgstr "Geçmiş bilgisi başarısız"
 
 #: dnf/cli/output.py:1697
 msgid "No transaction ID, or package, given"
-msgstr "Hiç işlem ID'si veya paket verilmemiş"
+msgstr "İşlem kimliği veya paket belirtilmedi"
 
 #: dnf/cli/output.py:1755
 msgid "Erased"
@@ -3126,7 +3131,7 @@ msgstr "Eski"
 
 #: dnf/cli/output.py:1806 dnf/cli/output.py:1808
 msgid "Transaction ID :"
-msgstr "İşlem ID:"
+msgstr "İşlem kimliği:"
 
 #: dnf/cli/output.py:1811
 msgid "Begin time     :"
@@ -3239,7 +3244,7 @@ msgstr "Yeniden Yükle"
 
 #: dnf/cli/output.py:1995
 msgid "Bad transaction IDs, or package(s), given"
-msgstr "Hatalı işlem kimlikleri veya verilen paket(ler)"
+msgstr "Hatalı işlem kimlikleri veya paket(ler) belirtildi"
 
 #: dnf/cli/output.py:2094
 #, python-format
@@ -3509,7 +3514,7 @@ msgstr ""
 
 #: dnf/dnssec.py:284
 msgid "Testing already imported keys for their validity."
-msgstr ""
+msgstr "Mevcut içe aktarılmış anahtarların geçerlilikleri test ediliyor."
 
 #: dnf/drpm.py:62 dnf/repo.py:267
 #, python-format
@@ -3724,7 +3729,7 @@ msgstr "Zaten indirildi"
 #: dnf/repo.py:346
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
-msgstr ""
+msgstr "en hızlı yansı belirleniyor (%s ana bilgisayar).. "
 
 #: dnf/repodict.py:58
 #, python-format
