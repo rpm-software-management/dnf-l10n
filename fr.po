@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-28 09:18-0500\n"
+"POT-Creation-Date: 2020-03-05 09:18-0500\n"
 "PO-Revision-Date: 2020-02-13 04:33+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -840,7 +840,7 @@ msgstr ""
 "Impossible de détecter le numéro de version (utilisez « --releasever » pour "
 "spécifier une version)"
 
-#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:473
 msgid "argument {}: not allowed with argument {}"
 msgstr "paramètre {} : non autorisé avec le paramètre {}"
 
@@ -1932,35 +1932,35 @@ msgstr "Affiche les fonctionnalités dont le paquet dépend."
 #: dnf/cli/commands/repoquery.py:239
 #, python-format
 msgid ""
-"Display capabilities that the package depends on for running a %%pre script."
+"If the package is not installed display capabilities that it depends on for "
+"running %%pre and %%post scriptlets. If the package is installed display "
+"capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
-"Affiche les fonctionnalités dont le paquet dépend pour le lancement d’un "
-"script %%pre."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
 msgstr "Affiche les fonctionnalités suggérées par le paquet."
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package can supplement."
 msgstr "Affiche les fonctionnalités que le paquet peut compléter."
 
-#: dnf/cli/commands/repoquery.py:247
+#: dnf/cli/commands/repoquery.py:249
 msgid "Display only available packages."
 msgstr "N’affiche que les paquets disponibles."
 
-#: dnf/cli/commands/repoquery.py:250
+#: dnf/cli/commands/repoquery.py:252
 msgid "Display only installed packages."
 msgstr "N’affiche que les paquets installés."
 
-#: dnf/cli/commands/repoquery.py:251
+#: dnf/cli/commands/repoquery.py:253
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
 "N’affiche que les paquets qui ne sont présents dans aucun des dépôts "
 "disponibles."
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:254
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -1968,7 +1968,7 @@ msgstr ""
 "N’affiche que les paquets qui fournissent une montée en version pour un "
 "paquet déjà installé."
 
-#: dnf/cli/commands/repoquery.py:253
+#: dnf/cli/commands/repoquery.py:255
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
@@ -1976,19 +1976,19 @@ msgstr ""
 "N’affiche que les paquets qui peuvent être retirés par la commande «{prog} "
 "autoremove »."
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:257
 msgid "Display only packages that were installed by user."
 msgstr "N’affiche que les paquets installés par utilisateur."
 
-#: dnf/cli/commands/repoquery.py:267
+#: dnf/cli/commands/repoquery.py:269
 msgid "Display only recently edited packages"
 msgstr "N’affiche que les paquets modifiés récemment"
 
-#: dnf/cli/commands/repoquery.py:270
+#: dnf/cli/commands/repoquery.py:272
 msgid "the key to search for"
 msgstr "la clé à chercher"
 
-#: dnf/cli/commands/repoquery.py:292
+#: dnf/cli/commands/repoquery.py:294
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -1998,7 +1998,7 @@ msgstr ""
 "« --depends », « --enhances », « --provides », « --recommends », « --"
 "requires », « --requires-pre », « --suggests » ou « --supplements"
 
-#: dnf/cli/commands/repoquery.py:302
+#: dnf/cli/commands/repoquery.py:304
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2008,21 +2008,21 @@ msgstr ""
 "» (optionnellement avec « --alldeps », mais pas avec « --exactdeps »), ou "
 "avec « --requires <REQ> --resolve »"
 
-#: dnf/cli/commands/repoquery.py:309
+#: dnf/cli/commands/repoquery.py:311
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argument {} requiert l’option --whatrequires ou --whatdepends"
 
-#: dnf/cli/commands/repoquery.py:341
+#: dnf/cli/commands/repoquery.py:343
 msgid "Package {} contains no files"
 msgstr "Le paquet {} ne contient aucun fichier"
 
-#: dnf/cli/commands/repoquery.py:434
+#: dnf/cli/commands/repoquery.py:436
 #, python-brace-format
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr ""
 "Balises de requêtes disponibles : utiliser --queryformat \"..%{tag}..\""
 
-#: dnf/cli/commands/repoquery.py:560
+#: dnf/cli/commands/repoquery.py:562
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -4063,3 +4063,10 @@ msgstr "TransactionSWDBItem n’a pas été trouvé pour la clef : {}"
 #: dnf/util.py:457
 msgid "Errors occurred during transaction."
 msgstr "Des erreurs sont survenues lors de la transaction."
+
+#~ msgid ""
+#~ "Display capabilities that the package depends on for running a %%pre "
+#~ "script."
+#~ msgstr ""
+#~ "Affiche les fonctionnalités dont le paquet dépend pour le lancement d’un "
+#~ "script %%pre."

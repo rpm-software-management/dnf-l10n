@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-28 09:18-0500\n"
+"POT-Creation-Date: 2020-03-05 09:18-0500\n"
 "PO-Revision-Date: 2019-08-02 08:35+0000\n"
 "Last-Translator: Ting-Wei Lan <lantw44@gmail.com>\n"
 "Language-Team: Chinese (Taiwan)\n"
@@ -753,7 +753,7 @@ msgid ""
 "version)"
 msgstr "無法偵測發行版本（使用「--releasever」指定發行版本）"
 
-#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:473
 msgid "argument {}: not allowed with argument {}"
 msgstr "引數 {}：不允許與 {} 引數使用"
 
@@ -1790,55 +1790,57 @@ msgstr "顯示這個軟體包依賴的功能。"
 #: dnf/cli/commands/repoquery.py:239
 #, python-format
 msgid ""
-"Display capabilities that the package depends on for running a %%pre script."
-msgstr "顯示軟體包執行在 %%pre 指令上的功能。"
+"If the package is not installed display capabilities that it depends on for "
+"running %%pre and %%post scriptlets. If the package is installed display "
+"capabilities that is depends for %%pre, %%post, %%preun and %%postun."
+msgstr ""
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
 msgstr "顯示建議軟體包的功能。"
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package can supplement."
 msgstr "顯示可以補充軟體包的功能。"
 
-#: dnf/cli/commands/repoquery.py:247
+#: dnf/cli/commands/repoquery.py:249
 msgid "Display only available packages."
 msgstr "只顯示可以使用的軟體包。"
 
-#: dnf/cli/commands/repoquery.py:250
+#: dnf/cli/commands/repoquery.py:252
 msgid "Display only installed packages."
 msgstr "只顯示已經安裝的軟體包。"
 
-#: dnf/cli/commands/repoquery.py:251
+#: dnf/cli/commands/repoquery.py:253
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr "只顯示沒有呈現在任何可用軟體庫中的軟體包。"
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:254
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
 msgstr "只顯示為部份已經安裝軟體包提供升級的軟體包。"
 
-#: dnf/cli/commands/repoquery.py:253
+#: dnf/cli/commands/repoquery.py:255
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:257
 msgid "Display only packages that were installed by user."
 msgstr "只顯示使用者安裝的軟體包。"
 
-#: dnf/cli/commands/repoquery.py:267
+#: dnf/cli/commands/repoquery.py:269
 msgid "Display only recently edited packages"
 msgstr "只顯示最近修改過的軟體包"
 
-#: dnf/cli/commands/repoquery.py:270
+#: dnf/cli/commands/repoquery.py:272
 msgid "the key to search for"
 msgstr "要搜尋的關鍵詞："
 
-#: dnf/cli/commands/repoquery.py:292
+#: dnf/cli/commands/repoquery.py:294
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -1848,27 +1850,27 @@ msgstr ""
 "provides', '--recommends', '--requires', '--requires-pre', '--suggests' 或 "
 "'--supplements'  選項一起使用"
 
-#: dnf/cli/commands/repoquery.py:302
+#: dnf/cli/commands/repoquery.py:304
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:309
+#: dnf/cli/commands/repoquery.py:311
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "{} 引數需要 --whatrequires 或 --whatdepends 選項"
 
-#: dnf/cli/commands/repoquery.py:341
+#: dnf/cli/commands/repoquery.py:343
 msgid "Package {} contains no files"
 msgstr "軟體包 {} 不包含任何檔案"
 
-#: dnf/cli/commands/repoquery.py:434
+#: dnf/cli/commands/repoquery.py:436
 #, python-brace-format
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr "可使用的查詢標籤：使用 --queryformat \".. %{tag} ..\""
 
-#: dnf/cli/commands/repoquery.py:560
+#: dnf/cli/commands/repoquery.py:562
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3812,3 +3814,8 @@ msgstr ""
 #: dnf/util.py:457
 msgid "Errors occurred during transaction."
 msgstr "在處理事項時發生錯誤。"
+
+#~ msgid ""
+#~ "Display capabilities that the package depends on for running a %%pre "
+#~ "script."
+#~ msgstr "顯示軟體包執行在 %%pre 指令上的功能。"

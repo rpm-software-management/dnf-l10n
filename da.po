@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-28 09:18-0500\n"
+"POT-Creation-Date: 2020-03-05 09:18-0500\n"
 "PO-Revision-Date: 2020-02-28 16:38+0000\n"
 "Last-Translator: Kris Thomsen <lakristho@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -801,7 +801,7 @@ msgstr ""
 "Kan ikke registrerer udgivelsesversion (brug '--releasever' til at angive "
 "udgivelsesversion)"
 
-#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:473
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: ikke tilladt med argument {}"
 
@@ -1881,34 +1881,34 @@ msgstr "Vis kompatibiliteter som pakken afhænger af."
 #: dnf/cli/commands/repoquery.py:239
 #, python-format
 msgid ""
-"Display capabilities that the package depends on for running a %%pre script."
+"If the package is not installed display capabilities that it depends on for "
+"running %%pre and %%post scriptlets. If the package is installed display "
+"capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
-"Vis kompatibiliteter som pakken kan afhænge af, til kørsel af et %%pre-"
-"script."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
 msgstr "Vis kompatibiliteter som pakken foreslår."
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package can supplement."
 msgstr "Vis kompatibiliteter som pakken kan supplementere."
 
-#: dnf/cli/commands/repoquery.py:247
+#: dnf/cli/commands/repoquery.py:249
 msgid "Display only available packages."
 msgstr "Vis kun tilgængelige pakker."
 
-#: dnf/cli/commands/repoquery.py:250
+#: dnf/cli/commands/repoquery.py:252
 msgid "Display only installed packages."
 msgstr "Vis kun installerede pakker."
 
-#: dnf/cli/commands/repoquery.py:251
+#: dnf/cli/commands/repoquery.py:253
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
 "Vis kun pakker som ikke findes i nogen af de tilgængelige softwarearkiver."
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:254
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -1916,25 +1916,25 @@ msgstr ""
 "Vis kun pakker som leverer en opgradering til pakker som allerede er "
 "installeret."
 
-#: dnf/cli/commands/repoquery.py:253
+#: dnf/cli/commands/repoquery.py:255
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr "Vis kun pakker som kan fjernes af \"{prog} autoremove\"-kommandoen."
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:257
 msgid "Display only packages that were installed by user."
 msgstr "Vis kun pakker som blev installeret af brugeren."
 
-#: dnf/cli/commands/repoquery.py:267
+#: dnf/cli/commands/repoquery.py:269
 msgid "Display only recently edited packages"
 msgstr "Vis kun pakker som er redigeret for nyligt"
 
-#: dnf/cli/commands/repoquery.py:270
+#: dnf/cli/commands/repoquery.py:272
 msgid "the key to search for"
 msgstr "nøglen som der skal søges efter"
 
-#: dnf/cli/commands/repoquery.py:292
+#: dnf/cli/commands/repoquery.py:294
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -1944,7 +1944,7 @@ msgstr ""
 "'--depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' eller '--supplements'"
 
-#: dnf/cli/commands/repoquery.py:302
+#: dnf/cli/commands/repoquery.py:304
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -1954,21 +1954,21 @@ msgstr ""
 "<REQ>' (valgfrit med '--alldeps', men ikke med '--exactdeps'), eller med '--"
 "requires <REQ> --resolve'"
 
-#: dnf/cli/commands/repoquery.py:309
+#: dnf/cli/commands/repoquery.py:311
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argumentet {} kræver --whatrequires- eller --whatdepends-tilvalg"
 
-#: dnf/cli/commands/repoquery.py:341
+#: dnf/cli/commands/repoquery.py:343
 msgid "Package {} contains no files"
 msgstr "Pakke {} indeholder ingen filer"
 
-#: dnf/cli/commands/repoquery.py:434
+#: dnf/cli/commands/repoquery.py:436
 #, python-brace-format
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr ""
 "Tilgængelige forespørgselsmærkater: brug --queryformat \".. %{tag} ..\""
 
-#: dnf/cli/commands/repoquery.py:560
+#: dnf/cli/commands/repoquery.py:562
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3968,3 +3968,10 @@ msgstr "TransactionSWDBItem ikke fundet for nøglen: {}"
 #: dnf/util.py:457
 msgid "Errors occurred during transaction."
 msgstr "Fejl som opstod under transaktion."
+
+#~ msgid ""
+#~ "Display capabilities that the package depends on for running a %%pre "
+#~ "script."
+#~ msgstr ""
+#~ "Vis kompatibiliteter som pakken kan afhænge af, til kørsel af et %%pre-"
+#~ "script."
