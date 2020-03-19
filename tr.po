@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-05 09:18-0500\n"
-"PO-Revision-Date: 2020-03-16 19:38+0000\n"
+"PO-Revision-Date: 2020-03-21 02:08+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/tr/>\n"
@@ -330,7 +330,7 @@ msgstr "Yükseltmek için işaretlenen grup yok."
 #: dnf/base.py:1916
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr "%s paketi kurulu değil, eski sürüme düşürülemiyor."
+msgstr "%s paketi kurulu değil, sürümü düşürülemiyor."
 
 #: dnf/base.py:1918 dnf/base.py:1937 dnf/base.py:1950 dnf/base.py:1971
 #: dnf/base.py:2020 dnf/base.py:2028 dnf/base.py:2163 dnf/cli/cli.py:410
@@ -341,17 +341,17 @@ msgstr "%s paketi kurulu değil, eski sürüme düşürülemiyor."
 #: dnf/cli/commands/upgrade.py:110 dnf/cli/commands/upgrade.py:121
 #, python-format
 msgid "No match for argument: %s"
-msgstr "Şu argüman için eşleşme yok: %s"
+msgstr "Argüman için eşleşme yok: %s"
 
 #: dnf/base.py:1925
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr "%s paketinin zaten düşük sürümü yüklenmiş, eski sürüme düşürülemiyor."
+msgstr "%s paketinin düşük sürümü zaten yüklenmiş, sürümü düşürülemiyor."
 
 #: dnf/base.py:1948
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr "%s paketi yüklü değil, yeniden yüklenemez."
+msgstr "%s paketi kurulu değil, yeniden yüklenemiyor."
 
 #: dnf/base.py:1963
 #, python-format
@@ -361,7 +361,7 @@ msgstr "%s dosyası bir kaynak pakettir ve yükseltilemez, dikkate alınmıyor."
 #: dnf/base.py:1969
 #, python-format
 msgid "Package %s not installed, cannot update it."
-msgstr "%s paketi kurulu değil, güncellenemez."
+msgstr "%s paketi kurulu değil, güncellenemiyor."
 
 #: dnf/base.py:1978
 #, python-format
@@ -372,7 +372,7 @@ msgstr "%s'nin aynı veya daha yüksek sürümü zaten yüklü, güncellenemiyor
 #: dnf/base.py:2017 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
-msgstr "%s paketi mevcut, ama yüklü değil."
+msgstr "%s paketi mevcut, ama kurulu değil."
 
 #: dnf/base.py:2023
 #, python-format
@@ -398,16 +398,16 @@ msgstr "Kaldırılması için işaretlenen paket yok."
 #: dnf/base.py:2170 dnf/cli/cli.py:421
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr "%s argümanı için paketler mevcut, ancak yüklenmedi."
+msgstr "%s argümanı için paketler mevcut, ama kurulu değil."
 
 #: dnf/base.py:2175
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "%s paketinin zaten en düşük sürümü yüklü, eski sürüme düşürülemiyor."
+msgstr "%s paketinin zaten en düşük sürümü yüklenmiş, sürümü düşürülemiyor."
 
 #: dnf/base.py:2233
 msgid "Action not handled: {}"
-msgstr "İşlem işlenmedi: {}"
+msgstr "İşlem gerçekleştirilmedi: {}"
 
 #: dnf/base.py:2247 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
 #: dnf/cli/commands/__init__.py:913 dnf/cli/commands/group.py:398
@@ -639,7 +639,7 @@ msgstr "GPG kontrolü BAŞARISIZ"
 
 #: dnf/cli/cli.py:330
 msgid "Changelogs for {}"
-msgstr "{} için değişiklikler listesi"
+msgstr "{} için değişiklik günlükleri"
 
 #: dnf/cli/cli.py:363 dnf/cli/cli.py:504 dnf/cli/cli.py:510
 msgid "Obsoleting Packages"
@@ -651,11 +651,11 @@ msgstr "Dağıtım senkronizasyonu için işaretlenmiş paket yok."
 
 #: dnf/cli/cli.py:427
 msgid "No packages marked for downgrade."
-msgstr "Eski sürüme düşürmek için işaretlenmiş paket yok."
+msgstr "Sürümü düşürülmek için işaretlenmiş paket yok."
 
 #: dnf/cli/cli.py:478
 msgid "Installed Packages"
-msgstr "Yüklü Paketler"
+msgstr "Kurulu Paketler"
 
 #: dnf/cli/cli.py:486
 msgid "Available Packages"
@@ -933,7 +933,7 @@ msgstr "mevcut paket yükseltmelerini denetle"
 
 #: dnf/cli/commands/__init__.py:273
 msgid "show changelogs before update"
-msgstr "güncellemeden önce değişiklikler listesini göster"
+msgstr "güncellemeden önce değişiklik günlüklerini göster"
 
 #: dnf/cli/commands/__init__.py:370 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:479
@@ -946,7 +946,7 @@ msgstr "Yükleme için işaretlenmiş paket yok."
 
 #: dnf/cli/commands/__init__.py:421
 msgid "No package installed."
-msgstr "Hiç paket kurulmadı."
+msgstr "Kurulu paket yok."
 
 #: dnf/cli/commands/__init__.py:441 dnf/cli/commands/__init__.py:498
 #: dnf/cli/commands/reinstall.py:91
@@ -963,7 +963,7 @@ msgstr "Kurulu %s%s paketi mevcut değil."
 #: dnf/cli/commands/__init__.py:476 dnf/cli/commands/__init__.py:585
 #: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:675
 msgid "No package installed from the repository."
-msgstr "Depodan hiç paket kurulmadı."
+msgstr "Depodan hiçbir paket yüklenmedi."
 
 #: dnf/cli/commands/__init__.py:539 dnf/cli/commands/reinstall.py:101
 msgid "No packages marked for reinstall."
@@ -1243,11 +1243,11 @@ msgstr "Senkronize edilecek paket"
 
 #: dnf/cli/commands/downgrade.py:34
 msgid "Downgrade a package"
-msgstr "bir paketi eski sürüme düşür"
+msgstr "Bir paketin sürümünü düşür"
 
 #: dnf/cli/commands/downgrade.py:38
 msgid "Package to downgrade"
-msgstr "Eski sürüme düşürülecek paket"
+msgstr "Sürümü düşürülecek paket"
 
 #: dnf/cli/commands/group.py:44
 msgid "display, or use, the groups information"
@@ -1337,7 +1337,7 @@ msgstr "Yüklenecek paket"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "Bir eşleşme bulunamıyor"
+msgstr "Bir eşleşme bulunamadı"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
@@ -1360,7 +1360,7 @@ msgstr "Tüm meta veri dosyaları için önbellek dosyaları oluşturuluyor."
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
 msgstr ""
-"yüklenen paketleri kullanıcı tarafından yüklendi olarak işaretle ya da "
+"kurulu paketleri kullanıcı tarafından yüklendi olarak işaretle ya da "
 "işaretini kaldır."
 
 #: dnf/cli/commands/mark.py:44
@@ -1396,7 +1396,7 @@ msgstr "Hata:"
 #: dnf/cli/commands/mark.py:87
 #, python-format
 msgid "Package %s is not installed."
-msgstr "%s paketi yüklü değil."
+msgstr "%s paketi kurulu değil."
 
 #: dnf/cli/commands/module.py:51
 msgid ""
@@ -1681,7 +1681,7 @@ msgstr "Paketlerin tüm sürümlerini sorgula (varsayılan)"
 
 #: dnf/cli/commands/repoquery.py:128
 msgid "show only results from this ARCH"
-msgstr "yalnızca bu YAPIDAN sonuçları göster"
+msgstr "yalnızca bu MİMARİ için sonuçları göster"
 
 #: dnf/cli/commands/repoquery.py:130
 msgid "show only results that owns FILE"
@@ -1792,7 +1792,7 @@ msgstr "paket kaynak RPM adını göster"
 
 #: dnf/cli/commands/repoquery.py:195
 msgid "show changelogs of the package"
-msgstr "paketin değişiklikler listesini göster"
+msgstr "paketin değişiklik günlüklerini göster"
 
 #: dnf/cli/commands/repoquery.py:198
 msgid "format for displaying found packages"
@@ -2198,11 +2198,11 @@ msgstr "güvenlik"
 
 #: dnf/cli/commands/updateinfo.py:48
 msgid "newpackage"
-msgstr "yenipaket"
+msgstr "yeni paket"
 
 #: dnf/cli/commands/updateinfo.py:50
 msgid "Critical/Sec."
-msgstr "Ciddi/Güv."
+msgstr "Kritik/Güv."
 
 #: dnf/cli/commands/updateinfo.py:51
 msgid "Important/Sec."
@@ -2210,7 +2210,7 @@ msgstr "Önemli/Güv."
 
 #: dnf/cli/commands/updateinfo.py:52
 msgid "Moderate/Sec."
-msgstr "Ortayollu/Güv."
+msgstr "Orta Dereceli/Güv."
 
 #: dnf/cli/commands/updateinfo.py:53
 msgid "Low/Sec."
@@ -2286,11 +2286,11 @@ msgstr "Yeni Paket bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:282
 msgid "Security notice(s)"
-msgstr "Güvenlik notları"
+msgstr "Güvenlik bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:283
 msgid "Critical Security notice(s)"
-msgstr "Ciddi Güvenlik bildirileri"
+msgstr "Kritik Güvenlik bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:285
 msgid "Important Security notice(s)"
@@ -2298,7 +2298,7 @@ msgstr "Önemli Güvenlik bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:287
 msgid "Moderate Security notice(s)"
-msgstr "Ortayollu Güvenlik bildirileri"
+msgstr "Orta Dereceli Güvenlik bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:289
 msgid "Low Security notice(s)"
@@ -2310,11 +2310,11 @@ msgstr "Bilinmeyen Güvenlik bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:293
 msgid "Bugfix notice(s)"
-msgstr "Hata düzeltmesi bildirisi"
+msgstr "Hata düzeltmesi bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:294
 msgid "Enhancement notice(s)"
-msgstr "İyileştirme bildiri(ler)i"
+msgstr "İyileştirme bildirileri"
 
 #: dnf/cli/commands/updateinfo.py:295
 msgid "other notice(s)"
@@ -2601,7 +2601,7 @@ msgstr "paketleri isim veya glob'a göre hariç tut"
 
 #: dnf/cli/option_parser.py:288
 msgid "disable excludepkgs"
-msgstr "paketleri hariç tutmayı devre dışı bırak"
+msgstr "excludepkgs devre dışı bırak"
 
 #: dnf/cli/option_parser.py:293
 msgid ""
@@ -2657,7 +2657,7 @@ msgstr "Güncellemelere iyileştirmeyle ilgili paketleri dahil et"
 
 #: dnf/cli/option_parser.py:328
 msgid "Include newpackage relevant packages, in updates"
-msgstr "Güncellemelere yenipaket ile ilgili paketleri dahil et"
+msgstr "Güncellemelere yeni paketler ile ilgili paketleri dahil et"
 
 #: dnf/cli/option_parser.py:331
 msgid "Include security relevant packages, in updates"
@@ -2736,7 +2736,7 @@ msgstr "Dağıtım"
 #: dnf/cli/output.py:517 dnf/cli/output.py:1318
 msgctxt "short"
 msgid "Arch"
-msgstr "Yapı"
+msgstr "Mimari"
 
 #. Translators: This is the full word 'Architecture', used when
 #. we have enough space.
@@ -3157,7 +3157,7 @@ msgstr "Kaldır"
 
 #: dnf/cli/output.py:1382 dnf/cli/output.py:1921
 msgid "Downgrade"
-msgstr "Eski sürüme düşür"
+msgstr "Sürümü düşür"
 
 #: dnf/cli/output.py:1383
 msgid "Skip"
@@ -3181,7 +3181,7 @@ msgstr "Yükseltildi"
 
 #: dnf/cli/output.py:1490 dnf/cli/output.py:1756 dnf/cli/output.py:1922
 msgid "Downgraded"
-msgstr "Eski sürüme düşürüldü"
+msgstr "Sürümü düşürüldü"
 
 #: dnf/cli/output.py:1495
 msgid "Reinstalled"
@@ -3405,7 +3405,7 @@ msgstr "---> %s.%s %s paketi yeniden yüklenecek"
 #: dnf/cli/output.py:2102
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
-msgstr "---> %s.%s %s paketi eski bir sürüme düşürülecek"
+msgstr "---> %s.%s %s paketinin sürümü düşürülecek"
 
 #: dnf/cli/output.py:2104
 #, python-format
