@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Tommy He <lovenemesis@gmail.com>, 2011
 # Ma Kai <crtmike@gmail.com>, 2011
@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-19 09:18-0400\n"
-"PO-Revision-Date: 2020-03-21 02:08+0000\n"
+"PO-Revision-Date: 2020-03-22 12:29+0000\n"
 "Last-Translator: Hongqiao Chen <harrychen0314@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
@@ -277,7 +277,7 @@ msgstr "增量 RPM 未能将 %.1f MB 的更新减少至 %.1f MB（已浪费 %d.1
 
 #: dnf/base.py:1170
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "由于事物已经存在，无法添加本地软件包"
 
 #: dnf/base.py:1184
 msgid "Could not open: {}"
@@ -526,7 +526,7 @@ msgstr "未找到匹配的参数"
 
 #: dnf/base.py:2518 dnf/base.py:2538
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "由于您的搜索参数，所有相关结果都已被滤掉"
 
 #: dnf/base.py:2520
 msgid "All matches were filtered out by modular filtering for argument"
@@ -554,7 +554,7 @@ msgstr "解析文件 \"%s\" 失败：%s"
 #: dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "无法阅读文件 “%s”：%s"
 
 #: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:898
 #: dnf/cli/cli.py:902 dnf/cli/commands/alias.py:108
@@ -564,7 +564,7 @@ msgstr "配置错误：%s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "别名中包含无限递归"
 
 #: dnf/cli/aliases.py:209
 #, python-format
@@ -600,14 +600,14 @@ msgstr ""
 #: dnf/cli/cli.py:209
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog}将仅会从事务下载软件包。"
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
-msgstr ""
+msgstr "{prog}将仅会下载软件包，导入gpg密钥并检查事务。"
 
 #: dnf/cli/cli.py:216
 msgid "Operation aborted."
@@ -639,7 +639,7 @@ msgstr "GPG 检查失败"
 
 #: dnf/cli/cli.py:330
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "{}的变更记录"
 
 #: dnf/cli/cli.py:363 dnf/cli/cli.py:504 dnf/cli/cli.py:510
 msgid "Obsoleting Packages"
@@ -725,7 +725,7 @@ msgstr "没有仓库匹配： %s"
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
-msgstr ""
+msgstr "运行此命令需要管理员特权（多数系统下是root用户）。"
 
 #: dnf/cli/cli.py:843
 #, python-format
@@ -737,7 +737,7 @@ msgstr "未找到命令: %s。请使用 %s --help"
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
-msgstr ""
+msgstr "它可能是一个{PROG}插件命令，尝试：\"{prog} install 'dnf-command(%s)'\""
 
 #: dnf/cli/cli.py:850
 #, python-brace-format
@@ -759,16 +759,18 @@ msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled and --disable, --set-disabled 只能被与config-"
+"manager命令一起使用。"
 
 #: dnf/cli/cli.py:996
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
-msgstr ""
+msgstr "警告：由于活动的RPM安全策略，全局GPG签名检查已被强制执行 (请参照dnf.conf(5)中的'gpgcheck'以了解如何阻止这条信息)"
 
 #: dnf/cli/cli.py:1016
 msgid "Config file \"{}\" does not exist"
-msgstr ""
+msgstr "配置文件\"{}\"不存在"
 
 #: dnf/cli/cli.py:1036
 msgid ""
@@ -828,6 +830,18 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"您以及启用了针对软件包的GPG密钥检查，这是一个好消息。\n"
+"然而，您并没有导入任何GPG公钥。您需要下载您想要安装\n"
+"的软件包对应的密钥并将其导入。\n"
+"您可以通过以下命令来完成这个操作：\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"对于存在'gpgkey'部分的软件源，\n"
+"您也可以指定您想要使用的密钥的URL，\n"
+"{prog}会帮您导入。\n"
+"\n"
+"更多信息请联系您的发行版或软件包提供者。"
 
 #: dnf/cli/commands/__init__.py:80
 #, python-format
@@ -955,7 +969,7 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:774
 msgid "Repository ID"
-msgstr ""
+msgstr "仓库ID"
 
 #: dnf/cli/commands/__init__.py:785 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
@@ -1029,7 +1043,7 @@ msgstr "没有找到管理软件包  '{}' 的事务"
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
-msgstr ""
+msgstr "列出或新建命令别名"
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
