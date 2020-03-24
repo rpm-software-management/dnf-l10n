@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-19 09:18-0400\n"
-"PO-Revision-Date: 2020-03-24 09:46+0000\n"
+"PO-Revision-Date: 2020-03-25 17:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/tr/>\n"
@@ -183,7 +183,7 @@ msgstr "Depo için grup dosyası eklenemedi: %s -%s"
 
 #: dnf/base.py:821
 msgid "Running transaction check"
-msgstr "İşlem denetimi çalıştırılıyor"
+msgstr "İşlem kontrolü gerçekleştiriliyor"
 
 #: dnf/base.py:829
 msgid "Error: transaction check vs depsolve:"
@@ -195,7 +195,7 @@ msgstr "İşlem denetimi başarılı."
 
 #: dnf/base.py:838
 msgid "Running transaction test"
-msgstr "İşlem testi çalıştırılıyor"
+msgstr "İşlem testi gerçekleştiriliyor"
 
 #: dnf/base.py:848 dnf/base.py:995
 msgid "RPM: {}"
@@ -211,7 +211,7 @@ msgstr "İşlem testi başarılı."
 
 #: dnf/base.py:881
 msgid "Running transaction"
-msgstr "İşlem çalıştırılıyor"
+msgstr "İşlem gerçekleştiriliyor"
 
 #: dnf/base.py:909
 msgid "Disk Requirements:"
@@ -742,7 +742,7 @@ msgid ""
 "command(%s)'\""
 msgstr ""
 "Bu bir {PROG} eklenti komutu olabilir, şunu deneyin: \"{prog} install 'dnf-"
-"command (%s)'\""
+"command(%s)'\""
 
 #: dnf/cli/cli.py:850
 #, python-brace-format
@@ -766,7 +766,7 @@ msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
-"--enable, --set-enabled ve --disable, --set-disabled, config-manager "
+"--enable, --set-enabled ve --disable, --set-disabled; config-manager "
 "komutuyla birlikte kullanılmalıdır."
 
 #: dnf/cli/cli.py:996
@@ -980,7 +980,7 @@ msgstr "verilen depodaki tüm paketler üzerinde komutları çalıştır"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "REPOID"
-msgstr "DEPO-ID"
+msgstr "DEPO-KİMLİĞİ"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "Repository ID"
@@ -1348,7 +1348,7 @@ msgstr "Geçerli bir rpm dosya yolu değil: %s"
 #: dnf/cli/commands/install.py:167
 #, python-brace-format
 msgid "There are following alternatives for \"{0}\": {1}"
-msgstr "\"{0}\" için şu aşağıdaki alternatifler bulunmaktadır: {1}"
+msgstr "\"{0}\" için şu alternatifler bulunmaktadır: {1}"
 
 #: dnf/cli/commands/makecache.py:37
 msgid "generate the metadata cache"
@@ -2049,7 +2049,7 @@ msgstr "etkileşimli bir {prog} kabuğu çalıştır"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
-msgstr "BETİK"
+msgstr "KOMUT-DOSYASI"
 
 #: dnf/cli/commands/shell.py:69
 #, python-brace-format
@@ -2532,7 +2532,7 @@ msgstr "hata ayıklama çıktı seviyesi"
 
 #: dnf/cli/option_parser.py:236
 msgid "dumps detailed solving results into files"
-msgstr "ayrıntılı çözüm sonuçlarını dosyalara yığar"
+msgstr "ayrıntılı çözüm sonuçlarını dosyalara yazdırır"
 
 #: dnf/cli/option_parser.py:240
 msgid "show duplicates, in repos, in list/search commands"
@@ -2548,9 +2548,9 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
-"yükseltirken veya info, list ve repoquery için paketin artık kullanılmaz "
-"yaptıklarını görüntülerken {prog}'in artık kullanılmaz hale getirme "
-"mantığını etkinleştirir"
+"upgrade için {prog}'in artık kullanılmaz hale getirme mantığını "
+"etkinleştirir veya info, list ve repoquery için paketin artık kullanılmaz "
+"yaptığı yetenekleri görüntüler"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
@@ -3360,7 +3360,7 @@ msgstr "Değiştirilmiş Paketler:"
 
 #: dnf/cli/output.py:1900
 msgid "Scriptlet output:"
-msgstr "Betik çıktısı:"
+msgstr "Komut dosyası çıktısı:"
 
 #: dnf/cli/output.py:1907
 msgid "Errors:"
@@ -3775,7 +3775,7 @@ msgstr "Gereksiz profil yok sayılıyor: '{}/{}'"
 #: dnf/module/module_base.py:84
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr "'{0}' argümanı için '{1}:{2}' modülündeki hiçbir eşleşme etkin değil"
+msgstr "'{0}' argümanı için '{1}:{2}' modülündeki tüm eşleşmeler aktif değil"
 
 #: dnf/module/module_base.py:92
 #, python-brace-format
@@ -3894,7 +3894,7 @@ msgstr "Zaten indirildi"
 #: dnf/repo.py:346
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
-msgstr "en hızlı yansı belirleniyor (%s ana bilgisayar).. "
+msgstr "en hızlı yansı belirleniyor (%s sunucu).. "
 
 #: dnf/repodict.py:58
 #, python-format
@@ -3950,7 +3950,7 @@ msgstr "Doğrulanıyor"
 
 #: dnf/transaction.py:97
 msgid "Running scriptlet"
-msgstr "Betik yürütülüyor"
+msgstr "Komut dosyası yürütülüyor"
 
 #: dnf/transaction.py:99
 msgid "Preparing"
