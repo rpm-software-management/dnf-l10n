@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Tommy He <lovenemesis@gmail.com>, 2011
 # Ma Kai <crtmike@gmail.com>, 2011
@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-19 09:18-0400\n"
+"POT-Creation-Date: 2020-03-27 09:18-0400\n"
 "PO-Revision-Date: 2020-03-22 12:29+0000\n"
 "Last-Translator: Hongqiao Chen <harrychen0314@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -759,14 +759,16 @@ msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
-"--enable, --set-enabled and --disable, --set-disabled 只能被与config-"
-"manager命令一起使用。"
+"--enable, --set-enabled and --disable, --set-disabled 只能被与config-manager"
+"命令一起使用。"
 
 #: dnf/cli/cli.py:996
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
-msgstr "警告：由于活动的RPM安全策略，全局GPG签名检查已被强制执行 (请参照dnf.conf(5)中的'gpgcheck'以了解如何阻止这条信息)"
+msgstr ""
+"警告：由于活动的RPM安全策略，全局GPG签名检查已被强制执行 (请参照dnf.conf(5)中"
+"的'gpgcheck'以了解如何阻止这条信息)"
 
 #: dnf/cli/cli.py:1016
 msgid "Config file \"{}\" does not exist"
@@ -1006,7 +1008,9 @@ msgid "No transaction ID or package name given."
 msgstr "没有提供事务 ID 或软件包名。"
 
 #: dnf/cli/commands/__init__.py:879
-msgid "You don't have access to the history DB."
+#, fuzzy, python-format
+#| msgid "You don't have access to the history DB."
+msgid "You don't have access to the history DB: %s"
 msgstr "你没有权限到历史数据。"
 
 #: dnf/cli/commands/__init__.py:891
@@ -1616,20 +1620,20 @@ msgstr ""
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
-#: dnf/cli/commands/repolist.py:245 dnf/cli/commands/repolist.py:272
+#: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
 msgstr "仓库标识"
 
-#: dnf/cli/commands/repolist.py:258 dnf/cli/commands/repolist.py:259
-#: dnf/cli/commands/repolist.py:280
+#: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
+#: dnf/cli/commands/repolist.py:281
 msgid "status"
 msgstr "状态"
 
-#: dnf/cli/commands/repolist.py:274 dnf/cli/commands/repolist.py:276
+#: dnf/cli/commands/repolist.py:275 dnf/cli/commands/repolist.py:277
 msgid "repo name"
 msgstr "仓库名称"
 
-#: dnf/cli/commands/repolist.py:290
+#: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
 msgstr ""
 
@@ -1913,7 +1917,7 @@ msgstr "软件包 {} 不包含文件"
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr "可用的查询标签：使用 --queryformat \".. %{tag} ..\""
 
-#: dnf/cli/commands/repoquery.py:562
+#: dnf/cli/commands/repoquery.py:563
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3587,32 +3591,32 @@ msgstr "从增量包重构的 RPM 校验失败"
 msgid "done"
 msgstr "完成"
 
-#: dnf/exceptions.py:109
+#: dnf/exceptions.py:113
 msgid "Problems in request:"
 msgstr ""
 
-#: dnf/exceptions.py:111
+#: dnf/exceptions.py:115
 msgid "missing packages: "
 msgstr "缺少的软件包 "
 
-#: dnf/exceptions.py:113
+#: dnf/exceptions.py:117
 msgid "broken packages: "
 msgstr ""
 
-#: dnf/exceptions.py:115
+#: dnf/exceptions.py:119
 msgid "missing groups or modules: "
 msgstr ""
 
-#: dnf/exceptions.py:117
+#: dnf/exceptions.py:121
 msgid "broken groups or modules: "
 msgstr ""
 
-#: dnf/exceptions.py:122
+#: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] ""
 
-#: dnf/exceptions.py:127 dnf/module/module_base.py:686
+#: dnf/exceptions.py:131 dnf/module/module_base.py:686
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "模块依赖问题"

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-19 09:18-0400\n"
+"POT-Creation-Date: 2020-03-27 09:18-0400\n"
 "PO-Revision-Date: 2020-02-09 12:50+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish (http://www.transifex.com/projects/p/dnf/language/"
@@ -1033,7 +1033,9 @@ msgid "No transaction ID or package name given."
 msgstr "Inget transaktions-ID eller paketnamn angivet."
 
 #: dnf/cli/commands/__init__.py:879
-msgid "You don't have access to the history DB."
+#, fuzzy, python-format
+#| msgid "You don't have access to the history DB."
+msgid "You don't have access to the history DB: %s"
 msgstr "Du har inte tillgång till historie-DB:n."
 
 #: dnf/cli/commands/__init__.py:891
@@ -1658,20 +1660,20 @@ msgstr "Förrådsfilnamn     : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
-#: dnf/cli/commands/repolist.py:245 dnf/cli/commands/repolist.py:272
+#: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
 msgstr "förråds-id"
 
-#: dnf/cli/commands/repolist.py:258 dnf/cli/commands/repolist.py:259
-#: dnf/cli/commands/repolist.py:280
+#: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
+#: dnf/cli/commands/repolist.py:281
 msgid "status"
 msgstr "status"
 
-#: dnf/cli/commands/repolist.py:274 dnf/cli/commands/repolist.py:276
+#: dnf/cli/commands/repolist.py:275 dnf/cli/commands/repolist.py:277
 msgid "repo name"
 msgstr "förrådsnamn"
 
-#: dnf/cli/commands/repolist.py:290
+#: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
 msgstr "Totalt antal paket: {}"
 
@@ -1967,7 +1969,7 @@ msgstr "Paketet {} innehåller inga filer"
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr "Tillgängliga frågetaggar: använd --queryformat \".. %{tag} ..\""
 
-#: dnf/cli/commands/repoquery.py:562
+#: dnf/cli/commands/repoquery.py:563
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3680,33 +3682,33 @@ msgstr "Kontrollsumma av den deltaombyggda RPM:en misslyckades"
 msgid "done"
 msgstr "klar"
 
-#: dnf/exceptions.py:109
+#: dnf/exceptions.py:113
 msgid "Problems in request:"
 msgstr "Problem i begäran:"
 
-#: dnf/exceptions.py:111
+#: dnf/exceptions.py:115
 msgid "missing packages: "
 msgstr "saknade paket: "
 
-#: dnf/exceptions.py:113
+#: dnf/exceptions.py:117
 msgid "broken packages: "
 msgstr "trasiga paket: "
 
-#: dnf/exceptions.py:115
+#: dnf/exceptions.py:119
 msgid "missing groups or modules: "
 msgstr "saknade grupper eller moduler: "
 
-#: dnf/exceptions.py:117
+#: dnf/exceptions.py:121
 msgid "broken groups or modules: "
 msgstr "trasiga grupper eller moduler: "
 
-#: dnf/exceptions.py:122
+#: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Modulärt beroendeproblem med standard:"
 msgstr[1] "Modulära beroendeproblem med standard:"
 
-#: dnf/exceptions.py:127 dnf/module/module_base.py:686
+#: dnf/exceptions.py:131 dnf/module/module_base.py:686
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Modulärt beroendeproblem:"

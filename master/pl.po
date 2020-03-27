@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Piotr Drąg <piotrdrag@gmail.com>, 2011,2014,2015, 2020.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
@@ -15,11 +15,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-19 09:18-0400\n"
+"POT-Creation-Date: 2020-03-27 09:18-0400\n"
 "PO-Revision-Date: 2020-03-21 10:35+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/pl/>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1053,7 +1053,9 @@ msgid "No transaction ID or package name given."
 msgstr "Nie podano identyfikatora transakcji ani nazwy pakietu."
 
 #: dnf/cli/commands/__init__.py:879
-msgid "You don't have access to the history DB."
+#, fuzzy, python-format
+#| msgid "You don't have access to the history DB."
+msgid "You don't have access to the history DB: %s"
 msgstr "Brak dostępu do bazy danych historii."
 
 #: dnf/cli/commands/__init__.py:891
@@ -1679,20 +1681,20 @@ msgstr "Nazwa pliku repozytorium          : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
-#: dnf/cli/commands/repolist.py:245 dnf/cli/commands/repolist.py:272
+#: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
 msgstr "identyfikator repozytorium"
 
-#: dnf/cli/commands/repolist.py:258 dnf/cli/commands/repolist.py:259
-#: dnf/cli/commands/repolist.py:280
+#: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
+#: dnf/cli/commands/repolist.py:281
 msgid "status"
 msgstr "stan"
 
-#: dnf/cli/commands/repolist.py:274 dnf/cli/commands/repolist.py:276
+#: dnf/cli/commands/repolist.py:275 dnf/cli/commands/repolist.py:277
 msgid "repo name"
 msgstr "nazwa repozytorium"
 
-#: dnf/cli/commands/repolist.py:290
+#: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
 msgstr "Razem pakietów: {}"
 
@@ -1998,7 +2000,7 @@ msgstr "Pakiet {} nie zawiera plików"
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr "Dostępne query-tags: należy użyć „--queryformat \".. %{tag} ..\"”"
 
-#: dnf/cli/commands/repoquery.py:562
+#: dnf/cli/commands/repoquery.py:563
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3728,34 +3730,34 @@ msgstr "Suma kontrolna pakietu RPM przebudowanego z delty się nie powiodła"
 msgid "done"
 msgstr "ukończono"
 
-#: dnf/exceptions.py:109
+#: dnf/exceptions.py:113
 msgid "Problems in request:"
 msgstr "Problemy w żądaniu:"
 
-#: dnf/exceptions.py:111
+#: dnf/exceptions.py:115
 msgid "missing packages: "
 msgstr "brakujące pakiety: "
 
-#: dnf/exceptions.py:113
+#: dnf/exceptions.py:117
 msgid "broken packages: "
 msgstr "uszkodzone pakiety: "
 
-#: dnf/exceptions.py:115
+#: dnf/exceptions.py:119
 msgid "missing groups or modules: "
 msgstr "brakujące grupy lub moduły: "
 
-#: dnf/exceptions.py:117
+#: dnf/exceptions.py:121
 msgid "broken groups or modules: "
 msgstr "uszkodzone grupy lub moduły: "
 
-#: dnf/exceptions.py:122
+#: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Problem z modularną zależnością za pomocą domyślnych:"
 msgstr[1] "Problemy z modularną zależnością za pomocą domyślnych:"
 msgstr[2] "Problemy z modularną zależnością za pomocą domyślnych:"
 
-#: dnf/exceptions.py:127 dnf/module/module_base.py:686
+#: dnf/exceptions.py:131 dnf/module/module_base.py:686
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Problem z modularną zależnością:"

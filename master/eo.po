@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-19 09:18-0400\n"
+"POT-Creation-Date: 2020-03-27 09:18-0400\n"
 "PO-Revision-Date: 2019-04-01 09:31+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Esperanto\n"
@@ -961,7 +961,9 @@ msgid "No transaction ID or package name given."
 msgstr "Neniu transakcia identigilo aŭ pakonomo specifita."
 
 #: dnf/cli/commands/__init__.py:879
-msgid "You don't have access to the history DB."
+#, fuzzy, python-format
+#| msgid "You don't have access to the history DB."
+msgid "You don't have access to the history DB: %s"
 msgstr "Vi ne havas atingon al la historia datumbazo."
 
 #: dnf/cli/commands/__init__.py:891
@@ -1574,20 +1576,20 @@ msgstr ""
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
-#: dnf/cli/commands/repolist.py:245 dnf/cli/commands/repolist.py:272
+#: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
 msgstr "deponeja identigilo"
 
-#: dnf/cli/commands/repolist.py:258 dnf/cli/commands/repolist.py:259
-#: dnf/cli/commands/repolist.py:280
+#: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
+#: dnf/cli/commands/repolist.py:281
 msgid "status"
 msgstr "stato"
 
-#: dnf/cli/commands/repolist.py:274 dnf/cli/commands/repolist.py:276
+#: dnf/cli/commands/repolist.py:275 dnf/cli/commands/repolist.py:277
 msgid "repo name"
 msgstr "nomo de deponejo"
 
-#: dnf/cli/commands/repolist.py:290
+#: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
 msgstr ""
 
@@ -1860,7 +1862,7 @@ msgstr ""
 msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:562
+#: dnf/cli/commands/repoquery.py:563
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3534,33 +3536,33 @@ msgstr ""
 msgid "done"
 msgstr "farita"
 
-#: dnf/exceptions.py:109
+#: dnf/exceptions.py:113
 msgid "Problems in request:"
 msgstr "Problemoj en peto:"
 
-#: dnf/exceptions.py:111
+#: dnf/exceptions.py:115
 msgid "missing packages: "
 msgstr "mankantaj pakoj: "
 
-#: dnf/exceptions.py:113
+#: dnf/exceptions.py:117
 msgid "broken packages: "
 msgstr "rompitaj pakoj: "
 
-#: dnf/exceptions.py:115
+#: dnf/exceptions.py:119
 msgid "missing groups or modules: "
 msgstr "mankantaj grupoj aŭ moduloj: "
 
-#: dnf/exceptions.py:117
+#: dnf/exceptions.py:121
 msgid "broken groups or modules: "
 msgstr "rompitaj grupoj aŭ moduloj: "
 
-#: dnf/exceptions.py:122
+#: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dnf/exceptions.py:127 dnf/module/module_base.py:686
+#: dnf/exceptions.py:131 dnf/module/module_base.py:686
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] ""
