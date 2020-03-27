@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Yuri Chornoivan <yurchor@ukr.net>, 2011, 2020.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
@@ -15,7 +15,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-03-25 17:38+0000\n"
+"PO-Revision-Date: 2020-03-29 10:38+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/uk/>\n"
@@ -23,8 +23,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: ../dnf/automatic/emitter.py:31
@@ -202,8 +202,6 @@ msgid "Running transaction test"
 msgstr "Виконуємо перевірку операції"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
 msgstr "Помилка під час перевірки операції:"
 
@@ -220,34 +218,29 @@ msgid "Disk Requirements:"
 msgstr "Потреба у місці на диску:"
 
 #: ../dnf/base.py:909
-#, fuzzy, python-format
-#| msgid "At least {0}MB more space needed on the {1} filesystem."
-#| msgid_plural "At least {0}MB more space needed on the {1} filesystem."
+#, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] "Потрібно ще {0} МБ вільного місця на файловій системі {1}."
-msgstr[1] "Потрібно ще {0} МБ вільного місця на файловій системі {1}."
-msgstr[2] "Потрібно ще {0} МБ вільного місця на файловій системі {1}."
+msgstr[0] "Потрібно ще %d МБ вільного місця на файловій системі %s."
+msgstr[1] "Потрібно ще %d МБ вільного місця на файловій системі %s."
+msgstr[2] "Потрібно ще %d МБ вільного місця на файловій системі %s."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
 msgstr "Резюме помилки"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "RPMDB було змінено поза межами {prog}."
+msgstr "RPMDB було змінено поза межами DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "Під час спроби виконати дію сталися помилки."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Не вдалося вилучити файл операції %s"
+msgstr "Не отримати блокування операції (вхід до системи від імені %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -388,12 +381,11 @@ msgid "Package %s not installed, cannot update it."
 msgstr "Пакунок %s не встановлено, отже не можна його оновити."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"Пакунок %s або його давнішу версію вже встановлено, отже не можна знизити "
-"його версію."
+"Пакунок %s або його новішу версію вже встановлено, отже не можна його "
+"оновити."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -582,20 +574,14 @@ msgid "  Built    : %s at %s"
 msgstr "  Зібрано    : %s о %s"
 
 #: ../dnf/cli/cli.py:192
-#, fuzzy
-#| msgid "{prog} will only download packages for the transaction."
 msgid "DNF will only download packages for the transaction."
-msgstr "{prog} лише отримає пакунки для виконання операції."
+msgstr "DNF лише отримає пакунки для виконання операції."
 
 #: ../dnf/cli/cli.py:194
-#, fuzzy
-#| msgid ""
-#| "{prog} will only download packages, install gpg keys, and check the "
-#| "transaction."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"{prog} лише отримає пакунки, встановить ключі GPG і перевірить можливість "
+"DNF лише отримає пакунки, встановить ключі GPG і перевірить можливість "
 "виконання операції."
 
 #: ../dnf/cli/cli.py:198
@@ -721,27 +707,19 @@ msgid "No such command: %s. Please use %s --help"
 msgstr "Команди %s не виявлено. Будь ласка, скористайтеся командою %s --help"
 
 #: ../dnf/cli/cli.py:827
-#, fuzzy, python-format
-#| msgid ""
-#| "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
-#| "command(%s)'\""
+#, python-format
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
-"Це могла бути команда додатка {PROG}, спробуйте таку команду: \"{prog} "
-"install 'dnf-command(%s)'\""
+"Це могла бути команда додатка DNF, спробуйте таку команду: \"dnf install "
+"'dnf-command(%s)'\""
 
 #: ../dnf/cli/cli.py:830
-#, fuzzy
-#| msgid ""
-#| "It could be a {prog} plugin command, but loading of plugins is currently "
-#| "disabled."
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
-"Це могла бути команда додатка {prog}, але зараз завантаження додатків "
-"вимкнено."
+"Це могла бути команда додатка DNF, але зараз завантаження додатків вимкнено."
 
 #: ../dnf/cli/cli.py:887
 msgid ""
@@ -818,23 +796,6 @@ msgstr ""
 "«%s» можна усунути проблему."
 
 #: ../dnf/cli/commands/__init__.py:53
-#, fuzzy
-#| msgid ""
-#| "You have enabled checking of packages via GPG keys. This is a good "
-#| "thing.\n"
-#| "However, you do not have any GPG public keys installed. You need to "
-#| "download\n"
-#| "the keys for packages you wish to install and install them.\n"
-#| "You can do that by running the command:\n"
-#| "    rpm --import public.gpg.key\n"
-#| "\n"
-#| "\n"
-#| "Alternatively you can specify the url to the key you would like to use\n"
-#| "for a repository in the 'gpgkey' option in a repository section and "
-#| "{prog}\n"
-#| "will install it for you.\n"
-#| "\n"
-#| "For more information contact your distribution or package provider."
 msgid ""
 "You have enabled checking of packages via GPG keys. This is a good thing.\n"
 "However, you do not have any GPG public keys installed. You need to "
@@ -860,7 +821,7 @@ msgstr ""
 "\n"
 "Крім того, ви можете вказати адресу URL ключа, яким бажаєте скористатися\n"
 "для сховища за допомогою параметра «gpgkey» у розділі налаштувань сховища, "
-"{prog} \n"
+"DNF \n"
 "встановить потрібні ключі автоматично.\n"
 "\n"
 "Докладніші відомості може бути отримано з довідки до вашого дистрибутива або "
@@ -922,7 +883,7 @@ msgstr "пошук пакунка за вказаним ключем"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "ЯКИЙСЬ_РЯДОК"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -979,10 +940,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "виконати команди над усіма пакунками у вказаному сховищі"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "REPOID"
+msgstr "СХОВ"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -1039,16 +998,12 @@ msgstr ""
 "Мало бути «<ідентифікатор операції>..<ідентифікатор операції>»."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Не вдалося перетворити «{}» на ідентифікатор операції.\n"
-"Скористайтеся записом «<число>», «last», «last-<число>»."
+"Скористайтеся записом «<число>», «last», «last-<додатне-число>»."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1375,12 +1330,6 @@ msgid "No matching Modules to list"
 msgstr "У списку немає відповідних модулів"
 
 #: ../dnf/cli/commands/module.py:128
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1389,17 +1338,10 @@ msgid ""
 msgstr ""
 "Перемкнути увімкнені потоки модуля неможливо.\n"
 "Рекомендуємо вилучити усі встановлені дані із модулі і відновити початкові "
-"налаштування за допомогою команди «{prog} module reset <назва_модуля>». "
-"Після відновлення початкових налаштувань модуля ви зможете встановити інший "
-"потік."
+"налаштування за допомогою команди «dnf module reset <назва_модуля>». Після "
+"відновлення початкових налаштувань модуля ви зможете увімкнути інший потік."
 
 #: ../dnf/cli/commands/module.py:199
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1408,9 +1350,8 @@ msgid ""
 msgstr ""
 "Перемкнути увімкнені потоки модуля неможливо.\n"
 "Рекомендуємо вилучити усі встановлені дані із модулі і відновити початкові "
-"налаштування за допомогою команди «{prog} module reset <назва_модуля>». "
-"Після відновлення початкових налаштувань модуля ви зможете встановити інший "
-"потік."
+"налаштування за допомогою команди «dnf module reset <назва_модуля>». Після "
+"відновлення початкових налаштувань модуля ви зможете встановити інший потік."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1425,10 +1366,8 @@ msgid "show only disabled modules"
 msgstr "показати лише вимкнені модулі"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "показати лише вимкнені модулі"
+msgstr "показати лише встановлені модулі"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1511,112 +1450,76 @@ msgid "disabled"
 msgstr "вимкнено"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo-id            : "
 msgid "Repo-id      : "
-msgstr "Ід. сховища        : "
+msgstr "Ід. сховища    : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Repo-name          : "
 msgid "Repo-name    : "
-msgstr "Назва сховища    : "
+msgstr "Назва сховища: "
 
 #: ../dnf/cli/commands/repolist.py:183
-#, fuzzy
-#| msgid "Repo-status        : "
 msgid "Repo-status  : "
-msgstr "Стан сховища   : "
+msgstr "Стан сховища: "
 
 #: ../dnf/cli/commands/repolist.py:186
-#, fuzzy
-#| msgid "Repo-revision      : "
 msgid "Repo-revision: "
 msgstr "Версія сховища: "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo-tags          : "
 msgid "Repo-tags    : "
-msgstr "Мітки сховища   : "
+msgstr "Мітки сховища: "
 
 #: ../dnf/cli/commands/repolist.py:197
-#, fuzzy
-#| msgid "Repo-distro-tags      : "
 msgid "Repo-distro-tags: "
 msgstr "Мітки дистрибутива сховища: "
 
 #: ../dnf/cli/commands/repolist.py:203
-#, fuzzy
-#| msgid "Repo-updated       : "
 msgid "Repo-updated : "
 msgstr "Оновлення сховища: "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo-pkgs          : "
 msgid "Repo-pkgs    : "
 msgstr "Пакунки сховища: "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo-size          : "
 msgid "Repo-size    : "
-msgstr "Розмір сховища  : "
+msgstr "Розмір сховища: "
 
 #: ../dnf/cli/commands/repolist.py:209
-#, fuzzy
-#| msgid "Repo-metalink      : "
 msgid "Repo-metalink: "
 msgstr "Метапосилання сховища: "
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "  Updated          : "
 msgid "  Updated    : "
-msgstr "  Оновлено     : "
+msgstr "  Оновлено: "
 
 #: ../dnf/cli/commands/repolist.py:216
-#, fuzzy
-#| msgid "Repo-mirrors       : "
 msgid "Repo-mirrors : "
-msgstr "Дзеркала сховища   : "
+msgstr "Дзеркала сховища: "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
-#, fuzzy
-#| msgid "Repo-baseurl       : "
 msgid "Repo-baseurl : "
 msgstr "Базова адреса сховища: "
 
 #: ../dnf/cli/commands/repolist.py:229
-#, fuzzy
-#| msgid "Repo-expire        : "
 msgid "Repo-expire  : "
 msgstr "Застарівання сховища: "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
-#, fuzzy
-#| msgid "Repo-exclude       : "
 msgid "Repo-exclude : "
 msgstr "Виключення сховища: "
 
 #: ../dnf/cli/commands/repolist.py:237
-#, fuzzy
-#| msgid "Repo-include       : "
 msgid "Repo-include : "
 msgstr "Включення сховища: "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
-#, fuzzy
-#| msgid "Repo-excluded      : "
 msgid "Repo-excluded: "
 msgstr "Виключено сховище: "
 
 #: ../dnf/cli/commands/repolist.py:246
-#, fuzzy
-#| msgid "Repo-filename      : "
 msgid "Repo-filename: "
 msgstr "Назва файла сховища: "
 
@@ -1636,10 +1539,9 @@ msgid "repo name"
 msgstr "назва сховища"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid "Total packages: {}"
+#, python-format
 msgid "Total packages: %s"
-msgstr "Загалом пакунків: {}"
+msgstr "Загалом пакунків: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
@@ -1883,14 +1785,10 @@ msgid ""
 msgstr "Показати лише пакунки із оновленнями вже встановлених пакунків."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid ""
-#| "Display only packages that can be removed by \"{prog} autoremove\" "
-#| "command."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
 msgstr ""
-"Показувати лише пакунки, які може бути вилучено командою «{prog} autoremove»."
+"Показувати лише пакунки, які може бути вилучено командою «dnf autoremove»."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -1934,15 +1832,6 @@ msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "аргумент {} потребує параметра --whatrequires або --whatdepends"
 
 #: ../dnf/cli/commands/repoquery.py:501
-#, fuzzy
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
 msgid ""
 "No valid switch specified\n"
 "usage: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -1953,9 +1842,9 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Не вказано перемикач\n"
-"Користування: {prog} repoquery [--conflicts|--enhances|--obsoletes|--"
-"provides|--recommends|--requires|--suggest|--supplements|--whatrequires] "
-"[ключ] [--tree]\n"
+"Користування: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [ключ] [--tree]"
+"\n"
 "\n"
 "Опис:\n"
 "  Для вказаних пакунків виводить ієрархію пакунків."
@@ -1970,7 +1859,7 @@ msgstr "шукати також опис пакунка і адресу"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "РЯДОК_ЗАПИТУ"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -2015,20 +1904,16 @@ msgid "No matches found."
 msgstr "Не знайдено відповідників."
 
 #: ../dnf/cli/commands/shell.py:47
-#, fuzzy
-#| msgid "run an interactive {prog} shell"
 msgid "run an interactive DNF shell"
-msgstr "запустити інтерактивну командну оболонку {prog}"
+msgstr "запустити інтерактивну командну оболонку DNF"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
 msgstr "СКРИПТ"
 
 #: ../dnf/cli/commands/shell.py:69
-#, fuzzy
-#| msgid "Script to run in {prog} shell"
 msgid "Script to run in DNF shell"
-msgstr "Скрипт, який слід запустити у командній оболонці {prog}"
+msgstr "Скрипт, який слід запустити у командній оболонці DNF"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2143,11 +2028,9 @@ msgid "Leaving Shell"
 msgstr "Полишаємо командну оболонку"
 
 #: ../dnf/cli/commands/swap.py:33
-#, fuzzy
-#| msgid "run an interactive {prog} mod for remove and install one spec"
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
-"запустити інтерактивний {prog} для вилучення або встановлення однієї "
+"запустити інтерактивний dnf для вилучення або встановлення однієї "
 "специфікації"
 
 #: ../dnf/cli/commands/swap.py:37
@@ -2417,10 +2300,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Аргумент setopt не має значення: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Додаткові пакунки:"
+msgstr "Додаткові аргументи"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2435,10 +2316,8 @@ msgid "verbose operation"
 msgstr "докладна обробка команд"
 
 #: ../dnf/cli/option_parser.py:166
-#, fuzzy
-#| msgid "show {prog} version and exit"
 msgid "show DNF version and exit"
-msgstr "вивести дані щодо версії {prog} і завершити роботу"
+msgstr "вивести дані щодо версії DNF і завершити роботу"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -2515,17 +2394,13 @@ msgid "error output level"
 msgstr "рівень докладності повідомлень про помилки"
 
 #: ../dnf/cli/option_parser.py:226
-#, fuzzy
-#| msgid ""
-#| "enables {prog}'s obsoletes processing logic for upgrade or display "
-#| "capabilities that the package obsoletes for info, list and repoquery"
 msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
-"вмикає логіку обробки застарілих пакунків у {prog} для оновлення "
-"дистрибутива або показує можливості, які робить застарілими пакунок для "
-"info, list та repoquery"
+"вмикає логіку обробки застарілих пакунків у dnf для оновлення дистрибутива "
+"або показує можливості, які робить застарілими пакунок для info, list та "
+"repoquery"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2566,15 +2441,9 @@ msgid "disable excludepkgs"
 msgstr "вимкнути excludepkgs"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "label and path to an additional repository to use (same path as in a "
-#| "baseurl), can be specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
-msgstr ""
-"мітка і шлях до додаткового сховища (той самий шлях, що і у baseurl), можна "
-"вказати декілька."
+msgstr "мітка і шлях до додаткового сховища, можна вказати декілька."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3183,7 +3052,7 @@ msgstr "Система"
 #: ../dnf/cli/output.py:1611
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
-msgstr ""
+msgstr "Пропускаємо об'єднану операцію %d до %d, оскільки вони перекриваються"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3472,16 +3341,14 @@ msgid "skipping."
 msgstr "пропускаємо."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "Модуль або групу «%s» не встановлено."
+msgstr "Групу «%s» не встановлено."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "Групи з ідентифікатором «%s» не існує."
+msgstr "Групи «%s» не існує."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3494,10 +3361,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "Групи з ідентифікатором «%s» не існує."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "Модуль або групу «%s» не встановлено."
+msgstr "Групу «%s» не встановлено."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3543,23 +3409,20 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Попередження: не вдалося завантажити «%s», пропускаємо."
 
 #: ../dnf/conf/read.py:61
-#, fuzzy, python-format
-#| msgid "Repository '{}': Error parsing config: {}"
+#, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr "Сховище «{}»: помилка під час спроби обробити налаштування: {}"
+msgstr "Сховище «%s»: помилка під час спроби обробити налаштування: %s"
 
 #: ../dnf/conf/read.py:66
-#, fuzzy, python-format
-#| msgid "Repository '{}' is missing name in configuration, using id."
+#, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
 msgstr ""
-"У налаштуваннях пропущено назву сховища «{}». Використовуємо ідентифікатор."
+"У налаштуваннях пропущено назву сховища «%s». Використовуємо ідентифікатор."
 
 #: ../dnf/conf/read.py:96
-#, fuzzy, python-format
-#| msgid "Bad id for repo: {}, byte = {} {}"
+#, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr "Помилковий ідентифікатор сховища: {}, байт = {} {}"
+msgstr "Помилковий ідентифікатор сховища: %s, байт = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
@@ -3648,20 +3511,16 @@ msgstr[1] "Проблеми із залежностями модулів:"
 msgstr[2] "Проблеми із залежностями модулів:"
 
 #: ../dnf/lock.py:95
-#, fuzzy, python-format
-#| msgid ""
-#| "Malformed lock file found: %s.\n"
-#| "Ensure no other dnf/yum process is running and remove the lock file "
-#| "manually or run systemd-tmpfiles --remove dnf.conf."
+#, python-format
 msgid ""
 "Malformed lock file found: %s.\n"
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
 "Виявлено помилкове форматування файла блокування: %s.\n"
-"Переконайтеся, що не запущено паралельного процесу dnf/yum, і вилучіть файл "
-"блокування вручну або за допомогою команди systemd-tmpfiles --remove dnf."
-"conf."
+"Переконайтеся, що не запущено паралельного процесу dnf, і вилучіть файл "
+"блокування вручну або за допомогою команди systemd-tmpfiles --remove "
+"dnf.conf."
 
 #: ../dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3719,10 +3578,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "Немає типового профілю для модуля {}:{}"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "Типовий профіль {} є недоступним у модулі {}:{}"
+msgstr "Профіль {} є невідповідним до модуля {}:{}"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
