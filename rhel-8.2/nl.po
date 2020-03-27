@@ -11,10 +11,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-03-27 14:38+0000\n"
-"Last-Translator: Richard E. van der Luit <fedoraproject@veneax.nl>\n"
-"Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/nl/>\n"
+"PO-Revision-Date: 2020-03-29 10:38+0000\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -195,10 +195,8 @@ msgid "Running transaction test"
 msgstr "Uitvoeren transactietest"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
-msgstr "Transactietest fout:"
+msgstr "Transactiecheck fout:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -213,33 +211,28 @@ msgid "Disk Requirements:"
 msgstr "Schijfvereisten:"
 
 #: ../dnf/base.py:909
-#, fuzzy, python-format
-#| msgid "At least {0}MB more space needed on the {1} filesystem."
-#| msgid_plural "At least {0}MB more space needed on the {1} filesystem."
+#, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] "Ten minste {0}MB meer nodig op bestandssysteem {1}."
-msgstr[1] "Ten minste {0}MB meer nodig op bestandssysteem {1}."
+msgstr[0] "Ten minste %dMB meer nodig op bestandssysteem %s."
+msgstr[1] "Ten minste %dMB meer nodig op bestandssysteem %s."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
 msgstr "Samenvatting van fouten"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "RPMDB is buiten {prog} gewijzigd."
+msgstr "RPMDB is buiten DNF gewijzigd."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "Tijdens de transactie traden fouten op."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Verwijderen van transactiebestand %s mislukt"
+msgstr "Verkrijgen van transactieslot mislukte (aangemeld als: %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -379,11 +372,10 @@ msgid "Package %s not installed, cannot update it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet updaten."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"Pakket %s met lagere versie is al geïnstalleerd, kan het niet downgraden."
+"Pakket %s met hogere versie is al geïnstalleerd, kan het niet vernieuwen."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -575,20 +567,14 @@ msgid "  Built    : %s at %s"
 msgstr "  Gebouwd    : %s op %s"
 
 #: ../dnf/cli/cli.py:192
-#, fuzzy
-#| msgid "{prog} will only download packages for the transaction."
 msgid "DNF will only download packages for the transaction."
-msgstr "{prog} zal alleen pakketten voor de transactie downloaden."
+msgstr "DNF zal alleen pakketten voor de transactie downloaden."
 
 #: ../dnf/cli/cli.py:194
-#, fuzzy
-#| msgid ""
-#| "{prog} will only download packages, install gpg keys, and check the "
-#| "transaction."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"{prog} zal alleen pakketten downloaden, gpg sleutels installeren en de "
+"DNF zal alleen pakketten downloaden, gpg-sleutels installeren en de "
 "transactie controleren."
 
 #: ../dnf/cli/cli.py:198
@@ -714,27 +700,20 @@ msgid "No such command: %s. Please use %s --help"
 msgstr "Zo'n commando bestaat niet: %s. Gebruik %s --help"
 
 #: ../dnf/cli/cli.py:827
-#, fuzzy, python-format
-#| msgid ""
-#| "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
-#| "command(%s)'\""
+#, python-format
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
-"Het zou een {PROG} plugin-opdracht kunnen zijn, probeer: \"{prog} install "
-"'dnf-command(%s)'\""
+"Het zou een DNF plugin-commando kunnen zijn, probeer: \"dnf install 'dnf-"
+"command(%s)'\""
 
 #: ../dnf/cli/cli.py:830
-#, fuzzy
-#| msgid ""
-#| "It could be a {prog} plugin command, but loading of plugins is currently "
-#| "disabled."
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
-"Het zou een {prog} plugin-opdracht kunnen zijn, maar het laden van plug-ins "
-"is momenteel uitgeschakeld."
+"Het zou een DNF plugin-commando kunnen zijn, maar het laden van plug-ins is "
+"momenteel uitgeschakeld."
 
 #: ../dnf/cli/cli.py:887
 msgid ""
@@ -809,23 +788,6 @@ msgid "You probably have corrupted RPMDB, running '%s' might fix the issue."
 msgstr "RPMDB is waarschijnlijk corrupt, '%s' doen kan het misschien oplossen."
 
 #: ../dnf/cli/commands/__init__.py:53
-#, fuzzy
-#| msgid ""
-#| "You have enabled checking of packages via GPG keys. This is a good "
-#| "thing.\n"
-#| "However, you do not have any GPG public keys installed. You need to "
-#| "download\n"
-#| "the keys for packages you wish to install and install them.\n"
-#| "You can do that by running the command:\n"
-#| "    rpm --import public.gpg.key\n"
-#| "\n"
-#| "\n"
-#| "Alternatively you can specify the url to the key you would like to use\n"
-#| "for a repository in the 'gpgkey' option in a repository section and "
-#| "{prog}\n"
-#| "will install it for you.\n"
-#| "\n"
-#| "For more information contact your distribution or package provider."
 msgid ""
 "You have enabled checking of packages via GPG keys. This is a good thing.\n"
 "However, you do not have any GPG public keys installed. You need to "
@@ -849,8 +811,7 @@ msgstr ""
 "\n"
 "\n"
 "Je kan ook de url naar de sleutel voor een repo die je wilt gebruiken\n"
-"opgeven bij de 'gpgkey'-optie in een repositorysectie en {prog} zal de "
-"sleutel\n"
+"opgeven bij de 'gpgkey'-optie in een repositorysectie en DNF zal de sleutel\n"
 "dan automatisch installeren.\n"
 "\n"
 "Informeer bij de mensen van je distributie of van het pakket."
@@ -910,7 +871,7 @@ msgstr "uitzoeken welk pakket de opgegeven waarde bevat"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "EEN_STRING"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -967,10 +928,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "uitvoeren van opdrachten op alle pakketten in opgegeven repository"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "REPO_ID"
+msgstr "REPO"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -1027,16 +986,12 @@ msgstr ""
 "Gebruik '<transaction-id>..<transaction-id>'."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Kan '{}' niet converteren naar transactie ID.\n"
-"Gebruik '<number>', 'last', 'last-<number>'."
+"Gebruik '<geheel getal>', 'last', 'last-<positief geheel getal>'."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1363,12 +1318,6 @@ msgid "No matching Modules to list"
 msgstr "Geen overeenkomende modules om te laten zien"
 
 #: ../dnf/cli/commands/module.py:128
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1377,17 +1326,11 @@ msgid ""
 msgstr ""
 "Het is niet mogelijk on aangezette streams van een module om te schakelen.\n"
 "Het wordt aanbevolen om alle geïnstalleerde inhoud van de module te "
-"verwijderen, en de module te resetten met het '{prog} module reset "
-"<module_name>' commando. Nadat je de module gerest hebt, kun je de andere "
-"stream installeren."
+"verwijderen, en de module te resetten met het 'dnf module reset <module_naam>"
+"' commando. Nadat je de module gerest hebt, kun je de andere stream "
+"aanzetten."
 
 #: ../dnf/cli/commands/module.py:199
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1396,9 +1339,9 @@ msgid ""
 msgstr ""
 "Het is niet mogelijk on aangezette streams van een module om te schakelen.\n"
 "Het wordt aanbevolen om alle geïnstalleerde inhoud van de module te "
-"verwijderen, en de module te resetten met het '{prog} module reset "
-"<module_name>' commando. Nadat je de module gerest hebt, kun je de andere "
-"stream installeren."
+"verwijderen, en de module te resetten met het 'dnf module reset <module_naam>"
+"' commando. Nadat je de module gerest hebt, kun je de andere stream "
+"installeren."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1413,10 +1356,8 @@ msgid "show only disabled modules"
 msgstr "toon alleen uitgeschakelde modules"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "toon alleen uitgeschakelde modules"
+msgstr "toon alleen geïnstalleerde modules"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1499,114 +1440,78 @@ msgid "disabled"
 msgstr "uitgezet"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo-id            : "
 msgid "Repo-id      : "
-msgstr "Repo-id            : "
+msgstr "Repo-id      : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Repo-name          : "
 msgid "Repo-name    : "
-msgstr "Repo-naam          : "
+msgstr "Repro-naam    : "
 
 #: ../dnf/cli/commands/repolist.py:183
-#, fuzzy
-#| msgid "Repo-status        : "
 msgid "Repo-status  : "
-msgstr "Repo-status        : "
+msgstr "Repo-status  : "
 
 #: ../dnf/cli/commands/repolist.py:186
-#, fuzzy
-#| msgid "Repo-revision      : "
 msgid "Repo-revision: "
-msgstr "Repo-revisie       : "
+msgstr "Repo-revisie : "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo-tags          : "
 msgid "Repo-tags    : "
-msgstr "Repo-tags          : "
+msgstr "Repo-tags    : "
 
 #: ../dnf/cli/commands/repolist.py:197
-#, fuzzy
-#| msgid "Repo-distro-tags      : "
 msgid "Repo-distro-tags: "
-msgstr "Repo-distro-tags      : "
+msgstr "Repo-distro-tags: "
 
 #: ../dnf/cli/commands/repolist.py:203
-#, fuzzy
-#| msgid "Repo-updated       : "
 msgid "Repo-updated : "
-msgstr "Repo-updated       : "
+msgstr "Repo-updated: "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo-pkgs          : "
 msgid "Repo-pkgs    : "
-msgstr "Repo-pkgs          : "
+msgstr "Repo-pkgs    : "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo-size          : "
 msgid "Repo-size    : "
-msgstr "Repo-grootte        : "
+msgstr "Repo-grootte : "
 
 #: ../dnf/cli/commands/repolist.py:209
-#, fuzzy
-#| msgid "Repo-metalink      : "
 msgid "Repo-metalink: "
-msgstr "Repo-metalink      : "
+msgstr "Repo-metalink: "
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "  Updated          : "
 msgid "  Updated    : "
-msgstr "  Vernieuwd        : "
+msgstr "  Vernieuwd  : "
 
 #: ../dnf/cli/commands/repolist.py:216
-#, fuzzy
-#| msgid "Repo-mirrors       : "
 msgid "Repo-mirrors : "
-msgstr "Repo-spiegels      : "
+msgstr "Repo-spiegels: "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
-#, fuzzy
-#| msgid "Repo-baseurl       : "
 msgid "Repo-baseurl : "
-msgstr "Repo-baseurl       : "
+msgstr "Repo-baseurl : "
 
 #: ../dnf/cli/commands/repolist.py:229
-#, fuzzy
-#| msgid "Repo-expire        : "
 msgid "Repo-expire  : "
-msgstr "Repo-expire        : "
+msgstr "Repo-expire  : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
-#, fuzzy
-#| msgid "Repo-exclude       : "
 msgid "Repo-exclude : "
-msgstr "Repo-exclude       : "
+msgstr "Repo-exclude : "
 
 #: ../dnf/cli/commands/repolist.py:237
-#, fuzzy
-#| msgid "Repo-include       : "
 msgid "Repo-include : "
-msgstr "Repo-include       : "
+msgstr "Repo-include: "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
-#, fuzzy
-#| msgid "Repo-excluded      : "
 msgid "Repo-excluded: "
-msgstr "Repo-excluded      : "
+msgstr "Repo-excluded: "
 
 #: ../dnf/cli/commands/repolist.py:246
-#, fuzzy
-#| msgid "Repo-filename      : "
 msgid "Repo-filename: "
-msgstr "Repo-filenaam      : "
+msgstr "Repo-filenaam: "
 
 #. Work out the first (id) and last (enabled/disalbed/count),
 #. then chop the middle (name)...
@@ -1624,10 +1529,9 @@ msgid "repo name"
 msgstr "repo-naam"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid "Total packages: {}"
+#, python-format
 msgid "Total packages: %s"
-msgstr "Totaal aantal pakketten: {}"
+msgstr "Totaal aantal pakketten: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
@@ -1881,15 +1785,11 @@ msgstr ""
 "pakket."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid ""
-#| "Display only packages that can be removed by \"{prog} autoremove\" "
-#| "command."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
 msgstr ""
-"Toon alleen pakketten die verwijderd kunen worden met het \"{prog} autoremove"
-"\" commando."
+"Toon alleen pakketten die verwijderd kunnen worden met het \"dnf autoremove\""
+" commando."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -1933,15 +1833,6 @@ msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argument {} vereist --whatrequires of --whatdepends optie"
 
 #: ../dnf/cli/commands/repoquery.py:501
-#, fuzzy
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
 msgid ""
 "No valid switch specified\n"
 "usage: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -1952,9 +1843,8 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Geen geldige schakelaar gespecificeerd\n"
-"gebruik: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
+"gebruik: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--recom"
+"mends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
 "beschrijving:\n"
 "  Print een boom van pakketten voor de gegeven pakketten."
@@ -1969,7 +1859,7 @@ msgstr "zoek ook naar pakketbeschrijving en URL"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "BEVRAAG_STRING"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -2014,20 +1904,16 @@ msgid "No matches found."
 msgstr "Geen resultaten gevonden."
 
 #: ../dnf/cli/commands/shell.py:47
-#, fuzzy
-#| msgid "run an interactive {prog} shell"
 msgid "run an interactive DNF shell"
-msgstr "voer een interactieve {prog} shell uit"
+msgstr "voer een interactieve DNF shell uit"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
 msgstr "SCRIPT"
 
 #: ../dnf/cli/commands/shell.py:69
-#, fuzzy
-#| msgid "Script to run in {prog} shell"
 msgid "Script to run in DNF shell"
-msgstr "Script om in {prog} shell te draaien"
+msgstr "Script om in DNF shell te draaien"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2140,11 +2026,9 @@ msgid "Leaving Shell"
 msgstr "Shell wordt verlaten"
 
 #: ../dnf/cli/commands/swap.py:33
-#, fuzzy
-#| msgid "run an interactive {prog} mod for remove and install one spec"
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
-"start een interactieve {prog} module voor verwijderen en installeren van een "
+"start een interactieve DNF module voor verwijderen en installeren van een "
 "specificatie"
 
 #: ../dnf/cli/commands/swap.py:37
@@ -2415,10 +2299,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Setopt argument heeft geen waarde: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Optionele pakketten:"
+msgstr "Optionele argumenten"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2433,10 +2315,8 @@ msgid "verbose operation"
 msgstr "Uitvoeren met uitgebreide meldingen"
 
 #: ../dnf/cli/option_parser.py:166
-#, fuzzy
-#| msgid "show {prog} version and exit"
 msgid "show DNF version and exit"
-msgstr "{prog} versie weergeven en afsluiten"
+msgstr "DNF versie weergeven en afsluiten"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -2512,16 +2392,12 @@ msgid "error output level"
 msgstr "error-outputniveau"
 
 #: ../dnf/cli/option_parser.py:226
-#, fuzzy
-#| msgid ""
-#| "enables {prog}'s obsoletes processing logic for upgrade or display "
-#| "capabilities that the package obsoletes for info, list and repoquery"
 msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
-"zet verouderingsbewerking logica van {prog} aan voor het upgraden of tonen "
-"van mogelijkheden die het pakket verouderen voor info, list en repoquery"
+"zet verouderingsbewerking logica van DNF aan voor het upgraden of tonen van "
+"mogelijkheden die het pakket verouderen voor info, list en repoquery"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2562,15 +2438,10 @@ msgid "disable excludepkgs"
 msgstr "zet excludepkgs uit"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "label and path to an additional repository to use (same path as in a "
-#| "baseurl), can be specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
 msgstr ""
-"Label en pad naar nog een te gebruiken repository (hetzelfde pad als in "
-"baseurl), kan meerdere keren worden opgegeven."
+"label en pad naar extra repository, kan meerdere keren worden opgegeven."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3176,7 +3047,7 @@ msgstr "Systeem"
 #: ../dnf/cli/output.py:1611
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
-msgstr ""
+msgstr "Samengevoegde transactie %d naar %d overslaan, omdat deze overlapt"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3466,16 +3337,14 @@ msgid "skipping."
 msgstr "wordt overgeslagen."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "Module of groep '%s' is niet geïnstalleerd."
+msgstr "Groep '%s' is niet geïnstalleerd."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "Groep_id '%s' bestaat niet."
+msgstr "Groep '%s' bestaat niet."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3488,10 +3357,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "Groep_id '%s' bestaat niet."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "Module of groep '%s' is niet geïnstalleerd."
+msgstr "Groep '%s' is niet geïnstalleerd."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3537,22 +3405,19 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Waarschuwing: laden '%s' niet gelukt, wordt overgeslagen."
 
 #: ../dnf/conf/read.py:61
-#, fuzzy, python-format
-#| msgid "Repository '{}': Error parsing config: {}"
+#, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr "Repository '{}': Fout bij het ontleden van configuratie: {}"
+msgstr "Repository '%s': Fout bij het ontleden van configuratie: %s"
 
 #: ../dnf/conf/read.py:66
-#, fuzzy, python-format
-#| msgid "Repository '{}' is missing name in configuration, using id."
+#, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
-msgstr "Repository '{}' mist naam in configuratie, id wordt gebruikt."
+msgstr "Repository '%s' mist naam in configuratie, id wordt gebruikt."
 
 #: ../dnf/conf/read.py:96
-#, fuzzy, python-format
-#| msgid "Bad id for repo: {}, byte = {} {}"
+#, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr "Slechte id voor repo: {}, byte = {} {}"
+msgstr "Slechte id voor repo: %s, byte = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
@@ -3639,19 +3504,15 @@ msgstr[0] "Modulair afhankelijkheid probleem:"
 msgstr[1] "Modulaire afhankelijkheid problemen:"
 
 #: ../dnf/lock.py:95
-#, fuzzy, python-format
-#| msgid ""
-#| "Malformed lock file found: %s.\n"
-#| "Ensure no other dnf/yum process is running and remove the lock file "
-#| "manually or run systemd-tmpfiles --remove dnf.conf."
+#, python-format
 msgid ""
 "Malformed lock file found: %s.\n"
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
 "Onjuist lockfile gevonden: %s.\n"
-"Kijk of geen ander dnf/yum proces draait en verwijder de lockfile handmatig "
-"of start 'systemd-tmpfiles --remove dnf.conf'."
+"Kijk of geen ander dnf proces draait en verwijder de lockfile handmatig of "
+"start 'systemd-tmpfiles --remove dnf.conf'."
 
 #: ../dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3709,10 +3570,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "Geen standaard profielen voor module {}:{}"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "Standaard profiel {} niet beschikbaar in module {}:{}"
+msgstr "Profiel {} matcht voor module {}:{}"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
