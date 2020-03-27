@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-03-25 17:38+0000\n"
+"PO-Revision-Date: 2020-03-29 10:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -197,10 +197,8 @@ msgid "Running transaction test"
 msgstr "İşlem testi gerçekleştiriliyor"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
-msgstr "İşlem testi hatası:"
+msgstr "İşlem kontrol hatası:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -215,33 +213,28 @@ msgid "Disk Requirements:"
 msgstr "Disk Gereksinimleri:"
 
 #: ../dnf/base.py:909
-#, fuzzy, python-format
-#| msgid "At least {0}MB more space needed on the {1} filesystem."
-#| msgid_plural "At least {0}MB more space needed on the {1} filesystem."
+#, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
-msgstr[1] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
+msgstr[0] "En az %dMB daha alan gerekli (%s dosya sisteminde)."
+msgstr[1] "En az %dMB daha alan gerekli (%s dosya sisteminde)."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
 msgstr "Hata Özeti"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "RPMDB {prog} dışında değiştirildi."
+msgstr "RPMDB, DNF dışında değiştirildi."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "İşlem sırasında hatalar oluştu."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "%s işlem dosyası kaldırılamadı"
+msgstr "İşlem kilidi alınamadı (%s olarak oturum açıldı)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -379,10 +372,9 @@ msgid "Package %s not installed, cannot update it."
 msgstr "%s paketi kurulu değil, güncellenemiyor."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
-msgstr "%s paketinin düşük sürümü zaten yüklenmiş, sürümü düşürülemiyor."
+msgstr "%s paketinin daha yüksek sürümü zaten yüklenmiş, güncellenemiyor."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -571,20 +563,14 @@ msgid "  Built    : %s at %s"
 msgstr "  İnşa edildi     : %s %s"
 
 #: ../dnf/cli/cli.py:192
-#, fuzzy
-#| msgid "{prog} will only download packages for the transaction."
 msgid "DNF will only download packages for the transaction."
-msgstr "{prog}, sadece işlem için paketleri indirecek."
+msgstr "DNF, sadece işlem için paketleri indirecek."
 
 #: ../dnf/cli/cli.py:194
-#, fuzzy
-#| msgid ""
-#| "{prog} will only download packages, install gpg keys, and check the "
-#| "transaction."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"{prog}, sadece paketleri indirecek, gpg anahtarlarını yükleyecek ve işlemi "
+"DNF, sadece paketleri indirecek, gpg anahtarlarını yükleyecek ve işlemi "
 "kontrol edecek."
 
 #: ../dnf/cli/cli.py:198
@@ -709,26 +695,19 @@ msgid "No such command: %s. Please use %s --help"
 msgstr "%s diye bir komut yok. Lütfen yardım için %s -- help kullanın"
 
 #: ../dnf/cli/cli.py:827
-#, fuzzy, python-format
-#| msgid ""
-#| "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
-#| "command(%s)'\""
+#, python-format
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
-"Bu bir {PROG} eklenti komutu olabilir, şunu deneyin: \"{prog} install 'dnf-"
+"Bu bir DNF eklenti komutu olabilir, şunu deneyin: \"dnf install 'dnf-"
 "command(%s)'\""
 
 #: ../dnf/cli/cli.py:830
-#, fuzzy
-#| msgid ""
-#| "It could be a {prog} plugin command, but loading of plugins is currently "
-#| "disabled."
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
-"Bu bir {prog} eklenti komutu olabilir, ancak eklentilerin yüklenmesi şu anda "
+"Bu bir DNF eklenti komutu olabilir, ancak eklentilerin yüklenmesi şu anda "
 "devre dışı."
 
 #: ../dnf/cli/cli.py:887
@@ -806,23 +785,6 @@ msgstr ""
 "çözebilir."
 
 #: ../dnf/cli/commands/__init__.py:53
-#, fuzzy
-#| msgid ""
-#| "You have enabled checking of packages via GPG keys. This is a good "
-#| "thing.\n"
-#| "However, you do not have any GPG public keys installed. You need to "
-#| "download\n"
-#| "the keys for packages you wish to install and install them.\n"
-#| "You can do that by running the command:\n"
-#| "    rpm --import public.gpg.key\n"
-#| "\n"
-#| "\n"
-#| "Alternatively you can specify the url to the key you would like to use\n"
-#| "for a repository in the 'gpgkey' option in a repository section and "
-#| "{prog}\n"
-#| "will install it for you.\n"
-#| "\n"
-#| "For more information contact your distribution or package provider."
 msgid ""
 "You have enabled checking of packages via GPG keys. This is a good thing.\n"
 "However, you do not have any GPG public keys installed. You need to "
@@ -847,7 +809,7 @@ msgstr ""
 "\n"
 "\n"
 "Alternatif olarak, repository bölümündeki 'gpgkey' seçeneğinde bir depo\n"
-"için kullanmak istediğiniz anahtarın url'sini belirtebilirsiniz ve {prog}\n"
+"için kullanmak istediğiniz anahtarın url'sini belirtebilirsiniz ve DNF\n"
 "bunu sizin için yükleyecektir.\n"
 "\n"
 "Daha fazla bilgi için dağıtım veya paket sağlayıcınıza başvurun."
@@ -907,7 +869,7 @@ msgstr "verilen değeri hangi paketin sağladığını bul"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "HERHANGİ_BİR_DİZE"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -964,10 +926,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "verilen depodaki tüm paketler üzerinde komutları çalıştır"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "DEPO-KİMLİĞİ"
+msgstr "DEPO"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -1024,16 +984,12 @@ msgstr ""
 "'<işlem-kimliği>..<işlem-kimliği>' şeklinde kullanın."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "'{}' işlem kimliğine dönüştürülemiyor.\n"
-"'<sayı>', 'last', 'last-<sayı>' şeklinde kullanın."
+"'<tam-sayı>', 'last', 'last-<pozitif-tam-sayı>' şeklinde kullanın."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1360,12 +1316,6 @@ msgid "No matching Modules to list"
 msgstr "Listelenecek eşleşen modül yok"
 
 #: ../dnf/cli/commands/module.py:128
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1373,17 +1323,11 @@ msgid ""
 "the module, you can enable the other stream."
 msgstr ""
 "Bir modülün etkin akışlarını değiştirmek mümkün değildir.\n"
-"Kurulu tüm içeriği modülden kaldırmanız ve '{prog} module reset <modül_adı>' "
+"Kurulu tüm içeriği modülden kaldırmanız ve 'dnf module reset <modül_adı>' "
 "komutunu kullanarak modülü sıfırlamanız önerilir. Modülü sıfırladıktan sonra "
-"diğer akışı yükleyebilirsiniz."
+"diğer akışı etkinleştirebilirsiniz."
 
 #: ../dnf/cli/commands/module.py:199
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1391,7 +1335,7 @@ msgid ""
 "the module, you can install the other stream."
 msgstr ""
 "Bir modülün etkin akışlarını değiştirmek mümkün değildir.\n"
-"Kurulu tüm içeriği modülden kaldırmanız ve '{prog} module reset <modül_adı>' "
+"Kurulu tüm içeriği modülden kaldırmanız ve 'dnf module reset <modül_adı>' "
 "komutunu kullanarak modülü sıfırlamanız önerilir. Modülü sıfırladıktan sonra "
 "diğer akışı yükleyebilirsiniz."
 
@@ -1408,10 +1352,8 @@ msgid "show only disabled modules"
 msgstr "sadece devre dışı bırakılmış modülleri göster"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "sadece devre dışı bırakılmış modülleri göster"
+msgstr "sadece kurulu modülleri göster"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1494,114 +1436,78 @@ msgid "disabled"
 msgstr "devre dışı"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo-id            : "
 msgid "Repo-id      : "
-msgstr "Depo-kimliği       : "
+msgstr "Depo-kimliği : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Repo-name          : "
 msgid "Repo-name    : "
-msgstr "Depo-adı           : "
+msgstr "Depo-adı     : "
 
 #: ../dnf/cli/commands/repolist.py:183
-#, fuzzy
-#| msgid "Repo-status        : "
 msgid "Repo-status  : "
-msgstr "Depo-durumu        : "
+msgstr "Depo-durumu  : "
 
 #: ../dnf/cli/commands/repolist.py:186
-#, fuzzy
-#| msgid "Repo-revision      : "
 msgid "Repo-revision: "
-msgstr "Depo-revizyonu     : "
+msgstr "Depo-revizyonu: "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo-tags          : "
 msgid "Repo-tags    : "
-msgstr "Depo-etiketleri    : "
+msgstr "Depo-etiketleri: "
 
 #: ../dnf/cli/commands/repolist.py:197
-#, fuzzy
-#| msgid "Repo-distro-tags      : "
 msgid "Repo-distro-tags: "
 msgstr "Depo-dağıtım-etiketleri: "
 
 #: ../dnf/cli/commands/repolist.py:203
-#, fuzzy
-#| msgid "Repo-updated       : "
 msgid "Repo-updated : "
-msgstr "Depo-güncellendi   : "
+msgstr "Depo-güncellendi: "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo-pkgs          : "
 msgid "Repo-pkgs    : "
-msgstr "Depo-paketleri     : "
+msgstr "Depo-paketleri: "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo-size          : "
 msgid "Repo-size    : "
-msgstr "Depo-boyutu        : "
+msgstr "Depo-boyutu  : "
 
 #: ../dnf/cli/commands/repolist.py:209
-#, fuzzy
-#| msgid "Repo-metalink      : "
 msgid "Repo-metalink: "
 msgstr "Depo-meta-bağlantısı: "
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "  Updated          : "
 msgid "  Updated    : "
-msgstr "  Güncellendi      : "
+msgstr "  Güncellendi: "
 
 #: ../dnf/cli/commands/repolist.py:216
-#, fuzzy
-#| msgid "Repo-mirrors       : "
 msgid "Repo-mirrors : "
-msgstr "Depo-yansıları       : "
+msgstr "Depo-yansıları: "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
-#, fuzzy
-#| msgid "Repo-baseurl       : "
 msgid "Repo-baseurl : "
-msgstr "Depo-temel-url'si  : "
+msgstr "Depo-temel-url'si: "
 
 #: ../dnf/cli/commands/repolist.py:229
-#, fuzzy
-#| msgid "Repo-expire        : "
 msgid "Repo-expire  : "
-msgstr "Depo-süre-bitimi   : "
+msgstr "Depo-süre-bitimi: "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
-#, fuzzy
-#| msgid "Repo-exclude       : "
 msgid "Repo-exclude : "
-msgstr "Depo-hariç-tut     : "
+msgstr "Depo-hariç-tut: "
 
 #: ../dnf/cli/commands/repolist.py:237
-#, fuzzy
-#| msgid "Repo-include       : "
 msgid "Repo-include : "
-msgstr "Depo-dahil-et      : "
+msgstr "Depo-dahil-et: "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
-#, fuzzy
-#| msgid "Repo-excluded      : "
 msgid "Repo-excluded: "
-msgstr "Depo-hariç-tutulan : "
+msgstr "Depo-hariç-tutulan: "
 
 #: ../dnf/cli/commands/repolist.py:246
-#, fuzzy
-#| msgid "Repo-filename      : "
 msgid "Repo-filename: "
-msgstr "Depo-dosya-adı     : "
+msgstr "Depo-dosya-adı: "
 
 #. Work out the first (id) and last (enabled/disalbed/count),
 #. then chop the middle (name)...
@@ -1619,10 +1525,9 @@ msgid "repo name"
 msgstr "depo ismi"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid "Total packages: {}"
+#, python-format
 msgid "Total packages: %s"
-msgstr "Toplam paketler: {}"
+msgstr "Toplam paketler: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
@@ -1871,14 +1776,10 @@ msgstr ""
 "görüntüle."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid ""
-#| "Display only packages that can be removed by \"{prog} autoremove\" "
-#| "command."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
 msgstr ""
-"Sadece \"{prog} autoremove\" komutu ile kaldırılabilen paketleri görüntüle."
+"Sadece \"dnf autoremove\" komutu ile kaldırılabilen paketleri görüntüle."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -1922,15 +1823,6 @@ msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "{} argümanı --whatrequires veya --whatdepends seçeneğini gerektiriyor"
 
 #: ../dnf/cli/commands/repoquery.py:501
-#, fuzzy
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
 msgid ""
 "No valid switch specified\n"
 "usage: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -1941,9 +1833,9 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Geçerli bir seçenek belirtilmedi\n"
-"kulllanım: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [anahtar] [--"
-"tree]\n"
+"kulllanım: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--rec"
+"ommends|--requires|--suggest|--supplements|--whatrequires] [anahtar] [--tree]"
+"\n"
 "\n"
 "açıklama:\n"
 "  Verilen paketler için paketlerin ağaç biçiminde bir listesini yazdır."
@@ -1958,7 +1850,7 @@ msgstr "paket açıklamasını ve URL'sini de ara"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "SORGU_DİZESİ"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -2003,20 +1895,16 @@ msgid "No matches found."
 msgstr "Eşleşme bulunamadı."
 
 #: ../dnf/cli/commands/shell.py:47
-#, fuzzy
-#| msgid "run an interactive {prog} shell"
 msgid "run an interactive DNF shell"
-msgstr "etkileşimli bir {prog} kabuğu çalıştır"
+msgstr "etkileşimli bir DNF kabuğu çalıştır"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
 msgstr "KOMUT-DOSYASI"
 
 #: ../dnf/cli/commands/shell.py:69
-#, fuzzy
-#| msgid "Script to run in {prog} shell"
 msgid "Script to run in DNF shell"
-msgstr "{prog} kabuğunda çalıştırılacak komut dosyası"
+msgstr "DNF kabuğunda çalıştırılacak komut dosyası"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2130,11 +2018,9 @@ msgid "Leaving Shell"
 msgstr "Kabuktan Çıkılıyor"
 
 #: ../dnf/cli/commands/swap.py:33
-#, fuzzy
-#| msgid "run an interactive {prog} mod for remove and install one spec"
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
-"bir belirtimi kaldırmak ve yüklemek için etkileşimli bir {prog} modu çalıştır"
+"bir belirtimi kaldırmak ve yüklemek için etkileşimli bir dnf modu çalıştır"
 
 #: ../dnf/cli/commands/swap.py:37
 msgid "The specs that will be removed"
@@ -2401,10 +2287,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Setopt argümanının değeri yok: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " İsteğe Bağlı Paketler:"
+msgstr "İsteğe bağlı argümanlar"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2419,10 +2303,8 @@ msgid "verbose operation"
 msgstr "ayrıntılı işlem"
 
 #: ../dnf/cli/option_parser.py:166
-#, fuzzy
-#| msgid "show {prog} version and exit"
 msgid "show DNF version and exit"
-msgstr "{prog} sürümünü göster ve çık"
+msgstr "DNF sürümünü göster ve çık"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -2498,17 +2380,13 @@ msgid "error output level"
 msgstr "hata çıktı seviyesi"
 
 #: ../dnf/cli/option_parser.py:226
-#, fuzzy
-#| msgid ""
-#| "enables {prog}'s obsoletes processing logic for upgrade or display "
-#| "capabilities that the package obsoletes for info, list and repoquery"
 msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
-"upgrade için {prog}'in artık kullanılmaz hale getirme mantığını "
-"etkinleştirir veya info, list ve repoquery için paketin artık kullanılmaz "
-"yaptığı yetenekleri görüntüler"
+"upgrade için dnf'in artık kullanılmaz hale getirme mantığını etkinleştirir "
+"veya info, list ve repoquery için paketin artık kullanılmaz yaptığı "
+"yetenekleri görüntüler"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2549,15 +2427,9 @@ msgid "disable excludepkgs"
 msgstr "excludepkgs devre dışı bırak"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "label and path to an additional repository to use (same path as in a "
-#| "baseurl), can be specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
-msgstr ""
-"ilave bir depoya ait etiket ve yol (bir temel url'deki yol ile aynı), birden "
-"çok kez belirtilebilir."
+msgstr "ilave depoya ait etiket ve yol, birden çok kez belirtilebilir."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3166,6 +3038,7 @@ msgstr "Sistem"
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
 msgstr ""
+"Üst üste bindiği için %d ile %d arasındaki birleştirilen işlem atlanıyor"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3454,16 +3327,14 @@ msgid "skipping."
 msgstr "atlanıyor."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "'%s' modül veya grubu kurulu değil."
+msgstr "'%s' grubu kurulu değil."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "'%s' diye bir grup kimliği yok."
+msgstr "'%s' diye bir grup yok."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3476,10 +3347,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "'%s' diye bir grup kimliği yok."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "'%s' modül veya grubu kurulu değil."
+msgstr "'%s' grubu kurulu değil."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3527,22 +3397,19 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Uyarı: '%s' yüklenemedi, atlanıyor."
 
 #: ../dnf/conf/read.py:61
-#, fuzzy, python-format
-#| msgid "Repository '{}': Error parsing config: {}"
+#, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr "Depo '{}': Yapılandırma ayrıştırma hatası: {}"
+msgstr "Depo '%s': Yapılandırma ayrıştırma hatası: %s"
 
 #: ../dnf/conf/read.py:66
-#, fuzzy, python-format
-#| msgid "Repository '{}' is missing name in configuration, using id."
+#, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
-msgstr "Yapılandırmada '{}' deposunun ismi eksik, kimlik kullanılıyor."
+msgstr "Yapılandırmada '%s' deposunun ismi eksik, kimlik kullanılıyor."
 
 #: ../dnf/conf/read.py:96
-#, fuzzy, python-format
-#| msgid "Bad id for repo: {}, byte = {} {}"
+#, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr "Depo için hatalı kimlik: {}, byte = {} {}"
+msgstr "Depo için hatalı kimlik: %s, byte = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
@@ -3629,19 +3496,15 @@ msgstr[0] "Modüler bağımlılık sorunu:"
 msgstr[1] "Modüler bağımlılık sorunları:"
 
 #: ../dnf/lock.py:95
-#, fuzzy, python-format
-#| msgid ""
-#| "Malformed lock file found: %s.\n"
-#| "Ensure no other dnf/yum process is running and remove the lock file "
-#| "manually or run systemd-tmpfiles --remove dnf.conf."
+#, python-format
 msgid ""
 "Malformed lock file found: %s.\n"
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
 "Hatalı biçimlendirilmiş kilit dosyası bulundu: %s.\n"
-"Başka bir dnf/yum işleminin çalışmadığından emin olun ve kilit dosyasını "
-"manuel olarak kaldırın veya 'systemd-tmpfiles --remove dnf.conf' komutunu "
+"Başka bir dnf işleminin çalışmadığından emin olun ve kilit dosyasını manuel "
+"olarak kaldırın veya 'systemd-tmpfiles --remove dnf.conf' komutunu "
 "çalıştırın."
 
 #: ../dnf/module/__init__.py:26
@@ -3699,10 +3562,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "{}:{} modülü için varsayılan profil yok"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "{} varsayılan profili {}:{} modülünde mevcut değil"
+msgstr "{} profili {}:{} modülü için eşleşmedi"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
