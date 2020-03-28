@@ -1,31 +1,31 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
-# Piotr Drąg <piotrdrag@gmail.com>, 2011,2014,2015
+# Piotr Drąg <piotrdrag@gmail.com>, 2011,2014,2015, 2020.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2018. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2019. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2018. #zanata, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2019. #zanata, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2019-12-17 02:08+0000\n"
+"PO-Revision-Date: 2020-03-29 10:38+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish (http://www.transifex.com/projects/p/dnf/language/"
-"pl/)\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
-"|| n%100>=20) ? 1 : 2);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -204,10 +204,8 @@ msgid "Running transaction test"
 msgstr "Wykonywanie testu transakcji"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
-msgstr "Błąd testu transakcji:"
+msgstr "Błąd sprawdzania transakcji:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -222,37 +220,29 @@ msgid "Disk Requirements:"
 msgstr "Wymagane miejsce na dysku:"
 
 #: ../dnf/base.py:909
-#, fuzzy, python-format
-#| msgid "At least {0}MB more space needed on the {1} filesystem."
-#| msgid_plural "At least {0}MB more space needed on the {1} filesystem."
+#, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] ""
-"Wymagany jest co najmniej {0} MB więcej miejsca w systemie plików {1}."
-msgstr[1] ""
-"Wymagane są co najmniej {0} MB więcej miejsca w systemie plików {1}."
-msgstr[2] ""
-"Wymaganych jest co najmniej {0} MB więcej miejsca w systemie plików {1}."
+msgstr[0] "Wymagany jest co najmniej %d MB więcej miejsca w systemie plików %s."
+msgstr[1] "Wymagane są co najmniej %d MB więcej miejsca w systemie plików %s."
+msgstr[2] "Wymaganych jest co najmniej %d MB więcej miejsca w systemie plików %s."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
 msgstr "Podsumowanie błędów"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "Baza danych RPM została zmieniona poza programem {prog}."
+msgstr "Baza danych RPM została zmieniona poza programem DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "Wystąpiły błędy podczas transakcji."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Usunięcie pliku transakcji %s się nie powiodło"
+msgstr "Uzyskanie blokady transakcji się nie powiodło (zalogowano jako: %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -395,12 +385,11 @@ msgid "Package %s not installed, cannot update it."
 msgstr "Pakiet %s nie jest zainstalowany, nie można go zaktualizować."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"Pakiet %s jest już zainstalowany w niższej wersji, nie można zainstalować "
-"poprzedniej wersji."
+"Pakiet %s jest już zainstalowany w wyższej wersji, nie można do "
+"zaktualizować."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -599,20 +588,14 @@ msgid "  Built    : %s at %s"
 msgstr "  Zbudowane    : %s w dniu %s"
 
 #: ../dnf/cli/cli.py:192
-#, fuzzy
-#| msgid "{prog} will only download packages for the transaction."
 msgid "DNF will only download packages for the transaction."
-msgstr "{prog} tylko pobierze pakiety dla transakcji."
+msgstr "DNF tylko pobierze pakiety dla transakcji."
 
 #: ../dnf/cli/cli.py:194
-#, fuzzy
-#| msgid ""
-#| "{prog} will only download packages, install gpg keys, and check the "
-#| "transaction."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"{prog} tylko pobierze pakiety, zainstaluje klucze GPG i sprawdzi poprawność "
+"DNF tylko pobierze pakiety, zainstaluje klucze GPG i sprawdzi poprawność "
 "transakcji."
 
 #: ../dnf/cli/cli.py:198
@@ -738,26 +721,19 @@ msgid "No such command: %s. Please use %s --help"
 msgstr "Nie ma takiego polecenia: %s. Proszę użyć „%s --help”"
 
 #: ../dnf/cli/cli.py:827
-#, fuzzy, python-format
-#| msgid ""
-#| "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
-#| "command(%s)'\""
+#, python-format
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
-"Może to być polecenie wtyczki programu {PROG}, proszę spróbować polecenia: "
-"„{prog} install 'dnf-command(%s)'”"
+"Może to być polecenie wtyczki programu DNF, proszę spróbować polecenia: „dnf "
+"install 'dnf-command(%s)'”"
 
 #: ../dnf/cli/cli.py:830
-#, fuzzy
-#| msgid ""
-#| "It could be a {prog} plugin command, but loading of plugins is currently "
-#| "disabled."
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
-"Może to być polecenie wtyczki programu {prog}, ale wczytywanie wtyczek jest "
+"Może to być polecenie wtyczki programu DNF, ale wczytywanie wtyczek jest "
 "obecnie wyłączone."
 
 #: ../dnf/cli/cli.py:887
@@ -835,23 +811,6 @@ msgstr ""
 "może naprawić problem."
 
 #: ../dnf/cli/commands/__init__.py:53
-#, fuzzy
-#| msgid ""
-#| "You have enabled checking of packages via GPG keys. This is a good "
-#| "thing.\n"
-#| "However, you do not have any GPG public keys installed. You need to "
-#| "download\n"
-#| "the keys for packages you wish to install and install them.\n"
-#| "You can do that by running the command:\n"
-#| "    rpm --import public.gpg.key\n"
-#| "\n"
-#| "\n"
-#| "Alternatively you can specify the url to the key you would like to use\n"
-#| "for a repository in the 'gpgkey' option in a repository section and "
-#| "{prog}\n"
-#| "will install it for you.\n"
-#| "\n"
-#| "For more information contact your distribution or package provider."
 msgid ""
 "You have enabled checking of packages via GPG keys. This is a good thing.\n"
 "However, you do not have any GPG public keys installed. You need to "
@@ -875,7 +834,7 @@ msgstr ""
 "\n"
 "\n"
 "Można także podać adres URL klucza, który ma być używany dla repozytorium w\n"
-"opcji „gpgkey” w sekcji repozytorium, a program {prog} go zainstaluje.\n"
+"opcji „gpgkey” w sekcji repozytorium, a program DNF go zainstaluje.\n"
 "\n"
 "Aby dowiedzieć się więcej, proszę skontaktować się z dostawcą dystrybucji\n"
 "lub pakietu."
@@ -935,7 +894,7 @@ msgstr "wyszukuje pakiet dostarczający podaną wartość"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "JAKIŚ_CIĄG"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -992,10 +951,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "wykonuje polecenia na wszystkich pakietach w podanym repozytorium"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "IDENTYFIKATOR-REPOZYTORIUM"
+msgstr "REPOZYTORIUM"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -1052,16 +1009,12 @@ msgstr ""
 "Należy użyć „<identyfikator-transakcji>..<identyfikator-transakcji>”."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Nie można przekonwertować „{}” na identyfikator transakcji.\n"
-"Proszę użyć „<liczba>”, „last”, „last-<liczba>”."
+"Proszę użyć „<liczba-całkowita>”, „last”, „last-<dodatnia-liczba-całkowita>”."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1388,12 +1341,6 @@ msgid "No matching Modules to list"
 msgstr "Brak modułów pasujących do listy"
 
 #: ../dnf/cli/commands/module.py:128
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1401,17 +1348,11 @@ msgid ""
 "the module, you can enable the other stream."
 msgstr ""
 "Nie można przełączyć włączonych strumieni modułu.\n"
-"Zalecane jest usunięcie całej zainstalowanej zawartości z modułu "
-"i przywrócenie go za pomocą polecenia „{prog} module reset <nazwa_modułu>”. "
-"Po przywróceniu modułu można zainstalować drugi strumień."
+"Zalecane jest usunięcie całej zainstalowanej zawartości z modułu i "
+"przywrócenie go za pomocą polecenia „dnf module reset <nazwa_modułu>”. Po "
+"przywróceniu modułu można włączyć drugi strumień."
 
 #: ../dnf/cli/commands/module.py:199
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1419,9 +1360,9 @@ msgid ""
 "the module, you can install the other stream."
 msgstr ""
 "Nie można przełączyć włączonych strumieni modułu.\n"
-"Zalecane jest usunięcie całej zainstalowanej zawartości z modułu "
-"i przywrócenie go za pomocą polecenia „{prog} module reset <nazwa_modułu>”. "
-"Po przywróceniu modułu można zainstalować drugi strumień."
+"Zalecane jest usunięcie całej zainstalowanej zawartości z modułu i "
+"przywrócenie go za pomocą polecenia „dnf module reset <nazwa_modułu>”. Po "
+"przywróceniu modułu można zainstalować drugi strumień."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1436,10 +1377,8 @@ msgid "show only disabled modules"
 msgstr "wyświetla tylko wyłączone moduły"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "wyświetla tylko wyłączone moduły"
+msgstr "wyświetla tylko zainstalowane moduły"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1522,112 +1461,76 @@ msgid "disabled"
 msgstr "wyłączone"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo-id            : "
 msgid "Repo-id      : "
 msgstr "Identyfikator repozytorium        : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Repo-name          : "
 msgid "Repo-name    : "
 msgstr "Nazwa repozytorium                : "
 
 #: ../dnf/cli/commands/repolist.py:183
-#, fuzzy
-#| msgid "Repo-status        : "
 msgid "Repo-status  : "
 msgstr "Stan repozytorium                 : "
 
 #: ../dnf/cli/commands/repolist.py:186
-#, fuzzy
-#| msgid "Repo-revision      : "
 msgid "Repo-revision: "
 msgstr "Wersja repozytorium               : "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo-tags          : "
 msgid "Repo-tags    : "
 msgstr "Znaczniki repozytorium            : "
 
 #: ../dnf/cli/commands/repolist.py:197
-#, fuzzy
-#| msgid "Repo-distro-tags      : "
 msgid "Repo-distro-tags: "
 msgstr "Znaczniki dystrybucji repozytorium: "
 
 #: ../dnf/cli/commands/repolist.py:203
-#, fuzzy
-#| msgid "Repo-updated       : "
 msgid "Repo-updated : "
 msgstr "Aktualizacje repozytorium         : "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo-pkgs          : "
 msgid "Repo-pkgs    : "
 msgstr "Pakiety repozytorium              : "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo-size          : "
 msgid "Repo-size    : "
 msgstr "Rozmiar repozytorium              : "
 
 #: ../dnf/cli/commands/repolist.py:209
-#, fuzzy
-#| msgid "Repo-metalink      : "
 msgid "Repo-metalink: "
 msgstr "Metaodnośnik repozytorium         : "
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "  Updated          : "
 msgid "  Updated    : "
 msgstr "  Zaktualizowano                  : "
 
 #: ../dnf/cli/commands/repolist.py:216
-#, fuzzy
-#| msgid "Repo-mirrors       : "
 msgid "Repo-mirrors : "
 msgstr "Serwery lustrzane repozytorium    : "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
-#, fuzzy
-#| msgid "Repo-baseurl       : "
 msgid "Repo-baseurl : "
 msgstr "Podstawowy adres URL repozytorium : "
 
 #: ../dnf/cli/commands/repolist.py:229
-#, fuzzy
-#| msgid "Repo-expire        : "
 msgid "Repo-expire  : "
 msgstr "Wygaszenie repozytorium           : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
-#, fuzzy
-#| msgid "Repo-exclude       : "
 msgid "Repo-exclude : "
 msgstr "Wykluczenia z repozytorium        : "
 
 #: ../dnf/cli/commands/repolist.py:237
-#, fuzzy
-#| msgid "Repo-include       : "
 msgid "Repo-include : "
 msgstr "Dołączone z repozytorium          : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
-#, fuzzy
-#| msgid "Repo-excluded      : "
 msgid "Repo-excluded: "
 msgstr "Wykluczenia z repozytorium        : "
 
 #: ../dnf/cli/commands/repolist.py:246
-#, fuzzy
-#| msgid "Repo-filename      : "
 msgid "Repo-filename: "
 msgstr "Nazwa pliku repozytorium          : "
 
@@ -1647,10 +1550,9 @@ msgid "repo name"
 msgstr "nazwa repozytorium"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid "Total packages: {}"
+#, python-format
 msgid "Total packages: %s"
-msgstr "Razem pakietów: {}"
+msgstr "Razem pakietów: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
@@ -1898,15 +1800,10 @@ msgstr ""
 "zainstalowanego pakietu."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid ""
-#| "Display only packages that can be removed by \"{prog} autoremove\" "
-#| "command."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
 msgstr ""
-"Wyświetla tylko pakiety mogące zostać usunięte poleceniem „{prog} "
-"autoremove”."
+"Wyświetla tylko pakiety mogące zostać usunięte poleceniem „dnf autoremove”."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -1950,15 +1847,6 @@ msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "parametr {} wymaga opcji --whatrequires lub --whatdepends"
 
 #: ../dnf/cli/commands/repoquery.py:501
-#, fuzzy
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
 msgid ""
 "No valid switch specified\n"
 "usage: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -1969,9 +1857,8 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Nie podano prawidłowego przełącznika\n"
-"użycie: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [klucz] [--"
-"tree]\n"
+"użycie: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--recomm"
+"ends|--requires|--suggest|--supplements|--whatrequires] [klucz] [--tree]\n"
 "\n"
 "opis:\n"
 "  Wyświetla drzewo dla podanych pakietów."
@@ -1986,7 +1873,7 @@ msgstr "wyszukuje także opis i adres URL pakietu"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "CIĄG_ZAPYTANIA"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -2031,20 +1918,16 @@ msgid "No matches found."
 msgstr "Brak wyników."
 
 #: ../dnf/cli/commands/shell.py:47
-#, fuzzy
-#| msgid "run an interactive {prog} shell"
 msgid "run an interactive DNF shell"
-msgstr "uruchamia interaktywną powłokę {prog}"
+msgstr "uruchamia interaktywną powłokę DNF"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
 msgstr "SKRYPT"
 
 #: ../dnf/cli/commands/shell.py:69
-#, fuzzy
-#| msgid "Script to run in {prog} shell"
 msgid "Script to run in DNF shell"
-msgstr "Skrypt uruchamiany w powłoce {prog}"
+msgstr "Skrypt uruchamiany w powłoce DNF"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2159,11 +2042,9 @@ msgid "Leaving Shell"
 msgstr "Opuszczanie powłoki"
 
 #: ../dnf/cli/commands/swap.py:33
-#, fuzzy
-#| msgid "run an interactive {prog} mod for remove and install one spec"
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
-"uruchamia interaktywny moduł {prog} do usunięcia i zainstalowania jednej "
+"uruchamia interaktywny moduł DNF do usunięcia i zainstalowania jednej "
 "specyfikacji"
 
 #: ../dnf/cli/commands/swap.py:37
@@ -2431,10 +2312,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Parametr setopt nie ma wartości: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Pakiety opcjonalne:"
+msgstr "Parametry opcjonalne"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2449,10 +2328,8 @@ msgid "verbose operation"
 msgstr "dużo komunikatów"
 
 #: ../dnf/cli/option_parser.py:166
-#, fuzzy
-#| msgid "show {prog} version and exit"
 msgid "show DNF version and exit"
-msgstr "wyświetla wersję programu {prog} i kończy działanie"
+msgstr "wyświetla wersję programu DNF i kończy działanie"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -2528,17 +2405,13 @@ msgid "error output level"
 msgstr "poziom wyjścia błędów"
 
 #: ../dnf/cli/option_parser.py:226
-#, fuzzy
-#| msgid ""
-#| "enables {prog}'s obsoletes processing logic for upgrade or display "
-#| "capabilities that the package obsoletes for info, list and repoquery"
 msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
-"włącza mechanikę przetwarzania zastąpień programu {prog} do aktualizacji lub "
-"wyświetlenia możliwości, które pakiet zastępuje dla parametrów info, list "
-"i repoquery"
+"włącza mechanikę przetwarzania zastąpień programu DNF do aktualizacji lub "
+"wyświetlenia możliwości, które pakiet zastępuje dla parametrów info, list i "
+"repoquery"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2581,15 +2454,10 @@ msgid "disable excludepkgs"
 msgstr "wyłącza wykluczenia pakietów"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "label and path to an additional repository to use (same path as in a "
-#| "baseurl), can be specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
 msgstr ""
-"etykieta i ścieżka do dodatkowego repozytorium (ta sama ścieżka, co "
-"w podstawowym adresie URL), może być podawane wiele razy."
+"etykieta i ścieżka do dodatkowego repozytorium, może być podawane wiele razy."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3200,7 +3068,7 @@ msgstr "System"
 #: ../dnf/cli/output.py:1611
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
-msgstr ""
+msgstr "Pomijanie połączonej transakcji %d do %d, jako że się pokrywa"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3489,16 +3357,14 @@ msgid "skipping."
 msgstr "pomijanie."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "Moduł lub grupa „%s” nie jest zainstalowana."
+msgstr "Grupa „%s” nie jest zainstalowana."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "Identyfikator grupy „%s” nie istnieje."
+msgstr "Grupa „%s” nie istnieje."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3511,10 +3377,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "Identyfikator grupy „%s” nie istnieje."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "Moduł lub grupa „%s” nie jest zainstalowana."
+msgstr "Grupa „%s” nie jest zainstalowana."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3563,23 +3428,19 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Ostrzeżenie: wczytanie „%s” się nie powiodło, pomijanie."
 
 #: ../dnf/conf/read.py:61
-#, fuzzy, python-format
-#| msgid "Repository '{}': Error parsing config: {}"
+#, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr "Repozytorium „{}”: błąd podczas przetwarzania konfiguracji: {}"
+msgstr "Repozytorium „%s”: błąd podczas przetwarzania konfiguracji: %s"
 
 #: ../dnf/conf/read.py:66
-#, fuzzy, python-format
-#| msgid "Repository '{}' is missing name in configuration, using id."
+#, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
-msgstr ""
-"Repozytorium „{}” nie ma nazwy w konfiguracji, używanie identyfikatora."
+msgstr "Repozytorium „%s” nie ma nazwy w konfiguracji, używanie identyfikatora."
 
 #: ../dnf/conf/read.py:96
-#, fuzzy, python-format
-#| msgid "Bad id for repo: {}, byte = {} {}"
+#, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr "Błędny identyfikator dla repozytorium: {}, bajt = {} {}"
+msgstr "Błędny identyfikator dla repozytorium: %s, bajt = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
@@ -3668,18 +3529,14 @@ msgstr[1] "Problemy z modularną zależnością:"
 msgstr[2] "Problemy z modularną zależnością:"
 
 #: ../dnf/lock.py:95
-#, fuzzy, python-format
-#| msgid ""
-#| "Malformed lock file found: %s.\n"
-#| "Ensure no other dnf/yum process is running and remove the lock file "
-#| "manually or run systemd-tmpfiles --remove dnf.conf."
+#, python-format
 msgid ""
 "Malformed lock file found: %s.\n"
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
 "Odnaleziono uszkodzony plik blokady: %s.\n"
-"Proszę się upewnić, że żaden inny proces dnf/yum nie jest uruchomiony oraz "
+"Proszę się upewnić, że żaden inny proces dnf nie jest uruchomiony oraz "
 "ręcznie usunąć plik blokady lub wykonać polecenie „systemd-tmpfiles --remove "
 "dnf.conf”."
 
@@ -3738,10 +3595,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "Brak domyślnych profili dla modułu {}:{}"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "Domyślny profil {} nie jest dostępny w module {}:{}"
+msgstr "Profil {} nie pasuje do modułu {}:{}"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
