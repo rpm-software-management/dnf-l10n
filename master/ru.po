@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-03-30 09:18-0400\n"
-"PO-Revision-Date: 2020-04-01 22:16+0000\n"
+"PO-Revision-Date: 2020-04-04 17:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ru/>\n"
@@ -603,11 +603,15 @@ msgid ""
 "the module using '{prog} module reset <module_name>' command. After you "
 "reset the module, you can install the other stream."
 msgstr ""
+"Невозможно переключить активированные потоки модуля.\n"
+"Рекомендуется удалить из модуля всё установленное и обновить модуль с "
+"помощью команды «{prog} module reset <имя_модуля>». После обновления модуля "
+"можно установить другой поток."
 
 #: dnf/cli/cli.py:209
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} лишь загрузит пакеты для транзакции."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -615,6 +619,7 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} только загрузит пакеты, установит ключи gpg и проверит транзакцию."
 
 #: dnf/cli/cli.py:216
 msgid "Operation aborted."
