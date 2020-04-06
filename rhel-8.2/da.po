@@ -1,29 +1,29 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Anders J. Sørensen, 2014
 # Kris Thomsen <lakristho@gmail.com>, 2011,2014-2015
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# scootergrisen <scootergrisen@gmail.com>, 2017. #zanata
-# scootergrisen <scootergrisen@gmail.com>, 2018. #zanata
-# scootergrisen <scootergrisen@gmail.com>, 2019. #zanata
+# scootergrisen <scootergrisen@gmail.com>, 2017. #zanata, 2020.
+# scootergrisen <scootergrisen@gmail.com>, 2018. #zanata, 2020.
+# scootergrisen <scootergrisen@gmail.com>, 2019. #zanata, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2019-12-10 10:07+0000\n"
+"PO-Revision-Date: 2020-04-06 10:40+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish (http://www.transifex.com/projects/p/dnf/language/"
-"da/)\n"
+"Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.11.3\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -200,10 +200,8 @@ msgid "Running transaction test"
 msgstr "Kører transaktionstest"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
-msgstr "Fejl ved test af transaktion:"
+msgstr "Fejl ved tjek af transaktion:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -218,23 +216,19 @@ msgid "Disk Requirements:"
 msgstr "Diskkrav:"
 
 #: ../dnf/base.py:909
-#, fuzzy, python-format
-#| msgid "At least {0}MB more space needed on the {1} filesystem."
-#| msgid_plural "At least {0}MB more space needed on the {1} filesystem."
+#, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] "Der kræves mindst {0}MB mere plads på {1}-filsystemet."
-msgstr[1] "Der kræves mindst {0}MB mere plads på {1}-filsystemet."
+msgstr[0] "Der kræves mindst %dMB mere plads på %s-filsystemet."
+msgstr[1] "Der kræves mindst %dMB mere plads på %s-filsystemet."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
 msgstr "Fejlopsummering"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "RPMDB ændret udenfor {prog}."
+msgstr "RPMDB ændret udenfor DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
@@ -582,21 +576,14 @@ msgid "  Built    : %s at %s"
 msgstr "  Bygget    : %s på %s"
 
 #: ../dnf/cli/cli.py:192
-#, fuzzy
-#| msgid "{prog} will only download packages for the transaction."
 msgid "DNF will only download packages for the transaction."
-msgstr "{prog} vil downloade pakker for transaktionen."
+msgstr "DNF vil downloade pakker for transaktionen."
 
 #: ../dnf/cli/cli.py:194
-#, fuzzy
-#| msgid ""
-#| "{prog} will only download packages, install gpg keys, and check the "
-#| "transaction."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"{prog} vil kun downloade pakker, installere gpg-nøgler og tjekke "
-"transaktionen."
+"DNF vil kun downloade pakker, installere gpg-nøgler og tjekke transaktionen."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
@@ -720,26 +707,18 @@ msgid "No such command: %s. Please use %s --help"
 msgstr "Ingen sådan kommando: %s. Brug %s --help"
 
 #: ../dnf/cli/cli.py:827
-#, fuzzy, python-format
-#| msgid ""
-#| "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
-#| "command(%s)'\""
+#, python-format
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
-"Det kan være en {PROG}-plugin-kommando, prøv: \"{prog} install 'dnf-"
-"command(%s)'\""
+"Det kan være en DNF-plugin-kommando, prøv: \"dnf install 'dnf-command(%s)'\""
 
 #: ../dnf/cli/cli.py:830
-#, fuzzy
-#| msgid ""
-#| "It could be a {prog} plugin command, but loading of plugins is currently "
-#| "disabled."
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
-"Det kan være en {prog}-plugin-kommando, men indlæsning af plugins er "
+"Det kan være en DNF-plugin-kommando, men indlæsning af plugins er "
 "deaktiveret på nuværende tidspunkt."
 
 #: ../dnf/cli/cli.py:887
@@ -817,23 +796,6 @@ msgstr ""
 "'%s'."
 
 #: ../dnf/cli/commands/__init__.py:53
-#, fuzzy
-#| msgid ""
-#| "You have enabled checking of packages via GPG keys. This is a good "
-#| "thing.\n"
-#| "However, you do not have any GPG public keys installed. You need to "
-#| "download\n"
-#| "the keys for packages you wish to install and install them.\n"
-#| "You can do that by running the command:\n"
-#| "    rpm --import public.gpg.key\n"
-#| "\n"
-#| "\n"
-#| "Alternatively you can specify the url to the key you would like to use\n"
-#| "for a repository in the 'gpgkey' option in a repository section and "
-#| "{prog}\n"
-#| "will install it for you.\n"
-#| "\n"
-#| "For more information contact your distribution or package provider."
 msgid ""
 "You have enabled checking of packages via GPG keys. This is a good thing.\n"
 "However, you do not have any GPG public keys installed. You need to "
@@ -857,8 +819,8 @@ msgstr ""
 "\n"
 "\n"
 "Alternativt kan du angive url'en til den nøgle du vil bruge\n"
-"til et softwarearkiv i 'gpgkey'-tilvalget i en softwarearkiv-sektion og "
-"{prog} installerer det for dig.\n"
+"til et softwarearkiv i 'gpgkey'-tilvalget i en softwarearkiv-sektion og DNF "
+"installerer det for dig.\n"
 "\n"
 "Kontakt din distributions- eller pakkeudbyder, for mere information."
 
@@ -917,7 +879,7 @@ msgstr "find ud af hvilke pakke som leverer den givne værdi"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "EN_STRENG"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -974,10 +936,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "kør kommandoer oven på alle pakker i givne softwarearkiv"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "SOFTWAREKILDEID"
+msgstr "SOFTWAREKILDE"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -1034,16 +994,12 @@ msgstr ""
 "Brug '<transaktions-id>..<transaktions-id>'."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Kan ikke konvertere '{}' til transaktions-ID.\n"
-"Brug '<nummer>', 'last', 'last-<nummer>'."
+"Brug '<heltal>', 'last', 'last-<positivt-heltal>'."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1368,12 +1324,6 @@ msgid "No matching Modules to list"
 msgstr "Ingen matchende moduler at opliste"
 
 #: ../dnf/cli/commands/module.py:128
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1382,16 +1332,10 @@ msgid ""
 msgstr ""
 "Det er ikke muligt at skifte aktiverede strømme for et modul.\n"
 "Det anbefales at fjerne alt installeret indhold fra modulet, og nulstille "
-"modulet med '{prog} module reset <modulnavn>'-kommandoen. Når du har "
-"nulstillet moduler, så kan du installere den anden strøm."
+"modulet med 'dnf module reset <modulnavn>'-kommandoen. Når du har nulstillet "
+"moduler, så kan du aktivere den anden strøm."
 
 #: ../dnf/cli/commands/module.py:199
-#, fuzzy
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -1400,8 +1344,8 @@ msgid ""
 msgstr ""
 "Det er ikke muligt at skifte aktiverede strømme for et modul.\n"
 "Det anbefales at fjerne alt installeret indhold fra modulet, og nulstille "
-"modulet med '{prog} module reset <modulnavn>'-kommandoen. Når du har "
-"nulstillet moduler, så kan du installere den anden strøm."
+"modulet med 'dnf module reset <modulnavn>'-kommandoen. Når du har nulstillet "
+"moduler, så kan du installere den anden strøm."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1416,10 +1360,8 @@ msgid "show only disabled modules"
 msgstr "vis kun deaktiverede moduler"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "vis kun deaktiverede moduler"
+msgstr "vis kun installerede moduler"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
