@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-#
+# 
 # Translators:
 # Artem Vinokurov <vinokurov@tortstudio.com>, 2015
 # Igor Gnatenko <i.gnatenko.brain@gmail.com>, 2014
@@ -19,16 +19,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-04 09:18-0400\n"
-"PO-Revision-Date: 2020-04-04 17:40+0000\n"
+"PO-Revision-Date: 2020-04-09 13:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.11.3\n"
 
 #: dnf/automatic/emitter.py:31
@@ -738,6 +738,8 @@ msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Эту команду нужно запускать с привилегиями суперпользователя (на большинстве "
+"систем - под именем пользователя root)."
 
 #: dnf/cli/cli.py:843
 #, python-format
@@ -750,6 +752,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Это, возможно, команда подключаемого модуля {PROG}, попробуйте: «{prog} "
+"install 'dnf-command(%s)'»"
 
 #: dnf/cli/cli.py:850
 #, python-brace-format
@@ -757,6 +761,8 @@ msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Это, возможно, команда подключаемого модуля {prog}, но загрузка модулей "
+"сейчас отключена."
 
 #: dnf/cli/cli.py:908
 msgid ""
@@ -848,6 +854,19 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Вы включили проверку пакетов с помощью ключей GPG. Это хорошо.\n"
+"Однако, вы не установили открытые ключи GPG. Вам необходимо загрузить\n"
+"ключи для пакетов, которые вы хотите установить, и установить их.\n"
+"Вы можете сделать это с помощью команды:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Или же вы можете указать адрес URL ключа, который хотели бы использовать\n"
+"для репозитория, в параметре «gpgkey» в разделе репозитория, и {prog}\n"
+"установит его.\n"
+"\n"
+"За дополнительной информацией обращайтесь к поставщику вашего дистрибутива "
+"или пакета."
 
 #: dnf/cli/commands/__init__.py:80
 #, python-format
@@ -993,7 +1012,7 @@ msgstr "КОМАНДА"
 #: dnf/cli/commands/__init__.py:814
 #, python-brace-format
 msgid "{prog} command to get help for"
-msgstr ""
+msgstr "команда {prog}, для которой нужна справка"
 
 #: dnf/cli/commands/__init__.py:831
 msgid "display, or use, the transaction history"
@@ -1012,10 +1031,9 @@ msgid "No transaction ID or package name given."
 msgstr "Не задан идентификатор транзакции или имя пакета."
 
 #: dnf/cli/commands/__init__.py:879
-#, fuzzy, python-format
-#| msgid "You don't have access to the history DB."
+#, python-format
 msgid "You don't have access to the history DB: %s"
-msgstr "Нет доступа к спискам предыдущих действий."
+msgstr "У вас нет доступа к базе данных истории: %s"
 
 #: dnf/cli/commands/__init__.py:891
 #, python-format
@@ -1111,7 +1129,7 @@ msgstr "Псевдонимов удалено: %s"
 #: dnf/cli/commands/alias.py:155
 #, python-format
 msgid "%s, alias %s=\"%s\""
-msgstr ""
+msgstr "%s, псевдоним %s=«%s»"
 
 #: dnf/cli/commands/alias.py:157
 #, python-format
@@ -1302,7 +1320,7 @@ msgstr "показывать только доступные группы"
 
 #: dnf/cli/commands/group.py:329
 msgid "show also ID of groups"
-msgstr ""
+msgstr "показывать также идентификаторы групп"
 
 #: dnf/cli/commands/group.py:331
 msgid "available subcommands: {} (default), {}"
