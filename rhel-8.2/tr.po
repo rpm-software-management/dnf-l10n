@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-04-09 13:40+0000\n"
+"PO-Revision-Date: 2020-04-11 15:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/tr/>\n"
@@ -276,7 +276,7 @@ msgstr "Açılamıyor: {}"
 #: ../dnf/base.py:1224
 #, python-format
 msgid "Public key for %s is not installed"
-msgstr "%s için genel anahtar yüklü değil"
+msgstr "%s için genel anahtar kurulu değil"
 
 #: ../dnf/base.py:1228
 #, python-format
@@ -354,12 +354,12 @@ msgstr "%s paketi kurulu değil, sürümü düşürülemiyor."
 #: ../dnf/base.py:1902
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr "%s paketinin düşük sürümü zaten yüklenmiş, sürümü düşürülemiyor."
+msgstr "%s paketinin düşük sürümü zaten kurulu, sürümü düşürülemiyor."
 
 #: ../dnf/base.py:1925
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr "%s paketi kurulu değil, yeniden yüklenemiyor."
+msgstr "%s paketi kurulu değil, yeniden kurulamıyor."
 
 #: ../dnf/base.py:1940
 #, python-format
@@ -374,7 +374,7 @@ msgstr "%s paketi kurulu değil, güncellenemiyor."
 #: ../dnf/base.py:1955
 #, python-format
 msgid "Package %s of higher version already installed, cannot update it."
-msgstr "%s paketinin daha yüksek sürümü zaten yüklenmiş, güncellenemiyor."
+msgstr "%s paketinin daha yüksek sürümü zaten kurulu, güncellenemiyor."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -384,7 +384,7 @@ msgstr "%s paketi mevcut, ama kurulu değil."
 #: ../dnf/base.py:2001
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr "%s paketi mevcut, ama farklı bir mimari için yüklenmiş."
+msgstr "%s paketi mevcut, ama farklı bir mimari için kurulmuş."
 
 #: ../dnf/base.py:2026 ../dnf/base.py:2222 ../dnf/cli/cli.py:651
 #: ../dnf/cli/cli.py:682
@@ -411,7 +411,7 @@ msgstr "%s argümanı için paketler mevcut, ama kurulu değil."
 #: ../dnf/base.py:2156
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "%s paketinin zaten en düşük sürümü yüklenmiş, sürümü düşürülemiyor."
+msgstr "%s paketinin zaten en düşük sürümü kurulu, sürümü düşürülemiyor."
 
 #: ../dnf/base.py:2214
 msgid "Action not handled: {}"
@@ -455,7 +455,7 @@ msgstr "GPG Anahtarları şöyle yapılandırıldı: %s"
 #: ../dnf/base.py:2307
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
-msgstr "%s'deki GPG anahtarı (0x%s) zaten yüklendi"
+msgstr "%s'deki GPG anahtarı (0x%s) zaten kurulu"
 
 #: ../dnf/base.py:2340
 msgid "The key has been approved."
@@ -476,7 +476,7 @@ msgstr "Anahtar başarıyla içeri aktarıldı"
 
 #: ../dnf/base.py:2377
 msgid "Didn't install any keys"
-msgstr "Hiç anahtar yüklenmedi"
+msgstr "Hiç anahtar kurulmadı"
 
 #: ../dnf/base.py:2380
 #, python-format
@@ -485,7 +485,7 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
-"\"%s\" deposu için listelenen GPG anahtarları zaten yüklü ama bu paket için "
+"\"%s\" deposu için listelenen GPG anahtarları zaten kurulu ama bu paket için "
 "doğru değil.\n"
 "Bu depo için doğru anahtar URL'lerinin yapılandırıldığından emin olun."
 
@@ -555,7 +555,7 @@ msgstr "%s, orijinal argümanlar kullanılarak."
 #: ../dnf/cli/cli.py:136
 #, python-format
 msgid "  Installed: %s-%s at %s"
-msgstr "  Yüklendi: %s-%s, %s tarihinde"
+msgstr "  Kuruldu: %s-%s, %s tarihinde"
 
 #: ../dnf/cli/cli.py:138
 #, python-format
@@ -570,8 +570,8 @@ msgstr "DNF, sadece işlem için paketleri indirecek."
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
-"DNF, sadece paketleri indirecek, gpg anahtarlarını yükleyecek ve işlemi "
-"kontrol edecek."
+"DNF, sadece paketleri indirecek, gpg anahtarlarını kuracak ve işlemi kontrol "
+"edecek."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
@@ -802,15 +802,15 @@ msgid ""
 msgstr ""
 "Paketlerin GPG anahtarları ile kontrol edilmesini etkinleştirdiniz. Bu iyi "
 "birşey.\n"
-"Ancak, yüklü GPG genel anahtarınız yok. Kurmak istediğiniz paketlerin\n"
-"anahtarlarını indirmeniz ve yüklemeniz gerekmektedir.\n"
+"Ancak, kurulu GPG genel anahtarınız yok. Kurmak istediğiniz paketlerin\n"
+"anahtarlarını indirmeniz ve kurmanız gerekmektedir.\n"
 "Bunu aşağıdaki komutu çalıştırarak yapabilirsiniz:\n"
 "    rpm --import genel.gpg.anahtarı\n"
 "\n"
 "\n"
 "Alternatif olarak, repository bölümündeki 'gpgkey' seçeneğinde bir depo\n"
 "için kullanmak istediğiniz anahtarın url'sini belirtebilirsiniz ve DNF\n"
-"bunu sizin için yükleyecektir.\n"
+"bunu sizin için kuracaktır.\n"
 "\n"
 "Daha fazla bilgi için dağıtım veya paket sağlayıcınıza başvurun."
 
@@ -890,7 +890,7 @@ msgstr "Mevcut paket yok."
 
 #: ../dnf/cli/commands/__init__.py:378
 msgid "No packages marked for install."
-msgstr "Yükleme için işaretlenmiş paket yok."
+msgstr "Kurmak için işaretlenmiş paket yok."
 
 #: ../dnf/cli/commands/__init__.py:414
 msgid "No package installed."
@@ -911,11 +911,11 @@ msgstr "Kurulu %s%s paketi mevcut değil."
 #: ../dnf/cli/commands/__init__.py:469 ../dnf/cli/commands/__init__.py:578
 #: ../dnf/cli/commands/__init__.py:621 ../dnf/cli/commands/__init__.py:668
 msgid "No package installed from the repository."
-msgstr "Depodan hiçbir paket yüklenmedi."
+msgstr "Depodan hiçbir paket kurulmadı."
 
 #: ../dnf/cli/commands/__init__.py:532 ../dnf/cli/commands/reinstall.py:101
 msgid "No packages marked for reinstall."
-msgstr "Yeniden yüklemek için işaretlenmiş paketler yok."
+msgstr "Yeniden kurmak için işaretlenmiş paketler yok."
 
 #: ../dnf/cli/commands/__init__.py:718 ../dnf/cli/commands/upgrade.py:89
 msgid "No packages marked for upgrade."
@@ -1075,7 +1075,7 @@ msgstr "Takma ad için eşleşme yok: %s"
 msgid ""
 "remove all unneeded packages that were originally installed as dependencies"
 msgstr ""
-"aslen bağımlılık olarak yüklenen artık gereksinim duyulmayan tüm paketleri "
+"aslen bağımlılık olarak kurulan artık gereksinim duyulmayan tüm paketleri "
 "kaldır"
 
 #: ../dnf/cli/commands/autoremove.py:46 ../dnf/cli/commands/remove.py:59
@@ -1247,7 +1247,7 @@ msgstr "sisteminize bir paket ya da paketler kurun"
 
 #: ../dnf/cli/commands/install.py:53
 msgid "Package to install"
-msgstr "Yüklenecek paket"
+msgstr "Kurulacak paket"
 
 #: ../dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
@@ -1274,23 +1274,23 @@ msgstr "Tüm meta veri dosyaları için önbellek dosyaları oluşturuluyor."
 #: ../dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
 msgstr ""
-"kurulu paketleri kullanıcı tarafından yüklendi olarak işaretle ya da "
+"kurulu paketleri kullanıcı tarafından kuruldu olarak işaretle ya da "
 "işaretini kaldır."
 
 #: ../dnf/cli/commands/mark.py:49
 #, python-format
 msgid "%s marked as user installed."
-msgstr "%s kullanıcı tarafından yüklendi olarak işaretlendi."
+msgstr "%s kullanıcı tarafından kuruldu olarak işaretlendi."
 
 #: ../dnf/cli/commands/mark.py:53
 #, python-format
 msgid "%s unmarked as user installed."
-msgstr "%s kullanıcı tarafından yüklendi işareti kaldırıldı."
+msgstr "%s kullanıcı tarafından kuruldu işareti kaldırıldı."
 
 #: ../dnf/cli/commands/mark.py:57
 #, python-format
 msgid "%s marked as group installed."
-msgstr "%s grup şeklinde yüklü olarak işaretlendi."
+msgstr "%s grup şeklinde kurulu olarak işaretlendi."
 
 #: ../dnf/cli/commands/mark.py:82 ../dnf/cli/commands/shell.py:121
 #: ../dnf/cli/commands/shell.py:230
@@ -1337,7 +1337,7 @@ msgstr ""
 "Bir modülün etkin akışlarını değiştirmek mümkün değildir.\n"
 "Kurulu tüm içeriği modülden kaldırmanız ve 'dnf module reset <modül_adı>' "
 "komutunu kullanarak modülü sıfırlamanız önerilir. Modülü sıfırladıktan sonra "
-"diğer akışı yükleyebilirsiniz."
+"diğer akışı kurabilirsiniz."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1361,11 +1361,11 @@ msgstr "profil içeriğini göster"
 
 #: ../dnf/cli/commands/reinstall.py:38
 msgid "reinstall a package"
-msgstr "paketi yeniden yükle"
+msgstr "paketi yeniden kur"
 
 #: ../dnf/cli/commands/reinstall.py:42
 msgid "Package to reinstall"
-msgstr "Yeniden yüklenecek paket"
+msgstr "Yeniden kurulacak paket"
 
 #: ../dnf/cli/commands/remove.py:46
 msgid "remove a package or packages from your system"
@@ -1377,7 +1377,7 @@ msgstr "yinelenen paketleri kaldır"
 
 #: ../dnf/cli/commands/remove.py:58
 msgid "remove installonly packages over the limit"
-msgstr "sınırın üzerindeki sadece-yükle (installonly) paketlerini kaldır"
+msgstr "sınırın üzerindeki sadece-kur (installonly) paketlerini kaldır"
 
 #: ../dnf/cli/commands/remove.py:94
 msgid "No duplicated packages found for removal."
@@ -1385,7 +1385,7 @@ msgstr "Kaldırmak için yinelenen paket bulunamadı."
 
 #: ../dnf/cli/commands/remove.py:120
 msgid "No old installonly packages found for removal."
-msgstr "Kaldırılacak eski sadece-yükle (installonly) paketi bulunamadı."
+msgstr "Kaldırılacak eski sadece-kur (installonly) paketi bulunamadı."
 
 #: ../dnf/cli/commands/repolist.py:37 ../dnf/cli/commands/updateinfo.py:45
 #: ../dnf/cli/commands/updateinfo.py:279 ../dnf/cli/commands/updateinfo.py:311
@@ -1700,7 +1700,7 @@ msgstr "sorguyu kurulu yinelenen paketlerle sınırla"
 
 #: ../dnf/cli/commands/repoquery.py:211
 msgid "limit the query to installed installonly packages"
-msgstr "sorguyu kurulu sadece-yükle (installonly) paketleriyle sınırla"
+msgstr "sorguyu kurulu sadece-kur (installonly) paketleriyle sınırla"
 
 #: ../dnf/cli/commands/repoquery.py:214
 msgid "limit the query to installed packages with unsatisfied dependencies"
@@ -1783,7 +1783,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
-msgstr "Sadece kullanıcı tarafından yüklenen paketleri görüntüle."
+msgstr "Sadece kullanıcı tarafından kurulan paketleri görüntüle."
 
 #: ../dnf/cli/commands/repoquery.py:253
 msgid "Display only recently edited packages"
@@ -2020,7 +2020,7 @@ msgstr "Kabuktan Çıkılıyor"
 #: ../dnf/cli/commands/swap.py:33
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
-"bir belirtimi kaldırmak ve yüklemek için etkileşimli bir dnf modu çalıştır"
+"bir belirtimi kaldırmak ve kurmak için etkileşimli bir dnf modu çalıştır"
 
 #: ../dnf/cli/commands/swap.py:37
 msgid "The specs that will be removed"
@@ -2028,7 +2028,7 @@ msgstr "Kaldırılacak belirtimler"
 
 #: ../dnf/cli/commands/swap.py:39
 msgid "The specs that will be installed"
-msgstr "Yüklenecek belirtimler"
+msgstr "Kurulacak belirtimler"
 
 #: ../dnf/cli/commands/updateinfo.py:42
 msgid "bugfix"
@@ -2101,7 +2101,7 @@ msgstr "tavsiye bilgilerini göster"
 
 #: ../dnf/cli/commands/updateinfo.py:126
 msgid "installed"
-msgstr "Yüklendi"
+msgstr "kurulu"
 
 #: ../dnf/cli/commands/updateinfo.py:129
 msgid "updates"
@@ -2202,7 +2202,7 @@ msgstr "Dosyalar"
 #: ../dnf/cli/commands/updateinfo.py:306 ../dnf/cli/output.py:1452
 #: ../dnf/cli/output.py:1803 ../dnf/cli/output.py:1805
 msgid "Installed"
-msgstr "Yüklendi"
+msgstr "Kuruldu"
 
 #: ../dnf/cli/commands/updateinfo.py:332
 msgid "false"
@@ -2243,11 +2243,11 @@ msgstr ""
 
 #: ../dnf/cli/main.py:131
 msgid "try to add '{}' to skip uninstallable packages"
-msgstr "yüklenemeyen paketleri atlamak için '{}' eklemeyi deneyin"
+msgstr "kurulamayan paketleri atlamak için '{}' eklemeyi deneyin"
 
 #: ../dnf/cli/main.py:134
 msgid " or '{}' to skip uninstallable packages"
-msgstr " veya yüklenemeyen paketleri atlamak için '{}'"
+msgstr " veya kurulamayan paketleri atlamak için '{}'"
 
 #: ../dnf/cli/main.py:139
 msgid "try to add '{}' to use not only best candidate packages"
@@ -2308,11 +2308,11 @@ msgstr "DNF sürümünü göster ve çık"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
-msgstr "yükleme kökünü ayarla"
+msgstr "kurulum kökünü ayarla"
 
 #: ../dnf/cli/option_parser.py:170
 msgid "do not install documentations"
-msgstr "belgelendirmeleri yükleme"
+msgstr "dokümantasyonları kurma"
 
 #: ../dnf/cli/option_parser.py:173
 msgid "disable all plugins"
@@ -2620,7 +2620,7 @@ msgstr "İnşa zamanı"
 #. Translators: This message should be no longer than 12 characters.
 #: ../dnf/cli/output.py:538
 msgid "Install time"
-msgstr "Yükleme zamanı"
+msgstr "Kurma zamanı"
 
 #. Translators: This message should be no longer than 12 chars.
 #: ../dnf/cli/output.py:547
@@ -2785,7 +2785,7 @@ msgstr "Toplam indirme boyutu: %s"
 #: ../dnf/cli/output.py:1001
 #, python-format
 msgid "Installed size: %s"
-msgstr "Yüklü boyut: %s"
+msgstr "Kurulu boyut: %s"
 
 #: ../dnf/cli/output.py:1019
 msgid "There was an error calculating installed size"
@@ -2798,7 +2798,7 @@ msgstr "Boşaltılan alan: %s"
 
 #: ../dnf/cli/output.py:1032
 msgid "Marking packages as installed by the group:"
-msgstr "Paketler grup tarafından yüklendi olarak işaretleniyor:"
+msgstr "Paketler grup tarafından kuruldu olarak işaretleniyor:"
 
 #: ../dnf/cli/output.py:1039
 msgid "Marking packages as removed by the group:"
@@ -2814,17 +2814,17 @@ msgstr "Paketler"
 
 #: ../dnf/cli/output.py:1114
 msgid "Installing group/module packages"
-msgstr "Grup/modül paketleri yükleniyor"
+msgstr "Grup/modül paketleri kuruluyor"
 
 #: ../dnf/cli/output.py:1115
 msgid "Installing group packages"
-msgstr "Grup paketleri yükleniyor"
+msgstr "Grup paketleri kuruluyor"
 
 #. TRANSLATORS: This is for a list of packages to be installed.
 #: ../dnf/cli/output.py:1119
 msgctxt "summary"
 msgid "Installing"
-msgstr "Yükleniyor"
+msgstr "Kuruluyor"
 
 #. TRANSLATORS: This is for a list of packages to be upgraded.
 #: ../dnf/cli/output.py:1121
@@ -2836,15 +2836,15 @@ msgstr "Yükseltiliyor"
 #: ../dnf/cli/output.py:1123
 msgctxt "summary"
 msgid "Reinstalling"
-msgstr "Yeniden yükleniyor"
+msgstr "Yeniden kuruluyor"
 
 #: ../dnf/cli/output.py:1125
 msgid "Installing dependencies"
-msgstr "Bağımlılıklar yükleniyor"
+msgstr "Bağımlılıklar kuruluyor"
 
 #: ../dnf/cli/output.py:1126
 msgid "Installing weak dependencies"
-msgstr "Zayıf bağımlılıklar yükleniyor"
+msgstr "Zayıf bağımlılıklar kuruluyor"
 
 #. TRANSLATORS: This is for a list of packages to be removed.
 #: ../dnf/cli/output.py:1128
@@ -2867,7 +2867,7 @@ msgstr "Eski sürüme geçiliyor"
 
 #: ../dnf/cli/output.py:1157
 msgid "Installing module profiles"
-msgstr "Modül profilleri yükleniyor"
+msgstr "Modül profilleri kuruluyor"
 
 #: ../dnf/cli/output.py:1166
 msgid "Disabling module profiles"
@@ -2891,7 +2891,7 @@ msgstr "Modüller sıfırlanıyor"
 
 #: ../dnf/cli/output.py:1207
 msgid "Installing Environment Groups"
-msgstr "Ortam Grupları Yükleniyor"
+msgstr "Ortam Grupları Kuruluyor"
 
 #: ../dnf/cli/output.py:1214
 msgid "Upgrading Environment Groups"
@@ -2903,7 +2903,7 @@ msgstr "Ortam Grupları Kaldırılıyor"
 
 #: ../dnf/cli/output.py:1228
 msgid "Installing Groups"
-msgstr "Gruplar Yükleniyor"
+msgstr "Gruplar Kuruluyor"
 
 #: ../dnf/cli/output.py:1235
 msgid "Upgrading Groups"
@@ -2966,7 +2966,7 @@ msgstr ""
 #: ../dnf/cli/output.py:1353 ../dnf/cli/output.py:1962
 #: ../dnf/cli/output.py:1963
 msgid "Install"
-msgstr "Yükle"
+msgstr "Kur"
 
 #: ../dnf/cli/output.py:1357 ../dnf/cli/output.py:1971
 msgid "Upgrade"
@@ -3008,7 +3008,7 @@ msgstr "Sürümü düşürüldü"
 
 #: ../dnf/cli/output.py:1456
 msgid "Reinstalled"
-msgstr "Yeniden Yüklendi"
+msgstr "Yeniden Kuruldu"
 
 #: ../dnf/cli/output.py:1457
 msgid "Skipped"
@@ -3088,7 +3088,7 @@ msgstr "Silindi"
 
 #: ../dnf/cli/output.py:1805
 msgid "Not installed"
-msgstr "Yüklenmedi"
+msgstr "Kurulmadı"
 
 #: ../dnf/cli/output.py:1806
 msgid "Newer"
@@ -3194,7 +3194,7 @@ msgstr "Hatalar:"
 
 #: ../dnf/cli/output.py:1964
 msgid "Dep-Install"
-msgstr "Bağımlılık Yüklemesi"
+msgstr "Bağımlılık Kur"
 
 #: ../dnf/cli/output.py:1965
 msgid "Obsoleted"
@@ -3210,12 +3210,12 @@ msgstr "Sil"
 
 #: ../dnf/cli/output.py:1968
 msgid "Reinstall"
-msgstr "Yeniden Yükle"
+msgstr "Yeniden Kur"
 
 #: ../dnf/cli/output.py:2142
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
-msgstr "---> %s.%s %s paketi yüklenecek"
+msgstr "---> %s.%s %s paketi kurulacak"
 
 #: ../dnf/cli/output.py:2144
 #, python-format
@@ -3230,7 +3230,7 @@ msgstr "---> %s.%s %s paketi silinecek"
 #: ../dnf/cli/output.py:2148
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
-msgstr "---> %s.%s %s paketi yeniden yüklenecek"
+msgstr "---> %s.%s %s paketi yeniden kurulacak"
 
 #: ../dnf/cli/output.py:2150
 #, python-format
@@ -3424,7 +3424,7 @@ msgstr "depo %s: 0x%s anahtarı içe aktarıldı."
 #: ../dnf/db/group.py:344
 #, python-format
 msgid "Will not install a source rpm package (%s)."
-msgstr "Kaynak rpm paketi yüklenmeyecek (%s)."
+msgstr "Kaynak rpm paketi kurulmayacak (%s)."
 
 #: ../dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3517,7 +3517,7 @@ msgstr "Gösterilecek bir şey yok."
 
 #: ../dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr "'{}' için belirtilenden daha yeni bir sürüm yükleniyor. Sebep: {}"
+msgstr "'{}' için belirtilenden daha yeni bir sürüm kuruluyor. Sebep: {}"
 
 #: ../dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3661,13 +3661,13 @@ msgstr "Temizleniyor"
 #: ../dnf/transaction.py:82
 msgctxt "currently"
 msgid "Installing"
-msgstr "Yükleniyor"
+msgstr "Kuruluyor"
 
 #. TRANSLATORS: This is for a single package currently being reinstalled.
 #: ../dnf/transaction.py:86
 msgctxt "currently"
 msgid "Reinstalling"
-msgstr "Yeniden yükleniyor"
+msgstr "Yeniden kuruluyor"
 
 #. TODO: 'Removing'?
 #: ../dnf/transaction.py:89
