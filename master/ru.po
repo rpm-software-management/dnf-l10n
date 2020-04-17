@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # Artem Vinokurov <vinokurov@tortstudio.com>, 2015
 # Igor Gnatenko <i.gnatenko.brain@gmail.com>, 2014
@@ -18,17 +18,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-09 09:18-0400\n"
+"POT-Creation-Date: 2020-04-16 09:18-0400\n"
 "PO-Revision-Date: 2020-04-17 09:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.0.1\n"
 
 #: dnf/automatic/emitter.py:31
@@ -205,7 +205,7 @@ msgstr "Проверка транзакции успешно завершена.
 msgid "Running transaction test"
 msgstr "Идет проверка транзакции"
 
-#: dnf/base.py:848 dnf/base.py:995
+#: dnf/base.py:848 dnf/base.py:990
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -242,29 +242,29 @@ msgstr "Сводка ошибок"
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB изменена вне {prog}."
 
-#: dnf/base.py:996 dnf/base.py:1004
+#: dnf/base.py:991 dnf/base.py:999
 msgid "Could not run transaction."
 msgstr "Не удалось запустить транзакцию."
 
-#: dnf/base.py:999
+#: dnf/base.py:994
 msgid "Transaction couldn't start:"
 msgstr "Не удалось начать транзакцию:"
 
-#: dnf/base.py:1013
+#: dnf/base.py:1008
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Не удалось удалить файл транзакции %s"
 
-#: dnf/base.py:1095
+#: dnf/base.py:1090
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Некоторые пакеты не были загружены. Повторная попытка."
 
-#: dnf/base.py:1125
+#: dnf/base.py:1120
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%d.1%% сохранено)"
 
-#: dnf/base.py:1128
+#: dnf/base.py:1123
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
@@ -272,56 +272,56 @@ msgstr ""
 "Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%d.1%% "
 "потрачено)"
 
-#: dnf/base.py:1170
+#: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "Не удается добавить локальные пакеты, поскольку задание, связанное с "
 "транзакцией, уже существует"
 
-#: dnf/base.py:1184
+#: dnf/base.py:1179
 msgid "Could not open: {}"
 msgstr "Не удалось открыть: {}"
 
-#: dnf/base.py:1222
+#: dnf/base.py:1217
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "Публичный ключ для %s не установлен"
 
-#: dnf/base.py:1226
+#: dnf/base.py:1221
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Проблема открытия пакета %s"
 
-#: dnf/base.py:1234
+#: dnf/base.py:1229
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "Публичный ключ для %s не заслуживает доверия"
 
-#: dnf/base.py:1238
+#: dnf/base.py:1233
 #, python-format
 msgid "Package %s is not signed"
 msgstr "Пакет %s не подписан"
 
-#: dnf/base.py:1253
+#: dnf/base.py:1248
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Не удается удалить %s"
 
-#: dnf/base.py:1257
+#: dnf/base.py:1252
 #, python-format
 msgid "%s removed"
 msgstr "%s удален(ы)"
 
-#: dnf/base.py:1537
+#: dnf/base.py:1532
 msgid "No match for group package \"{}\""
 msgstr "Нет соответствия для группового пакета «{}»"
 
-#: dnf/base.py:1624
+#: dnf/base.py:1619
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Добавление пакетов из группы «%s»: %s"
 
-#: dnf/base.py:1647 dnf/base.py:1699 dnf/cli/cli.py:218
+#: dnf/base.py:1642 dnf/base.py:1694 dnf/cli/cli.py:218
 #: dnf/cli/commands/__init__.py:451 dnf/cli/commands/__init__.py:508
 #: dnf/cli/commands/__init__.py:601 dnf/cli/commands/__init__.py:650
 #: dnf/cli/commands/install.py:80 dnf/cli/commands/install.py:103
@@ -329,21 +329,21 @@ msgstr "Добавление пакетов из группы «%s»: %s"
 msgid "Nothing to do."
 msgstr "Отсутствуют действия для выполнения"
 
-#: dnf/base.py:1665
+#: dnf/base.py:1660
 msgid "No groups marked for removal."
 msgstr "Нет групп, помеченных для удаления."
 
-#: dnf/base.py:1701
+#: dnf/base.py:1696
 msgid "No group marked for upgrade."
 msgstr "Не отмечена группа для обновления."
 
-#: dnf/base.py:1916
+#: dnf/base.py:1911
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Пакет %s не установлен, нельзя произвести откат версии."
 
-#: dnf/base.py:1918 dnf/base.py:1937 dnf/base.py:1950 dnf/base.py:1971
-#: dnf/base.py:2020 dnf/base.py:2028 dnf/base.py:2163 dnf/cli/cli.py:410
+#: dnf/base.py:1913 dnf/base.py:1932 dnf/base.py:1945 dnf/base.py:1966
+#: dnf/base.py:2015 dnf/base.py:2023 dnf/base.py:2158 dnf/cli/cli.py:410
 #: dnf/cli/commands/__init__.py:434 dnf/cli/commands/__init__.py:491
 #: dnf/cli/commands/__init__.py:595 dnf/cli/commands/__init__.py:642
 #: dnf/cli/commands/__init__.py:720 dnf/cli/commands/install.py:147
@@ -353,139 +353,139 @@ msgstr "Пакет %s не установлен, нельзя произвест
 msgid "No match for argument: %s"
 msgstr "Отсутствуют совпадения для аргумента: %s"
 
-#: dnf/base.py:1925
+#: dnf/base.py:1920
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "Пакет %s версией ниже уже установлен, нельзя произвести откат версии."
 
-#: dnf/base.py:1948
+#: dnf/base.py:1943
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Пакет %s не установлен, нельзя произвести переустановку."
 
-#: dnf/base.py:1963
+#: dnf/base.py:1958
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 "Файл %s является исходным пакетом и не может быть обновлен, пропускается."
 
-#: dnf/base.py:1969
+#: dnf/base.py:1964
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Пакет %s не установлен, нельзя произвести обновление."
 
-#: dnf/base.py:1978
+#: dnf/base.py:1973
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 "Такая же или более новая версия %s уже существует, не удается обновить."
 
-#: dnf/base.py:2017 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2012 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Пакет %s есть, но не установлен."
 
-#: dnf/base.py:2023
+#: dnf/base.py:2018
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Пакет %s есть, но  установлен для другой архитектуры."
 
-#: dnf/base.py:2048 dnf/base.py:2241 dnf/cli/cli.py:667 dnf/cli/cli.py:698
+#: dnf/base.py:2043 dnf/base.py:2236 dnf/cli/cli.py:667 dnf/cli/cli.py:698
 #, python-format
 msgid "No package %s installed."
 msgstr "Пакет %s не был установлен."
 
-#: dnf/base.py:2066 dnf/cli/commands/install.py:136
+#: dnf/base.py:2061 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Неправильная форма: %s"
 
-#: dnf/base.py:2082 dnf/cli/commands/__init__.py:690
+#: dnf/base.py:2077 dnf/cli/commands/__init__.py:690
 #: dnf/cli/commands/remove.py:163
 msgid "No packages marked for removal."
 msgstr "Нет пакетов, помеченных для удаления."
 
-#: dnf/base.py:2170 dnf/cli/cli.py:421
+#: dnf/base.py:2165 dnf/cli/cli.py:421
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Пакеты для аргумента %s доступны, но не установлены."
 
-#: dnf/base.py:2175
+#: dnf/base.py:2170
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Пакет %s самой старой версии уже установлен, нельзя произвести откат."
 
-#: dnf/base.py:2233
+#: dnf/base.py:2228
 msgid "Action not handled: {}"
 msgstr "Действие не обрабатывается: {}"
 
-#: dnf/base.py:2247 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
+#: dnf/base.py:2242 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
 #: dnf/cli/commands/__init__.py:913 dnf/cli/commands/group.py:398
 #, python-format
 msgid "No package %s available."
 msgstr "Нет пакета %s."
 
-#: dnf/base.py:2260
+#: dnf/base.py:2255
 msgid "no package matched"
 msgstr "нет подходящего пакета"
 
-#: dnf/base.py:2281
+#: dnf/base.py:2276
 msgid "No security updates needed, but {} update available"
 msgstr "Не требуются обновления безопасности, но обновление {} имеется"
 
-#: dnf/base.py:2283
+#: dnf/base.py:2278
 msgid "No security updates needed, but {} updates available"
 msgstr "Не требуются обновления безопасности, но обновления {} имеются"
 
-#: dnf/base.py:2287
+#: dnf/base.py:2282
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Для «{}» не требуются обновления безопасности, но обновление {} имеется"
 
-#: dnf/base.py:2289
+#: dnf/base.py:2284
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Для «{}» не требуются обновления безопасности, но обновления {} имеются"
 
-#: dnf/base.py:2313
+#: dnf/base.py:2308
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Сбойный пакет: %s"
 
-#: dnf/base.py:2314
+#: dnf/base.py:2309
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Ключи GPG настроены как: %s"
 
-#: dnf/base.py:2326
+#: dnf/base.py:2321
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG ключ %s (0x%s) уже установлен"
 
-#: dnf/base.py:2359
+#: dnf/base.py:2354
 msgid "The key has been approved."
 msgstr "Ключ принят."
 
-#: dnf/base.py:2362
+#: dnf/base.py:2357
 msgid "The key has been rejected."
 msgstr "Ключ отклонен."
 
-#: dnf/base.py:2395
+#: dnf/base.py:2390
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Неудача импорта ключа (code %d)"
 
-#: dnf/base.py:2397
+#: dnf/base.py:2392
 msgid "Key imported successfully"
 msgstr "Импорт ключа успешно завершен"
 
-#: dnf/base.py:2401
+#: dnf/base.py:2396
 msgid "Didn't install any keys"
 msgstr "Не установлены какие-либо ключи"
 
-#: dnf/base.py:2404
+#: dnf/base.py:2399
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -496,29 +496,29 @@ msgstr ""
 "являются правильными для этого пакета.\n"
 "Проверьте, правильно ли настроены URL ключей для этого репозитория."
 
-#: dnf/base.py:2415
+#: dnf/base.py:2410
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Импорт ключа(ключей) не помог, неверный ключ(ключи)?"
 
-#: dnf/base.py:2451
+#: dnf/base.py:2446
 msgid "  * Maybe you meant: {}"
 msgstr "  * Возможно, вы имели в виду: {}"
 
-#: dnf/base.py:2483
+#: dnf/base.py:2478
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "У пакета «{}» из локального репозитория «{}» неправильная контрольная сумма"
 
-#: dnf/base.py:2486
+#: dnf/base.py:2481
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "У некоторых пакетов из локального репозитория неправильная контрольная сумма"
 
-#: dnf/base.py:2489
+#: dnf/base.py:2484
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "У пакета «{}» из репозитория «{}» неправильная контрольная сумма"
 
-#: dnf/base.py:2492
+#: dnf/base.py:2487
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -526,23 +526,23 @@ msgstr ""
 "У некоторых пакетов неправильный кеш, но они не загружаются из-за параметра "
 "«--cacheonly»"
 
-#: dnf/base.py:2510 dnf/base.py:2530
+#: dnf/base.py:2505 dnf/base.py:2525
 msgid "No match for argument"
 msgstr "Нет соответствия аргументу"
 
-#: dnf/base.py:2518 dnf/base.py:2538
+#: dnf/base.py:2513 dnf/base.py:2533
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Все совпадения отфильтрованы фильтрами исключения для аргумента"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2515
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Все совпадения отфильтрованы модульным фильтрованием для аргумента"
 
-#: dnf/base.py:2536
+#: dnf/base.py:2531
 msgid "All matches were installed from a different repository for argument"
 msgstr "Все совпадения были установлены из другого репозитория для аргумента"
 
-#: dnf/base.py:2552
+#: dnf/base.py:2547
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Пакет %s уже установлен."
@@ -3130,7 +3130,7 @@ msgstr "Пакет"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
 #. This is also a hack to resolve RhBug 1302935 correctly.
-#: dnf/cli/output.py:1318 dnf/cli/output.py:2011
+#: dnf/cli/output.py:1318 dnf/cli/output.py:2012
 msgctxt "long"
 msgid "Package"
 msgstr "Пакет"
@@ -3151,11 +3151,11 @@ msgstr ""
 "%s\n"
 
 #. TODO: remove
-#: dnf/cli/output.py:1379 dnf/cli/output.py:1918 dnf/cli/output.py:1919
+#: dnf/cli/output.py:1379 dnf/cli/output.py:1919 dnf/cli/output.py:1920
 msgid "Install"
 msgstr "Установка"
 
-#: dnf/cli/output.py:1383 dnf/cli/output.py:1927
+#: dnf/cli/output.py:1383 dnf/cli/output.py:1928
 msgid "Upgrade"
 msgstr "Обновление"
 
@@ -3163,7 +3163,7 @@ msgstr "Обновление"
 msgid "Remove"
 msgstr "Удаление"
 
-#: dnf/cli/output.py:1386 dnf/cli/output.py:1925
+#: dnf/cli/output.py:1386 dnf/cli/output.py:1926
 msgid "Downgrade"
 msgstr "Откат версии"
 
@@ -3185,11 +3185,11 @@ msgstr[0] "Зависимый пакет"
 msgstr[1] "Зависимых пакета"
 msgstr[2] "Зависимых пакетов"
 
-#: dnf/cli/output.py:1493 dnf/cli/output.py:1760 dnf/cli/output.py:1928
+#: dnf/cli/output.py:1493 dnf/cli/output.py:1760 dnf/cli/output.py:1929
 msgid "Upgraded"
 msgstr "Обновлен"
 
-#: dnf/cli/output.py:1494 dnf/cli/output.py:1760 dnf/cli/output.py:1926
+#: dnf/cli/output.py:1494 dnf/cli/output.py:1760 dnf/cli/output.py:1927
 msgid "Downgraded"
 msgstr "Возвращен к предыдущей версии"
 
@@ -3231,7 +3231,7 @@ msgid "User name"
 msgstr "Имя пользователя"
 
 #. REALLY Needs to use columns!
-#: dnf/cli/output.py:1640 dnf/cli/output.py:2008
+#: dnf/cli/output.py:1640 dnf/cli/output.py:2009
 msgid "ID"
 msgstr "Идентификатор"
 
@@ -3239,7 +3239,7 @@ msgstr "Идентификатор"
 msgid "Date and time"
 msgstr "Дата и время"
 
-#: dnf/cli/output.py:1643 dnf/cli/output.py:2009
+#: dnf/cli/output.py:1643 dnf/cli/output.py:2010
 msgid "Action(s)"
 msgstr "Действия"
 
@@ -3348,99 +3348,99 @@ msgstr "Выпускаемая версия     :"
 msgid "Command Line   :"
 msgstr "Команда   :"
 
-#: dnf/cli/output.py:1885
+#: dnf/cli/output.py:1884 dnf/cli/output.py:1886
 msgid "Comment        :"
 msgstr "Комментарий        :"
 
-#: dnf/cli/output.py:1889
+#: dnf/cli/output.py:1890
 msgid "Transaction performed with:"
 msgstr "Транзакция выполнена:"
 
-#: dnf/cli/output.py:1898
+#: dnf/cli/output.py:1899
 msgid "Packages Altered:"
 msgstr "Пакеты изменены:"
 
-#: dnf/cli/output.py:1904
+#: dnf/cli/output.py:1905
 msgid "Scriptlet output:"
 msgstr "Вывод скриптлета:"
 
-#: dnf/cli/output.py:1911
+#: dnf/cli/output.py:1912
 msgid "Errors:"
 msgstr "Ошибки:"
 
-#: dnf/cli/output.py:1920
+#: dnf/cli/output.py:1921
 msgid "Dep-Install"
 msgstr "Установка зависимостей"
 
-#: dnf/cli/output.py:1921
+#: dnf/cli/output.py:1922
 msgid "Obsoleted"
 msgstr "Исключено"
 
-#: dnf/cli/output.py:1922 dnf/transaction.py:84 dnf/transaction.py:85
+#: dnf/cli/output.py:1923 dnf/transaction.py:84 dnf/transaction.py:85
 msgid "Obsoleting"
 msgstr "Исключаем"
 
-#: dnf/cli/output.py:1923
+#: dnf/cli/output.py:1924
 msgid "Erase"
 msgstr "Удаление"
 
-#: dnf/cli/output.py:1924
+#: dnf/cli/output.py:1925
 msgid "Reinstall"
 msgstr "Переустановка"
 
-#: dnf/cli/output.py:1999
+#: dnf/cli/output.py:2000
 msgid "Bad transaction IDs, or package(s), given"
 msgstr "Даны неправильные идентификаторы транзакций или пакеты"
 
-#: dnf/cli/output.py:2098
+#: dnf/cli/output.py:2099
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
 msgstr "---> Пакет %s.%s %s будет устанавливаться"
 
-#: dnf/cli/output.py:2100
+#: dnf/cli/output.py:2101
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
 msgstr "---> Пакет %s.%s %s будет обновлением"
 
-#: dnf/cli/output.py:2102
+#: dnf/cli/output.py:2103
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
 msgstr "---> Пакет %s.%s %s будет удаляться"
 
-#: dnf/cli/output.py:2104
+#: dnf/cli/output.py:2105
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
 msgstr "---> Пакет %s.%s %s будет переустанавливаться"
 
-#: dnf/cli/output.py:2106
+#: dnf/cli/output.py:2107
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
 msgstr "---> Пакет %s.%s %s будет возвращаться к прежней версии"
 
-#: dnf/cli/output.py:2108
+#: dnf/cli/output.py:2109
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
 msgstr "---> Пакет %s.%s %s будет убираться"
 
-#: dnf/cli/output.py:2110
+#: dnf/cli/output.py:2111
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
 msgstr "---> Пакет %s.%s %s будет обновляться"
 
-#: dnf/cli/output.py:2112
+#: dnf/cli/output.py:2113
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
 msgstr "---> Пакет %s.%s %s будет считаться устаревшим"
 
-#: dnf/cli/output.py:2121
+#: dnf/cli/output.py:2122
 msgid "--> Starting dependency resolution"
 msgstr "--> Начало разрешения зависимостей"
 
-#: dnf/cli/output.py:2126
+#: dnf/cli/output.py:2127
 msgid "--> Finished dependency resolution"
 msgstr "--> Конец разрешения зависимостей"
 
-#: dnf/cli/output.py:2140 dnf/crypto.py:132
+#: dnf/cli/output.py:2141 dnf/crypto.py:132
 #, python-format
 msgid ""
 "Importing GPG key 0x%s:\n"
