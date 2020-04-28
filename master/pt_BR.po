@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-23 09:20-0400\n"
+"POT-Creation-Date: 2020-04-27 09:18-0400\n"
 "PO-Revision-Date: 2020-04-20 13:40+0000\n"
 "Last-Translator: Paulo Eduardo Faversani <pauloeduardo2709@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -84,16 +84,20 @@ msgstr "Valor de configuração desconhecido: %s=%s in %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Opção de configuração desconhecida: %s = %s in %s"
 
-#: dnf/automatic/main.py:236
+#: dnf/automatic/main.py:228 dnf/cli/cli.py:298
+msgid "GPG check FAILED"
+msgstr "Verificação GPG FALHOU"
+
+#: dnf/automatic/main.py:247
 msgid "Started dnf-automatic."
 msgstr "Iniciado dnf-automatic."
 
-#: dnf/automatic/main.py:240
+#: dnf/automatic/main.py:251
 #, python-format
 msgid "Sleep for %s seconds"
 msgstr "Dormir por %s segundos"
 
-#: dnf/automatic/main.py:271 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:283 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -308,26 +312,26 @@ msgstr "A chave pública para o %s não é confiável"
 msgid "Package %s is not signed"
 msgstr "O pacote %s não está assinado"
 
-#: dnf/base.py:1248
+#: dnf/base.py:1263
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Não foi possível remover %s"
 
-#: dnf/base.py:1252
+#: dnf/base.py:1267
 #, python-format
 msgid "%s removed"
 msgstr "%s removido"
 
-#: dnf/base.py:1532
+#: dnf/base.py:1547
 msgid "No match for group package \"{}\""
 msgstr "Sem combinação para o pacote do grupo \"{}\""
 
-#: dnf/base.py:1619
+#: dnf/base.py:1634
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Adicionando pacotes do grupo '%s': %s"
 
-#: dnf/base.py:1642 dnf/base.py:1694 dnf/cli/cli.py:218
+#: dnf/base.py:1657 dnf/base.py:1709 dnf/cli/cli.py:218
 #: dnf/cli/commands/__init__.py:451 dnf/cli/commands/__init__.py:508
 #: dnf/cli/commands/__init__.py:601 dnf/cli/commands/__init__.py:650
 #: dnf/cli/commands/install.py:80 dnf/cli/commands/install.py:103
@@ -335,21 +339,21 @@ msgstr "Adicionando pacotes do grupo '%s': %s"
 msgid "Nothing to do."
 msgstr "Nada para fazer."
 
-#: dnf/base.py:1660
+#: dnf/base.py:1675
 msgid "No groups marked for removal."
 msgstr "Nenhum grupo marcado para remoção."
 
-#: dnf/base.py:1696
+#: dnf/base.py:1711
 msgid "No group marked for upgrade."
 msgstr "Nenhum grupo marcado para atualização."
 
-#: dnf/base.py:1911
+#: dnf/base.py:1926
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "O pacote %s não está instalado, não é possível fazer downgrade."
 
-#: dnf/base.py:1913 dnf/base.py:1932 dnf/base.py:1945 dnf/base.py:1966
-#: dnf/base.py:2015 dnf/base.py:2023 dnf/base.py:2158 dnf/cli/cli.py:410
+#: dnf/base.py:1928 dnf/base.py:1947 dnf/base.py:1960 dnf/base.py:1981
+#: dnf/base.py:2030 dnf/base.py:2038 dnf/base.py:2173 dnf/cli/cli.py:410
 #: dnf/cli/commands/__init__.py:434 dnf/cli/commands/__init__.py:491
 #: dnf/cli/commands/__init__.py:595 dnf/cli/commands/__init__.py:642
 #: dnf/cli/commands/__init__.py:720 dnf/cli/commands/install.py:147
@@ -359,145 +363,145 @@ msgstr "O pacote %s não está instalado, não é possível fazer downgrade."
 msgid "No match for argument: %s"
 msgstr "Nenhuma correspondência para argumento: %s"
 
-#: dnf/base.py:1920
+#: dnf/base.py:1935
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "O pacote %s de versão mais antiga já foi instalado, não é possível fazer "
 "downgrade."
 
-#: dnf/base.py:1943
+#: dnf/base.py:1958
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "O pacote %s não está instalado, não é possível reinstála-lo."
 
-#: dnf/base.py:1958
+#: dnf/base.py:1973
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "O arquivo %s é um pacote fonte e não pode ser atualizado, ignorando."
 
-#: dnf/base.py:1964
+#: dnf/base.py:1979
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "O pacote %s não está instalado, não é possível atualizá-lo."
 
-#: dnf/base.py:1973
+#: dnf/base.py:1988
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 
-#: dnf/base.py:2012 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2027 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Pacote %s disponível, mas não instalado."
 
-#: dnf/base.py:2018
+#: dnf/base.py:2033
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Pacote %s disponível, mas instalado para arquitetura diferente."
 
-#: dnf/base.py:2043 dnf/base.py:2236 dnf/cli/cli.py:667 dnf/cli/cli.py:698
+#: dnf/base.py:2058 dnf/base.py:2251 dnf/cli/cli.py:667 dnf/cli/cli.py:698
 #, python-format
 msgid "No package %s installed."
 msgstr "Nenhum pacote %s instalado."
 
-#: dnf/base.py:2061 dnf/cli/commands/install.py:136
+#: dnf/base.py:2076 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Formato inválido: %s"
 
-#: dnf/base.py:2077 dnf/cli/commands/__init__.py:690
+#: dnf/base.py:2092 dnf/cli/commands/__init__.py:690
 #: dnf/cli/commands/remove.py:163
 msgid "No packages marked for removal."
 msgstr "Nenhum pacote marcado para remoção."
 
-#: dnf/base.py:2165 dnf/cli/cli.py:421
+#: dnf/base.py:2180 dnf/cli/cli.py:421
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Pacotes para o argumento %s disponíveis, mas não instalados."
 
-#: dnf/base.py:2170
+#: dnf/base.py:2185
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "O pacote %s de versão mais antiga já foi instalado, não pode é possível "
 "fazer downgrade."
 
-#: dnf/base.py:2228
+#: dnf/base.py:2243
 msgid "Action not handled: {}"
 msgstr "Ação não tratada: {}"
 
-#: dnf/base.py:2242 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
+#: dnf/base.py:2257 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
 #: dnf/cli/commands/__init__.py:913 dnf/cli/commands/group.py:398
 #, python-format
 msgid "No package %s available."
 msgstr "Nenhum pacote %s disponível."
 
-#: dnf/base.py:2255
+#: dnf/base.py:2270
 msgid "no package matched"
 msgstr "Nenhum pacote correspondeu"
 
-#: dnf/base.py:2276
+#: dnf/base.py:2291
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Nenhuma atualização de segurança necessária, mas {} atualização disponível"
 
-#: dnf/base.py:2278
+#: dnf/base.py:2293
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Nenhuma atualização de segurança necessária, mas {} atualizações disponíveis"
 
-#: dnf/base.py:2282
+#: dnf/base.py:2297
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nenhuma atualização de segurança necessária para \"{}\", mas {} atualização "
 "disponível"
 
-#: dnf/base.py:2284
+#: dnf/base.py:2299
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nenhuma atualização de segurança necessária para \"{}\", mas {} atualizações "
 "disponíveis"
 
-#: dnf/base.py:2308
+#: dnf/base.py:2323
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". O pacote que falha é: %s"
 
-#: dnf/base.py:2309
+#: dnf/base.py:2324
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Chaves GPG estão configuradas como: %s"
 
-#: dnf/base.py:2321
+#: dnf/base.py:2336
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "A chave GPG em %s (0x%s) já está instalada"
 
-#: dnf/base.py:2354
+#: dnf/base.py:2369
 msgid "The key has been approved."
 msgstr "A chave foi aprovada."
 
-#: dnf/base.py:2357
+#: dnf/base.py:2372
 msgid "The key has been rejected."
 msgstr "A chave foi rejeitada."
 
-#: dnf/base.py:2390
+#: dnf/base.py:2405
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Falha na importação da chave (código %d)"
 
-#: dnf/base.py:2392
+#: dnf/base.py:2407
 msgid "Key imported successfully"
 msgstr "Chave importada com sucesso"
 
-#: dnf/base.py:2396
+#: dnf/base.py:2411
 msgid "Didn't install any keys"
 msgstr "Não instalar nenhuma das chaves"
 
-#: dnf/base.py:2399
+#: dnf/base.py:2414
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -509,27 +513,27 @@ msgstr ""
 "Verifique se as URLs corretas das chaves estão configuradas para esse "
 "repositório."
 
-#: dnf/base.py:2410
+#: dnf/base.py:2425
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "A importação da(s) chave(s) não ajudou, chave(s) errada(s)?"
 
-#: dnf/base.py:2446
+#: dnf/base.py:2478
 msgid "  * Maybe you meant: {}"
 msgstr "  * Talvez você quisesse dizer: {}"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2510
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "O pacote \"{}\" do repositório local \"{}\" tem checksum incorreto"
 
-#: dnf/base.py:2481
+#: dnf/base.py:2513
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Alguns pacotes do repositório local têm checksum incorreto"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2516
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "O pacote \"{}\"do repositório \"{}\" tem checksum incorreto"
 
-#: dnf/base.py:2487
+#: dnf/base.py:2519
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -537,23 +541,23 @@ msgstr ""
 "Alguns pacotes têm cache inválido, mas não podem ser baixados devido à opção "
 "\"--cacheonly\""
 
-#: dnf/base.py:2505 dnf/base.py:2525
+#: dnf/base.py:2537 dnf/base.py:2557
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2513 dnf/base.py:2533
+#: dnf/base.py:2545 dnf/base.py:2565
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2515
+#: dnf/base.py:2547
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2531
+#: dnf/base.py:2563
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2547
+#: dnf/base.py:2579
 #, python-format
 msgid "Package %s is already installed."
 msgstr "O pacote %s já está instalado."
@@ -650,10 +654,6 @@ msgstr ""
 "Recusa de importação automática das chaves ao executar de forma não "
 "assistida.\n"
 "Use \"-y\" para sobrescrever."
-
-#: dnf/cli/cli.py:298
-msgid "GPG check FAILED"
-msgstr "Verificação GPG FALHOU"
 
 #: dnf/cli/cli.py:330
 msgid "Changelogs for {}"
