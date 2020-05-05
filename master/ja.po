@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-01 09:18-0400\n"
+"POT-Creation-Date: 2020-05-04 09:18-0400\n"
 "PO-Revision-Date: 2020-05-05 07:40+0000\n"
 "Last-Translator: Casey Jones <nahareport@yahoo.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -285,7 +285,9 @@ msgstr ""
 
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr "ローカルパッケージを追加できません、トランザクションジョブがすでに存在するためです"
+msgstr ""
+"ローカルパッケージを追加できません、トランザクションジョブがすでに存在するた"
+"めです"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -390,7 +392,9 @@ msgstr "パッケージ %s はインストールされていないので、更�
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr "同じまたはさらに新しいバージョンの %s が既にインストールされています、アップデートできません。"
+msgstr ""
+"同じまたはさらに新しいバージョンの %s が既にインストールされています、アップ"
+"デートできません。"
 
 #: dnf/base.py:2027 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -551,11 +555,13 @@ msgstr "すべての検索結果は引数の除外フィルタリングに一致
 
 #: dnf/base.py:2547
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr "すべての検出結果は引数のモジュラーフィルタリングに一致しません(filter out)"
+msgstr ""
+"すべての検出結果は引数のモジュラーフィルタリングに一致しません(filter out)"
 
 #: dnf/base.py:2563
 msgid "All matches were installed from a different repository for argument"
-msgstr "すべての検索結果は引数に対し異なるレポジトリからインストールされたものです"
+msgstr ""
+"すべての検索結果は引数に対し異なるレポジトリからインストールされたものです"
 
 #: dnf/base.py:2579
 #, python-format
@@ -607,7 +613,9 @@ msgstr "  ビルド      : %s  (日時: %s)"
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
-msgstr "オペレーションは、モジュール '{0}' ストリーム '{1}' を ストリーム '{2}' へと切り替える結果となります"
+msgstr ""
+"オペレーションは、モジュール '{0}' ストリーム '{1}' を ストリーム '{2}' へと"
+"切り替える結果となります"
 
 #: dnf/cli/cli.py:171
 #, python-brace-format
@@ -618,8 +626,9 @@ msgid ""
 "reset the module, you can install the other stream."
 msgstr ""
 "モジュールの有効なストリームを切り替えることはできません。\n"
-"モジュールからインストールされた全てのコンテンツを削除し、 '{prog} module reset <module_name>' "
-"コマンドを使用してリセットすることが推奨されます。モジュールのリセット後、他のストリームをインストール可能です。"
+"モジュールからインストールされた全てのコンテンツを削除し、 '{prog} module "
+"reset <module_name>' コマンドを使用してリセットすることが推奨されます。モ"
+"ジュールのリセット後、他のストリームをインストール可能です。"
 
 #: dnf/cli/cli.py:209
 #, python-brace-format
@@ -631,7 +640,9 @@ msgstr "{prog} はトランザクションでパッケージのダウンロー�
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
-msgstr "{prog} はパッケージのダウンロード、gpgキーのインストール、トランザクションのチェックのみ行います。"
+msgstr ""
+"{prog} はパッケージのダウンロード、gpgキーのインストール、トランザクションの"
+"チェックのみ行います。"
 
 #: dnf/cli/cli.py:216
 msgid "Operation aborted."
@@ -745,7 +756,9 @@ msgstr "一致するリポジトリーがありません: %s"
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
-msgstr "このコマンドはスーパーユーザー特権(大概のシステムではrootユーザー)で実行しなければいけません。"
+msgstr ""
+"このコマンドはスーパーユーザー特権(大概のシステムではrootユーザー)で実行しな"
+"ければいけません。"
 
 #: dnf/cli/cli.py:843
 #, python-format
@@ -757,14 +770,18 @@ msgstr "そのようなコマンドはありません: %s. %s --help を使用�
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
-msgstr "{PROG} プラグインコマンドを実行できません、試してください: \"{prog} install 'dnf-command(%s)'\""
+msgstr ""
+"{PROG} プラグインコマンドを実行できません、試してください: \"{prog} install "
+"'dnf-command(%s)'\""
 
 #: dnf/cli/cli.py:850
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
-msgstr "{prog} プラグインコマンドを実行できません、プラグインのロードが現在無効になっているようです。"
+msgstr ""
+"{prog} プラグインコマンドを実行できません、プラグインのロードが現在無効になっ"
+"ているようです。"
 
 #: dnf/cli/cli.py:908
 msgid ""
@@ -779,16 +796,17 @@ msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
-"--enable と --set-enabled および --disable と --set-disabled は、config-manager "
-"コマンドと共に使用しなければなりません。"
+"--enable と --set-enabled および --disable と --set-disabled は、config-"
+"manager コマンドと共に使用しなければなりません。"
 
 #: dnf/cli/cli.py:996
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
-"警告: アクティブな RPM セキュリティーポリシーにより、GPG 署名の確認をグローバルに強制します "
-"(このメッセージをスケルチするには、dnf.conf(5) の 'gpgcheck' を参照してください)"
+"警告: アクティブな RPM セキュリティーポリシーにより、GPG 署名の確認をグローバ"
+"ルに強制します (このメッセージをスケルチするには、dnf.conf(5) の 'gpgcheck' "
+"を参照してください)"
 
 #: dnf/cli/cli.py:1016
 msgid "Config file \"{}\" does not exist"
@@ -863,11 +881,13 @@ msgstr ""
 "    rpm --import public.gpg.key\n"
 "\n"
 "\n"
-"代わりにレポジトリーセクションの 'gpgkey' オプションにあるレポジトリーを使用し\n"
+"代わりにレポジトリーセクションの 'gpgkey' オプションにあるレポジトリーを使用"
+"し\n"
 "キーのurlを特定したのち、 {prog} がインストールされます。\n"
 "\n"
 "\n"
-"詳細情報はディストリビューションまたはパッケージプロバイダーにコンタクトしてください。"
+"詳細情報はディストリビューションまたはパッケージプロバイダーにコンタクトして"
+"ください。"
 
 #: dnf/cli/commands/__init__.py:80
 #, python-format
@@ -1413,7 +1433,9 @@ msgstr "パッケージ %s はインストールされていません。"
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
-msgstr "モジュール名、ストリーム、アーキテクチャーまたはプロファイルのみが使用されています。引数: '{}' の不要な情報は無視します"
+msgstr ""
+"モジュール名、ストリーム、アーキテクチャーまたはプロファイルのみが使用されて"
+"います。引数: '{}' の不要な情報は無視します"
 
 #: dnf/cli/commands/module.py:77
 msgid "list all module streams, profiles and states"
@@ -1883,9 +1905,10 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
-"このパッケージがインストールされていない場合、 %%pre と %%post "
-"スクリプトレット実行に依存するケイパビリティを表示します。このパッケージがインストールされている場合、 %%pre, %%post, %%preun と "
-"%%postun に依存するケイパビリティを表示します。"
+"このパッケージがインストールされていない場合、 %%pre と %%post スクリプトレッ"
+"ト実行に依存するケイパビリティを表示します。このパッケージがインストールされ"
+"ている場合、 %%pre, %%post, %%preun と %%postun に依存するケイパビリティを表"
+"示します。"
 
 #: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
@@ -1950,8 +1973,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"オプションの '--recursive' は、'--whatrequires <REQ>' (オプションでは '--exactdeps' ではなく、'--"
-"alldeps' と共に使用) または '--requires <REQ> --resolve' と共に使用する必要があります。"
+"オプションの '--recursive' は、'--whatrequires <REQ>' (オプションでは '--"
+"exactdeps' ではなく、'--alldeps' と共に使用) または '--requires <REQ> --"
+"resolve' と共に使用する必要があります。"
 
 #: dnf/cli/commands/repoquery.py:311
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -1979,8 +2003,9 @@ msgid ""
 "  For the given packages print a tree of thepackages."
 msgstr ""
 "正規のスイッチが特定されません\n"
-"usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--reco"
-"mmends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
+"usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
+"tree]\n"
 "\n"
 "説明:\n"
 "  与えられたパッケージではパッケージのツリーを表示します。"
@@ -2176,7 +2201,9 @@ msgstr "シェルを終了します"
 #: dnf/cli/commands/swap.py:35
 #, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
-msgstr "一つのspecを削除またはインストールするためインタラクティブ {prog} モジュールを実行"
+msgstr ""
+"一つのspecを削除またはインストールするためインタラクティブ {prog} モジュール"
+"を実行"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2403,23 +2430,29 @@ msgstr "現在のディレクトリーには読み取り/実行権限があり�
 
 #: dnf/cli/main.py:135
 msgid "try to add '{}' to command line to replace conflicting packages"
-msgstr "競合するパッケージを置き換えるには、コマンドラインに '{}' を追加してみてください"
+msgstr ""
+"競合するパッケージを置き換えるには、コマンドラインに '{}' を追加してみてくだ"
+"さい"
 
 #: dnf/cli/main.py:139
 msgid "try to add '{}' to skip uninstallable packages"
-msgstr "インストール不可のパッケージをスキップするには、'{}' を追加してみてください"
+msgstr ""
+"インストール不可のパッケージをスキップするには、'{}' を追加してみてください"
 
 #: dnf/cli/main.py:142
 msgid " or '{}' to skip uninstallable packages"
-msgstr " または、'{}' を追加して、インストール不可のパッケージをスキップしてください"
+msgstr ""
+" または、'{}' を追加して、インストール不可のパッケージをスキップしてください"
 
 #: dnf/cli/main.py:147
 msgid "try to add '{}' to use not only best candidate packages"
-msgstr "最適候補のパッケージのみを使用しないためには、'{}' を追加してみてください"
+msgstr ""
+"最適候補のパッケージのみを使用しないためには、'{}' を追加してみてください"
 
 #: dnf/cli/main.py:150
 msgid " or '{}' to use not only best candidate packages"
-msgstr " または、'{}' を追加して、最適候補のパッケージのみを使用しないでください"
+msgstr ""
+" または、'{}' を追加して、最適候補のパッケージのみを使用しないでください"
 
 #: dnf/cli/main.py:167
 msgid "Dependencies resolved."
@@ -2549,8 +2582,8 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
-"アップグレードまたは、info, list, repoquery で旧パッケージのケイパビリティを表示するため、 {prog} "
-"の旧プロセスロジックを有効化"
+"アップグレードまたは、info, list, repoquery で旧パッケージのケイパビリティを"
+"表示するため、 {prog} の旧プロセスロジックを有効化"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
@@ -2568,13 +2601,17 @@ msgstr "すべての質問に「いいえ」(no) と自動的に答えます"
 msgid ""
 "Enable additional repositories. List option. Supports globs, can be "
 "specified multiple times."
-msgstr "追加レポジトリを有効化、オプションのリスト、globsのサポートは何度でも指定可能です。"
+msgstr ""
+"追加レポジトリを有効化、オプションのリスト、globsのサポートは何度でも指定可能"
+"です。"
 
 #: dnf/cli/option_parser.py:266
 msgid ""
 "Disable repositories. List option. Supports globs, can be specified multiple "
 "times."
-msgstr "追加レポジトリを無効化、オプションのリスト、globsのサポートは何度でも指定可能です。"
+msgstr ""
+"追加レポジトリを無効化、オプションのリスト、globsのサポートは何度でも指定可能"
+"です。"
 
 #: dnf/cli/option_parser.py:270
 msgid ""
@@ -2604,7 +2641,9 @@ msgstr "excludepkgs を無効にします"
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
-msgstr "利用する追加レポジトリ(baseurlと同じパス)のラベルとパスは何度でも指定可能です。"
+msgstr ""
+"利用する追加レポジトリ(baseurlと同じパス)のラベルとパスは何度でも指定可能で"
+"す。"
 
 #: dnf/cli/option_parser.py:297
 msgid "disable removal of dependencies that are no longer used"
@@ -3610,7 +3649,9 @@ msgstr "repo %s: インポート済みの鍵 0x%s。"
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
-msgstr "モジュラーパッケージ '{}' のモジュラーメタデータは利用不可です、システムにインストールはできません"
+msgstr ""
+"モジュラーパッケージ '{}' のモジュラーメタデータは利用不可です、システムにイ"
+"ンストールはできません"
 
 #: dnf/db/group.py:339
 msgid "No available modular metadata for modular package"
@@ -3700,8 +3741,8 @@ msgid ""
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
 "不正な形式のロックファイル: %s 。\n"
-"他のdnf/yum プロセスが実行されていないことを確認し、ロックファイルを手動削除するかsystemd-tmpfiles --remove "
-"dnf.conf を実行してください。"
+"他のdnf/yum プロセスが実行されていないことを確認し、ロックファイルを手動削除"
+"するかsystemd-tmpfiles --remove dnf.conf を実行してください。"
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3753,17 +3794,21 @@ msgstr "不要なプロファイルを無視します: '{}/{}'"
 #: dnf/module/module_base.py:84
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr "モジュール '{1}:{2}' の引数 '{0}' に一致するものはすべて非アクティブです"
+msgstr ""
+"モジュール '{1}:{2}' の引数 '{0}' に一致するものはすべて非アクティブです"
 
 #: dnf/module/module_base.py:92
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "フェイルセーフレポジトリー {1} からのモジュール '{0}' インストールは許可されていません"
+msgstr ""
+"フェイルセーフレポジトリー {1} からのモジュール '{0}' インストールは許可され"
+"ていません"
 
 #: dnf/module/module_base.py:102
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
-msgstr "引数 {} でプロファイルが見つかりません。利用可能プロファイル '{}:{}': {}"
+msgstr ""
+"引数 {} でプロファイルが見つかりません。利用可能プロファイル '{}:{}': {}"
 
 #: dnf/module/module_base.py:106
 msgid "Unable to match profile for argument {}"
@@ -3771,7 +3816,9 @@ msgstr "引数 {} でプロファイルが見つかりません"
 
 #: dnf/module/module_base.py:118
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr "モジュール {}:{} にデフォルトのプロファイルがありません。利用可能プロファイル: {}"
+msgstr ""
+"モジュール {}:{} にデフォルトのプロファイルがありません。利用可能プロファイ"
+"ル: {}"
 
 #: dnf/module/module_base.py:122
 msgid "No profiles for module {}:{}"
@@ -3783,7 +3830,8 @@ msgstr "デフォルトのプロファイル {} はモジュール {}:{} で利�
 
 #: dnf/module/module_base.py:142
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr "フェイルセーフレポジトリーからのモジュールインストールは許可されていません"
+msgstr ""
+"フェイルセーフレポジトリーからのモジュールインストールは許可されていません"
 
 #: dnf/module/module_base.py:159 dnf/module/module_base.py:193
 #: dnf/module/module_base.py:337 dnf/module/module_base.py:355
@@ -3799,7 +3847,9 @@ msgstr "パッケージ {} に一致するものはありません"
 #: dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "フェイルセーフレポジトリー {1} からのモジュール '{0}' アップグレードは許可されていません"
+msgstr ""
+"フェイルセーフレポジトリー {1} からのモジュール '{0}' アップグレードは許可さ"
+"れていません"
 
 #: dnf/module/module_base.py:223 dnf/module/module_base.py:251
 msgid "Unable to match profile in argument {}"
@@ -3807,7 +3857,8 @@ msgstr "引数 {} でプロファイルを一致できません"
 
 #: dnf/module/module_base.py:231
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr "フェイルセーフレポジトリーからのモジュールアップグレードは許可されていません"
+msgstr ""
+"フェイルセーフレポジトリーからのモジュールアップグレードは許可されていません"
 
 #: dnf/module/module_base.py:367
 msgid ""
