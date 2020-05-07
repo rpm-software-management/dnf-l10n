@@ -14,13 +14,14 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
 # Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2020.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-06 09:18-0400\n"
-"PO-Revision-Date: 2020-04-24 00:25+0000\n"
-"Last-Translator: Bendegúz Gyönki <gyonkibendeguz@gmail.com>\n"
+"PO-Revision-Date: 2020-05-08 15:40+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
 "Language: hu\n"
@@ -28,37 +29,37 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.1\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #: dnf/automatic/emitter.py:31
 #, python-format
 msgid "The following updates have been applied on '%s':"
-msgstr "Az alábbi frissítések alkalmazva lettek ekkor: „%s”"
+msgstr "Az alábbi frissítések alkalmazva lettek erre: „%s”:"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Az alábbi frissítések elérhetőek innen: „%s”"
+msgstr "Az alábbi frissítések érhetők el erre: „%s”:"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Az alábbi frissítések letöltésre kerültek ekkor: „%s”"
+msgstr "Az alábbi frissítések le lettek töltve erre: „%s”:"
 
 #: dnf/automatic/emitter.py:80
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr "A frissítések alkalmazásra kerültek ekkor: „%s”"
+msgstr "Frissítések alkalmazva ezen: „%s”."
 
 #: dnf/automatic/emitter.py:82
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "A frissítések letöltésre kerültek ekkor: „%s”"
+msgstr "Frissítések letöltve erre: „%s”."
 
 #: dnf/automatic/emitter.py:84
 #, python-format
 msgid "Updates available on '%s'."
-msgstr "A frissítések elérhetőek innen: „%s”"
+msgstr "Frissítések érhetőek el ezen: „%s”."
 
 #: dnf/automatic/emitter.py:107
 #, python-format
@@ -238,10 +239,8 @@ msgstr "Szükséges hely:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
-"Még legalább {0}MB szabad helyre van szükség a(z) {1} fájlrendszeren."
-msgstr[1] ""
-"Még legalább {0}MB szabad helyre van szükség a(z) {1} fájlrendszeren."
+msgstr[0] "Még legalább {0} MB szabad helyre van szükség a(z) {1} fájlrendszeren."
+msgstr[1] "Még legalább {0} MB szabad helyre van szükség a(z) {1} fájlrendszeren."
 
 #: dnf/base.py:919
 msgid "Error Summary"
@@ -287,6 +286,7 @@ msgstr ""
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
+"Nem adhatók hozzá helyi csomagok, mert a tranzakciós feladat már létezik"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -447,23 +447,23 @@ msgstr "nincs egyező csomag"
 
 #: dnf/base.py:2291
 msgid "No security updates needed, but {} update available"
-msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető."
+msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
 #: dnf/base.py:2293
 msgid "No security updates needed, but {} updates available"
-msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető."
+msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
 #: dnf/base.py:2297
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
-"elérhető."
+"elérhető"
 
 #: dnf/base.py:2299
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
-"elérhető."
+"elérhető"
 
 #: dnf/base.py:2323
 #, python-format
@@ -581,7 +581,7 @@ msgstr "A(z) „%s” fájl nem olvasható: %s"
 #: dnf/cli/cli.py:902 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
-msgstr "Konfigurációs hiba: %s."
+msgstr "Konfigurációs hiba: %s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
@@ -751,6 +751,8 @@ msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"A parancsot rendszergazdai jogosultsággal kell futtatni (a legtöbb "
+"rendszeren a root felhasználóval)."
 
 #: dnf/cli/cli.py:843
 #, python-format
@@ -1286,7 +1288,7 @@ msgstr "Nem érhetők el csoportadatok a konfigurált tárolókhoz."
 #: dnf/cli/commands/group.py:127
 #, python-format
 msgid "Warning: Group %s does not exist."
-msgstr "Figyelmeztetés: A(z) %s csoport nem létezik"
+msgstr "Figyelmeztetés: A(z) %s csoport nem létezik."
 
 #: dnf/cli/commands/group.py:168
 msgid "Warning: No groups match:"
@@ -1385,8 +1387,7 @@ msgstr "Gyorsítótár készítése az összes metaadat fájlhoz."
 
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
-msgstr ""
-"a telepített csomagok felhasználó által telepítettként megjelölése be/ki"
+msgstr "a telepített csomagok felhasználó által telepítettként jelölése be/ki."
 
 #: dnf/cli/commands/mark.py:44
 msgid ""
@@ -1457,15 +1458,15 @@ msgstr "egy modul visszaállítása"
 
 #: dnf/cli/commands/module.py:202
 msgid "install a module profile including its packages"
-msgstr ""
+msgstr "modulprofil telepítése a csomagjaival együtt"
 
 #: dnf/cli/commands/module.py:223
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "az aktív adatfolyammal kapcsolatos csomagok frissítése"
 
 #: dnf/cli/commands/module.py:240
 msgid "remove installed module profiles and their packages"
-msgstr ""
+msgstr "a telepített modulprofilok és csomagjaik eltávolítása"
 
 #: dnf/cli/commands/module.py:264
 msgid "Package {} belongs to multiple modules, skipping"
@@ -1913,6 +1914,10 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"Ha a csomag nincs telepítve, akkor azon képességek megjelenítése, melyektől "
+"a %%pre és %%post beállító-parancsfájlok futtatása miatt függ. Ha a csomag "
+"telepített, akkor azon képességek megjelenítése, melyektől a %%pre, %%post, "
+"%%preun és %%postun futtatása miatt függ."
 
 #: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
@@ -1971,9 +1976,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
-"A „--resolve” kapcsolót a „--conflicts”, „--depends”, „--enhances”, „--"
-"provides”, „--recommends”, „--requires”, „--requires-pre”, „--suggests” vagy "
-"„--supplements” kapcsolók egyikével kell használni."
+"A „--resolve” kapcsolót a „--conflicts”, „--depends”, „--enhances”, "
+"„--provides”, „--recommends”, „--requires”, „--requires-pre”, „--suggests” "
+"vagy „--supplements” kapcsolók egyikével kell használni"
 
 #: dnf/cli/commands/repoquery.py:304
 msgid ""
@@ -1981,10 +1986,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"A „--recursive” kapcsolót a „--whatrequires <FÜGGŐSÉG>” kapcsolóval "
-"(választhatóan az „--alldeps” kapcsolóval együtt, de az „--exactdeps” "
-"nélkül), vagy a „--requires <FÜGGŐSÉG> --resolve” kapcsolókkal kell "
-"használni."
+"A „--recursive” kapcsolót a „--whatrequires <FÜGGŐSÉG>” kapcsolóval ("
+"választhatóan az „--alldeps” kapcsolóval együtt, de az „--exactdeps” nélkül)"
+", vagy a „--requires <FÜGGŐSÉG> --resolve” kapcsolókkal kell használni"
 
 #: dnf/cli/commands/repoquery.py:311
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2185,6 +2189,7 @@ msgstr ""
 "Parancssor specifikus argumentumok:\n"
 "\n"
 "config                   konfigurációs lehetőségek beállítása\n"
+"help                     súgó kiírása\n"
 "repository (vagy repo)   tárolók engedélyezése, letiltása listázása\n"
 "resolvedep               tranzakciókészlet feloldása\n"
 "transaction (vagy ts)    tranzakciókészlet listázása, visszaállítása vagy "
@@ -2318,43 +2323,43 @@ msgstr "Információ a frissítésekkel kapcsolatban: "
 
 #: dnf/cli/commands/updateinfo.py:281
 msgid "New Package notice(s)"
-msgstr "Új csomag észrevétel(ek):"
+msgstr "Új csomag észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:282
 msgid "Security notice(s)"
-msgstr "Biztonsági észrevétel(ek):"
+msgstr "Biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:283
 msgid "Critical Security notice(s)"
-msgstr "Kritikus biztonsági észrevétel(ek):"
+msgstr "Kritikus biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:285
 msgid "Important Security notice(s)"
-msgstr "Fontos biztonsági észrevétel(ek):"
+msgstr "Fontos biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:287
 msgid "Moderate Security notice(s)"
-msgstr "Közepes biztonsági észrevétel(ek):"
+msgstr "Közepes biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:289
 msgid "Low Security notice(s)"
-msgstr "Alacsony biztonsági észrevétel(ek):"
+msgstr "Alacsony biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:291
 msgid "Unknown Security notice(s)"
-msgstr "Ismeretlen biztonsági észrevétel(ek):"
+msgstr "Ismeretlen biztonsági észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:293
 msgid "Bugfix notice(s)"
-msgstr "Hibajavítási észrevétel(ek):"
+msgstr "Hibajavítási észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:294
 msgid "Enhancement notice(s)"
-msgstr "Fejlesztési észrevétel(ek):"
+msgstr "Fejlesztési észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:295
 msgid "other notice(s)"
-msgstr "egyéb észrevétel(ek):"
+msgstr "egyéb észrevétel(ek)"
 
 #: dnf/cli/commands/updateinfo.py:316
 msgid "Unknown/Sec."
@@ -2735,10 +2740,9 @@ msgid "List of Plugin Commands:"
 msgstr "Bővítmények parancsok listája:"
 
 #: dnf/cli/option_parser.py:413
-#, fuzzy, python-format
-#| msgid "Cannot read file \"%s\": %s"
+#, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr "A(z) „%s” fájl nem olvasható: %s"
+msgstr "A(z) „%s” argumentum nem kódolható: %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -2876,7 +2880,7 @@ msgstr "Nem található csomag"
 
 #: dnf/cli/output.py:706
 msgid "y"
-msgstr "y"
+msgstr "i"
 
 #: dnf/cli/output.py:706
 msgid "yes"
@@ -3840,7 +3844,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:122
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "Nincsenek profilok a(z) {} modulhoz: {}"
 
 #: dnf/module/module_base.py:129
 msgid "Default profile {} not available in module {}:{}"
