@@ -11,21 +11,22 @@
 # Göran Uddeborg <goeran@uddeborg.se>, 2018. #zanata
 # Göran Uddeborg <goeran@uddeborg.se>, 2019. #zanata
 # Göran Uddeborg <goeran@uddeborg.se>, 2020. #zanata
+# Mikael Granberg <mikael@famgra.se>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-08 09:18-0400\n"
-"PO-Revision-Date: 2020-02-09 12:50+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish (http://www.transifex.com/projects/p/dnf/language/"
-"sv/)\n"
+"PO-Revision-Date: 2020-05-11 22:43+0000\n"
+"Last-Translator: Mikael Granberg <mikael@famgra.se>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.0.4\n"
 
 #: dnf/automatic/emitter.py:31
 #, python-format
@@ -228,8 +229,8 @@ msgstr "Diskbehov:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] "Åtminstone {0} MB mer utrymme behövs på filsystemet {1}."
-msgstr[1] "Åtminstone {0} MB mer utrymme behövs på filsystemet [1}."
+msgstr[0] "Åtminstone {0}MB mer utrymme behövs på filsystemet {1}."
+msgstr[1] "Åtminstone {0}MB mer utrymme behövs på filsystemet [1}."
 
 #: dnf/base.py:919
 msgid "Error Summary"
@@ -255,7 +256,7 @@ msgstr "Kunde inte ta bort transaktionsfilen %s"
 
 #: dnf/base.py:1090
 msgid "Some packages were not downloaded. Retrying."
-msgstr "Några paket hämtades inte.  Försöker igen."
+msgstr "Några paket hämtades inte. Försöker igen."
 
 #: dnf/base.py:1120
 #, python-format
@@ -610,8 +611,8 @@ msgid ""
 "reset the module, you can install the other stream."
 msgstr ""
 "Det är inte möjligt att byta aktiverade strömmar för en modul.\n"
-"Det rekimmenderas att ta bort allt innehåll från modulen, och återställa "
-"modulen med kommandot ”{prog} module reset <modulnamn>”.  Efter att du "
+"Det är rekommenderat att ta bort allt innehåll från modulen, och återställa "
+"modulen med kommandot ”{prog} module reset <modulnamn>”. Efter att du "
 "återställt modulen kan du installera den andra strömmen."
 
 #: dnf/cli/cli.py:209
@@ -747,7 +748,7 @@ msgstr ""
 #: dnf/cli/cli.py:843
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "Inget sådant kommando: %s.  Använd %s --help"
+msgstr "Det finns Inget sådant kommando: %s. Använd %s --help"
 
 #: dnf/cli/cli.py:846
 #, python-format, python-brace-format
@@ -873,7 +874,7 @@ msgstr ""
 #: dnf/cli/commands/__init__.py:80
 #, python-format
 msgid "Problem repository: %s"
-msgstr "Problemförråd     : %s"
+msgstr "Problemkatalog: %s"
 
 #: dnf/cli/commands/__init__.py:167
 msgid "display details about a package or group of packages"
@@ -1033,10 +1034,9 @@ msgid "No transaction ID or package name given."
 msgstr "Inget transaktions-ID eller paketnamn angivet."
 
 #: dnf/cli/commands/__init__.py:879
-#, fuzzy, python-format
-#| msgid "You don't have access to the history DB."
+#, python-format
 msgid "You don't have access to the history DB: %s"
-msgstr "Du har inte tillgång till historie-DB:n."
+msgstr "Du har inte tillgång till historik databasen: %s"
 
 #: dnf/cli/commands/__init__.py:891
 #, python-format
@@ -1352,7 +1352,7 @@ msgstr "Paket att installera"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "Kan inte hitta en matchning"
+msgstr "Kunde inte hitta en matchning"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
@@ -1417,8 +1417,8 @@ msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
 msgstr ""
-"Endast modulnamn, ström, arkitektur eller profil används.  Ignorerar oanvänd "
-"information i argumentet: ”{}”"
+"Endast modulnamn, dataström, arkitektur eller profil används. Ignorerar "
+"oanvänd information i argumentet: ”{}”"
 
 #: dnf/cli/commands/module.py:77
 msgid "list all module streams, profiles and states"
@@ -1888,6 +1888,9 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"Om paketet inte är installerat, visa beroenden som krävs för att köra %%pre "
+"och %%post scriptlets. Om paketet är installerat, visa beroenden som krävs "
+"för %%pre, %%post, %%preun och %%postun."
 
 #: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
@@ -2572,7 +2575,7 @@ msgid ""
 "Enable additional repositories. List option. Supports globs, can be "
 "specified multiple times."
 msgstr ""
-"Aktivera ytterligare förråd.  Listalternativ.  Stödjer globbningar, kan "
+"Aktivera ytterligare datakataloger. Listalternativ. Stödjer globbningar, kan "
 "anges flera gånger."
 
 #: dnf/cli/option_parser.py:266
@@ -2580,8 +2583,8 @@ msgid ""
 "Disable repositories. List option. Supports globs, can be specified multiple "
 "times."
 msgstr ""
-"Avaktivera förråd.  Listalternativ.  Stödjer globbningar, kan anges flera "
-"gånger."
+"Avaktivera datakataloger. Listalternativ. Stödjer globbningar, kan anges "
+"flera gånger."
 
 #: dnf/cli/option_parser.py:270
 msgid ""
@@ -2701,10 +2704,9 @@ msgid "List of Plugin Commands:"
 msgstr "Lista över instickskommandon:"
 
 #: dnf/cli/option_parser.py:413
-#, fuzzy, python-format
-#| msgid "Cannot read file \"%s\": %s"
+#, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr "Kan inte läsa filen ”%s”: %s"
+msgstr "Kan inte kryptera argument '%s': %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -2821,7 +2823,7 @@ msgstr "Installerad av"
 #: dnf/cli/output.py:558
 msgctxt "short"
 msgid "Summary"
-msgstr "Sammanf."
+msgstr "Summering"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:564
@@ -2982,7 +2984,7 @@ msgstr "Ett fel uppstod vid beräkningen av installerad storlek"
 #: dnf/cli/output.py:1030
 #, python-format
 msgid "Freed space: %s"
-msgstr "Frigjort utrymme:  %s"
+msgstr "Frigjort utrymme: %s"
 
 #: dnf/cli/output.py:1039
 msgid "Marking packages as installed by the group:"
@@ -3113,7 +3115,7 @@ msgstr ""
 #: dnf/cli/output.py:1287
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
-msgstr "Hoppar över paket med trasiga  beroenden%s"
+msgstr "Hoppar över paket med saknade beroenden%s"
 
 #: dnf/cli/output.py:1291
 msgid " or part of a group"
@@ -3621,7 +3623,7 @@ msgstr "förrådet %s: 0x%s är redan importerad"
 #: dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "förrådet %s: importerade nyckeln 0x%s"
+msgstr "Paketkatalog %s: importerade nyckeln 0x%s."
 
 #: dnf/db/group.py:289
 msgid ""
@@ -3727,7 +3729,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
-msgstr "Aktiverar en annan ström för ”{}”"
+msgstr "Aktiverar en annan ström för ”{}”."
 
 #: dnf/module/__init__.py:27
 msgid "Nothing to show."
@@ -3735,11 +3737,11 @@ msgstr "Inget att visa."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr "Installerar en nyare version av ”{}” än angivet.  Anledning: {}"
+msgstr "Installerar en nyare version av ”{}” än angivet. Anledning: {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
-msgstr "Aktiverade moduler: {}"
+msgstr "Aktiverade moduler: {}."
 
 #: dnf/module/__init__.py:30
 msgid "No profile specified for '{}', please specify profile."
@@ -3786,8 +3788,8 @@ msgstr ""
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
-"Kan inte matcha profilen för argumentet {}.  Tilgängliga profiler för ”{}:"
-"{}”: {}"
+"Kan inte matcha profilen för argumentet {}. Tilgängliga profiler för ”{}:{}”:"
+" {}"
 
 #: dnf/module/module_base.py:106
 msgid "Unable to match profile for argument {}"
@@ -3795,7 +3797,7 @@ msgstr "Kan inte matcha en profil för argumentet {}"
 
 #: dnf/module/module_base.py:118
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr "Inga standardprofiler för modulen {}:{}.  Tillgängliga profiler: {}"
+msgstr "Inga standardprofiler för modulen {}:{}. Tillgängliga profiler: {}"
 
 #: dnf/module/module_base.py:122
 msgid "No profiles for module {}:{}"
@@ -3824,7 +3826,8 @@ msgstr "Ingen matchning för paketet {}"
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
-"Att uppgradera  modulen ”{0}” från det felsäkra förrådet {1} är inte tillåtet"
+"Att uppgradera modulen ”{0}” från den felsäkra datakatalogen {1} är inte "
+"tillåtet"
 
 #: dnf/module/module_base.py:223 dnf/module/module_base.py:251
 msgid "Unable to match profile in argument {}"
@@ -3838,7 +3841,7 @@ msgstr "Att uppgradera en modul från ett felsäkert förråd är inte tillåtet
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
-"Endast modulnamn behövs.  Ignorerar oanvänd information i argumentet: ”{}”"
+"Endast modulnamn behövs. Ignorerar oanvänd information i argumentet: ”{}”"
 
 #: dnf/package.py:295
 #, python-format
