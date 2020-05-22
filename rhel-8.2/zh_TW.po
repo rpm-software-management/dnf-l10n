@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-05-16 10:40+0000\n"
+"PO-Revision-Date: 2020-05-23 10:40+0000\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-rhel-82/zh_TW/>\n"
@@ -334,7 +334,7 @@ msgstr "沒有標記為升級的群組。"
 #: ../dnf/cli/commands/upgrade.py:110 ../dnf/cli/commands/upgrade.py:121
 #, python-format
 msgid "No match for argument: %s"
-msgstr "沒有符合的引數：%s"
+msgstr "引數不符：%s"
 
 #: ../dnf/base.py:1867 ../dnf/base.py:1878 ../dnf/base.py:2241
 msgid "no package matched"
@@ -591,7 +591,7 @@ msgstr "GPG 檢查失敗"
 
 #: ../dnf/cli/cli.py:312
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "{} 的變更記錄"
 
 #: ../dnf/cli/cli.py:345 ../dnf/cli/cli.py:488 ../dnf/cli/cli.py:494
 msgid "Obsoleting Packages"
@@ -675,7 +675,7 @@ msgstr "沒有軟體庫符合：%s"
 
 #: ../dnf/cli/cli.py:795
 msgid "This command has to be run under the root user."
-msgstr "這個指令需要在 Root 使用者底下執行。"
+msgstr "此命令必須在 root 使用者下執行"
 
 #: ../dnf/cli/cli.py:824
 #, python-format
@@ -1106,7 +1106,7 @@ msgstr[0] "%d 個檔案已經移除"
 #: ../dnf/cli/commands/clean.py:119 ../dnf/lock.py:134
 #, python-format
 msgid "Waiting for process with pid %d to finish."
-msgstr "正在等候 PID %d 程序完成。"
+msgstr "正在等候 PID %d 處理程序完成。"
 
 #: ../dnf/cli/commands/deplist.py:32
 msgid "List package's dependencies and what packages provide them"
@@ -1204,7 +1204,7 @@ msgstr "要安裝的軟體包"
 
 #: ../dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "無法找到匹配項目"
+msgstr "找不到符合項目"
 
 #: ../dnf/cli/commands/install.py:131
 #, python-format
@@ -2522,7 +2522,7 @@ msgstr "打包者"
 #. Translators: This message should be no longer than 12 characters.
 #: ../dnf/cli/output.py:534
 msgid "Buildtime"
-msgstr "建置時間"
+msgstr "組建時間"
 
 #. Translators: This message should be no longer than 12 characters.
 #: ../dnf/cli/output.py:538
@@ -2565,7 +2565,7 @@ msgstr "y"
 
 #: ../dnf/cli/output.py:699
 msgid "yes"
-msgstr "是"
+msgstr "yes"
 
 #: ../dnf/cli/output.py:700
 msgid "n"
@@ -2573,7 +2573,7 @@ msgstr "n"
 
 #: ../dnf/cli/output.py:700
 msgid "no"
-msgstr "否"
+msgstr "no"
 
 #: ../dnf/cli/output.py:704
 msgid "Is this ok [y/N]: "
@@ -3314,17 +3314,17 @@ msgstr ""
 #: ../dnf/conf/read.py:96
 #, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr ""
+msgstr "軟體庫的 ID 無效：%s，位元組 = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr "%s 軟體庫：0x%s 已經匯入"
+msgstr "%s 軟體庫：0x%s 早已匯入"
 
 #: ../dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "%s 軟體庫：0x%s 金鑰已匯入。"
+msgstr "%s 軟體庫：已匯入 0x%s 金鑰。"
 
 #: ../dnf/db/group.py:344
 #, python-format
@@ -3358,11 +3358,11 @@ msgstr "未支援的查核碼類型：%s"
 
 #: ../dnf/drpm.py:144
 msgid "Delta RPM rebuild failed"
-msgstr "Delta RPM 重組失敗"
+msgstr "Delta RPM 重新組建失敗"
 
 #: ../dnf/drpm.py:146
 msgid "Checksum of the delta-rebuilt RPM failed"
-msgstr "delta-rebuilt RPM 的查核碼檢驗失敗"
+msgstr "delta-rebuilt RPM 的總和檢查碼失敗"
 
 #: ../dnf/drpm.py:149
 msgid "done"
