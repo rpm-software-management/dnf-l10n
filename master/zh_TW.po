@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-05-15 09:18-0400\n"
-"PO-Revision-Date: 2020-05-16 10:40+0000\n"
+"PO-Revision-Date: 2020-05-23 10:40+0000\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
@@ -230,7 +230,7 @@ msgstr "錯誤摘要"
 #: dnf/base.py:945
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB 在 {prog} 外有變動。"
 
 #: dnf/base.py:991 dnf/base.py:999
 msgid "Could not run transaction."
@@ -262,7 +262,7 @@ msgstr "失敗的 Delta RPM 已將更新所需從 %.1f MB 增加為 %.1f MB（�
 
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "因為已經有處理事項工作，無法加入本機軟體包"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -337,7 +337,7 @@ msgstr "尚未安裝軟體包 %s，所以無法降級。"
 #: dnf/cli/commands/upgrade.py:110 dnf/cli/commands/upgrade.py:121
 #, python-format
 msgid "No match for argument: %s"
-msgstr "沒有符合的引數：%s"
+msgstr "引數不符：%s"
 
 #: dnf/base.py:1935
 #, python-format
@@ -363,7 +363,7 @@ msgstr "尚未安裝軟體包 %s，所以無法更新。"
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr ""
+msgstr "已經安裝同版或更新版的 %s，無法更新。"
 
 #: dnf/base.py:2027 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -505,7 +505,7 @@ msgstr "部份的軟體包有無效的快取，但是因為「--cacheonly」選�
 
 #: dnf/base.py:2537 dnf/base.py:2557
 msgid "No match for argument"
-msgstr ""
+msgstr "沒有符合引數的項目"
 
 #: dnf/base.py:2545 dnf/base.py:2565
 msgid "All matches were filtered out by exclude filtering for argument"
@@ -618,7 +618,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:330
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "{} 的變更記錄"
 
 #: dnf/cli/cli.py:363 dnf/cli/cli.py:504 dnf/cli/cli.py:510
 msgid "Obsoleting Packages"
@@ -1171,7 +1171,7 @@ msgstr[0] "%d 個檔案已經移除"
 #: dnf/cli/commands/clean.py:119 dnf/lock.py:139
 #, python-format
 msgid "Waiting for process with pid %d to finish."
-msgstr "正在等候 PID %d 程序完成。"
+msgstr "正在等候 PID %d 處理程序完成。"
 
 #: dnf/cli/commands/deplist.py:32
 msgid "List package's dependencies and what packages provide them"
@@ -1281,7 +1281,7 @@ msgstr "要安裝的軟體包"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "無法找到匹配項目"
+msgstr "找不到符合項目"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
@@ -2676,7 +2676,7 @@ msgstr "打包者"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:541
 msgid "Buildtime"
-msgstr "建置時間"
+msgstr "組建時間"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:545
@@ -2719,7 +2719,7 @@ msgstr "y"
 
 #: dnf/cli/output.py:706
 msgid "yes"
-msgstr "是"
+msgstr "yes"
 
 #: dnf/cli/output.py:707
 msgid "n"
@@ -2727,7 +2727,7 @@ msgstr "n"
 
 #: dnf/cli/output.py:707
 msgid "no"
-msgstr "否"
+msgstr "no"
 
 #: dnf/cli/output.py:711
 msgid "Is this ok [y/N]: "
@@ -3485,12 +3485,12 @@ msgstr ""
 #: dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr "%s 軟體庫：0x%s 已經匯入"
+msgstr "%s 軟體庫：0x%s 早已匯入"
 
 #: dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "%s 軟體庫：0x%s 金鑰已匯入。"
+msgstr "%s 軟體庫：已匯入 0x%s 金鑰。"
 
 #: dnf/db/group.py:289
 msgid ""
@@ -3538,11 +3538,11 @@ msgstr "未支援的查核碼類型：%s"
 
 #: dnf/drpm.py:144
 msgid "Delta RPM rebuild failed"
-msgstr "Delta RPM 重組失敗"
+msgstr "Delta RPM 重新組建失敗"
 
 #: dnf/drpm.py:146
 msgid "Checksum of the delta-rebuilt RPM failed"
-msgstr "delta-rebuilt RPM 的查核碼檢驗失敗"
+msgstr "delta-rebuilt RPM 的總和檢查碼失敗"
 
 #: dnf/drpm.py:149
 msgid "done"
