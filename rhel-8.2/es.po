@@ -31,10 +31,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-05-16 10:40+0000\n"
+"PO-Revision-Date: 2020-06-05 12:40+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/es/>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1905,6 +1905,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"La opción '--recursive' tiene que ser usada con '--whatrequires <REQ>' ("
+"opcionalmente con '--alldeps', pero no con '--exactdeps'), o con '--requires "
+"<REQ> --resolve'"
 
 #: ../dnf/cli/commands/repoquery.py:318
 msgid "Package {} contains no files"
@@ -2542,6 +2545,7 @@ msgstr ""
 #: ../dnf/cli/option_parser.py:277
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr ""
+"deshabilita la comprobación de la firma gpg (si lo permite la política RPM)"
 
 #: ../dnf/cli/option_parser.py:279
 msgid "control whether color is used"
@@ -3585,7 +3589,8 @@ msgstr "módulos o grupos con errores: "
 #: ../dnf/exceptions.py:119
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
-msgstr[0] ""
+msgstr[0] "Problema de dependencia modular con Predeterminados:"
+msgstr[1] "Problemas de dependencia modular con Predeterminados:"
 
 #: ../dnf/exceptions.py:124 ../dnf/module/module_base.py:608
 msgid "Modular dependency problem:"
@@ -3677,6 +3682,8 @@ msgstr "No hay coincidencia para el paquete {}"
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
+"Solo se requiere nombre de módulo. Ignorando la información innecesaria en "
+"el argumento: '{}'"
 
 #: ../dnf/package.py:273
 #, python-format
