@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-23 09:18-0400\n"
+"POT-Creation-Date: 2020-06-26 09:18-0400\n"
 "PO-Revision-Date: 2020-05-05 07:40+0000\n"
 "Last-Translator: Casey Jones <nahareport@yahoo.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -77,30 +77,30 @@ msgstr "'%s' を使用した電子メールの送信に失敗しました: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "コマンド '%s' の実行に失敗しました: %d を返しました"
 
-#: dnf/automatic/main.py:156 dnf/conf/config.py:151
+#: dnf/automatic/main.py:162 dnf/conf/config.py:151
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "不明な設定値: %s=%s in %s; %s"
 
-#: dnf/automatic/main.py:160 dnf/conf/config.py:158
+#: dnf/automatic/main.py:166 dnf/conf/config.py:158
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "不明な設定オプション: %s = %s in %s"
 
-#: dnf/automatic/main.py:228 dnf/cli/cli.py:298
+#: dnf/automatic/main.py:234 dnf/cli/cli.py:298
 msgid "GPG check FAILED"
 msgstr "GPG の確認に失敗しました"
 
-#: dnf/automatic/main.py:247
+#: dnf/automatic/main.py:253
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic を開始しました。"
 
-#: dnf/automatic/main.py:251
+#: dnf/automatic/main.py:257
 #, python-format
 msgid "Sleep for %s seconds"
 msgstr "%s 秒スリープします"
 
-#: dnf/automatic/main.py:283 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:289 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -441,7 +441,7 @@ msgid "Action not handled: {}"
 msgstr "動作は対処されていません: {}"
 
 #: dnf/base.py:2257 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
-#: dnf/cli/commands/__init__.py:913 dnf/cli/commands/group.py:398
+#: dnf/cli/commands/__init__.py:915 dnf/cli/commands/group.py:398
 #, python-format
 msgid "No package %s available."
 msgstr "利用可能なパッケージ %s がありません。"
@@ -1039,7 +1039,7 @@ msgstr "{prog} コマンドでヘルプ表示"
 msgid "display, or use, the transaction history"
 msgstr "トランザクション履歴を表示、または使用します"
 
-#: dnf/cli/commands/__init__.py:859
+#: dnf/cli/commands/__init__.py:861
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1047,16 +1047,16 @@ msgstr ""
 "1 つ以上のトランザクション ID が見つかりました。\n"
 "'{}' は 1 つのトランザクション ID またはパッケージ名が必要です。"
 
-#: dnf/cli/commands/__init__.py:867
+#: dnf/cli/commands/__init__.py:869
 msgid "No transaction ID or package name given."
 msgstr "トランザクション ID、またはパッケージ名が指定されていません。"
 
-#: dnf/cli/commands/__init__.py:879
+#: dnf/cli/commands/__init__.py:881
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "履歴 DB にアクセスできません: %s"
 
-#: dnf/cli/commands/__init__.py:891
+#: dnf/cli/commands/__init__.py:893
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1065,7 +1065,7 @@ msgstr ""
 "トランザクション %s を取り消すことはできません。取り消すことで、パッケージ"
 "データベースに矛盾が生じます。"
 
-#: dnf/cli/commands/__init__.py:896
+#: dnf/cli/commands/__init__.py:898
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1074,7 +1074,7 @@ msgstr ""
 "トランザクション %s をロールバックすることはできません。ロールバックすること"
 "で、パッケージデータベースに矛盾が生じます。"
 
-#: dnf/cli/commands/__init__.py:966
+#: dnf/cli/commands/__init__.py:968
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1082,7 +1082,7 @@ msgstr ""
 "無効なトランザクション ID の範囲の定義 '{}'。\n"
 "'<transaction-id>..<transaction-id>' を使用してください。"
 
-#: dnf/cli/commands/__init__.py:970
+#: dnf/cli/commands/__init__.py:972
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1090,7 +1090,7 @@ msgstr ""
 "'{}' をトランザクション IDに変換できません。\n"
 "'<number>', 'last', 'last-<number>' を使用してください。"
 
-#: dnf/cli/commands/__init__.py:999
+#: dnf/cli/commands/__init__.py:1001
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "パッケージ '{}' を操作するトランザクションが見つかりません。"
 
@@ -1701,11 +1701,11 @@ msgstr "repo の名前"
 msgid "Total packages: {}"
 msgstr "総パッケージ: {}"
 
-#: dnf/cli/commands/repoquery.py:108
+#: dnf/cli/commands/repoquery.py:107
 msgid "search for packages matching keyword"
 msgstr "キーワードに一致するパッケージを検索します"
 
-#: dnf/cli/commands/repoquery.py:122
+#: dnf/cli/commands/repoquery.py:121
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1713,23 +1713,23 @@ msgstr ""
 "すべてのパッケージをクエリーします (repoquery '*' の短縮形、または引数なしの "
 "repoquery)"
 
-#: dnf/cli/commands/repoquery.py:125
+#: dnf/cli/commands/repoquery.py:124
 msgid "Query all versions of packages (default)"
 msgstr "パッケージのすべてのバージョンをクエリーします (デフォルト)"
 
-#: dnf/cli/commands/repoquery.py:128
+#: dnf/cli/commands/repoquery.py:127
 msgid "show only results from this ARCH"
 msgstr "この ARCH の結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:130
+#: dnf/cli/commands/repoquery.py:129
 msgid "show only results that owns FILE"
 msgstr "FILE を所有する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:133
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that conflict REQ"
 msgstr "REQ と競合する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:136
+#: dnf/cli/commands/repoquery.py:135
 msgid ""
 "shows results that requires, suggests, supplements, enhances,or recommends "
 "package provides and files REQ"
@@ -1737,43 +1737,43 @@ msgstr ""
 "REQ を提供およびファイルするパッケージを必要、提案、補完、機能強化、または推"
 "奨する結果を表示します"
 
-#: dnf/cli/commands/repoquery.py:140
+#: dnf/cli/commands/repoquery.py:139
 msgid "show only results that obsolete REQ"
 msgstr "REQ を廃止する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:143
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that provide REQ"
 msgstr "REQ を提供する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:146
+#: dnf/cli/commands/repoquery.py:145
 msgid "shows results that requires package provides and files REQ"
 msgstr "REQ を提供およびファイルするパッケージが必要な結果を表示します"
 
-#: dnf/cli/commands/repoquery.py:149
+#: dnf/cli/commands/repoquery.py:148
 msgid "show only results that recommend REQ"
 msgstr "REQ を推奨する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:152
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that enhance REQ"
 msgstr "REQ を機能強化する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:155
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that suggest REQ"
 msgstr "REQ を提案する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:158
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that supplement REQ"
 msgstr "REQ を補完する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:161
+#: dnf/cli/commands/repoquery.py:160
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr "非明示の依存関係を確認します(ファイルと提供); デフォルト"
 
-#: dnf/cli/commands/repoquery.py:163
+#: dnf/cli/commands/repoquery.py:162
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr "指定されたとおりに依存関係を確認します。--alldeps の反対になります"
 
-#: dnf/cli/commands/repoquery.py:165
+#: dnf/cli/commands/repoquery.py:164
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
@@ -1781,27 +1781,23 @@ msgstr ""
 "--whatrequires および --requires --resolve と共に使用し、パッケージを再帰的に"
 "クエリーします。"
 
-#: dnf/cli/commands/repoquery.py:167
+#: dnf/cli/commands/repoquery.py:166
 msgid "show a list of all dependencies and what packages provide them"
 msgstr "すべての依存関係とこれを提供するパッケージがどれかを一覧表示します"
 
-#: dnf/cli/commands/repoquery.py:169
-msgid "show available tags to use with --queryformat"
-msgstr "--queryformat と使うために利用可能なタグを表示します"
-
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:168
 msgid "resolve capabilities to originating package(s)"
 msgstr "オリジナルのパッケージの機能を解決します"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:170
 msgid "show recursive tree for package(s)"
 msgstr "パッケージの再帰的なツリーを表示します"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:172
 msgid "operate on corresponding source RPM"
 msgstr "対応するソース RPM で操作します"
 
-#: dnf/cli/commands/repoquery.py:178
+#: dnf/cli/commands/repoquery.py:174
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1809,31 +1805,38 @@ msgstr ""
 "特定の name.arch に最新パッケージ N を表示します (または N がネガティブな場合"
 "は N 以外の最新のもの)"
 
-#: dnf/cli/commands/repoquery.py:181
+#: dnf/cli/commands/repoquery.py:177
 msgid "list also packages of inactive module streams"
 msgstr "非アクティブモジュールストリームのパッケージもリスト"
 
-#: dnf/cli/commands/repoquery.py:186
+#: dnf/cli/commands/repoquery.py:182
 msgid "show detailed information about the package"
 msgstr "パッケージに関する詳細情報を表示します"
 
-#: dnf/cli/commands/repoquery.py:189
+#: dnf/cli/commands/repoquery.py:185
 msgid "show list of files in the package"
 msgstr "パッケージのファイルを一覧表示します"
 
-#: dnf/cli/commands/repoquery.py:192
+#: dnf/cli/commands/repoquery.py:188
 msgid "show package source RPM name"
 msgstr "パッケージソース RPM 名を表示します"
 
-#: dnf/cli/commands/repoquery.py:195
+#: dnf/cli/commands/repoquery.py:191
 msgid "show changelogs of the package"
 msgstr "パッケージの changelogs を表示します"
 
-#: dnf/cli/commands/repoquery.py:198
-msgid "format for displaying found packages"
-msgstr "見つかったパッケージを表示する形式"
+#: dnf/cli/commands/repoquery.py:194
+#, python-format, python-brace-format
+msgid ""
+"display format for listing packages: \"%%{name} %%{version} ...\", use --"
+"querytags to view full tag list"
+msgstr ""
 
-#: dnf/cli/commands/repoquery.py:201
+#: dnf/cli/commands/repoquery.py:198
+msgid "show available tags to use with --queryformat"
+msgstr "--queryformat と使うために利用可能なタグを表示します"
+
+#: dnf/cli/commands/repoquery.py:202
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1841,7 +1844,7 @@ msgstr ""
 "見つかったパッケージを表示するには  name-epoch:version-release.architecture "
 "形式を使用します (デフォルト)"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -1849,7 +1852,7 @@ msgstr ""
 "見つかったパッケージを表示するには name-version-release 形式を使用します "
 "(rpm クエリーデフォルト)"
 
-#: dnf/cli/commands/repoquery.py:210
+#: dnf/cli/commands/repoquery.py:211
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
@@ -1857,55 +1860,55 @@ msgstr ""
 "見つかったパッケージを表示するには epoch:name-version-release.architecture 形"
 "式を使用します"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid "Display in which comps groups are presented selected packages"
 msgstr "どの comps グループに選択されたパッケージが提示されたか表示します"
 
-#: dnf/cli/commands/repoquery.py:217
+#: dnf/cli/commands/repoquery.py:218
 msgid "limit the query to installed duplicate packages"
 msgstr "インストール済みの重複するパッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:224
+#: dnf/cli/commands/repoquery.py:225
 msgid "limit the query to installed installonly packages"
 msgstr "インストール済みの installonly パッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
 "未充足な依存関係があるインストール済みパッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:229
+#: dnf/cli/commands/repoquery.py:230
 msgid "show a location from where packages can be downloaded"
 msgstr "パッケージをダウンロードできる場所を表示します"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "Display capabilities that the package conflicts with."
 msgstr "パッケージが競合する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:233
+#: dnf/cli/commands/repoquery.py:234
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
 msgstr ""
 "パッケージが依存、機能強化、推奨、提案、および補完できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package can enhance."
 msgstr "パッケージが機能拡張できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid "Display capabilities provided by the package."
 msgstr "パッケージが提供する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:237
+#: dnf/cli/commands/repoquery.py:238
 msgid "Display capabilities that the package recommends."
 msgstr "パッケージが推奨する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package depends on."
 msgstr "パッケージが依存する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -1917,28 +1920,28 @@ msgstr ""
 "ている場合、 %%pre, %%post, %%preun と %%postun に依存するケイパビリティを表"
 "示します。"
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package suggests."
 msgstr "パッケージが提案する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:243
+#: dnf/cli/commands/repoquery.py:244
 msgid "Display capabilities that the package can supplement."
 msgstr "パッケージが補完できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:249
+#: dnf/cli/commands/repoquery.py:250
 msgid "Display only available packages."
 msgstr "利用可能なパッケージのみを表示する。"
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only installed packages."
 msgstr "インストール済みのパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:253
+#: dnf/cli/commands/repoquery.py:254
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr "利用可能なリポジトリーに存在しないパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:254
+#: dnf/cli/commands/repoquery.py:255
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -1946,25 +1949,25 @@ msgstr ""
 "インストール済みのパッケージの一部にアップグレードを提供するパッケージのみを"
 "表示します。"
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr "\"{prog} autoremove\" コマンドにより削除可能なパッケージのみを表示。"
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid "Display only packages that were installed by user."
 msgstr "ユーザーによってインストールされたパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:269
+#: dnf/cli/commands/repoquery.py:270
 msgid "Display only recently edited packages"
 msgstr "最近編集されたパッケージのみを表示します"
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "the key to search for"
 msgstr "検索するための鍵"
 
-#: dnf/cli/commands/repoquery.py:294
+#: dnf/cli/commands/repoquery.py:295
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -1974,7 +1977,7 @@ msgstr ""
 "provides'、'--recommends'、'--requires'、'--requires-pre'、'--suggests' また"
 "は '--supplements' オプションのいずれか 1 つと使用する必要があります。"
 
-#: dnf/cli/commands/repoquery.py:304
+#: dnf/cli/commands/repoquery.py:305
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -1984,19 +1987,14 @@ msgstr ""
 "exactdeps' ではなく、'--alldeps' と共に使用) または '--requires <REQ> --"
 "resolve' と共に使用する必要があります。"
 
-#: dnf/cli/commands/repoquery.py:311
+#: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr ""
 "引数 {} は --whatrequires または --whatdepends オプションを必要とします"
 
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "Package {} contains no files"
 msgstr "パッケージ {} はファイルを含んでいません"
-
-#: dnf/cli/commands/repoquery.py:436
-#, python-brace-format
-msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
-msgstr "利用可能な query-tags: --queryformat \".. %{tag} ..\" を使用します"
 
 #: dnf/cli/commands/repoquery.py:561
 #, python-brace-format
@@ -2398,7 +2396,7 @@ msgid "Files"
 msgstr "ファイル"
 
 #: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1499
-#: dnf/cli/output.py:1770 dnf/cli/output.py:1772
+#: dnf/cli/output.py:1772 dnf/cli/output.py:1774
 msgid "Installed"
 msgstr "インストール済み"
 
@@ -3160,8 +3158,7 @@ msgid "Package"
 msgstr "パッケージ"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
-#. This is also a hack to resolve RhBug 1302935 correctly.
-#: dnf/cli/output.py:1322 dnf/cli/output.py:2023
+#: dnf/cli/output.py:1322
 msgctxt "long"
 msgid "Package"
 msgstr "パッケージ"
@@ -3182,11 +3179,11 @@ msgstr ""
 "%s\n"
 
 #. TODO: remove
-#: dnf/cli/output.py:1383 dnf/cli/output.py:1930 dnf/cli/output.py:1931
+#: dnf/cli/output.py:1383 dnf/cli/output.py:1932 dnf/cli/output.py:1933
 msgid "Install"
 msgstr "インストール"
 
-#: dnf/cli/output.py:1387 dnf/cli/output.py:1939
+#: dnf/cli/output.py:1387 dnf/cli/output.py:1941
 msgid "Upgrade"
 msgstr "アップグレード"
 
@@ -3194,7 +3191,7 @@ msgstr "アップグレード"
 msgid "Remove"
 msgstr "削除"
 
-#: dnf/cli/output.py:1390 dnf/cli/output.py:1937
+#: dnf/cli/output.py:1390 dnf/cli/output.py:1939
 msgid "Downgrade"
 msgstr "ダウングレード"
 
@@ -3212,11 +3209,11 @@ msgid "Dependent package"
 msgid_plural "Dependent packages"
 msgstr[0] "依存パッケージ"
 
-#: dnf/cli/output.py:1497 dnf/cli/output.py:1771 dnf/cli/output.py:1940
+#: dnf/cli/output.py:1497 dnf/cli/output.py:1773 dnf/cli/output.py:1942
 msgid "Upgraded"
 msgstr "アップグレード済み"
 
-#: dnf/cli/output.py:1498 dnf/cli/output.py:1771 dnf/cli/output.py:1938
+#: dnf/cli/output.py:1498 dnf/cli/output.py:1773 dnf/cli/output.py:1940
 msgid "Downgraded"
 msgstr "ダウングレード済み"
 
@@ -3257,8 +3254,7 @@ msgstr "コマンドライン"
 msgid "User name"
 msgstr "ユーザー名"
 
-#. REALLY Needs to use columns!
-#: dnf/cli/output.py:1651 dnf/cli/output.py:2020
+#: dnf/cli/output.py:1651
 msgid "ID"
 msgstr "ID"
 
@@ -3266,7 +3262,7 @@ msgstr "ID"
 msgid "Date and time"
 msgstr "日時"
 
-#: dnf/cli/output.py:1654 dnf/cli/output.py:2021
+#: dnf/cli/output.py:1654
 msgid "Action(s)"
 msgstr "動作"
 
@@ -3274,200 +3270,196 @@ msgstr "動作"
 msgid "Altered"
 msgstr "変更されました"
 
-#: dnf/cli/output.py:1696
+#: dnf/cli/output.py:1698
 msgid "No transactions"
 msgstr "トランザクションがありません"
 
-#: dnf/cli/output.py:1697 dnf/cli/output.py:1713
+#: dnf/cli/output.py:1699 dnf/cli/output.py:1715
 msgid "Failed history info"
 msgstr "失敗した履歴情報"
 
-#: dnf/cli/output.py:1712
+#: dnf/cli/output.py:1714
 msgid "No transaction ID, or package, given"
 msgstr "トランザクション ID、またはパッケージが指定されていません"
 
-#: dnf/cli/output.py:1770
+#: dnf/cli/output.py:1772
 msgid "Erased"
 msgstr "削除されました"
 
-#: dnf/cli/output.py:1772
+#: dnf/cli/output.py:1774
 msgid "Not installed"
 msgstr "インストールされていません"
 
-#: dnf/cli/output.py:1773
+#: dnf/cli/output.py:1775
 msgid "Newer"
 msgstr "新しい"
 
-#: dnf/cli/output.py:1773
+#: dnf/cli/output.py:1775
 msgid "Older"
 msgstr "古い"
 
-#: dnf/cli/output.py:1821 dnf/cli/output.py:1823
+#: dnf/cli/output.py:1823 dnf/cli/output.py:1825
 msgid "Transaction ID :"
 msgstr "トランザクション ID :"
 
-#: dnf/cli/output.py:1826
+#: dnf/cli/output.py:1828
 msgid "Begin time     :"
 msgstr "開始時間            :"
 
-#: dnf/cli/output.py:1829 dnf/cli/output.py:1831
+#: dnf/cli/output.py:1831 dnf/cli/output.py:1833
 msgid "Begin rpmdb    :"
 msgstr "開始 rpmdb          :"
 
-#: dnf/cli/output.py:1837
+#: dnf/cli/output.py:1839
 #, python-format
 msgid "(%u seconds)"
 msgstr "(%u 秒)"
 
-#: dnf/cli/output.py:1839
+#: dnf/cli/output.py:1841
 #, python-format
 msgid "(%u minutes)"
 msgstr "(%u 分)"
 
-#: dnf/cli/output.py:1841
+#: dnf/cli/output.py:1843
 #, python-format
 msgid "(%u hours)"
 msgstr "(%u 時間)"
 
-#: dnf/cli/output.py:1843
+#: dnf/cli/output.py:1845
 #, python-format
 msgid "(%u days)"
 msgstr "(%u 日)"
 
-#: dnf/cli/output.py:1844
+#: dnf/cli/output.py:1846
 msgid "End time       :"
 msgstr "終了時間            :"
 
-#: dnf/cli/output.py:1847 dnf/cli/output.py:1849
+#: dnf/cli/output.py:1849 dnf/cli/output.py:1851
 msgid "End rpmdb      :"
 msgstr "終了 rpmdb          :"
 
-#: dnf/cli/output.py:1856 dnf/cli/output.py:1858
+#: dnf/cli/output.py:1858 dnf/cli/output.py:1860
 msgid "User           :"
 msgstr "ユーザー            :"
 
-#: dnf/cli/output.py:1862 dnf/cli/output.py:1869
+#: dnf/cli/output.py:1864 dnf/cli/output.py:1871
 msgid "Aborted"
 msgstr "中断しました"
 
-#: dnf/cli/output.py:1862 dnf/cli/output.py:1865 dnf/cli/output.py:1867
-#: dnf/cli/output.py:1869 dnf/cli/output.py:1871 dnf/cli/output.py:1873
+#: dnf/cli/output.py:1864 dnf/cli/output.py:1867 dnf/cli/output.py:1869
+#: dnf/cli/output.py:1871 dnf/cli/output.py:1873 dnf/cli/output.py:1875
 msgid "Return-Code    :"
 msgstr "終了コード          :"
 
-#: dnf/cli/output.py:1865 dnf/cli/output.py:1873
+#: dnf/cli/output.py:1867 dnf/cli/output.py:1875
 msgid "Success"
 msgstr "成功"
 
-#: dnf/cli/output.py:1867
+#: dnf/cli/output.py:1869
 msgid "Failures:"
 msgstr "失敗:"
 
-#: dnf/cli/output.py:1871
+#: dnf/cli/output.py:1873
 msgid "Failure:"
 msgstr "失敗しました:"
 
-#: dnf/cli/output.py:1881 dnf/cli/output.py:1883
+#: dnf/cli/output.py:1883 dnf/cli/output.py:1885
 msgid "Releasever     :"
 msgstr "Releasever     :"
 
-#: dnf/cli/output.py:1888 dnf/cli/output.py:1890
+#: dnf/cli/output.py:1890 dnf/cli/output.py:1892
 msgid "Command Line   :"
 msgstr "コマンドライン      :"
 
-#: dnf/cli/output.py:1895 dnf/cli/output.py:1897
+#: dnf/cli/output.py:1897 dnf/cli/output.py:1899
 msgid "Comment        :"
 msgstr "コメント        :"
 
-#: dnf/cli/output.py:1901
+#: dnf/cli/output.py:1903
 msgid "Transaction performed with:"
 msgstr "実行されたトランザクション:"
 
-#: dnf/cli/output.py:1910
+#: dnf/cli/output.py:1912
 msgid "Packages Altered:"
 msgstr "変更されたパッケージ:"
 
-#: dnf/cli/output.py:1916
+#: dnf/cli/output.py:1918
 msgid "Scriptlet output:"
 msgstr "Scriptlet の出力:"
 
-#: dnf/cli/output.py:1923
+#: dnf/cli/output.py:1925
 msgid "Errors:"
 msgstr "エラー:"
 
-#: dnf/cli/output.py:1932
+#: dnf/cli/output.py:1934
 msgid "Dep-Install"
 msgstr "Dep-Install"
 
-#: dnf/cli/output.py:1933
+#: dnf/cli/output.py:1935
 msgid "Obsoleted"
 msgstr "廃止された"
 
-#: dnf/cli/output.py:1934 dnf/transaction.py:84 dnf/transaction.py:85
+#: dnf/cli/output.py:1936 dnf/transaction.py:84 dnf/transaction.py:85
 msgid "Obsoleting"
 msgstr "廃止"
 
-#: dnf/cli/output.py:1935
+#: dnf/cli/output.py:1937
 msgid "Erase"
 msgstr "削除"
 
-#: dnf/cli/output.py:1936
+#: dnf/cli/output.py:1938
 msgid "Reinstall"
 msgstr "再インストール"
 
-#: dnf/cli/output.py:2011
-msgid "Bad transaction IDs, or package(s), given"
-msgstr "不正なトランザクション ID、またはパッケージが指定されました"
-
-#: dnf/cli/output.py:2110
+#: dnf/cli/output.py:2016
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
 msgstr "---> パッケージ %s.%s %s はインストールされます"
 
-#: dnf/cli/output.py:2112
+#: dnf/cli/output.py:2018
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
 msgstr "---> パッケージ %s.%s %s はアップグレードされます"
 
-#: dnf/cli/output.py:2114
+#: dnf/cli/output.py:2020
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
 msgstr "---> パッケージ %s.%s %s は消去されます"
 
-#: dnf/cli/output.py:2116
+#: dnf/cli/output.py:2022
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
 msgstr "---> パッケージ %s.%s %s は再インストールされます"
 
-#: dnf/cli/output.py:2118
+#: dnf/cli/output.py:2024
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
 msgstr "---> パッケージ %s.%s %s はダウングレードされます"
 
-#: dnf/cli/output.py:2120
+#: dnf/cli/output.py:2026
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
 msgstr "---> パッケージ %s.%s %s は廃止となります"
 
-#: dnf/cli/output.py:2122
+#: dnf/cli/output.py:2028
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
 msgstr "---> パッケージ %s.%s %s はアップグレードされます"
 
-#: dnf/cli/output.py:2124
+#: dnf/cli/output.py:2030
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
 msgstr "---> パッケージ %s.%s %s は廃止されます"
 
-#: dnf/cli/output.py:2133
+#: dnf/cli/output.py:2039
 msgid "--> Starting dependency resolution"
 msgstr "--> 依存関係の解決を開始しました"
 
-#: dnf/cli/output.py:2138
+#: dnf/cli/output.py:2044
 msgid "--> Finished dependency resolution"
 msgstr "--> 依存関係の解決が完了しました"
 
-#: dnf/cli/output.py:2152 dnf/crypto.py:132
+#: dnf/cli/output.py:2058 dnf/crypto.py:132
 #, python-format
 msgid ""
 "Importing GPG key 0x%s:\n"
@@ -4008,6 +4000,15 @@ msgstr "TransactionSWDBItemが見つかりません鍵: {}"
 #: dnf/util.py:457
 msgid "Errors occurred during transaction."
 msgstr "トランザクション中にエラーが発生しました。"
+
+#~ msgid "format for displaying found packages"
+#~ msgstr "見つかったパッケージを表示する形式"
+
+#~ msgid "Available query-tags: use --queryformat \".. %{tag} ..\""
+#~ msgstr "利用可能な query-tags: --queryformat \".. %{tag} ..\" を使用します"
+
+#~ msgid "Bad transaction IDs, or package(s), given"
+#~ msgstr "不正なトランザクション ID、またはパッケージが指定されました"
 
 #~ msgid ""
 #~ "Display capabilities that the package depends on for running a %%pre "
