@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-05 09:18-0400\n"
+"POT-Creation-Date: 2020-07-09 09:18-0400\n"
 "PO-Revision-Date: 2018-11-12 10:05+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Korean\n"
@@ -16,70 +16,84 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Zanata 4.6.2\n"
 
-#: dnf/automatic/emitter.py:31
+#: dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates have been applied on '%s':"
 msgstr "해당 업데이트들은  '%s'에 적용되었습니다:"
 
-#: dnf/automatic/emitter.py:32
+#: dnf/automatic/emitter.py:33
+#, fuzzy, python-format
+#| msgid "Updates applied on '%s'."
+msgid "Updates completed at %s"
+msgstr "'%s'에 업데이트가 적용 되었습니다."
+
+#: dnf/automatic/emitter.py:34
 #, python-format
 msgid "The following updates are available on '%s':"
 msgstr "해당 업데이트들은  '%s'에 적용 가능합니다:"
 
-#: dnf/automatic/emitter.py:33
+#: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
 msgstr "해당 업데이트들은 '%s'에 다운로드 되었습니다:"
 
-#: dnf/automatic/emitter.py:80
+#: dnf/automatic/emitter.py:83
 #, python-format
 msgid "Updates applied on '%s'."
 msgstr "'%s'에 업데이트가 적용 되었습니다."
 
-#: dnf/automatic/emitter.py:82
+#: dnf/automatic/emitter.py:85
 #, python-format
 msgid "Updates downloaded on '%s'."
 msgstr "'%s'에 업데이트가 다운로드 되었습니다."
 
-#: dnf/automatic/emitter.py:84
+#: dnf/automatic/emitter.py:87
 #, python-format
 msgid "Updates available on '%s'."
 msgstr "'%s'에 업데이트가 가능합니다."
 
-#: dnf/automatic/emitter.py:107
+#: dnf/automatic/emitter.py:110
 #, python-format
 msgid "Failed to send an email via '%s': %s"
 msgstr "'%s'를 통한 이메일 전송을 실패하였습니다: %s"
 
-#: dnf/automatic/emitter.py:137
+#: dnf/automatic/emitter.py:140
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
 msgstr "명령 '을 실행하지 못했습니다.%s': 반환 됨 %d"
 
-#: dnf/automatic/main.py:162 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164 dnf/conf/config.py:151
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "알 수없는 구성 값 : %s=%s ...에서 %s; %s"
 
-#: dnf/automatic/main.py:166 dnf/conf/config.py:158
+#: dnf/automatic/main.py:168 dnf/conf/config.py:158
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "알 수없는 구성 옵션 : %s = %s ...에서 %s"
 
-#: dnf/automatic/main.py:234 dnf/cli/cli.py:298
+#: dnf/automatic/main.py:237 dnf/cli/cli.py:298
 msgid "GPG check FAILED"
 msgstr ""
 
-#: dnf/automatic/main.py:253
+#: dnf/automatic/main.py:274
+msgid "Waiting for internet connection..."
+msgstr ""
+
+#: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic을 시작했습니다."
 
-#: dnf/automatic/main.py:257
+#: dnf/automatic/main.py:308
 #, python-format
 msgid "Sleep for %s seconds"
 msgstr "수면 용 %s 초"
 
-#: dnf/automatic/main.py:289 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:315
+msgid "System is off-line."
+msgstr ""
+
+#: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
