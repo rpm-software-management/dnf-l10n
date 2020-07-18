@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2020-07-09 15:27+0000\n"
+"PO-Revision-Date: 2020-07-18 17:29+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-dnf-4223-maint/zh_CN/>\n"
@@ -599,6 +599,9 @@ msgid ""
 "the module using '{prog} module reset <module_name>' command. After you "
 "reset the module, you can install the other stream."
 msgstr ""
+"无法切换已启用模块的流。\n"
+"推荐移除来自模块的所有已安装内容，然后通过 '{prog} module reset <module_name>' "
+"命令重置模块。在您重置模块之后，就可以安装其他的流。"
 
 #: dnf/cli/cli.py:209
 #, python-brace-format
@@ -743,7 +746,7 @@ msgstr "它可能是一个{PROG}插件命令，尝试：\"{prog} install 'dnf-co
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
-msgstr ""
+msgstr "这可能是一个 {prog} 插件的命令，但是插件的加载当前已经禁用。"
 
 #: dnf/cli/cli.py:908
 msgid ""
@@ -892,7 +895,7 @@ msgstr "软件包"
 
 #: dnf/cli/commands/__init__.py:202
 msgid "Package name specification"
-msgstr ""
+msgstr "包名称规格"
 
 #: dnf/cli/commands/__init__.py:230
 msgid "list a package or groups of packages"
@@ -904,11 +907,11 @@ msgstr "查找提供指定内容的软件包"
 
 #: dnf/cli/commands/__init__.py:248
 msgid "PROVIDE"
-msgstr ""
+msgstr "PROVIDE"
 
 #: dnf/cli/commands/__init__.py:249
 msgid "Provide specification to search for"
-msgstr ""
+msgstr "提供要搜索的规格"
 
 #: dnf/cli/commands/__init__.py:258 dnf/cli/commands/search.py:159
 msgid "Searching Packages: "
@@ -966,7 +969,7 @@ msgstr "对指定仓库中的所有软件包运行命令"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "REPOID"
-msgstr ""
+msgstr "REPOID"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "Repository ID"
@@ -975,7 +978,7 @@ msgstr "仓库ID"
 #: dnf/cli/commands/__init__.py:785 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
 msgid "Package specification"
-msgstr ""
+msgstr "软件包规格"
 
 #: dnf/cli/commands/__init__.py:809
 msgid "display a helpful usage message"
@@ -1038,6 +1041,8 @@ msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
+"无法将 '{}' 转换为事务 ID。\n"
+"请使用 '<number>'、'last'、'last-<number>'。"
 
 #: dnf/cli/commands/__init__.py:999
 msgid "No transaction which manipulates package '{}' was found."
@@ -1057,11 +1062,11 @@ msgstr "禁用别名解析"
 
 #: dnf/cli/commands/alias.py:53
 msgid "action to do with aliases"
-msgstr ""
+msgstr "要对别名进行的操作"
 
 #: dnf/cli/commands/alias.py:55
 msgid "alias definition"
-msgstr ""
+msgstr "别名定义"
 
 #: dnf/cli/commands/alias.py:70
 msgid "Aliases are now enabled"
@@ -1099,7 +1104,7 @@ msgstr "别名已被删除 : %s"
 #: dnf/cli/commands/alias.py:155
 #, python-format
 msgid "%s, alias %s=\"%s\""
-msgstr ""
+msgstr "%s，别名 %s=\"%s\""
 
 #: dnf/cli/commands/alias.py:157
 #, python-format
@@ -1292,15 +1297,15 @@ msgstr "只显示可获得的团队"
 
 #: dnf/cli/commands/group.py:329
 msgid "show also ID of groups"
-msgstr ""
+msgstr "同时显示组的 ID"
 
 #: dnf/cli/commands/group.py:331
 msgid "available subcommands: {} (default), {}"
-msgstr ""
+msgstr "可用的子命令：{} (默认), {}"
 
 #: dnf/cli/commands/group.py:335
 msgid "argument for group subcommand"
-msgstr ""
+msgstr "组子命令的参数"
 
 #: dnf/cli/commands/group.py:344
 #, python-format
@@ -1351,6 +1356,9 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"install: 标记为由用户安装\n"
+"remove: 取消标记为由用户安装\n"
+"group: 标记为由组安装"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
@@ -1381,11 +1389,11 @@ msgstr "软件包 %s 尚未安装。"
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
-msgstr ""
+msgstr "仅使用模块名称、流、架构或者配置文件。忽略参数中不需要的信息：'{}'"
 
 #: dnf/cli/commands/module.py:77
 msgid "list all module streams, profiles and states"
-msgstr ""
+msgstr "列出所有模块流、配置文件以及状态"
 
 #: dnf/cli/commands/module.py:105 dnf/cli/commands/module.py:128
 msgid "No matching Modules to list"
@@ -1393,43 +1401,43 @@ msgstr "没有匹配的模块可以列出"
 
 #: dnf/cli/commands/module.py:111
 msgid "print detailed information about a module"
-msgstr ""
+msgstr "打印关于一个模块的详细信息"
 
 #: dnf/cli/commands/module.py:133
 msgid "enable a module stream"
-msgstr ""
+msgstr "启用一个模块流"
 
 #: dnf/cli/commands/module.py:157
 msgid "disable a module with all its streams"
-msgstr ""
+msgstr "停用一个模块及其所有的流"
 
 #: dnf/cli/commands/module.py:181
 msgid "reset a module"
-msgstr ""
+msgstr "重置一个模块"
 
 #: dnf/cli/commands/module.py:202
 msgid "install a module profile including its packages"
-msgstr ""
+msgstr "安装一个包含其软件包的模块配置文件"
 
 #: dnf/cli/commands/module.py:223
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "升级与一个已激活的流相关联的软件包"
 
 #: dnf/cli/commands/module.py:240
 msgid "remove installed module profiles and their packages"
-msgstr ""
+msgstr "移除已经安装的模块配置文件及其软件包"
 
 #: dnf/cli/commands/module.py:264
 msgid "Package {} belongs to multiple modules, skipping"
-msgstr ""
+msgstr "软件包 {} 属于多个模块，正在跳过"
 
 #: dnf/cli/commands/module.py:277
 msgid "list modular packages"
-msgstr ""
+msgstr "列出模块包"
 
 #: dnf/cli/commands/module.py:292
 msgid "list packages belonging to a module"
-msgstr ""
+msgstr "列出属于一个模块的软件包"
 
 #: dnf/cli/commands/module.py:327
 msgid "Interact with Modules."
@@ -1445,7 +1453,7 @@ msgstr "只显示禁用的模块"
 
 #: dnf/cli/commands/module.py:346
 msgid "show only installed modules or packages"
-msgstr ""
+msgstr "只显示已安装的模块或者软件包"
 
 #: dnf/cli/commands/module.py:349
 msgid "show profile content"
@@ -1453,15 +1461,15 @@ msgstr "显示档案内容"
 
 #: dnf/cli/commands/module.py:354
 msgid "remove all modular packages"
-msgstr ""
+msgstr "移除所有模块包"
 
 #: dnf/cli/commands/module.py:364
 msgid "Module specification"
-msgstr ""
+msgstr "模块规格"
 
 #: dnf/cli/commands/module.py:386
 msgid "{} {} {}: too few arguments"
-msgstr ""
+msgstr "{} {} {}: 参数太少"
 
 #: dnf/cli/commands/reinstall.py:38
 msgid "reinstall a package"
@@ -1529,7 +1537,7 @@ msgstr "显示被禁用的软件仓库"
 
 #: dnf/cli/commands/repolist.py:93
 msgid "Repository specification"
-msgstr ""
+msgstr "仓库规格"
 
 #: dnf/cli/commands/repolist.py:125
 msgid "No repositories available"
@@ -1545,27 +1553,27 @@ msgstr "禁用"
 
 #: dnf/cli/commands/repolist.py:162
 msgid "Repo-id            : "
-msgstr ""
+msgstr "Repo-id            : "
 
 #: dnf/cli/commands/repolist.py:163
 msgid "Repo-name          : "
-msgstr ""
+msgstr "Repo-name          : "
 
 #: dnf/cli/commands/repolist.py:166
 msgid "Repo-status        : "
-msgstr ""
+msgstr "Repo-status        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr ""
+msgstr "Repo-revision      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr ""
+msgstr "Repo-tags          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
-msgstr ""
+msgstr "Repo-distro-tags      : "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
@@ -1638,7 +1646,7 @@ msgstr "仓库名称"
 
 #: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
-msgstr ""
+msgstr "软件包总数：{}"
 
 #: dnf/cli/commands/repoquery.py:108
 msgid "search for packages matching keyword"
@@ -1744,7 +1752,7 @@ msgstr "显示 N 个指定 name.arch 下最新的软件包（或者最旧的如�
 
 #: dnf/cli/commands/repoquery.py:181
 msgid "list also packages of inactive module streams"
-msgstr ""
+msgstr "同时列出未激活模块流的软件包"
 
 #: dnf/cli/commands/repoquery.py:186
 msgid "show detailed information about the package"
