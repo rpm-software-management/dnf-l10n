@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-18 09:18-0400\n"
-"PO-Revision-Date: 2020-05-08 15:40+0000\n"
+"PO-Revision-Date: 2020-07-21 13:29+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.1.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -37,10 +37,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "Az alábbi frissítések alkalmazva lettek erre: „%s”:"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Frissítések alkalmazva ezen: „%s”."
+msgstr "Frissítések befejezve ekkor: „%s”"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -93,7 +92,7 @@ msgstr "GPG ellenőrzés SIKERTELEN"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "Várakozás az internetkapcsolatra…"
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
@@ -106,7 +105,7 @@ msgstr "Alvás %s másodpercig"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr ""
+msgstr "A rendszer off-line."
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -1312,10 +1311,8 @@ msgstr "Figyelmeztetés: Nincs egyező csoport:"
 
 #: dnf/cli/commands/group.py:180 dnf/cli/commands/group.py:191
 #: dnf/cli/output.py:1226
-#, fuzzy
-#| msgid "<unset>"
 msgid "<name-unset>"
-msgstr "<üres>"
+msgstr "<üres név>"
 
 #: dnf/cli/commands/group.py:197
 msgid "Available Environment Groups:"
@@ -1854,6 +1851,8 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"a csomagok felsorolásának megjelenítési formátuma: „%%{name} %%{version} …”, "
+"a teljes címkelistához használja a --querytags kapcsolót"
 
 #: dnf/cli/commands/repoquery.py:198
 msgid "show available tags to use with --queryformat"
