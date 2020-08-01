@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2020-07-24 20:28+0000\n"
-"Last-Translator: Harry Chen <harrychen0314@gmail.com>\n"
+"PO-Revision-Date: 2020-08-02 08:29+0000\n"
+"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-dnf-4223-maint/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -1577,63 +1577,63 @@ msgstr "Repo-distro-tags      : "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
-msgstr "仓库已更新       : "
+msgstr "Repo-updated       : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr ""
+msgstr "Repo-pkgs          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Repo-available-pkgs: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
-msgstr "仓库大小          : "
+msgstr "Repo-size          : "
 
 #: dnf/cli/commands/repolist.py:199
 msgid "Repo-metalink      : "
-msgstr ""
+msgstr "Repo-metalink      : "
 
 #: dnf/cli/commands/repolist.py:204
 msgid "  Updated          : "
-msgstr ""
+msgstr "  Updated          : "
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr "仓库镜像       : "
+msgstr "Repo-mirrors       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr ""
+msgstr "Repo-baseurl       : "
 
 #: dnf/cli/commands/repolist.py:219
 msgid "Repo-expire        : "
-msgstr ""
+msgstr "Repo-expire        : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Repo-exclude       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr ""
+msgstr "Repo-include       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
 msgid "Repo-excluded      : "
-msgstr ""
+msgstr "Repo-excluded      : "
 
 #: dnf/cli/commands/repolist.py:236
 msgid "Repo-filename      : "
-msgstr ""
+msgstr "Repo-filename      : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
 #: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
-msgstr "仓库标识"
+msgstr "仓库 id"
 
 #: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
 #: dnf/cli/commands/repolist.py:281
@@ -1850,6 +1850,8 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"如果未安装软件包，则显示执行 %%pre 和 %%post 脚本所依赖的功能。如果已经了安装软件包，则显示执行 %%pre、%%post、%%preun "
+"和 %%postun 脚本所依赖的功能。"
 
 #: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package suggests."
@@ -1882,7 +1884,7 @@ msgstr "仅显示为已安装的软件包提供升级的软件包。"
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
-msgstr ""
+msgstr "仅显示可被 \"{prog} autoremove\" 命令所移除的软件包。"
 
 #: dnf/cli/commands/repoquery.py:257
 msgid "Display only packages that were installed by user."
@@ -1940,6 +1942,12 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of thepackages."
 msgstr ""
+"没有指定有效参数\n"
+"用法：{prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--recommen"
+"ds|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
+"\n"
+"描述：\n"
+"  对于指定的软件包，打印此软件包的树状图。"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -1951,11 +1959,11 @@ msgstr "同时搜索软件包描述和 URL"
 
 #: dnf/cli/commands/search.py:52
 msgid "KEYWORD"
-msgstr ""
+msgstr "KEYWORD"
 
 #: dnf/cli/commands/search.py:55
 msgid "Keyword to search for"
-msgstr ""
+msgstr "要搜索的关键字"
 
 #: dnf/cli/commands/search.py:61 dnf/cli/output.py:506
 msgctxt "long"
@@ -2002,7 +2010,7 @@ msgstr "未找到匹配项。"
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr ""
+msgstr "运行一个交互式的 {prog} shell"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -2011,7 +2019,7 @@ msgstr "脚本"
 #: dnf/cli/commands/shell.py:69
 #, python-brace-format
 msgid "Script to run in {prog} shell"
-msgstr ""
+msgstr "要在 {prog} shell 中执行的脚本"
 
 #: dnf/cli/commands/shell.py:142
 msgid "Unsupported key value."
@@ -2130,7 +2138,7 @@ msgstr "离开终端"
 #: dnf/cli/commands/swap.py:35
 #, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
-msgstr ""
+msgstr "运行一个交互式的 {prog} mod 以删除或安装 spec"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2208,11 +2216,11 @@ msgstr "显示公告信息"
 
 #: dnf/cli/commands/updateinfo.py:101
 msgid "show only advisories with CVE reference"
-msgstr ""
+msgstr "只显示带有 CVE 参考的公告"
 
 #: dnf/cli/commands/updateinfo.py:104
 msgid "show only advisories with bugzilla reference"
-msgstr ""
+msgstr "只显示带有 bugzilla 参考的公告"
 
 #: dnf/cli/commands/updateinfo.py:168
 msgid "installed"
@@ -2398,7 +2406,7 @@ msgstr "Setopt 参数没有值：%s"
 #: dnf/cli/option_parser.py:174
 #, python-brace-format
 msgid "General {prog} options"
-msgstr ""
+msgstr "{prog} 一般选项"
 
 #: dnf/cli/option_parser.py:178
 msgid "config file location"
@@ -2415,7 +2423,7 @@ msgstr "详尽执行"
 #: dnf/cli/option_parser.py:185
 #, python-brace-format
 msgid "show {prog} version and exit"
-msgstr ""
+msgstr "显示 {prog} 的版本并退出"
 
 #: dnf/cli/option_parser.py:187
 msgid "set install root"
@@ -2494,7 +2502,7 @@ msgstr "错误输出级别"
 msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
-msgstr ""
+msgstr "对 upgrade 启用 {prog} 的过期处理逻辑，或对 info、list 和 repoquery 启用软件包过期的显示功能"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
@@ -2512,13 +2520,13 @@ msgstr "全部问题自动应答为否"
 msgid ""
 "Enable additional repositories. List option. Supports globs, can be "
 "specified multiple times."
-msgstr ""
+msgstr "启用附加仓库。列出选项。支持通配符，可以指定多次。"
 
 #: dnf/cli/option_parser.py:266
 msgid ""
 "Disable repositories. List option. Supports globs, can be specified multiple "
 "times."
-msgstr ""
+msgstr "停用仓库。列出选项。支持通配符，可指定多次。"
 
 #: dnf/cli/option_parser.py:270
 msgid ""
@@ -2546,7 +2554,7 @@ msgstr "禁用 excludepkgs"
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
-msgstr ""
+msgstr "附加仓库所要使用的标签和路径（与 baseurl 中的路径一致），可以指定多次。"
 
 #: dnf/cli/option_parser.py:297
 msgid "disable removal of dependencies that are no longer used"
@@ -3432,17 +3440,17 @@ msgstr "正在跳过。"
 #: dnf/comps.py:196 dnf/comps.py:698
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr ""
+msgstr "模块或者组 '%s' 未安装。"
 
 #: dnf/comps.py:198 dnf/comps.py:700
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr ""
+msgstr "模块或者组 '%s' 不可用。"
 
 #: dnf/comps.py:200
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr ""
+msgstr "模块或者组 '%s' 不存在。"
 
 #: dnf/comps.py:619 dnf/comps.py:636
 #, python-format
@@ -3452,7 +3460,7 @@ msgstr "环境组 '%s' 没有安装。"
 #: dnf/comps.py:638
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "环境 '%s' 不可用。"
 
 #: dnf/comps.py:666
 #, python-format
@@ -3473,6 +3481,8 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"配置文件的 URL \"{}\" 无法下载：\n"
+"  {}"
 
 #: dnf/conf/config.py:355 dnf/conf/config.py:391
 #, python-format
@@ -3510,7 +3520,7 @@ msgstr "警告：加载 '%s' 失败，跳过。"
 
 #: dnf/conf/read.py:63
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr ""
+msgstr "repo 的 id 无效: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:67
 msgid "Bad id for repo: {}, byte = {} {}"
@@ -3518,19 +3528,19 @@ msgstr "repo 的 id 无效: %s, byte = %s %d"
 
 #: dnf/conf/read.py:75
 msgid "Repository '{}' ({}): Error parsing config: {}"
-msgstr ""
+msgstr "仓库 '{}' ({}): 配置解析时出错: {}"
 
 #: dnf/conf/read.py:78
 msgid "Repository '{}': Error parsing config: {}"
-msgstr ""
+msgstr "仓库 '{}': 配置解析时出错: {}"
 
 #: dnf/conf/read.py:84
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
-msgstr ""
+msgstr "仓库 '{}' ({}) 在配置中缺少名称，将使用 id。"
 
 #: dnf/conf/read.py:87
 msgid "Repository '{}' is missing name in configuration, using id."
-msgstr ""
+msgstr "仓库 '{}' 在配置中缺少名称，将使用 id。"
 
 #: dnf/conf/read.py:104
 msgid "Parsing file \"{}\" failed: {}"
@@ -3550,11 +3560,11 @@ msgstr "repo %s: 已导入密钥 0x%s。"
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
-msgstr ""
+msgstr "对于模块软件包 '{}' 没有可用的模块元数据，它将不能被安装至此系统上"
 
 #: dnf/db/group.py:343
 msgid "No available modular metadata for modular package"
-msgstr ""
+msgstr "对于模块软件包没有可用的模块元数据"
 
 #: dnf/db/group.py:377
 #, python-format
@@ -3563,7 +3573,7 @@ msgstr "将不安装一个源码 RPM 软件包 (%s)。"
 
 #: dnf/dnssec.py:168
 msgid "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
-msgstr ""
+msgstr "配置文件选项 'gpgkey_dns_verification' 要求 libunbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3639,6 +3649,8 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"发现损坏的锁文件 : %s。\n"
+"请确保没有其他 dnf/yum 进程正在运行，并手工删除锁文件，或执行 systemd-tmpfiles --remove dnf.conf 。"
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3688,17 +3700,17 @@ msgstr "正在忽略无用的配置文件'{}/{}'"
 #: dnf/module/module_base.py:84
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr ""
+msgstr "模块 '{1}:{2}' 中参数 '{0}' 的所有匹配项目都未激活"
 
 #: dnf/module/module_base.py:92
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "不允许从失效保险仓库 {1} 安装模块 '{0}'"
 
 #: dnf/module/module_base.py:102
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
-msgstr ""
+msgstr "不能为参数 {} 匹配配置文件。'{}:{}' 可用的配置文件为 : {}"
 
 #: dnf/module/module_base.py:106
 msgid "Unable to match profile for argument {}"
@@ -3706,19 +3718,19 @@ msgstr "无法配置参数 {} 中的配置档案"
 
 #: dnf/module/module_base.py:118
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr ""
+msgstr "模块 {}:{} 没有默认的配置文件。可用的配置为 : {}"
 
 #: dnf/module/module_base.py:122
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "没有模块 {}:{} 的配置文件"
 
 #: dnf/module/module_base.py:129
 msgid "Default profile {} not available in module {}:{}"
-msgstr ""
+msgstr "默认配置文件 {} 在模块 {}:{} 中不可用"
 
 #: dnf/module/module_base.py:142
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "不允许从失效保险仓库中安装模块"
 
 #: dnf/module/module_base.py:159 dnf/module/module_base.py:193
 #: dnf/module/module_base.py:337 dnf/module/module_base.py:355
@@ -3734,7 +3746,7 @@ msgstr "没有和{}匹配的软件包"
 #: dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "不允许从失效保险仓库 {1} 中升级模块 '{0}'"
 
 #: dnf/module/module_base.py:223 dnf/module/module_base.py:251
 msgid "Unable to match profile in argument {}"
@@ -3742,7 +3754,7 @@ msgstr "无法匹配参数 {} 中的配置档案"
 
 #: dnf/module/module_base.py:231
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "不允许从失效保险仓库中升级模块"
 
 #: dnf/module/module_base.py:367
 msgid ""
@@ -3785,11 +3797,11 @@ msgstr "加载插件 \"%s\" 失败 : %s"
 
 #: dnf/plugin.py:231
 msgid "No matches found for the following enable plugin patterns: {}"
-msgstr ""
+msgstr "没有以下已启用插件模式的匹配项 : {}"
 
 #: dnf/plugin.py:235
 msgid "No matches found for the following disable plugin patterns: {}"
-msgstr ""
+msgstr "没有以下已停用插件模式的匹配项 : {}"
 
 #: dnf/repo.py:84
 #, python-format
@@ -3872,11 +3884,11 @@ msgstr "问题"
 
 #: dnf/util.py:444
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "找不到键的 TransactionItem: {}"
 
 #: dnf/util.py:454
 msgid "TransactionSWDBItem not found for key: {}"
-msgstr ""
+msgstr "找不到键的 TransactionSWDBItem: {}"
 
 #: dnf/util.py:457
 msgid "Errors occurred during transaction."
