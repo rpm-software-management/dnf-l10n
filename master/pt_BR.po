@@ -21,13 +21,14 @@
 # Fabio Beneditto <kamikazenh@gmail.com>, 2020.
 # Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-03 09:18-0400\n"
-"PO-Revision-Date: 2020-07-30 01:29+0000\n"
-"Last-Translator: José Lemos Neto <lemosjosex@protonmail.com>\n"
+"PO-Revision-Date: 2020-08-05 14:29+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -45,7 +46,7 @@ msgstr "As seguintes atualizações foram aplicadas em '%s':"
 #: dnf/automatic/emitter.py:33
 #, python-format
 msgid "Updates completed at %s"
-msgstr "Atualizações concluídas em '%s'."
+msgstr "Atualizações concluídas em '%s'"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -111,7 +112,7 @@ msgstr "Dormir por %s segundos"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr "O sistema está offline"
+msgstr "O sistema está offline."
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -175,7 +176,7 @@ msgstr "%s: expira depois %d segundos."
 #. performs the md sync
 #: dnf/base.py:364
 msgid "Metadata cache created."
-msgstr "Criado cache de metadados"
+msgstr "Criado cache de metadados."
 
 #: dnf/base.py:397
 #, python-format
@@ -636,13 +637,17 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/cli.py:171
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
 "the module using '{prog} module reset <module_name>' command. After you "
 "reset the module, you can install the other stream."
 msgstr ""
+"Não é possível alternar fluxos ativados de um módulo.\n"
+"É recomendável remover todo o conteúdo instalado do módulo e redefinir o "
+"módulo usando o comando '{prog} module reset <module_name>'. Depois de "
+"redefinir o módulo, você pode instalar o outro fluxo."
 
 #: dnf/cli/cli.py:209
 #, python-brace-format
@@ -810,7 +815,7 @@ msgid ""
 "config-manager command."
 msgstr ""
 "--enable, --set-enabled e --disable, --set-disabled deve ser usado com "
-"comando config-manager"
+"comando config-manager."
 
 #: dnf/cli/cli.py:996
 msgid ""
@@ -1055,7 +1060,7 @@ msgstr "Nenhum ID de transação ou nome de pacote fornecido."
 #, fuzzy, python-format
 #| msgid "You don't have access to the history DB."
 msgid "You don't have access to the history DB: %s"
-msgstr "Você não tem acesso ao banco de dados do histórico."
+msgstr "Você não tem acesso ao banco de dados do histórico: %s"
 
 #: dnf/cli/commands/__init__.py:893
 #, python-format
@@ -1775,7 +1780,7 @@ msgid ""
 "recursively."
 msgstr ""
 "usado com --whatrequires, e --requires --resolve, busca por pacotes "
-"recursivamente"
+"recursivamente."
 
 #: dnf/cli/commands/repoquery.py:166
 msgid "show a list of all dependencies and what packages provide them"
@@ -1916,7 +1921,7 @@ msgid ""
 msgstr ""
 "Se o pacote não estiver instalado, exibir os recursos dos quais depende para "
 "executar %% pré e %% post scriptlets. Se o pacote estiver instalado, os "
-"recursos de exibição dependem de %% pré, %% post, %% pré-un e %% postun"
+"recursos de exibição dependem de %% pré, %% post, %% pré-un e %% postun."
 
 #: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package suggests."
@@ -2512,7 +2517,7 @@ msgstr "substituir o valor de $releasever em arquivos config e repo"
 
 #: dnf/cli/option_parser.py:207
 msgid "set arbitrary config and repo options"
-msgstr "Configurando opções arbitrárias de repositório e configurações."
+msgstr "Configurando opções arbitrárias de repositório e configurações"
 
 #: dnf/cli/option_parser.py:210
 msgid "resolve depsolve problems by skipping packages"
