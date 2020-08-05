@@ -22,7 +22,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 09:18-0400\n"
+"POT-Creation-Date: 2020-08-05 09:18-0400\n"
 "PO-Revision-Date: 2020-07-31 09:29+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -494,43 +494,49 @@ msgstr ""
 "Aucune mise à jour de sécurité n’est nécessaire pour « {} », mais les mises "
 "à jour {} sont disponibles"
 
-#: dnf/base.py:2323
+#. raise an exception, because po.repoid is not in self.repos
+#: dnf/base.py:2320
+#, python-format
+msgid "Unable to retrieve a key for a commandline package: %s"
+msgstr ""
+
+#: dnf/base.py:2328
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Le paquet en erreur est : %s"
 
-#: dnf/base.py:2324
+#: dnf/base.py:2329
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Les clés GPG sont configurées comme : %s"
 
-#: dnf/base.py:2336
+#: dnf/base.py:2341
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "La clé GPG %s (0x%s) est déjà installée"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2374
 msgid "The key has been approved."
 msgstr "La clef a été approuvée."
 
-#: dnf/base.py:2372
+#: dnf/base.py:2377
 msgid "The key has been rejected."
 msgstr "La clef a été rejetée."
 
-#: dnf/base.py:2405
+#: dnf/base.py:2410
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "L’import de la clé a échoué (code %d)"
 
-#: dnf/base.py:2407
+#: dnf/base.py:2412
 msgid "Key imported successfully"
 msgstr "La clé a bien été importée"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2416
 msgid "Didn't install any keys"
 msgstr "Toutes les clés n’ont pas été installées"
 
-#: dnf/base.py:2414
+#: dnf/base.py:2419
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -541,29 +547,29 @@ msgstr ""
 "incorrectes pour ce paquet.\n"
 "Vérifiez que les URL des clés pour ce dépôt soient correctes."
 
-#: dnf/base.py:2425
+#: dnf/base.py:2430
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 "L’import de la ou des clés n’a pas résolu le problème, clés incorrectes ?"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2483
 msgid "  * Maybe you meant: {}"
 msgstr "  * Peut-être vouliez-vous dire : {}"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2515
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Le paquet \"{}\" du dépôt local \"{}\" a une somme de contrôle incorrecte"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2518
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Certains paquets du dépôt local ont une somme de contrôle incorrecte"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2521
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Le paquet \"{}\" du dépôt \"{}\" a une somme de contrôle incorrecte"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2524
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -571,29 +577,29 @@ msgstr ""
 "Certains paquets ont un cache invalide, mais ne peuvent pas être téléchargés "
 "à cause de l’option « --cacheonly »"
 
-#: dnf/base.py:2537 dnf/base.py:2557
+#: dnf/base.py:2542 dnf/base.py:2562
 msgid "No match for argument"
 msgstr "Aucune correspondance pour le paramètre"
 
-#: dnf/base.py:2545 dnf/base.py:2565
+#: dnf/base.py:2550 dnf/base.py:2570
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Toutes les correspondances ont été filtrées en excluant le filtrage pour "
 "l’argument"
 
-#: dnf/base.py:2547
+#: dnf/base.py:2552
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "Toutes les correspondances ont été filtrées par filtrage modulaire pour les "
 "arguments"
 
-#: dnf/base.py:2563
+#: dnf/base.py:2568
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Toutes les correspondances ont été installées à partir d’un dépôt différent "
 "pour le paramètre"
 
-#: dnf/base.py:2579
+#: dnf/base.py:2584
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Le paquet %s est déjà installé."
@@ -3600,12 +3606,12 @@ msgstr "    État : %s"
 msgid "skipping."
 msgstr "ignorer."
 
-#: dnf/comps.py:196 dnf/comps.py:698
+#: dnf/comps.py:196 dnf/comps.py:685 dnf/comps.py:699
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr "Module ou Groupe « %s » non installé."
 
-#: dnf/comps.py:198 dnf/comps.py:700
+#: dnf/comps.py:198 dnf/comps.py:701
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr "Module ou Groupe « %s » non disponible."

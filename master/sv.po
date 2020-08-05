@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 09:18-0400\n"
+"POT-Creation-Date: 2020-08-05 09:18-0400\n"
 "PO-Revision-Date: 2020-08-04 10:33+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -469,43 +469,49 @@ msgstr ""
 "Inga säkerhetsuppdateringar behövs för ”{}”, men {} uppdateringar finns "
 "tillgängliga"
 
-#: dnf/base.py:2323
+#. raise an exception, because po.repoid is not in self.repos
+#: dnf/base.py:2320
+#, python-format
+msgid "Unable to retrieve a key for a commandline package: %s"
+msgstr ""
+
+#: dnf/base.py:2328
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Paketet som misslyckas är: %s"
 
-#: dnf/base.py:2324
+#: dnf/base.py:2329
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-nycklar är konfigurerade som: %s"
 
-#: dnf/base.py:2336
+#: dnf/base.py:2341
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-nyckel vid %s (0x%s) är redan installerad"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2374
 msgid "The key has been approved."
 msgstr "Nyckeln har godkänts."
 
-#: dnf/base.py:2372
+#: dnf/base.py:2377
 msgid "The key has been rejected."
 msgstr "Nyckeln har avvisats."
 
-#: dnf/base.py:2405
+#: dnf/base.py:2410
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Nyckelimport misslyckades (kod %d)"
 
-#: dnf/base.py:2407
+#: dnf/base.py:2412
 msgid "Key imported successfully"
 msgstr "Nyckelimport lyckades"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2416
 msgid "Didn't install any keys"
 msgstr "Installerade inte några nycklar"
 
-#: dnf/base.py:2414
+#: dnf/base.py:2419
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -516,28 +522,28 @@ msgstr ""
 "inte korrekta för detta paket.\n"
 "Kontrollera att de rätta nyckel-URL:erna är konfigurerade för detta förråd."
 
-#: dnf/base.py:2425
+#: dnf/base.py:2430
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import av nycklar hjälpte inte, fel nycklar?"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2483
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kanske du menade: {}"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2515
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketet ”{}” från det lokala förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2518
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Några paket från ett lokalt förråd har felaktig kontrollsumma"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2521
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paketet ”{}” från förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2524
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -545,23 +551,23 @@ msgstr ""
 "Några paket har en ogiltig cache, men kan inte hämtas på grund av flaggan ”--"
 "cacheonly”"
 
-#: dnf/base.py:2537 dnf/base.py:2557
+#: dnf/base.py:2542 dnf/base.py:2562
 msgid "No match for argument"
 msgstr "Ingen matching för argumentet"
 
-#: dnf/base.py:2545 dnf/base.py:2565
+#: dnf/base.py:2550 dnf/base.py:2570
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Alla matchningar filtrerades ut av uteslutsfilter för argumentet"
 
-#: dnf/base.py:2547
+#: dnf/base.py:2552
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alla matchningar filtrerades ut av modulfilter för argumentet"
 
-#: dnf/base.py:2563
+#: dnf/base.py:2568
 msgid "All matches were installed from a different repository for argument"
 msgstr "Alla matchningar installerades från ett annat förråd för argumentet"
 
-#: dnf/base.py:2579
+#: dnf/base.py:2584
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketet %s är redan installerat."
@@ -3519,12 +3525,12 @@ msgstr "    Tillstånd: %s"
 msgid "skipping."
 msgstr "hoppar över."
 
-#: dnf/comps.py:196 dnf/comps.py:698
+#: dnf/comps.py:196 dnf/comps.py:685 dnf/comps.py:699
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr "Modulen eller gruppen ”%s” är inte installerad."
 
-#: dnf/comps.py:198 dnf/comps.py:700
+#: dnf/comps.py:198 dnf/comps.py:701
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr "Modulen eller gruppen ”%s” är inte tillgänglig."

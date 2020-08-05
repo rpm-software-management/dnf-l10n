@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 09:18-0400\n"
+"POT-Creation-Date: 2020-08-05 09:18-0400\n"
 "PO-Revision-Date: 2018-11-12 10:05+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Korean\n"
@@ -444,43 +444,49 @@ msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "\"{}\"은 (는) 필요한 보안 업데이트가 없지만 {} 업데이트는 사용 가능합니다."
 
-#: dnf/base.py:2323
+#. raise an exception, because po.repoid is not in self.repos
+#: dnf/base.py:2320
+#, python-format
+msgid "Unable to retrieve a key for a commandline package: %s"
+msgstr ""
+
+#: dnf/base.py:2328
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". 실패한 패키지는 다음과 같습니다. %s"
 
-#: dnf/base.py:2324
+#: dnf/base.py:2329
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG 키는 다음과 같이 구성됩니다. %s"
 
-#: dnf/base.py:2336
+#: dnf/base.py:2341
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG 키 %s (0x%s)가 이미 설치되어 있습니다."
 
-#: dnf/base.py:2369
+#: dnf/base.py:2374
 msgid "The key has been approved."
 msgstr ""
 
-#: dnf/base.py:2372
+#: dnf/base.py:2377
 msgid "The key has been rejected."
 msgstr ""
 
-#: dnf/base.py:2405
+#: dnf/base.py:2410
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "키 가져 오기가 실패했습니다 (코드 %d)"
 
-#: dnf/base.py:2407
+#: dnf/base.py:2412
 msgid "Key imported successfully"
 msgstr "성공적으로 가져온 키"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2416
 msgid "Didn't install any keys"
 msgstr "아무 키도 설치하지 않았습니다."
 
-#: dnf/base.py:2414
+#: dnf/base.py:2419
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -490,27 +496,27 @@ msgstr ""
 "해당 GPG 키는 \"%s\"저장소가 이미 설치되어 있지만이 패키지에 맞지 않습니다."
 "이 저장소에 대해 올바른 키 URL이 구성되었는지 확인하십시오."
 
-#: dnf/base.py:2425
+#: dnf/base.py:2430
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "키 가져 오기가 잘못된 키를 가져 오지 못 했습니까?"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2483
 msgid "  * Maybe you meant: {}"
 msgstr "  * 어쩌면 당신은 의미 : {}"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2515
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "로컬 저장소 \"{}\"의 \"{}\"패키지에 잘못된 체크섬이 있습니다"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2518
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "로컬 저장소의 일부 패키지에 잘못된 체크섬이 있습니다."
 
-#: dnf/base.py:2516
+#: dnf/base.py:2521
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "저장소 \"{}\"의 패키지 \"{}\"에 잘못된 체크섬이 있습니다"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2524
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -518,23 +524,23 @@ msgstr ""
 "일부 패키지에는 유효하지 않은 캐시가 있지만 \"--cacheonly\"옵션으로 인해 다운"
 "로드 할 수 없습니다"
 
-#: dnf/base.py:2537 dnf/base.py:2557
+#: dnf/base.py:2542 dnf/base.py:2562
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2545 dnf/base.py:2565
+#: dnf/base.py:2550 dnf/base.py:2570
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2547
+#: dnf/base.py:2552
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2563
+#: dnf/base.py:2568
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2579
+#: dnf/base.py:2584
 #, python-format
 msgid "Package %s is already installed."
 msgstr ""
@@ -3378,12 +3384,12 @@ msgstr "    상태  : %s"
 msgid "skipping."
 msgstr "건너 뛰기."
 
-#: dnf/comps.py:196 dnf/comps.py:698
+#: dnf/comps.py:196 dnf/comps.py:685 dnf/comps.py:699
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr ""
 
-#: dnf/comps.py:198 dnf/comps.py:700
+#: dnf/comps.py:198 dnf/comps.py:701
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr ""

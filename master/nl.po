@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 09:18-0400\n"
+"POT-Creation-Date: 2020-08-05 09:18-0400\n"
 "PO-Revision-Date: 2020-07-10 16:27+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -460,43 +460,49 @@ msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Geen beveiligingsupdates nodig voor\"{}\", maar updates {} zijn beschikbaar"
 
-#: dnf/base.py:2323
+#. raise an exception, because po.repoid is not in self.repos
+#: dnf/base.py:2320
+#, python-format
+msgid "Unable to retrieve a key for a commandline package: %s"
+msgstr ""
+
+#: dnf/base.py:2328
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Pakket dat mislukt is: %s"
 
-#: dnf/base.py:2324
+#: dnf/base.py:2329
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-sleutels zijn geconfigureerd als: %s"
 
-#: dnf/base.py:2336
+#: dnf/base.py:2341
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-sleutel op %s (0x%s) is al geïnstalleerd"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2374
 msgid "The key has been approved."
 msgstr "De sleutel is goedgekeurd."
 
-#: dnf/base.py:2372
+#: dnf/base.py:2377
 msgid "The key has been rejected."
 msgstr "De sleutel is verworpen."
 
-#: dnf/base.py:2405
+#: dnf/base.py:2410
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Importeren sleutel mislukt (code %d)"
 
-#: dnf/base.py:2407
+#: dnf/base.py:2412
 msgid "Key imported successfully"
 msgstr "Sleutel met succes geïmporteerd"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2416
 msgid "Didn't install any keys"
 msgstr "Er werden geen sleutels geïnstalleerd"
 
-#: dnf/base.py:2414
+#: dnf/base.py:2419
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -507,28 +513,28 @@ msgstr ""
 "niet correct voor dit pakket.\n"
 "Controleer of de juiste sleutel-URLs voor deze repository zijn opgegeven."
 
-#: dnf/base.py:2425
+#: dnf/base.py:2430
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Importen van sleutel(s) hielp niet; verkeerde sleutel(s)?"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2483
 msgid "  * Maybe you meant: {}"
 msgstr "  * Misschien bedoel  je: {}"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2515
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van lokale repository \"{}\" heeft een onjuiste checksum"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2518
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Sommige paketten van de lokale repository hebbenb een onjuiste checksum"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2521
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van repository \"{}\" heeft een onjuiste checksum"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2524
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -536,26 +542,26 @@ msgstr ""
 "Sommige pakketten hebben een ongeldige cache, maar kunnen door de \"--"
 "cacheonly\" optie niet gedownload worden"
 
-#: dnf/base.py:2537 dnf/base.py:2557
+#: dnf/base.py:2542 dnf/base.py:2562
 msgid "No match for argument"
 msgstr "Er is geen match voor argument"
 
-#: dnf/base.py:2545 dnf/base.py:2565
+#: dnf/base.py:2550 dnf/base.py:2570
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Alle matches werden uitgefilterd door het uitsluiten van filteren voor "
 "argument"
 
-#: dnf/base.py:2547
+#: dnf/base.py:2552
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alle matches werden uitgefilterd door modulair filteren voor argument"
 
-#: dnf/base.py:2563
+#: dnf/base.py:2568
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Alle matches werden geïnstalleerd van een andere repository voor argument"
 
-#: dnf/base.py:2579
+#: dnf/base.py:2584
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Pakket %s is al geïnstalleerd."
@@ -3534,12 +3540,12 @@ msgstr "    Status  : %s"
 msgid "skipping."
 msgstr "wordt overgeslagen."
 
-#: dnf/comps.py:196 dnf/comps.py:698
+#: dnf/comps.py:196 dnf/comps.py:685 dnf/comps.py:699
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr "Module of groep '%s' is niet geïnstalleerd."
 
-#: dnf/comps.py:198 dnf/comps.py:700
+#: dnf/comps.py:198 dnf/comps.py:701
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr "Module of groep '%s' is niet beschikbaar."

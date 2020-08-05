@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-03 09:18-0400\n"
+"POT-Creation-Date: 2020-08-05 09:18-0400\n"
 "PO-Revision-Date: 2020-07-27 05:29+0000\n"
 "Last-Translator: Hajime Taira <htaira@pantora.net>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -480,43 +480,49 @@ msgstr "\"{}\" のセキュリティー更新は必要ありませんが、{} �
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "\"{}\" のセキュリティー更新は必要ありませんが、{} 更新が利用可能です"
 
-#: dnf/base.py:2323
+#. raise an exception, because po.repoid is not in self.repos
+#: dnf/base.py:2320
+#, python-format
+msgid "Unable to retrieve a key for a commandline package: %s"
+msgstr ""
+
+#: dnf/base.py:2328
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". 失敗したパッケージは: %s"
 
-#: dnf/base.py:2324
+#: dnf/base.py:2329
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG 鍵が設定されています: %s"
 
-#: dnf/base.py:2336
+#: dnf/base.py:2341
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s (0x%s) の GPG 鍵はインストール済みです"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2374
 msgid "The key has been approved."
 msgstr "鍵が承認されました。"
 
-#: dnf/base.py:2372
+#: dnf/base.py:2377
 msgid "The key has been rejected."
 msgstr "鍵が拒否されました。"
 
-#: dnf/base.py:2405
+#: dnf/base.py:2410
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "鍵のインポートに失敗しました (コード: %d)"
 
-#: dnf/base.py:2407
+#: dnf/base.py:2412
 msgid "Key imported successfully"
 msgstr "鍵のインポートに成功しました"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2416
 msgid "Didn't install any keys"
 msgstr "鍵を 1 つもインストールしませんでした"
 
-#: dnf/base.py:2414
+#: dnf/base.py:2419
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -527,31 +533,31 @@ msgstr ""
 "パッケージには適切ではありません。\n"
 "正しい鍵 URL がこのリポジトリー用に設定されているか確認してください。"
 
-#: dnf/base.py:2425
+#: dnf/base.py:2430
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "鍵をインポートしても役に立ちませんでした。鍵が間違っていませんか?"
 
-#: dnf/base.py:2478
+#: dnf/base.py:2483
 msgid "  * Maybe you meant: {}"
 msgstr "  * おそらく: {}"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2515
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "ローカルリポジトリー \"{}\" のパッケージ \"{}\" のチェックサムは正しくありま"
 "せん"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2518
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "ローカルリポジトリーのいくつかのパッケージのチェックサムは正しくありません"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2521
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "リポジトリー \"{}\" のパッケージ \"{}\" のチェックサムは正しくありません"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2524
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -559,25 +565,25 @@ msgstr ""
 "いくつかのパッケージには無効なキャッシュがありますが、\"--cacheonly\" オプ"
 "ションによりダウンロードできません"
 
-#: dnf/base.py:2537 dnf/base.py:2557
+#: dnf/base.py:2542 dnf/base.py:2562
 msgid "No match for argument"
 msgstr "一致した引数がありません"
 
-#: dnf/base.py:2545 dnf/base.py:2565
+#: dnf/base.py:2550 dnf/base.py:2570
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "すべての検索結果は引数の除外フィルタリングに一致しません(filter out)"
 
-#: dnf/base.py:2547
+#: dnf/base.py:2552
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "すべての検出結果は引数のモジュラーフィルタリングに一致しません(filter out)"
 
-#: dnf/base.py:2563
+#: dnf/base.py:2568
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "すべての検索結果は引数に対し異なるレポジトリからインストールされたものです"
 
-#: dnf/base.py:2579
+#: dnf/base.py:2584
 #, python-format
 msgid "Package %s is already installed."
 msgstr "パッケージ %s は既にインストールされています。"
@@ -3537,12 +3543,12 @@ msgstr "    状態  : %s"
 msgid "skipping."
 msgstr "スキップします。"
 
-#: dnf/comps.py:196 dnf/comps.py:698
+#: dnf/comps.py:196 dnf/comps.py:685 dnf/comps.py:699
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr "モジュールまたはグループ '%s' がインストールされていません。"
 
-#: dnf/comps.py:198 dnf/comps.py:700
+#: dnf/comps.py:198 dnf/comps.py:701
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr "モジュールまたはグループ '%s' は利用不可です。"
