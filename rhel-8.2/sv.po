@@ -16,10 +16,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-08-04 10:33+0000\n"
+"PO-Revision-Date: 2020-08-17 21:29+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/sv/>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -221,8 +221,8 @@ msgstr "Diskbehov:"
 #, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Åtminstone %d MB mer utrymme behövs på filsystemet %s."
+msgstr[1] "Åtminstone %d MB mer utrymme behövs på filsystemet %s."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
@@ -230,7 +230,7 @@ msgstr "Felsammanfattning"
 
 #: ../dnf/base.py:939
 msgid "RPMDB altered outside of DNF."
-msgstr ""
+msgstr "RPMDB ändrad utanför DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
@@ -581,12 +581,14 @@ msgstr "  Byggde      : %s %s"
 
 #: ../dnf/cli/cli.py:192
 msgid "DNF will only download packages for the transaction."
-msgstr ""
+msgstr "DNF kommer endast hämta paket för transaktionen."
 
 #: ../dnf/cli/cli.py:194
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
+"DNF kommer endast hämta paket, installera gpg-nycklar och kontrollera "
+"transaktionen."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
@@ -714,12 +716,16 @@ msgstr "Det finns Inget sådant kommando: %s. Använd %s --help"
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
+"Det kan vara ett DNF-insticksmodulskommando, prova ”dnf install 'dnf-"
+"command(%s)'”"
 
 #: ../dnf/cli/cli.py:830
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Det kan vara ett kommando till en DNF-insticksmodul, men att läsa in "
+"insticksmoduler är för närvarande avaktiverat."
 
 #: ../dnf/cli/cli.py:887
 msgid ""
@@ -810,6 +816,18 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Du har aktiverat kontroll av paket med GPG-nycklar.  Det är en bra sak.\n"
+"Dock har du inte några publika GPG-nycklar installerade.  Du måste hämta\n"
+"nycklarna för paket som du vill installera och installera dem.  Du kan\n"
+"göra det genom att köra kommandot:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Alternativt kan du ange url:en till nyckeln du vill använda för ett förråd\n"
+"med alternativet ”gpgkey” i en förrådssektion och DNF kommer installera\n"
+"den åt dig.\n"
+"\n"
+"För mer information, kontakta din distribution eller paketleverantör."
 
 #: ../dnf/cli/commands/__init__.py:80
 #, python-format
@@ -866,7 +884,7 @@ msgstr "ta reda på vilka paket som tillhandahåller det angivna värdet"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "NÅGON_STRÄNG"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -1324,6 +1342,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can enable the other stream."
 msgstr ""
+"Det är inte möjligt att byta aktiverade strömmar för en modul.\n"
+"Det är rekommenderat att ta bort allt innehåll från modulen, och återställa "
+"modulen med kommandot ”dnf module reset <modulnamn>”. Efter att du "
+"återställt modulen kan du installera den andra strömmen."
 
 #: ../dnf/cli/commands/module.py:199
 msgid ""
@@ -1332,6 +1354,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can install the other stream."
 msgstr ""
+"Det är inte möjligt att byta aktiverade strömmar för en modul.\n"
+"Det är rekommenderat att ta bort allt innehåll från modulen, och återställa "
+"modulen med kommandot ”dnf module reset <modulnamn>”. Efter att du "
+"återställt modulen kan du installera den andra strömmen."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1445,11 +1471,11 @@ msgstr "Filnamn     : %s"
 
 #: ../dnf/cli/commands/repolist.py:183
 msgid "Repo-status  : "
-msgstr ""
+msgstr "Förrådsstatus: "
 
 #: ../dnf/cli/commands/repolist.py:186
 msgid "Repo-revision: "
-msgstr ""
+msgstr "Förrådsrevision: "
 
 #: ../dnf/cli/commands/repolist.py:190
 #, fuzzy
@@ -1459,11 +1485,11 @@ msgstr "Förråd      : %s"
 
 #: ../dnf/cli/commands/repolist.py:197
 msgid "Repo-distro-tags: "
-msgstr ""
+msgstr "Förråds-distro-taggar: "
 
 #: ../dnf/cli/commands/repolist.py:203
 msgid "Repo-updated : "
-msgstr ""
+msgstr "Förråd uppdaterat: "
 
 #: ../dnf/cli/commands/repolist.py:205
 #, fuzzy
@@ -1479,7 +1505,7 @@ msgstr "Förråd      : %s"
 
 #: ../dnf/cli/commands/repolist.py:209
 msgid "Repo-metalink: "
-msgstr ""
+msgstr "Förrådsmetalänk: "
 
 #: ../dnf/cli/commands/repolist.py:214
 #, fuzzy
@@ -1489,33 +1515,33 @@ msgstr "Uppdaterat"
 
 #: ../dnf/cli/commands/repolist.py:216
 msgid "Repo-mirrors : "
-msgstr ""
+msgstr "Förrådsspekglar: "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
 msgid "Repo-baseurl : "
-msgstr ""
+msgstr "Förrådsbas-url: "
 
 #: ../dnf/cli/commands/repolist.py:229
 msgid "Repo-expire  : "
-msgstr ""
+msgstr "Förrådsutgång: "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
 msgid "Repo-exclude : "
-msgstr ""
+msgstr "Förrådsexkluderingar: "
 
 #: ../dnf/cli/commands/repolist.py:237
 msgid "Repo-include : "
-msgstr ""
+msgstr "Förrådsinkluderingar: "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
 msgid "Repo-excluded: "
-msgstr ""
+msgstr "Förrådsexkluderat: "
 
 #: ../dnf/cli/commands/repolist.py:246
 msgid "Repo-filename: "
-msgstr ""
+msgstr "Förrådsfilnamn: "
 
 #. Work out the first (id) and last (enabled/disalbed/count),
 #. then chop the middle (name)...
@@ -1835,6 +1861,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
+"Ingen flagga angiven\n"
+"användning: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|--re"
+"commends|--requires|--suggest|--supplements|--whatrequires] [nyckel] [--tree]"
+"\n"
+"\n"
+"beskrivning:\n"
+"  För de angivna paketen, skriv ett träd över paketen."
 
 #: ../dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -1846,7 +1879,7 @@ msgstr "sök även i paketbeskrivningar och URL:en"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "FRÅGE_STRÄNG"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -1892,7 +1925,7 @@ msgstr "Inget som matchar hittat."
 
 #: ../dnf/cli/commands/shell.py:47
 msgid "run an interactive DNF shell"
-msgstr ""
+msgstr "kör ett interaktivt dnf-skal"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
