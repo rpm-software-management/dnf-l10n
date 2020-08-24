@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-08-20 09:29+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/sv/>\n"
+"PO-Revision-Date: 2020-08-24 23:12+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.1\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -201,10 +201,8 @@ msgid "Running transaction test"
 msgstr "Kör transaktionstest"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction test error:"
 msgid "Transaction check error:"
-msgstr "Transaktionstestfel:"
+msgstr "Transaktionskontrollfel:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -238,10 +236,9 @@ msgid "Errors occurred during transaction."
 msgstr "Fel inträffade under transaktionen."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Kunde inte ta bort transaktionsfilen %s"
+msgstr "Kunde inte ta transaktionslåset (inloggad som: %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -381,11 +378,10 @@ msgid "Package %s not installed, cannot update it."
 msgstr "Paketet %s är inte installerat, kan inte uppdatera det."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"Paketet %s med en lägre version är redan installerat, kan inte nedgradera "
+"Paketet %s med en högre version är redan installerat, kan inte uppgradera "
 "det."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
@@ -1000,16 +996,12 @@ msgstr ""
 "Använd ”<transaction-id>..<transaction-id>”."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Kan inte konvertera ”{}” till ett transaktions-ID.\n"
-"Använd ”<nummer>”, ”last”, ”last-<antal>”."
+"Använd ”<heltal>”, ”last”, ”last-<positivt-heltal>”."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1471,10 +1463,8 @@ msgid "Repo-revision: "
 msgstr "Förrådsrevision: "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-tags    : "
-msgstr "Förråd      : %s"
+msgstr "Förrådstaggar: "
 
 #: ../dnf/cli/commands/repolist.py:197
 msgid "Repo-distro-tags: "
@@ -1485,10 +1475,8 @@ msgid "Repo-updated : "
 msgstr "Förråd uppdaterat: "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-pkgs    : "
-msgstr "Förråd      : %s"
+msgstr "Förrådspaket : "
 
 #: ../dnf/cli/commands/repolist.py:206
 msgid "Repo-size    : "
@@ -1548,10 +1536,9 @@ msgid "repo name"
 msgstr "förrådsnamn"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid ". Failing package is: %s"
+#, python-format
 msgid "Total packages: %s"
-msgstr ". Paketet som misslyckas är: %s"
+msgstr "Totalt antal paket: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
@@ -1793,11 +1780,9 @@ msgstr ""
 "installerade paket."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid "Display only packages that were installed by user."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
-msgstr "Visa endast paket som installerades av användaren."
+msgstr "Visa endast paket som kan tas bort med kommandot ”dnf autoremove”."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -1922,7 +1907,7 @@ msgstr "SKRIPT"
 
 #: ../dnf/cli/commands/shell.py:69
 msgid "Script to run in DNF shell"
-msgstr ""
+msgstr "Skript att köra i ett DNF-skal"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2037,6 +2022,7 @@ msgstr "Lämnar skalet"
 #: ../dnf/cli/commands/swap.py:33
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
+"kör ett interaktivt dnf-läge för att ta bort och installera en specifikation"
 
 #: ../dnf/cli/commands/swap.py:37
 msgid "The specs that will be removed"
@@ -2400,6 +2386,8 @@ msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
+"aktiverar dnf:s beräkningslogik för utfasning vid uppgraderingar eller visa "
+"förmågor som paketet fasar ut för info, list och repoquery"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2438,15 +2426,9 @@ msgid "disable excludepkgs"
 msgstr "avaktivera excludepkgs"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "label and path to an additional repository to use (same path as in a "
-#| "baseurl), can be specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
-msgstr ""
-"etikett och sökväg till ett ytterligare förråd att använda (samma sökväg som "
-"i en bas-url), kan anges flera gånger."
+msgstr "etikett och sökväg till ett ytterligare förråd, kan anges flera gånger."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3054,6 +3036,7 @@ msgstr "System"
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
 msgstr ""
+"Hoppar över sammanslagen transaktion %d till %d, eftersom den överlappar"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3412,17 +3395,17 @@ msgstr "Varning: misslyckades att ladda ”%s”, hoppar över."
 #: ../dnf/conf/read.py:61
 #, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr ""
+msgstr "Förrådet ”%s”: Fel vid tolkning av konfigurationen: %s"
 
 #: ../dnf/conf/read.py:66
 #, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
-msgstr ""
+msgstr "Förrådet ”%s” saknar namn i konfigurationen, använder id."
 
 #: ../dnf/conf/read.py:96
 #, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr ""
+msgstr "Felaktigt id för förrådet: %s, byte = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
@@ -3515,6 +3498,9 @@ msgid ""
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Felformaterad låsfil funnen: %s.\n"
+"Se till att ingen annan dnf-process kör och ta bort låsfilen manuellt eller "
+"kör systemd-tmpfiles --remove dnf.conf."
 
 #: ../dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
