@@ -31,16 +31,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-07-18 17:29+0000\n"
+"PO-Revision-Date: 2020-08-28 21:29+0000\n"
 "Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/es/>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.1\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -220,10 +220,8 @@ msgid "Running transaction test"
 msgstr "Ejecutando prueba de operaciones"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction check succeeded."
 msgid "Transaction check error:"
-msgstr "Verificación de operación exitosa."
+msgstr "Error de prueba de transacción:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -249,20 +247,17 @@ msgid "Error Summary"
 msgstr "Resumen de errores"
 
 #: ../dnf/base.py:939
-#, fuzzy
-#| msgid "RPMDB altered outside of {prog}."
 msgid "RPMDB altered outside of DNF."
-msgstr "RPMDB modificado fuera de {prog}"
+msgstr "RPMDB modificado fuera de DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "Se produjo algún error durante la transacción."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Falló al eliminar archivo de transacción %s"
+msgstr "Falló al obtener el bloqueo de transacción (accedido como: %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -402,11 +397,10 @@ msgid "Package %s not installed, cannot update it."
 msgstr "El paquete %s no está instalado, no puede actualizarse."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"Ya hay instalada una versión anterior del paquete %s, no se puede revertir."
+"Ya hay instalada una versión más alta del paquete %s, no se puede actualizar."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -1371,10 +1365,8 @@ msgid "show only disabled modules"
 msgstr "mostrar sólo los módulos inactivos"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "mostrar sólo los módulos inactivos"
+msgstr "mostrar sólo los módulos instalados"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1459,16 +1451,12 @@ msgid "disabled"
 msgstr "inhabilitado"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-id      : "
-msgstr "Repositorio : %s"
+msgstr "Repositorio-id      : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Filename    : %s"
 msgid "Repo-name    : "
-msgstr "Archivo     : %s"
+msgstr "Nombre-repositorio     : "
 
 #: ../dnf/cli/commands/repolist.py:183
 msgid "Repo-status  : "
@@ -1479,10 +1467,8 @@ msgid "Repo-revision: "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-tags    : "
-msgstr "Repositorio : %s"
+msgstr "Repositorio-etiquetas    : "
 
 #: ../dnf/cli/commands/repolist.py:197
 msgid "Repo-distro-tags: "
@@ -1493,26 +1479,20 @@ msgid "Repo-updated : "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-pkgs    : "
-msgstr "Repositorio : %s"
+msgstr "Repositorio-paquetes    : "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-size    : "
-msgstr "Repositorio : %s"
+msgstr "Repositorio-tamaño    : "
 
 #: ../dnf/cli/commands/repolist.py:209
 msgid "Repo-metalink: "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "Updated"
 msgid "  Updated    : "
-msgstr "Actualizado"
+msgstr "  Actualizado    : "
 
 #: ../dnf/cli/commands/repolist.py:216
 msgid "Repo-mirrors : "
@@ -1560,10 +1540,9 @@ msgid "repo name"
 msgstr "nombre del repositorio"
 
 #: ../dnf/cli/commands/repolist.py:300
-#, fuzzy, python-format
-#| msgid ". Failing package is: %s"
+#, python-format
 msgid "Total packages: %s"
-msgstr ". El paquete que falla es: %s"
+msgstr "Total de paquetes: %s"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
@@ -1847,13 +1826,13 @@ msgstr "Mostrar las capacidades que el paquete puede complementar."
 # DocId: dnf-plugins-core
 #: ../dnf/cli/commands/repoquery.py:234
 msgid "Display only available packages."
-msgstr "Mostrar sólo paquetes disponibles"
+msgstr "Mostrar sólo paquetes disponibles."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
 #: ../dnf/cli/commands/repoquery.py:237
 msgid "Display only installed packages."
-msgstr "Mostrar solo paquetes instalados"
+msgstr "Mostrar solo paquetes instalados."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
@@ -1862,7 +1841,7 @@ msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
 "Mostrar sólo paquetes que no están presentes en ninguno de los repositorios "
-"disponibles"
+"disponibles."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
@@ -1870,14 +1849,14 @@ msgstr ""
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
-msgstr "Mostrar sólo paquetes que actualizan para alguno ya instalado"
+msgstr "Mostrar sólo paquetes que actualizan para alguno ya instalado."
 
 #: ../dnf/cli/commands/repoquery.py:240
-#, fuzzy
-#| msgid "Display only packages that were installed by user."
 msgid ""
 "Display only packages that can be removed by \"dnf autoremove\" command."
-msgstr "Mostrar sólo paquetes instalados por el usuario."
+msgstr ""
+"Mostrar sólo paquetes que pueden ser borrados por el comando \"dnf "
+"autoremove\"."
 
 #: ../dnf/cli/commands/repoquery.py:241
 msgid "Display only packages that were installed by user."
@@ -2382,10 +2361,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "No se define valor para el parámetro setopt: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Paquetes opcionales:"
+msgstr "Argumentos opcionales"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2527,15 +2504,11 @@ msgid "disable excludepkgs"
 msgstr "desactivar la opción excludepkgs"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "enable just specific repositories by an id or a glob, can be specified "
-#| "multiple times"
 msgid ""
 "label and path to additional repository, can be specified multiple times."
 msgstr ""
-"activar repositorios específicos por identificador o patrón, se puede usar "
-"varias veces"
+"etiqueta y ruta al repositorio adicional, puede ser especificado múltiples "
+"veces."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3429,16 +3402,14 @@ msgid "skipping."
 msgstr "saltando."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "El módulo o grupo '%s' no está instalado."
+msgstr "Grupo '%s' no está instalado."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "El identificador de grupo '%s' no existe."
+msgstr "Grupo '%s' no existe."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3451,10 +3422,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "El identificador de grupo '%s' no existe."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "El módulo o grupo '%s' no está instalado."
+msgstr "Grupo '%s' no instalado."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3662,10 +3632,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "No hay perfiles predeterminados para el módulo {}:{}"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "El perfil predeterminado {} no está disponible en el módulo {}: {}"
+msgstr "El perfil {} no coincide para el módulo {}: {}"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
