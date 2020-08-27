@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-26 09:18-0400\n"
-"PO-Revision-Date: 2020-07-09 15:27+0000\n"
+"PO-Revision-Date: 2020-08-28 21:29+0000\n"
 "Last-Translator: Yi-Jyun Pan <pan93412@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -29,10 +29,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "下列更新已套用至「%s」："
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "更新已套用至「%s」。"
+msgstr "更新已在 %s 完成"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -85,7 +84,7 @@ msgstr "GPG 檢查失敗"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "正在等待網路連線……"
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
@@ -98,7 +97,7 @@ msgstr "睡眠 %s 秒"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr ""
+msgstr "系統離線。"
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -450,7 +449,7 @@ msgstr "不需要「{}」的任何安全性更新，但有 {} 個更新可用"
 #: dnf/base.py:2320
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "無法擷取命令列軟體包的金鑰：%s"
 
 #: dnf/base.py:2328
 #, python-format
@@ -1853,6 +1852,8 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"如果未安裝軟體包，則顯示執行 %%pre 及 %%post 指令小稿所依賴的功能。如果已安裝軟體包，則顯示執行 %%pre、%%post、%%preun "
+"以及 %%postun 指令小稿所依賴的功能。"
 
 #: dnf/cli/commands/repoquery.py:243
 msgid "Display capabilities that the package suggests."
@@ -2499,7 +2500,7 @@ msgstr "錯誤輸出等級"
 msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
-msgstr ""
+msgstr "啟用 {prog} 中 upgrade 的棄用處理邏輯，或啟用 info、list 和 repoquery 顯示軟體包棄用的功能"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
