@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-04 09:18-0400\n"
-"PO-Revision-Date: 2020-08-07 17:29+0000\n"
+"PO-Revision-Date: 2020-09-06 18:29+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1322,24 +1322,31 @@ msgstr "показ або використання журналу операці
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
+"Для команди store шлях до файла, до якого слід зберегти результати операції"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Для команди replay, не перевіряти на наявність встановлених пакунків, які "
+"відповідають тим, які вказано у операції"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Для команди replay, не перевіряти на наявність додаткових пакунків, які "
+"вставляються у операцію"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Для команди replay, пропустити пакунки, які недоступні або для яких "
+"недоступні залежності"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1350,16 +1357,12 @@ msgstr ""
 "«{}» потребує одного ідентифікатора операції або назви пакунка."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Не вказано ідентифікатора операції або назви пакунка."
+msgstr "Не вказано назви файла операції."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Не вдалося вилучити файл операції %s"
+msgstr "Для назви файла операції вказано декілька аргументів."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1409,35 +1412,30 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "Не знайдено операції із пакунком «{}»."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "Не знайдено TransactionItem для ключа {}"
+msgstr "Не знайдено операції із ідентифікатором «{id}»."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} вже існує, перезаписати?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Не перезаписуємо {}, завершуємо роботу."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Не вдалося виконати операцію"
+msgstr "Операцію збережено до {}."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Під час спроби виконати дію сталися помилки."
+msgstr "Помилка під час спроби зберегти операцію: {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
-msgstr ""
+msgstr "Увага! Під час відтворення операції виникли такі проблеми:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3626,16 +3624,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "Модуля або групи «%s» не існує."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Середовище «%s» не встановлено."
+msgstr "Середовища із ідентифікатором «%s» не існує."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Середовище «%s» не встановлено."
+msgstr "Середовище із ідентифікатором «%s» не встановлено."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3648,10 +3644,9 @@ msgid "Environment '%s' is not available."
 msgstr "Середовище «%s» є недоступним."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Групи з ідентифікатором «%s» не існує."
+msgstr "Групи із ідентифікатором «%s» не існує."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -4086,22 +4081,22 @@ msgstr "Готуємося"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Помилки у «{filename}»:"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Помилка у «{filename}»: {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Некоректна основна версія «{major}» — мало бути вказано число."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Некоректна проміжна версія «{minor}» — мало бути вказано число."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4109,84 +4104,83 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Несумісна основна версія «{major}» — підтримуваною основною версією є "
+"«{major_supp}»."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Неочікуваний тип «{id}», мало бути використано тип {exp}."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Пропущено ключ «{key}»."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "У RPM пропущено ключ об'єкта «{key}»."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Неочікуване значення причини пакунка «{reason}» для nevra RPM — «{nevra}»."
 
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Не вдалося обробити NEVRA для пакунка «{nevra}»."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Не вдалося знайти NEVRA RPM «{nevra}»."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "Пакунок %s вже встановлено."
+msgstr "Пакунок «{na}» для дії «{action}» вже встановлено."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
-msgstr ""
+msgstr "Пакунок nevra «{nevra}» є недоступним у сховищах для дії «{action}»."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Не встановлено пакунок nevra «{nevra}» для дії «{action}»."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Неочікуване значення дії з пакунком «{action}» для NEVRA RPM «{nevra}»."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "Модуль або група «%s» є недоступними."
+msgstr "Група із ідентифікатором «%s» є недоступною."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Пропущено ключ об'єкта «{key}» у groups.packages."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Модуль або групу «%s» не встановлено."
+msgstr "Групу з ідентифікатором «%s» не встановлено."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "Середовище «%s» є недоступним."
+msgstr "Ідентифікатор середовища «%s» є недоступним."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4194,21 +4188,23 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Некоректне значення «{group_type}» environments.groups.group_type. "
+"Передбачено підтримку лише значень «mandatory» та «optional»."
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Пропущено ключ об'єкта «{key}» у environments.groups."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "Неочікуване значення дії з групою «{action}» для групи «{group}»."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Пропущено ключ об'єкта «{key}» у групі."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
@@ -4216,11 +4212,12 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Неочікуване значення для дії з середовищем «{action}» для середовища «{env}»."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Пропущено ключ об'єкта «{key}» у середовищі."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
@@ -4228,6 +4225,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"Пакунок nevra «{nevra}», якого немає у файлі операції, було вставлено до "
+"операції."
 
 #: dnf/util.py:391 dnf/util.py:393
 msgid "Problem"
