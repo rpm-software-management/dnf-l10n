@@ -16,17 +16,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-04 09:18-0400\n"
-"PO-Revision-Date: 2020-08-05 14:55+0000\n"
+"PO-Revision-Date: 2020-09-05 09:32+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/pl/>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1332,25 +1332,31 @@ msgstr "wyświetla lub używa historii transakcji"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "Dla polecenia „store”, ścieżka do pliku, w którym przechować transakcję"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Dla polecenia „replay”, bez sprawdzania, czy zainstalowane pakiety pasują do "
+"tych w transakcji"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Dla polecenia „replay”, bez sprawdzania dodatkowych pakietów wciągniętych w "
+"transakcję"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Dla polecenia „replay”, pomija niedostępne pakiety lub pakiety z brakującymi "
+"zależnościami"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1361,16 +1367,12 @@ msgstr ""
 "„{}” wymaga jednego identyfikatora transakcji lub nazwy pakietu."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Nie podano identyfikatora transakcji ani nazwy pakietu."
+msgstr "Nie podano nazwy pliku transakcji."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Usunięcie pliku transakcji %s się nie powiodło"
+msgstr "Jako nazwę pliku transakcji podano więcej niż jeden parametr."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1420,35 +1422,31 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "Nie odnaleziono transakcji manipulującej pakietem „{}”."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "Nie odnaleziono TransactionItem dla klucza: {}"
+msgstr "Nie odnaleziono identyfikatora transakcji „{id}”."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} istnieje, zastąpić?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Bez zastępowania {}, kończenie działania."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Transakcja się nie powiodła"
+msgstr "Zapisano transakcję do {}."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Wystąpiły błędy podczas transakcji."
+msgstr "Błąd podczas przechowywania transakcji: {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
+"Ostrzeżenie, wystąpiły następujące problemy podczas odtwarzania transakcji:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3644,16 +3642,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "Moduł lub grupa „%s” nie istnieje."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Środowisko „%s” nie jest zainstalowane."
+msgstr "Identyfikator środowiska „%s” nie istnieje."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Środowisko „%s” nie jest zainstalowane."
+msgstr "Identyfikator środowiska „%s” nie jest zainstalowany."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3666,8 +3662,7 @@ msgid "Environment '%s' is not available."
 msgstr "Środowisko „%s” jest niedostępne."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
 msgstr "Identyfikator grupy „%s” nie istnieje."
 
@@ -4108,22 +4103,22 @@ msgstr "Przygotowywanie"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Błędy w „{filename}”:"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Błąd w „{filename}”: {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Nieprawidłowa duża wersja „{major}”, oczekiwano liczby."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Nieprawidłowa mała wersja „{minor}”, oczekiwano liczby."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4131,43 +4126,45 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Niezgodna duża wersja „{major}”, obsługiwana duża wersja to „{major_supp}”."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Nieoczekiwany typ „{id}”, oczekiwano {exp}."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Brak klucza „{key}”."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Brak klucza obiektu „{key}” w pakiecie RPM."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Nieoczekiwana wartość powodu pakietu „{reason}” dla NEVRA pakietu RPM "
+"„{nevra}”."
 
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Nie można przetworzyć NEVRA dla pakietu „{nevra}”."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Nie można odnaleźć NEVRA pakietu RPM „{nevra}”."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "Pakiet %s jest już zainstalowany."
+msgstr "Pakiet „{na}” jest już zainstalowany dla działania „{action}”."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
@@ -4175,40 +4172,42 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"NEVRA pakietu „{nevra}” jest niedostępna w repozytoriach dla działania "
+"„{action}”."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
+"NEVRA pakietu „{nevra}” nie jest zainstalowana dla działania „{action}”."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Nieoczekiwana wartość działania pakietu „{action}” dla NEVRA pakietu "
+"„{nevra}”."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "Moduł lub grupa „%s” jest niedostępna."
+msgstr "Identyfikator grupy „%s” jest niedostępny."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Brak klucza obiektu „{key}” w „groups.packages”."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Moduł lub grupa „%s” nie jest zainstalowana."
+msgstr "Identyfiaktor grupy „%s” nie jest zainstalowany."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "Środowisko „%s” jest niedostępne."
+msgstr "Identyfikator środowiska „%s” jest niedostępny."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4216,21 +4215,23 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Nieprawidłowa wartość „{group_type}” dla „environments.groups.group_type”, "
+"obsługiwane są tylko wartości „mandatory” lub „optional”."
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Brak klucza obiektu „{key}” w „environments.groups”."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "Nieoczekiwana wartość działania grupy „{action}” dla grupy „{group}”."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Brak klucza obiektu „{key}” w grupie."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
@@ -4238,11 +4239,12 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Nieoczekiwana wartość działania środowiska „{action}” dla środowiska „{env}”."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Brak klucza obiektu „{key}” w środowisku."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
@@ -4250,6 +4252,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"NEVRA pakietu „{nevra}”, które nie jest obecne w pliku transakcji, zostało "
+"wciągnięte w transakcję."
 
 #: dnf/util.py:391 dnf/util.py:393
 msgid "Problem"
