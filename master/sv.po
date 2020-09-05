@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-04 09:18-0400\n"
-"PO-Revision-Date: 2020-08-24 23:12+0000\n"
+"PO-Revision-Date: 2020-09-06 18:29+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1313,25 +1313,31 @@ msgstr "visa, eller använd, transaktionshistoriken"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "För kommandot store, filsökvägen att spara översättningen i"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"För kommandot replay, leta inte efter installerade paket som matchar dem i "
+"transaktionen"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"För kommandot replay, leta inte efter extra paket som dragits in i "
+"transaktionen"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"För kommandot replay, hoppa över paket som inte är tillgängliga eller har "
+"saknade beroenden"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1342,16 +1348,12 @@ msgstr ""
 "'{}' behöver ett transaktions-ID eller paketnamn."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Inget transaktions-ID eller paketnamn angivet."
+msgstr "Inget transaktionsfilnamn angivet."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Kunde inte ta bort transaktionsfilen %s"
+msgstr "Mer än ett argument angivet som transaktionsfilnamn."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1401,35 +1403,30 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "Ingen transaktion som hanterar paketet ”{}” hittades."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "TransactionItem finns inte för nyckeln: {}"
+msgstr "Transaktions-ID ”{id}” finns inte."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} finns redan, skriva över?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Skriver inte över {}, avslutar."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Transaktionen misslyckades"
+msgstr "Transaktionen sparad i {}."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Fel inträffade under transaktionen."
+msgstr "Fel när transaktionen sparades: {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
-msgstr ""
+msgstr "Varning, följande problem uppstod när transaktionen spelades om:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3606,16 +3603,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "Modulen eller gruppen ”%s” finns inte."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Miljön ”%s” är inte installerad."
+msgstr "Miljö-id ”%s” finns inte."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Miljön ”%s” är inte installerad."
+msgstr "Miljö-id ”%s” är inte installerat."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3628,10 +3623,9 @@ msgid "Environment '%s' is not available."
 msgstr "Miljön ”%s” är inte tillgänglig."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Gruppid ”%s” finns inte."
+msgstr "Grupp-id ”%s” finns inte."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -4064,22 +4058,22 @@ msgstr "Förbereder"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Fel i ”{filename}”:"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Fel i ”{filename}”: {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Felaktig huvudversion ”{major}”, ett tal förväntades."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Felaktig underversion ”{minor}”, ett tal förväntades."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4087,6 +4081,8 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Inkompatibel huvudversion ”{major}”, huvudversioner om stödjs är "
+"”{major_supp}”."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
