@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-04 09:18-0400\n"
-"PO-Revision-Date: 2020-08-07 17:29+0000\n"
+"PO-Revision-Date: 2020-09-06 18:29+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -283,7 +283,7 @@ msgstr ""
 
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr "İşlem görevi zaten mevcut olduğundan yerel paketler eklenemiyor"
+msgstr "İşlem görevi zaten var olduğundan yerel paketler eklenemiyor"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -1297,25 +1297,28 @@ msgstr "işlem geçmişini görüntüle ya da kullan"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "\"store\" komutu için, işlemin kaydedileceği dosya yolu"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"\"replay\" komutu için, işlemdekilerle eşleşen kurulu paketleri denetleme"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
-msgstr ""
+msgstr "\"replay\" komutu için, işleme dahil edilen ek paketleri denetleme"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"\"replay\" komutu için, kullanılabilir olmayan veya eksik bağımlılıkları "
+"olan paketleri atla"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1326,16 +1329,12 @@ msgstr ""
 "'{}' için bir işlem kimliği veya paket adı gereklidir."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "İşlem kimliği veya paket adı verilmedi."
+msgstr "İşlem dosyası adı verilmedi."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "%s işlem dosyası kaldırılamadı"
+msgstr "İşlem dosyası adı olarak birden fazla argüman verildi."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1385,35 +1384,30 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "'{}' paketini değiştiren bir işlem bulunamadı."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "Anahtar için TransactionItem bulunamadı: {}"
+msgstr "İşlem kimliği \"{id}\" bulunamadı."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} zaten var, üzerine yazılsın mı?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "{} üzerine yazılmayacak, çıkılıyor."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "İşlem başarısız"
+msgstr "İşlem {} dosyasına kaydedildi."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "İşlem sırasında hatalar oluştu."
+msgstr "İşlem kaydedilirken hata oluştu: {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
-msgstr ""
+msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3601,16 +3595,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "'%s' diye bir modül veya grup yok."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "'%s' ortamı kurulu değil."
+msgstr "'%s' diye bir ortam kimliği yok."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "'%s' ortamı kurulu değil."
+msgstr "'%s' diye bir ortam kimliği kurulu değil."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3623,8 +3615,7 @@ msgid "Environment '%s' is not available."
 msgstr "'%s' ortamı kullanılabilir değil."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
 msgstr "'%s' diye bir grup kimliği yok."
 
@@ -4055,107 +4046,103 @@ msgstr "Hazırlanıyor"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "\"{filename}\" dosyasındaki hatalar:"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "\"{filename}\" dosyasındaki hata: {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Geçersiz ana sürüm \"{major}\", sayı bekleniyor."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Geçersiz alt sürüm \"{minor}\", sayı bekleniyor."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr ""
+msgstr "Uyumsuz ana sürüm \"{major}\", desteklenen ana sürüm \"{major_supp}\"."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Beklenmeyen \"{id}\" türü, {exp} bekleniyor."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Eksik anahtar \"{key}\"."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Bir RPM'de eksik nesne anahtarı \"{key}\"."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "RPM NEVRA \"{nevra}\" için beklenmeyen paket sebep değeri \"{reason}\"."
 
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Paket için NEVRA ayrıştırılamıyor \"{nevra}\"."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "RPM NEVRA bulunamıyor \"{nevra}\"."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "%s paketi zaten kurulu."
+msgstr "\"{action}\" eylemi için \"{na}\" paketi zaten kurulu."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
-msgstr ""
+msgstr "\"{action}\" eylemi için paket NEVRA \"{nevra}\" depolarda yok."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "\"{action}\" eylemi için paket NEVRA \"{nevra}\" kurulu değil."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "RPM NEVRA \"{nevra}\" için beklenmeyen paket eylem değeri \"{action}\"."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "'%s' modül veya grubu kullanılabilir değil."
+msgstr "'%s' diye bir grup kimliği kullanılabilir değil."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "groups.packages içinde eksik nesne anahtarı \"{key}\"."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "'%s' modül veya grubu kurulu değil."
+msgstr "'%s' diye bir grup kimliği kurulu değil."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "'%s' ortamı kullanılabilir değil."
+msgstr "'%s' diye bir ortam kimliği kullanılabilir değil."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4163,33 +4150,35 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"environments.groups.group_type için geçersiz değer \"{group_type}\", sadece "
+"\"mandatory\" veya \"optional\" desteklenmektedir."
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "environments.groups içinde eksik nesne anahtarı \"{key}\"."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "\"{group}\" grubu için beklenmeyen grup eylem değeri \"{action}\"."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Bir grupta eksik nesne anahtarı \"{key}\"."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr ""
+msgstr "\"{env}\" ortamı için beklenmeyen ortam eylem değeri \"{action}\"."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Bir ortamda eksik nesne anahtarı \"{key}\"."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
@@ -4197,6 +4186,7 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"İşlem dosyasında bulunmayan paket NEVRA \"{nevra}\" işleme dahil edildi."
 
 #: dnf/util.py:391 dnf/util.py:393
 msgid "Problem"
