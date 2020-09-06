@@ -17,10 +17,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-06 09:18-0400\n"
-"PO-Revision-Date: 2020-09-06 18:29+0000\n"
+"PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4087,39 +4087,38 @@ msgstr ""
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Oväntad typ på ”{id}”, {exp} förväntades."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Saknad nyckel ”{key}”."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Objektnyckeln ”{key}” saknas i en rpm."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Oväntat värde på paketorsaken ”{reason}” för rpm-nevra ”{nevra}”."
 
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Kan inte tolka NEVRA för paketet ”{nevra}”."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Kan inte hitta rpm-nevra ”{nevra}”."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "Paketet %s är redan installerat."
+msgstr "Paketet ”{na}” är redan installerat för åtgärden ”{action}”."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
@@ -4127,40 +4126,38 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Paket-nevra ”{nevra}” är inte tillgänglig i förråden för åtgärden ”{action}”."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Paket-nevra ”{nevra}” är inte installerat för åtgärden ”{action}”."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Oväntat värde på paketåtgärden ”{action}” för rpm-nevra ”{nevra}”."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "Modulen eller gruppen ”%s” är inte tillgänglig."
+msgstr "Grupp-id ”%s” är inte tillgängligt."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Saknad objektnyckel ”{key}” i groups.packages."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Modulen eller gruppen ”%s” är inte installerad."
+msgstr "Grupp-id ”%s” är inte installerat."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "Miljön ”%s” är inte tillgänglig."
+msgstr "Miljö-id ”%s” är inte tillgängligt."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4168,33 +4165,35 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Ogiltigt värde ”{group_type}” av environments.groups.group_type, endast "
+"”mandatory” eller ”optional” stödjs."
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Saknad objektnyckel ”{key}” i environments.groups."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "Oväntat värde på gruppåtgärden ”{action}” för gruppen ”{group}”."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Objektnyckeln ”{key}” saknas i en grupp."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr ""
+msgstr "Oväntat värde på miljöåtgärden ”{action}” för miljön ”{env}”."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Objektnyckeln ”{key}” saknas i en miljö."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
@@ -4202,6 +4201,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"Paket-nevra ”{nevra}”, vilken inte finns i transaktionsfilen, drogs in i "
+"transaktionen."
 
 #: dnf/util.py:391 dnf/util.py:393
 msgid "Problem"
