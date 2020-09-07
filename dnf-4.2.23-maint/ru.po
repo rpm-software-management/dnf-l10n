@@ -19,7 +19,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2020-09-06 18:29+0000\n"
+"PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-dnf-4223-maint/ru/>\n"
@@ -2627,6 +2627,8 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
+"метка и путь к дополнительному репозиторию (такой же путь, что и в baseurl), "
+"можно указывать несколько раз."
 
 #: dnf/cli/option_parser.py:297
 msgid "disable removal of dependencies that are no longer used"
@@ -2716,10 +2718,9 @@ msgid "List of Plugin Commands:"
 msgstr "Список команд подключаемых модулей:"
 
 #: dnf/cli/option_parser.py:413
-#, fuzzy, python-format
-#| msgid "Cannot read file \"%s\": %s"
+#, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr "Не удалось прочитать файл «%s»: %s"
+msgstr "Не удалось закодировать аргумент «%s»: %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -3567,6 +3568,8 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"Не удалось загрузить URL файла конфигурации «{}» :\n"
+"  {}"
 
 #: dnf/conf/config.py:355 dnf/conf/config.py:391
 #, python-format
@@ -3604,31 +3607,35 @@ msgstr "Предупреждение: не удалось загрузить «%
 
 #: dnf/conf/read.py:63
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr ""
+msgstr "Плохой идентификатор для репозитория: {} ({}), байт = {} {}"
 
 #: dnf/conf/read.py:67
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr ""
+msgstr "Плохой идентификатор для репозитория: {}, байт = {} {}"
 
 #: dnf/conf/read.py:75
 msgid "Repository '{}' ({}): Error parsing config: {}"
-msgstr ""
+msgstr "Репозиторий «{}» ({}): Ошибка при разборе конфигурации: {}"
 
 #: dnf/conf/read.py:78
 msgid "Repository '{}': Error parsing config: {}"
-msgstr ""
+msgstr "Репозиторий «{}»: Ошибка при разборе конфигурации: {}"
 
 #: dnf/conf/read.py:84
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
+"У репозитория «{}» ({}) отсутствует название в конфигурации, используется "
+"идентификатор."
 
 #: dnf/conf/read.py:87
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
+"У репозитория «{}» отсутствует название в конфигурации, используется "
+"идентификатор."
 
 #: dnf/conf/read.py:104
 msgid "Parsing file \"{}\" failed: {}"
-msgstr ""
+msgstr "Ошибка при разборе файла «{}» : {}"
 
 #: dnf/crypto.py:108
 #, python-format
@@ -3741,6 +3748,9 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Обнаружен испорченный файл блокировки: %s.\n"
+"Убедитесь, что не работает другой процесс dnf/yum, и удалите файл блокировки "
+"вручную или запустите systemd-tmpfiles --remove dnf.conf."
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3790,7 +3800,7 @@ msgstr "Пропуск ненужного профиля: «{}/{}»"
 #: dnf/module/module_base.py:84
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr ""
+msgstr "Все совпадения для аргумента «{0}» в модуле «{1}:{2}» неактивны"
 
 #: dnf/module/module_base.py:92
 #, python-brace-format
@@ -3812,7 +3822,7 @@ msgstr "Нет профилей по умолчанию для модуля {}:{
 
 #: dnf/module/module_base.py:122
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "Нет профилей для модуля {}:{}"
 
 #: dnf/module/module_base.py:129
 msgid "Default profile {} not available in module {}:{}"
