@@ -23,16 +23,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-08 09:18-0400\n"
-"PO-Revision-Date: 2020-08-20 09:29+0000\n"
+"PO-Revision-Date: 2020-09-12 11:29+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1357,24 +1357,32 @@ msgstr "affiche ou utilise l’historique de transaction"
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
+"Pour la commande store, le chemin d’accès vers le fichier dans lequel "
+"stocker la transaction"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Pour la commande replay, ne vérifie pas si les paquets installés "
+"correspondent à ceux en transaction"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Pour la commande replay, ne vérifie pas si des paquets supplémentaires ont "
+"été tirés dans la transaction"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Pour la commande replay, saute les paquets qui ne sont pas disponibles ou "
+"qui ont des dépendances manquantes"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1385,16 +1393,12 @@ msgstr ""
 "« {} » nécessite un identifiant de transaction ou un nom de paquet."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Pas d’identifiant de transaction ou de nom de paquet fourni."
+msgstr "Pas de transaction ou de nom de fichier fourni."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Échec de la suppression du fichier de transaction %s"
+msgstr "Plus d’un argument donné comme nom de fichier de transaction."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1445,35 +1449,32 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "Aucune transaction manipulant le paquet « {} » n’a été trouvée."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "TransactionItem n’a pas été trouvé pour la clef : {}"
+msgstr "ID de Transaction « {id} » non trouvé."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} existe, l’écraser ?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "{} non écrasé, sortie."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "La transaction a échoué"
+msgstr "Transaction enregistrée vers {}."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Des erreurs sont survenues lors de la transaction."
+msgstr "Erreur lors du stockage de la transaction : {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
+"Attention, les problèmes suivants sont survenus lors de la relecture de la "
+"transaction :"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3688,16 +3689,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "Module ou Groupe « %s » n’existe pas."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "L’environnement « %s » n’est pas installé."
+msgstr "L’id d’environnement « %s » n’existe pas."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "L’environnement « %s » n’est pas installé."
+msgstr "L’id d’environnement « %s » n’est pas installé."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3710,10 +3709,9 @@ msgid "Environment '%s' is not available."
 msgstr "L’environnement « %s » n’est pas disponible."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "L’identifiant de groupe « %s » n’existe pas."
+msgstr "L’id de groupe « %s » n’existe pas."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -4157,22 +4155,22 @@ msgstr "Préparation"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Erreurs dans « {filename} » :"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Erreur dans « {filename} » : {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Version majeur invalide « {major} », numéro attendu."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Version mineure invalide « {minor} », numéro attendu."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4180,21 +4178,23 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Version majeure incompatible « {major} », la version majeure prise en charge "
+"est « {major_supp} »."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Type de « {id} » inattendu, {exp} attendu."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Clé « {key} » manquante."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Clé objet « {key} » manquante dans un rpm."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
