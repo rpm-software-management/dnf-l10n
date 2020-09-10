@@ -19,10 +19,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-08 09:18-0400\n"
-"PO-Revision-Date: 2020-09-08 22:00+0000\n"
+"PO-Revision-Date: 2020-09-12 11:29+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1310,25 +1310,31 @@ msgstr "отобразить (или использовать) историю т
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "Для команды store - путь к файлу для записи транзакции"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Для команды replay - не проверять установленные пакеты на соответствие "
+"пакетам в транзакции"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Для команды replay - не проверять на наличие дополнительных пакетов, "
+"вовлеченных в транзакцию"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Для команды replay - пропустить пакеты, которые недоступны или имеют "
+"недостающие зависимости"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1339,16 +1345,12 @@ msgstr ""
 "'{}' требует один идентификатор транзакции или имя пакета."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Не задан идентификатор транзакции или имя пакета."
+msgstr "Не задано имя файла транзакции."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Не удалось удалить файл транзакции %s"
+msgstr "В качестве имени файла транзакции указано больше одного аргумента."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1398,35 +1400,31 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "Не найдено транзакций, работающих с пакетом «{}»."
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "Не найден transactionItem для ключа: {}"
+msgstr "Не найден идентификатор транзакции «{id}»."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} существует, перезаписать?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Не перезаписывается {}, завершение работы."
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Сбой транзакции"
+msgstr "Трнзакция сохранена в {}."
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Во время транзакции возникли ошибки."
+msgstr "Ошибка при сохранении транзакции: {}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
+"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3618,16 +3616,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "Модуль или группа «%s» не существуют."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Среда «%s» еще не установлена"
+msgstr "Идентификатор среды «%s» не существует."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Среда «%s» еще не установлена"
+msgstr "Идентификатор среды «%s» не установлен."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3640,8 +3636,7 @@ msgid "Environment '%s' is not available."
 msgstr "Среда «%s» недоступна."
 
 #: dnf/comps.py:669
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
 msgstr "ID группы «%s» не существует."
 
@@ -4076,22 +4071,22 @@ msgstr "Подготовка"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Ошибки в \"{filename}\":"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Ошибка в \"{filename}\": {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Неправильная основная версия «{major}», должен быть номер."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Неправильная дополнительная версия «{minor}», должен быть номер."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4099,43 +4094,44 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Несовместимая основная версия «{major}», поддерживаемая основная версия – "
+"«{major_supp}»."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Неожиданный тип «{id}», должно быть {exp}."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Отсутствует ключ «{key}»."
 
 #: dnf/transaction_sr.py:263
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "В rpm отсутствует ключ объекта «{key}»."
 
 #: dnf/transaction_sr.py:267
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Неожиданное значение причины пакета «{reason}» для rpm nevra «{nevra}»."
 
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Не удалось обработать NEVRA для пакета «{nevra}»."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Не удалось найти nevra rpm «{nevra}»."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "Пакет %s уже установлен."
+msgstr "Пакет «{na}» уже установлен для действия «{action}»."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
@@ -4143,40 +4139,39 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Пакет nevra «{nevra}» недоступен в репозиториях для действия «{action}»."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Пакет nevra «{nevra}» не установлен для действия «{action}»."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Неожиданное значение действия с пакетом «{action}» для nevra rpm «{nevra}»."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "Модуль или группа «%s» недоступны."
+msgstr "Идентификатор группы «%s» недоступен."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "В groups.packages отсутствует ключ объекта «{key}»."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Модуль или группа «%s» не установлены."
+msgstr "Идентификатор группы «%s» не установлен."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "Среда «%s» недоступна."
+msgstr "Идентификатор среды «%s» недоступен."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4184,21 +4179,24 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Неправильное значение «{group_type}» для environments.groups.group_type, "
+"поддерживается только «mandatory» или «optional»."
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "В environments.groups отсутствует ключ объекта «{key}»."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Неожиданное значение действия с группой «{action}» для группы «{group}»."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "В группе отсутствует ключ объекта «{key}»."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
@@ -4206,11 +4204,12 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Неожиданное значение для действия со средой «{action}» для среды «{env}»."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "В среде отсутствует ключ объекта «{key}»."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
@@ -4218,6 +4217,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"Пакет nevra «{nevra}», который отсутствует в файле транзакции, был вовлечен "
+"в транзакцию."
 
 #: dnf/util.py:391 dnf/util.py:393
 msgid "Problem"
