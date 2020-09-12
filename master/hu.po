@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-08 09:18-0400\n"
+"POT-Creation-Date: 2020-09-11 09:18-0400\n"
 "PO-Revision-Date: 2020-07-21 13:29+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -346,11 +346,10 @@ msgstr "Nincs találat a(z) „{}” csomagcsoportra"
 msgid "Adding packages from group '%s': %s"
 msgstr "Csomagok hozzáadása a(z) „%s” csoportból: %s"
 
-#: dnf/base.py:1656 dnf/base.py:1708 dnf/cli/cli.py:219
-#: dnf/cli/commands/__init__.py:442 dnf/cli/commands/__init__.py:499
-#: dnf/cli/commands/__init__.py:592 dnf/cli/commands/__init__.py:641
-#: dnf/cli/commands/install.py:80 dnf/cli/commands/install.py:103
-#: dnf/cli/commands/install.py:110
+#: dnf/base.py:1656 dnf/cli/cli.py:219 dnf/cli/commands/__init__.py:442
+#: dnf/cli/commands/__init__.py:499 dnf/cli/commands/__init__.py:592
+#: dnf/cli/commands/__init__.py:641 dnf/cli/commands/install.py:80
+#: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Nincs tennivaló."
 
@@ -358,17 +357,17 @@ msgstr "Nincs tennivaló."
 msgid "No groups marked for removal."
 msgstr "Nincsenek eltávolításra jelölt csoportok."
 
-#: dnf/base.py:1710
+#: dnf/base.py:1708
 msgid "No group marked for upgrade."
 msgstr "Nincsenek frissítésre jelölt csoportok."
 
-#: dnf/base.py:1925
+#: dnf/base.py:1923
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 
-#: dnf/base.py:1927 dnf/base.py:1946 dnf/base.py:1959 dnf/base.py:1980
-#: dnf/base.py:2029 dnf/base.py:2037 dnf/base.py:2172 dnf/cli/cli.py:411
+#: dnf/base.py:1925 dnf/base.py:1944 dnf/base.py:1957 dnf/base.py:1978
+#: dnf/base.py:2027 dnf/base.py:2035 dnf/base.py:2170 dnf/cli/cli.py:411
 #: dnf/cli/commands/__init__.py:425 dnf/cli/commands/__init__.py:482
 #: dnf/cli/commands/__init__.py:586 dnf/cli/commands/__init__.py:633
 #: dnf/cli/commands/__init__.py:711 dnf/cli/commands/install.py:147
@@ -378,29 +377,29 @@ msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 msgid "No match for argument: %s"
 msgstr "Nem található egyezés a következő argumentumra: %s"
 
-#: dnf/base.py:1934
+#: dnf/base.py:1932
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "A(z) %s csomag egy alacsonyabb verziója már telepítve van, nem lehet "
 "visszaállítani."
 
-#: dnf/base.py:1957
+#: dnf/base.py:1955
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet újratelepíteni."
 
-#: dnf/base.py:1972
+#: dnf/base.py:1970
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "A(z) %s egy forráscsomag, és nem frissíthető, figyelmen kívül hagyva."
 
-#: dnf/base.py:1978
+#: dnf/base.py:1976
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet frissíteni."
 
-#: dnf/base.py:1987
+#: dnf/base.py:1985
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -408,121 +407,121 @@ msgstr ""
 "A(z) %s megegyező vagy egy magasabb verziója már telepítve van, nem lehet "
 "frissíteni."
 
-#: dnf/base.py:2026 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2024 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "A(z) %s csomag elérhető, de nincs telepítve."
 
-#: dnf/base.py:2032
+#: dnf/base.py:2030
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "A(z) %s csomag elérhető, de más architektúrához van telepítve."
 
-#: dnf/base.py:2057 dnf/base.py:2250 dnf/cli/cli.py:668 dnf/cli/cli.py:699
+#: dnf/base.py:2055 dnf/base.py:2248 dnf/cli/cli.py:668 dnf/cli/cli.py:699
 #, python-format
 msgid "No package %s installed."
 msgstr "Nincs telepítve a(z) %s csomag."
 
-#: dnf/base.py:2075 dnf/cli/commands/install.py:136
+#: dnf/base.py:2073 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Nem érvényes űrlap: %s"
 
-#: dnf/base.py:2091 dnf/cli/commands/__init__.py:681
+#: dnf/base.py:2089 dnf/cli/commands/__init__.py:681
 #: dnf/cli/commands/remove.py:163
 msgid "No packages marked for removal."
 msgstr "Nincsenek eltávolításra kijelölt csomagok."
 
-#: dnf/base.py:2179 dnf/cli/cli.py:422
+#: dnf/base.py:2177 dnf/cli/cli.py:422
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "A(z) %s argumentumhoz érhetőek el csomagok, de nincsenek telepítve."
 
-#: dnf/base.py:2184
+#: dnf/base.py:2182
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "A legalacsonyabb verziójú %s csomag már telepítve van, nem lehet "
 "visszaállítani."
 
-#: dnf/base.py:2242
+#: dnf/base.py:2240
 msgid "Action not handled: {}"
 msgstr "A művelet nem kezelt: {}"
 
-#: dnf/base.py:2256 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
+#: dnf/base.py:2254 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
 #: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:169
 #, python-format
 msgid "No package %s available."
 msgstr "A(z) %s csomag nem érhető el."
 
-#: dnf/base.py:2269
+#: dnf/base.py:2267
 msgid "no package matched"
 msgstr "nincs egyező csomag"
 
-#: dnf/base.py:2290
+#: dnf/base.py:2288
 msgid "No security updates needed, but {} update available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2292
+#: dnf/base.py:2290
 msgid "No security updates needed, but {} updates available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2296
+#: dnf/base.py:2294
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
-#: dnf/base.py:2298
+#: dnf/base.py:2296
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2319
+#: dnf/base.py:2317
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2327
+#: dnf/base.py:2325
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". A hibás csomag: %s"
 
-#: dnf/base.py:2328
+#: dnf/base.py:2326
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "A GPG kulcsok beállítva mint: %s"
 
-#: dnf/base.py:2340
+#: dnf/base.py:2338
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "A következő GPG kulcs már telepítve van: %s (0x%s)"
 
-#: dnf/base.py:2373
+#: dnf/base.py:2371
 msgid "The key has been approved."
 msgstr "A kulcs jóváhagyásra került."
 
-#: dnf/base.py:2376
+#: dnf/base.py:2374
 msgid "The key has been rejected."
 msgstr "A kulcs elutasításra került."
 
-#: dnf/base.py:2409
+#: dnf/base.py:2407
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "A kulcs importálása meghiúsult (hibakód %d)"
 
-#: dnf/base.py:2411
+#: dnf/base.py:2409
 msgid "Key imported successfully"
 msgstr "A kulcs importálása sikeres"
 
-#: dnf/base.py:2415
+#: dnf/base.py:2413
 msgid "Didn't install any keys"
 msgstr "Nem lett telepítve egyetlen kulcs sem"
 
-#: dnf/base.py:2418
+#: dnf/base.py:2416
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -534,27 +533,27 @@ msgstr ""
 "Kérjük, ellenőrizze, hogy az URL címek helyesen vannak-e megadva ehhez a "
 "tárolóhoz."
 
-#: dnf/base.py:2429
+#: dnf/base.py:2427
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "A kulcs(ok) importálása nem segített, rossz kulcs(ok)?"
 
-#: dnf/base.py:2482
+#: dnf/base.py:2480
 msgid "  * Maybe you meant: {}"
 msgstr "  * Talán erre gondolt: {}"
 
-#: dnf/base.py:2514
+#: dnf/base.py:2512
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "A(z) „{}”, „{}” helyi tárolóban lévő csomag ellenőrzőösszege hibás"
 
-#: dnf/base.py:2517
+#: dnf/base.py:2515
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Néhány csomagnak hibás az ellenőrzőösszege a helyi tárolóban"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2518
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "A(z) „{}”, „{}” tárolóban lévő csomag ellenőrzőösszege hibás"
 
-#: dnf/base.py:2523
+#: dnf/base.py:2521
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -562,23 +561,23 @@ msgstr ""
 "Néhány csomag gyorsítótára érvénytelen, de nem tölthető le a „--cacheonly” "
 "kapcsoló miatt"
 
-#: dnf/base.py:2541 dnf/base.py:2561
+#: dnf/base.py:2539 dnf/base.py:2559
 msgid "No match for argument"
 msgstr "Nincs találat"
 
-#: dnf/base.py:2549 dnf/base.py:2569
+#: dnf/base.py:2547 dnf/base.py:2567
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Az összes találat ki lett szűrve kizáró szűréssel"
 
-#: dnf/base.py:2551
+#: dnf/base.py:2549
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Az összes találat ki lett szűrve moduláris szűréssel"
 
-#: dnf/base.py:2567
+#: dnf/base.py:2565
 msgid "All matches were installed from a different repository for argument"
 msgstr "Az összes találat egy másik tárolóból lett telepítve"
 
-#: dnf/base.py:2583
+#: dnf/base.py:2581
 #, python-format
 msgid "Package %s is already installed."
 msgstr "A(z) %s csomag már telepítve van."
@@ -598,8 +597,8 @@ msgstr "A(z) „%s” fájl feldolgozása meghiúsult: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "A(z) „%s” fájl nem olvasható: %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:899
-#: dnf/cli/cli.py:903 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:902
+#: dnf/cli/cli.py:906 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Konfigurációs hiba: %s"
@@ -767,7 +766,7 @@ msgstr "Ismeretlen tároló: „%s”"
 msgid "No repository match: %s"
 msgstr "Nincs illeszkedő tároló: %s"
 
-#: dnf/cli/cli.py:814
+#: dnf/cli/cli.py:817
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -775,12 +774,12 @@ msgstr ""
 "A parancsot rendszergazdai jogosultsággal kell futtatni (a legtöbb "
 "rendszeren a root felhasználóval)."
 
-#: dnf/cli/cli.py:844
+#: dnf/cli/cli.py:847
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Nincs ilyen parancs: %s. Kérjük használja a következőt: %s --help"
 
-#: dnf/cli/cli.py:847
+#: dnf/cli/cli.py:850
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -789,7 +788,7 @@ msgstr ""
 "Lehet hogy egy {PROG} bővítmény parancs, próbálja ezt: „{prog} install 'dnf-"
 "command(%s)'”"
 
-#: dnf/cli/cli.py:851
+#: dnf/cli/cli.py:854
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -798,7 +797,7 @@ msgstr ""
 "Lehet hogy egy {prog} bővítmény parancs, de a bővítmények betöltése jelenleg "
 "tiltott."
 
-#: dnf/cli/cli.py:909
+#: dnf/cli/cli.py:912
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -806,7 +805,7 @@ msgstr ""
 "A --destdir vagy a --downloaddir a --downloadonly, download vagy system-"
 "upgrade paranccsal együtt használandó."
 
-#: dnf/cli/cli.py:915
+#: dnf/cli/cli.py:918
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -814,7 +813,7 @@ msgstr ""
 "Az --enable, --set-enabled és a --disable, --set-disabled a config-manager "
 "paranccsal együtt használandó."
 
-#: dnf/cli/cli.py:997
+#: dnf/cli/cli.py:1000
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -823,11 +822,11 @@ msgstr ""
 "biztonsági házirend alapján (az üzenet némításához lásd a „gpgcheck” "
 "bejegyzést a dnf.conf(5) man oldalon)"
 
-#: dnf/cli/cli.py:1017
+#: dnf/cli/cli.py:1020
 msgid "Config file \"{}\" does not exist"
 msgstr "A(z) „{}” konfigurációs fájl nem létezik"
 
-#: dnf/cli/cli.py:1037
+#: dnf/cli/cli.py:1040
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -835,28 +834,28 @@ msgstr ""
 "A kiadási verziószám nem észlelhető (használja a „--releasever” kapcsolót a "
 "megadásához)"
 
-#: dnf/cli/cli.py:1124 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1127 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "{} argumentum: nem engedélyezett a(z) {} argumentummal"
 
-#: dnf/cli/cli.py:1131
+#: dnf/cli/cli.py:1134
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "A(z) „%s” parancs már létezik"
 
-#: dnf/cli/cli.py:1151
+#: dnf/cli/cli.py:1154
 msgid "Excludes in dnf.conf: "
 msgstr "Kizárások a dnf.conf-ban: "
 
-#: dnf/cli/cli.py:1154
+#: dnf/cli/cli.py:1157
 msgid "Includes in dnf.conf: "
 msgstr "Belevételek a dnf.conf-ban: "
 
-#: dnf/cli/cli.py:1157
+#: dnf/cli/cli.py:1160
 msgid "Excludes in repo "
 msgstr "Kizárások a tárolóban "
 
-#: dnf/cli/cli.py:1160
+#: dnf/cli/cli.py:1163
 msgid "Includes in repo "
 msgstr "Belevételek a tárolóban "
 
@@ -945,7 +944,7 @@ msgid "show only recently changed packages"
 msgstr "csak a nemrég változott a csomagok megjelenítése"
 
 #: dnf/cli/commands/__init__.py:190 dnf/cli/commands/__init__.py:265
-#: dnf/cli/commands/__init__.py:773 dnf/cli/commands/autoremove.py:48
+#: dnf/cli/commands/__init__.py:774 dnf/cli/commands/autoremove.py:48
 #: dnf/cli/commands/install.py:51 dnf/cli/commands/reinstall.py:44
 #: dnf/cli/commands/remove.py:61 dnf/cli/commands/upgrade.py:46
 msgid "PACKAGE"
@@ -1033,20 +1032,20 @@ msgstr "TÁROLÓAZONOSÍTÓ"
 msgid "Repository ID"
 msgstr "Tárolóazonosító"
 
-#: dnf/cli/commands/__init__.py:776 dnf/cli/commands/mark.py:48
+#: dnf/cli/commands/__init__.py:777 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
 msgid "Package specification"
 msgstr "Csomagspecifikáció"
 
-#: dnf/cli/commands/__init__.py:800
+#: dnf/cli/commands/__init__.py:801
 msgid "display a helpful usage message"
 msgstr "egy használati tipp megjelenítése"
 
-#: dnf/cli/commands/__init__.py:804
+#: dnf/cli/commands/__init__.py:805
 msgid "COMMAND"
 msgstr "PARANCS"
 
-#: dnf/cli/commands/__init__.py:805
+#: dnf/cli/commands/__init__.py:806
 #, python-brace-format
 msgid "{prog} command to get help for"
 msgstr "{prog} parancs, amelyhez segítséget keres"
@@ -3628,12 +3627,12 @@ msgstr "    Állapot  : %s"
 msgid "skipping."
 msgstr "kihagyás."
 
-#: dnf/comps.py:196 dnf/comps.py:688 dnf/comps.py:702
+#: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
 msgstr "A(z) „%s” modul vagy csoport nincs telepítve."
 
-#: dnf/comps.py:198 dnf/comps.py:704
+#: dnf/comps.py:198 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
 msgstr "A(z) „%s” modul vagy csoport nem érhető el."
@@ -3665,7 +3664,7 @@ msgstr "A(z) „%s” környezet nincs telepítve."
 msgid "Environment '%s' is not available."
 msgstr "A(z) „%s” környezet nem érhető el."
 
-#: dnf/comps.py:669
+#: dnf/comps.py:673
 #, fuzzy, python-format
 #| msgid "Group_id '%s' does not exist."
 msgid "Group id '%s' does not exist."
@@ -3995,11 +3994,21 @@ msgstr "%s: %s ellenőrzés sikertelen: %s vs %s"
 msgid "%s is empty file"
 msgstr "a(z) %s egy üres fájl"
 
-#: dnf/persistor.py:98
+#: dnf/persistor.py:91
+#, python-format
+msgid "Failed to load expired repos cache: %s"
+msgstr ""
+
+#: dnf/persistor.py:99
+#, python-format
+msgid "Failed to store expired repos cache: %s"
+msgstr ""
+
+#: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
 msgstr "Az utolsó makecache idő tárolása meghiúsult."
 
-#: dnf/persistor.py:105
+#: dnf/persistor.py:113
 msgid "Failed determining last makecache time."
 msgstr "Az utolsó makecache idő meghatározása meghiúsult."
 
