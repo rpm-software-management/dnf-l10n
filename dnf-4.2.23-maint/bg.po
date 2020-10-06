@@ -2,20 +2,22 @@
 # Valentin Laskov <laskov@festa.bg>, 2016. #zanata
 # Valentin Laskov <laskov@festa.bg>, 2017. #zanata
 # Valentin Laskov <laskov@festa.bg>, 2018. #zanata
+# Valentin Laskov <v_laskov@mail.bg>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2018-04-05 09:38+0000\n"
-"Last-Translator: Valentin Laskov <laskov@festa.bg>\n"
-"Language-Team: Bulgarian\n"
+"PO-Revision-Date: 2020-10-07 21:30+0000\n"
+"Last-Translator: Valentin Laskov <v_laskov@mail.bg>\n"
+"Language-Team: Bulgarian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-dnf-4223-maint/bg/>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:31
 #, python-format
@@ -73,12 +75,12 @@ msgstr "GPG проверката се ПРОВАЛИ"
 
 #: dnf/automatic/main.py:247
 msgid "Started dnf-automatic."
-msgstr ""
+msgstr "Стартиран dnf-automatic."
 
 #: dnf/automatic/main.py:251
 #, python-format
 msgid "Sleep for %s seconds"
-msgstr ""
+msgstr "Ще поспя %s секунди"
 
 #: dnf/automatic/main.py:283 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -88,57 +90,59 @@ msgstr "Грешка: %s"
 
 #: dnf/base.py:146
 msgid "loading repo '{}' failure: {}"
-msgstr ""
+msgstr "хранилище '{}', проблем при зареждане: {}"
 
 #: dnf/base.py:148
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "Зареждането на хранилище '{}' се провали"
 
 #: dnf/base.py:320
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Кеширането на таймери на метаданни е забранено при работа през връзки с "
+"платен трафик."
 
 #: dnf/base.py:325
 msgid "Metadata timer caching disabled when running on a battery."
-msgstr ""
+msgstr "Кеширането на таймери на метаданни е забранено при работа на батерия."
 
 #: dnf/base.py:330
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Кеширането на таймери на метаданни е забранено."
 
 #: dnf/base.py:335
 msgid "Metadata cache refreshed recently."
-msgstr ""
+msgstr "Кешът на метаданни беше обновен скоро."
 
 #: dnf/base.py:341 dnf/cli/commands/__init__.py:100
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
+msgstr "Няма разрешени хранилища в \"{}\"."
 
 #: dnf/base.py:348
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: няма никога да остарее и няма да се обновява."
 
 #: dnf/base.py:350
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: остаря и ще бъде обновено."
 
 #. expires within the checking period:
 #: dnf/base.py:354
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: метаданните ще остареят след %d секунди и ще бъдат обновени сега"
 
 #: dnf/base.py:358
 #, python-format
 msgid "%s: will expire after %d seconds."
-msgstr ""
+msgstr "%s: ще остарее след %d секунди."
 
 #. performs the md sync
 #: dnf/base.py:364
 msgid "Metadata cache created."
-msgstr ""
+msgstr "Създаден е кеш на метаданни."
 
 #: dnf/base.py:397
 #, python-format
@@ -148,37 +152,37 @@ msgstr "%s: използвайки метаданни от %s."
 #: dnf/base.py:409
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "Игнорирайки хранилищата: %s"
 
 #: dnf/base.py:412
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr "Последната проверка за остарялост на метаданните: преди %s на %s."
+msgstr "Последна проверка за остарялост на метаданните: преди %s на %s."
 
 #: dnf/base.py:442
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
-msgstr ""
+msgstr "Свалените пакети са записани в кеша до следващата успешна транзакция."
 
 #: dnf/base.py:444
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
-msgstr ""
+msgstr "Може да премахнете пакетите от кеша като изпълните '%s'."
 
 #: dnf/base.py:533
 #, python-format
 msgid "Invalid tsflag in config file: %s"
-msgstr ""
+msgstr "Невалиден tsflag в конфигурационен файл: %s"
 
 #: dnf/base.py:589
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr ""
+msgstr "Провал при добавяне на групов файл за хранилище: %s - %s"
 
 #: dnf/base.py:821
 msgid "Running transaction check"
-msgstr ""
+msgstr "Провеждане на проверка на транзакцията"
 
 #: dnf/base.py:829
 msgid "Error: transaction check vs depsolve:"
@@ -186,19 +190,19 @@ msgstr ""
 
 #: dnf/base.py:835
 msgid "Transaction check succeeded."
-msgstr ""
+msgstr "Проверката на транзакцията е успешна."
 
 #: dnf/base.py:838
 msgid "Running transaction test"
-msgstr "Тестване на транзакцията"
+msgstr "Провеждане на тест на транзакцията"
 
 #: dnf/base.py:848 dnf/base.py:990
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:849
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Грешка при теста на транзакцията:"
 
 #: dnf/base.py:860
 msgid "Transaction test succeeded."
@@ -217,6 +221,9 @@ msgstr "Изисквания към диска:"
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] ""
+"Нужен е поне още {0}MB допълнително пространство във файловата система {1}."
+msgstr[1] ""
+"Нужни са поне още {0}MB допълнително пространство във файловата система {1}."
 
 #: dnf/base.py:919
 msgid "Error Summary"
@@ -225,7 +232,7 @@ msgstr "Обобщение на грешки"
 #: dnf/base.py:945
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB е променена не от {prog}."
 
 #: dnf/base.py:991 dnf/base.py:999
 msgid "Could not run transaction."
@@ -238,7 +245,7 @@ msgstr "Транзакцията не може да се стартира:"
 #: dnf/base.py:1008
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr ""
+msgstr "Провал при премахването на файла на транзакцията %s"
 
 #: dnf/base.py:1090
 msgid "Some packages were not downloaded. Retrying."
@@ -247,7 +254,7 @@ msgstr "Някои пакети не бяха свалени. Пробвам о�
 #: dnf/base.py:1120
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
-msgstr ""
+msgstr "Delta RPM смали %.1f MB от обновленията до %.1f MB (%d.1%% са спестени)"
 
 #: dnf/base.py:1123
 #, python-format
