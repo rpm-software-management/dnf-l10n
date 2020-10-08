@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-07 09:18-0400\n"
-"PO-Revision-Date: 2020-08-02 08:29+0000\n"
+"PO-Revision-Date: 2020-10-08 21:32+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.2.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1314,16 +1314,12 @@ msgstr ""
 "'{}' 需要一个事务 ID 或软件包名。"
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "没有提供事务 ID 或软件包名。"
+msgstr "没有提供事务文件名。"
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "移除事务文件 %s 失败"
+msgstr "提供了多于一个的事务文件名。"
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
 msgid "No transaction ID or package name given."
@@ -1369,35 +1365,30 @@ msgid "No transaction which manipulates package '{}' was found."
 msgstr "没有找到操作软件包 '{}' 的事务。"
 
 #: dnf/cli/commands/history.py:305
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
-msgstr "找不到键的 TransactionItem: {}"
+msgstr "事务 ID \"{id}\" 未找到。"
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} 已存在，是否覆盖？"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "未覆盖 {}，正在退出。"
 
 #: dnf/cli/commands/history.py:323
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "事务失败"
+msgstr "事务已保存至 {}。"
 
 #: dnf/cli/commands/history.py:326
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "事务过程中出现错误。"
+msgstr "存储事务时出现错误：{}"
 
 #: dnf/cli/commands/history.py:350
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
-msgstr ""
+msgstr "警告，在重放事务时出现了下列问题："
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3534,16 +3525,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "模块或者组 '%s' 不存在。"
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "环境组 '%s' 没有安装。"
+msgstr "环境 id '%s' 不存在。"
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "环境组 '%s' 没有安装。"
+msgstr "环境 id '%s' 没有安装。"
 
 #: dnf/comps.py:639
 #, python-format
@@ -3556,10 +3545,9 @@ msgid "Environment '%s' is not available."
 msgstr "环境 '%s' 不可用。"
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Group_id '%s' 不存在。"
+msgstr "组 id '%s' 不存在。"
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -4042,10 +4030,9 @@ msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "软件包 %s 已安装。"
+msgstr "软件包 \"{na}\" 已经为动作 \"{action}\" 所安装。"
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
@@ -4066,10 +4053,9 @@ msgid ""
 msgstr ""
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "模块或者组 '%s' 不可用。"
+msgstr "组 id '%s' 不可用。"
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
@@ -4077,16 +4063,14 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "模块或者组 '%s' 未安装。"
+msgstr "组 id '%s' 未安装。"
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "环境 '%s' 不可用。"
+msgstr "环境 id '%s' 不可用。"
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4094,6 +4078,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"environments.groups.group_type 的值 \"{group_type}\" 无效，仅支持 \"mandatory\" 或者 "
+"\"optional\"。"
 
 #: dnf/transaction_sr.py:430
 #, python-brace-format
