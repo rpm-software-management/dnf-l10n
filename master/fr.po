@@ -25,8 +25,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-15 09:18-0400\n"
 "PO-Revision-Date: 2020-10-16 03:58+0000\n"
-"Last-Translator: Karim ALI ABDELMAKSOU ABDELHAMID <contact@maksoud-karim.net>"
-"\n"
+"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/fr/>\n"
 "Language: fr\n"
@@ -4052,7 +4051,7 @@ msgstr "Échec du chargement du cache des dépôts expirés : %s"
 #: dnf/persistor.py:99
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr "N’a pas pu stocker le cache des dépôts expirés :%s"
+msgstr "Échec du stockage du cache des dépôts expirés : %s"
 
 #: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
@@ -4216,18 +4215,17 @@ msgstr ""
 #: dnf/transaction_sr.py:275
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Impossible d’analyser le NEVRA pour le paquet « {nevra} »."
 
 #: dnf/transaction_sr.py:286
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Impossible de trouver le rpm nevra « {nevra} »."
 
 #: dnf/transaction_sr.py:301
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "Le paquet %s est déjà installé."
+msgstr "Le paquet « {na} » est déjà installé pour l’action « {action} »."
 
 #: dnf/transaction_sr.py:311
 #, python-brace-format
@@ -4235,40 +4233,42 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Le paquet nevra « {nevra} » n’est pas disponible dans le dépôt pour l’action "
+"« {action} »."
 
 #: dnf/transaction_sr.py:322
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
+"Le paquet nevra « {nevra} » n’est pas installé pour l’action « {action} »."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valeur inattendue pour l’action de paquet « {action} » pour le rpm nevra « "
+"{nevra} »."
 
 #: dnf/transaction_sr.py:343
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "Module ou Groupe « %s » non disponible."
+msgstr "ID de groupe « %s » non disponible."
 
 #: dnf/transaction_sr.py:364
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Clé d’objet « {key} » manquante dans groups.packages."
 
 #: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Module ou Groupe « %s » non installé."
+msgstr "ID de groupe « %s » non installé."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "L’environnement « %s » n’est pas disponible."
+msgstr "L’ID d’environnement « %s » n’est pas disponible."
 
 #: dnf/transaction_sr.py:422
 #, python-brace-format
@@ -4282,17 +4282,19 @@ msgstr ""
 #: dnf/transaction_sr.py:430
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Clé d’objet « {key} » manquante dans environments.groups."
 
 #: dnf/transaction_sr.py:508
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Valeur inattendue pour l’action de groupe « {action} » pour le groupe « "
+"{group} »."
 
 #: dnf/transaction_sr.py:513
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Clé d’objet « {key} » manquante dans un groupe."
 
 #: dnf/transaction_sr.py:537
 #, python-brace-format
@@ -4300,11 +4302,13 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Valeur inattendue pour l’action d’environnement « {action} » pour l’"
+"environnement « {env} »."
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Clé d’objet « {key} » manquante dans un environnement."
 
 #: dnf/transaction_sr.py:581
 #, python-brace-format
