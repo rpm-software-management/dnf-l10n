@@ -19,17 +19,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-04-17 09:40+0000\n"
+"PO-Revision-Date: 2020-10-17 20:15+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.0.1\n"
+"X-Generator: Weblate 4.3\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -205,10 +205,8 @@ msgid "Running transaction test"
 msgstr "Идет проверка транзакции"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction check succeeded."
 msgid "Transaction check error:"
-msgstr "Проверка транзакции успешно завершена."
+msgstr "Ошибка при проверке транзакции:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -226,9 +224,9 @@ msgstr "Требования к диску:"
 #, python-format
 msgid "At least %dMB more space needed on the %s filesystem."
 msgid_plural "At least %dMB more space needed on the %s filesystem."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "По меньшей мере необходимо еще %d МБ места в файловой системе %s."
+msgstr[1] "По меньшей мере необходимо еще %d МБ места в файловой системе %s."
+msgstr[2] "По меньшей мере необходимо еще %d МБ места в файловой системе %s."
 
 #: ../dnf/base.py:913
 msgid "Error Summary"
@@ -236,17 +234,16 @@ msgstr "Сводка ошибок"
 
 #: ../dnf/base.py:939
 msgid "RPMDB altered outside of DNF."
-msgstr ""
+msgstr "RPMDB изменена вне DNF."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
 msgstr "Во время транзакции возникли ошибки."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Не удалось удалить файл транзакции %s"
+msgstr "Не удалось заблокировать транзакцию (вход в систему как: %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -383,10 +380,9 @@ msgid "Package %s not installed, cannot update it."
 msgstr "Пакет %s не установлен, нельзя произвести обновление."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
-msgstr "Пакет %s версией ниже уже установлен, нельзя произвести откат версии."
+msgstr "Пакет %s версией выше уже установлен, нельзя произвести обновление."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -578,12 +574,12 @@ msgstr "  Собрано    : %s из %s"
 
 #: ../dnf/cli/cli.py:192
 msgid "DNF will only download packages for the transaction."
-msgstr ""
+msgstr "DNF лишь загрузит пакеты для транзакции."
 
 #: ../dnf/cli/cli.py:194
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
-msgstr ""
+msgstr "DNF только загрузит пакеты, установит ключи gpg и проверит транзакцию."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
@@ -711,12 +707,16 @@ msgstr "Не найдена команда: %s . Воспользуйтесь %s
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
+"Это, возможно, команда подключаемого модуля DNF, попробуйте: «dnf install "
+"'dnf-command(%s)'»"
 
 #: ../dnf/cli/cli.py:830
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Это, возможно, команда подключаемого модуля DNF, но загрузка модулей сейчас "
+"отключена."
 
 #: ../dnf/cli/cli.py:887
 msgid ""
@@ -807,6 +807,19 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Вы включили проверку пакетов с помощью ключей GPG. Это хорошо.\n"
+"Однако, вы не установили открытые ключи GPG. Вам необходимо загрузить\n"
+"ключи для пакетов, которые вы хотите установить, и установить их.\n"
+"Вы можете сделать это с помощью команды:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Или же вы можете указать адрес URL ключа, который хотели бы использовать\n"
+"для репозитория, в параметре «gpgkey» в разделе репозитория, и DNF\n"
+"установит его.\n"
+"\n"
+"За дополнительной информацией обращайтесь к поставщику вашего дистрибутива "
+"или пакета."
 
 #: ../dnf/cli/commands/__init__.py:80
 #, python-format
@@ -863,7 +876,7 @@ msgstr "найти пакет по заданному значению"
 
 #: ../dnf/cli/commands/__init__.py:243
 msgid "SOME_STRING"
-msgstr ""
+msgstr "КАКАЯ-ТО_СТРОКА"
 
 #: ../dnf/cli/commands/__init__.py:252 ../dnf/cli/commands/search.py:151
 msgid "Searching Packages: "
@@ -920,10 +933,8 @@ msgid "run commands on top of all packages in given repository"
 msgstr "выполнить команды над всеми пакетами заданного репозитория"
 
 #: ../dnf/cli/commands/__init__.py:742
-#, fuzzy
-#| msgid "REPOID"
 msgid "REPO"
-msgstr "REPOID"
+msgstr "REPO"
 
 #: ../dnf/cli/commands/__init__.py:800
 msgid "display a helpful usage message"
@@ -980,16 +991,12 @@ msgstr ""
 "Используйте «<transaction-id>..<transaction-id>»."
 
 #: ../dnf/cli/commands/__init__.py:946
-#, fuzzy
-#| msgid ""
-#| "Can't convert '{}' to transaction ID.\n"
-#| "Use '<number>', 'last', 'last-<number>'."
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<integer>', 'last', 'last-<positive-integer>'."
 msgstr ""
 "Не удается преобразовать «{}» в идентификатор транзакции.\n"
-"Используйте «<number>», «last», «last-<number>»."
+"Используйте «<integer>», «last», «last-<positive-integer>»."
 
 #: ../dnf/cli/commands/__init__.py:975
 msgid "No transaction which manipulates package '{}' was found."
@@ -1321,6 +1328,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can enable the other stream."
 msgstr ""
+"Невозможно переключить активированные потоки модуля.\n"
+"Рекомендуется удалить из модуля всё установленное и обновить модуль с "
+"помощью команды «dnf module reset <имя_модуля>». После обновления модуля "
+"можно активировать другой поток."
 
 #: ../dnf/cli/commands/module.py:199
 msgid ""
@@ -1329,6 +1340,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can install the other stream."
 msgstr ""
+"Невозможно переключить активированные потоки модуля.\n"
+"Рекомендуется удалить из модуля всё установленное и обновить модуль с "
+"помощью команды «dnf module reset <имя_модуля>». После обновления модуля "
+"можно активировать другой поток."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1343,10 +1358,8 @@ msgid "show only disabled modules"
 msgstr "показывать только отключенные модули"
 
 #: ../dnf/cli/commands/module.py:285
-#, fuzzy
-#| msgid "show only disabled modules"
 msgid "show only installed modules"
-msgstr "показывать только отключенные модули"
+msgstr "показывать только установленные модули"
 
 #: ../dnf/cli/commands/module.py:288
 msgid "show profile content"
@@ -1430,81 +1443,69 @@ msgid "disabled"
 msgstr "отключено"
 
 #: ../dnf/cli/commands/repolist.py:179
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-id      : "
-msgstr "Репозиторий        : %s"
+msgstr "ИД репозитория        : %s "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Filename    : %s"
 msgid "Repo-name    : "
-msgstr "Имя файла   : %s"
+msgstr "Имя репозитория   : %s "
 
 #: ../dnf/cli/commands/repolist.py:183
 msgid "Repo-status  : "
-msgstr ""
+msgstr "Статус репозитория  : "
 
 #: ../dnf/cli/commands/repolist.py:186
 msgid "Repo-revision: "
-msgstr ""
+msgstr "Версия репозитория: "
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-tags    : "
-msgstr "Репозиторий        : %s"
+msgstr "Тэги репозитория    : "
 
 #: ../dnf/cli/commands/repolist.py:197
 msgid "Repo-distro-tags: "
-msgstr ""
+msgstr "Тэги репозитория дистрибутива: "
 
 #: ../dnf/cli/commands/repolist.py:203
 msgid "Repo-updated : "
-msgstr ""
+msgstr "Обновленный репозиторий : "
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-pkgs    : "
-msgstr "Репозиторий        : %s"
+msgstr "Пакеты репозитория    : "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-size    : "
-msgstr "Репозиторий        : %s"
+msgstr "Размер репозитория    : "
 
 #: ../dnf/cli/commands/repolist.py:209
 msgid "Repo-metalink: "
-msgstr ""
+msgstr "Метассылки репозитория: "
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "Updated"
 msgid "  Updated    : "
-msgstr "Обновлено"
+msgstr "  Обновлено    : "
 
 #: ../dnf/cli/commands/repolist.py:216
 msgid "Repo-mirrors : "
-msgstr ""
+msgstr "Зеркала репозитория : "
 
 #: ../dnf/cli/commands/repolist.py:220 ../dnf/cli/commands/repolist.py:226
 msgid "Repo-baseurl : "
-msgstr ""
+msgstr "Базовый URL репозитория : "
 
 #: ../dnf/cli/commands/repolist.py:229
 msgid "Repo-expire  : "
-msgstr ""
+msgstr "Срок действия репозитория  : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: ../dnf/cli/commands/repolist.py:233
 msgid "Repo-exclude : "
-msgstr ""
+msgstr "Исключения из репозитория : "
 
 #: ../dnf/cli/commands/repolist.py:237
 msgid "Repo-include : "
-msgstr ""
+msgstr "Вхождения в репозиторий : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: ../dnf/cli/commands/repolist.py:242
@@ -3416,7 +3417,7 @@ msgstr ""
 #: ../dnf/conf/read.py:96
 #, python-format
 msgid "Bad id for repo: %s, byte = %s %d"
-msgstr ""
+msgstr "Плохой идентификатор для репозитория: %s, байт = %s %d"
 
 #: ../dnf/crypto.py:108
 #, python-format
