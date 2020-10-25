@@ -29,7 +29,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-10-25 09:18-0400\n"
-"PO-Revision-Date: 2020-10-25 15:40+0000\n"
+"PO-Revision-Date: 2020-10-26 17:15+0000\n"
 "Last-Translator: Gustavo Costa <gusta@null.net>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
@@ -410,7 +410,7 @@ msgstr "O pacote %s não está instalado, não é possível atualizá-lo."
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
-"A mesma versão ou versão superior de %s já está instalado, não podes "
+"A mesma versão ou uma superior de %s já está instalada, não é possível "
 "atualizá-lo."
 
 #: dnf/base.py:2026 dnf/cli/commands/reinstall.py:81
@@ -492,6 +492,7 @@ msgstr ""
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
+"Impossível de recuperar uma chave para um pacote de linha de comando: %s"
 
 #: dnf/base.py:2327
 #, python-format
@@ -642,9 +643,10 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"A operação resultaria na mudança do módulo '{0}' do fluxo '{1}' para o '{2}'"
 
 #: dnf/cli/cli.py:172
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
 "It is recommended to remove all installed content from the module, and reset "
@@ -653,7 +655,7 @@ msgid ""
 msgstr ""
 "Não é possível alternar fluxos ativados de um módulo.\n"
 "É recomendável remover todo o conteúdo instalado do módulo e redefinir o "
-"módulo usando o comando '{prog} module reset <module_name>'. Depois de "
+"módulo usando o comando '{prog} module reset <nome_do_módulo>'. Depois de "
 "redefinir o módulo, você pode instalar o outro fluxo."
 
 #: dnf/cli/cli.py:210
@@ -798,6 +800,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Pode ser um comando de plugin {PROG}, tente: \"{prog} install 'dnf-command(% "
+"s)'\""
 
 #: dnf/cli/cli.py:854
 #, python-brace-format
@@ -899,6 +903,21 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Você ativou a verificação de pacotes por meio de chaves GPG. Isso é bom.\n"
+"No entanto, você não tem nenhuma chave pública GPG instalada. Você precisa "
+"baixar\n"
+"as chaves dos pacotes que deseja instalar e instalá-los.\n"
+"Você pode fazer isso executando o comando:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Alternativamente, você pode especificar a url da chave que gostaria de usar\n"
+"para um repositório na opção 'gpgkey' em uma seção de repositório e o {prog}"
+"\n"
+"irá instalá-lo para você.\n"
+"\n"
+"Para obter mais informações, entre em contato com sua distribuição ou "
+"provedor de pacotes."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -1253,10 +1272,8 @@ msgstr "Aviso: Nenhum grupo correspondente:"
 
 #: dnf/cli/commands/group.py:182 dnf/cli/commands/group.py:193
 #: dnf/cli/output.py:1226
-#, fuzzy
-#| msgid "<unset>"
 msgid "<name-unset>"
-msgstr "<indefinido>"
+msgstr "<nome indefinido>"
 
 #: dnf/cli/commands/group.py:199
 msgid "Available Environment Groups:"
@@ -1326,24 +1343,31 @@ msgstr "exibir ou usar o histórico de transações"
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
+"Para o comando \"store\", o caminho do arquivo para armazenar a transação"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Para o comando \"replay\", não verifique se há pacotes instalados que "
+"correspondam aos da transação"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Para o comando \"replay\", não verifique se há pacotes extras puxados para a "
+"transação"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Para o comando \"replay\", ignore os pacotes que não estão disponíveis ou "
+"têm dependências faltando"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1354,10 +1378,8 @@ msgstr ""
 "'{}' requer um ID de transação ou nome de pacote."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Nenhum ID de transação ou nome de pacote fornecido."
+msgstr "Nenhum nome de arquivo de transação fornecido."
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
@@ -1415,11 +1437,11 @@ msgstr "ID de transação \"{id}\" não encontrado."
 
 #: dnf/cli/commands/history.py:313
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} existe, sobrescrever?"
 
 #: dnf/cli/commands/history.py:316
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "{} não sobrescrito, saindo."
 
 #: dnf/cli/commands/history.py:323
 msgid "Transaction saved to {}."
@@ -1433,6 +1455,7 @@ msgstr "Erro ao armazenar transação: {}"
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
+"Atenção, os seguintes problemas ocorreram durante a reprodução da transação:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1474,6 +1497,9 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"install: marcar como instalado pelo usuário\n"
+"remove: desmarcar como instalado pelo usuário\n"
+"group: marcar como instalado pelo grupo"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
@@ -1682,47 +1708,47 @@ msgstr "Estado do Repo.        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr ""
+msgstr "Revisão do Repo.      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr ""
+msgstr "Tags do Repo.          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
-msgstr ""
+msgstr "Tags da distro. do repo.      : "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
-msgstr ""
+msgstr "Repo. atualizado       : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr ""
+msgstr "Pacotes de repo.          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Pacotes disponíveis do repo.: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
-msgstr ""
+msgstr "Tamanho do repo.          : "
 
 #: dnf/cli/commands/repolist.py:199
 msgid "Repo-metalink      : "
-msgstr ""
+msgstr "Metalink do repo.      : "
 
 #: dnf/cli/commands/repolist.py:204
 msgid "  Updated          : "
-msgstr ""
+msgstr "  Atualizado          : "
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr ""
+msgstr "Espelhos do repo.       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr ""
+msgstr "URL base do repo.       : "
 
 #: dnf/cli/commands/repolist.py:219
 msgid "Repo-expire        : "
@@ -1731,11 +1757,11 @@ msgstr ""
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Repo. excluído       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr ""
+msgstr "Repo. incluído       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
@@ -1744,7 +1770,7 @@ msgstr ""
 
 #: dnf/cli/commands/repolist.py:236
 msgid "Repo-filename      : "
-msgstr ""
+msgstr "Nome do arquivo do repo.      : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
@@ -1763,7 +1789,7 @@ msgstr "nome do repo"
 
 #: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
-msgstr ""
+msgstr "Pacotes totais: {}"
 
 #: dnf/cli/commands/repoquery.py:107
 msgid "search for packages matching keyword"
@@ -2051,6 +2077,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"A opção '--recursive' deve ser usada com '--whatrequires <REQ>' ("
+"opcionalmente com '--alldeps', mas não com '--exactdeps') ou com '--requires "
+"<REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -3160,7 +3189,7 @@ msgstr "Redefinindo módulos"
 
 #: dnf/cli/output.py:1230
 msgid "Installing Environment Groups"
-msgstr "Instalando grupos de ambiente"
+msgstr "Instalando Grupos de Ambiente"
 
 #: dnf/cli/output.py:1237
 msgid "Upgrading Environment Groups"
@@ -3596,16 +3625,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "O módulo ou grupo '%s' não existe."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Ambiente '%s' não está instalado."
+msgstr "Ambiente de ID '%s' não está instalado."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Ambiente '%s' não está instalado."
+msgstr "O ambiente '%s' não está instalado."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3618,10 +3645,9 @@ msgid "Environment '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Group_id '%s' não existe."
+msgstr "O grupo '%s' não existe."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3699,7 +3725,7 @@ msgstr "O nome do repositório '{}' está ausente na configuração, usando o id
 
 #: dnf/conf/read.py:104
 msgid "Parsing file \"{}\" failed: {}"
-msgstr "O arquivo de análise \"{}\" falhou: {}"
+msgstr "A análise do arquivo \"{}\" falhou: {}"
 
 #: dnf/crypto.py:108
 #, python-format
@@ -3883,7 +3909,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:106
 msgid "Unable to match profile for argument {}"
-msgstr "Não foi possível corresponder ao perfil para o argumento {}"
+msgstr "Impossível de corresponder o perfil ao argumento {}"
 
 #: dnf/module/module_base.py:118
 msgid "No default profiles for module {}:{}. Available profiles: {}"
@@ -3949,12 +3975,12 @@ msgstr "%s é um arquivo vazio"
 #: dnf/persistor.py:91
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Falha ao carregar cache de repositórios expirados: %s"
 
 #: dnf/persistor.py:99
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Falha ao armazenar cache de repositórios expirados: %s"
 
 #: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
@@ -4025,6 +4051,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change está desabilitado. Esta opção não é atualmente suportada "
+"para os comandos downgrade e distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4075,22 +4103,22 @@ msgstr "Preparando"
 #: dnf/transaction_sr.py:60
 #, python-brace-format
 msgid "Errors in \"{filename}\":"
-msgstr ""
+msgstr "Erros em \"{filename}\":"
 
 #: dnf/transaction_sr.py:70
 #, python-brace-format
 msgid "Error in \"{filename}\": {error}"
-msgstr ""
+msgstr "Erro em \"{filename}\": {error}"
 
 #: dnf/transaction_sr.py:87
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Versão principal \"{major}\" inválida, número esperado."
 
 #: dnf/transaction_sr.py:95
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Versão secundária \"{minor}\" inválida, número esperado."
 
 #: dnf/transaction_sr.py:101
 #, python-brace-format
@@ -4098,11 +4126,13 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Versão principal \"{major}\" incompatível, a versão principal suportada é \""
+"{major_supp}\"."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Tipo inesperado de \"{id}\", esperado {exp}."
 
 #: dnf/transaction_sr.py:250
 #, python-brace-format
@@ -4171,8 +4201,7 @@ msgid "Group id '%s' is not installed."
 msgstr "O módulo ou grupo '%s' não está instalado."
 
 #: dnf/transaction_sr.py:398
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
