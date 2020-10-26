@@ -28,7 +28,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-25 09:18-0400\n"
+"POT-Creation-Date: 2020-10-26 09:18-0400\n"
 "PO-Revision-Date: 2020-10-26 17:15+0000\n"
 "Last-Translator: Paulo Eduardo Faversani <pauloeduardo2709@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -108,9 +108,12 @@ msgid "Started dnf-automatic."
 msgstr "Iniciado dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, python-format
-msgid "Sleep for %s seconds"
-msgstr "Dormir por %s segundos"
+#, fuzzy
+#| msgid "Sleep for %s seconds"
+msgid "Sleep for {} second"
+msgid_plural "Sleep for {} seconds"
+msgstr[0] "Dormir por %s segundos"
+msgstr[1] "Dormir por %s segundos"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -800,8 +803,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
-"Pode ser um comando de plugin {PROG}, tente: \"{prog} install 'dnf-command(% "
-"s)'\""
+"Pode ser um comando de plugin {PROG}, tente: \"{prog} install 'dnf-"
+"command(% s)'\""
 
 #: dnf/cli/cli.py:854
 #, python-brace-format
@@ -912,8 +915,8 @@ msgstr ""
 "\n"
 "\n"
 "Alternativamente, você pode especificar a url da chave que gostaria de usar\n"
-"para um repositório na opção 'gpgkey' em uma seção de repositório e o {prog}"
-"\n"
+"para um repositório na opção 'gpgkey' em uma seção de repositório e o "
+"{prog}\n"
 "irá instalá-lo para você.\n"
 "\n"
 "Para obter mais informações, entre em contato com sua distribuição ou "
@@ -2077,9 +2080,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"A opção '--recursive' deve ser usada com '--whatrequires <REQ>' ("
-"opcionalmente com '--alldeps', mas não com '--exactdeps') ou com '--requires "
-"<REQ> --resolve'"
+"A opção '--recursive' deve ser usada com '--whatrequires "
+"<REQ>' (opcionalmente com '--alldeps', mas não com '--exactdeps') ou com '--"
+"requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -4126,8 +4129,8 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
-"Versão principal \"{major}\" incompatível, a versão principal suportada é \""
-"{major_supp}\"."
+"Versão principal \"{major}\" incompatível, a versão principal suportada é "
+"\"{major_supp}\"."
 
 #: dnf/transaction_sr.py:244
 #, python-brace-format
