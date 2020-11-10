@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-07 09:18-0500\n"
+"POT-Creation-Date: 2020-11-10 09:18-0500\n"
 "PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -421,7 +421,7 @@ msgid "Action not handled: {}"
 msgstr "未處理動作：{}"
 
 #: dnf/base.py:2256 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
-#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:169
+#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "沒有 %s 軟體包可用。"
@@ -1263,33 +1263,33 @@ msgstr "無效的群組子指令，請用：%s。"
 msgid "Unable to find a mandatory group package."
 msgstr "找不到強制群組軟體包。"
 
-#: dnf/cli/commands/history.py:48
+#: dnf/cli/commands/history.py:47
 msgid "display, or use, the transaction history"
 msgstr "顯示或使用處理事項歷史紀錄"
 
-#: dnf/cli/commands/history.py:66
+#: dnf/cli/commands/history.py:65
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 
-#: dnf/cli/commands/history.py:68
+#: dnf/cli/commands/history.py:67
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:71
+#: dnf/cli/commands/history.py:70
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:74
+#: dnf/cli/commands/history.py:73
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
 
-#: dnf/cli/commands/history.py:94
+#: dnf/cli/commands/history.py:93
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1297,42 +1297,42 @@ msgstr ""
 "找到超過一個處理事項識別碼。\n"
 "「{}」需要一個處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:101
+#: dnf/cli/commands/history.py:100
 #, fuzzy
 #| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
 msgstr "沒有提供處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:103
+#: dnf/cli/commands/history.py:102
 #, fuzzy
 #| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
 msgstr "移除處理事項檔案 %s 失敗"
 
-#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
+#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
 msgid "No transaction ID or package name given."
 msgstr "沒有提供處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:138
+#: dnf/cli/commands/history.py:137
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "您沒有權限存取歷史紀錄資料庫：%s"
 
-#: dnf/cli/commands/history.py:147
+#: dnf/cli/commands/history.py:146
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
 msgstr "無法復原處理事項 %s，這樣做會導致軟體包資料庫不一致。"
 
-#: dnf/cli/commands/history.py:152
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
 msgstr "無法回滾處理事項 %s，這樣做會導致軟體包資料庫不一致。"
 
-#: dnf/cli/commands/history.py:222
+#: dnf/cli/commands/history.py:221
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1340,7 +1340,7 @@ msgstr ""
 "無效的處理事項識別碼範圍定義「{}」。\n"
 "使用「<transaction-id>..<transaction-id>」。"
 
-#: dnf/cli/commands/history.py:226
+#: dnf/cli/commands/history.py:225
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1348,37 +1348,37 @@ msgstr ""
 "無法將「{}」轉為處理事項 ID。\n"
 "請使用 '<數字>'、'last'、'last-<數字>'。"
 
-#: dnf/cli/commands/history.py:255
+#: dnf/cli/commands/history.py:254
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "找不到操作「{}」軟體包的處理事項。"
 
-#: dnf/cli/commands/history.py:305
+#: dnf/cli/commands/history.py:297
 #, fuzzy, python-brace-format
 #| msgid "TransactionItem not found for key: {}"
 msgid "Transaction ID \"{id}\" not found."
 msgstr "找不到下述鍵的 TransactionItem：{}"
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:305
 msgid "{} exists, overwrite?"
 msgstr ""
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:308
 msgid "Not overwriting {}, exiting."
 msgstr ""
 
-#: dnf/cli/commands/history.py:323
+#: dnf/cli/commands/history.py:315
 #, fuzzy
 #| msgid "Transaction failed"
 msgid "Transaction saved to {}."
 msgstr "處理事項失敗"
 
-#: dnf/cli/commands/history.py:326
+#: dnf/cli/commands/history.py:318
 #, fuzzy
 #| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
 msgstr "在處理事項時發生錯誤。"
 
-#: dnf/cli/commands/history.py:350
+#: dnf/cli/commands/history.py:342
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""

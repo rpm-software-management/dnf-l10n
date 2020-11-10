@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-07 09:18-0500\n"
+"POT-Creation-Date: 2020-11-10 09:18-0500\n"
 "PO-Revision-Date: 2017-04-16 05:43+0000\n"
 "Last-Translator: Rodrigo de Araujo Sousa Fonseca "
 "<rodrigodearaujo@fedoraproject.org>\n"
@@ -431,7 +431,7 @@ msgid "Action not handled: {}"
 msgstr ""
 
 #: dnf/base.py:2256 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
-#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:169
+#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "Nenhum pacote %s está disponível."
@@ -1268,61 +1268,61 @@ msgstr "Sub comando de grupos inválido, utilize: %s."
 msgid "Unable to find a mandatory group package."
 msgstr "Incapaz de encontrar um pacote de grupo obrigatório:"
 
-#: dnf/cli/commands/history.py:48
+#: dnf/cli/commands/history.py:47
 msgid "display, or use, the transaction history"
 msgstr "mostrar, ou utilizar, o histórico de transação"
 
-#: dnf/cli/commands/history.py:66
+#: dnf/cli/commands/history.py:65
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 
-#: dnf/cli/commands/history.py:68
+#: dnf/cli/commands/history.py:67
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:71
+#: dnf/cli/commands/history.py:70
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:74
+#: dnf/cli/commands/history.py:73
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
 
-#: dnf/cli/commands/history.py:94
+#: dnf/cli/commands/history.py:93
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
 msgstr ""
 
-#: dnf/cli/commands/history.py:101
+#: dnf/cli/commands/history.py:100
 #, fuzzy
 #| msgid "No transaction ID given"
 msgid "No transaction file name given."
 msgstr "Não foi fornecido ID de transação"
 
-#: dnf/cli/commands/history.py:103
+#: dnf/cli/commands/history.py:102
 #, fuzzy
 #| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
 msgstr "Falha ao remover o ficheiro de transação %s"
 
-#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
+#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
 msgid "No transaction ID or package name given."
 msgstr ""
 
-#: dnf/cli/commands/history.py:138
+#: dnf/cli/commands/history.py:137
 #, fuzzy, python-format
 #| msgid "You don't have access to the history DB."
 msgid "You don't have access to the history DB: %s"
 msgstr "Não tem acesso à BD de histórico."
 
-#: dnf/cli/commands/history.py:147
+#: dnf/cli/commands/history.py:146
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1331,7 +1331,7 @@ msgstr ""
 "Não pode anular a transação %s, ao fazê-lo resultaria numa base de dados de "
 "pacotes inconsistente."
 
-#: dnf/cli/commands/history.py:152
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1340,49 +1340,49 @@ msgstr ""
 "Não retroceder a transação %s, ao fazê-lo resultaria numa base de dados de "
 "pacotes inconsistente."
 
-#: dnf/cli/commands/history.py:222
+#: dnf/cli/commands/history.py:221
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
 
-#: dnf/cli/commands/history.py:226
+#: dnf/cli/commands/history.py:225
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
 
-#: dnf/cli/commands/history.py:255
+#: dnf/cli/commands/history.py:254
 msgid "No transaction which manipulates package '{}' was found."
 msgstr ""
 
-#: dnf/cli/commands/history.py:305
+#: dnf/cli/commands/history.py:297
 #, fuzzy, python-brace-format
 #| msgid "Transaction ID :"
 msgid "Transaction ID \"{id}\" not found."
 msgstr "ID de Transação:"
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:305
 msgid "{} exists, overwrite?"
 msgstr ""
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:308
 msgid "Not overwriting {}, exiting."
 msgstr ""
 
-#: dnf/cli/commands/history.py:323
+#: dnf/cli/commands/history.py:315
 #, fuzzy
 #| msgid "Transaction failed"
 msgid "Transaction saved to {}."
 msgstr "A transação falhou"
 
-#: dnf/cli/commands/history.py:326
+#: dnf/cli/commands/history.py:318
 #, fuzzy
 #| msgid "Running transaction"
 msgid "Error storing transaction: {}"
 msgstr "A executar a transação"
 
-#: dnf/cli/commands/history.py:350
+#: dnf/cli/commands/history.py:342
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""

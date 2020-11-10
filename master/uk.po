@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-07 09:18-0500\n"
+"POT-Creation-Date: 2020-11-10 09:18-0500\n"
 "PO-Revision-Date: 2020-11-08 13:35+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -443,7 +443,7 @@ msgid "Action not handled: {}"
 msgstr "Дію не оброблено: {}"
 
 #: dnf/base.py:2256 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
-#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:169
+#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "Немає доступного пакунка %s."
@@ -1316,16 +1316,16 @@ msgstr "Некоректна підкоманда груп, скористайт
 msgid "Unable to find a mandatory group package."
 msgstr "Не вдалося знайти обов’язковий пакунок групи."
 
-#: dnf/cli/commands/history.py:48
+#: dnf/cli/commands/history.py:47
 msgid "display, or use, the transaction history"
 msgstr "показ або використання журналу операцій"
 
-#: dnf/cli/commands/history.py:66
+#: dnf/cli/commands/history.py:65
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 "Для команди store шлях до файла, до якого слід зберегти результати операції"
 
-#: dnf/cli/commands/history.py:68
+#: dnf/cli/commands/history.py:67
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
@@ -1333,7 +1333,7 @@ msgstr ""
 "Для команди replay, не перевіряти на наявність встановлених пакунків, які "
 "відповідають тим, які вказано у операції"
 
-#: dnf/cli/commands/history.py:71
+#: dnf/cli/commands/history.py:70
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
@@ -1341,7 +1341,7 @@ msgstr ""
 "Для команди replay, не перевіряти на наявність додаткових пакунків, які "
 "вставляються у операцію"
 
-#: dnf/cli/commands/history.py:74
+#: dnf/cli/commands/history.py:73
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
@@ -1349,7 +1349,7 @@ msgstr ""
 "Для команди replay, пропустити пакунки, які недоступні або для яких "
 "недоступні залежності"
 
-#: dnf/cli/commands/history.py:94
+#: dnf/cli/commands/history.py:93
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1357,24 +1357,24 @@ msgstr ""
 "Виявлено більше одного ідентифікатора операції.\n"
 "«{}» потребує одного ідентифікатора операції або назви пакунка."
 
-#: dnf/cli/commands/history.py:101
+#: dnf/cli/commands/history.py:100
 msgid "No transaction file name given."
 msgstr "Не вказано назви файла операції."
 
-#: dnf/cli/commands/history.py:103
+#: dnf/cli/commands/history.py:102
 msgid "More than one argument given as transaction file name."
 msgstr "Для назви файла операції вказано декілька аргументів."
 
-#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
+#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
 msgid "No transaction ID or package name given."
 msgstr "Не вказано ідентифікатора операції або назви пакунка."
 
-#: dnf/cli/commands/history.py:138
+#: dnf/cli/commands/history.py:137
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "У вас немає права доступу до бази даних журналу: %s"
 
-#: dnf/cli/commands/history.py:147
+#: dnf/cli/commands/history.py:146
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1383,7 +1383,7 @@ msgstr ""
 "Не вдалося скасувати операцію %s. Скасування операції могло призвести до "
 "порушення цілісності бази даних пакунків."
 
-#: dnf/cli/commands/history.py:152
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1392,7 +1392,7 @@ msgstr ""
 "Не вдалося відкотити операцію %s. Скасування операції могло призвести до "
 "порушення цілісності бази даних пакунків."
 
-#: dnf/cli/commands/history.py:222
+#: dnf/cli/commands/history.py:221
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1400,7 +1400,7 @@ msgstr ""
 "Некоректне визначення діапазону ідентифікаторів операцій, «{}».\n"
 "Мало бути «<ідентифікатор операції>..<ідентифікатор операції>»."
 
-#: dnf/cli/commands/history.py:226
+#: dnf/cli/commands/history.py:225
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1408,32 +1408,32 @@ msgstr ""
 "Не вдалося перетворити «{}» на ідентифікатор операції.\n"
 "Скористайтеся записом «<число>», «last», «last-<число>»."
 
-#: dnf/cli/commands/history.py:255
+#: dnf/cli/commands/history.py:254
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Не знайдено операції із пакунком «{}»."
 
-#: dnf/cli/commands/history.py:305
+#: dnf/cli/commands/history.py:297
 #, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
 msgstr "Не знайдено операції із ідентифікатором «{id}»."
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:305
 msgid "{} exists, overwrite?"
 msgstr "{} вже існує, перезаписати?"
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:308
 msgid "Not overwriting {}, exiting."
 msgstr "Не перезаписуємо {}, завершуємо роботу."
 
-#: dnf/cli/commands/history.py:323
+#: dnf/cli/commands/history.py:315
 msgid "Transaction saved to {}."
 msgstr "Операцію збережено до {}."
 
-#: dnf/cli/commands/history.py:326
+#: dnf/cli/commands/history.py:318
 msgid "Error storing transaction: {}"
 msgstr "Помилка під час спроби зберегти операцію: {}"
 
-#: dnf/cli/commands/history.py:350
+#: dnf/cli/commands/history.py:342
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr "Увага! Під час відтворення операції виникли такі проблеми:"

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-07 09:18-0500\n"
+"POT-Creation-Date: 2020-11-10 09:18-0500\n"
 "PO-Revision-Date: 2020-10-06 08:38+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -438,7 +438,7 @@ msgid "Action not handled: {}"
 msgstr "Handling ikke håndteret: {}"
 
 #: dnf/base.py:2256 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
-#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:169
+#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "Pakken %s er ikke tilgængelig."
@@ -1308,15 +1308,15 @@ msgstr "Ugyldig grupper-underkommando, brug: %s."
 msgid "Unable to find a mandatory group package."
 msgstr "Kan ikke finde en obligatorisk gruppepakke."
 
-#: dnf/cli/commands/history.py:48
+#: dnf/cli/commands/history.py:47
 msgid "display, or use, the transaction history"
 msgstr "vis eller brug transaktionshistorikken"
 
-#: dnf/cli/commands/history.py:66
+#: dnf/cli/commands/history.py:65
 msgid "For the store command, file path to store the transaction to"
 msgstr "Til store-kommandoen, filsti hvor transaktionen skal gemmes i"
 
-#: dnf/cli/commands/history.py:68
+#: dnf/cli/commands/history.py:67
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
@@ -1324,7 +1324,7 @@ msgstr ""
 "Til replay-kommandoen, tjek ikke efter installerede pakker som matcher dem i "
 "transaktionen"
 
-#: dnf/cli/commands/history.py:71
+#: dnf/cli/commands/history.py:70
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
@@ -1332,7 +1332,7 @@ msgstr ""
 "Til replay-kommandoen, tjek ikke for ekstra pakker som er trukket ind i "
 "transaktionen"
 
-#: dnf/cli/commands/history.py:74
+#: dnf/cli/commands/history.py:73
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
@@ -1340,7 +1340,7 @@ msgstr ""
 "Til replay-kommandoen, spring over pakker som ikke er tilgængelige eller har "
 "manglende afhængigheder"
 
-#: dnf/cli/commands/history.py:94
+#: dnf/cli/commands/history.py:93
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1348,24 +1348,24 @@ msgstr ""
 "Fandt mere end ét transaktions-id.\n"
 "'{}' kræver ét transaktions-id eller pakkenavn."
 
-#: dnf/cli/commands/history.py:101
+#: dnf/cli/commands/history.py:100
 msgid "No transaction file name given."
 msgstr "Intet transaktionsfilnavn givet."
 
-#: dnf/cli/commands/history.py:103
+#: dnf/cli/commands/history.py:102
 msgid "More than one argument given as transaction file name."
 msgstr "Mere end ét argument angivet som transaktionsfilnavn."
 
-#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:126
+#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
 msgid "No transaction ID or package name given."
 msgstr "Intet transaktions-id eller pakkenavn givet."
 
-#: dnf/cli/commands/history.py:138
+#: dnf/cli/commands/history.py:137
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "Du har ikke adgang til historikdatabasen: %s"
 
-#: dnf/cli/commands/history.py:147
+#: dnf/cli/commands/history.py:146
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1374,7 +1374,7 @@ msgstr ""
 "Kan ikke fortryde transaktionen %s. Det ville resulterer i en "
 "uoverensstemmende pakkedatabase."
 
-#: dnf/cli/commands/history.py:152
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1383,7 +1383,7 @@ msgstr ""
 "Kan ikke tilbageføre transaktionen %s. Det ville resulterer i en "
 "uoverensstemmende pakkedatabase."
 
-#: dnf/cli/commands/history.py:222
+#: dnf/cli/commands/history.py:221
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1391,7 +1391,7 @@ msgstr ""
 "Ugyldigt transaktions-id områdedefinition '{}'.\n"
 "Brug '<transaktions-id>..<transaktions-id>'."
 
-#: dnf/cli/commands/history.py:226
+#: dnf/cli/commands/history.py:225
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1399,32 +1399,32 @@ msgstr ""
 "Kan ikke konvertere '{}' til transaktions-ID.\n"
 "Brug '<nummer>', 'last', 'last-<nummer>'."
 
-#: dnf/cli/commands/history.py:255
+#: dnf/cli/commands/history.py:254
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Der blev ikke fundet nogen transaktion som manipulerer pakken '{}'."
 
-#: dnf/cli/commands/history.py:305
+#: dnf/cli/commands/history.py:297
 #, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
 msgstr "Transaktions-id'et \"{id}\" ikke fundet."
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:305
 msgid "{} exists, overwrite?"
 msgstr "{} findes, overskriv?"
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:308
 msgid "Not overwriting {}, exiting."
 msgstr "Overskriver ikke {}, afslutter."
 
-#: dnf/cli/commands/history.py:323
+#: dnf/cli/commands/history.py:315
 msgid "Transaction saved to {}."
 msgstr "Transaktion gemt til {}."
 
-#: dnf/cli/commands/history.py:326
+#: dnf/cli/commands/history.py:318
 msgid "Error storing transaction: {}"
 msgstr "Fejl da transaktion skulle gemmes: {}"
 
-#: dnf/cli/commands/history.py:350
+#: dnf/cli/commands/history.py:342
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
