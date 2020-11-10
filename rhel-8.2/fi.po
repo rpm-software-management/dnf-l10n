@@ -11,13 +11,14 @@
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata
 # Jari Korva <jpkorva@iki.fi>, 2019. #zanata, 2020.
 # Marek Blaha <mblaha@redhat.com>, 2020.
+# Ricky Tigg <ricky.tigg@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-11-07 11:35+0000\n"
-"Last-Translator: Marek Blaha <mblaha@redhat.com>\n"
+"PO-Revision-Date: 2020-11-11 18:35+0000\n"
+"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/fi/>\n"
 "Language: fi\n"
@@ -35,22 +36,22 @@ msgstr "Seuraavat päivitykset on toteutettu järjestelmään '%s':"
 #: ../dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr ""
+msgstr "Järjestelmään '%s' on saatavilla seuraavat päivitykset:"
 
 #: ../dnf/automatic/emitter.py:33
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr ""
+msgstr "Järjestelmään '%s' ladattiin seuraavat päivitykset:"
 
 #: ../dnf/automatic/emitter.py:80
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr ""
+msgstr "Järjestelmään '%s' asennetut päivitykset."
 
 #: ../dnf/automatic/emitter.py:82
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr ""
+msgstr "Järjestelmään '%s' ladatut päivitykset."
 
 #: ../dnf/automatic/emitter.py:84
 #, python-format
@@ -65,17 +66,17 @@ msgstr ""
 #: ../dnf/automatic/emitter.py:137
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
-msgstr ""
+msgstr "Komennon '%s' suorittaminen epäonnistui: palautti %d"
 
 #: ../dnf/automatic/main.py:156 ../dnf/conf/config.py:149
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr ""
+msgstr "Tuntematon kokoonpanoarvo: %s=%s %s:ssa; %s"
 
 #: ../dnf/automatic/main.py:160 ../dnf/conf/config.py:156
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
-msgstr ""
+msgstr "Tuntematon määritysvaihtoehto: %s = %s %s:ssa"
 
 #: ../dnf/automatic/main.py:231
 msgid "Started dnf-automatic."
@@ -93,41 +94,45 @@ msgstr "Virhe: %s"
 
 #: ../dnf/base.py:145
 msgid "loading repo '{}' failure: {}"
-msgstr ""
+msgstr "Ohjelmistolähteen {} ladataan epäonnistuminen: {}"
 
 #: ../dnf/base.py:147
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "Ohjelmistolähteen {}} lataaminen epäonnistui"
 
 #: ../dnf/base.py:334
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Metatietojen ajastimen välimuisti on poistettu käytöstä suoritettaessa "
+"mitattua yhteyttä."
 
 #: ../dnf/base.py:339
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
+"Metatietojen ajastimen välimuisti poistettu käytöstä, kun sitä käytetään "
+"akulla."
 
 #: ../dnf/base.py:344
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Metatietojen-ajastimen välimuisti poistettu käytöstä."
 
 #: ../dnf/base.py:349
 msgid "Metadata cache refreshed recently."
-msgstr ""
+msgstr "Metatietojen välimuisti päivitettiin äskettäin."
 
 #: ../dnf/base.py:355 ../dnf/cli/commands/__init__.py:100
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
+msgstr "Kohdassa \"{}\" ei ole sallituja ohjelmistolähteitä."
 
 #: ../dnf/base.py:362
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: ei koskaan vanhene, eikä sitä päivitetä."
 
 #: ../dnf/base.py:364
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: on vanhentunut ja se päivitetään."
 
 #. expires within the checking period:
 #: ../dnf/base.py:368
@@ -350,7 +355,7 @@ msgstr "Tuntematon argumentti: %s"
 
 #: ../dnf/base.py:1867 ../dnf/base.py:1878 ../dnf/base.py:2241
 msgid "no package matched"
-msgstr ""
+msgstr "Vastaavaa pakettia ei löytynyt"
 
 #: ../dnf/base.py:1893
 #, python-format
@@ -443,10 +448,12 @@ msgstr "Tietoturvapäivityksiä ei tarvita, mutta päivityksiä on {} saatavilla
 #: ../dnf/base.py:2268
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
+"Tietoturvapäivityksiä ei tarvita kohteelle {}, mutta {} päivitys saatavilla"
 
 #: ../dnf/base.py:2270
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
+"Tietoturvapäivityksiä ei tarvita kohteelle {}, mutta {} päivitys saatavilla"
 
 #: ../dnf/base.py:2294
 #, python-format
@@ -617,7 +624,7 @@ msgstr ""
 
 #: ../dnf/cli/cli.py:411
 msgid "No packages marked for downgrade."
-msgstr ""
+msgstr "Paketteja ei ole merkitty taaksepäin päivitettäväksi."
 
 #: ../dnf/cli/cli.py:462
 msgid "Installed Packages"
@@ -637,7 +644,7 @@ msgstr "Lisäpaketit"
 
 #: ../dnf/cli/cli.py:480
 msgid "Available Upgrades"
-msgstr ""
+msgstr "Saatavilla olevat päivitykset"
 
 #: ../dnf/cli/cli.py:496
 msgid "Recently Added Packages"
@@ -866,7 +873,7 @@ msgstr "Pakettia ei ole saatavilla."
 
 #: ../dnf/cli/commands/__init__.py:378
 msgid "No packages marked for install."
-msgstr ""
+msgstr "Ei asennettaviksi merkittyjä paketteja."
 
 #: ../dnf/cli/commands/__init__.py:414
 msgid "No package installed."
@@ -925,7 +932,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/__init__.py:842
 msgid "No transaction ID or package name given."
-msgstr ""
+msgstr "Transaktiotunnusta tai pakettia ei annettu."
 
 #: ../dnf/cli/commands/__init__.py:855
 msgid "You don't have access to the history DB."
@@ -984,27 +991,27 @@ msgstr ""
 #: ../dnf/cli/commands/alias.py:87 ../dnf/cli/commands/alias.py:90
 #, python-format
 msgid "Invalid alias key: %s"
-msgstr ""
+msgstr "Virheellinen aliaksen avain: %s"
 
 #: ../dnf/cli/commands/alias.py:93
 #, python-format
 msgid "Alias argument has no value: %s"
-msgstr ""
+msgstr "Aliaksen argumentilla ei ole arvoa: %s"
 
 #: ../dnf/cli/commands/alias.py:127
 #, python-format
 msgid "Aliases added: %s"
-msgstr ""
+msgstr "Aliakset lisätty: %s"
 
 #: ../dnf/cli/commands/alias.py:141
 #, python-format
 msgid "Alias not found: %s"
-msgstr ""
+msgstr "Aliasta ei löydy: %s"
 
 #: ../dnf/cli/commands/alias.py:144
 #, python-format
 msgid "Aliases deleted: %s"
-msgstr ""
+msgstr "Aliakset poistettu: %s"
 
 #: ../dnf/cli/commands/alias.py:151
 #, python-format
@@ -1014,11 +1021,11 @@ msgstr ""
 #: ../dnf/cli/commands/alias.py:153
 #, python-format
 msgid "Alias %s='%s'"
-msgstr ""
+msgstr "Alias %s='%s'"
 
 #: ../dnf/cli/commands/alias.py:157
 msgid "Aliases resolving is disabled."
-msgstr ""
+msgstr "Aliasten ratkaiseminen on poistettu käytöstä."
 
 #: ../dnf/cli/commands/alias.py:162
 msgid "No aliases specified."
@@ -1026,7 +1033,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/alias.py:169
 msgid "No alias specified."
-msgstr ""
+msgstr "Aliasta ei ole määritetty."
 
 #: ../dnf/cli/commands/alias.py:175
 msgid "No aliases defined."
@@ -1097,15 +1104,15 @@ msgstr "poista välimuistissa olevat tiedot"
 
 #: ../dnf/cli/commands/clean.py:93
 msgid "Metadata type to clean"
-msgstr ""
+msgstr "Puhdistettava metatietojen tyyppi"
 
 #: ../dnf/cli/commands/clean.py:105
 msgid "Cleaning data:  "
-msgstr ""
+msgstr "Tietoja puhdistetaan:  "
 
 #: ../dnf/cli/commands/clean.py:111
 msgid "Cache was expired"
-msgstr ""
+msgstr "Välimuisti oli vanhentunut"
 
 #: ../dnf/cli/commands/clean.py:115
 #, python-format
@@ -1125,7 +1132,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr ""
+msgstr "synkronoi asennetut paketit uusimpiin saatavilla oleviin versioihin"
 
 #: ../dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1141,11 +1148,11 @@ msgstr "Varhennettava paketti"
 
 #: ../dnf/cli/commands/group.py:45
 msgid "display, or use, the groups information"
-msgstr ""
+msgstr "näytä tai käytä ryhmien tietoja"
 
 #: ../dnf/cli/commands/group.py:70
 msgid "No group data available for configured repositories."
-msgstr ""
+msgstr "Määritetyille ohjelmistolähteille ei ole saatavilla ryhmätietoja."
 
 #: ../dnf/cli/commands/group.py:127
 #, python-format
@@ -1154,7 +1161,7 @@ msgstr "Varoitus: Ryhmää %s ei ole olemassa."
 
 #: ../dnf/cli/commands/group.py:161
 msgid "Warning: No groups match:"
-msgstr ""
+msgstr "Varoitus: mikään ryhmä ei täsmää:"
 
 #: ../dnf/cli/commands/group.py:190
 msgid "Available Environment Groups:"
@@ -1379,7 +1386,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:123
 msgid "No repositories available"
-msgstr ""
+msgstr "Ohjelmistolähteitä ei ole saatavilla"
 
 #: ../dnf/cli/commands/repolist.py:145 ../dnf/cli/commands/repolist.py:146
 msgid "enabled"
@@ -2109,7 +2116,7 @@ msgstr "tosi"
 
 #: ../dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr ""
+msgstr "päivitä paketti tai paketit järjestelmälläsi"
 
 #: ../dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -2123,7 +2130,7 @@ msgstr ""
 
 #: ../dnf/cli/main.py:80
 msgid "Terminated."
-msgstr ""
+msgstr "Lopetettu."
 
 #: ../dnf/cli/main.py:108
 msgid "No read/execute access in current directory, moving to /"
@@ -2139,7 +2146,7 @@ msgstr "yritä lisätä '{}' ohittaaksesi asennuskelvottomat paketit"
 
 #: ../dnf/cli/main.py:134
 msgid " or '{}' to skip uninstallable packages"
-msgstr ""
+msgstr " tai \"{}\" ohittaaksesi asennuskelvottomat paketit"
 
 #: ../dnf/cli/main.py:139
 msgid "try to add '{}' to use not only best candidate packages"
@@ -2610,7 +2617,7 @@ msgstr " Valinnaiset ryhmät:"
 
 #: ../dnf/cli/output.py:858
 msgid "Matched from:"
-msgstr "Vastaavuus  :"
+msgstr "Vastaavuus :"
 
 #: ../dnf/cli/output.py:872
 #, python-format
@@ -2624,7 +2631,7 @@ msgstr "Asennuslähde    : %s"
 
 #: ../dnf/cli/output.py:906
 msgid "Description : "
-msgstr "Kuvaus          : "
+msgstr "Kuvaus : "
 
 #: ../dnf/cli/output.py:910
 #, python-format
@@ -2769,7 +2776,7 @@ msgstr ""
 
 #: ../dnf/cli/output.py:1207
 msgid "Installing Environment Groups"
-msgstr ""
+msgstr "Asennetaan ympäristöryhmät"
 
 #: ../dnf/cli/output.py:1214
 msgid "Upgrading Environment Groups"
@@ -2974,7 +2981,7 @@ msgstr "Vanhempi"
 
 #: ../dnf/cli/output.py:1854 ../dnf/cli/output.py:1856
 msgid "Transaction ID :"
-msgstr "Transaktiotunnus      :"
+msgstr "Transaktiotunnus :"
 
 #: ../dnf/cli/output.py:1859
 msgid "Begin time     :"
@@ -3505,7 +3512,7 @@ msgstr ""
 
 #: ../dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
-msgstr ""
+msgstr "Testitransaktion aikana tapahtui virheitä."
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: ../dnf/transaction.py:79
