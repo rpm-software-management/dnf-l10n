@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-11 09:18-0500\n"
+"POT-Creation-Date: 2020-11-14 09:18-0500\n"
 "PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -78,7 +78,7 @@ msgstr "未知的設定值：%s = %s 於 %s；%s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "未知的設定選項：%s = %s 於 %s"
 
-#: dnf/automatic/main.py:237 dnf/cli/cli.py:299
+#: dnf/automatic/main.py:237 dnf/cli/cli.py:300
 msgid "GPG check FAILED"
 msgstr "GPG 檢查失敗"
 
@@ -323,7 +323,7 @@ msgstr "找不到符合「{}」軟體包群組的項目"
 msgid "Adding packages from group '%s': %s"
 msgstr "正在從群組「%s」加入軟體包：%s"
 
-#: dnf/base.py:1660 dnf/cli/cli.py:219 dnf/cli/commands/__init__.py:442
+#: dnf/base.py:1660 dnf/cli/cli.py:220 dnf/cli/commands/__init__.py:442
 #: dnf/cli/commands/__init__.py:499 dnf/cli/commands/__init__.py:592
 #: dnf/cli/commands/__init__.py:641 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
@@ -344,7 +344,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "尚未安裝軟體包 %s，所以無法降級。"
 
 #: dnf/base.py:1929 dnf/base.py:1948 dnf/base.py:1961 dnf/base.py:1982
-#: dnf/base.py:2031 dnf/base.py:2039 dnf/base.py:2174 dnf/cli/cli.py:411
+#: dnf/base.py:2031 dnf/base.py:2039 dnf/base.py:2174 dnf/cli/cli.py:412
 #: dnf/cli/commands/__init__.py:425 dnf/cli/commands/__init__.py:482
 #: dnf/cli/commands/__init__.py:586 dnf/cli/commands/__init__.py:633
 #: dnf/cli/commands/__init__.py:711 dnf/cli/commands/install.py:147
@@ -390,7 +390,7 @@ msgstr "軟體包 %s 可用，但尚未安裝。"
 msgid "Package %s available, but installed for different architecture."
 msgstr "軟體包 %s 可用，但是針對不同架構安裝。"
 
-#: dnf/base.py:2059 dnf/base.py:2252 dnf/cli/cli.py:668 dnf/cli/cli.py:699
+#: dnf/base.py:2059 dnf/base.py:2252 dnf/cli/cli.py:669 dnf/cli/cli.py:700
 #, python-format
 msgid "No package %s installed."
 msgstr "軟體包 %s 未安裝。"
@@ -406,7 +406,7 @@ msgstr "非有效格式：%s"
 msgid "No packages marked for removal."
 msgstr "沒有軟體包標記為要移除。"
 
-#: dnf/base.py:2181 dnf/cli/cli.py:422
+#: dnf/base.py:2181 dnf/cli/cli.py:423
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "%s 引數的軟體包可用，但尚未安裝。"
@@ -420,7 +420,7 @@ msgstr "已經安裝最舊版本的軟體包 %s，所以無法降級。"
 msgid "Action not handled: {}"
 msgstr "未處理動作：{}"
 
-#: dnf/base.py:2258 dnf/cli/cli.py:419 dnf/cli/cli.py:673 dnf/cli/cli.py:703
+#: dnf/base.py:2258 dnf/cli/cli.py:420 dnf/cli/cli.py:674 dnf/cli/cli.py:704
 #: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
@@ -560,8 +560,8 @@ msgstr "解析「%s」檔案失敗：%s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "無法讀取「%s」檔案：%s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:902
-#: dnf/cli/cli.py:906 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:903
+#: dnf/cli/cli.py:907 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "設定檔錯誤：%s"
@@ -592,7 +592,7 @@ msgid ""
 "stream '{2}'"
 msgstr "動作可能會導致「{0}」模組的「{1}」串流被切換到「{2}」串流"
 
-#: dnf/cli/cli.py:172
+#: dnf/cli/cli.py:173
 #, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module.\n"
@@ -604,35 +604,35 @@ msgstr ""
 "建議移除模組的所有已安裝內容，並使用 '{prog} module reset <module_name>' 命令"
 "重設模組。重設完模組後，就可以安裝其他串流。"
 
-#: dnf/cli/cli.py:210
+#: dnf/cli/cli.py:211
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
 msgstr "{prog} 將只會下載處理事項需要的軟體包。"
 
-#: dnf/cli/cli.py:213
+#: dnf/cli/cli.py:214
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr "{prog} 只會下載軟體包、匯入 GPG 金鑰並檢查處理事項。"
 
-#: dnf/cli/cli.py:217
+#: dnf/cli/cli.py:218
 msgid "Operation aborted."
 msgstr "取消作業。"
 
-#: dnf/cli/cli.py:224
+#: dnf/cli/cli.py:225
 msgid "Downloading Packages:"
 msgstr "下載軟體包："
 
-#: dnf/cli/cli.py:230
+#: dnf/cli/cli.py:231
 msgid "Error downloading packages:"
 msgstr "下載軟體包時失敗："
 
-#: dnf/cli/cli.py:258
+#: dnf/cli/cli.py:259
 msgid "Transaction failed"
 msgstr "處理事項失敗"
 
-#: dnf/cli/cli.py:281
+#: dnf/cli/cli.py:282
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -640,102 +640,102 @@ msgstr ""
 "當無人職守時，拒絕自動匯入密鑰。\n"
 "使用「-y」覆蓋。"
 
-#: dnf/cli/cli.py:331
+#: dnf/cli/cli.py:332
 msgid "Changelogs for {}"
 msgstr "{} 的變更記錄"
 
-#: dnf/cli/cli.py:364 dnf/cli/cli.py:505 dnf/cli/cli.py:511
+#: dnf/cli/cli.py:365 dnf/cli/cli.py:506 dnf/cli/cli.py:512
 msgid "Obsoleting Packages"
 msgstr "棄用軟體包"
 
-#: dnf/cli/cli.py:393
+#: dnf/cli/cli.py:394
 msgid "No packages marked for distribution synchronization."
 msgstr "沒有標記為與散布版同步的軟體包。"
 
-#: dnf/cli/cli.py:428
+#: dnf/cli/cli.py:429
 msgid "No packages marked for downgrade."
 msgstr "沒有軟體包標記為降級。"
 
-#: dnf/cli/cli.py:479
+#: dnf/cli/cli.py:480
 msgid "Installed Packages"
 msgstr "已安裝軟體包"
 
-#: dnf/cli/cli.py:487
+#: dnf/cli/cli.py:488
 msgid "Available Packages"
 msgstr "可用的軟體包"
 
-#: dnf/cli/cli.py:491
+#: dnf/cli/cli.py:492
 msgid "Autoremove Packages"
 msgstr "自動移除軟體包"
 
-#: dnf/cli/cli.py:493
+#: dnf/cli/cli.py:494
 msgid "Extra Packages"
 msgstr "額外的軟體包"
 
-#: dnf/cli/cli.py:497
+#: dnf/cli/cli.py:498
 msgid "Available Upgrades"
 msgstr "可用的升級"
 
-#: dnf/cli/cli.py:513
+#: dnf/cli/cli.py:514
 msgid "Recently Added Packages"
 msgstr "最近加入的軟體包"
 
-#: dnf/cli/cli.py:518
+#: dnf/cli/cli.py:519
 msgid "No matching Packages to list"
 msgstr "沒有符合的軟體包可列出"
 
-#: dnf/cli/cli.py:599
+#: dnf/cli/cli.py:600
 msgid "No Matches found"
 msgstr "沒有符合項目"
 
-#: dnf/cli/cli.py:609
+#: dnf/cli/cli.py:610
 msgid "No transaction ID given"
 msgstr "沒有提供處理事項識別碼"
 
-#: dnf/cli/cli.py:614
+#: dnf/cli/cli.py:615
 msgid "Not found given transaction ID"
 msgstr "找不到提供的處理事項識別碼"
 
-#: dnf/cli/cli.py:623
+#: dnf/cli/cli.py:624
 msgid "Found more than one transaction ID!"
 msgstr "找到超過一個處理事項識別碼！"
 
-#: dnf/cli/cli.py:640
+#: dnf/cli/cli.py:641
 #, python-format
 msgid "Transaction history is incomplete, before %u."
 msgstr "在 %u 之前，處理事項歷史紀錄不完整。"
 
-#: dnf/cli/cli.py:642
+#: dnf/cli/cli.py:643
 #, python-format
 msgid "Transaction history is incomplete, after %u."
 msgstr "在 %u 之後，處理事項歷史紀錄不完整。"
 
-#: dnf/cli/cli.py:689
+#: dnf/cli/cli.py:690
 msgid "Undoing transaction {}, from {}"
 msgstr "取消變更處理事項 {}，從 {}"
 
-#: dnf/cli/cli.py:769 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:770 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "未知的軟體庫：「%s」"
 
-#: dnf/cli/cli.py:783
+#: dnf/cli/cli.py:784
 #, python-format
 msgid "No repository match: %s"
 msgstr "沒有軟體庫符合：%s"
 
-#: dnf/cli/cli.py:817
+#: dnf/cli/cli.py:818
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr "此命令需要以超級使用者權限執行（大部分系統是在 root 使用者下）。"
 
-#: dnf/cli/cli.py:847
+#: dnf/cli/cli.py:848
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "未知的指令：%s。請使用 %s --help"
 
-#: dnf/cli/cli.py:850
+#: dnf/cli/cli.py:851
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -743,14 +743,14 @@ msgid ""
 msgstr ""
 "其可能是 {PROG} 插件的命令，請試試：「{prog} install 'dnf-command(%s)'」"
 
-#: dnf/cli/cli.py:854
+#: dnf/cli/cli.py:855
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr "其可能是 {prog} 插件的命令，但目前載入插件的功能處於停用狀態。"
 
-#: dnf/cli/cli.py:912
+#: dnf/cli/cli.py:913
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -758,7 +758,7 @@ msgstr ""
 "--destdir 或 --downloaddir 必須與 --downloadonly、download 或 system-upgrade "
 "指令一起使用。"
 
-#: dnf/cli/cli.py:918
+#: dnf/cli/cli.py:919
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -766,7 +766,7 @@ msgstr ""
 "--enable、--set-enabled 及 --disable、--set-disabled 必須與 config-manager 命"
 "令一起使用。"
 
-#: dnf/cli/cli.py:1000
+#: dnf/cli/cli.py:1001
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -774,38 +774,38 @@ msgstr ""
 "警告：因為作用中的 RPM 安全性策略，已強制執行全域 GPG 簽名檢查（請參閱 dnf."
 "conf(5) 的「gpgcheck」以了解如何隱藏此則訊息）"
 
-#: dnf/cli/cli.py:1020
+#: dnf/cli/cli.py:1021
 msgid "Config file \"{}\" does not exist"
 msgstr "「{}」組態檔不存在"
 
-#: dnf/cli/cli.py:1040
+#: dnf/cli/cli.py:1041
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr "無法偵測發行版本（使用「--releasever」指定發行版本）"
 
-#: dnf/cli/cli.py:1127 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1128 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "引數 {}：不允許與 {} 引數使用"
 
-#: dnf/cli/cli.py:1134
+#: dnf/cli/cli.py:1135
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "指令「%s」已經定義"
 
-#: dnf/cli/cli.py:1154
+#: dnf/cli/cli.py:1155
 msgid "Excludes in dnf.conf: "
 msgstr "排除於 dnf.conf： "
 
-#: dnf/cli/cli.py:1157
+#: dnf/cli/cli.py:1158
 msgid "Includes in dnf.conf: "
 msgstr "包含於 dnf.conf： "
 
-#: dnf/cli/cli.py:1160
+#: dnf/cli/cli.py:1161
 msgid "Excludes in repo "
 msgstr "排除於軟體庫 "
 
-#: dnf/cli/cli.py:1163
+#: dnf/cli/cli.py:1164
 msgid "Includes in repo "
 msgstr "包含於軟體庫 "
 
