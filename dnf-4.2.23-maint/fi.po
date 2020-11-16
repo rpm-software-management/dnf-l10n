@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2020-11-11 18:35+0000\n"
+"PO-Revision-Date: 2020-11-17 15:35+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-dnf-4223-maint/fi/>\n"
@@ -40,7 +40,7 @@ msgstr "Järjestelmään '%s' on saatavilla seuraavat päivitykset:"
 #: dnf/automatic/emitter.py:33
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Järjestelmään '%s' ladattiin seuraavat päivitykset:"
+msgstr "Seuraavat päivitykset ladattiin järjestelmään '%s':"
 
 #: dnf/automatic/emitter.py:80
 #, python-format
@@ -60,7 +60,7 @@ msgstr "Päivitykset saatavilla järjestelmään '%s'."
 #: dnf/automatic/emitter.py:107
 #, python-format
 msgid "Failed to send an email via '%s': %s"
-msgstr "Sähköpostin lähettäminen palvelimen '%s' kautta epäonnistui: %s"
+msgstr "Sähköpostin lähettäminen '%s':n kautta epäonnistui: %s"
 
 #: dnf/automatic/emitter.py:137
 #, python-format
@@ -113,7 +113,7 @@ msgstr ""
 #: dnf/base.py:325
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
-"Metatietojen ajastimen välimuisti poistettu käytöstä, kun sitä käytetään "
+"Metatietojen ajastimen välimuisti poistettu käytöstä kun sitä käytetään "
 "akulla."
 
 #: dnf/base.py:330
@@ -142,27 +142,27 @@ msgstr "%s: on vanhentunut ja se päivitetään."
 #: dnf/base.py:354
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: metatiedot vanhenevat %d sekunnin kuluttua ja ne päivitetään nyt"
 
 #: dnf/base.py:358
 #, python-format
 msgid "%s: will expire after %d seconds."
-msgstr ""
+msgstr "%s: vanhenee %d sekunnin kuluttua."
 
 #. performs the md sync
 #: dnf/base.py:364
 msgid "Metadata cache created."
-msgstr ""
+msgstr "Metatietovälimuisti luotu."
 
 #: dnf/base.py:397
 #, python-format
 msgid "%s: using metadata from %s."
-msgstr ""
+msgstr "%s: käytetään kohteen %s metatietoja."
 
 #: dnf/base.py:409
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "Ohjelmistolähteiden ohittaminen: %s"
 
 #: dnf/base.py:412
 #, python-format
@@ -198,7 +198,7 @@ msgstr "Suoritetaan transaktiotarkistus"
 
 #: dnf/base.py:829
 msgid "Error: transaction check vs depsolve:"
-msgstr ""
+msgstr "Virhe: transaktion tarkistus vs. depsolve:"
 
 #: dnf/base.py:835
 msgid "Transaction check succeeded."
@@ -214,7 +214,7 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:849
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Transaktion testivirhe:"
 
 #: dnf/base.py:860
 msgid "Transaction test succeeded."
@@ -232,7 +232,8 @@ msgstr "Levyvaatimukset:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "Tiedostojärjestelmässä {1} tarvitaan vähintään {0} Mt enemmän tilaa."
+msgstr[1] "Tiedostojärjestelmässä {1} tarvitaan vähintään {0} Mt enemmän tilaa."
 
 #: dnf/base.py:919
 msgid "Error Summary"
@@ -241,7 +242,7 @@ msgstr "Yhteenveto virheistä"
 #: dnf/base.py:945
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB muutettu {prog}:n ulkopuolella."
 
 #: dnf/base.py:991 dnf/base.py:999
 msgid "Could not run transaction."
@@ -277,7 +278,7 @@ msgstr ""
 
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "Paikallisia paketteja ei voi lisätä, koska transaktiotyö on jo olemassa"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -315,12 +316,12 @@ msgstr "tiedosto %s on poistettu"
 
 #: dnf/base.py:1547
 msgid "No match for group package \"{}\""
-msgstr ""
+msgstr "Ei vastaavaa ryhmäpaketille \"{}\""
 
 #: dnf/base.py:1634
 #, python-format
 msgid "Adding packages from group '%s': %s"
-msgstr ""
+msgstr "Pakettien lisääminen ryhmästä '%s': %s"
 
 #: dnf/base.py:1657 dnf/base.py:1709 dnf/cli/cli.py:218
 #: dnf/cli/commands/__init__.py:451 dnf/cli/commands/__init__.py:508
@@ -358,6 +359,8 @@ msgstr "Tuntematon argumentti: %s"
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
+"Paketti %s alemmasta versiosta on jo asennettu, ei voi taaksepäin päivittää "
+"sitä."
 
 #: dnf/base.py:1958
 #, python-format
@@ -379,7 +382,7 @@ msgstr "Pakettia %s ei ole asennettu, joten sitä ei voi päivittää."
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr ""
+msgstr "%s:n sama tai uudempi versio on jo asennettu, ei voi päivittää sitä."
 
 #: dnf/base.py:2027 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -389,7 +392,7 @@ msgstr "Paketti %s saatavilla, mutta ei asennettu."
 #: dnf/base.py:2033
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr ""
+msgstr "Paketti %s on saatavana, mutta asennettu eri arkkitehtuurille."
 
 #: dnf/base.py:2058 dnf/base.py:2251 dnf/cli/cli.py:667 dnf/cli/cli.py:698
 #, python-format
@@ -400,7 +403,7 @@ msgstr "Pakettia %s ei ole asennettu."
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Ei kelvollinen muoto: %s"
 
 #: dnf/base.py:2092 dnf/cli/commands/__init__.py:690
 #: dnf/cli/commands/remove.py:163
@@ -410,16 +413,18 @@ msgstr "Paketteja ei ole merkitty poistettavaksi."
 #: dnf/base.py:2180 dnf/cli/cli.py:421
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr ""
+msgstr "Argumentin %s paketit saatavilla, mutta ei asennettu."
 
 #: dnf/base.py:2185
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
+"Paketti %s alhaisimmasta versiosta on jo asennettu, ei voi taaksepäin "
+"päivittää sitä."
 
 #: dnf/base.py:2243
 msgid "Action not handled: {}"
-msgstr ""
+msgstr "Toimintaa ei käsitellä: {}"
 
 #: dnf/base.py:2257 dnf/cli/cli.py:418 dnf/cli/cli.py:672 dnf/cli/cli.py:702
 #: dnf/cli/commands/__init__.py:913 dnf/cli/commands/group.py:398
@@ -452,12 +457,12 @@ msgstr ""
 #: dnf/base.py:2323
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". Epäonnistunut paketti on: %s"
 
 #: dnf/base.py:2324
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr ""
+msgstr "GPG-avaimet on määritetty %s:ksi"
 
 #: dnf/base.py:2336
 #, python-format
@@ -507,20 +512,27 @@ msgstr "  * Kenties tarkoitit: {}"
 #: dnf/base.py:2510
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
+"Paikallisen ohjelmistolähteen \"{}\" paketilla \"{}\" on virheellinen "
+"tarkistussumma"
 
 #: dnf/base.py:2513
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
+"Joillakin paikallisen ohjelmistolähteen paketeilla on virheellinen "
+"tarkistussumma"
 
 #: dnf/base.py:2516
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
+"Paketti \"{}\" ohjelmistolähteestä \"{}\" on virheellinen tarkistussumma"
 
 #: dnf/base.py:2519
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Joissakin paketeissa on virheellinen välimuisti, mutta niitä ei voi ladata \""
+"--cacheonly\" -vaihtoehdon takia"
 
 #: dnf/base.py:2537 dnf/base.py:2557
 msgid "No match for argument"
@@ -528,15 +540,16 @@ msgstr "Ei osumaa tälle argumentille"
 
 #: dnf/base.py:2545 dnf/base.py:2565
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Kaikki osumat suodatettiin pois sulkemalla suodatus argumentille"
 
 #: dnf/base.py:2547
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Kaikki osumat suodatettiin modulaarisella suodatuksella argumentille"
 
 #: dnf/base.py:2563
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
+"Kaikki vastaavuudet asennettiin toisesta ohjelmistolähteestä argumentille"
 
 #: dnf/base.py:2579
 #, python-format
@@ -546,17 +559,17 @@ msgstr "Paketti %s on jo asennettu."
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Ympäristömuuttujan odottamaton arvo: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:457
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
-msgstr ""
+msgstr "Tiedoston \"%s\" jäsentäminen epäonnistui: %s"
 
 #: dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr "Ei voi lukea tiedostoa \"%s\": %s"
+msgstr "Tiedostoa \"%s\" ei voi lukea: %s"
 
 #: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:898
 #: dnf/cli/cli.py:902 dnf/cli/commands/alias.py:108
@@ -566,12 +579,12 @@ msgstr "Asetusvirhe: %s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Aliakset sisältävät loputon rekursio"
 
 #: dnf/cli/aliases.py:209
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, käyttämällä alkuperäisiä argumentteja."
 
 #: dnf/cli/cli.py:136
 #, python-format
@@ -588,7 +601,7 @@ msgstr "  Käännettiin : %s ajassa %s"
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
-msgstr ""
+msgstr "Toimenpide johtaisi moduulin '{0}' virrasta '{1}' virtaan '{2}'"
 
 #: dnf/cli/cli.py:171
 #, python-brace-format
@@ -598,11 +611,15 @@ msgid ""
 "the module using '{prog} module reset <module_name>' command. After you "
 "reset the module, you can install the other stream."
 msgstr ""
+"Moduulin sallittuja virtauksia ei voi vaihtaa.\n"
+"On suositeltavaa poistaa koko moduulista asennetun sisällön ja nollata "
+"moduuli komennolla '{prog} module reset < moduulin_nimi>'. Kun olet "
+"nollannut moduulin, voit asentaa toisen virran."
 
 #: dnf/cli/cli.py:209
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} lataa vain transaktion paketit."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -610,6 +627,7 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} lataa vain paketit, asentaa gpg-avaimet ja tarkistaa transaktion."
 
 #: dnf/cli/cli.py:216
 msgid "Operation aborted."
@@ -637,7 +655,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:330
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "Muutoslokit {}:lle"
 
 #: dnf/cli/cli.py:363 dnf/cli/cli.py:504 dnf/cli/cli.py:510
 msgid "Obsoleting Packages"
@@ -645,7 +663,7 @@ msgstr "Vanhentavat paketit"
 
 #: dnf/cli/cli.py:392
 msgid "No packages marked for distribution synchronization."
-msgstr ""
+msgstr "Ei jakelujen synkronointia varten merkittyjä paketteja."
 
 #: dnf/cli/cli.py:427
 msgid "No packages marked for downgrade."
@@ -698,32 +716,34 @@ msgstr "Löytyi useampi kuin yksi transaktiotunnus!"
 #: dnf/cli/cli.py:639
 #, python-format
 msgid "Transaction history is incomplete, before %u."
-msgstr ""
+msgstr "Transaktiohistoria on puutteellinen ennen %u:ta."
 
 #: dnf/cli/cli.py:641
 #, python-format
 msgid "Transaction history is incomplete, after %u."
-msgstr ""
+msgstr "Transaktiohistoria on puutteellinen %u:n jälkeen."
 
 #: dnf/cli/cli.py:688
 msgid "Undoing transaction {}, from {}"
-msgstr ""
+msgstr "Kumotaan transaktio {}, kohteesta: {}"
 
 #: dnf/cli/cli.py:768 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
-msgstr ""
+msgstr "Tuntematon ohjelmistolähde: '%s'"
 
 #: dnf/cli/cli.py:782
 #, python-format
 msgid "No repository match: %s"
-msgstr ""
+msgstr "Ei ohjelmistolähdevastaavuutta: %s"
 
 #: dnf/cli/cli.py:813
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Tämä komento on suoritettava pääkäyttäjän oikeuksilla (käyttäjänä root "
+"useimmissa järjestelmissä)."
 
 #: dnf/cli/cli.py:843
 #, python-format
@@ -736,6 +756,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Se voi olla {PROG}-liitännäiskomento, kokeile: \"{prog} install 'dnf-"
+"command(%s)'\""
 
 #: dnf/cli/cli.py:850
 #, python-brace-format
@@ -743,24 +765,33 @@ msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Se voi olla {prog}-liitännäiskomento, mutta liitännäisten lataaminen on "
+"tällä hetkellä pois käytöstä."
 
 #: dnf/cli/cli.py:908
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir tai --downloaddir on käytettävä yhdessä --downloadonly tai "
+"download tai system-upgrade -komennon kanssa."
 
 #: dnf/cli/cli.py:914
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled ja --disable, --set-disabled on käytettävä config-"
+"manager -komennon kanssa."
 
 #: dnf/cli/cli.py:996
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
+"Varoitus: GPG-allekirjoituksen tarkistuksen vahvistaminen yleisesti "
+"aktiivisen RPM-tietoturvakäytännön mukaisesti (katso tämän viestin "
+"kutistaminen kohdasta dnf.conf (5) 'gpgcheck')"
 
 #: dnf/cli/cli.py:1016
 msgid "Config file \"{}\" does not exist"
@@ -776,7 +807,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:1123 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
-msgstr ""
+msgstr "argumentti {}: ei sallittu argumentin {} kanssa"
 
 #: dnf/cli/cli.py:1130
 #, python-format
@@ -785,29 +816,31 @@ msgstr "Komento ”%s” on jo määritelty"
 
 #: dnf/cli/cli.py:1150
 msgid "Excludes in dnf.conf: "
-msgstr ""
+msgstr "Ei sisällytä dnf.conf:iin: "
 
 #: dnf/cli/cli.py:1153
 msgid "Includes in dnf.conf: "
-msgstr ""
+msgstr "Sisällytä dnf.conf:iin: "
 
 #: dnf/cli/cli.py:1156
 msgid "Excludes in repo "
-msgstr ""
+msgstr "Ei sisällytä ohjelmistolähteeseen "
 
 #: dnf/cli/cli.py:1159
 msgid "Includes in repo "
-msgstr ""
+msgstr "Sisällytä ohjelmistolähteeseen "
 
 #: dnf/cli/commands/__init__.py:47
 #, python-format
 msgid "To diagnose the problem, try running: '%s'."
-msgstr ""
+msgstr "Voit diagnosoida ongelman suorittamalla: '%s'."
 
 #: dnf/cli/commands/__init__.py:49
 #, python-format
 msgid "You probably have corrupted RPMDB, running '%s' might fix the issue."
 msgstr ""
+"Olet todennäköisesti vioittanut RPMDB:n, '%s':n suorittaminen saattaa "
+"korjata ongelman."
 
 #: dnf/cli/commands/__init__.py:53
 #, python-brace-format
@@ -826,11 +859,25 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Olet ottanut pakettien tarkistuksen käyttöön GPG-avaimilla. Tämä on hyvä "
+"asia. Sinulla ei\n"
+"kuitenkaan ole asennettuna julkisia GPG-avaimia. Sinun täytyy ladata avaimet "
+"paketeille,\n"
+"jotka haluat asentaa ja asentaa. Voit tehdä sen suorittamalla komennon:\n"
+"    'rpm --import public.gpg.key'\n"
+"\n"
+"\n"
+"Vaihtoehtoisesti voit määrittää URL:n avaimelle, jota haluat käyttää "
+"ohjelmistolähteelle\n"
+"ohjelmistolähde-osion vaihtoehdossa 'gpgkey' ja {prog} asentaa sinun "
+"puolestasi.\n"
+"\n"
+"Lisätietoja saa jakelu- tai pakettipalveluntarjoajalta."
 
 #: dnf/cli/commands/__init__.py:80
 #, python-format
 msgid "Problem repository: %s"
-msgstr ""
+msgstr "Ohjelmistolähdeongelm: %s"
 
 #: dnf/cli/commands/__init__.py:167
 msgid "display details about a package or group of packages"
@@ -851,16 +898,16 @@ msgstr "näytä vain asennetut paketit"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:758
 msgid "show only extras packages"
-msgstr ""
+msgstr "näytä vain ylimääräiset paketit"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:192
 #: dnf/cli/commands/__init__.py:761 dnf/cli/commands/__init__.py:764
 msgid "show only upgrades packages"
-msgstr ""
+msgstr "näytä vain päivityspaketit"
 
 #: dnf/cli/commands/__init__.py:195 dnf/cli/commands/__init__.py:767
 msgid "show only autoremove packages"
-msgstr ""
+msgstr "näytä vain autoremove -paketit"
 
 #: dnf/cli/commands/__init__.py:198 dnf/cli/commands/__init__.py:770
 msgid "show only recently changed packages"
@@ -875,23 +922,23 @@ msgstr "PAKETTI"
 
 #: dnf/cli/commands/__init__.py:202
 msgid "Package name specification"
-msgstr ""
+msgstr "Paketin nimen määrittely"
 
 #: dnf/cli/commands/__init__.py:230
 msgid "list a package or groups of packages"
-msgstr ""
+msgstr "Luettele paketti tai pakettiryhmät"
 
 #: dnf/cli/commands/__init__.py:244
 msgid "find what package provides the given value"
-msgstr ""
+msgstr "Etsi, mikä paketti antaa annetun arvon"
 
 #: dnf/cli/commands/__init__.py:248
 msgid "PROVIDE"
-msgstr ""
+msgstr "TARJOA"
 
 #: dnf/cli/commands/__init__.py:249
 msgid "Provide specification to search for"
-msgstr ""
+msgstr "Tarjoa määritelmä etsittäväksi"
 
 #: dnf/cli/commands/__init__.py:258 dnf/cli/commands/search.py:159
 msgid "Searching Packages: "
@@ -903,7 +950,7 @@ msgstr "tarkista saatavilla olevat pakettipäivitykset"
 
 #: dnf/cli/commands/__init__.py:273
 msgid "show changelogs before update"
-msgstr ""
+msgstr "näytä muutoslokit ennen päivitystä"
 
 #: dnf/cli/commands/__init__.py:370 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:479
@@ -933,7 +980,7 @@ msgstr "Asennettu paketti %s%s ei saatavilla."
 #: dnf/cli/commands/__init__.py:476 dnf/cli/commands/__init__.py:585
 #: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:675
 msgid "No package installed from the repository."
-msgstr ""
+msgstr "Ohjelmistolähteestä ei ole asennettu pakettia."
 
 #: dnf/cli/commands/__init__.py:539 dnf/cli/commands/reinstall.py:101
 msgid "No packages marked for reinstall."
@@ -945,24 +992,24 @@ msgstr "Paketteja ei ole merkitty päivitettäväksi."
 
 #: dnf/cli/commands/__init__.py:735
 msgid "run commands on top of all packages in given repository"
-msgstr ""
+msgstr "Suorita komennot tietyn ohjelmistolähteen kaikkien pakettien päällä"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "REPOID"
-msgstr ""
+msgstr "LÄHDETUNNUS"
 
 #: dnf/cli/commands/__init__.py:774
 msgid "Repository ID"
-msgstr ""
+msgstr "ohjelmistolähdetunnus"
 
 #: dnf/cli/commands/__init__.py:785 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
 msgid "Package specification"
-msgstr ""
+msgstr "Paketin määrittely"
 
 #: dnf/cli/commands/__init__.py:809
 msgid "display a helpful usage message"
-msgstr "näyttää avuliaan käyttöviestin"
+msgstr "näytä avuliaan käyttöviestin"
 
 #: dnf/cli/commands/__init__.py:813
 msgid "COMMAND"
@@ -971,17 +1018,19 @@ msgstr "KOMENTO"
 #: dnf/cli/commands/__init__.py:814
 #, python-brace-format
 msgid "{prog} command to get help for"
-msgstr ""
+msgstr "{prog}-komento avun saamiseen"
 
 #: dnf/cli/commands/__init__.py:831
 msgid "display, or use, the transaction history"
-msgstr ""
+msgstr "näytä tai käytä transaktiohistoriaa"
 
 #: dnf/cli/commands/__init__.py:859
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
 msgstr ""
+"Löytyi useampi kuin yksi transaktion tunnus.\n"
+"'{}' vaatii yhden transaktion tunnuksen tai paketin nimen."
 
 #: dnf/cli/commands/__init__.py:867
 msgid "No transaction ID or package name given."
@@ -990,7 +1039,7 @@ msgstr "Transaktiotunnusta tai pakettia ei annettu."
 #: dnf/cli/commands/__init__.py:879
 #, python-format
 msgid "You don't have access to the history DB: %s"
-msgstr "Sinulla ei ole historiatietokannan %s käyttöoikeutta"
+msgstr "Sinulla ei ole historiatietokannan käyttöoikeutta: %s"
 
 #: dnf/cli/commands/__init__.py:891
 #, python-format
@@ -998,6 +1047,8 @@ msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
 msgstr ""
+"Transaktiota %s ei voi kumota, se johtaisi epäjohdonmukaiseen "
+"pakettitietokantaan."
 
 #: dnf/cli/commands/__init__.py:896
 #, python-format
@@ -1005,12 +1056,16 @@ msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
 msgstr ""
+"Transaktiota %s ei voi palauttaa, sillä se johtaisi epäjohdonmukaiseen "
+"pakettitietokantaan."
 
 #: dnf/cli/commands/__init__.py:966
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
+"Virheellinen transaktiotunnusalueen määritelmä '{}'.\n"
+"Käytä <transaktiotunnus> .. <transaktiotunnus>."
 
 #: dnf/cli/commands/__init__.py:970
 msgid ""
@@ -1020,27 +1075,27 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:999
 msgid "No transaction which manipulates package '{}' was found."
-msgstr ""
+msgstr "Pakettia {} käsittelevää transaktiota ei löytynyt."
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
-msgstr "Listaa tai luo komentoaliaksia"
+msgstr "Luettele tai luo komentoaliaksia"
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
-msgstr ""
+msgstr "Ota aliasten ratkaiseminen käyttöön"
 
 #: dnf/cli/commands/alias.py:50
 msgid "disable aliases resolving"
-msgstr ""
+msgstr "Poista aliasten ratkaiseminen käytöstä"
 
 #: dnf/cli/commands/alias.py:53
 msgid "action to do with aliases"
-msgstr ""
+msgstr "toimenpide aliaksien kanssa"
 
 #: dnf/cli/commands/alias.py:55
 msgid "alias definition"
-msgstr ""
+msgstr "aliaksen määritelmä"
 
 #: dnf/cli/commands/alias.py:70
 msgid "Aliases are now enabled"
@@ -1091,7 +1146,7 @@ msgstr "Aliasten ratkaiseminen on poistettu käytöstä."
 
 #: dnf/cli/commands/alias.py:166
 msgid "No aliases specified."
-msgstr "Aliaksia ei ole tarkennettu."
+msgstr "Aliaksia ei ole määritetty."
 
 #: dnf/cli/commands/alias.py:173
 msgid "No alias specified."
@@ -1104,7 +1159,7 @@ msgstr "Aliaksia ei ole määritetty."
 #: dnf/cli/commands/alias.py:186
 #, python-format
 msgid "No match for alias: %s"
-msgstr ""
+msgstr "Ei vastaavaa aliakselle: %s"
 
 #: dnf/cli/commands/autoremove.py:41
 msgid ""
@@ -1123,7 +1178,7 @@ msgstr "tarkista packagedb ongelmien varalta"
 
 #: dnf/cli/commands/check.py:40
 msgid "show all problems; default"
-msgstr ""
+msgstr "näytä kaikki ongelmat; oletus"
 
 #: dnf/cli/commands/check.py:43
 msgid "show dependency problems"
@@ -1131,31 +1186,31 @@ msgstr "näytä riippuvuusongelmat"
 
 #: dnf/cli/commands/check.py:46
 msgid "show duplicate problems"
-msgstr ""
+msgstr "näytä päällekkäisiä ongelmia"
 
 #: dnf/cli/commands/check.py:49
 msgid "show obsoleted packages"
-msgstr ""
+msgstr "näytä vanhentuneet paketit"
 
 #: dnf/cli/commands/check.py:52
 msgid "show problems with provides"
-msgstr ""
+msgstr "näytä ongelmia provides:n kanssa"
 
 #: dnf/cli/commands/check.py:97
 msgid "{} has missing requires of {}"
-msgstr ""
+msgstr "{}:lla puuttuu requires {}:ta"
 
 #: dnf/cli/commands/check.py:117
 msgid "{} is a duplicate with {}"
-msgstr ""
+msgstr "{} on kaksoiskappale {}:n kanssa"
 
 #: dnf/cli/commands/check.py:128
 msgid "{} is obsoleted by {}"
-msgstr ""
+msgstr "{} on vanhentanut {}:ta"
 
 #: dnf/cli/commands/check.py:137
 msgid "{} provides {} but it cannot be found"
-msgstr ""
+msgstr "{} tarjoaa {}, mutta sitä ei löydy"
 
 #: dnf/cli/commands/clean.py:68
 #, python-format
@@ -1192,7 +1247,7 @@ msgstr "Odotetaan prosessin prosessitunnisteella (PID) %d valmistuvan."
 
 #: dnf/cli/commands/deplist.py:32
 msgid "List package's dependencies and what packages provide them"
-msgstr "Listaa paketin riippuvuudet ja mitkä paketit tarjoavat ne"
+msgstr "LUettele paketin riippuvuudet ja mitkä paketit tarjoavat ne"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1258,7 +1313,7 @@ msgstr "Saatavilla olevat kieliryhmät:"
 
 #: dnf/cli/commands/group.py:320
 msgid "include optional packages from group"
-msgstr ""
+msgstr "sisältää valinnaiset paketit ryhmästä"
 
 #: dnf/cli/commands/group.py:323
 msgid "show also hidden groups"
@@ -1274,24 +1329,24 @@ msgstr "näytä vain saatavilla olevat ryhmät"
 
 #: dnf/cli/commands/group.py:329
 msgid "show also ID of groups"
-msgstr ""
+msgstr "näytä myös ryhmien tunnus"
 
 #: dnf/cli/commands/group.py:331
 msgid "available subcommands: {} (default), {}"
-msgstr ""
+msgstr "saatavilla olevat alikomennot: {} (oletus), {}"
 
 #: dnf/cli/commands/group.py:335
 msgid "argument for group subcommand"
-msgstr ""
+msgstr "argumentti ryhmän alikomennolle"
 
 #: dnf/cli/commands/group.py:344
 #, python-format
 msgid "Invalid groups sub-command, use: %s."
-msgstr ""
+msgstr "Virheellinen ryhmien alikomento, käytä: %s."
 
 #: dnf/cli/commands/group.py:401
 msgid "Unable to find a mandatory group package."
-msgstr ""
+msgstr "Pakollista ryhmäpakettia ei löydy."
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1313,11 +1368,11 @@ msgstr "Virheellinen rpm-tiedoston polku: %s"
 #: dnf/cli/commands/install.py:167
 #, python-brace-format
 msgid "There are following alternatives for \"{0}\": {1}"
-msgstr ""
+msgstr "Kohteelle \"{0}\"on seuraavia vaihtoehtoja: {1}"
 
 #: dnf/cli/commands/makecache.py:37
 msgid "generate the metadata cache"
-msgstr ""
+msgstr "luo metatietovälimuisti"
 
 #: dnf/cli/commands/makecache.py:48
 msgid "Making cache files for all metadata files."
@@ -1326,6 +1381,7 @@ msgstr "Luodaan välimuistitiedostoja kaikille metadatatiedostoille."
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
 msgstr ""
+"merkitse asennetut paketit tai poista niiden merkinnät käyttäjän asentamina."
 
 #: dnf/cli/commands/mark.py:44
 msgid ""
@@ -1333,21 +1389,24 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"asenna: merkitse käyttäjän asentamaksi\n"
+"poista: poista merkintä käyttäjän asentamana\n"
+"ryhmä: merkitse ryhmän asentamaksi"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
 msgid "%s marked as user installed."
-msgstr ""
+msgstr "%s merkitty käyttäjän asentamaksi."
 
 #: dnf/cli/commands/mark.py:56
 #, python-format
 msgid "%s unmarked as user installed."
-msgstr ""
+msgstr "%s ei ole merkitty käyttäjän asentamaksi."
 
 #: dnf/cli/commands/mark.py:60
 #, python-format
 msgid "%s marked as group installed."
-msgstr ""
+msgstr "%s merkitty ryhmäksi asennettu."
 
 #: dnf/cli/commands/mark.py:85 dnf/cli/commands/shell.py:129
 #: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:279
@@ -1364,86 +1423,88 @@ msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
 msgstr ""
+"Vain moduulin nimeä, virtta, arkkitehtuuria tai profiilia käytetään. "
+"Ohitetaan tarpeettomat tiedot argumentissa: '{}'"
 
 #: dnf/cli/commands/module.py:77
 msgid "list all module streams, profiles and states"
-msgstr ""
+msgstr "luettele kaikki moduulivirrat, profiilit ja tilat"
 
 #: dnf/cli/commands/module.py:105 dnf/cli/commands/module.py:128
 msgid "No matching Modules to list"
-msgstr ""
+msgstr "Ei vastaavia moduuleja lueteltavaa"
 
 #: dnf/cli/commands/module.py:111
 msgid "print detailed information about a module"
-msgstr ""
+msgstr "tulosta yksityiskohtaisia tietoja moduulista"
 
 #: dnf/cli/commands/module.py:133
 msgid "enable a module stream"
-msgstr ""
+msgstr "Ota moduulivirta käyttöön"
 
 #: dnf/cli/commands/module.py:157
 msgid "disable a module with all its streams"
-msgstr ""
+msgstr "Poista moduuli käytöstä kaikkineen virtoineen"
 
 #: dnf/cli/commands/module.py:181
 msgid "reset a module"
-msgstr ""
+msgstr "nollaa moduuli"
 
 #: dnf/cli/commands/module.py:202
 msgid "install a module profile including its packages"
-msgstr ""
+msgstr "asenna moduuliprofiili sisällyttäen sen paketit"
 
 #: dnf/cli/commands/module.py:223
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "päivitä aktiiviseen virtaan liittyvät paketit"
 
 #: dnf/cli/commands/module.py:240
 msgid "remove installed module profiles and their packages"
-msgstr ""
+msgstr "poistaa asennetut moduuliprofiilit ja niiden paketit"
 
 #: dnf/cli/commands/module.py:264
 msgid "Package {} belongs to multiple modules, skipping"
-msgstr ""
+msgstr "Paketti {} kuuluu useisiin moduuleihin, ohitetaan"
 
 #: dnf/cli/commands/module.py:277
 msgid "list modular packages"
-msgstr ""
+msgstr "Luettele modulaariset paketit"
 
 #: dnf/cli/commands/module.py:292
 msgid "list packages belonging to a module"
-msgstr ""
+msgstr "luettele moduuliin kuuluvat paketit"
 
 #: dnf/cli/commands/module.py:327
 msgid "Interact with Modules."
-msgstr ""
+msgstr "Ole vuorovaikutuksessa moduulien kanssa."
 
 #: dnf/cli/commands/module.py:340
 msgid "show only enabled modules"
-msgstr ""
+msgstr "näytä vain käytössä olevat moduulit"
 
 #: dnf/cli/commands/module.py:343
 msgid "show only disabled modules"
-msgstr ""
+msgstr "näytä vain käytöstä poistetut moduulit"
 
 #: dnf/cli/commands/module.py:346
 msgid "show only installed modules or packages"
-msgstr ""
+msgstr "näytä vain asennetut moduulit tai paketit"
 
 #: dnf/cli/commands/module.py:349
 msgid "show profile content"
-msgstr ""
+msgstr "näytä profiilin sisältö"
 
 #: dnf/cli/commands/module.py:354
 msgid "remove all modular packages"
-msgstr ""
+msgstr "poista kaikki modulaariset paketit"
 
 #: dnf/cli/commands/module.py:364
 msgid "Module specification"
-msgstr ""
+msgstr "Moduulin määrittely"
 
 #: dnf/cli/commands/module.py:386
 msgid "{} {} {}: too few arguments"
-msgstr ""
+msgstr "{} {} {}: liian vähän argumentteja"
 
 #: dnf/cli/commands/reinstall.py:38
 msgid "reinstall a package"
@@ -1459,11 +1520,11 @@ msgstr "poista paketti tai paketteja järjestelmästäsi"
 
 #: dnf/cli/commands/remove.py:53
 msgid "remove duplicated packages"
-msgstr ""
+msgstr "Poista kaksoiskappaleina olevat paketit"
 
 #: dnf/cli/commands/remove.py:58
 msgid "remove installonly packages over the limit"
-msgstr ""
+msgstr "poista installonly-paketit rajan yli"
 
 #: dnf/cli/commands/remove.py:95
 msgid "No duplicated packages found for removal."
@@ -1471,7 +1532,7 @@ msgstr "Duplikaattipaketteja ei löytynyt poistettavaksi."
 
 #: dnf/cli/commands/remove.py:127
 msgid "No old installonly packages found for removal."
-msgstr ""
+msgstr "Poistettavaksi ei löytynyt vanhoja installonly-paketteja."
 
 #: dnf/cli/commands/repolist.py:38 dnf/cli/commands/updateinfo.py:47
 #: dnf/cli/commands/updateinfo.py:318 dnf/cli/commands/updateinfo.py:364
@@ -1495,23 +1556,23 @@ msgstr "%s sekunti(a) (viimeksi: %s)"
 
 #: dnf/cli/commands/repolist.py:76
 msgid "display the configured software repositories"
-msgstr ""
+msgstr "näyttää määritetyt ohjelmistolähteet"
 
 #: dnf/cli/commands/repolist.py:83
 msgid "show all repos"
-msgstr ""
+msgstr "näytä kaikki ohjelmistolähteet"
 
 #: dnf/cli/commands/repolist.py:86
 msgid "show enabled repos (default)"
-msgstr ""
+msgstr "näytä käytössä olevat ohjelmistolähteet (oletus)"
 
 #: dnf/cli/commands/repolist.py:89
 msgid "show disabled repos"
-msgstr ""
+msgstr "näytä pois käytöstä ohjelmistolähteet"
 
 #: dnf/cli/commands/repolist.py:93
 msgid "Repository specification"
-msgstr ""
+msgstr "Ohjelmistolähteen määrittely"
 
 #: dnf/cli/commands/repolist.py:125
 msgid "No repositories available"
@@ -1527,81 +1588,81 @@ msgstr "pois käytöstä"
 
 #: dnf/cli/commands/repolist.py:162
 msgid "Repo-id            : "
-msgstr ""
+msgstr "Ohjelmistolähdetunnus            : "
 
 #: dnf/cli/commands/repolist.py:163
 msgid "Repo-name          : "
-msgstr ""
+msgstr "Ohjelmistolähteen nimi          : "
 
 #: dnf/cli/commands/repolist.py:166
 msgid "Repo-status        : "
-msgstr ""
+msgstr "Ohjelmistolähteen tila        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr ""
+msgstr "Ohjelmistolähteen tarkistus      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr ""
+msgstr "Ohjelmistolähteen tagit          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
-msgstr ""
+msgstr "Ohjelmistolähdejakelun tagit "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
-msgstr ""
+msgstr "Ohjelmistolähde-päivitetty       : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr ""
+msgstr "Ohjelmistolähde-pkgs          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Ohjelmistolähde-saatavilla-pkgs: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
-msgstr ""
+msgstr "Ohjelmistolähde-koko          : "
 
 #: dnf/cli/commands/repolist.py:199
 msgid "Repo-metalink      : "
-msgstr ""
+msgstr "Ohjelmistolähde-metalinkki      : "
 
 #: dnf/cli/commands/repolist.py:204
 msgid "  Updated          : "
-msgstr ""
+msgstr "  Päivitetty          : "
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr ""
+msgstr "Ohjelmistolähde-peilit       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr ""
+msgstr "Ohjelmistolähde-alusta-url       : "
 
 #: dnf/cli/commands/repolist.py:219
 msgid "Repo-expire        : "
-msgstr ""
+msgstr "Ohjelmistolähde-mennä-umpeen        : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Ohjelmistolähde-sulkea-pois       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr ""
+msgstr "Ohjelmistolähde-sisältää       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
 msgid "Repo-excluded      : "
-msgstr ""
+msgstr "Ohjelmistolähde-suljettiin-pois      : "
 
 #: dnf/cli/commands/repolist.py:236
 msgid "Repo-filename      : "
-msgstr ""
+msgstr "Ohjelmistolähde-tiedostonimi      : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
@@ -1904,7 +1965,7 @@ msgstr ""
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
-msgstr "etsi paketin tiedoista annettua merkkijonoa"
+msgstr "etsi paketin yksityiskohdista annettua merkkijonoa"
 
 #: dnf/cli/commands/search.py:51
 msgid "search also package description and URL"
@@ -2322,7 +2383,7 @@ msgstr ""
 #: dnf/cli/option_parser.py:118
 #, python-format
 msgid "Setopt argument has no value: %s"
-msgstr ""
+msgstr "Setopt-argumentilla ei ole arvoa: %s"
 
 #. All defaults need to be a None, so we can always tell whether the user
 #. has set something or whether we are getting a default.
@@ -2354,7 +2415,7 @@ msgstr "aseta asennusjuuri"
 
 #: dnf/cli/option_parser.py:190
 msgid "do not install documentations"
-msgstr "älä asenna dokumentaatiota"
+msgstr "älä asenna dokumentaatioita"
 
 #: dnf/cli/option_parser.py:193
 msgid "disable all plugins"
@@ -2550,7 +2611,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:353
 msgid "Force the use of an architecture"
-msgstr "Pakota arkkitehtuurin käyttö"
+msgstr "Pakota jokin arkkitehtuurin käyttö"
 
 #: dnf/cli/option_parser.py:375
 msgid "List of Main Commands:"
@@ -2779,7 +2840,7 @@ msgstr " Valinnaiset ryhmät:"
 
 #: dnf/cli/output.py:865
 msgid "Matched from:"
-msgstr "Vastaavuus :"
+msgstr "Vastaavuus:"
 
 #: dnf/cli/output.py:879
 #, python-format
@@ -3131,7 +3192,7 @@ msgstr "Vanhempi"
 
 #: dnf/cli/output.py:1821 dnf/cli/output.py:1823
 msgid "Transaction ID :"
-msgstr "Transaktiotunnus :"
+msgstr "Transaktiotunnus:"
 
 #: dnf/cli/output.py:1826
 msgid "Begin time     :"
@@ -3383,7 +3444,7 @@ msgstr "Ympäristöä '%s' ei ole asennettu."
 #: dnf/comps.py:638
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "Ympäristötunnus '%s' ei ole saatavilla."
 
 #: dnf/comps.py:666
 #, python-format
@@ -3408,7 +3469,7 @@ msgstr ""
 #: dnf/conf/config.py:355 dnf/conf/config.py:391
 #, python-format
 msgid "Unknown configuration option: %s = %s"
-msgstr ""
+msgstr "Tuntematon määritysvaihtoehto: %s = %s"
 
 #: dnf/conf/config.py:372
 #, python-format
