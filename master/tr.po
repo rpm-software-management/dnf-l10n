@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 09:18-0500\n"
+"POT-Creation-Date: 2020-11-18 09:18-0500\n"
 "PO-Revision-Date: 2020-11-18 18:35+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3599,7 +3599,7 @@ msgstr "'%s' diye bir modül veya grup yok."
 msgid "Environment id '%s' does not exist."
 msgstr "'%s' diye bir ortam kimliği yok."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
+#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "'%s' diye bir ortam kimliği kurulu değil."
@@ -4103,73 +4103,73 @@ msgstr "Beklenmeyen \"{id}\" türü, {exp} bekleniyor."
 msgid "Missing key \"{key}\"."
 msgstr "Eksik anahtar \"{key}\"."
 
-#: dnf/transaction_sr.py:263
+#: dnf/transaction_sr.py:264
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr "Bir RPM'de eksik nesne anahtarı \"{key}\"."
 
-#: dnf/transaction_sr.py:267
+#: dnf/transaction_sr.py:268
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 "RPM NEVRA \"{nevra}\" için beklenmeyen paket sebep değeri \"{reason}\"."
 
-#: dnf/transaction_sr.py:275
+#: dnf/transaction_sr.py:276
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr "Paket için NEVRA ayrıştırılamıyor \"{nevra}\"."
 
-#: dnf/transaction_sr.py:286
+#: dnf/transaction_sr.py:299
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr "RPM NEVRA bulunamıyor \"{nevra}\"."
 
-#: dnf/transaction_sr.py:301
+#: dnf/transaction_sr.py:314
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "\"{action}\" eylemi için \"{na}\" paketi zaten kurulu."
 
-#: dnf/transaction_sr.py:311
+#: dnf/transaction_sr.py:324
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr "\"{action}\" eylemi için paket NEVRA \"{nevra}\" depolarda yok."
 
-#: dnf/transaction_sr.py:322
+#: dnf/transaction_sr.py:335
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr "\"{action}\" eylemi için paket NEVRA \"{nevra}\" kurulu değil."
 
-#: dnf/transaction_sr.py:336
+#: dnf/transaction_sr.py:349
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 "RPM NEVRA \"{nevra}\" için beklenmeyen paket eylem değeri \"{action}\"."
 
-#: dnf/transaction_sr.py:343
+#: dnf/transaction_sr.py:356
 #, python-format
 msgid "Group id '%s' is not available."
 msgstr "'%s' diye bir grup kimliği kullanılabilir değil."
 
-#: dnf/transaction_sr.py:364
+#: dnf/transaction_sr.py:377
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "groups.packages içinde eksik nesne anahtarı \"{key}\"."
 
-#: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
+#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "'%s' diye bir grup kimliği kurulu değil."
 
-#: dnf/transaction_sr.py:398
+#: dnf/transaction_sr.py:411
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "'%s' diye bir ortam kimliği kullanılabilir değil."
 
-#: dnf/transaction_sr.py:422
+#: dnf/transaction_sr.py:435
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4178,34 +4178,34 @@ msgstr ""
 "environments.groups.group_type için geçersiz değer \"{group_type}\", sadece "
 "\"mandatory\" veya \"optional\" desteklenmektedir."
 
-#: dnf/transaction_sr.py:430
+#: dnf/transaction_sr.py:443
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "environments.groups içinde eksik nesne anahtarı \"{key}\"."
 
-#: dnf/transaction_sr.py:508
+#: dnf/transaction_sr.py:521
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "\"{group}\" grubu için beklenmeyen grup eylem değeri \"{action}\"."
 
-#: dnf/transaction_sr.py:513
+#: dnf/transaction_sr.py:526
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Bir grupta eksik nesne anahtarı \"{key}\"."
 
-#: dnf/transaction_sr.py:537
+#: dnf/transaction_sr.py:550
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr "\"{env}\" ortamı için beklenmeyen ortam eylem değeri \"{action}\"."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:555
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Bir ortamda eksik nesne anahtarı \"{key}\"."
 
-#: dnf/transaction_sr.py:581
+#: dnf/transaction_sr.py:594
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-17 09:18-0500\n"
+"POT-Creation-Date: 2020-11-18 09:18-0500\n"
 "PO-Revision-Date: 2020-11-07 11:48+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -3648,7 +3648,7 @@ msgstr "Moduł lub grupa „%s” nie istnieje."
 msgid "Environment id '%s' does not exist."
 msgstr "Identyfikator środowiska „%s” nie istnieje."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:443 dnf/transaction_sr.py:453
+#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "Identyfikator środowiska „%s” nie jest zainstalowany."
@@ -4165,12 +4165,12 @@ msgstr "Nieoczekiwany typ „{id}”, oczekiwano {exp}."
 msgid "Missing key \"{key}\"."
 msgstr "Brak klucza „{key}”."
 
-#: dnf/transaction_sr.py:263
+#: dnf/transaction_sr.py:264
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr "Brak klucza obiektu „{key}” w pakiecie RPM."
 
-#: dnf/transaction_sr.py:267
+#: dnf/transaction_sr.py:268
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
@@ -4178,22 +4178,22 @@ msgstr ""
 "Nieoczekiwana wartość powodu pakietu „{reason}” dla NEVRA pakietu RPM "
 "„{nevra}”."
 
-#: dnf/transaction_sr.py:275
+#: dnf/transaction_sr.py:276
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr "Nie można przetworzyć NEVRA dla pakietu „{nevra}”."
 
-#: dnf/transaction_sr.py:286
+#: dnf/transaction_sr.py:299
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr "Nie można odnaleźć NEVRA pakietu RPM „{nevra}”."
 
-#: dnf/transaction_sr.py:301
+#: dnf/transaction_sr.py:314
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "Pakiet „{na}” jest już zainstalowany dla działania „{action}”."
 
-#: dnf/transaction_sr.py:311
+#: dnf/transaction_sr.py:324
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
@@ -4202,13 +4202,13 @@ msgstr ""
 "NEVRA pakietu „{nevra}” jest niedostępna w repozytoriach dla działania "
 "„{action}”."
 
-#: dnf/transaction_sr.py:322
+#: dnf/transaction_sr.py:335
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
 "NEVRA pakietu „{nevra}” nie jest zainstalowana dla działania „{action}”."
 
-#: dnf/transaction_sr.py:336
+#: dnf/transaction_sr.py:349
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
@@ -4216,27 +4216,27 @@ msgstr ""
 "Nieoczekiwana wartość działania pakietu „{action}” dla NEVRA pakietu "
 "„{nevra}”."
 
-#: dnf/transaction_sr.py:343
+#: dnf/transaction_sr.py:356
 #, python-format
 msgid "Group id '%s' is not available."
 msgstr "Identyfikator grupy „%s” jest niedostępny."
 
-#: dnf/transaction_sr.py:364
+#: dnf/transaction_sr.py:377
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "Brak klucza obiektu „{key}” w „groups.packages”."
 
-#: dnf/transaction_sr.py:377 dnf/transaction_sr.py:387
+#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Identyfiaktor grupy „%s” nie jest zainstalowany."
 
-#: dnf/transaction_sr.py:398
+#: dnf/transaction_sr.py:411
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "Identyfikator środowiska „%s” jest niedostępny."
 
-#: dnf/transaction_sr.py:422
+#: dnf/transaction_sr.py:435
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4245,22 +4245,22 @@ msgstr ""
 "Nieprawidłowa wartość „{group_type}” dla „environments.groups.group_type”, "
 "obsługiwane są tylko wartości „mandatory” lub „optional”."
 
-#: dnf/transaction_sr.py:430
+#: dnf/transaction_sr.py:443
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Brak klucza obiektu „{key}” w „environments.groups”."
 
-#: dnf/transaction_sr.py:508
+#: dnf/transaction_sr.py:521
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "Nieoczekiwana wartość działania grupy „{action}” dla grupy „{group}”."
 
-#: dnf/transaction_sr.py:513
+#: dnf/transaction_sr.py:526
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Brak klucza obiektu „{key}” w grupie."
 
-#: dnf/transaction_sr.py:537
+#: dnf/transaction_sr.py:550
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4268,12 +4268,12 @@ msgid ""
 msgstr ""
 "Nieoczekiwana wartość działania środowiska „{action}” dla środowiska „{env}”."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:555
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Brak klucza obiektu „{key}” w środowisku."
 
-#: dnf/transaction_sr.py:581
+#: dnf/transaction_sr.py:594
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
