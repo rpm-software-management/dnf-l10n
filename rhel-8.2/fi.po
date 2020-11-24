@@ -12,13 +12,14 @@
 # Jari Korva <jpkorva@iki.fi>, 2019. #zanata, 2020.
 # Marek Blaha <mblaha@redhat.com>, 2020.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2020.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-11-17 15:35+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2020-11-25 17:35+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/fi/>\n"
 "Language: fi\n"
@@ -85,7 +86,7 @@ msgstr "Käynnistettiin dnf-automatic."
 #: ../dnf/automatic/main.py:235
 #, python-format
 msgid "Sleep for %s seconds"
-msgstr ""
+msgstr "Odota %s sekuntia"
 
 #: ../dnf/automatic/main.py:266 ../dnf/cli/main.py:57
 #, python-format
@@ -1543,10 +1544,12 @@ msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr ""
+"Kysely kaikista paketeista (lyhennys komennolle repoquery '*' tai repoquery "
+"ilman argumenttia)"
 
 #: ../dnf/cli/commands/repoquery.py:123
 msgid "Query all versions of packages (default)"
-msgstr ""
+msgstr "Kysy pakettien kaikki versiot (oletus)"
 
 #: ../dnf/cli/commands/repoquery.py:126
 msgid "show only results from this ARCH"
@@ -1554,63 +1557,68 @@ msgstr "näytä hakutulokset vain tälle arkkitehtuurille"
 
 #: ../dnf/cli/commands/repoquery.py:128
 msgid "show only results that owns FILE"
-msgstr ""
+msgstr "Näytä vain tulokset, jotka omistavat TIEDOSTON"
 
 #: ../dnf/cli/commands/repoquery.py:130
 msgid "show only results that conflict REQ"
-msgstr ""
+msgstr "Näytä vain VAATIMUKSEN kanssa ristiriidassa olevat tulokset"
 
 #: ../dnf/cli/commands/repoquery.py:132
 msgid ""
 "shows results that requires, suggests, supplements, enhances,or recommends "
 "package provides and files REQ"
 msgstr ""
+"näyttää tulokset, jotka edellyttävät, ehdottavat, täydentävät, parantavat "
+"tai suosittelevat pakettitarjontaa ja PYYDETTYJÄ tiedostoja"
 
 #: ../dnf/cli/commands/repoquery.py:135
 msgid "show only results that obsolete REQ"
-msgstr ""
+msgstr "näytä vain tulokset, jotka vanhentavat VAATIMUKSEN"
 
 #: ../dnf/cli/commands/repoquery.py:137
 msgid "show only results that provide REQ"
-msgstr ""
+msgstr "näytä vain tulokset, jotka antavat VAATIMUKSET"
 
 #: ../dnf/cli/commands/repoquery.py:139
 msgid "shows results that requires package provides and files REQ"
-msgstr ""
+msgstr "näyttää tulokset, jotka vaativat paketin ja joissa on PYYDETTY tiedosto"
 
 #: ../dnf/cli/commands/repoquery.py:141
 msgid "show only results that recommend REQ"
-msgstr ""
+msgstr "näytä vain tulokset, jotka suosittelevat VAATIMUKSEN"
 
 #: ../dnf/cli/commands/repoquery.py:143
 msgid "show only results that enhance REQ"
-msgstr ""
+msgstr "näytä vain tulokset, jotka parantavat VAATIMUKSEN"
 
 #: ../dnf/cli/commands/repoquery.py:145
 msgid "show only results that suggest REQ"
-msgstr ""
+msgstr "näytä vain tulokset jotka suosittelevat VAATIMUKSEN"
 
 #: ../dnf/cli/commands/repoquery.py:147
 msgid "show only results that supplement REQ"
-msgstr ""
+msgstr "näytä vain tulokset, jotka täydentävät VAATIMUKSEN"
 
 #: ../dnf/cli/commands/repoquery.py:150
 msgid "check non-explicit dependencies (files and Provides); default"
-msgstr ""
+msgstr "tarkista epätäsmälliset riippuvuudet (tiedostot ja Antavat); oletus"
 
 #: ../dnf/cli/commands/repoquery.py:152
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr ""
+"tarkista riippuvuudet täsmälleen annetulla tavalla, vastakohta on --alldeps"
 
 #: ../dnf/cli/commands/repoquery.py:154
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
+"käytetään --whatrequires, ja --requires --resolve kanssa, kysele paketteja "
+"rekursiivisesti."
 
 #: ../dnf/cli/commands/repoquery.py:156
 msgid "show a list of all dependencies and what packages provide them"
-msgstr ""
+msgstr "näytä luettelo kaikista riippuvuuksista ja mitkä paketit tarjoavat ne"
 
 #: ../dnf/cli/commands/repoquery.py:158
 msgid "show available tags to use with --queryformat"
