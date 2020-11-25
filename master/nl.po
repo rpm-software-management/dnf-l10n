@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-20 09:18-0500\n"
+"POT-Creation-Date: 2020-11-25 09:18-0500\n"
 "PO-Revision-Date: 2020-11-08 13:35+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -114,68 +114,68 @@ msgstr "het laden van repo '{}' is mislukt: {}"
 msgid "Loading repository '{}' has failed"
 msgstr "Het laden van repository '{}' is mislukt"
 
-#: dnf/base.py:320
+#: dnf/base.py:322
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr "Metadatatimercaching uitgeschakeld bij gedoseerde verbinding."
 
-#: dnf/base.py:325
+#: dnf/base.py:327
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr "Metadatatimercaching uitgeschakeld bij batterijgebruik."
 
-#: dnf/base.py:330
+#: dnf/base.py:332
 msgid "Metadata timer caching disabled."
 msgstr "Metadatatimercaching uitgeschakeld."
 
-#: dnf/base.py:335
+#: dnf/base.py:337
 msgid "Metadata cache refreshed recently."
 msgstr "Metadatacache pas nog ververst."
 
-#: dnf/base.py:341 dnf/cli/commands/__init__.py:91
+#: dnf/base.py:343 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Er zijn geen ingeschakelde repositories in \"{}\"."
 
-#: dnf/base.py:348
+#: dnf/base.py:350
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
 msgstr "%s: zal nooit verlopen zijn en zal niet ververst worden."
 
-#: dnf/base.py:350
+#: dnf/base.py:352
 #, python-format
 msgid "%s: has expired and will be refreshed."
 msgstr "%s: is verlopen en zal ververst worden."
 
 #. expires within the checking period:
-#: dnf/base.py:354
+#: dnf/base.py:356
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
 msgstr "%s: metadata zal verlopen over %d seconden en zal nu ververst worden"
 
-#: dnf/base.py:358
+#: dnf/base.py:360
 #, python-format
 msgid "%s: will expire after %d seconds."
 msgstr "%s: zal verlopen over %d seconden."
 
 #. performs the md sync
-#: dnf/base.py:364
+#: dnf/base.py:366
 msgid "Metadata cache created."
 msgstr "Metadatacache aangemaakt."
 
-#: dnf/base.py:397
+#: dnf/base.py:399
 #, python-format
 msgid "%s: using metadata from %s."
 msgstr "%s: metadata gebruikend van %s."
 
-#: dnf/base.py:409
+#: dnf/base.py:411
 #, python-format
 msgid "Ignoring repositories: %s"
 msgstr "Repositories negeren: %s"
 
-#: dnf/base.py:412
+#: dnf/base.py:414
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
 msgstr "Laatste metadata-expiratie-check: %s geleden op %s."
 
-#: dnf/base.py:443
+#: dnf/base.py:445
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
@@ -183,97 +183,97 @@ msgstr ""
 "De gedownloade pakketten zijn in de cache opgeslagen tot de volgende "
 "sucessvolle transactie."
 
-#: dnf/base.py:445
+#: dnf/base.py:447
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
 msgstr "Je kan pakketten in de cache verwijderen met het uitvoeren van '%s'."
 
-#: dnf/base.py:537
+#: dnf/base.py:539
 #, python-format
 msgid "Invalid tsflag in config file: %s"
 msgstr "Ongeldige tsflag in configbestand: %s"
 
-#: dnf/base.py:593
+#: dnf/base.py:595
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "Groepbestand voor repository %s - %s toevoegen mislukt"
 
-#: dnf/base.py:825
+#: dnf/base.py:827
 msgid "Running transaction check"
 msgstr "Uitvoeren transactiecontrole"
 
-#: dnf/base.py:833
+#: dnf/base.py:835
 msgid "Error: transaction check vs depsolve:"
 msgstr "Fout: transactiecontrole vs oplossen afhankelijkheden:"
 
-#: dnf/base.py:839
+#: dnf/base.py:841
 msgid "Transaction check succeeded."
 msgstr "Transactiecontrole ok."
 
-#: dnf/base.py:842
+#: dnf/base.py:844
 msgid "Running transaction test"
 msgstr "Uitvoeren transactietest"
 
-#: dnf/base.py:852 dnf/base.py:994
+#: dnf/base.py:854 dnf/base.py:996
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:853
+#: dnf/base.py:855
 msgid "Transaction test error:"
 msgstr "Transactietest fout:"
 
-#: dnf/base.py:864
+#: dnf/base.py:866
 msgid "Transaction test succeeded."
 msgstr "Transactietest ok."
 
-#: dnf/base.py:885
+#: dnf/base.py:887
 msgid "Running transaction"
 msgstr "Uitvoeren transactie"
 
-#: dnf/base.py:913
+#: dnf/base.py:915
 msgid "Disk Requirements:"
 msgstr "Schijfvereisten:"
 
-#: dnf/base.py:916
+#: dnf/base.py:918
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] "Ten minste {0}MB meer nodig op bestandssysteem {1}."
 msgstr[1] "Ten minste {0}MB meer nodig op bestandssysteem {1}."
 
-#: dnf/base.py:923
+#: dnf/base.py:925
 msgid "Error Summary"
 msgstr "Samenvatting van fouten"
 
-#: dnf/base.py:949
+#: dnf/base.py:951
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB is buiten {prog} gewijzigd."
 
-#: dnf/base.py:995 dnf/base.py:1003
+#: dnf/base.py:997 dnf/base.py:1005
 msgid "Could not run transaction."
 msgstr "Kon transactie niet uitvoeren."
 
-#: dnf/base.py:998
+#: dnf/base.py:1000
 msgid "Transaction couldn't start:"
 msgstr "Transactie kon niet starten:"
 
-#: dnf/base.py:1012
+#: dnf/base.py:1014
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Verwijderen van transactiebestand %s mislukt"
 
-#: dnf/base.py:1094
+#: dnf/base.py:1096
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Sommige pakketten zijn niet gedownload. Opnieuw proberen.."
 
-#: dnf/base.py:1124
+#: dnf/base.py:1126
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr ""
 "Delta-RPMs brachten %.1f MB aan updates terug tot %.1f MB (scheelt %d.1%%)"
 
-#: dnf/base.py:1127
+#: dnf/base.py:1129
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
@@ -281,75 +281,75 @@ msgstr ""
 "Mislukte Delta RPM's verhoogden %.1f MB updates naar %.1f MB (%d.1%% "
 "verspild)"
 
-#: dnf/base.py:1169
+#: dnf/base.py:1171
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Kan geen lokale pakketten toevoegen omdat transactietaak al bestaat"
 
-#: dnf/base.py:1183
+#: dnf/base.py:1185
 msgid "Could not open: {}"
 msgstr "Kon niet openen: {}"
 
-#: dnf/base.py:1221
+#: dnf/base.py:1223
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "Publieke sleutel voor %s is niet geïnstalleerd"
 
-#: dnf/base.py:1225
+#: dnf/base.py:1227
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Er deed zich een probleem voor tijdens het openen van pakket %s"
 
-#: dnf/base.py:1233
+#: dnf/base.py:1235
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "Publieke sleutel voor %s is niet vertrouwd"
 
-#: dnf/base.py:1237
+#: dnf/base.py:1239
 #, python-format
 msgid "Package %s is not signed"
 msgstr "Publieke sleutel voor %s is niet getekend"
 
-#: dnf/base.py:1267
+#: dnf/base.py:1269
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Kan %s niet verwijderen"
 
-#: dnf/base.py:1271
+#: dnf/base.py:1273
 #, python-format
 msgid "%s removed"
 msgstr "%s verwijderd"
 
-#: dnf/base.py:1551
+#: dnf/base.py:1553
 msgid "No match for group package \"{}\""
 msgstr "Geen match voor groeppakket \"{}\""
 
-#: dnf/base.py:1637
+#: dnf/base.py:1639
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Pakketten van groep '%s' toevoegen: %s"
 
-#: dnf/base.py:1660 dnf/cli/cli.py:220 dnf/cli/commands/__init__.py:442
+#: dnf/base.py:1662 dnf/cli/cli.py:220 dnf/cli/commands/__init__.py:442
 #: dnf/cli/commands/__init__.py:499 dnf/cli/commands/__init__.py:592
 #: dnf/cli/commands/__init__.py:641 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Niets te doen."
 
-#: dnf/base.py:1678
+#: dnf/base.py:1680
 msgid "No groups marked for removal."
 msgstr "Geen pakketten voor verwijdering aangemerkt."
 
-#: dnf/base.py:1712
+#: dnf/base.py:1714
 msgid "No group marked for upgrade."
 msgstr "Geen pakketten voor upgrade aangemerkt."
 
-#: dnf/base.py:1927
+#: dnf/base.py:1928
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet downgraden."
 
-#: dnf/base.py:1929 dnf/base.py:1948 dnf/base.py:1961 dnf/base.py:1982
-#: dnf/base.py:2031 dnf/base.py:2039 dnf/base.py:2174 dnf/cli/cli.py:412
+#: dnf/base.py:1930 dnf/base.py:1949 dnf/base.py:1962 dnf/base.py:1983
+#: dnf/base.py:2032 dnf/base.py:2040 dnf/base.py:2174 dnf/cli/cli.py:412
 #: dnf/cli/commands/__init__.py:425 dnf/cli/commands/__init__.py:482
 #: dnf/cli/commands/__init__.py:586 dnf/cli/commands/__init__.py:633
 #: dnf/cli/commands/__init__.py:711 dnf/cli/commands/install.py:147
@@ -359,30 +359,30 @@ msgstr "Pakket %s is niet geïnstalleerd, kan het niet downgraden."
 msgid "No match for argument: %s"
 msgstr "Geen match voor argument: %s"
 
-#: dnf/base.py:1936
+#: dnf/base.py:1937
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "Pakket %s met lagere versie is al geïnstalleerd, kan het niet downgraden."
 
-#: dnf/base.py:1959
+#: dnf/base.py:1960
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet herinstalleren."
 
-#: dnf/base.py:1974
+#: dnf/base.py:1975
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 "Bestand %s is een broncode-pakket en kan niet worden geupdate, wordt "
 "genegeerd."
 
-#: dnf/base.py:1980
+#: dnf/base.py:1981
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet updaten."
 
-#: dnf/base.py:1989
+#: dnf/base.py:1990
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -390,30 +390,30 @@ msgstr ""
 "Dezelfde of een nieuwere versie van %s is al geïnstalleerd, kan het niet "
 "bijwerken."
 
-#: dnf/base.py:2028 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2029 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Pakket %s is beschikbaar, maar niet geïnstalleerd."
 
-#: dnf/base.py:2034
+#: dnf/base.py:2035
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "Pakket %s is beschikbaar, maar geïnstalleerd voor een andere architectuur."
 
-#: dnf/base.py:2059 dnf/base.py:2252 dnf/cli/cli.py:669 dnf/cli/cli.py:700
+#: dnf/base.py:2060 dnf/base.py:2252 dnf/cli/cli.py:669 dnf/cli/cli.py:700
 #, python-format
 msgid "No package %s installed."
 msgstr "Pakket %s is niet geïnstalleerd."
 
-#: dnf/base.py:2077 dnf/cli/commands/install.py:136
+#: dnf/base.py:2078 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Geen geldig formulier: %s"
 
 #: dnf/base.py:2093 dnf/cli/commands/__init__.py:681
-#: dnf/cli/commands/remove.py:163
+#: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Geen pakketten aangemerkt om te verwijderen."
 
@@ -433,7 +433,7 @@ msgid "Action not handled: {}"
 msgstr "Actie niet afgehandeld: {}"
 
 #: dnf/base.py:2258 dnf/cli/cli.py:420 dnf/cli/cli.py:674 dnf/cli/cli.py:704
-#: dnf/cli/commands/group.py:400 dnf/cli/commands/history.py:168
+#: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "Pakket %s niet beschikbaar."
@@ -1229,78 +1229,78 @@ msgstr "groepinformatie tonen of gebruiken"
 msgid "No group data available for configured repositories."
 msgstr "Geen groepdata beschikbaar voor ingestelde repositories."
 
-#: dnf/cli/commands/group.py:129
+#: dnf/cli/commands/group.py:126
 #, python-format
 msgid "Warning: Group %s does not exist."
 msgstr "Waarschuwing: Groep %s bestaat niet."
 
-#: dnf/cli/commands/group.py:170
+#: dnf/cli/commands/group.py:167
 msgid "Warning: No groups match:"
 msgstr "Waarschuwing: Geen groep komt overeen:"
 
-#: dnf/cli/commands/group.py:182 dnf/cli/commands/group.py:193
+#: dnf/cli/commands/group.py:179 dnf/cli/commands/group.py:190
 #: dnf/cli/output.py:1226
 msgid "<name-unset>"
 msgstr "<name-unset>"
 
-#: dnf/cli/commands/group.py:199
+#: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
 msgstr "Beschikbare omgevingsgroepen:"
 
-#: dnf/cli/commands/group.py:201
+#: dnf/cli/commands/group.py:198
 msgid "Installed Environment Groups:"
 msgstr "Geïnstalleerde omgevingsgroepen:"
 
-#: dnf/cli/commands/group.py:208 dnf/cli/commands/group.py:294
+#: dnf/cli/commands/group.py:205 dnf/cli/commands/group.py:291
 msgid "Installed Groups:"
 msgstr "Geïnstalleerde groepen:"
 
-#: dnf/cli/commands/group.py:215 dnf/cli/commands/group.py:301
+#: dnf/cli/commands/group.py:212 dnf/cli/commands/group.py:298
 msgid "Installed Language Groups:"
 msgstr "Geïnstalleerde taalgroepen:"
 
-#: dnf/cli/commands/group.py:225 dnf/cli/commands/group.py:308
+#: dnf/cli/commands/group.py:222 dnf/cli/commands/group.py:305
 msgid "Available Groups:"
 msgstr "Beschikbare groepen:"
 
-#: dnf/cli/commands/group.py:232 dnf/cli/commands/group.py:315
+#: dnf/cli/commands/group.py:229 dnf/cli/commands/group.py:312
 msgid "Available Language Groups:"
 msgstr "Beschikbare taalgroepen:"
 
-#: dnf/cli/commands/group.py:322
+#: dnf/cli/commands/group.py:319
 msgid "include optional packages from group"
 msgstr "inclusief optionele pakketten uit groep"
 
-#: dnf/cli/commands/group.py:325
+#: dnf/cli/commands/group.py:322
 msgid "show also hidden groups"
 msgstr "Toon ook verborgen groepen"
 
-#: dnf/cli/commands/group.py:327
+#: dnf/cli/commands/group.py:324
 msgid "show only installed groups"
 msgstr "toon alleen geinstalleerde groepen"
 
-#: dnf/cli/commands/group.py:329
+#: dnf/cli/commands/group.py:326
 msgid "show only available groups"
 msgstr "toon alleen beschikbare groepen"
 
-#: dnf/cli/commands/group.py:331
+#: dnf/cli/commands/group.py:328
 msgid "show also ID of groups"
 msgstr "toon ook ID van groepen"
 
-#: dnf/cli/commands/group.py:333
+#: dnf/cli/commands/group.py:330
 msgid "available subcommands: {} (default), {}"
 msgstr "beschikbare sub-commandos: {} (default), {}"
 
-#: dnf/cli/commands/group.py:337
+#: dnf/cli/commands/group.py:334
 msgid "argument for group subcommand"
 msgstr "argument voor groep sub-commando"
 
-#: dnf/cli/commands/group.py:346
+#: dnf/cli/commands/group.py:343
 #, python-format
 msgid "Invalid groups sub-command, use: %s."
 msgstr "Ongeldige groep-subopdracht, gebruik: %s."
 
-#: dnf/cli/commands/group.py:403
+#: dnf/cli/commands/group.py:398
 msgid "Unable to find a mandatory group package."
 msgstr "Kan geen verplicht groeppakket vinden."
 
@@ -1401,28 +1401,28 @@ msgstr ""
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Er werd geen transactie gevonden welke package '{}' bewerkt."
 
-#: dnf/cli/commands/history.py:297
+#: dnf/cli/commands/history.py:295
 #, python-brace-format
 msgid "Transaction ID \"{id}\" not found."
 msgstr "Transactie ID \"{id}\" niet gevonden."
 
-#: dnf/cli/commands/history.py:305
+#: dnf/cli/commands/history.py:303
 msgid "{} exists, overwrite?"
 msgstr "{} bestaat, overschrijven?"
 
-#: dnf/cli/commands/history.py:308
+#: dnf/cli/commands/history.py:306
 msgid "Not overwriting {}, exiting."
 msgstr "{} niet overschrijven, afsluiten."
 
-#: dnf/cli/commands/history.py:315
+#: dnf/cli/commands/history.py:313
 msgid "Transaction saved to {}."
 msgstr "Transactie opgeslagen naar {}."
 
-#: dnf/cli/commands/history.py:318
+#: dnf/cli/commands/history.py:316
 msgid "Error storing transaction: {}"
 msgstr "Fout tijdens het opslaan van transactie: {}"
 
-#: dnf/cli/commands/history.py:342
+#: dnf/cli/commands/history.py:340
 msgid ""
 "Warning, the following problems occurred while replaying the transaction:"
 msgstr ""
@@ -1446,7 +1446,7 @@ msgstr "Kan geen match vinden"
 msgid "Not a valid rpm file path: %s"
 msgstr "Geen geldig rpm pad: %s"
 
-#: dnf/cli/commands/install.py:167
+#: dnf/cli/commands/install.py:166
 #, python-brace-format
 msgid "There are following alternatives for \"{0}\": {1}"
 msgstr "Er zijn de volgende alternatieven voor \"{0}\": {1}"
@@ -1490,7 +1490,7 @@ msgid "%s marked as group installed."
 msgstr "%s aangemerkt als geïnstalleerd."
 
 #: dnf/cli/commands/mark.py:85 dnf/cli/commands/shell.py:129
-#: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:279
+#: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:282
 msgid "Error:"
 msgstr "Fout:"
 
@@ -2264,16 +2264,16 @@ msgstr ""
 "run                      los de transactie set op en voer uit\n"
 "exit (or quit)           verlaat de shell"
 
-#: dnf/cli/commands/shell.py:259
+#: dnf/cli/commands/shell.py:262
 #, python-format
 msgid "Error: Cannot open %s for reading"
 msgstr "Fout: Kan %s niet openen om te lezen"
 
-#: dnf/cli/commands/shell.py:281 dnf/cli/main.py:187
+#: dnf/cli/commands/shell.py:284 dnf/cli/main.py:187
 msgid "Complete!"
 msgstr "Klaar!"
 
-#: dnf/cli/commands/shell.py:291
+#: dnf/cli/commands/shell.py:294
 msgid "Leaving Shell"
 msgstr "Shell wordt verlaten"
 
@@ -3824,7 +3824,7 @@ msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Modulair afhankelijkheidsprobleem met Standaardwaarden:"
 msgstr[1] "Modulaire afhankelijkheidsproblemen met Standaardwaaeden:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:686
+#: dnf/exceptions.py:131 dnf/module/module_base.py:690
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Modulair afhankelijkheid probleem:"
@@ -3882,8 +3882,8 @@ msgstr ""
 "\n"
 "Hint: [d]standaard, [e]aangezet, [x]uitgezet, [i]geïnstalleerd, [a]ctief"
 
-#: dnf/module/module_base.py:54 dnf/module/module_base.py:421
-#: dnf/module/module_base.py:477 dnf/module/module_base.py:543
+#: dnf/module/module_base.py:54 dnf/module/module_base.py:425
+#: dnf/module/module_base.py:481 dnf/module/module_base.py:547
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Onnodig profiel wordt genegeerd: '{}/{}'"
 
@@ -3927,40 +3927,40 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr ""
 "Het installeren van module van de Fail-Safe repository is niet toegestaan"
 
-#: dnf/module/module_base.py:159 dnf/module/module_base.py:193
-#: dnf/module/module_base.py:337 dnf/module/module_base.py:355
-#: dnf/module/module_base.py:363 dnf/module/module_base.py:417
-#: dnf/module/module_base.py:473 dnf/module/module_base.py:539
+#: dnf/module/module_base.py:160 dnf/module/module_base.py:197
+#: dnf/module/module_base.py:341 dnf/module/module_base.py:359
+#: dnf/module/module_base.py:367 dnf/module/module_base.py:421
+#: dnf/module/module_base.py:477 dnf/module/module_base.py:543
 msgid "Unable to resolve argument {}"
 msgstr "Kan argument {} niet oplossen"
 
-#: dnf/module/module_base.py:160
+#: dnf/module/module_base.py:161
 msgid "No match for package {}"
 msgstr "Geen match voor pakket {}"
 
-#: dnf/module/module_base.py:204
+#: dnf/module/module_base.py:208
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
 "Het upgraden van module '{0}' van de Fail-Safe repository {1} is niet "
 "toegestaan"
 
-#: dnf/module/module_base.py:223 dnf/module/module_base.py:251
+#: dnf/module/module_base.py:227 dnf/module/module_base.py:255
 msgid "Unable to match profile in argument {}"
 msgstr "Kan profiel in argument {} niet matchen"
 
-#: dnf/module/module_base.py:231
+#: dnf/module/module_base.py:235
 msgid "Upgrading module from Fail-Safe repository is not allowed"
 msgstr "Het upgraden van module van de Fail-Safe repository is niet toegestaan"
 
-#: dnf/module/module_base.py:367
+#: dnf/module/module_base.py:371
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
 "Alleen modulenaam is vereist. Onnodige informatie in argument '{}' wordt "
 "genegeerd"
 
-#: dnf/package.py:298
+#: dnf/package.py:301
 #, python-format
 msgid "%s: %s check failed: %s vs %s"
 msgstr "%s: %s check mislukte: %s vs %s"
