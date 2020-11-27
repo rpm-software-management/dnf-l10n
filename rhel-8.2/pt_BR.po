@@ -23,13 +23,15 @@
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
 # Gustavo Costa <gusta@null.net>, 2020.
+# Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-11-27 19:35+0000\n"
-"Last-Translator: Gustavo Costa <gusta@null.net>\n"
+"PO-Revision-Date: 2020-11-29 03:08+0000\n"
+"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
+"roberto97@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-rhel-82/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -216,10 +218,8 @@ msgid "Running transaction test"
 msgstr "Executando teste de transação"
 
 #: ../dnf/base.py:856
-#, fuzzy
-#| msgid "Transaction check succeeded."
 msgid "Transaction check error:"
-msgstr "Verificação de transação completa."
+msgstr "Erro no teste de transação:"
 
 #: ../dnf/base.py:863
 msgid "Transaction test succeeded."
@@ -395,12 +395,11 @@ msgid "Package %s not installed, cannot update it."
 msgstr "O pacote %s não está instalado, não é possível atualizá-lo."
 
 #: ../dnf/base.py:1955
-#, fuzzy, python-format
-#| msgid "Package %s of lower version already installed, cannot downgrade it."
+#, python-format
 msgid "Package %s of higher version already installed, cannot update it."
 msgstr ""
-"O pacote %s de versão mais antiga já foi instalado, não é possível fazer "
-"downgrade."
+"O pacote %s de versão mais recente já foi instalado, não é possível "
+"atualizar."
 
 #: ../dnf/base.py:1995 ../dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -597,12 +596,14 @@ msgstr "  Construídos    : %s em %s"
 
 #: ../dnf/cli/cli.py:192
 msgid "DNF will only download packages for the transaction."
-msgstr ""
+msgstr "DNF fará o download apenas dos pacotes para a transação."
 
 #: ../dnf/cli/cli.py:194
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
 msgstr ""
+"DNF só fará o download de pacotes, instalará chaves gpg e verificará a "
+"transação."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
