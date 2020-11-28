@@ -22,21 +22,22 @@
 # Giovanni Grieco <giovanni.grc96@gmail.com>, 2018. #zanata
 # Ludek Janda <ljanda@redhat.com>, 2018. #zanata
 # Enrico Bella <enric@e.email>, 2020.
+# Alessio <alciregi@posteo.net>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-07-10 16:27+0000\n"
-"Last-Translator: Enrico Bella <enric@e.email>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/it/>\n"
+"PO-Revision-Date: 2020-11-29 03:08+0000\n"
+"Last-Translator: Alessio <alciregi@posteo.net>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -562,12 +563,12 @@ msgstr ""
 #: ../dnf/base.py:2480
 #, python-format
 msgid "Package %s is already installed."
-msgstr ""
+msgstr "Il pacchetto %s è già installato."
 
 #: ../dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Valore inaspettato per la variabile d'ambiente: DNF_DISABLE_ALIASES=%s"
 
 #: ../dnf/cli/aliases.py:105 ../dnf/conf/config.py:412 ../dnf/conf/read.py:83
 #, python-format
@@ -577,7 +578,7 @@ msgstr "File di analisi \"%s\"fallito: %s"
 #: ../dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "Impossibile leggere il file \"%s\": %s"
 
 #: ../dnf/cli/aliases.py:115 ../dnf/cli/aliases.py:128 ../dnf/cli/cli.py:877
 #: ../dnf/cli/cli.py:881 ../dnf/cli/commands/alias.py:105
@@ -586,13 +587,14 @@ msgid "Config error: %s"
 msgstr "Errore di configurazione: %s"
 
 #: ../dnf/cli/aliases.py:185
+#, fuzzy
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Gli alias contengono una ricorsione infinita"
 
 #: ../dnf/cli/aliases.py:203
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, utilizzo degli argomenti originali."
 
 #: ../dnf/cli/cli.py:136
 #, python-format
@@ -1318,11 +1320,13 @@ msgid "Package %s is not installed."
 msgstr "Il pacchetto %s non è installato."
 
 #: ../dnf/cli/commands/module.py:36
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"L'operazione finirebbe con lo scambio dello stream '{1}' del modulo '{0}' "
+"con lo stream '{2}'"
 
 #: ../dnf/cli/commands/module.py:79 ../dnf/cli/commands/module.py:101
 msgid "No matching Modules to list"
