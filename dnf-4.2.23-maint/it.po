@@ -28,16 +28,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2020-05-06 16:40+0000\n"
-"Last-Translator: Enrico Bella <enric@e.email>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/it/>\n"
+"PO-Revision-Date: 2020-11-29 03:08+0000\n"
+"Last-Translator: Alessio <alciregi@posteo.net>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-dnf-4223-maint/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.0.3\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #: dnf/automatic/emitter.py:31
 #, python-format
@@ -254,7 +254,7 @@ msgstr "Riepilogo errori"
 #: dnf/base.py:945
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB è stato modificato al di fuori di {prog}."
 
 #: dnf/base.py:991 dnf/base.py:999
 msgid "Could not run transaction."
@@ -291,6 +291,7 @@ msgstr ""
 #: dnf/base.py:1165
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
+"Non posso aggiungere i pacchetti locali perché una transazione è gia in corso"
 
 #: dnf/base.py:1179
 msgid "Could not open: {}"
@@ -560,26 +561,29 @@ msgid "No match for argument"
 msgstr "Nessuna corrispondenza per l'argomento"
 
 #: dnf/base.py:2545 dnf/base.py:2565
+#, fuzzy
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Tutte le occorrenze sono state omesse da un filtro di esclusione"
 
 #: dnf/base.py:2547
+#, fuzzy
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Tutte le occorrenze sono state omesse da un filtro modulare"
 
 #: dnf/base.py:2563
+#, fuzzy
 msgid "All matches were installed from a different repository for argument"
-msgstr ""
+msgstr "Tutte le occorrenze sono state installate da un repository differente"
 
 #: dnf/base.py:2579
 #, python-format
 msgid "Package %s is already installed."
-msgstr ""
+msgstr "Il pacchetto %s è già installato."
 
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Valore inaspettato per la variabile d'ambiente: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:457
 #, python-format
@@ -589,7 +593,7 @@ msgstr "File di analisi \"%s\"fallito: %s"
 #: dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "Impossibile leggere il file \"%s\": %s"
 
 #: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:898
 #: dnf/cli/cli.py:902 dnf/cli/commands/alias.py:108
@@ -598,13 +602,14 @@ msgid "Config error: %s"
 msgstr "Errore di configurazione: %s"
 
 #: dnf/cli/aliases.py:191
+#, fuzzy
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Gli alias contengono una ricorsione infinita"
 
 #: dnf/cli/aliases.py:209
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, utilizzo degli argomenti originali."
 
 #: dnf/cli/cli.py:136
 #, python-format
@@ -617,11 +622,13 @@ msgid "  Built    : %s at %s"
 msgstr "  Build    : %s il %s"
 
 #: dnf/cli/cli.py:146
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"L'operazione finirebbe con lo scambio dello stream '{1}' del modulo '{0}' "
+"con lo stream '{2}'"
 
 #: dnf/cli/cli.py:171
 #, python-brace-format
@@ -635,7 +642,7 @@ msgstr ""
 #: dnf/cli/cli.py:209
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} scaricherà solo i pacchetti per la transazione."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
