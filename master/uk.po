@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 09:18-0500\n"
+"POT-Creation-Date: 2020-12-02 09:18-0500\n"
 "PO-Revision-Date: 2020-11-08 13:35+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -913,7 +913,7 @@ msgid "show all packages (default)"
 msgstr "показати усі пакунки (типова поведінка)"
 
 #: dnf/cli/commands/__init__.py:171 dnf/cli/commands/__init__.py:743
-#: dnf/cli/commands/module.py:351
+#: dnf/cli/commands/module.py:373
 msgid "show only available packages"
 msgstr "показати лише доступні пакунки"
 
@@ -1558,42 +1558,46 @@ msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Пакунок {} належить до декількох модулів, пропускаємо"
 
 #: dnf/cli/commands/module.py:277
+msgid "switch a module to a stream and distrosync rpm packages"
+msgstr ""
+
+#: dnf/cli/commands/module.py:299
 msgid "list modular packages"
 msgstr "вивести список модулярних пакунків"
 
-#: dnf/cli/commands/module.py:292
+#: dnf/cli/commands/module.py:314
 msgid "list packages belonging to a module"
 msgstr "вивести список пакунків, які належать модулю"
 
-#: dnf/cli/commands/module.py:327
+#: dnf/cli/commands/module.py:349
 msgid "Interact with Modules."
 msgstr "Взаємодія із модулями."
 
-#: dnf/cli/commands/module.py:340
+#: dnf/cli/commands/module.py:362
 msgid "show only enabled modules"
 msgstr "показати лише увімкнені модулі"
 
-#: dnf/cli/commands/module.py:343
+#: dnf/cli/commands/module.py:365
 msgid "show only disabled modules"
 msgstr "показати лише вимкнені модулі"
 
-#: dnf/cli/commands/module.py:346
+#: dnf/cli/commands/module.py:368
 msgid "show only installed modules or packages"
 msgstr "показати лише встановлені модулі або пакунки"
 
-#: dnf/cli/commands/module.py:349
+#: dnf/cli/commands/module.py:371
 msgid "show profile content"
 msgstr "показати вміст профілю"
 
-#: dnf/cli/commands/module.py:354
+#: dnf/cli/commands/module.py:376
 msgid "remove all modular packages"
 msgstr "вилучити лише модульні пакунки"
 
-#: dnf/cli/commands/module.py:364
+#: dnf/cli/commands/module.py:386
 msgid "Module specification"
 msgstr "Специфікація модуля"
 
-#: dnf/cli/commands/module.py:386
+#: dnf/cli/commands/module.py:408
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: замало аргументів"
 
@@ -3833,7 +3837,7 @@ msgstr[0] "Проблеми із залежностями модулів з Defa
 msgstr[1] "Проблеми із залежностями модулів з Defaults:"
 msgstr[2] "Проблеми із залежностями модулів з Defaults:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:690
+#: dnf/exceptions.py:131 dnf/module/module_base.py:841
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Проблеми із залежностями модулів:"
@@ -3893,8 +3897,8 @@ msgstr ""
 "Підказка: [d]-типове, [e]-увімкнено, [x]-вимкнено, [i]-встановлено, [a]-"
 "активне"
 
-#: dnf/module/module_base.py:54 dnf/module/module_base.py:425
-#: dnf/module/module_base.py:481 dnf/module/module_base.py:547
+#: dnf/module/module_base.py:54 dnf/module/module_base.py:547
+#: dnf/module/module_base.py:603 dnf/module/module_base.py:669
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Ігноруємо непотрібний профіль: «{}/{}»"
 
@@ -3903,19 +3907,19 @@ msgstr "Ігноруємо непотрібний профіль: «{}/{}»"
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr "Усі відповідники аргументу «{0}» у модулі '{1}:{2}' є неактивними"
 
-#: dnf/module/module_base.py:92
+#: dnf/module/module_base.py:92 dnf/module/module_base.py:202
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Встановлення модуля «{0}» з безпечного сховища {1} заборонено"
 
-#: dnf/module/module_base.py:102
+#: dnf/module/module_base.py:102 dnf/module/module_base.py:212
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
 "Не вдалося знайти відповідного профілю для аргументу {}. Доступні профілі "
 "для «{}:{}»: {}"
 
-#: dnf/module/module_base.py:106
+#: dnf/module/module_base.py:106 dnf/module/module_base.py:216
 msgid "Unable to match profile for argument {}"
 msgstr "Не вдалося знайти відповідного профілю для аргументу {}"
 
@@ -3931,40 +3935,56 @@ msgstr "Немає профілів для модуля {}:{}"
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Типовий профіль {} є недоступним у модулі {}:{}"
 
-#: dnf/module/module_base.py:142
+#: dnf/module/module_base.py:142 dnf/module/module_base.py:245
 msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Встановлення модуля з безпечного сховища заборонено"
 
-#: dnf/module/module_base.py:160 dnf/module/module_base.py:197
-#: dnf/module/module_base.py:341 dnf/module/module_base.py:359
-#: dnf/module/module_base.py:367 dnf/module/module_base.py:421
-#: dnf/module/module_base.py:477 dnf/module/module_base.py:543
+#: dnf/module/module_base.py:194
+#, fuzzy, python-brace-format
+#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+msgid "No active matches for argument '{0}' in module '{1}:{2}'"
+msgstr "Усі відповідники аргументу «{0}» у модулі '{1}:{2}' є неактивними"
+
+#: dnf/module/module_base.py:226
+#, fuzzy, python-brace-format
+#| msgid "Default profile {} not available in module {}:{}"
+msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
+msgstr "Типовий профіль {} є недоступним у модулі {}:{}"
+
+#: dnf/module/module_base.py:265
+msgid "No packages available to distrosync for package name '{}'"
+msgstr ""
+
+#: dnf/module/module_base.py:308 dnf/module/module_base.py:452
+#: dnf/module/module_base.py:477 dnf/module/module_base.py:496
+#: dnf/module/module_base.py:543 dnf/module/module_base.py:599
+#: dnf/module/module_base.py:665 dnf/module/module_base.py:827
 msgid "Unable to resolve argument {}"
 msgstr "Не вдалося обробити аргумент {}"
 
-#: dnf/module/module_base.py:161
-msgid "No match for package {}"
-msgstr "Немає відповідника для пакунка {}"
-
-#: dnf/module/module_base.py:208
+#: dnf/module/module_base.py:319
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Оновлення модуля «{0}» з безпечного сховища {1} заборонено"
 
-#: dnf/module/module_base.py:227 dnf/module/module_base.py:255
+#: dnf/module/module_base.py:338 dnf/module/module_base.py:366
 msgid "Unable to match profile in argument {}"
 msgstr "Не вдалося знайти відповідник профілю у аргументі {}"
 
-#: dnf/module/module_base.py:235
+#: dnf/module/module_base.py:346
 msgid "Upgrading module from Fail-Safe repository is not allowed"
 msgstr "Оновлення модуля з безпечного сховища заборонено"
 
-#: dnf/module/module_base.py:371
+#: dnf/module/module_base.py:500
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
 "Достатньо вказати лише назву модуля. Ігноруємо непотрібні відомості у "
 "аргументі: «{}»"
+
+#: dnf/module/module_base.py:828
+msgid "No match for package {}"
+msgstr "Немає відповідника для пакунка {}"
 
 #: dnf/package.py:301
 #, python-format

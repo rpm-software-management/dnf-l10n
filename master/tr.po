@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-01 09:18-0500\n"
+"POT-Creation-Date: 2020-12-02 09:18-0500\n"
 "PO-Revision-Date: 2020-11-18 18:35+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -888,7 +888,7 @@ msgid "show all packages (default)"
 msgstr "tüm paketleri göster (öntanımlı)"
 
 #: dnf/cli/commands/__init__.py:171 dnf/cli/commands/__init__.py:743
-#: dnf/cli/commands/module.py:351
+#: dnf/cli/commands/module.py:373
 msgid "show only available packages"
 msgstr "sadece kullanılabilir paketleri göster"
 
@@ -1529,42 +1529,46 @@ msgid "Package {} belongs to multiple modules, skipping"
 msgstr "{} paketi birden fazla modüle ait, atlanıyor"
 
 #: dnf/cli/commands/module.py:277
+msgid "switch a module to a stream and distrosync rpm packages"
+msgstr ""
+
+#: dnf/cli/commands/module.py:299
 msgid "list modular packages"
 msgstr "modüler paketleri listele"
 
-#: dnf/cli/commands/module.py:292
+#: dnf/cli/commands/module.py:314
 msgid "list packages belonging to a module"
 msgstr "bir modüle ait paketleri listele"
 
-#: dnf/cli/commands/module.py:327
+#: dnf/cli/commands/module.py:349
 msgid "Interact with Modules."
 msgstr "Modüller ile etkileşime geçin."
 
-#: dnf/cli/commands/module.py:340
+#: dnf/cli/commands/module.py:362
 msgid "show only enabled modules"
 msgstr "sadece etkin modülleri göster"
 
-#: dnf/cli/commands/module.py:343
+#: dnf/cli/commands/module.py:365
 msgid "show only disabled modules"
 msgstr "sadece devre dışı bırakılmış modülleri göster"
 
-#: dnf/cli/commands/module.py:346
+#: dnf/cli/commands/module.py:368
 msgid "show only installed modules or packages"
 msgstr "sadece kurulu modülleri veya paketleri göster"
 
-#: dnf/cli/commands/module.py:349
+#: dnf/cli/commands/module.py:371
 msgid "show profile content"
 msgstr "profil içeriğini göster"
 
-#: dnf/cli/commands/module.py:354
+#: dnf/cli/commands/module.py:376
 msgid "remove all modular packages"
 msgstr "tüm modüler paketleri kaldır"
 
-#: dnf/cli/commands/module.py:364
+#: dnf/cli/commands/module.py:386
 msgid "Module specification"
 msgstr "Modül belirtimi"
 
-#: dnf/cli/commands/module.py:386
+#: dnf/cli/commands/module.py:408
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: yeterli argüman yok"
 
@@ -3800,7 +3804,7 @@ msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Öntanımlı değerlerle modüler bağımlılık sorunu:"
 msgstr[1] "Öntanımlı değerlerle modüler bağımlılık sorunları:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:690
+#: dnf/exceptions.py:131 dnf/module/module_base.py:841
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Modüler bağımlılık sorunu:"
@@ -3857,8 +3861,8 @@ msgstr ""
 "\n"
 "İpucu: [d] öntanımlı, [e] etkin, [x] devre dışı, [i] kurulu, [a] aktif"
 
-#: dnf/module/module_base.py:54 dnf/module/module_base.py:425
-#: dnf/module/module_base.py:481 dnf/module/module_base.py:547
+#: dnf/module/module_base.py:54 dnf/module/module_base.py:547
+#: dnf/module/module_base.py:603 dnf/module/module_base.py:669
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Gereksiz profil yok sayılıyor: '{}/{}'"
 
@@ -3867,19 +3871,19 @@ msgstr "Gereksiz profil yok sayılıyor: '{}/{}'"
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr "'{0}' argümanı için '{1}:{2}' modülündeki tüm eşleşmeler aktif değil"
 
-#: dnf/module/module_base.py:92
+#: dnf/module/module_base.py:92 dnf/module/module_base.py:202
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "'{0}' modülünün {1} Fail-Safe deposundan kurulmasına izin verilmiyor"
 
-#: dnf/module/module_base.py:102
+#: dnf/module/module_base.py:102 dnf/module/module_base.py:212
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
 "{} argümanı için eşleşen profil yok. '{}:{}' için kullanılabilir profiller: "
 "{}"
 
-#: dnf/module/module_base.py:106
+#: dnf/module/module_base.py:106 dnf/module/module_base.py:216
 msgid "Unable to match profile for argument {}"
 msgstr "{} argümanı için eşleşen profil yok"
 
@@ -3895,41 +3899,57 @@ msgstr "{}:{} modülü için profil yok"
 msgid "Default profile {} not available in module {}:{}"
 msgstr "{} öntanımlı profili, {}:{} modülünde kullanılabilir değil"
 
-#: dnf/module/module_base.py:142
+#: dnf/module/module_base.py:142 dnf/module/module_base.py:245
 msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Fail-Safe deposundan modül kurulmasına izin verilmiyor"
 
-#: dnf/module/module_base.py:160 dnf/module/module_base.py:197
-#: dnf/module/module_base.py:341 dnf/module/module_base.py:359
-#: dnf/module/module_base.py:367 dnf/module/module_base.py:421
-#: dnf/module/module_base.py:477 dnf/module/module_base.py:543
+#: dnf/module/module_base.py:194
+#, fuzzy, python-brace-format
+#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+msgid "No active matches for argument '{0}' in module '{1}:{2}'"
+msgstr "'{0}' argümanı için '{1}:{2}' modülündeki tüm eşleşmeler aktif değil"
+
+#: dnf/module/module_base.py:226
+#, fuzzy, python-brace-format
+#| msgid "Default profile {} not available in module {}:{}"
+msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
+msgstr "{} öntanımlı profili, {}:{} modülünde kullanılabilir değil"
+
+#: dnf/module/module_base.py:265
+msgid "No packages available to distrosync for package name '{}'"
+msgstr ""
+
+#: dnf/module/module_base.py:308 dnf/module/module_base.py:452
+#: dnf/module/module_base.py:477 dnf/module/module_base.py:496
+#: dnf/module/module_base.py:543 dnf/module/module_base.py:599
+#: dnf/module/module_base.py:665 dnf/module/module_base.py:827
 msgid "Unable to resolve argument {}"
 msgstr "{} argümanı çözümlenemedi"
 
-#: dnf/module/module_base.py:161
-msgid "No match for package {}"
-msgstr "{} paketi için eşleşme yok"
-
-#: dnf/module/module_base.py:208
+#: dnf/module/module_base.py:319
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
 "'{0}' modülünün {1} Fail-Safe deposundan yükseltilmesine izin verilmiyor"
 
-#: dnf/module/module_base.py:227 dnf/module/module_base.py:255
+#: dnf/module/module_base.py:338 dnf/module/module_base.py:366
 msgid "Unable to match profile in argument {}"
 msgstr "{} argümanındaki profil için eşleşme bulunamadı"
 
-#: dnf/module/module_base.py:235
+#: dnf/module/module_base.py:346
 msgid "Upgrading module from Fail-Safe repository is not allowed"
 msgstr "Fail-Safe deposundan modül yükseltilmesine izin verilmiyor"
 
-#: dnf/module/module_base.py:371
+#: dnf/module/module_base.py:500
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
 "Yalnızca modül adı gereklidir. Argümandaki gereksiz bilgiler yok sayılıyor: "
 "'{}'"
+
+#: dnf/module/module_base.py:828
+msgid "No match for package {}"
+msgstr "{} paketi için eşleşme yok"
 
 #: dnf/package.py:301
 #, python-format
