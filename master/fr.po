@@ -19,21 +19,22 @@
 # Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2019. #zanata, 2020.
 # Julien Humbert <julroy67@gmail.com>, 2020.
 # Karim ALI ABDELMAKSOU ABDELHAMID <contact@maksoud-karim.net>, 2020.
+# Arnaud T. <listes.00@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-03 09:18-0500\n"
-"PO-Revision-Date: 2020-10-17 20:15+0000\n"
-"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"PO-Revision-Date: 2020-12-07 23:35+0000\n"
+"Last-Translator: Arnaud T. <listes.00@gmail.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -103,11 +104,9 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic démarré."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Mise en sommeil pendant %s secondes"
+msgstr[0] "Mise en sommeil pendant %s seconde"
 msgstr[1] "Mise en sommeil pendant %s secondes"
 
 #: dnf/automatic/main.py:315
@@ -783,7 +782,7 @@ msgstr "L’historique des transactions est incomplet, après %u."
 
 #: dnf/cli/cli.py:690
 msgid "Undoing transaction {}, from {}"
-msgstr "Révocation de lla transaction {}, de {}"
+msgstr "Révocation de la transaction {}, de {}"
 
 #: dnf/cli/cli.py:770 dnf/cli/commands/shell.py:237
 #, python-format
@@ -3973,8 +3972,8 @@ msgstr "Profil inutile ignoré : {}/{}"
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr ""
-"Toutes les correspondance pour le paramètre « {0} » dans le mode module "
-"« {1}:{2} » ne sont pas actives"
+"Toutes les correspondances pour le paramètre « {0} » dans le mode module « "
+"{1}:{2} » ne sont pas actives"
 
 #: dnf/module/module_base.py:92 dnf/module/module_base.py:202
 #, python-brace-format
@@ -4015,14 +4014,16 @@ msgstr "L’installation du module à partir du dépôt Fail-Safe n’est pas pe
 #| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
-"Toutes les correspondance pour le paramètre « {0} » dans le mode module "
-"« {1}:{2} » ne sont pas actives"
+"Pas de correspondance active pour le paramètre « {0} » dans le module « "
+"{1}:{2} »"
 
 #: dnf/module/module_base.py:226
 #, fuzzy, python-brace-format
 #| msgid "Default profile {} not available in module {}:{}"
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Le profil par défaut {} n’est pas disponible dans le module {} : {}"
+msgstr ""
+"Le profil installé « {0} » n’est pas disponible dans le module « {1} » flux «"
+" {2} »"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
