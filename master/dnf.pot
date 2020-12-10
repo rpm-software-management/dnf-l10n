@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-09 09:18-0500\n"
+"POT-Creation-Date: 2020-12-10 09:18-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -3608,7 +3608,7 @@ msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:841
+#: dnf/exceptions.py:131 dnf/module/module_base.py:850
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] ""
@@ -3642,100 +3642,147 @@ msgstr ""
 msgid "No profile specified for '{}', please specify profile."
 msgstr ""
 
-#: dnf/module/module_base.py:33
+#: dnf/module/exceptions.py:27
+msgid "No such module: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:33
+msgid "No such stream: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:39
+msgid "No enabled stream for module: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:46
+msgid "Cannot enable more streams from module '{}' at the same time"
+msgstr ""
+
+#: dnf/module/exceptions.py:52
+msgid "Different stream enabled for module: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:58
+msgid "No such profile: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:64
+msgid "Specified profile not installed for {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:70
+msgid "No stream specified for '{}', please specify stream"
+msgstr ""
+
+#: dnf/module/exceptions.py:82
+msgid "No such profile: {}. No profiles available"
+msgstr ""
+
+#: dnf/module/exceptions.py:88
+msgid "No profile to remove for '{}'"
+msgstr ""
+
+#: dnf/module/module_base.py:35
 msgid ""
 "\n"
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 msgstr ""
 
-#: dnf/module/module_base.py:34
+#: dnf/module/module_base.py:36
 msgid ""
 "\n"
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 msgstr ""
 
-#: dnf/module/module_base.py:54 dnf/module/module_base.py:547
-#: dnf/module/module_base.py:603 dnf/module/module_base.py:669
+#: dnf/module/module_base.py:56 dnf/module/module_base.py:556
+#: dnf/module/module_base.py:612 dnf/module/module_base.py:678
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr ""
 
-#: dnf/module/module_base.py:84
+#: dnf/module/module_base.py:86
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr ""
 
-#: dnf/module/module_base.py:92 dnf/module/module_base.py:202
+#: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
 
-#: dnf/module/module_base.py:102 dnf/module/module_base.py:212
+#: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
 
-#: dnf/module/module_base.py:106 dnf/module/module_base.py:216
+#: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
 msgstr ""
 
-#: dnf/module/module_base.py:118
+#: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
 
-#: dnf/module/module_base.py:122
+#: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
 msgstr ""
 
-#: dnf/module/module_base.py:129
+#: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
 msgstr ""
 
-#: dnf/module/module_base.py:142 dnf/module/module_base.py:245
+#: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr ""
 
-#: dnf/module/module_base.py:194
+#: dnf/module/module_base.py:196
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
 
-#: dnf/module/module_base.py:226
+#: dnf/module/module_base.py:228
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr ""
 
-#: dnf/module/module_base.py:265
+#: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
 
-#: dnf/module/module_base.py:308 dnf/module/module_base.py:452
-#: dnf/module/module_base.py:477 dnf/module/module_base.py:496
-#: dnf/module/module_base.py:543 dnf/module/module_base.py:599
-#: dnf/module/module_base.py:665 dnf/module/module_base.py:827
+#: dnf/module/module_base.py:310 dnf/module/module_base.py:461
+#: dnf/module/module_base.py:486 dnf/module/module_base.py:505
+#: dnf/module/module_base.py:552 dnf/module/module_base.py:608
+#: dnf/module/module_base.py:674 dnf/module/module_base.py:836
 msgid "Unable to resolve argument {}"
 msgstr ""
 
-#: dnf/module/module_base.py:319
+#: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
 
-#: dnf/module/module_base.py:338 dnf/module/module_base.py:366
+#: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
 msgstr ""
 
-#: dnf/module/module_base.py:346
+#: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
 msgstr ""
 
-#: dnf/module/module_base.py:500
+#: dnf/module/module_base.py:422
+#, python-brace-format
+msgid ""
+"Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
+"'{module}', but non of the streams are enabled or default"
+msgstr ""
+
+#: dnf/module/module_base.py:509
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
 
-#: dnf/module/module_base.py:828
+#: dnf/module/module_base.py:837
 msgid "No match for package {}"
 msgstr ""
 
