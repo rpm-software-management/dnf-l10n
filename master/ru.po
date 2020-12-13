@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-09 09:18-0500\n"
+"POT-Creation-Date: 2020-12-13 09:18-0500\n"
 "PO-Revision-Date: 2020-10-17 20:15+0000\n"
 "Last-Translator: Vitaliy Bukatkin <vitaliy.bukatkin@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -118,7 +118,7 @@ msgstr "Система отключена."
 msgid "Error: %s"
 msgstr "Ошибка: %s"
 
-#: dnf/base.py:146
+#: dnf/base.py:146 dnf/base.py:472 dnf/base.py:474
 msgid "loading repo '{}' failure: {}"
 msgstr "при загрузке репозитория «{}» произошел сбой: {}"
 
@@ -174,12 +174,12 @@ msgstr "%s: истекает через %d секунд."
 msgid "Metadata cache created."
 msgstr "Создан кэш метаданных."
 
-#: dnf/base.py:399
+#: dnf/base.py:399 dnf/base.py:466
 #, python-format
 msgid "%s: using metadata from %s."
 msgstr "%s: используются метаданные из %s."
 
-#: dnf/base.py:411
+#: dnf/base.py:411 dnf/base.py:479
 #, python-format
 msgid "Ignoring repositories: %s"
 msgstr "Игнорируется репозиториев: %s"
@@ -189,65 +189,65 @@ msgstr "Игнорируется репозиториев: %s"
 msgid "Last metadata expiration check: %s ago on %s."
 msgstr "Последняя проверка окончания срока действия метаданных: %s назад, %s."
 
-#: dnf/base.py:445
+#: dnf/base.py:507
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
 "Загруженные пакеты были сохранены в кэше до следующей успешной транзакции."
 
-#: dnf/base.py:447
+#: dnf/base.py:509
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
 msgstr "Вы можете удалить кэшированные пакеты, выполнив «%s»."
 
-#: dnf/base.py:539
+#: dnf/base.py:601
 #, python-format
 msgid "Invalid tsflag in config file: %s"
 msgstr "Неверный tsflag в файле настроек: %s"
 
-#: dnf/base.py:595
+#: dnf/base.py:657
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "Ошибка добавления файла групп для репозитория: %s — %s"
 
-#: dnf/base.py:827
+#: dnf/base.py:889
 msgid "Running transaction check"
 msgstr "Проверка транзакции"
 
-#: dnf/base.py:835
+#: dnf/base.py:897
 msgid "Error: transaction check vs depsolve:"
 msgstr "Ошибка: проверка транзакции на разрешение зависимостей:"
 
-#: dnf/base.py:841
+#: dnf/base.py:903
 msgid "Transaction check succeeded."
 msgstr "Проверка транзакции успешно завершена."
 
-#: dnf/base.py:844
+#: dnf/base.py:906
 msgid "Running transaction test"
 msgstr "Идет проверка транзакции"
 
-#: dnf/base.py:854 dnf/base.py:996
+#: dnf/base.py:916 dnf/base.py:1058
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:855
+#: dnf/base.py:917
 msgid "Transaction test error:"
 msgstr "Ошибка при проверке транзакции:"
 
-#: dnf/base.py:866
+#: dnf/base.py:928
 msgid "Transaction test succeeded."
 msgstr "Тест транзакции проведен успешно."
 
-#: dnf/base.py:887
+#: dnf/base.py:949
 msgid "Running transaction"
 msgstr "Выполнение транзакции"
 
-#: dnf/base.py:915
+#: dnf/base.py:977
 msgid "Disk Requirements:"
 msgstr "Требования к диску:"
 
-#: dnf/base.py:918
+#: dnf/base.py:980
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
@@ -255,38 +255,38 @@ msgstr[0] "По меньшей мере необходимо еще {0} МБ м�
 msgstr[1] "По меньшей мере необходимо еще {0} МБ места в файловой системе {1}."
 msgstr[2] "По меньшей мере необходимо еще {0} МБ места в файловой системе {1}."
 
-#: dnf/base.py:925
+#: dnf/base.py:987
 msgid "Error Summary"
 msgstr "Сводка ошибок"
 
-#: dnf/base.py:951
+#: dnf/base.py:1013
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB изменена вне {prog}."
 
-#: dnf/base.py:997 dnf/base.py:1005
+#: dnf/base.py:1059 dnf/base.py:1067
 msgid "Could not run transaction."
 msgstr "Не удалось запустить транзакцию."
 
-#: dnf/base.py:1000
+#: dnf/base.py:1062
 msgid "Transaction couldn't start:"
 msgstr "Не удалось начать транзакцию:"
 
-#: dnf/base.py:1014
+#: dnf/base.py:1076
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Не удалось удалить файл транзакции %s"
 
-#: dnf/base.py:1096
+#: dnf/base.py:1158
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Некоторые пакеты не были загружены. Повторная попытка."
 
-#: dnf/base.py:1126
+#: dnf/base.py:1188
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%d.1%% сохранено)"
 
-#: dnf/base.py:1129
+#: dnf/base.py:1191
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
@@ -294,77 +294,77 @@ msgstr ""
 "Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%d.1%% "
 "потрачено)"
 
-#: dnf/base.py:1171
+#: dnf/base.py:1233
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "Не удается добавить локальные пакеты, поскольку задание, связанное с "
 "транзакцией, уже существует"
 
-#: dnf/base.py:1185
+#: dnf/base.py:1247
 msgid "Could not open: {}"
 msgstr "Не удалось открыть: {}"
 
-#: dnf/base.py:1223
+#: dnf/base.py:1285
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "Публичный ключ для %s не установлен"
 
-#: dnf/base.py:1227
+#: dnf/base.py:1289
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Проблема открытия пакета %s"
 
-#: dnf/base.py:1235
+#: dnf/base.py:1297
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "Публичный ключ для %s не заслуживает доверия"
 
-#: dnf/base.py:1239
+#: dnf/base.py:1301
 #, python-format
 msgid "Package %s is not signed"
 msgstr "Пакет %s не подписан"
 
-#: dnf/base.py:1269
+#: dnf/base.py:1331
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Не удается удалить %s"
 
-#: dnf/base.py:1273
+#: dnf/base.py:1335
 #, python-format
 msgid "%s removed"
 msgstr "%s удален(ы)"
 
-#: dnf/base.py:1553
+#: dnf/base.py:1615
 msgid "No match for group package \"{}\""
 msgstr "Нет соответствия для группового пакета «{}»"
 
-#: dnf/base.py:1639
+#: dnf/base.py:1701
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Добавление пакетов из группы «%s»: %s"
 
-#: dnf/base.py:1662 dnf/cli/cli.py:220 dnf/cli/commands/__init__.py:442
+#: dnf/base.py:1724 dnf/cli/cli.py:220 dnf/cli/commands/__init__.py:442
 #: dnf/cli/commands/__init__.py:499 dnf/cli/commands/__init__.py:592
 #: dnf/cli/commands/__init__.py:641 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Отсутствуют действия для выполнения."
 
-#: dnf/base.py:1680
+#: dnf/base.py:1742
 msgid "No groups marked for removal."
 msgstr "Нет групп, помеченных для удаления."
 
-#: dnf/base.py:1714
+#: dnf/base.py:1776
 msgid "No group marked for upgrade."
 msgstr "Не отмечена группа для обновления."
 
-#: dnf/base.py:1928
+#: dnf/base.py:1990
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Пакет %s не установлен, нельзя произвести откат версии."
 
-#: dnf/base.py:1930 dnf/base.py:1949 dnf/base.py:1962 dnf/base.py:1983
-#: dnf/base.py:2032 dnf/base.py:2040 dnf/base.py:2174 dnf/cli/cli.py:412
+#: dnf/base.py:1992 dnf/base.py:2011 dnf/base.py:2024 dnf/base.py:2045
+#: dnf/base.py:2094 dnf/base.py:2102 dnf/base.py:2236 dnf/cli/cli.py:412
 #: dnf/cli/commands/__init__.py:425 dnf/cli/commands/__init__.py:482
 #: dnf/cli/commands/__init__.py:586 dnf/cli/commands/__init__.py:633
 #: dnf/cli/commands/__init__.py:711 dnf/cli/commands/install.py:147
@@ -374,145 +374,145 @@ msgstr "Пакет %s не установлен, нельзя произвест
 msgid "No match for argument: %s"
 msgstr "Отсутствуют совпадения для аргумента: %s"
 
-#: dnf/base.py:1937
+#: dnf/base.py:1999
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "Пакет %s версией ниже уже установлен, нельзя произвести откат версии."
 
-#: dnf/base.py:1960
+#: dnf/base.py:2022
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Пакет %s не установлен, нельзя произвести переустановку."
 
-#: dnf/base.py:1975
+#: dnf/base.py:2037
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 "Файл %s является исходным пакетом и не может быть обновлен, пропускается."
 
-#: dnf/base.py:1981
+#: dnf/base.py:2043
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Пакет %s не установлен, нельзя произвести обновление."
 
-#: dnf/base.py:1990
+#: dnf/base.py:2052
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 "Такая же или более новая версия %s уже существует, не удается обновить."
 
-#: dnf/base.py:2029 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2091 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Пакет %s есть, но не установлен."
 
-#: dnf/base.py:2035
+#: dnf/base.py:2097
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Пакет %s есть, но установлен для другой архитектуры."
 
-#: dnf/base.py:2060 dnf/base.py:2252 dnf/cli/cli.py:669 dnf/cli/cli.py:700
+#: dnf/base.py:2122 dnf/base.py:2314 dnf/cli/cli.py:669 dnf/cli/cli.py:700
 #, python-format
 msgid "No package %s installed."
 msgstr "Пакет %s не был установлен."
 
-#: dnf/base.py:2078 dnf/cli/commands/install.py:136
+#: dnf/base.py:2140 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Неправильная форма: %s"
 
-#: dnf/base.py:2093 dnf/cli/commands/__init__.py:681
+#: dnf/base.py:2155 dnf/cli/commands/__init__.py:681
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Нет пакетов, помеченных для удаления."
 
-#: dnf/base.py:2181 dnf/cli/cli.py:423
+#: dnf/base.py:2243 dnf/cli/cli.py:423
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Пакеты для аргумента %s доступны, но не установлены."
 
-#: dnf/base.py:2186
+#: dnf/base.py:2248
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Пакет %s самой старой версии уже установлен, нельзя произвести откат."
 
-#: dnf/base.py:2244
+#: dnf/base.py:2306
 msgid "Action not handled: {}"
 msgstr "Действие не обрабатывается: {}"
 
-#: dnf/base.py:2258 dnf/cli/cli.py:420 dnf/cli/cli.py:674 dnf/cli/cli.py:704
+#: dnf/base.py:2320 dnf/cli/cli.py:420 dnf/cli/cli.py:674 dnf/cli/cli.py:704
 #: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
 #, python-format
 msgid "No package %s available."
 msgstr "Нет пакета %s."
 
-#: dnf/base.py:2271
+#: dnf/base.py:2333
 msgid "no package matched"
 msgstr "нет подходящего пакета"
 
-#: dnf/base.py:2292
+#: dnf/base.py:2354
 msgid "No security updates needed, but {} update available"
 msgstr "Не требуются обновления безопасности, но обновление {} имеется"
 
-#: dnf/base.py:2294
+#: dnf/base.py:2356
 msgid "No security updates needed, but {} updates available"
 msgstr "Не требуются обновления безопасности, но обновления {} имеются"
 
-#: dnf/base.py:2298
+#: dnf/base.py:2360
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Для «{}» не требуются обновления безопасности, но обновление {} имеется"
 
-#: dnf/base.py:2300
+#: dnf/base.py:2362
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Для «{}» не требуются обновления безопасности, но обновления {} имеются"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2321
+#: dnf/base.py:2383
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Не удалось получить ключ для пакета из командной строки: %s"
 
-#: dnf/base.py:2329
+#: dnf/base.py:2391
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Сбойный пакет: %s"
 
-#: dnf/base.py:2330
+#: dnf/base.py:2392
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Ключи GPG настроены как: %s"
 
-#: dnf/base.py:2342
+#: dnf/base.py:2404
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG ключ %s (0x%s) уже установлен"
 
-#: dnf/base.py:2375
+#: dnf/base.py:2437
 msgid "The key has been approved."
 msgstr "Ключ принят."
 
-#: dnf/base.py:2378
+#: dnf/base.py:2440
 msgid "The key has been rejected."
 msgstr "Ключ отклонен."
 
-#: dnf/base.py:2411
+#: dnf/base.py:2473
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Неудача импорта ключа (code %d)"
 
-#: dnf/base.py:2413
+#: dnf/base.py:2475
 msgid "Key imported successfully"
 msgstr "Импорт ключа успешно завершен"
 
-#: dnf/base.py:2417
+#: dnf/base.py:2479
 msgid "Didn't install any keys"
 msgstr "Не установлены какие-либо ключи"
 
-#: dnf/base.py:2420
+#: dnf/base.py:2482
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -523,29 +523,29 @@ msgstr ""
 "являются правильными для этого пакета.\n"
 "Проверьте, правильно ли настроены URL ключей для этого репозитория."
 
-#: dnf/base.py:2431
+#: dnf/base.py:2493
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Импорт ключа(ключей) не помог, неверный ключ(ключи)?"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2546
 msgid "  * Maybe you meant: {}"
 msgstr "  * Возможно, вы имели в виду: {}"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2578
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "У пакета «{}» из локального репозитория «{}» неправильная контрольная сумма"
 
-#: dnf/base.py:2519
+#: dnf/base.py:2581
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "У некоторых пакетов из локального репозитория неправильная контрольная сумма"
 
-#: dnf/base.py:2522
+#: dnf/base.py:2584
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "У пакета «{}» из репозитория «{}» неправильная контрольная сумма"
 
-#: dnf/base.py:2525
+#: dnf/base.py:2587
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -553,23 +553,23 @@ msgstr ""
 "У некоторых пакетов неправильный кеш, но они не загружаются из-за параметра "
 "«--cacheonly»"
 
-#: dnf/base.py:2543 dnf/base.py:2563
+#: dnf/base.py:2605 dnf/base.py:2625
 msgid "No match for argument"
 msgstr "Нет соответствия аргументу"
 
-#: dnf/base.py:2551 dnf/base.py:2571
+#: dnf/base.py:2613 dnf/base.py:2633
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Все совпадения отфильтрованы фильтрами исключения для аргумента"
 
-#: dnf/base.py:2553
+#: dnf/base.py:2615
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Все совпадения отфильтрованы модульным фильтрованием для аргумента"
 
-#: dnf/base.py:2569
+#: dnf/base.py:2631
 msgid "All matches were installed from a different repository for argument"
 msgstr "Все совпадения были установлены из другого репозитория для аргумента"
 
-#: dnf/base.py:2585
+#: dnf/base.py:2647
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Пакет %s уже установлен."
@@ -1206,7 +1206,11 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Ожидание завершения процесса с PID %d."
 
 #: dnf/cli/commands/deplist.py:32
-msgid "List package's dependencies and what packages provide them"
+#, fuzzy
+#| msgid "List package's dependencies and what packages provide them"
+msgid ""
+"[deprecated, use repoquery --deplist] List package's dependencies and what "
+"packages provide them"
 msgstr "Показывать список зависимостей пакета и какие пакеты их предоставляют"
 
 #: dnf/cli/commands/distrosync.py:32
@@ -3833,7 +3837,7 @@ msgstr[0] "Проблема с зависимостями модулей с па
 msgstr[1] "Проблемы с зависимостями модулей с параметрами по умолчанию:"
 msgstr[2] "Проблем с зависимостями модулей с параметрами по умолчанию:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:841
+#: dnf/exceptions.py:131 dnf/module/module_base.py:850
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Проблема с зависимостями модулей:"
@@ -3871,7 +3875,57 @@ msgstr "Активированные модули: {}."
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Для «{}» не задан профиль, задайте профиль."
 
-#: dnf/module/module_base.py:33
+#: dnf/module/exceptions.py:27
+#, fuzzy
+#| msgid "No profiles for module {}:{}"
+msgid "No such module: {}"
+msgstr "Нет профилей для модуля {}:{}"
+
+#: dnf/module/exceptions.py:33
+msgid "No such stream: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:39
+#, fuzzy
+#| msgid "No profiles for module {}:{}"
+msgid "No enabled stream for module: {}"
+msgstr "Нет профилей для модуля {}:{}"
+
+#: dnf/module/exceptions.py:46
+msgid "Cannot enable more streams from module '{}' at the same time"
+msgstr ""
+
+#: dnf/module/exceptions.py:52
+msgid "Different stream enabled for module: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:58
+msgid "No such profile: {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:64
+msgid "Specified profile not installed for {}"
+msgstr ""
+
+#: dnf/module/exceptions.py:70
+#, fuzzy
+#| msgid "No profile specified for '{}', please specify profile."
+msgid "No stream specified for '{}', please specify stream"
+msgstr "Для «{}» не задан профиль, задайте профиль."
+
+#: dnf/module/exceptions.py:82
+#, fuzzy
+#| msgid "No repositories available"
+msgid "No such profile: {}. No profiles available"
+msgstr "Нет репозиториев"
+
+#: dnf/module/exceptions.py:88
+#, fuzzy
+#| msgid "No profiles for module {}:{}"
+msgid "No profile to remove for '{}'"
+msgstr "Нет профилей для модуля {}:{}"
+
+#: dnf/module/module_base.py:35
 msgid ""
 "\n"
 "\n"
@@ -3881,7 +3935,7 @@ msgstr ""
 "\n"
 "Подсказка: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 
-#: dnf/module/module_base.py:34
+#: dnf/module/module_base.py:36
 msgid ""
 "\n"
 "\n"
@@ -3891,90 +3945,97 @@ msgstr ""
 "\n"
 "Подсказка: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 
-#: dnf/module/module_base.py:54 dnf/module/module_base.py:547
-#: dnf/module/module_base.py:603 dnf/module/module_base.py:669
+#: dnf/module/module_base.py:56 dnf/module/module_base.py:556
+#: dnf/module/module_base.py:612 dnf/module/module_base.py:678
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Пропуск ненужного профиля: «{}/{}»"
 
-#: dnf/module/module_base.py:84
+#: dnf/module/module_base.py:86
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr "Все совпадения для аргумента «{0}» в модуле «{1}:{2}» неактивны"
 
-#: dnf/module/module_base.py:92 dnf/module/module_base.py:202
+#: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Не разрешается установка модуля «{0}» из репозитория Fail-Safe {1}"
 
-#: dnf/module/module_base.py:102 dnf/module/module_base.py:212
+#: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr "Не удается подобрать профиль для аргумента {}. Профили для «{}:{}»: {}"
 
-#: dnf/module/module_base.py:106 dnf/module/module_base.py:216
+#: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
 msgstr "Не удается подобрать подходящий профиль для аргумента {}"
 
-#: dnf/module/module_base.py:118
+#: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Нет профилей по умолчанию для модуля {}:{}. Есть профили: {}"
 
-#: dnf/module/module_base.py:122
+#: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
 msgstr "Нет профилей для модуля {}:{}"
 
-#: dnf/module/module_base.py:129
+#: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Профиля по умолчанию {} нет в модуле {}:{}"
 
-#: dnf/module/module_base.py:142 dnf/module/module_base.py:245
+#: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Не разрешается установка модуля из репозитория Fail-Safe"
 
-#: dnf/module/module_base.py:194
+#: dnf/module/module_base.py:196
 #, fuzzy, python-brace-format
 #| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr "Все совпадения для аргумента «{0}» в модуле «{1}:{2}» неактивны"
 
-#: dnf/module/module_base.py:226
+#: dnf/module/module_base.py:228
 #, fuzzy, python-brace-format
 #| msgid "Default profile {} not available in module {}:{}"
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Профиля по умолчанию {} нет в модуле {}:{}"
 
-#: dnf/module/module_base.py:265
+#: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
 
-#: dnf/module/module_base.py:308 dnf/module/module_base.py:452
-#: dnf/module/module_base.py:477 dnf/module/module_base.py:496
-#: dnf/module/module_base.py:543 dnf/module/module_base.py:599
-#: dnf/module/module_base.py:665 dnf/module/module_base.py:827
+#: dnf/module/module_base.py:310 dnf/module/module_base.py:461
+#: dnf/module/module_base.py:486 dnf/module/module_base.py:505
+#: dnf/module/module_base.py:552 dnf/module/module_base.py:608
+#: dnf/module/module_base.py:674 dnf/module/module_base.py:836
 msgid "Unable to resolve argument {}"
 msgstr "Не удается разрешить аргумент {}"
 
-#: dnf/module/module_base.py:319
+#: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Не разрешается обновление модуля «{0}» из репозитория Fail-Safe {1}"
 
-#: dnf/module/module_base.py:338 dnf/module/module_base.py:366
+#: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
 msgstr "Не удается подобрать подходящий профиль в аргументе {}"
 
-#: dnf/module/module_base.py:346
+#: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
 msgstr "Не разрешается обновление модуля из репозитория Fail-Safe"
 
-#: dnf/module/module_base.py:500
+#: dnf/module/module_base.py:422
+#, python-brace-format
+msgid ""
+"Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
+"'{module}', but non of the streams are enabled or default"
+msgstr ""
+
+#: dnf/module/module_base.py:509
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
 "Требуется только имя модуля. Игнорируется ненужная информация в аргументе: "
 "«{}»"
 
-#: dnf/module/module_base.py:828
+#: dnf/module/module_base.py:837
 msgid "No match for package {}"
 msgstr "Нет соответствия для пакета {}"
 
