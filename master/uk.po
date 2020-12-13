@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-13 09:18-0500\n"
-"PO-Revision-Date: 2020-12-03 16:17+0000\n"
+"PO-Revision-Date: 2020-12-14 15:35+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -1214,12 +1214,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Очікуємо на завершення процесу з pid %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Показати список залежностей пакунка та пакунки, які їх надають"
+msgstr ""
+"￼[застарілий, користуйтеся repoquery --deplist] Показати список залежностей "
+"пакунка та пакунки, які їх надають"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3883,54 +3883,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Не вказано профілю для «{}». Будь ласка, вкажіть профіль."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає такого модуля: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Немає такого потоку: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає увімкненого потоку для модуля: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Не можна одночасно вмикати додаткові потоки з модуля «{}»"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Для модуля увімкнено інший потік: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Немає такого профілю: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Вказаний профіль не встановлено для {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Не вказано профілю для «{}». Будь ласка, вкажіть профіль."
+msgstr "Не вказано потоку для «{}». Будь ласка, вкажіть потік"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Немає доступних сховищ"
+msgstr "Немає такого профілю: {}. Немає доступних профілів"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає профілів для вилучення для «{}»"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4037,6 +4027,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"Аргумент «{argument}» відповідає {stream_count} потокам («{streams}») модуля "
+"«{module}», але жоден з потоків не увімкнено і жоден з потоків не є типовим"
 
 #: dnf/module/module_base.py:509
 msgid ""
