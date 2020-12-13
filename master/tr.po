@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-13 09:18-0500\n"
-"PO-Revision-Date: 2020-12-03 16:17+0000\n"
+"PO-Revision-Date: 2020-12-14 15:35+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -749,7 +749,7 @@ msgstr ""
 #: dnf/cli/cli.py:848
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "%s diye bir komut yok. Lütfen yardım için %s -- help kullanın"
+msgstr "Böyle bir komut yok: %s. Lütfen yardım için %s -- help kullanın"
 
 #: dnf/cli/cli.py:851
 #, python-format, python-brace-format
@@ -1189,12 +1189,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "%d pid numaralı işlemin bitmesi için bekleniyor."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Paketin bağımlılıklarını ve hangi paketlerin sağladığını listele"
+msgstr ""
+"[kullanımdan kaldırıldı, repoquery --deplist kullanın] Paketin "
+"bağımlılıklarını ve hangi paketlerin sağladığını listele"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3846,54 +3846,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "'{}' için profil belirtilmedi, lütfen profil belirtin."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "{}:{} modülü için profil yok"
+msgstr "Böyle bir modül yok: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Böyle bir akış yok: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "{}:{} modülü için profil yok"
+msgstr "Modül için etkinleştirilmiş akış yok: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Aynı anda '{}' modülünden daha fazla akış etkinleştirilemiyor"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Modül için farklı akış etkinleştirildi: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Böyle bir profil yok: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "{} için belirtilen profil kurulu değil"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "'{}' için profil belirtilmedi, lütfen profil belirtin."
+msgstr "'{}' için akış belirtilmedi, lütfen akış belirtin"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Kullanılabilir depo yok"
+msgstr "Böyle bir profil yok: {}. Kullanılabilir profil yok"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "{}:{} modülü için profil yok"
+msgstr "'{}' için kaldırılacak profil yok"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3999,6 +3989,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"'{argument}' argümanı, '{module}' modülünün {stream_count} akışıyla "
+"('{streams}') eşleşiyor ancak akışların hiçbiri etkin veya öntanımlı değil"
 
 #: dnf/module/module_base.py:509
 msgid ""
