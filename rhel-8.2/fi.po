@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2020-12-09 14:35+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"PO-Revision-Date: 2020-12-15 20:35+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/fi/>\n"
 "Language: fi\n"
@@ -241,10 +241,9 @@ msgid "Errors occurred during transaction."
 msgstr "Transaktion aikana tapahtui virheitä."
 
 #: ../dnf/base.py:1000
-#, fuzzy, python-format
-#| msgid "Failed to remove transaction file %s"
+#, python-format
 msgid "Failed to obtain the transaction lock (logged in as: %s)."
-msgstr "Transaktiotiedoston %s poistaminen epäonnistui"
+msgstr "Transaktiotlukon saaminen epäonnistui (käyttäjänä %s)."
 
 #. should this be 'to_unicoded'?
 #: ../dnf/base.py:1003 ../dnf/base.py:1013
@@ -1431,10 +1430,8 @@ msgid "Repo-id      : "
 msgstr "Ohjelmistoslähdetunnus       : "
 
 #: ../dnf/cli/commands/repolist.py:180
-#, fuzzy
-#| msgid "Filename    : %s"
 msgid "Repo-name    : "
-msgstr "Tiedostonimi: %s"
+msgstr "Asennuslähteen nimi    : "
 
 #: ../dnf/cli/commands/repolist.py:183
 msgid "Repo-status  : "
@@ -1445,10 +1442,8 @@ msgid "Repo-revision: "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:190
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-tags    : "
-msgstr "Asennuslähde    : %s"
+msgstr "Asennuslähdetägit    : "
 
 #: ../dnf/cli/commands/repolist.py:197
 msgid "Repo-distro-tags: "
@@ -1459,26 +1454,20 @@ msgid "Repo-updated : "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:205
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-pkgs    : "
-msgstr "Asennuslähde    : %s"
+msgstr "Asennuslähdepaketit    : "
 
 #: ../dnf/cli/commands/repolist.py:206
-#, fuzzy
-#| msgid "Repo        : %s"
 msgid "Repo-size    : "
-msgstr "Asennuslähde    : %s"
+msgstr "Asennuslähteen koko    : "
 
 #: ../dnf/cli/commands/repolist.py:209
 msgid "Repo-metalink: "
 msgstr ""
 
 #: ../dnf/cli/commands/repolist.py:214
-#, fuzzy
-#| msgid "Updated"
 msgid "  Updated    : "
-msgstr "Päivitetty"
+msgstr "  Päivitetty    : "
 
 #: ../dnf/cli/commands/repolist.py:216
 msgid "Repo-mirrors : "
@@ -1533,7 +1522,7 @@ msgstr "Koko yhteensä: %s"
 
 #: ../dnf/cli/commands/repoquery.py:104
 msgid "search for packages matching keyword"
-msgstr ""
+msgstr "etsi hakusanaa vastaavia paketteja"
 
 #: ../dnf/cli/commands/repoquery.py:118
 msgid "the key to search for"
@@ -1626,7 +1615,7 @@ msgstr ""
 
 #: ../dnf/cli/commands/repoquery.py:161
 msgid "resolve capabilities to originating package(s)"
-msgstr ""
+msgstr "ratkaise alkuperäis(t)en paketin mahdollisuudet"
 
 #: ../dnf/cli/commands/repoquery.py:163
 msgid "show recursive tree for package(s)"
@@ -1641,6 +1630,8 @@ msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
 msgstr ""
+"näytä N viimeisintä pakettia annetulle nimi.arkkitehtuurille (tai viimeisin, "
+"mutta N, jos N on negatiivinen)"
 
 #: ../dnf/cli/commands/repoquery.py:173
 msgid "show detailed information about the package"
@@ -1652,11 +1643,11 @@ msgstr "näytä luettelo paketin tiedostoista"
 
 #: ../dnf/cli/commands/repoquery.py:179
 msgid "show package source RPM name"
-msgstr ""
+msgstr "näytä paketin lähde-RPM:n nimi"
 
 #: ../dnf/cli/commands/repoquery.py:182
 msgid "show changelogs of the package"
-msgstr ""
+msgstr "näytä paketin muutoslokit"
 
 #: ../dnf/cli/commands/repoquery.py:185
 msgid "format for displaying found packages"
@@ -2220,10 +2211,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Setopt-argumentilla ei ole arvoa: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Valinnaiset paketit:"
+msgstr "Valinnaiset argumentit"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
