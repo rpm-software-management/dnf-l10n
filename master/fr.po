@@ -25,10 +25,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-14 09:18-0500\n"
-"PO-Revision-Date: 2020-12-07 23:35+0000\n"
+"PO-Revision-Date: 2020-12-15 20:35+0000\n"
 "Last-Translator: Arnaud T. <listes.00@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1248,13 +1248,12 @@ msgstr ""
 "En attente de la fin d’exécution du processus ayant l’identifiant (pid) %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
 msgstr ""
-"Liste les dépendances du paquet et indique quels paquets les fournissent"
+"[obsolète, utilsez repoquery --deplist] Liste les dépendances du paquet et "
+"indique quels paquets les fournissent"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1602,7 +1601,7 @@ msgstr "Le paquet {} appartient à de multiples modules, ignorer"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "basculer un module vers un flux et des paquets rpm de distrosync"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3820,7 +3819,7 @@ msgstr "dépôt %s : clé importée 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "récupération de la clé de dépôt pour %s déchiffrée à partir de %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3948,54 +3947,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Aucun profil spécifié pour « {} », veuillez spécifier un profil."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun module de ce type : {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Aucun flux de ce type : {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun flux activé pour le module : {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Ne peut pas activer plus de flux du module « {} » en même temps"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Différent flux activé pour le module : {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Aucun profil de ce type : {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Le profil spécifié n'est pas installé pour {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Aucun profil spécifié pour « {} », veuillez spécifier un profil."
+msgstr "Aucun flux spécifié pour « {} », veuillez spécifier un flux"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Aucun dépôt n’est disponible"
+msgstr "Aucun dépôt de ce type : {}. Aucun profile n’est disponible"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun profil à retirer pour « {} »"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4064,24 +4053,22 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "L’installation du module à partir du dépôt Fail-Safe n’est pas permise"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
-"Pas de correspondance active pour le paramètre « {0} » dans le module « {1}:"
-"{2} »"
+"Pas de correspondance active pour le paramètre « {0} » dans le module « "
+"{1}:{2} »"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr ""
-"Le profil installé « {0} » n’est pas disponible dans le module « {1} » flux "
-"« {2} »"
+"Le profil installé « {0} » n’est pas disponible dans le module « {1} » flux «"
+" {2} »"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Aucun paquet distrosync disponible pour le nom de paquet « {} »"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -4112,6 +4099,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"L'argument « {argument} » correspond à {stream_count} flux (« {streams} ») "
+"du module « {module} », mais aucun des flux n'est activé ou par défaut"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4213,6 +4202,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change est désactivé. Cette option n'est actuellement pas "
+"supportée par les commandes downgrade et distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
