@@ -12,15 +12,16 @@
 # Göran Uddeborg <goeran@uddeborg.se>, 2019. #zanata, 2020.
 # Göran Uddeborg <goeran@uddeborg.se>, 2020. #zanata
 # Mikael Granberg <mikael@famgra.se>, 2020.
+# Luna Jernberg <bittin@reimu.nl>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-14 09:18-0500\n"
-"PO-Revision-Date: 2020-11-14 21:35+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"PO-Revision-Date: 2020-12-15 20:35+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1205,12 +1206,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Väntar på att processen med pid %d skall avsluta."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Lista pakets beroenden och vilka paket som tillhandahåller dem"
+msgstr ""
+"[deprekerad, använd repoquery --deplist] Lista pakets beroenden och vilka "
+"paket som tillhandahåller dem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3852,10 +3853,8 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Ingen profil angiven för ”{}”, ange en profil."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen sådan modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -3877,11 +3876,11 @@ msgstr ""
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Ingen sådan profil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Specificerad profil inte installerad för: {}"
 
 #: dnf/module/exceptions.py:70
 #, fuzzy
@@ -3890,16 +3889,12 @@ msgid "No stream specified for '{}', please specify stream"
 msgstr "Ingen profil angiven för ”{}”, ange en profil."
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Inga förråd tillgängliga"
+msgstr "Ingen sådan profil: {}. Ingen profil tillgänglig"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen profil att ta bort för '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3966,11 +3961,9 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Att installera en modul från ett felsäkert förråd är inte tillåtet"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
-"Inga av matchningarna för argumentet ”{0}” i modulen ”{1}:{2}” är aktiva"
+msgstr "Inga aktiva matchningarna för argumentet '{0}' i modulen '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
 #, fuzzy, python-brace-format
