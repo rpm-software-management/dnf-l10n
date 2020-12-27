@@ -18,16 +18,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-12-20 09:18-0500\n"
-"PO-Revision-Date: 2020-12-15 20:35+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"PO-Revision-Date: 2020-12-28 11:36+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1553,7 +1553,7 @@ msgstr "Paketet {} till hör flera moduler, hoppar över"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "byt en modul mot en ström och distributionsynka rpm-paket"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3842,21 +3842,20 @@ msgstr "Ingen sådan modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Ingen sådan ström: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen aktiverade ström för modulen: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
+"Det går inte att aktivera flera strömmar från modulen ”{}” på samma gång"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Olika strömmar är aktiverade för modulen: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3867,10 +3866,8 @@ msgid "Specified profile not installed for {}"
 msgstr "Specificerad profil inte installerad för: {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Ingen profil angiven för ”{}”, ange en profil."
+msgstr "Ingen ström angiven för ”{}”, ange en ström"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
@@ -3950,14 +3947,15 @@ msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr "Inga aktiva matchningarna för argumentet '{0}' i modulen '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Standardprofilen {} är inte tillgänglig i modulen {}:{}"
+msgstr ""
+"Den installerade profilen {0} är inte tillgänglig i modulen ”{1}” strömmen "
+"”{2}”"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Inga paket är tillgängliga för distributionssynk för paketnamnet ”{}”"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3987,6 +3985,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"Argumentet ”{argument}” matchar {stream_count} strömmar (”{streams}”) i "
+"modulen ”{module}”, men ingen av strömmarna är aktiverad eller standard"
 
 #: dnf/module/module_base.py:509
 msgid ""
