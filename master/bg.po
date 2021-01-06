@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-05 09:18-0500\n"
-"PO-Revision-Date: 2021-01-05 16:36+0000\n"
-"Last-Translator: Nickys Music Group <nickys.music.group@gmail.com>\n"
+"PO-Revision-Date: 2021-01-07 21:36+0000\n"
+"Last-Translator: Valentin Laskov <v_laskov@mail.bg>\n"
 "Language-Team: Bulgarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/bg/>\n"
 "Language: bg\n"
@@ -775,12 +775,16 @@ msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir или --downloaddir трябва да се използват с --downloadonly, или "
+"download, или system-upgrade команда."
 
 #: dnf/cli/cli.py:923
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled и --disable, --set-disabled трябва да се използват с "
+"команда config-manager."
 
 #: dnf/cli/cli.py:1005
 msgid ""
@@ -790,13 +794,15 @@ msgstr ""
 
 #: dnf/cli/cli.py:1025
 msgid "Config file \"{}\" does not exist"
-msgstr ""
+msgstr "Конфигурационният файл \"{}\" не съществува"
 
 #: dnf/cli/cli.py:1045
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
+"Не може да се открие версията на изданието (използвайте '--releasever', за "
+"да я уточните)"
 
 #: dnf/cli/cli.py:1132 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
@@ -809,19 +815,19 @@ msgstr "Командата \"%s\" е вече дефинирана"
 
 #: dnf/cli/cli.py:1159
 msgid "Excludes in dnf.conf: "
-msgstr ""
+msgstr "Изключени в dnf.conf: "
 
 #: dnf/cli/cli.py:1162
 msgid "Includes in dnf.conf: "
-msgstr ""
+msgstr "Включени в dnf.conf: "
 
 #: dnf/cli/cli.py:1165
 msgid "Excludes in repo "
-msgstr ""
+msgstr "Изключени в хранилишето "
 
 #: dnf/cli/cli.py:1168
 msgid "Includes in repo "
-msgstr ""
+msgstr "Включени в хранилището "
 
 #: dnf/cli/commands/__init__.py:38
 #, python-format
@@ -851,6 +857,18 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Разрешили сте проверка на пакетите чрез GPG ключове. Това е добре.\n"
+"Но нямате никакви инсталирани публични GPG ключове. Трябва да свалите\n"
+"и инсталирате ключовете за пакетите, които искате да инсталирате.\n"
+"Може да го направите с командата:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Алтернативно, може да зададете url към ключа, който искате да използвате\n"
+"за хранилището в опцията 'gpgkey' в секцията за хранилището и {prog}\n"
+"ще го инсталира.\n"
+"\n"
+"За повече информация, свържете се с доставчика на пакета или дистрибуцията."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -900,7 +918,7 @@ msgstr "ПАКЕТ"
 
 #: dnf/cli/commands/__init__.py:193
 msgid "Package name specification"
-msgstr ""
+msgstr "Задава името на пакета"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
@@ -937,11 +955,11 @@ msgstr "Няма наличен пакет."
 
 #: dnf/cli/commands/__init__.py:376
 msgid "No packages marked for install."
-msgstr ""
+msgstr "Няма маркирани за инсталиране пакети."
 
 #: dnf/cli/commands/__init__.py:412
 msgid "No package installed."
-msgstr "Не е инсталиран пакет."
+msgstr "Няма инсталиран пакет."
 
 #: dnf/cli/commands/__init__.py:432 dnf/cli/commands/__init__.py:489
 #: dnf/cli/commands/reinstall.py:91
@@ -958,11 +976,11 @@ msgstr "Инсталираният пакет %s%s не е наличен."
 #: dnf/cli/commands/__init__.py:467 dnf/cli/commands/__init__.py:576
 #: dnf/cli/commands/__init__.py:619 dnf/cli/commands/__init__.py:666
 msgid "No package installed from the repository."
-msgstr "Не е инсталиран пакет от хранилището."
+msgstr "Няма пакет инсталиран от хранилището."
 
 #: dnf/cli/commands/__init__.py:530 dnf/cli/commands/reinstall.py:101
 msgid "No packages marked for reinstall."
-msgstr ""
+msgstr "Няма маркирани за преинсталиране пакети."
 
 #: dnf/cli/commands/__init__.py:716 dnf/cli/commands/upgrade.py:89
 msgid "No packages marked for upgrade."
