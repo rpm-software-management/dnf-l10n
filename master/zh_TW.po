@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 09:18-0500\n"
+"POT-Creation-Date: 2021-01-07 09:18-0500\n"
 "PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -390,7 +390,7 @@ msgstr "軟體包 %s 可用，但尚未安裝。"
 msgid "Package %s available, but installed for different architecture."
 msgstr "軟體包 %s 可用，但是針對不同架構安裝。"
 
-#: dnf/base.py:2131 dnf/base.py:2323 dnf/cli/cli.py:673 dnf/cli/cli.py:704
+#: dnf/base.py:2131
 #, python-format
 msgid "No package %s installed."
 msgstr "軟體包 %s 未安裝。"
@@ -416,79 +416,65 @@ msgstr "%s 引數的軟體包可用，但尚未安裝。"
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "已經安裝最舊版本的軟體包 %s，所以無法降級。"
 
-#: dnf/base.py:2315
-msgid "Action not handled: {}"
-msgstr "未處理動作：{}"
-
-#: dnf/base.py:2329 dnf/cli/cli.py:424 dnf/cli/cli.py:678 dnf/cli/cli.py:708
-#: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
-#, python-format
-msgid "No package %s available."
-msgstr "沒有 %s 軟體包可用。"
-
-#: dnf/base.py:2342
-msgid "no package matched"
-msgstr "沒有符合的軟體包"
-
-#: dnf/base.py:2363
+#: dnf/base.py:2304
 msgid "No security updates needed, but {} update available"
 msgstr "不需要任何的安全性更新，但有 {} 個更新可用"
 
-#: dnf/base.py:2365
+#: dnf/base.py:2306
 msgid "No security updates needed, but {} updates available"
 msgstr "不需要任何的安全性更新，但有 {} 個更新可用"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2310
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "不需要「{}」的任何安全性更新，但有 {} 個更新可用"
 
-#: dnf/base.py:2371
+#: dnf/base.py:2312
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "不需要「{}」的任何安全性更新，但有 {} 個更新可用"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2392
+#: dnf/base.py:2333
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "無法擷取命令列軟體包的金鑰：%s"
 
-#: dnf/base.py:2400
+#: dnf/base.py:2341
 #, python-format
 msgid ". Failing package is: %s"
 msgstr "失敗的軟體包為：%s"
 
-#: dnf/base.py:2401
+#: dnf/base.py:2342
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG 金鑰已經設定為：%s"
 
-#: dnf/base.py:2413
+#: dnf/base.py:2354
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "於 %s (0x%s) 的 GPG 密鑰已經安裝"
 
-#: dnf/base.py:2446
+#: dnf/base.py:2387
 msgid "The key has been approved."
 msgstr "金鑰已經核可。"
 
-#: dnf/base.py:2449
+#: dnf/base.py:2390
 msgid "The key has been rejected."
 msgstr "金鑰已被拒絕。"
 
-#: dnf/base.py:2482
+#: dnf/base.py:2423
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "密鑰匯入失敗（錯誤代碼 %d）"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2425
 msgid "Key imported successfully"
 msgstr "密鑰匯入成功"
 
-#: dnf/base.py:2488
+#: dnf/base.py:2429
 msgid "Didn't install any keys"
 msgstr "無法安裝任何密鑰"
 
-#: dnf/base.py:2491
+#: dnf/base.py:2432
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -498,49 +484,49 @@ msgstr ""
 "列出的「%s」軟體庫 GPG 金鑰已經安裝，但這些金鑰對這個軟體包都不正確。\n"
 "檢查這個軟體庫的不正確金鑰之網址設定。"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2443
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "匯入的金鑰沒有作用，可能是因為金鑰是錯誤的？"
 
-#: dnf/base.py:2555
+#: dnf/base.py:2496
 msgid "  * Maybe you meant: {}"
 msgstr "  * 或許您想要：{}"
 
-#: dnf/base.py:2587
+#: dnf/base.py:2528
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "「{}」軟體包來自本機「{}」軟體庫有不正確的 checksum"
 
-#: dnf/base.py:2590
+#: dnf/base.py:2531
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "來自本機軟體庫的部份軟體包有不正確的 checksum"
 
-#: dnf/base.py:2593
+#: dnf/base.py:2534
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "「{}」軟體包來自「{}」軟體庫有不正確的 checksum"
 
-#: dnf/base.py:2596
+#: dnf/base.py:2537
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr "部份的軟體包有無效的快取，但是因為「--cacheonly」選項而無法下載"
 
-#: dnf/base.py:2614 dnf/base.py:2634
+#: dnf/base.py:2555 dnf/base.py:2575
 msgid "No match for argument"
 msgstr "沒有符合引數的項目"
 
-#: dnf/base.py:2622 dnf/base.py:2642
+#: dnf/base.py:2563 dnf/base.py:2583
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "所有符合項目皆被引數的排除過濾器濾掉"
 
-#: dnf/base.py:2624
+#: dnf/base.py:2565
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "所有符合項目皆被引數的模組化過濾器濾掉"
 
-#: dnf/base.py:2640
+#: dnf/base.py:2581
 msgid "All matches were installed from a different repository for argument"
 msgstr "所有符合項目皆從引數的不同軟體庫安裝"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2628
 #, python-format
 msgid "Package %s is already installed."
 msgstr "已安裝 %s 軟體包。"
@@ -560,8 +546,8 @@ msgstr "解析「%s」檔案失敗：%s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "無法讀取「%s」檔案：%s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:907
-#: dnf/cli/cli.py:911 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
+#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "設定檔錯誤：%s"
@@ -652,6 +638,11 @@ msgstr "棄用軟體包"
 msgid "No packages marked for distribution synchronization."
 msgstr "沒有標記為與散布版同步的軟體包。"
 
+#: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
+#, python-format
+msgid "No package %s available."
+msgstr "沒有 %s 軟體包可用。"
+
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
 msgstr "沒有軟體包標記為降級。"
@@ -688,54 +679,28 @@ msgstr "沒有符合的軟體包可列出"
 msgid "No Matches found"
 msgstr "沒有符合項目"
 
-#: dnf/cli/cli.py:614
-msgid "No transaction ID given"
-msgstr "沒有提供處理事項識別碼"
-
-#: dnf/cli/cli.py:619
-msgid "Not found given transaction ID"
-msgstr "找不到提供的處理事項識別碼"
-
-#: dnf/cli/cli.py:628
-msgid "Found more than one transaction ID!"
-msgstr "找到超過一個處理事項識別碼！"
-
-#: dnf/cli/cli.py:645
-#, python-format
-msgid "Transaction history is incomplete, before %u."
-msgstr "在 %u 之前，處理事項歷史紀錄不完整。"
-
-#: dnf/cli/cli.py:647
-#, python-format
-msgid "Transaction history is incomplete, after %u."
-msgstr "在 %u 之後，處理事項歷史紀錄不完整。"
-
-#: dnf/cli/cli.py:694
-msgid "Undoing transaction {}, from {}"
-msgstr "取消變更處理事項 {}，從 {}"
-
-#: dnf/cli/cli.py:774 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "未知的軟體庫：「%s」"
 
-#: dnf/cli/cli.py:788
+#: dnf/cli/cli.py:685
 #, python-format
 msgid "No repository match: %s"
 msgstr "沒有軟體庫符合：%s"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:719
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr "此命令需要以超級使用者權限執行（大部分系統是在 root 使用者下）。"
 
-#: dnf/cli/cli.py:852
+#: dnf/cli/cli.py:749
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "未知的指令：%s。請使用 %s --help"
 
-#: dnf/cli/cli.py:855
+#: dnf/cli/cli.py:752
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -743,14 +708,14 @@ msgid ""
 msgstr ""
 "其可能是 {PROG} 插件的命令，請試試：「{prog} install 'dnf-command(%s)'」"
 
-#: dnf/cli/cli.py:859
+#: dnf/cli/cli.py:756
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr "其可能是 {prog} 插件的命令，但目前載入插件的功能處於停用狀態。"
 
-#: dnf/cli/cli.py:917
+#: dnf/cli/cli.py:814
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -758,7 +723,7 @@ msgstr ""
 "--destdir 或 --downloaddir 必須與 --downloadonly、download 或 system-upgrade "
 "指令一起使用。"
 
-#: dnf/cli/cli.py:923
+#: dnf/cli/cli.py:820
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -766,7 +731,7 @@ msgstr ""
 "--enable、--set-enabled 及 --disable、--set-disabled 必須與 config-manager 命"
 "令一起使用。"
 
-#: dnf/cli/cli.py:1005
+#: dnf/cli/cli.py:902
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -774,38 +739,38 @@ msgstr ""
 "警告：因為作用中的 RPM 安全性策略，已強制執行全域 GPG 簽名檢查（請參閱 dnf."
 "conf(5) 的「gpgcheck」以了解如何隱藏此則訊息）"
 
-#: dnf/cli/cli.py:1025
+#: dnf/cli/cli.py:922
 msgid "Config file \"{}\" does not exist"
 msgstr "「{}」組態檔不存在"
 
-#: dnf/cli/cli.py:1045
+#: dnf/cli/cli.py:942
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr "無法偵測發行版本（使用「--releasever」指定發行版本）"
 
-#: dnf/cli/cli.py:1132 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1029 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "引數 {}：不允許與 {} 引數使用"
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1036
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "指令「%s」已經定義"
 
-#: dnf/cli/cli.py:1159
+#: dnf/cli/cli.py:1056
 msgid "Excludes in dnf.conf: "
 msgstr "排除於 dnf.conf： "
 
-#: dnf/cli/cli.py:1162
+#: dnf/cli/cli.py:1059
 msgid "Includes in dnf.conf: "
 msgstr "包含於 dnf.conf： "
 
-#: dnf/cli/cli.py:1165
+#: dnf/cli/cli.py:1062
 msgid "Excludes in repo "
 msgstr "排除於軟體庫 "
 
-#: dnf/cli/cli.py:1168
+#: dnf/cli/cli.py:1065
 msgid "Includes in repo "
 msgstr "包含於軟體庫 "
 
@@ -1267,33 +1232,33 @@ msgstr "無效的群組子指令，請用：%s。"
 msgid "Unable to find a mandatory group package."
 msgstr "找不到強制群組軟體包。"
 
-#: dnf/cli/commands/history.py:47
+#: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
 msgstr "顯示或使用處理事項歷史紀錄"
 
-#: dnf/cli/commands/history.py:65
+#: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 
-#: dnf/cli/commands/history.py:67
+#: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:70
+#: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:73
+#: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
 
-#: dnf/cli/commands/history.py:93
+#: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1301,42 +1266,66 @@ msgstr ""
 "找到超過一個處理事項識別碼。\n"
 "「{}」需要一個處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:100
+#: dnf/cli/commands/history.py:101
 #, fuzzy
 #| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
 msgstr "沒有提供處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:102
+#: dnf/cli/commands/history.py:103
 #, fuzzy
 #| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
 msgstr "移除處理事項檔案 %s 失敗"
 
-#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
+#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
 msgstr "沒有提供處理事項識別碼或軟體包名稱。"
 
-#: dnf/cli/commands/history.py:137
+#: dnf/cli/commands/history.py:142
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "您沒有權限存取歷史紀錄資料庫：%s"
 
-#: dnf/cli/commands/history.py:146
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
 msgstr "無法復原處理事項 %s，這樣做會導致軟體包資料庫不一致。"
 
-#: dnf/cli/commands/history.py:151
+#: dnf/cli/commands/history.py:156
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
 msgstr "無法回滾處理事項 %s，這樣做會導致軟體包資料庫不一致。"
 
-#: dnf/cli/commands/history.py:221
+#: dnf/cli/commands/history.py:175
+msgid "No transaction ID given"
+msgstr "沒有提供處理事項識別碼"
+
+#: dnf/cli/commands/history.py:179
+#, fuzzy, python-brace-format
+#| msgid "TransactionItem not found for key: {}"
+msgid "Transaction ID \"{0}\" not found."
+msgstr "找不到下述鍵的 TransactionItem：{}"
+
+#: dnf/cli/commands/history.py:185
+msgid "Found more than one transaction ID!"
+msgstr "找到超過一個處理事項識別碼！"
+
+#: dnf/cli/commands/history.py:203
+#, python-format
+msgid "Transaction history is incomplete, before %u."
+msgstr "在 %u 之前，處理事項歷史紀錄不完整。"
+
+#: dnf/cli/commands/history.py:205
+#, python-format
+msgid "Transaction history is incomplete, after %u."
+msgstr "在 %u 之後，處理事項歷史紀錄不完整。"
+
+#: dnf/cli/commands/history.py:277
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1344,7 +1333,7 @@ msgstr ""
 "無效的處理事項識別碼範圍定義「{}」。\n"
 "使用「<transaction-id>..<transaction-id>」。"
 
-#: dnf/cli/commands/history.py:225
+#: dnf/cli/commands/history.py:281
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1352,39 +1341,32 @@ msgstr ""
 "無法將「{}」轉為處理事項 ID。\n"
 "請使用 '<數字>'、'last'、'last-<數字>'。"
 
-#: dnf/cli/commands/history.py:254
+#: dnf/cli/commands/history.py:310
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "找不到操作「{}」軟體包的處理事項。"
 
-#: dnf/cli/commands/history.py:295
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
-msgid "Transaction ID \"{id}\" not found."
-msgstr "找不到下述鍵的 TransactionItem：{}"
-
-#: dnf/cli/commands/history.py:303
+#: dnf/cli/commands/history.py:356
 msgid "{} exists, overwrite?"
 msgstr ""
 
-#: dnf/cli/commands/history.py:306
+#: dnf/cli/commands/history.py:359
 msgid "Not overwriting {}, exiting."
 msgstr ""
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:366
 #, fuzzy
 #| msgid "Transaction failed"
 msgid "Transaction saved to {}."
 msgstr "處理事項失敗"
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:369
 #, fuzzy
 #| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
 msgstr "在處理事項時發生錯誤。"
 
-#: dnf/cli/commands/history.py:340
-msgid ""
-"Warning, the following problems occurred while replaying the transaction:"
+#: dnf/cli/commands/history.py:385
+msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
 
 #: dnf/cli/commands/install.py:47
@@ -3511,7 +3493,7 @@ msgstr "沒有「%s」模組或群組。"
 msgid "Environment id '%s' does not exist."
 msgstr "尚未安裝「%s」環境。"
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
+#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
 #, fuzzy, python-format
 #| msgid "Environment '%s' is not installed."
 msgid "Environment id '%s' is not installed."
@@ -4039,146 +4021,154 @@ msgstr "執行小令稿"
 msgid "Preparing"
 msgstr "準備"
 
-#: dnf/transaction_sr.py:60
+#: dnf/transaction_sr.py:66
 #, python-brace-format
-msgid "Errors in \"{filename}\":"
+msgid ""
+"The following problems occurred while replaying the transaction from file "
+"\"{filename}\":"
 msgstr ""
 
-#: dnf/transaction_sr.py:70
-#, python-brace-format
-msgid "Error in \"{filename}\": {error}"
-msgstr ""
+#: dnf/transaction_sr.py:68
+#, fuzzy
+#| msgid "Errors occurred during transaction."
+msgid "The following problems occurred while running a transaction:"
+msgstr "在處理事項時發生錯誤。"
 
-#: dnf/transaction_sr.py:87
+#: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:95
+#: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:101
+#: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:244
+#: dnf/transaction_sr.py:224
+msgid ""
+"Conflicting TransactionReplay arguments have been specified: filename, data"
+msgstr ""
+
+#: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:250
+#: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:264
+#: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr ""
 
-#: dnf/transaction_sr.py:268
+#: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:276
+#: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:299
+#: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:314
+#: dnf/transaction_sr.py:336
 #, fuzzy, python-brace-format
 #| msgid "Package %s is already installed."
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "已安裝 %s 軟體包。"
 
-#: dnf/transaction_sr.py:324
+#: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:335
+#: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:349
+#: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:356
+#: dnf/transaction_sr.py:377
 #, fuzzy, python-format
 #| msgid "Module or Group '%s' is not available."
 msgid "Group id '%s' is not available."
 msgstr "無法使用「%s」模組或群組。"
 
-#: dnf/transaction_sr.py:377
+#: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
-#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
+#: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #, fuzzy, python-format
 #| msgid "Module or Group '%s' is not installed."
 msgid "Group id '%s' is not installed."
 msgstr "未安裝「%s」模組或群組。"
 
-#: dnf/transaction_sr.py:411
+#: dnf/transaction_sr.py:432
 #, fuzzy, python-format
 #| msgid "Environment '%s' is not available."
 msgid "Environment id '%s' is not available."
 msgstr "無法使用「%s」環境。"
 
-#: dnf/transaction_sr.py:435
+#: dnf/transaction_sr.py:456
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 
-#: dnf/transaction_sr.py:443
+#: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr ""
 
-#: dnf/transaction_sr.py:521
+#: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:526
+#: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr ""
 
-#: dnf/transaction_sr.py:550
+#: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:555
+#: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr ""
 
-#: dnf/transaction_sr.py:594
+#: dnf/transaction_sr.py:615
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
@@ -4216,6 +4206,18 @@ msgstr "已移除"
 #: dnf/util.py:600
 msgid "Failed"
 msgstr "失敗"
+
+#~ msgid "Action not handled: {}"
+#~ msgstr "未處理動作：{}"
+
+#~ msgid "no package matched"
+#~ msgstr "沒有符合的軟體包"
+
+#~ msgid "Not found given transaction ID"
+#~ msgstr "找不到提供的處理事項識別碼"
+
+#~ msgid "Undoing transaction {}, from {}"
+#~ msgstr "取消變更處理事項 {}，從 {}"
 
 #~ msgid "format for displaying found packages"
 #~ msgstr "顯示找到的軟體包格式"

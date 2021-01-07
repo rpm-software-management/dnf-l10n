@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 09:18-0500\n"
+"POT-Creation-Date: 2021-01-07 09:18-0500\n"
 "PO-Revision-Date: 2020-12-21 10:35+0000\n"
 "Last-Translator: Jari Korva <jpkorva@iki.fi>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -411,7 +411,7 @@ msgstr "Paketti %s saatavilla, mutta ei asennettu."
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paketti %s on saatavana, mutta asennettu eri arkkitehtuurille."
 
-#: dnf/base.py:2131 dnf/base.py:2323 dnf/cli/cli.py:673 dnf/cli/cli.py:704
+#: dnf/base.py:2131
 #, python-format
 msgid "No package %s installed."
 msgstr "Pakettia %s ei ole asennettu."
@@ -439,81 +439,67 @@ msgstr ""
 "Paketti %s alhaisimmasta versiosta on jo asennettu, ei voi taaksepäin "
 "päivittää sitä."
 
-#: dnf/base.py:2315
-msgid "Action not handled: {}"
-msgstr "Toimintaa ei käsitellä: {}"
-
-#: dnf/base.py:2329 dnf/cli/cli.py:424 dnf/cli/cli.py:678 dnf/cli/cli.py:708
-#: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
-#, python-format
-msgid "No package %s available."
-msgstr "Pakettia %s ei ole saatavilla."
-
-#: dnf/base.py:2342
-msgid "no package matched"
-msgstr "vastaavaa pakettia ei löytynyt"
-
-#: dnf/base.py:2363
+#: dnf/base.py:2304
 msgid "No security updates needed, but {} update available"
 msgstr "Ei tarvittavia tietoturvapäivityksiä, mutta {} päivitys saatavilla"
 
-#: dnf/base.py:2365
+#: dnf/base.py:2306
 msgid "No security updates needed, but {} updates available"
 msgstr "Tietoturvapäivityksiä ei tarvita, mutta päivityksiä on {} saatavilla"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2310
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita \"{}\":lle, mutta {} päivitys saatavilla"
 
-#: dnf/base.py:2371
+#: dnf/base.py:2312
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita \"{}\":lle, mutta {} päivitystä saatavilla"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2392
+#: dnf/base.py:2333
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Avainta ei voi noutaa komentorivipaketille: %s"
 
-#: dnf/base.py:2400
+#: dnf/base.py:2341
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Epäonnistunut paketti on: %s"
 
-#: dnf/base.py:2401
+#: dnf/base.py:2342
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-avaimet on määritetty %s:ksi"
 
-#: dnf/base.py:2413
+#: dnf/base.py:2354
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "Osoitteesta %s ladattu GPG-avain (0x%s) on jo asennetuna"
 
-#: dnf/base.py:2446
+#: dnf/base.py:2387
 msgid "The key has been approved."
 msgstr "Avain on hyväksytty."
 
-#: dnf/base.py:2449
+#: dnf/base.py:2390
 msgid "The key has been rejected."
 msgstr "Avain on hylätty."
 
-#: dnf/base.py:2482
+#: dnf/base.py:2423
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Avaimen tuonti epäonnistui (koodi %d)"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2425
 msgid "Key imported successfully"
 msgstr "Avaimen tuonti onnistui"
 
-#: dnf/base.py:2488
+#: dnf/base.py:2429
 msgid "Didn't install any keys"
 msgstr "Mitään avaimia ei asennettu"
 
-#: dnf/base.py:2491
+#: dnf/base.py:2432
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -524,32 +510,32 @@ msgstr ""
 "vastaa tätä pakettia.\n"
 "Tarkista että tälle asennuslähteelle on asetettu oikeat avainten URL:t."
 
-#: dnf/base.py:2502
+#: dnf/base.py:2443
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Avainten tuonti ei auttanut, ovatko avaimet vääriä?"
 
-#: dnf/base.py:2555
+#: dnf/base.py:2496
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kenties tarkoitit: {}"
 
-#: dnf/base.py:2587
+#: dnf/base.py:2528
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paikallisen ohjelmistolähteen \"{}\" paketilla \"{}\" on virheellinen "
 "tarkistussumma"
 
-#: dnf/base.py:2590
+#: dnf/base.py:2531
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Joillakin paikallisen ohjelmistolähteen paketeilla on virheellinen "
 "tarkistussumma"
 
-#: dnf/base.py:2593
+#: dnf/base.py:2534
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketti \"{}\" ohjelmistolähteestä \"{}\" on virheellinen tarkistussumma"
 
-#: dnf/base.py:2596
+#: dnf/base.py:2537
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -557,24 +543,24 @@ msgstr ""
 "Joissakin paketeissa on virheellinen välimuisti, mutta niitä ei voi ladata "
 "\"--cacheonly\" -vaihtoehdon takia"
 
-#: dnf/base.py:2614 dnf/base.py:2634
+#: dnf/base.py:2555 dnf/base.py:2575
 msgid "No match for argument"
 msgstr "Ei osumaa tälle argumentille"
 
-#: dnf/base.py:2622 dnf/base.py:2642
+#: dnf/base.py:2563 dnf/base.py:2583
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Kaikki osumat suodatettiin pois sulkemalla suodatus argumentille"
 
-#: dnf/base.py:2624
+#: dnf/base.py:2565
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Kaikki osumat suodatettiin modulaarisella suodatuksella argumentille"
 
-#: dnf/base.py:2640
+#: dnf/base.py:2581
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Kaikki vastaavuudet asennettiin toisesta ohjelmistolähteestä argumentille"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2628
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketti %s on jo asennettu."
@@ -594,8 +580,8 @@ msgstr "Tiedoston \"%s\" jäsentäminen epäonnistui: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Tiedostoa \"%s\" ei voi lukea: %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:907
-#: dnf/cli/cli.py:911 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
+#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Asetusvirhe: %s"
@@ -688,6 +674,11 @@ msgstr "Vanhentavat paketit"
 msgid "No packages marked for distribution synchronization."
 msgstr "Ei jakelujen synkronointia varten merkittyjä paketteja."
 
+#: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
+#, python-format
+msgid "No package %s available."
+msgstr "Pakettia %s ei ole saatavilla."
+
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
 msgstr "Paketteja ei ole merkitty taaksepäin päivitettäväksi."
@@ -724,43 +715,17 @@ msgstr "Ei yhtään vastaavaa pakettia lueteltavaksi"
 msgid "No Matches found"
 msgstr "Hakutuloksia ei löytynyt"
 
-#: dnf/cli/cli.py:614
-msgid "No transaction ID given"
-msgstr "Transaktiotunnusta ei annettu"
-
-#: dnf/cli/cli.py:619
-msgid "Not found given transaction ID"
-msgstr "Annettua transaktiotunnusta ei löytynyt"
-
-#: dnf/cli/cli.py:628
-msgid "Found more than one transaction ID!"
-msgstr "Löytyi useampi kuin yksi transaktiotunnus!"
-
-#: dnf/cli/cli.py:645
-#, python-format
-msgid "Transaction history is incomplete, before %u."
-msgstr "Transaktiohistoria on puutteellinen ennen %u:ta."
-
-#: dnf/cli/cli.py:647
-#, python-format
-msgid "Transaction history is incomplete, after %u."
-msgstr "Transaktiohistoria on puutteellinen %u:n jälkeen."
-
-#: dnf/cli/cli.py:694
-msgid "Undoing transaction {}, from {}"
-msgstr "Kumotaan transaktio {}, kohteesta: {}"
-
-#: dnf/cli/cli.py:774 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Tuntematon ohjelmistolähde: '%s'"
 
-#: dnf/cli/cli.py:788
+#: dnf/cli/cli.py:685
 #, python-format
 msgid "No repository match: %s"
 msgstr "Ei ohjelmistolähdevastaavuutta: %s"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:719
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -768,12 +733,12 @@ msgstr ""
 "Tämä komento on suoritettava pääkäyttäjän oikeuksilla (käyttäjänä root "
 "useimmissa järjestelmissä)."
 
-#: dnf/cli/cli.py:852
+#: dnf/cli/cli.py:749
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Komentoa %s ei ole olemassa. Käytä komentoa %s --help"
 
-#: dnf/cli/cli.py:855
+#: dnf/cli/cli.py:752
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -782,7 +747,7 @@ msgstr ""
 "Se voi olla {PROG}-liitännäiskomento, kokeile: \"{prog} install 'dnf-"
 "command(%s)'\""
 
-#: dnf/cli/cli.py:859
+#: dnf/cli/cli.py:756
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -791,7 +756,7 @@ msgstr ""
 "Se voi olla {prog}-liitännäiskomento, mutta liitännäisten lataaminen on "
 "tällä hetkellä pois käytöstä."
 
-#: dnf/cli/cli.py:917
+#: dnf/cli/cli.py:814
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -799,7 +764,7 @@ msgstr ""
 "--destdir tai --downloaddir on käytettävä yhdessä --downloadonly tai "
 "download tai system-upgrade -komennon kanssa."
 
-#: dnf/cli/cli.py:923
+#: dnf/cli/cli.py:820
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -807,7 +772,7 @@ msgstr ""
 "--enable, --set-enabled ja --disable, --set-disabled on käytettävä config-"
 "manager -komennon kanssa."
 
-#: dnf/cli/cli.py:1005
+#: dnf/cli/cli.py:902
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -816,11 +781,11 @@ msgstr ""
 "aktiivisen RPM-tietoturvakäytännön mukaisesti (katso tämän viestin "
 "kutistaminen kohdasta dnf.conf (5) 'gpgcheck')"
 
-#: dnf/cli/cli.py:1025
+#: dnf/cli/cli.py:922
 msgid "Config file \"{}\" does not exist"
 msgstr "Asetustiedostoa \"{}\" ei ole olemassa"
 
-#: dnf/cli/cli.py:1045
+#: dnf/cli/cli.py:942
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -828,28 +793,28 @@ msgstr ""
 "Julkaisuversiota ei voitu havaita (käytä valitsinta '--releasever' "
 "määrittääksesi julkaisuversion)"
 
-#: dnf/cli/cli.py:1132 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1029 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "argumentti {}: ei sallittu argumentin {} kanssa"
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1036
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Komento ”%s” on jo määritelty"
 
-#: dnf/cli/cli.py:1159
+#: dnf/cli/cli.py:1056
 msgid "Excludes in dnf.conf: "
 msgstr "Ei sisällytä dnf.conf:iin: "
 
-#: dnf/cli/cli.py:1162
+#: dnf/cli/cli.py:1059
 msgid "Includes in dnf.conf: "
 msgstr "Sisällytä dnf.conf:iin: "
 
-#: dnf/cli/cli.py:1165
+#: dnf/cli/cli.py:1062
 msgid "Excludes in repo "
 msgstr "Ei sisällytä ohjelmistolähteeseen "
 
-#: dnf/cli/cli.py:1168
+#: dnf/cli/cli.py:1065
 msgid "Includes in repo "
 msgstr "Sisällytä ohjelmistolähteeseen "
 
@@ -1318,15 +1283,15 @@ msgstr "Virheellinen ryhmien alikomento, käytä: %s."
 msgid "Unable to find a mandatory group package."
 msgstr "Pakollista ryhmäpakettia ei löydy."
 
-#: dnf/cli/commands/history.py:47
+#: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
 msgstr "näytä tai käytä transaktiohistoriaa"
 
-#: dnf/cli/commands/history.py:65
+#: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr "store-komennolle tiedoston polku, johon transaktio tallennetaan"
 
-#: dnf/cli/commands/history.py:67
+#: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
@@ -1334,7 +1299,7 @@ msgstr ""
 "Älä tarkista replay-komennolle, että asennetut paketit vastaavat transaktion "
 "paketteja"
 
-#: dnf/cli/commands/history.py:70
+#: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
@@ -1342,7 +1307,7 @@ msgstr ""
 "Älä tarkista replay-komennon osalta, onko transaktioon vedetty ylimääräisiä "
 "paketteja"
 
-#: dnf/cli/commands/history.py:73
+#: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
@@ -1350,7 +1315,7 @@ msgstr ""
 "Ohita replay-komennon osalta paketit, jotka eivät ole käytettävissä tai "
 "joista puuttuu riippuvuuksia"
 
-#: dnf/cli/commands/history.py:93
+#: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1358,24 +1323,24 @@ msgstr ""
 "Löytyi useampi kuin yksi transaktion tunnus.\n"
 "'{}' vaatii yhden transaktion tunnuksen tai paketin nimen."
 
-#: dnf/cli/commands/history.py:100
+#: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
 msgstr "Transaktiotunnusta ei annettu."
 
-#: dnf/cli/commands/history.py:102
+#: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
 msgstr "Useampi kuin yksi tapahtumatiedoston nimeksi annettu argumentti."
 
-#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
+#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
 msgstr "Transaktiotunnusta tai pakettia ei annettu."
 
-#: dnf/cli/commands/history.py:137
+#: dnf/cli/commands/history.py:142
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "Sinulla ei ole historiatietokannan käyttöoikeutta: %s"
 
-#: dnf/cli/commands/history.py:146
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1384,7 +1349,7 @@ msgstr ""
 "Transaktiota %s ei voi kumota, se johtaisi epäjohdonmukaiseen "
 "pakettitietokantaan."
 
-#: dnf/cli/commands/history.py:151
+#: dnf/cli/commands/history.py:156
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1393,7 +1358,31 @@ msgstr ""
 "Transaktiota %s ei voi palauttaa, sillä se johtaisi epäjohdonmukaiseen "
 "pakettitietokantaan."
 
-#: dnf/cli/commands/history.py:221
+#: dnf/cli/commands/history.py:175
+msgid "No transaction ID given"
+msgstr "Transaktiotunnusta ei annettu"
+
+#: dnf/cli/commands/history.py:179
+#, fuzzy, python-brace-format
+#| msgid "Transaction ID \"{id}\" not found."
+msgid "Transaction ID \"{0}\" not found."
+msgstr "Transaktiotunnusta \"{id}\" ei löytynyt."
+
+#: dnf/cli/commands/history.py:185
+msgid "Found more than one transaction ID!"
+msgstr "Löytyi useampi kuin yksi transaktiotunnus!"
+
+#: dnf/cli/commands/history.py:203
+#, python-format
+msgid "Transaction history is incomplete, before %u."
+msgstr "Transaktiohistoria on puutteellinen ennen %u:ta."
+
+#: dnf/cli/commands/history.py:205
+#, python-format
+msgid "Transaction history is incomplete, after %u."
+msgstr "Transaktiohistoria on puutteellinen %u:n jälkeen."
+
+#: dnf/cli/commands/history.py:277
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1401,7 +1390,7 @@ msgstr ""
 "Virheellinen transaktiotunnusalueen määritelmä '{}'.\n"
 "Käytä <transaktiotunnus> .. <transaktiotunnus>."
 
-#: dnf/cli/commands/history.py:225
+#: dnf/cli/commands/history.py:281
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1409,34 +1398,31 @@ msgstr ""
 "Kohdetta {} ei voi muuntaa tapahtuman ID:ksi.\n"
 "Käytä '<numero>', 'viimeinen', 'viimeinen-<numero>'."
 
-#: dnf/cli/commands/history.py:254
+#: dnf/cli/commands/history.py:310
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Pakettia {} käsittelevää transaktiota ei löytynyt."
 
-#: dnf/cli/commands/history.py:295
-#, python-brace-format
-msgid "Transaction ID \"{id}\" not found."
-msgstr "Transaktiotunnusta \"{id}\" ei löytynyt."
-
-#: dnf/cli/commands/history.py:303
+#: dnf/cli/commands/history.py:356
 msgid "{} exists, overwrite?"
 msgstr "{} on olemassa, korvataanko?"
 
-#: dnf/cli/commands/history.py:306
+#: dnf/cli/commands/history.py:359
 msgid "Not overwriting {}, exiting."
 msgstr "Ei korvaa {}, poistuu."
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:366
 msgid "Transaction saved to {}."
 msgstr "Transaktio tallennettu {}:een."
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:369
 msgid "Error storing transaction: {}"
 msgstr "Transaktion tallennuksessa tapahtui virhe: {}"
 
-#: dnf/cli/commands/history.py:340
-msgid ""
-"Warning, the following problems occurred while replaying the transaction:"
+#: dnf/cli/commands/history.py:385
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "Warning, the following problems occurred while running a transaction:"
 msgstr "Varoitus, seuraavat ongelmat tapahtuivat transaktion uusinnassa:"
 
 #: dnf/cli/commands/install.py:47
@@ -3522,7 +3508,7 @@ msgstr "Moduulia tai ryhmää '%s' ei ole olemassa."
 msgid "Environment id '%s' does not exist."
 msgstr "Ympäristötunnusta '%s' ei ole olemassa."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
+#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "Ympäristötunnusta '%s' ei ole asennettu."
@@ -4029,142 +4015,153 @@ msgstr "Suoritetaan sovelma"
 msgid "Preparing"
 msgstr "Valmistellaan"
 
-#: dnf/transaction_sr.py:60
-#, python-brace-format
-msgid "Errors in \"{filename}\":"
-msgstr ""
+#: dnf/transaction_sr.py:66
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid ""
+"The following problems occurred while replaying the transaction from file "
+"\"{filename}\":"
+msgstr "Varoitus, seuraavat ongelmat tapahtuivat transaktion uusinnassa:"
 
-#: dnf/transaction_sr.py:70
-#, python-brace-format
-msgid "Error in \"{filename}\": {error}"
-msgstr ""
+#: dnf/transaction_sr.py:68
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "The following problems occurred while running a transaction:"
+msgstr "Varoitus, seuraavat ongelmat tapahtuivat transaktion uusinnassa:"
 
-#: dnf/transaction_sr.py:87
+#: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:95
+#: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:101
+#: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:244
+#: dnf/transaction_sr.py:224
+msgid ""
+"Conflicting TransactionReplay arguments have been specified: filename, data"
+msgstr ""
+
+#: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:250
+#: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:264
+#: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr ""
 
-#: dnf/transaction_sr.py:268
+#: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:276
+#: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:299
+#: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:314
+#: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "Paketti \"{na}\" %s on jo asennettu toimintaa\"{action}\" varten."
 
-#: dnf/transaction_sr.py:324
+#: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:335
+#: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:349
+#: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:356
+#: dnf/transaction_sr.py:377
 #, python-format
 msgid "Group id '%s' is not available."
 msgstr "Ryhmätunnus '%s' ei ole saatavilla."
 
-#: dnf/transaction_sr.py:377
+#: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
-#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
+#: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Ryhmätunnus '%s' ei ole asennettuna."
 
-#: dnf/transaction_sr.py:411
+#: dnf/transaction_sr.py:432
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "Ympäristötunnus '%s' ei ole saatavilla."
 
-#: dnf/transaction_sr.py:435
+#: dnf/transaction_sr.py:456
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 
-#: dnf/transaction_sr.py:443
+#: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr ""
 
-#: dnf/transaction_sr.py:521
+#: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:526
+#: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr ""
 
-#: dnf/transaction_sr.py:550
+#: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:555
+#: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr ""
 
-#: dnf/transaction_sr.py:594
+#: dnf/transaction_sr.py:615
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
@@ -4202,6 +4199,18 @@ msgstr "Poistettu"
 #: dnf/util.py:600
 msgid "Failed"
 msgstr "Epäonnistui"
+
+#~ msgid "Action not handled: {}"
+#~ msgstr "Toimintaa ei käsitellä: {}"
+
+#~ msgid "no package matched"
+#~ msgstr "vastaavaa pakettia ei löytynyt"
+
+#~ msgid "Not found given transaction ID"
+#~ msgstr "Annettua transaktiotunnusta ei löytynyt"
+
+#~ msgid "Undoing transaction {}, from {}"
+#~ msgstr "Kumotaan transaktio {}, kohteesta: {}"
 
 #~ msgid "Bad transaction IDs, or package(s), given"
 #~ msgstr "Annettu virheellinen transaktiotunnus tai paketit"

@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 09:18-0500\n"
+"POT-Creation-Date: 2021-01-07 09:18-0500\n"
 "PO-Revision-Date: 2020-10-08 21:32+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -409,7 +409,7 @@ msgstr "软件包 %s 可用，但没有被安装。"
 msgid "Package %s available, but installed for different architecture."
 msgstr "软件包 %s 可用，当是为其它架构安装。"
 
-#: dnf/base.py:2131 dnf/base.py:2323 dnf/cli/cli.py:673 dnf/cli/cli.py:704
+#: dnf/base.py:2131
 #, python-format
 msgid "No package %s installed."
 msgstr "没有软件包 %s 安装。"
@@ -435,79 +435,65 @@ msgstr "针对于参数 %s 的软件包可用， 但是目前没有安装。"
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "软件包 %s 的最低版本已经安装，无法再进行降级。"
 
-#: dnf/base.py:2315
-msgid "Action not handled: {}"
-msgstr "操作没被处理：{}"
-
-#: dnf/base.py:2329 dnf/cli/cli.py:424 dnf/cli/cli.py:678 dnf/cli/cli.py:708
-#: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
-#, python-format
-msgid "No package %s available."
-msgstr "没有可用的软件包 %s。"
-
-#: dnf/base.py:2342
-msgid "no package matched"
-msgstr "没有能够与之匹配的软件包"
-
-#: dnf/base.py:2363
+#: dnf/base.py:2304
 msgid "No security updates needed, but {} update available"
 msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2365
+#: dnf/base.py:2306
 msgid "No security updates needed, but {} updates available"
 msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2310
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2371
+#: dnf/base.py:2312
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2392
+#: dnf/base.py:2333
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2400
+#: dnf/base.py:2341
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". 失败的软件包是：%s"
 
-#: dnf/base.py:2401
+#: dnf/base.py:2342
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG密钥配置为：%s"
 
-#: dnf/base.py:2413
+#: dnf/base.py:2354
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s 的 GPG 公钥(0x%s)已安装"
 
-#: dnf/base.py:2446
+#: dnf/base.py:2387
 msgid "The key has been approved."
 msgstr "密钥已被确认。"
 
-#: dnf/base.py:2449
+#: dnf/base.py:2390
 msgid "The key has been rejected."
 msgstr "密钥已被拒绝。"
 
-#: dnf/base.py:2482
+#: dnf/base.py:2423
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "导入公钥失败(代码 %d)"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2425
 msgid "Key imported successfully"
 msgstr "导入公钥成功"
 
-#: dnf/base.py:2488
+#: dnf/base.py:2429
 msgid "Didn't install any keys"
 msgstr "没有安装任何公钥"
 
-#: dnf/base.py:2491
+#: dnf/base.py:2432
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -517,49 +503,49 @@ msgstr ""
 "仓库 \"%s\" 的 GPG 公钥已安装，但是不适用于此软件包。\n"
 "请检查此仓库的公钥 URL 是否配置正确。"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2443
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "导入的密钥没有公钥，错误的公钥？"
 
-#: dnf/base.py:2555
+#: dnf/base.py:2496
 msgid "  * Maybe you meant: {}"
 msgstr "  * 可能您的意思是：{}"
 
-#: dnf/base.py:2587
+#: dnf/base.py:2528
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "软件包 \"{}\"（来自于本地仓库 \"{}\"）的 checksum 不正确"
 
-#: dnf/base.py:2590
+#: dnf/base.py:2531
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "本地仓库的一些软件包校验值(checksum)不正确，无法确定软件包完整"
 
-#: dnf/base.py:2593
+#: dnf/base.py:2534
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "软件包 \"{}\"（来自仓库 \"{}\"）的 checksum 不正确"
 
-#: dnf/base.py:2596
+#: dnf/base.py:2537
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr "以下软件包有无效缓存，因为使用了 \"--cacheonly\" 选项不能下载"
 
-#: dnf/base.py:2614 dnf/base.py:2634
+#: dnf/base.py:2555 dnf/base.py:2575
 msgid "No match for argument"
 msgstr "未找到匹配的参数"
 
-#: dnf/base.py:2622 dnf/base.py:2642
+#: dnf/base.py:2563 dnf/base.py:2583
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "由于您的搜索参数，所有相关结果都已被滤掉"
 
-#: dnf/base.py:2624
+#: dnf/base.py:2565
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "所有的匹配结果均已经被参数的模块化过滤条件筛除"
 
-#: dnf/base.py:2640
+#: dnf/base.py:2581
 msgid "All matches were installed from a different repository for argument"
 msgstr "已从另一个仓库安装了参数的所有匹配"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2628
 #, python-format
 msgid "Package %s is already installed."
 msgstr "软件包 %s 已安装。"
@@ -579,8 +565,8 @@ msgstr "解析文件 \"%s\" 失败：%s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "无法读取文件 \"%s\": %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:907
-#: dnf/cli/cli.py:911 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
+#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "配置错误：%s"
@@ -671,6 +657,11 @@ msgstr "取代的软件包"
 msgid "No packages marked for distribution synchronization."
 msgstr "没有软件包需要发行版同步。"
 
+#: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
+#, python-format
+msgid "No package %s available."
+msgstr "没有可用的软件包 %s。"
+
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
 msgstr "没有标记要降级的软件包。"
@@ -707,68 +698,42 @@ msgstr "没有匹配的软件包可以列出"
 msgid "No Matches found"
 msgstr "没有找到匹配的软件包"
 
-#: dnf/cli/cli.py:614
-msgid "No transaction ID given"
-msgstr "没有事务 ID"
-
-#: dnf/cli/cli.py:619
-msgid "Not found given transaction ID"
-msgstr "未找到指定事务 ID"
-
-#: dnf/cli/cli.py:628
-msgid "Found more than one transaction ID!"
-msgstr "找到多个事务 ID!"
-
-#: dnf/cli/cli.py:645
-#, python-format
-msgid "Transaction history is incomplete, before %u."
-msgstr "在 %u 之前，事务历史不完整。"
-
-#: dnf/cli/cli.py:647
-#, python-format
-msgid "Transaction history is incomplete, after %u."
-msgstr "在 %u 之后，事务历史不完整。"
-
-#: dnf/cli/cli.py:694
-msgid "Undoing transaction {}, from {}"
-msgstr "撤销事务 {}，从 {}"
-
-#: dnf/cli/cli.py:774 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "未知仓库：'%s'"
 
-#: dnf/cli/cli.py:788
+#: dnf/cli/cli.py:685
 #, python-format
 msgid "No repository match: %s"
 msgstr "没有仓库匹配： %s"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:719
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr "运行此命令需要管理员特权（多数系统下是root用户）。"
 
-#: dnf/cli/cli.py:852
+#: dnf/cli/cli.py:749
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "未找到命令: %s。请使用 %s --help"
 
-#: dnf/cli/cli.py:855
+#: dnf/cli/cli.py:752
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr "它可能是一个{PROG}插件命令，尝试：\"{prog} install 'dnf-command(%s)'\""
 
-#: dnf/cli/cli.py:859
+#: dnf/cli/cli.py:756
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr "这可能是一个 {prog} 插件的命令，但是插件的加载当前已经禁用。"
 
-#: dnf/cli/cli.py:917
+#: dnf/cli/cli.py:814
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -776,7 +741,7 @@ msgstr ""
 "--destdir 或 --downloaddir 必须和 --downloadonly 或 download 或 system-"
 "upgrade 命令一起使用。"
 
-#: dnf/cli/cli.py:923
+#: dnf/cli/cli.py:820
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -784,7 +749,7 @@ msgstr ""
 "--enable、--set-enabled 和 --disable、--set-disabled 必须和 config-manager 命"
 "令一起使用。"
 
-#: dnf/cli/cli.py:1005
+#: dnf/cli/cli.py:902
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -792,38 +757,38 @@ msgstr ""
 "警告：由于活动的RPM安全策略，强制执行全局GPG签名检查 (请参照dnf.conf(5)中"
 "的'gpgcheck'以了解如何阻止这条信息)"
 
-#: dnf/cli/cli.py:1025
+#: dnf/cli/cli.py:922
 msgid "Config file \"{}\" does not exist"
 msgstr "配置文件 \"{}\" 不存在"
 
-#: dnf/cli/cli.py:1045
+#: dnf/cli/cli.py:942
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr "无法找到发布版本（可用 '--releasever' 指定版本）"
 
-#: dnf/cli/cli.py:1132 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1029 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "参数 {}：不允许与参数 {} 一起使用"
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1036
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "命令 \"%s\" 已有定义"
 
-#: dnf/cli/cli.py:1159
+#: dnf/cli/cli.py:1056
 msgid "Excludes in dnf.conf: "
 msgstr "在 dnf.conf 中排除: "
 
-#: dnf/cli/cli.py:1162
+#: dnf/cli/cli.py:1059
 msgid "Includes in dnf.conf: "
 msgstr "在 dnf.conf 中包括: "
 
-#: dnf/cli/cli.py:1165
+#: dnf/cli/cli.py:1062
 msgid "Excludes in repo "
 msgstr "在 repo 中排除 "
 
-#: dnf/cli/cli.py:1168
+#: dnf/cli/cli.py:1065
 msgid "Includes in repo "
 msgstr "在 repo 中包括 "
 
@@ -1285,33 +1250,33 @@ msgstr "无效的组子命令，请使用：%s 。"
 msgid "Unable to find a mandatory group package."
 msgstr "无法找到一个必须的组软件包。"
 
-#: dnf/cli/commands/history.py:47
+#: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
 msgstr "显示或使用事务历史"
 
-#: dnf/cli/commands/history.py:65
+#: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 
-#: dnf/cli/commands/history.py:67
+#: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:70
+#: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
 
-#: dnf/cli/commands/history.py:73
+#: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
 
-#: dnf/cli/commands/history.py:93
+#: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1319,38 +1284,62 @@ msgstr ""
 "找到对于一个事务 ID。\n"
 "'{}' 需要一个事务 ID 或软件包名。"
 
-#: dnf/cli/commands/history.py:100
+#: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
 msgstr "没有提供事务文件名。"
 
-#: dnf/cli/commands/history.py:102
+#: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
 msgstr "提供了多于一个的事务文件名。"
 
-#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
+#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
 msgstr "没有提供事务 ID 或软件包名。"
 
-#: dnf/cli/commands/history.py:137
+#: dnf/cli/commands/history.py:142
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "你没有权限访问历史数据库：%s"
 
-#: dnf/cli/commands/history.py:146
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
 msgstr "无法撤销事务 %s，这样做将可能导致不一致的软件包数据库。"
 
-#: dnf/cli/commands/history.py:151
+#: dnf/cli/commands/history.py:156
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
 msgstr "无法回滚事务 %s，这样做将可能导致不一致的软件包数据库。"
 
-#: dnf/cli/commands/history.py:221
+#: dnf/cli/commands/history.py:175
+msgid "No transaction ID given"
+msgstr "没有事务 ID"
+
+#: dnf/cli/commands/history.py:179
+#, fuzzy, python-brace-format
+#| msgid "Transaction ID \"{id}\" not found."
+msgid "Transaction ID \"{0}\" not found."
+msgstr "事务 ID \"{id}\" 未找到。"
+
+#: dnf/cli/commands/history.py:185
+msgid "Found more than one transaction ID!"
+msgstr "找到多个事务 ID!"
+
+#: dnf/cli/commands/history.py:203
+#, python-format
+msgid "Transaction history is incomplete, before %u."
+msgstr "在 %u 之前，事务历史不完整。"
+
+#: dnf/cli/commands/history.py:205
+#, python-format
+msgid "Transaction history is incomplete, after %u."
+msgstr "在 %u 之后，事务历史不完整。"
+
+#: dnf/cli/commands/history.py:277
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1358,7 +1347,7 @@ msgstr ""
 "无效的事务 ID 范围定义 '{}'。\n"
 "使用 '<transaction-id>..<transaction-id>'。"
 
-#: dnf/cli/commands/history.py:225
+#: dnf/cli/commands/history.py:281
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1366,34 +1355,31 @@ msgstr ""
 "无法将 '{}' 转换为事务 ID。\n"
 "请使用 '<number>'、'last'、'last-<number>'。"
 
-#: dnf/cli/commands/history.py:254
+#: dnf/cli/commands/history.py:310
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "没有找到操作软件包 '{}' 的事务。"
 
-#: dnf/cli/commands/history.py:295
-#, python-brace-format
-msgid "Transaction ID \"{id}\" not found."
-msgstr "事务 ID \"{id}\" 未找到。"
-
-#: dnf/cli/commands/history.py:303
+#: dnf/cli/commands/history.py:356
 msgid "{} exists, overwrite?"
 msgstr "{} 已存在，是否覆盖？"
 
-#: dnf/cli/commands/history.py:306
+#: dnf/cli/commands/history.py:359
 msgid "Not overwriting {}, exiting."
 msgstr "未覆盖 {}，正在退出。"
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:366
 msgid "Transaction saved to {}."
 msgstr "事务已保存至 {}。"
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:369
 msgid "Error storing transaction: {}"
 msgstr "存储事务时出现错误：{}"
 
-#: dnf/cli/commands/history.py:340
-msgid ""
-"Warning, the following problems occurred while replaying the transaction:"
+#: dnf/cli/commands/history.py:385
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "Warning, the following problems occurred while running a transaction:"
 msgstr "警告，在重放事务时出现了下列问题："
 
 #: dnf/cli/commands/install.py:47
@@ -3523,7 +3509,7 @@ msgstr "模块或者组 '%s' 不存在。"
 msgid "Environment id '%s' does not exist."
 msgstr "环境 id '%s' 不存在。"
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
+#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "环境 id '%s' 没有安装。"
@@ -4049,108 +4035,119 @@ msgstr "运行脚本"
 msgid "Preparing"
 msgstr "准备中"
 
-#: dnf/transaction_sr.py:60
-#, python-brace-format
-msgid "Errors in \"{filename}\":"
-msgstr ""
+#: dnf/transaction_sr.py:66
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid ""
+"The following problems occurred while replaying the transaction from file "
+"\"{filename}\":"
+msgstr "警告，在重放事务时出现了下列问题："
 
-#: dnf/transaction_sr.py:70
-#, python-brace-format
-msgid "Error in \"{filename}\": {error}"
-msgstr ""
+#: dnf/transaction_sr.py:68
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "The following problems occurred while running a transaction:"
+msgstr "警告，在重放事务时出现了下列问题："
 
-#: dnf/transaction_sr.py:87
+#: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:95
+#: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:101
+#: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:244
+#: dnf/transaction_sr.py:224
+msgid ""
+"Conflicting TransactionReplay arguments have been specified: filename, data"
+msgstr ""
+
+#: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
 msgstr ""
 
-#: dnf/transaction_sr.py:250
+#: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:264
+#: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr ""
 
-#: dnf/transaction_sr.py:268
+#: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:276
+#: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:299
+#: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:314
+#: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "软件包 \"{na}\" 已经为动作 \"{action}\" 所安装。"
 
-#: dnf/transaction_sr.py:324
+#: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:335
+#: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:349
+#: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:356
+#: dnf/transaction_sr.py:377
 #, python-format
 msgid "Group id '%s' is not available."
 msgstr "组 id '%s' 不可用。"
 
-#: dnf/transaction_sr.py:377
+#: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
-#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
+#: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "组 id '%s' 未安装。"
 
-#: dnf/transaction_sr.py:411
+#: dnf/transaction_sr.py:432
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "环境 id '%s' 不可用。"
 
-#: dnf/transaction_sr.py:435
+#: dnf/transaction_sr.py:456
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4159,34 +4156,34 @@ msgstr ""
 "environments.groups.group_type 的值 \"{group_type}\" 无效，仅支持 \"mandatory"
 "\" 或者 \"optional\"。"
 
-#: dnf/transaction_sr.py:443
+#: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr ""
 
-#: dnf/transaction_sr.py:521
+#: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:526
+#: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr ""
 
-#: dnf/transaction_sr.py:550
+#: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:555
+#: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr ""
 
-#: dnf/transaction_sr.py:594
+#: dnf/transaction_sr.py:615
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
@@ -4224,6 +4221,18 @@ msgstr "已移除"
 #: dnf/util.py:600
 msgid "Failed"
 msgstr "失败"
+
+#~ msgid "Action not handled: {}"
+#~ msgstr "操作没被处理：{}"
+
+#~ msgid "no package matched"
+#~ msgstr "没有能够与之匹配的软件包"
+
+#~ msgid "Not found given transaction ID"
+#~ msgstr "未找到指定事务 ID"
+
+#~ msgid "Undoing transaction {}, from {}"
+#~ msgstr "撤销事务 {}，从 {}"
 
 #~ msgid "format for displaying found packages"
 #~ msgstr "用于显示已查找到软件包的格式"

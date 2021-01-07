@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-01-05 09:18-0500\n"
+"POT-Creation-Date: 2021-01-07 09:18-0500\n"
 "PO-Revision-Date: 2020-12-15 20:35+0000\n"
 "Last-Translator: Arnaud T. <listes.00@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -430,7 +430,7 @@ msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "Le paquet %s est disponible mais est installé pour une autre architecture."
 
-#: dnf/base.py:2131 dnf/base.py:2323 dnf/cli/cli.py:673 dnf/cli/cli.py:704
+#: dnf/base.py:2131
 #, python-format
 msgid "No package %s installed."
 msgstr "Aucun paquet %s installé."
@@ -458,88 +458,74 @@ msgstr ""
 "La version la plus ancienne du paquet %s est déjà installée, impossible de "
 "le rétrograder."
 
-#: dnf/base.py:2315
-msgid "Action not handled: {}"
-msgstr "Action non gérée : {}"
-
-#: dnf/base.py:2329 dnf/cli/cli.py:424 dnf/cli/cli.py:678 dnf/cli/cli.py:708
-#: dnf/cli/commands/group.py:395 dnf/cli/commands/history.py:168
-#, python-format
-msgid "No package %s available."
-msgstr "Aucun paquet %s n’est disponible."
-
-#: dnf/base.py:2342
-msgid "no package matched"
-msgstr "aucun paquet correspondant"
-
-#: dnf/base.py:2363
+#: dnf/base.py:2304
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Aucune mise à jour de sécurité n’est nécessaire, mais la mise à jour {} est "
 "disponible"
 
-#: dnf/base.py:2365
+#: dnf/base.py:2306
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Aucune mise à jour de sécurité n’est nécessaire, mais les mises à jour {} "
 "sont disponibles"
 
-#: dnf/base.py:2369
+#: dnf/base.py:2310
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Aucune mise à jour de sécurité n’est nécessaire pour « {} », mais la mise à "
 "jour {} est disponible"
 
-#: dnf/base.py:2371
+#: dnf/base.py:2312
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Aucune mise à jour de sécurité n’est nécessaire pour « {} », mais les mises "
 "à jour {} sont disponibles"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2392
+#: dnf/base.py:2333
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 "Impossible de récupérer une clé pour un paquet en ligne de commande : %s"
 
-#: dnf/base.py:2400
+#: dnf/base.py:2341
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Le paquet en erreur est : %s"
 
-#: dnf/base.py:2401
+#: dnf/base.py:2342
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Les clés GPG sont configurées comme : %s"
 
-#: dnf/base.py:2413
+#: dnf/base.py:2354
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "La clé GPG %s (0x%s) est déjà installée"
 
-#: dnf/base.py:2446
+#: dnf/base.py:2387
 msgid "The key has been approved."
 msgstr "La clef a été approuvée."
 
-#: dnf/base.py:2449
+#: dnf/base.py:2390
 msgid "The key has been rejected."
 msgstr "La clef a été rejetée."
 
-#: dnf/base.py:2482
+#: dnf/base.py:2423
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "L’import de la clé a échoué (code %d)"
 
-#: dnf/base.py:2484
+#: dnf/base.py:2425
 msgid "Key imported successfully"
 msgstr "La clé a bien été importée"
 
-#: dnf/base.py:2488
+#: dnf/base.py:2429
 msgid "Didn't install any keys"
 msgstr "Toutes les clés n’ont pas été installées"
 
-#: dnf/base.py:2491
+#: dnf/base.py:2432
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -550,29 +536,29 @@ msgstr ""
 "incorrectes pour ce paquet.\n"
 "Vérifiez que les URL des clés pour ce dépôt soient correctes."
 
-#: dnf/base.py:2502
+#: dnf/base.py:2443
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 "L’import de la ou des clés n’a pas résolu le problème, clés incorrectes ?"
 
-#: dnf/base.py:2555
+#: dnf/base.py:2496
 msgid "  * Maybe you meant: {}"
 msgstr "  * Peut-être vouliez-vous dire : {}"
 
-#: dnf/base.py:2587
+#: dnf/base.py:2528
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Le paquet \"{}\" du dépôt local \"{}\" a une somme de contrôle incorrecte"
 
-#: dnf/base.py:2590
+#: dnf/base.py:2531
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Certains paquets du dépôt local ont une somme de contrôle incorrecte"
 
-#: dnf/base.py:2593
+#: dnf/base.py:2534
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Le paquet \"{}\" du dépôt \"{}\" a une somme de contrôle incorrecte"
 
-#: dnf/base.py:2596
+#: dnf/base.py:2537
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -580,29 +566,29 @@ msgstr ""
 "Certains paquets ont un cache invalide, mais ne peuvent pas être téléchargés "
 "à cause de l’option « --cacheonly »"
 
-#: dnf/base.py:2614 dnf/base.py:2634
+#: dnf/base.py:2555 dnf/base.py:2575
 msgid "No match for argument"
 msgstr "Aucune correspondance pour le paramètre"
 
-#: dnf/base.py:2622 dnf/base.py:2642
+#: dnf/base.py:2563 dnf/base.py:2583
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Toutes les correspondances ont été filtrées en excluant le filtrage pour "
 "l’argument"
 
-#: dnf/base.py:2624
+#: dnf/base.py:2565
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "Toutes les correspondances ont été filtrées par filtrage modulaire pour les "
 "arguments"
 
-#: dnf/base.py:2640
+#: dnf/base.py:2581
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Toutes les correspondances ont été installées à partir d’un dépôt différent "
 "pour le paramètre"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2628
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Le paquet %s est déjà installé."
@@ -623,8 +609,8 @@ msgstr "La lecture du fichier « %s » a échoué : %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Impossible de lire le fichier « %s » : %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:907
-#: dnf/cli/cli.py:911 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
+#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Erreur de configuration : %s"
@@ -722,6 +708,11 @@ msgstr "Passage de paquets en obsolètes"
 msgid "No packages marked for distribution synchronization."
 msgstr "Aucun paquet marqué pour la synchronisation de la distribution."
 
+#: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
+#, python-format
+msgid "No package %s available."
+msgstr "Aucun paquet %s n’est disponible."
+
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
 msgstr "Aucun paquet n’a été marqué pour passer à une version antérieure."
@@ -758,43 +749,17 @@ msgstr "Aucun paquet correspondant à lister"
 msgid "No Matches found"
 msgstr "Aucune correspondance trouvée"
 
-#: dnf/cli/cli.py:614
-msgid "No transaction ID given"
-msgstr "Aucun identifiant de transaction n’a été fourni"
-
-#: dnf/cli/cli.py:619
-msgid "Not found given transaction ID"
-msgstr "L’identifiant de transaction fourni est introuvable"
-
-#: dnf/cli/cli.py:628
-msgid "Found more than one transaction ID!"
-msgstr "Plus d’un identifiant de transaction ont été trouvés !"
-
-#: dnf/cli/cli.py:645
-#, python-format
-msgid "Transaction history is incomplete, before %u."
-msgstr "L’historique des transactions est incomplet, avant %u."
-
-#: dnf/cli/cli.py:647
-#, python-format
-msgid "Transaction history is incomplete, after %u."
-msgstr "L’historique des transactions est incomplet, après %u."
-
-#: dnf/cli/cli.py:694
-msgid "Undoing transaction {}, from {}"
-msgstr "Révocation de la transaction {}, de {}"
-
-#: dnf/cli/cli.py:774 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Dépôt inconnu : « %s »"
 
-#: dnf/cli/cli.py:788
+#: dnf/cli/cli.py:685
 #, python-format
 msgid "No repository match: %s"
 msgstr "Aucun dépôt ne correspond à %s"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:719
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -802,12 +767,12 @@ msgstr ""
 "Cette commande doit être exécutée avec les privilèges super-utilisateur "
 "(sous l’utilisateur root sur la plupart des systèmes)."
 
-#: dnf/cli/cli.py:852
+#: dnf/cli/cli.py:749
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Aucune commande telle que : %s. Veuillez utiliser %s --help"
 
-#: dnf/cli/cli.py:855
+#: dnf/cli/cli.py:752
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -816,7 +781,7 @@ msgstr ""
 "Cela est peut-être une commande d’un module supplémentaire de {PROG}, "
 "essayez : « {prog} install 'dnf-command(%s)' »"
 
-#: dnf/cli/cli.py:859
+#: dnf/cli/cli.py:756
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -825,7 +790,7 @@ msgstr ""
 "Cela est peut-être une commande d’un module supplémentaire de {prog}, mais "
 "le chargement de modules supplémentaires est actuellement désactivé."
 
-#: dnf/cli/cli.py:917
+#: dnf/cli/cli.py:814
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -833,7 +798,7 @@ msgstr ""
 "--destdir ou --downloaddir doit être utilisé avec la commande --downloadonly "
 "ou download ou system-upgrade command."
 
-#: dnf/cli/cli.py:923
+#: dnf/cli/cli.py:820
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -841,7 +806,7 @@ msgstr ""
 "--enable, --set-enabled et --disable, --set-disabled doit être utilisé avec "
 "la commande config-manager."
 
-#: dnf/cli/cli.py:1005
+#: dnf/cli/cli.py:902
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -850,11 +815,11 @@ msgstr ""
 "politique de sécurité RPM active (voir « gpgcheck » dans dnf.conf(5) pour "
 "savoir comment interpréter ce message)"
 
-#: dnf/cli/cli.py:1025
+#: dnf/cli/cli.py:922
 msgid "Config file \"{}\" does not exist"
 msgstr "Le fichier de configuration \"{}\" n’existe pas"
 
-#: dnf/cli/cli.py:1045
+#: dnf/cli/cli.py:942
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -862,28 +827,28 @@ msgstr ""
 "Impossible de détecter le numéro de version (utilisez « --releasever » pour "
 "spécifier une version)"
 
-#: dnf/cli/cli.py:1132 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1029 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "paramètre {} : non autorisé avec le paramètre {}"
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1036
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Commande « %s » déjà définie"
 
-#: dnf/cli/cli.py:1159
+#: dnf/cli/cli.py:1056
 msgid "Excludes in dnf.conf: "
 msgstr "Exclut dans dnf.conf : "
 
-#: dnf/cli/cli.py:1162
+#: dnf/cli/cli.py:1059
 msgid "Includes in dnf.conf: "
 msgstr "Inclut dans dnf.conf : "
 
-#: dnf/cli/cli.py:1165
+#: dnf/cli/cli.py:1062
 msgid "Excludes in repo "
 msgstr "Exclut dans dépôt "
 
-#: dnf/cli/cli.py:1168
+#: dnf/cli/cli.py:1065
 msgid "Includes in repo "
 msgstr "Inclut dans dépôt "
 
@@ -1355,17 +1320,17 @@ msgstr "Sous-commande de groupes invalide, utilisez : %s."
 msgid "Unable to find a mandatory group package."
 msgstr "Impossible de trouver un paquet obligatoire du groupe."
 
-#: dnf/cli/commands/history.py:47
+#: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
 msgstr "affiche ou utilise l’historique de transaction"
 
-#: dnf/cli/commands/history.py:65
+#: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
 "Pour la commande store, le chemin d’accès vers le fichier dans lequel "
 "stocker la transaction"
 
-#: dnf/cli/commands/history.py:67
+#: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
@@ -1373,7 +1338,7 @@ msgstr ""
 "Pour la commande replay, ne vérifie pas si les paquets installés "
 "correspondent à ceux en transaction"
 
-#: dnf/cli/commands/history.py:70
+#: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
@@ -1381,7 +1346,7 @@ msgstr ""
 "Pour la commande replay, ne vérifie pas si des paquets supplémentaires ont "
 "été tirés dans la transaction"
 
-#: dnf/cli/commands/history.py:73
+#: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
@@ -1389,7 +1354,7 @@ msgstr ""
 "Pour la commande replay, saute les paquets qui ne sont pas disponibles ou "
 "qui ont des dépendances manquantes"
 
-#: dnf/cli/commands/history.py:93
+#: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1397,24 +1362,24 @@ msgstr ""
 "Plus d’un identifiant de transaction ont été trouvés !\n"
 "« {} » nécessite un identifiant de transaction ou un nom de paquet."
 
-#: dnf/cli/commands/history.py:100
+#: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
 msgstr "Pas de transaction ou de nom de fichier fourni."
 
-#: dnf/cli/commands/history.py:102
+#: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
 msgstr "Plus d’un argument donné comme nom de fichier de transaction."
 
-#: dnf/cli/commands/history.py:121 dnf/cli/commands/history.py:125
+#: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
 msgstr "Pas d’identifiant de transaction ou de nom de paquet fourni."
 
-#: dnf/cli/commands/history.py:137
+#: dnf/cli/commands/history.py:142
 #, python-format
 msgid "You don't have access to the history DB: %s"
 msgstr "Vous n’avez pas accès à la base de données de l’historique : %s"
 
-#: dnf/cli/commands/history.py:146
+#: dnf/cli/commands/history.py:151
 #, python-format
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
@@ -1423,7 +1388,7 @@ msgstr ""
 "Impossible de défaire la transaction %s ; cela aboutirait à une base de "
 "données des paquets incohérente."
 
-#: dnf/cli/commands/history.py:151
+#: dnf/cli/commands/history.py:156
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
@@ -1432,7 +1397,31 @@ msgstr ""
 "Impossible de défaire la transaction %s ; cela aboutirait à une base de "
 "données des paquets incohérente."
 
-#: dnf/cli/commands/history.py:221
+#: dnf/cli/commands/history.py:175
+msgid "No transaction ID given"
+msgstr "Aucun identifiant de transaction n’a été fourni"
+
+#: dnf/cli/commands/history.py:179
+#, fuzzy, python-brace-format
+#| msgid "Transaction ID \"{id}\" not found."
+msgid "Transaction ID \"{0}\" not found."
+msgstr "ID de Transaction « {id} » non trouvé."
+
+#: dnf/cli/commands/history.py:185
+msgid "Found more than one transaction ID!"
+msgstr "Plus d’un identifiant de transaction ont été trouvés !"
+
+#: dnf/cli/commands/history.py:203
+#, python-format
+msgid "Transaction history is incomplete, before %u."
+msgstr "L’historique des transactions est incomplet, avant %u."
+
+#: dnf/cli/commands/history.py:205
+#, python-format
+msgid "Transaction history is incomplete, after %u."
+msgstr "L’historique des transactions est incomplet, après %u."
+
+#: dnf/cli/commands/history.py:277
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1441,7 +1430,7 @@ msgstr ""
 "».\n"
 "Utilisez « <transaction-id>..<transaction-id> »."
 
-#: dnf/cli/commands/history.py:225
+#: dnf/cli/commands/history.py:281
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1449,34 +1438,31 @@ msgstr ""
 "Impossible de convertir « {} » à ID transaction.\n"
 "Utiliser « <number>», « last », « last-<number> »."
 
-#: dnf/cli/commands/history.py:254
+#: dnf/cli/commands/history.py:310
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Aucune transaction manipulant le paquet « {} » n’a été trouvée."
 
-#: dnf/cli/commands/history.py:295
-#, python-brace-format
-msgid "Transaction ID \"{id}\" not found."
-msgstr "ID de Transaction « {id} » non trouvé."
-
-#: dnf/cli/commands/history.py:303
+#: dnf/cli/commands/history.py:356
 msgid "{} exists, overwrite?"
 msgstr "{} existe, l’écraser ?"
 
-#: dnf/cli/commands/history.py:306
+#: dnf/cli/commands/history.py:359
 msgid "Not overwriting {}, exiting."
 msgstr "{} non écrasé, sortie."
 
-#: dnf/cli/commands/history.py:313
+#: dnf/cli/commands/history.py:366
 msgid "Transaction saved to {}."
 msgstr "Transaction enregistrée vers {}."
 
-#: dnf/cli/commands/history.py:316
+#: dnf/cli/commands/history.py:369
 msgid "Error storing transaction: {}"
 msgstr "Erreur lors du stockage de la transaction : {}"
 
-#: dnf/cli/commands/history.py:340
-msgid ""
-"Warning, the following problems occurred while replaying the transaction:"
+#: dnf/cli/commands/history.py:385
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
 "Attention, les problèmes suivants sont survenus lors de la relecture de la "
 "transaction :"
@@ -3686,7 +3672,7 @@ msgstr "Module ou Groupe « %s » n’existe pas."
 msgid "Environment id '%s' does not exist."
 msgstr "L’id d’environnement « %s » n’existe pas."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:456 dnf/transaction_sr.py:466
+#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "L’id d’environnement « %s » n’est pas installé."
@@ -4235,27 +4221,37 @@ msgstr "Exécution du scriptlet"
 msgid "Preparing"
 msgstr "Préparation"
 
-#: dnf/transaction_sr.py:60
-#, python-brace-format
-msgid "Errors in \"{filename}\":"
-msgstr "Erreurs dans « {filename} » :"
+#: dnf/transaction_sr.py:66
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid ""
+"The following problems occurred while replaying the transaction from file "
+"\"{filename}\":"
+msgstr ""
+"Attention, les problèmes suivants sont survenus lors de la relecture de la "
+"transaction :"
 
-#: dnf/transaction_sr.py:70
-#, python-brace-format
-msgid "Error in \"{filename}\": {error}"
-msgstr "Erreur dans « {filename} » : {error}"
+#: dnf/transaction_sr.py:68
+#, fuzzy
+#| msgid ""
+#| "Warning, the following problems occurred while replaying the transaction:"
+msgid "The following problems occurred while running a transaction:"
+msgstr ""
+"Attention, les problèmes suivants sont survenus lors de la relecture de la "
+"transaction :"
 
-#: dnf/transaction_sr.py:87
+#: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
 msgstr "Version majeur invalide « {major} », numéro attendu."
 
-#: dnf/transaction_sr.py:95
+#: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
 msgstr "Version mineure invalide « {minor} », numéro attendu."
 
-#: dnf/transaction_sr.py:101
+#: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
@@ -4264,22 +4260,27 @@ msgstr ""
 "Version majeure incompatible « {major} », la version majeure prise en charge "
 "est « {major_supp} »."
 
-#: dnf/transaction_sr.py:244
+#: dnf/transaction_sr.py:224
+msgid ""
+"Conflicting TransactionReplay arguments have been specified: filename, data"
+msgstr ""
+
+#: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
 msgstr "Type de « {id} » inattendu, {exp} attendu."
 
-#: dnf/transaction_sr.py:250
+#: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
 msgstr "Clé « {key} » manquante."
 
-#: dnf/transaction_sr.py:264
+#: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
 msgstr "Clé objet « {key} » manquante dans un rpm."
 
-#: dnf/transaction_sr.py:268
+#: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
@@ -4287,22 +4288,22 @@ msgstr ""
 "Valeur inattendue pour le paquet de raison « {reason} » pour le rpm nevra "
 "« {nevra} »."
 
-#: dnf/transaction_sr.py:276
+#: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
 msgstr "Impossible d’analyser le NEVRA pour le paquet « {nevra} »."
 
-#: dnf/transaction_sr.py:299
+#: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr "Impossible de trouver le rpm nevra « {nevra} »."
 
-#: dnf/transaction_sr.py:314
+#: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "Le paquet « {na} » est déjà installé pour l’action « {action} »."
 
-#: dnf/transaction_sr.py:324
+#: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
@@ -4311,13 +4312,13 @@ msgstr ""
 "Le paquet nevra « {nevra} » n’est pas disponible dans le dépôt pour l’action "
 "« {action} »."
 
-#: dnf/transaction_sr.py:335
+#: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
 "Le paquet nevra « {nevra} » n’est pas installé pour l’action « {action} »."
 
-#: dnf/transaction_sr.py:349
+#: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
@@ -4325,27 +4326,27 @@ msgstr ""
 "Valeur inattendue pour l’action de paquet « {action} » pour le rpm nevra "
 "« {nevra} »."
 
-#: dnf/transaction_sr.py:356
+#: dnf/transaction_sr.py:377
 #, python-format
 msgid "Group id '%s' is not available."
 msgstr "ID de groupe « %s » non disponible."
 
-#: dnf/transaction_sr.py:377
+#: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "Clé d’objet « {key} » manquante dans groups.packages."
 
-#: dnf/transaction_sr.py:390 dnf/transaction_sr.py:400
+#: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "ID de groupe « %s » non installé."
 
-#: dnf/transaction_sr.py:411
+#: dnf/transaction_sr.py:432
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "L’ID d’environnement « %s » n’est pas disponible."
 
-#: dnf/transaction_sr.py:435
+#: dnf/transaction_sr.py:456
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4354,24 +4355,24 @@ msgstr ""
 "Valeur invalide « {group_type} » pour environments.groups.group_type, seuls "
 "« mandatory » ou « optional » sont pris en charge."
 
-#: dnf/transaction_sr.py:443
+#: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Clé d’objet « {key} » manquante dans environments.groups."
 
-#: dnf/transaction_sr.py:521
+#: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 "Valeur inattendue pour l’action de groupe « {action} » pour le groupe "
 "« {group} »."
 
-#: dnf/transaction_sr.py:526
+#: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Clé d’objet « {key} » manquante dans un groupe."
 
-#: dnf/transaction_sr.py:550
+#: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4380,12 +4381,12 @@ msgstr ""
 "Valeur inattendue pour l’action d’environnement « {action} » pour "
 "l’environnement « {env} »."
 
-#: dnf/transaction_sr.py:555
+#: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Clé d’objet « {key} » manquante dans un environnement."
 
-#: dnf/transaction_sr.py:594
+#: dnf/transaction_sr.py:615
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
@@ -4425,6 +4426,24 @@ msgstr "Supprimé"
 #: dnf/util.py:600
 msgid "Failed"
 msgstr "Échec"
+
+#~ msgid "Action not handled: {}"
+#~ msgstr "Action non gérée : {}"
+
+#~ msgid "no package matched"
+#~ msgstr "aucun paquet correspondant"
+
+#~ msgid "Not found given transaction ID"
+#~ msgstr "L’identifiant de transaction fourni est introuvable"
+
+#~ msgid "Undoing transaction {}, from {}"
+#~ msgstr "Révocation de la transaction {}, de {}"
+
+#~ msgid "Errors in \"{filename}\":"
+#~ msgstr "Erreurs dans « {filename} » :"
+
+#~ msgid "Error in \"{filename}\": {error}"
+#~ msgstr "Erreur dans « {filename} » : {error}"
 
 #~ msgid "format for displaying found packages"
 #~ msgstr "format d’affichage des paquets trouvés"
