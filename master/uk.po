@@ -3,20 +3,20 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2020.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2020, 2021.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2020.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020. #zanata, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-07 09:18-0500\n"
-"PO-Revision-Date: 2020-12-14 15:35+0000\n"
+"PO-Revision-Date: 2021-01-08 16:56+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1366,10 +1366,9 @@ msgid "No transaction ID given"
 msgstr "Не вказано ідентифікатора операції"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Не знайдено операції із ідентифікатором «{id}»."
+msgstr "Не знайдено операції із ідентифікатором «{0}»."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1422,11 +1421,8 @@ msgid "Error storing transaction: {}"
 msgstr "Помилка під час спроби зберегти операцію: {}"
 
 #: dnf/cli/commands/history.py:385
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "Увага! Під час відтворення операції виникли такі проблеми:"
+msgstr "Увага! Під час виконання операції виникли такі проблеми:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -4148,20 +4144,16 @@ msgid "Preparing"
 msgstr "Готуємося"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr "Увага! Під час відтворення операції виникли такі проблеми:"
+msgstr ""
+"Під час відтворення операції з файла «{filename}» виникли такі проблеми:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr "Увага! Під час відтворення операції виникли такі проблеми:"
+msgstr "Під час виконання операції виникли такі проблеми:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4185,7 +4177,7 @@ msgstr ""
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Вказано несумісні аргументи TransactionReplay: назва файла, дані"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
