@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-07 09:18-0500\n"
-"PO-Revision-Date: 2021-01-05 16:36+0000\n"
+"PO-Revision-Date: 2021-01-08 16:56+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1337,10 +1337,9 @@ msgid "No transaction ID given"
 msgstr "İşlem kimliği verilmedi"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "İşlem kimliği \"{id}\" bulunamadı."
+msgstr "İşlem kimliği \"{0}\" bulunamadı."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1393,11 +1392,8 @@ msgid "Error storing transaction: {}"
 msgstr "İşlem kaydedilirken hata oluştu: {}"
 
 #: dnf/cli/commands/history.py:385
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr "Uyarı, işlem gerçekleştirilirken aşağıdaki sorunlar oluştu:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -4109,20 +4105,17 @@ msgid "Preparing"
 msgstr "Hazırlanıyor"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr ""
+"\"{filename}\" dosyasından işlem yeniden yürütülürken aşağıdaki sorunlar "
+"oluştu:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr "İşlem gerçekleştirilirken aşağıdaki sorunlar oluştu:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4144,7 +4137,7 @@ msgstr "Uyumsuz ana sürüm \"{major}\", desteklenen ana sürüm \"{major_supp}\
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Çakışan TransactionReplay argümanları belirtildi: dosya adı, veri"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
