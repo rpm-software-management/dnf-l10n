@@ -13,7 +13,7 @@
 # Qi Fan <fun224@gmail.com>, 2016. #zanata
 # Tommy He <lovenemesis@fedoraproject.org>, 2016. #zanata
 # mosquito <sensor.wen@gmail.com>, 2016. #zanata
-# Charles Lee <lchopn@gmail.com>, 2017. #zanata, 2020.
+# Charles Lee <lchopn@gmail.com>, 2017. #zanata, 2020, 2021.
 # Pany <pany@fedoraproject.org>, 2017. #zanata
 # cheng ye <18969068329@163.com>, 2017. #zanata
 # lexuge <LEXUGEyky@outlook.com>, 2017. #zanata
@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-10 09:18-0500\n"
-"PO-Revision-Date: 2020-10-08 21:32+0000\n"
+"PO-Revision-Date: 2021-01-20 14:36+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -110,11 +110,9 @@ msgid "Started dnf-automatic."
 msgstr "启动的 dnf-automatic。"
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "休眠 %s 秒"
+msgstr[0] "休眠 {} 秒"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -1144,12 +1142,10 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "正在等待 pid 为%d的进程退出。"
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "列出软件包的依赖关系和提供这些软件包的源"
+msgstr "[已弃用，请使用 repoquery --deplist] 列出软件包的依赖关系和提供这些软件包的源"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1320,10 +1316,9 @@ msgid "No transaction ID given"
 msgstr "没有事务 ID"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "事务 ID \"{id}\" 未找到。"
+msgstr "事务 ID \"{0}\" 未找到。"
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1376,11 +1371,8 @@ msgid "Error storing transaction: {}"
 msgstr "存储事务时出现错误：{}"
 
 #: dnf/cli/commands/history.py:385
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "警告，在重放事务时出现了下列问题："
+msgstr "警告，在运行事务时出现了下列问题："
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3741,20 +3733,16 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "没有为 '{}' 指定档案。请指定档案。"
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "没有模块 {}:{} 的配置文件"
+msgstr "不存在模块：{}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
 msgstr ""
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "没有模块 {}:{} 的配置文件"
+msgstr "该模块没有已启用的流： {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
