@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-10 09:18-0500\n"
-"PO-Revision-Date: 2021-01-10 20:36+0000\n"
+"PO-Revision-Date: 2021-01-20 14:36+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -41,7 +41,7 @@ msgstr "Päivitykset toteutettu järjestelmään '%s'"
 #: dnf/automatic/emitter.py:34
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Järjestelmään '%s' on saatavilla seuraavat päivitykset:"
+msgstr "Seuraavat päivitykset ovat saatavilla järjestelmään '%s':"
 
 #: dnf/automatic/emitter.py:35
 #, python-format
@@ -51,12 +51,12 @@ msgstr "Seuraavat päivitykset ladattiin järjestelmään '%s':"
 #: dnf/automatic/emitter.py:83
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr "Järjestelmään '%s' asennetut päivitykset."
+msgstr "Päivitykset toteutettu järjestelmään '%s'."
 
 #: dnf/automatic/emitter.py:85
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Järjestelmään '%s' ladatut päivitykset."
+msgstr "Päivitykset ladattu järjestelmään '%s'."
 
 #: dnf/automatic/emitter.py:87
 #, python-format
@@ -66,7 +66,7 @@ msgstr "Päivitykset saatavilla järjestelmään '%s'."
 #: dnf/automatic/emitter.py:110
 #, python-format
 msgid "Failed to send an email via '%s': %s"
-msgstr "Sähköpostin lähettäminen '%s':n kautta epäonnistui: %s"
+msgstr "Sähköpostin lähettäminen palvelimen '%s' kautta epäonnistui: %s"
 
 #: dnf/automatic/emitter.py:140
 #, python-format
@@ -1010,7 +1010,7 @@ msgstr "{prog}-komento avun saamiseen"
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
-msgstr "Luettele tai luo komentoaliaksia"
+msgstr "Listaa tai luo komentoaliaksia"
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
@@ -2357,7 +2357,7 @@ msgstr "tuntematon tietot."
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Bugs"
-msgstr ""
+msgstr "Viat"
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Type"
@@ -2406,7 +2406,7 @@ msgstr "tosi"
 
 #: dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr "päivitä paketti tai paketit järjestelmälläsi"
+msgstr "päivitä paketti tai paketteja järjestelmääsi"
 
 #: dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -3527,7 +3527,7 @@ msgstr "Ryhmätunnusta '%s' ei ole olemassa."
 #: dnf/conf/config.py:136
 #, python-format
 msgid "Error parsing '%s': %s"
-msgstr ""
+msgstr "Virhe jäsennettäessä %s: %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3700,7 +3700,8 @@ msgstr[0] ""
 #: dnf/exceptions.py:131 dnf/module/module_base.py:850
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
-msgstr[0] ""
+msgstr[0] "Modulaarinen riippuvuusongelma:"
+msgstr[1] "Modulaarisia riippuvuusongelmia:"
 
 #: dnf/lock.py:100
 #, python-format
