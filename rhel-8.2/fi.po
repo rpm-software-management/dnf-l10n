@@ -18,16 +18,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2021-01-10 20:36+0000\n"
+"PO-Revision-Date: 2021-01-20 14:37+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-82/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-82/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: ../dnf/automatic/emitter.py:31
 #, python-format
@@ -37,7 +37,7 @@ msgstr "Seuraavat päivitykset on toteutettu järjestelmään '%s':"
 #: ../dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Järjestelmään '%s' on saatavilla seuraavat päivitykset:"
+msgstr "Seuraavat päivitykset ovat saatavilla järjestelmään '%s':"
 
 #: ../dnf/automatic/emitter.py:33
 #, python-format
@@ -47,12 +47,12 @@ msgstr "Seuraavat päivitykset ladattiin järjestelmään '%s':"
 #: ../dnf/automatic/emitter.py:80
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr "Järjestelmään '%s' asennetut päivitykset."
+msgstr "Päivitykset toteutettu järjestelmään '%s'."
 
 #: ../dnf/automatic/emitter.py:82
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Järjestelmään '%s' ladatut päivitykset."
+msgstr "Päivitykset ladattu järjestelmään '%s'."
 
 #: ../dnf/automatic/emitter.py:84
 #, python-format
@@ -62,7 +62,7 @@ msgstr "Päivitykset saatavilla järjestelmään '%s'."
 #: ../dnf/automatic/emitter.py:107
 #, python-format
 msgid "Failed to send an email via '%s': %s"
-msgstr "Sähköpostin lähettäminen '%s':n kautta epäonnistui: %s"
+msgstr "Sähköpostin lähettäminen palvelimen '%s' kautta epäonnistui: %s"
 
 #: ../dnf/automatic/emitter.py:137
 #, python-format
@@ -234,7 +234,7 @@ msgstr "Yhteenveto virheistä"
 
 #: ../dnf/base.py:939
 msgid "RPMDB altered outside of DNF."
-msgstr ""
+msgstr "RPMDB muutettu DNF:n ulkopuolella."
 
 #: ../dnf/base.py:996
 msgid "Errors occurred during transaction."
@@ -585,12 +585,12 @@ msgstr "  Käännettiin : %s ajassa %s"
 
 #: ../dnf/cli/cli.py:192
 msgid "DNF will only download packages for the transaction."
-msgstr ""
+msgstr "DNF lataa vain transaktion paketit."
 
 #: ../dnf/cli/cli.py:194
 msgid ""
 "DNF will only download packages, install gpg keys, and check the transaction."
-msgstr ""
+msgstr "DNF lataa vain paketit, asentaa gpg-avaimet ja tarkistaa transaktion."
 
 #: ../dnf/cli/cli.py:198
 msgid "Operation aborted."
@@ -718,12 +718,15 @@ msgstr "Komentoa %s ei ole olemassa. Käytä komentoa %s --help"
 msgid ""
 "It could be a DNF plugin command, try: \"dnf install 'dnf-command(%s)'\""
 msgstr ""
+"Se voi olla DNF-liitännäiskomento, kokeile: \"dnf install 'dnf-command(%s)'\""
 
 #: ../dnf/cli/cli.py:830
 msgid ""
 "It could be a DNF plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Se voi olla DNF -liitännäiskomento, mutta liitännäisten lataaminen on tällä "
+"hetkellä pois käytöstä."
 
 #: ../dnf/cli/cli.py:887
 msgid ""
@@ -815,6 +818,20 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Olet ottanut pakettien tarkistuksen käyttöön GPG-avaimilla. Tämä on hyvä "
+"asia. Sinulla ei\n"
+"kuitenkaan ole asennettuna julkisia GPG-avaimia. Sinun täytyy ladata avaimet "
+"paketeille,\n"
+"jotka haluat asentaa ja asentaa. Voit tehdä sen suorittamalla komennon:\n"
+"    'rpm --import public.gpg.key'\n"
+"\n"
+"\n"
+"Vaihtoehtoisesti voit määrittää URL:n avaimelle, jota haluat käyttää "
+"ohjelmistolähteelle\n"
+"ohjelmistolähde-osion vaihtoehdossa 'gpgkey' ja DNF asentaa sinun puolestasi."
+"\n"
+"\n"
+"Lisätietoja saa jakelu- tai pakettipalveluntarjoajalta."
 
 #: ../dnf/cli/commands/__init__.py:80
 #, python-format
@@ -997,7 +1014,7 @@ msgstr "Pakettia {} käsittelevää transaktiota ei löytynyt."
 
 #: ../dnf/cli/commands/alias.py:39
 msgid "List or create command aliases"
-msgstr "Luettele tai luo komentoaliaksia"
+msgstr "Listaa tai luo komentoaliaksia"
 
 #: ../dnf/cli/commands/alias.py:49
 msgid "enable aliases resolving"
@@ -1157,7 +1174,7 @@ msgstr "Odotetaan prosessin prosessitunnisteella (PID) %d valmistuvan."
 
 #: ../dnf/cli/commands/deplist.py:32
 msgid "List package's dependencies and what packages provide them"
-msgstr "LUettele paketin riippuvuudet ja mitkä paketit tarjoavat ne"
+msgstr "Luettele paketin riippuvuudet ja mitkä paketit tarjoavat ne"
 
 #: ../dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1319,6 +1336,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can enable the other stream."
 msgstr ""
+"Moduulin sallittuja virtauksia ei voi vaihtaa.\n"
+"On suositeltavaa poistaa koko moduulista asennetun sisällön ja nollata "
+"moduuli komennolla 'dnf module reset <moduulin_nimi>'. Kun olet nollannut "
+"moduulin, voit asentaa toisen virran."
 
 #: ../dnf/cli/commands/module.py:199
 msgid ""
@@ -1327,6 +1348,10 @@ msgid ""
 "the module using 'dnf module reset <module_name>' command. After you reset "
 "the module, you can install the other stream."
 msgstr ""
+"Moduulin sallittuja virtauksia ei voi vaihtaa.\n"
+"On suositeltavaa poistaa koko moduulista asennetun sisällön ja nollata "
+"moduuli komennolla 'dnf module reset <moduulin_nimi>'. Kun olet nollannut "
+"moduulin, voit asentaa toisen virran."
 
 #: ../dnf/cli/commands/module.py:262
 msgid "Interact with Modules."
@@ -1857,7 +1882,7 @@ msgstr "Tuloksia ei löytynyt."
 
 #: ../dnf/cli/commands/shell.py:47
 msgid "run an interactive DNF shell"
-msgstr ""
+msgstr "suorita vuorovaikutteinen DNF:n komentokehote"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -2091,7 +2116,7 @@ msgstr "tuntematon tietot."
 
 #: ../dnf/cli/commands/updateinfo.py:304
 msgid "Bugs"
-msgstr ""
+msgstr "Viat"
 
 #: ../dnf/cli/commands/updateinfo.py:304
 msgid "Type"
@@ -2140,7 +2165,7 @@ msgstr "tosi"
 
 #: ../dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr "päivitä paketti tai paketit järjestelmälläsi"
+msgstr "päivitä paketti tai paketteja järjestelmääsi"
 
 #: ../dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -2226,7 +2251,7 @@ msgstr "yksityiskohtaset tulosteet"
 
 #: ../dnf/cli/option_parser.py:166
 msgid "show DNF version and exit"
-msgstr ""
+msgstr "näytä DNF versio ja lopeta"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -3248,7 +3273,7 @@ msgstr "Ympäristöä '%s' ei ole asennettu."
 #: ../dnf/comps.py:653
 #, python-format
 msgid "Group_id '%s' does not exist."
-msgstr ""
+msgstr "Ryhmätunnusta '%s' ei ole olemassa."
 
 #: ../dnf/comps.py:684
 #, python-format
@@ -3258,7 +3283,7 @@ msgstr "Ryhmää '%s' ei ole asennettu."
 #: ../dnf/conf/config.py:134
 #, python-format
 msgid "Error parsing '%s': %s"
-msgstr ""
+msgstr "Virhe jäsennettäessä %s: %s"
 
 #: ../dnf/conf/config.py:224
 msgid "Could not set cachedir: {}"
@@ -3393,7 +3418,8 @@ msgstr[0] ""
 #: ../dnf/exceptions.py:124 ../dnf/module/module_base.py:608
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
-msgstr[0] ""
+msgstr[0] "Modulaarinen riippuvuusongelma:"
+msgstr[1] "Modulaarisia riippuvuusongelmia:"
 
 #: ../dnf/lock.py:95
 #, python-format
