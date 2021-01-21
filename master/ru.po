@@ -9,28 +9,28 @@
 # Misha Shnurapet <shnurapet AT fedoraproject.org>, 2011
 # Misha Shnurapet <shnurapet@fedoraproject.org>, 2011
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020, 2021.
 # Igor Gnatenko <i.gnatenko.brain@gmail.com>, 2017. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020, 2021.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021.
 # Vitaliy Bukatkin <vitaliy.bukatkin@gmail.com>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-01-20 09:18-0500\n"
-"PO-Revision-Date: 2020-10-17 20:15+0000\n"
-"Last-Translator: Vitaliy Bukatkin <vitaliy.bukatkin@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"PO-Revision-Date: 2021-01-22 20:36+0000\n"
+"Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.3\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -100,13 +100,11 @@ msgid "Started dnf-automatic."
 msgstr "Запущен dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Ожидание на %s секунд"
-msgstr[1] "Ожидание на %s секунд"
-msgstr[2] "Ожидание на %s секунд"
+msgstr[0] "Ожидание в течение {} секунды"
+msgstr[1] "Ожидание в течение {} секунд"
+msgstr[2] "Ожидание в течение {} секунд"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -1171,12 +1169,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Ожидание завершения процесса с PID %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Показывать список зависимостей пакета и какие пакеты их предоставляют"
+msgstr ""
+"[устарело, используйте repoquery --deplist] Показывать список зависимостей "
+"пакета и какие пакеты их предоставляют"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1357,10 +1355,9 @@ msgid "No transaction ID given"
 msgstr "Не указан идентификатор транзакции"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Не найден идентификатор транзакции «{id}»."
+msgstr "Не найден идентификатор транзакции «{0}»."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1417,12 +1414,8 @@ msgid "Error storing transaction: {}"
 msgstr "Ошибка при сохранении транзакции: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+msgstr "Внимание, в ходе транзакции возникли следующие проблемы:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1545,7 +1538,7 @@ msgstr "Пакет {} принадлежит нескольким модулям
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "переключить модуль на поток и выполнить distrosync пакетов rpm"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3718,7 +3711,7 @@ msgstr "репозиторий %s: импортирован ключ 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "получение ключа репозитория для %s незашифрованным из %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3846,20 +3839,16 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Для «{}» не задан профиль, задайте профиль."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Нет профилей для модуля {}:{}"
+msgstr "Нет такого модуля: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Нет такого потока: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Нет профилей для модуля {}:{}"
+msgstr "Нет активированного потока для модуля: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
