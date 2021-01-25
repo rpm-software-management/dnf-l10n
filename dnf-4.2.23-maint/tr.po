@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-06-26 08:30+0200\n"
-"PO-Revision-Date: 2021-01-05 16:36+0000\n"
+"PO-Revision-Date: 2021-01-26 15:38+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"dnf-4223-maint/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-dnf-4223-maint/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:31
 #, python-format
@@ -641,7 +641,7 @@ msgstr "{} için değişiklik günlükleri"
 
 #: dnf/cli/cli.py:363 dnf/cli/cli.py:504 dnf/cli/cli.py:510
 msgid "Obsoleting Packages"
-msgstr "Artık Kullanılmaz Durumuna Getiren Paketler"
+msgstr "Kullanım Dışı Bırakan Paketler"
 
 #: dnf/cli/cli.py:392
 msgid "No packages marked for distribution synchronization."
@@ -1173,7 +1173,7 @@ msgstr "yinelenen sorunları göster"
 
 #: dnf/cli/commands/check.py:49
 msgid "show obsoleted packages"
-msgstr "artık kullanılmaz olan paketleri göster"
+msgstr "kullanım dışı bırakılan paketleri göster"
 
 #: dnf/cli/commands/check.py:52
 msgid "show problems with provides"
@@ -1189,7 +1189,7 @@ msgstr "{} ile {} yinelenen"
 
 #: dnf/cli/commands/check.py:128
 msgid "{} is obsoleted by {}"
-msgstr "{}, {} tarafından artık kullanılmaz durumuna getirildi"
+msgstr "{}, {} tarafından kullanım dışı bırakıldı"
 
 #: dnf/cli/commands/check.py:137
 msgid "{} provides {} but it cannot be found"
@@ -1705,7 +1705,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:140
 msgid "show only results that obsolete REQ"
-msgstr "yalnızca ŞART'ı artık kullanılmaz yapan sonuçları göster"
+msgstr "yalnızca ŞART'ı kullanım dışı bırakan sonuçları göster"
 
 #: dnf/cli/commands/repoquery.py:143
 msgid "show only results that provide REQ"
@@ -2552,9 +2552,9 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
-"upgrade için {prog}'in artık kullanılmaz durumuna getirme mantığını "
-"etkinleştirir veya info, list ve repoquery için paketin artık kullanılmaz "
-"yaptığı yetenekleri görüntüler"
+"upgrade için {prog}'in kullanım dışı bırakma mantığını etkinleştirir veya "
+"info, list ve repoquery için paketin kullanım dışı bıraktığı yetenekleri "
+"görüntüler"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
@@ -3376,11 +3376,11 @@ msgstr "Bağımlılık Kur"
 
 #: dnf/cli/output.py:1933
 msgid "Obsoleted"
-msgstr "Artık kullanılmaz oldu"
+msgstr "Kullanım dışı bırakıldı"
 
 #: dnf/cli/output.py:1934 dnf/transaction.py:84 dnf/transaction.py:85
 msgid "Obsoleting"
-msgstr "Artık kullanılmaz durumuna getiren"
+msgstr "Kullanım dışı bırakan"
 
 #: dnf/cli/output.py:1935
 msgid "Erase"
@@ -3422,7 +3422,7 @@ msgstr "---> %s.%s %s paketinin sürümü düşürülecek"
 #: dnf/cli/output.py:2120
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
-msgstr "---> %s.%s %s paketi artık kullanılmaz durumuna getirecek"
+msgstr "---> %s.%s %s paketi kullanım dışı bırakan olacak"
 
 #: dnf/cli/output.py:2122
 #, python-format
@@ -3432,7 +3432,7 @@ msgstr "---> %s.%s %s paketi yükseltilecek"
 #: dnf/cli/output.py:2124
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
-msgstr "---> %s.%s %s paketi artık kullanılmaz olacak"
+msgstr "---> %s.%s %s paketi kullanım dışı bırakılacak"
 
 #: dnf/cli/output.py:2133
 msgid "--> Starting dependency resolution"
