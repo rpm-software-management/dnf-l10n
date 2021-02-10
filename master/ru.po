@@ -20,10 +20,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-05 09:18-0500\n"
-"PO-Revision-Date: 2021-01-22 20:36+0000\n"
+"PO-Revision-Date: 2021-02-12 11:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1407,7 +1407,7 @@ msgstr "Не перезаписывается {}, завершение рабо�
 
 #: dnf/cli/commands/history.py:367
 msgid "Transaction saved to {}."
-msgstr "Трнзакция сохранена в {}."
+msgstr "Транзакция сохранена в {}."
 
 #: dnf/cli/commands/history.py:370
 msgid "Error storing transaction: {}"
@@ -3731,14 +3731,11 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "RPM-пакет с исходным кодом не будет установлен (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"Для параметра конфигурации «gpgkey_dns_verification» требуется libunbound "
-"({})"
+"Для параметра конфигурации «gpgkey_dns_verification» требуется python3-"
+"unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3856,37 +3853,31 @@ msgstr "Нет активированного потока для модуля: 
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Нельзя одновременно включить больше потоков из модуля «{}»"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Другой поток включён для модуля: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Нет такого профиля: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Заданный профиль не установлен для {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Для «{}» не задан профиль, задайте профиль."
+msgstr "Для «{}» не задан поток, задайте поток."
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Нет репозиториев"
+msgstr "Нет такого профиля: {}. Нет доступных профилей"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Нет профилей для модуля {}:{}"
+msgstr "Для «{}» нет профилей для удаления"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3949,20 +3940,18 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Не разрешается установка модуля из репозитория Fail-Safe"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Все совпадения для аргумента «{0}» в модуле «{1}:{2}» неактивны"
+msgstr "Нет активных совпадений для аргумента «{0}» в модуле «{1}:{2}»"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Профиля по умолчанию {} нет в модуле {}:{}"
+msgstr "Установленный профиль «{0}» недоступен в модуле «{1}», поток «{2}»"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Нет пакетов для выполнения distrosync для названия пакета «{}»"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3990,6 +3979,9 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"Аргумент «{argument}» соответствует {stream_count} потокам («{streams}») "
+"модуля «{module}», но ни один из потоков не включен и не является потоком по "
+"умолчанию"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4090,6 +4082,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change деактивирован. Этот параметр в настоящее время не "
+"поддерживается для команд downgrade и distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4138,22 +4132,17 @@ msgid "Preparing"
 msgstr "Подготовка"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+"При воспроизведении транзакции из файла «{filename}» возникли следующие "
+"проблемы:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+msgstr "При выполнении транзакции возникли следующие проблемы:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4178,6 +4167,7 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Указаны конфликтующие аргументы для TransactionReplay: имя файла, данные"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
