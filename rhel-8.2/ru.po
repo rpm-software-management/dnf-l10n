@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-05 10:58+0200\n"
-"PO-Revision-Date: 2021-02-12 11:40+0000\n"
+"PO-Revision-Date: 2021-02-15 18:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-82/ru/>\n"
@@ -1836,6 +1836,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
+"Не задано правильных параметров\n"
+"использование: dnf repoquery [--conflicts|--enhances|--obsoletes|--provides|-"
+"-recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]"
+"\n"
+"\n"
+"описание:\n"
+"  Для данных пакетов выводит дерево пакетов."
 
 #: ../dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -1847,7 +1854,7 @@ msgstr "поиск также описания пакета и URL"
 
 #: ../dnf/cli/commands/search.py:52
 msgid "QUERY_STRING"
-msgstr ""
+msgstr "СТРОКА_ЗАПРОСА"
 
 #: ../dnf/cli/commands/search.py:60 ../dnf/cli/output.py:499
 msgctxt "long"
@@ -1893,7 +1900,7 @@ msgstr "Нет совпадений."
 
 #: ../dnf/cli/commands/shell.py:47
 msgid "run an interactive DNF shell"
-msgstr ""
+msgstr "запустить интерактивную командную оболочку DNF"
 
 #: ../dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -1901,7 +1908,7 @@ msgstr "СКРИПТ"
 
 #: ../dnf/cli/commands/shell.py:69
 msgid "Script to run in DNF shell"
-msgstr ""
+msgstr "Скрипт, запускаемый в командной оболочке DNF"
 
 #: ../dnf/cli/commands/shell.py:135
 msgid "Unsupported key value."
@@ -2017,6 +2024,8 @@ msgstr "Выход из оболочки"
 #: ../dnf/cli/commands/swap.py:33
 msgid "run an interactive dnf mod for remove and install one spec"
 msgstr ""
+"запустить интерактивный оболочку dnf для удаления и установки одной "
+"спецификации"
 
 #: ../dnf/cli/commands/swap.py:37
 msgid "The specs that will be removed"
@@ -2285,10 +2294,8 @@ msgid "Setopt argument has no value: %s"
 msgstr "Аргумент setopt не имеет значения: %s"
 
 #: ../dnf/cli/option_parser.py:156
-#, fuzzy
-#| msgid " Optional Packages:"
 msgid "Optional arguments"
-msgstr " Необязательные пакеты:"
+msgstr "Необязательные аргументы"
 
 #: ../dnf/cli/option_parser.py:159
 msgid "config file location"
@@ -2304,7 +2311,7 @@ msgstr "подробно описывать действия"
 
 #: ../dnf/cli/option_parser.py:166
 msgid "show DNF version and exit"
-msgstr ""
+msgstr "показать версию DNF и завершить работу"
 
 #: ../dnf/cli/option_parser.py:167
 msgid "set install root"
@@ -2384,6 +2391,8 @@ msgid ""
 "enables dnf's obsoletes processing logic for upgrade or display capabilities "
 "that the package obsoletes for info, list and repoquery"
 msgstr ""
+"активирует устаревшую логику обработки dnf для обновления или отображения "
+"возможностей, которые пакет делает устаревшими, для info, list и repoquery"
 
 #: ../dnf/cli/option_parser.py:230
 msgid "debugging output level for rpm"
@@ -2424,15 +2433,10 @@ msgid "disable excludepkgs"
 msgstr "отключить excludepkgs"
 
 #: ../dnf/cli/option_parser.py:270
-#, fuzzy
-#| msgid ""
-#| "Enable additional repositories. List option. Supports globs, can be "
-#| "specified multiple times."
 msgid ""
 "label and path to additional repository, can be specified multiple times."
 msgstr ""
-"Включить дополнительные репозитории. Параметр списка. Поддерживает маски, "
-"может быть задан несколько раз."
+"метка и путь к дополнительному репозиторию могут быть заданы несколько раз."
 
 #: ../dnf/cli/option_parser.py:274
 msgid "disable removal of dependencies that are no longer used"
@@ -3042,7 +3046,7 @@ msgstr "Система"
 #: ../dnf/cli/output.py:1611
 #, python-format
 msgid "Skipping merged transaction %d to %d, as it overlaps"
-msgstr ""
+msgstr "Пропуск объединенной транзакции от %d до %d, так как она перекрывается"
 
 #: ../dnf/cli/output.py:1622 ../dnf/cli/output.py:1729
 msgid "No transactions"
@@ -3333,16 +3337,14 @@ msgid "skipping."
 msgstr "пропускается."
 
 #: ../dnf/comps.py:187
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' is not installed."
-msgstr "Модуль или группа «%s» не установлены."
+msgstr "Группа «%s» не установлена."
 
 #: ../dnf/comps.py:189
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group '%s' does not exist."
-msgstr "ID группы «%s» не существует."
+msgstr "Группа «%s» не существует."
 
 #: ../dnf/comps.py:608 ../dnf/comps.py:625
 #, python-format
@@ -3355,10 +3357,9 @@ msgid "Group_id '%s' does not exist."
 msgstr "ID группы «%s» не существует."
 
 #: ../dnf/comps.py:684
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group '%s' not installed."
-msgstr "Модуль или группа «%s» не установлены."
+msgstr "Группа «%s» не установлена."
 
 #: ../dnf/conf/config.py:134
 #, python-format
@@ -3406,12 +3407,14 @@ msgstr "Предупреждение: не удалось загрузить «%
 #: ../dnf/conf/read.py:61
 #, python-format
 msgid "Repository '%s': Error parsing config: %s"
-msgstr ""
+msgstr "Репозиторий «%s»: ошибка при разборе конфигурации: %s"
 
 #: ../dnf/conf/read.py:66
 #, python-format
 msgid "Repository '%s' is missing name in configuration, using id."
 msgstr ""
+"У репозитория «%s» отсуствует название в конфигурации, используется "
+"идентификатор."
 
 #: ../dnf/conf/read.py:96
 #, python-format
@@ -3511,6 +3514,9 @@ msgid ""
 "Ensure no other dnf process is running and remove the lock file manually or "
 "run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Обнаружен испорченный файл блокировки: %s.\n"
+"Убедитесь, что не работает другой процесс dnf, и удалите файл блокировки "
+"вручную или запустите systemd-tmpfiles --remove dnf.conf."
 
 #: ../dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3567,10 +3573,8 @@ msgid "No default profiles for module {}:{}"
 msgstr "Нет профилей по умолчанию для модуля {}:{}"
 
 #: ../dnf/module/module_base.py:92
-#, fuzzy
-#| msgid "Default profile {} not available in module {}:{}"
 msgid "Profile {} not matched for module {}:{}"
-msgstr "Профиля по умолчанию {} нет в модуле {}:{}"
+msgstr "Профиль {} не соответствует модулю {}:{}"
 
 #: ../dnf/module/module_base.py:118 ../dnf/module/module_base.py:148
 #: ../dnf/module/module_base.py:278 ../dnf/module/module_base.py:296
