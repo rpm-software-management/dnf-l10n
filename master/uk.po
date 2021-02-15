@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-15 09:18-0500\n"
-"PO-Revision-Date: 2021-01-24 17:38+0000\n"
+"PO-Revision-Date: 2021-02-17 12:40+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -610,12 +610,7 @@ msgstr ""
 "«{2}»"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -623,7 +618,8 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Перемкнути увімкнені потоки модуля неможливо.\n"
+"Перемкнути увімкнені потоки модуля неможливо, якщо перемикання явним чином "
+"не увімкнено за допомогою параметра налаштувань module_stream_switch.\n"
 "Рекомендуємо вилучити усі встановлені дані із модулі і відновити початкові "
 "налаштування за допомогою команди «{prog} module reset <назва_модуля>». "
 "Після відновлення початкових налаштувань модуля ви зможете встановити інший "
@@ -3725,11 +3721,11 @@ msgstr "сховище %s: імпортовано ключ 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Перевірено за допомогою запису DNS з підписом DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "Не перевірено за допомогою запису DNS."
 
 #: dnf/crypto.py:184
 #, python-format
