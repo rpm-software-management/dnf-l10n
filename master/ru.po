@@ -20,10 +20,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-15 09:18-0500\n"
-"PO-Revision-Date: 2021-02-12 11:40+0000\n"
+"PO-Revision-Date: 2021-02-17 12:40+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -607,12 +607,7 @@ msgstr ""
 "Операция приведет к переключению потока '{1}' модуля '{0}' на поток '{2}'"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -620,7 +615,8 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Невозможно переключить активированные потоки модуля.\n"
+"Невозможно переключить активированные потоки модуля, если это явно не "
+"включено с помощью параметра конфигурации module_stream_switch.\n"
 "Рекомендуется удалить из модуля всё установленное и обновить модуль с "
 "помощью команды «{prog} module reset <имя_модуля>». После обновления модуля "
 "можно установить другой поток."
@@ -3716,11 +3712,11 @@ msgstr "репозиторий %s: импортирован ключ 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Проверено с помощью записи DNS с подписью DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "НЕ проверено с помощью записи DNS."
 
 #: dnf/crypto.py:184
 #, python-format
