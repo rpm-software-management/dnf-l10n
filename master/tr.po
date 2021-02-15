@@ -10,10 +10,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-15 09:18-0500\n"
-"PO-Revision-Date: 2021-01-26 15:38+0000\n"
+"PO-Revision-Date: 2021-02-17 12:40+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -590,12 +590,7 @@ msgstr ""
 "olur"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -603,7 +598,9 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Bir modülün etkin akışlarını değiştirmek mümkün değildir.\n"
+"module_stream_switch yapılandırma seçeneği aracılığıyla açıkça "
+"etkinleştirilmedikçe, bir modülün etkin akışlarını değiştirmek mümkün "
+"değildir\n"
 "Kurulu tüm içeriği modülden kaldırmanız ve '{prog} module reset <modül_adı>' "
 "komutunu kullanarak modülü sıfırlamanız tavsiye edilir. Modülü sıfırladıktan "
 "sonra diğer akışı kurabilirsiniz."
@@ -3692,11 +3689,11 @@ msgstr "depo %s: 0x%s anahtarı içe aktarıldı."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "DNSSEC imzasıyla DNS kaydı kullanılarak doğrulandı."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "DNS kaydı kullanılarak DOĞRULANMADI."
 
 #: dnf/crypto.py:184
 #, python-format
