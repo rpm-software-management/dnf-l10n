@@ -21,8 +21,8 @@
 # zhouxiaobo <zhouxiaobo.500@gmail.com>, 2017. #zanata
 # Ludek Janda <ljanda@redhat.com>, 2018. #zanata
 # Pany <pany@fedoraproject.org>, 2018. #zanata
-# Qiyu Yan <yanqiyu01@gmail.com>, 2018. #zanata
-# Qiyu Yan <yanqiyu01@gmail.com>, 2019. #zanata
+# Qiyu Yan <yanqiyu01@gmail.com>, 2018. #zanata, 2021.
+# Qiyu Yan <yanqiyu01@gmail.com>, 2019. #zanata, 2021.
 # Anonymous <noreply@weblate.org>, 2020.
 # Hongqiao Chen <harrychen0314@gmail.com>, 2020.
 # Harry Chen <harrychen0314@gmail.com>, 2020.
@@ -31,8 +31,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-16 09:18-0500\n"
-"PO-Revision-Date: 2021-01-20 14:36+0000\n"
-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
+"PO-Revision-Date: 2021-02-18 18:40+0000\n"
+"Last-Translator: Qiyu Yan <yanqiyu01@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -1265,7 +1265,7 @@ msgstr ""
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
-msgstr ""
+msgstr "对于 replay 命令，不要检查已安装的包的版本与记录的事务符合"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
@@ -1277,7 +1277,7 @@ msgstr ""
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
-msgstr ""
+msgstr "对于 replay 命令，跳过不可用或者是依赖关系不能满足的包"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1325,7 +1325,7 @@ msgstr "没有事务 ID"
 #: dnf/cli/commands/history.py:179
 #, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "事务 ID \"{0}\" 未找到。"
+msgstr "无法找到事务 ID \"{0}\" 对应的事务。"
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1502,7 +1502,7 @@ msgstr "软件包 {} 属于多个模块，正在跳过"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "切换一个模块到某个流并且进行 distrosync"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3619,11 +3619,11 @@ msgstr "repo %s: 已导入密钥 0x%s。"
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "已经通过被 DNSSEC 签名的 DNS 记录验证。"
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "并未被 DNS 记录验证。"
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3646,12 +3646,9 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "将不安装一个源码 RPM 软件包 (%s)。"
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
-msgstr "配置文件选项 'gpgkey_dns_verification' 要求 libunbound ({})"
+msgstr "配置文件选项 'gpgkey_dns_verification' 要求 python3-unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3757,7 +3754,7 @@ msgstr "不存在模块：{}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "没有对应的流：{}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
@@ -3765,7 +3762,7 @@ msgstr "该模块没有已启用的流： {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "不能同时启用模块：{} 中的多个流"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
@@ -3780,10 +3777,8 @@ msgid "Specified profile not installed for {}"
 msgstr ""
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "没有为 '{}' 指定档案。请指定档案。"
+msgstr "没有为 '{}' 指定流。请指定流"
 
 #: dnf/module/exceptions.py:82
 #, fuzzy
@@ -4052,11 +4047,8 @@ msgid ""
 msgstr "警告，在重放事务时出现了下列问题："
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr "警告，在重放事务时出现了下列问题："
+msgstr "在处理事务过程中出现错误："
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
