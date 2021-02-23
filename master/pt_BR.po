@@ -21,7 +21,7 @@
 # Fabio Beneditto <kamikazenh@gmail.com>, 2020.
 # Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
-# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020, 2021.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
 # Gustavo Costa <gusta@null.net>, 2020.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
@@ -30,9 +30,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-18 09:18-0500\n"
-"PO-Revision-Date: 2020-12-01 23:35+0000\n"
-"Last-Translator: Henrique Roberto Gattermann Mittelstaedt <henrique."
-"roberto97@gmail.com>\n"
+"PO-Revision-Date: 2021-02-26 19:40+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -40,7 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1398,7 +1397,7 @@ msgstr "Nenhum ID de transação fornecido"
 #, fuzzy, python-brace-format
 #| msgid "Transaction ID \"{id}\" not found."
 msgid "Transaction ID \"{0}\" not found."
-msgstr "ID de transação \"{id}\" não encontrado."
+msgstr "ID de transação \"{0}\" não encontrado."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1460,7 +1459,7 @@ msgstr "Erro ao armazenar transação: {}"
 #| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
-"Atenção, os seguintes problemas ocorreram durante a reprodução da transação:"
+"Aviso, os seguintes problemas ocorreram durante a execução de uma transação:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1760,8 +1759,9 @@ msgid "Repo-baseurl       : "
 msgstr "URL base do repo.       : "
 
 #: dnf/cli/commands/repolist.py:219
+#, fuzzy
 msgid "Repo-expire        : "
-msgstr ""
+msgstr "Repo-expire        : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
@@ -2099,7 +2099,7 @@ msgid "Package {} contains no files"
 msgstr "Pacote {} não contém arquivos"
 
 #: dnf/cli/commands/repoquery.py:561
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2109,6 +2109,12 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of thepackages."
 msgstr ""
+"No valid switch specified\n"
+"usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--reco"
+"mmends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
+"\n"
+"description:\n"
+"  For the given packages print a tree of thepackages."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2297,9 +2303,10 @@ msgid "Leaving Shell"
 msgstr "Deixando o Shell"
 
 #: dnf/cli/commands/swap.py:35
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
 msgstr ""
+"execute um mod interativo {prog} para remover e instalar uma especificação"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2835,8 +2842,9 @@ msgstr "Nome"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
+#, fuzzy
 msgid "Epoch"
-msgstr "Epoch"
+msgstr "Época"
 
 #. Translators: This is the short version of 'Version'. You can
 #. use the full (unabbreviated) term 'Version' if you think that
@@ -3464,8 +3472,9 @@ msgid "Errors:"
 msgstr "Erros:"
 
 #: dnf/cli/output.py:1816
+#, fuzzy
 msgid "Dep-Install"
-msgstr "Instalação de Dep."
+msgstr "Dep-Install"
 
 #: dnf/cli/output.py:1817
 msgid "Obsoleted"
@@ -3765,7 +3774,7 @@ msgstr "Um pacote rpm fonte não será instalado (%s)."
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"A opção de configuração 'gpgkey_dns_verification' requer libunbound ({})"
+"A opção de configuração 'gpgkey_dns_verification' requer python3-unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3873,7 +3882,7 @@ msgstr "Nenhum perfil especificado para '{}', especifique o perfil."
 #, fuzzy
 #| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Esse módulo não existe: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -3883,7 +3892,7 @@ msgstr ""
 #, fuzzy
 #| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Nenhum fluxo ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
@@ -3905,7 +3914,7 @@ msgstr ""
 #, fuzzy
 #| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Nenhum perfil especificado para '{}', especifique o perfil."
+msgstr "Nenhum fluxo especificado para '{}', especifique o fluxo"
 
 #: dnf/module/exceptions.py:82
 #, fuzzy
@@ -3917,7 +3926,7 @@ msgstr "Nenhum repositório disponível"
 #, fuzzy
 #| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Nenhum perfil para remover para '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3997,7 +4006,8 @@ msgstr ""
 #, fuzzy, python-brace-format
 #| msgid "Default profile {} not available in module {}:{}"
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Perfil padrão {} não disponível no módulo {}: {}"
+msgstr ""
+"O perfil instalado '{0}' não está disponível no módulo '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
@@ -4191,7 +4201,8 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Atenção, os seguintes problemas ocorreram durante a reprodução da transação:"
+"Os seguintes problemas ocorreram durante a reprodução da transação do "
+"arquivo \"{filename}\":"
 
 #: dnf/transaction_sr.py:68
 #, fuzzy
