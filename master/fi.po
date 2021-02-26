@@ -16,11 +16,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-18 09:18-0500\n"
+"POT-Creation-Date: 2021-02-26 09:18-0500\n"
 "PO-Revision-Date: 2021-02-26 19:40+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2059,9 +2059,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"Valinnan '--recursive' kanssa täytyy käyttää '--whatrequires <REQ>' ("
-"valittavissa myös '--alldeps', mutta ei '--exactdeps'), tai '--requires "
-"<REQ> --resolve'"
+"Valinnan '--recursive' kanssa täytyy käyttää '--whatrequires "
+"<REQ>' (valittavissa myös '--alldeps', mutta ei '--exactdeps'), tai '--"
+"requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2083,9 +2083,9 @@ msgid ""
 "  For the given packages print a tree of thepackages."
 msgstr ""
 "Yhtään sopivaa vaihtoehtoa ei annettu:\n"
-"käyttö: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--rec"
-"ommends|--requires|--suggest|--supplements|--whatrequires] [avainsana] "
-"[--tree]\n"
+"käyttö: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [avainsana] [--"
+"tree]\n"
 "\n"
 "kuvaus:\n"
 "  Tulosta pakettipuu annetuille paketeille."
@@ -2201,8 +2201,8 @@ msgid ""
 "  disable: disable repositories. option = repository id"
 msgstr ""
 "{} arg [vaihtoehto]\n"
-"  list: listaa asennuslähteet ja niiden tila. vaihtoehdot = [all | id | glob]"
-"\n"
+"  list: listaa asennuslähteet ja niiden tila. vaihtoehdot = [all | id | "
+"glob]\n"
 "  enable: ota asennuslähteet käyttöön. vaihtoehto = repository id\n"
 "  disable: poista asennuslähteet käytöstä. vaihtoehto = repository id"
 
@@ -2521,7 +2521,8 @@ msgstr " tai \"{}\" ohittaaksesi asennuskelvottomat paketit"
 
 #: dnf/cli/main.py:147
 msgid "try to add '{}' to use not only best candidate packages"
-msgstr "yritä lisätä ”{}” käyttääksesi muitakin, kuin parhaita ehdokaspaketteja"
+msgstr ""
+"yritä lisätä ”{}” käyttääksesi muitakin, kuin parhaita ehdokaspaketteja"
 
 #: dnf/cli/main.py:150
 msgid " or '{}' to use not only best candidate packages"
@@ -2613,7 +2614,8 @@ msgstr "näytä komennon ohje"
 
 #: dnf/cli/option_parser.py:217
 msgid "allow erasing of installed packages to resolve dependencies"
-msgstr "salli asennettujen pakettien poistaminen riippuvuuksien ratkaisemiseksi"
+msgstr ""
+"salli asennettujen pakettien poistaminen riippuvuuksien ratkaisemiseksi"
 
 #: dnf/cli/option_parser.py:221
 msgid "try the best available package versions in transactions."
@@ -3860,7 +3862,8 @@ msgstr "Ei Käytössä olevaa striimiä moduulille: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr "Enempää virtoja moduulista '{}' ei voida ottaa käyttöön samanaikaisesti"
+msgstr ""
+"Enempää virtoja moduulista '{}' ei voida ottaa käyttöön samanaikaisesti"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
@@ -4050,16 +4053,16 @@ msgstr "Tiedoston jäsentäminen epäonnistui: %s"
 msgid "Loaded plugins: %s"
 msgstr "Ladattu liitännäiset: %s"
 
-#: dnf/plugin.py:199
+#: dnf/plugin.py:211
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
 msgstr "Liitännäisen \"%s\" lataaminen epäonnistui: %s"
 
-#: dnf/plugin.py:231
+#: dnf/plugin.py:243
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Seuraavia mahdollistettujen liitännäisten kuvioita {} ei löytynyt"
 
-#: dnf/plugin.py:235
+#: dnf/plugin.py:247
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr "Seuraavia ei-mahdollistettujen liitännäisten kuvioita {} ei löytynyt"
 
