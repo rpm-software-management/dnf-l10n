@@ -3,30 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Piotr Drąg <piotrdrag@gmail.com>, 2011,2014,2015, 2020.
+# Piotr Drąg <piotrdrag@gmail.com>, 2011,2014,2015, 2020, 2021.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata, 2020.
-# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata, 2020.
-# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata, 2020.
-# Piotr Drąg <piotrdrag@gmail.com>, 2018. #zanata, 2020.
-# Piotr Drąg <piotrdrag@gmail.com>, 2019. #zanata, 2020.
-# Piotr Drąg <piotrdrag@gmail.com>, 2020. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata, 2020, 2021.
+# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata, 2020, 2021.
+# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata, 2020, 2021.
+# Piotr Drąg <piotrdrag@gmail.com>, 2018. #zanata, 2020, 2021.
+# Piotr Drąg <piotrdrag@gmail.com>, 2019. #zanata, 2020, 2021.
+# Piotr Drąg <piotrdrag@gmail.com>, 2020. #zanata, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-09-12 11:37+0000\n"
+"PO-Revision-Date: 2021-03-03 21:46+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/pl/>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -96,13 +96,11 @@ msgid "Started dnf-automatic."
 msgstr "Uruchomiono dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Usypia na %s s"
-msgstr[1] "Usypia na %s s"
-msgstr[2] "Usypia na %s s"
+msgstr[0] "Usypia na {} sekundę"
+msgstr[1] "Usypia na {} sekundy"
+msgstr[2] "Usypia na {} sekund"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -1375,10 +1373,9 @@ msgid "No transaction ID given"
 msgstr "Nie podano identyfikatora transakcji"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Nie odnaleziono identyfikatora transakcji „{id}”."
+msgstr "Nie odnaleziono identyfikatora transakcji „{0}”."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1435,12 +1432,9 @@ msgid "Error storing transaction: {}"
 msgstr "Błąd podczas przechowywania transakcji: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
-"Ostrzeżenie, wystąpiły następujące problemy podczas odtwarzania transakcji:"
+"Ostrzeżenie, wystąpiły następujące problemy podczas wykonywania transakcji:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1564,6 +1558,8 @@ msgstr "Pakiet {} należy do wielu modułów, pomijanie"
 #: dnf/cli/commands/module.py:277
 msgid "switch a module to a stream and distrosync rpm packages"
 msgstr ""
+"przełącza moduł na strumień i wykonuje synchronizację dystrybucji pakietów "
+"RPM"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -3741,7 +3737,7 @@ msgstr "repozytorium %s: zaimportowano klucz 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "niezaszyfrowane pobieranie klucza repozytorium dla %s z %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3933,20 +3929,20 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Instalowanie modułu z repozytorium Fail-Safe jest niedozwolone"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Wszystkie wyniki dla parametru „{0}” w module „{1}:{2}” są nieaktywne"
+msgstr "Brak aktywnych wyników dla parametru „{0}” w module „{1}:{2}”"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Domyślny profil {} nie jest dostępny w module {}:{}"
+msgstr ""
+"Zainstalowany profil „{0}” nie jest dostępny w module „{1}” strumienia „{2}”"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
+"Brak pakietów dostępnych do synchronizacji dystrybucji dla nazwy pakietu „{}”"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -4070,6 +4066,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change jest wyłączone. Ta opcja nie jest obecnie obsługiwana "
+"dla poleceń downgrade i distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4118,22 +4116,17 @@ msgid "Preparing"
 msgstr "Przygotowywanie"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Ostrzeżenie, wystąpiły następujące problemy podczas odtwarzania transakcji:"
+"Wystąpiły następujące problemy podczas odtwarzania transakcji z pliku "
+"„{filename}”:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
-"Ostrzeżenie, wystąpiły następujące problemy podczas odtwarzania transakcji:"
+msgstr "Wystąpiły następujące problemy podczas wykonywania transakcji:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4156,7 +4149,7 @@ msgstr ""
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Podano sprzeczne parametry TransactionReplay: filename, data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
