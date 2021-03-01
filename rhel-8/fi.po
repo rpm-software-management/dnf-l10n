@@ -11,13 +11,14 @@
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata, 2020.
 # Jari Korva <jpkorva@iki.fi>, 2019. #zanata, 2020.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2021.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
 "PO-Revision-Date: 2021-03-02 09:54+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/fi/>\n"
 "Language: fi\n"
@@ -33,10 +34,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "Seuraavat päivitykset on toteutettu järjestelmään '%s':"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Päivitykset toteutettu järjestelmään '%s'."
+msgstr "Päivitykset toteutettu järjestelmään '%s'"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -76,12 +76,12 @@ msgstr "Komennon '%s' suorittaminen epäonnistui: palautti %d"
 #: dnf/automatic/main.py:164 dnf/conf/config.py:151
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr ""
+msgstr "Tuntematon kokoonpanoarvo: %s=%s %s:ssa; %s"
 
 #: dnf/automatic/main.py:168 dnf/conf/config.py:158
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
-msgstr ""
+msgstr "Tuntematon määritysvaihtoehto: %s = %s %s:ssa"
 
 #: dnf/automatic/main.py:237 dnf/cli/cli.py:304
 msgid "GPG check FAILED"
@@ -89,7 +89,7 @@ msgstr "GPG-tarkistus EPÄONNISTUI"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "Odotetaan Internet-yhteyttä ..."
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
@@ -99,11 +99,12 @@ msgstr "Käynnistettiin dnf-automatic."
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] ""
+"Siirry lepotilaan {} sekunnin ajaksiSiirry lepotilaan {} sekunnin ajaksi"
 msgstr[1] ""
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr ""
+msgstr "Järjestelmä ei ole verkkotilassa."
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -113,23 +114,27 @@ msgstr "Virhe: %s"
 
 #: dnf/base.py:146 dnf/base.py:472 dnf/base.py:474
 msgid "loading repo '{}' failure: {}"
-msgstr ""
+msgstr "Ohjelmistolähteen {} ladataan epäonnistuminen: {}"
 
 #: dnf/base.py:148
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "Ohjelmistolähteen {}} lataaminen epäonnistui"
 
 #: dnf/base.py:322
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Metatietojen ajastimen välimuisti on poistettu käytöstä suoritettaessa "
+"mitattua yhteyttä."
 
 #: dnf/base.py:327
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
+"Metatietojen ajastimen välimuisti poistettu käytöstä kun sitä käytetään "
+"akulla."
 
 #: dnf/base.py:332
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Metatietojen-ajastimen välimuisti poistettu käytöstä."
 
 #: dnf/base.py:337
 msgid "Metadata cache refreshed recently."
