@@ -1,27 +1,27 @@
-# Geert Warrink <geert.warrink@onsnet.nu>, 2016. #zanata, 2020.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2016. #zanata, 2020, 2021.
 # Richard E. van der Luit <nippur@fedoraproject.org>, 2016. #zanata
 # Corne van der Plas <vdplas@gmail.com>, 2017. #zanata
-# Geert Warrink <geert.warrink@onsnet.nu>, 2017. #zanata, 2020.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2017. #zanata, 2020, 2021.
 # Richard E. van der Luit <nippur@fedoraproject.org>, 2017. #zanata
-# Geert Warrink <geert.warrink@onsnet.nu>, 2018. #zanata, 2020.
-# Geert Warrink <geert.warrink@onsnet.nu>, 2019. #zanata, 2020.
-# Geert Warrink <geert.warrink@onsnet.nu>, 2020. #zanata
+# Geert Warrink <geert.warrink@onsnet.nu>, 2018. #zanata, 2020, 2021.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2019. #zanata, 2020, 2021.
+# Geert Warrink <geert.warrink@onsnet.nu>, 2020. #zanata, 2021.
 # Richard E. van der Luit <fedoraproject@veneax.nl>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-09-13 13:29+0000\n"
+"PO-Revision-Date: 2021-03-03 21:46+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
-"Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/nl/>\n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -91,12 +91,10 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic is gestart."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Ga voor %s seconden slapen"
-msgstr[1] "Ga voor %s seconden slapen"
+msgstr[0] "Ga voor {} seconde slapen"
+msgstr[1] "Ga voor {} seconden slapen"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -1353,10 +1351,9 @@ msgid "No transaction ID given"
 msgstr "Geen transactie-ID opgegeven"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Transactie ID \"{id}\" niet gevonden."
+msgstr "Transactie ID \"{0}\" niet gevonden."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1413,13 +1410,10 @@ msgid "Error storing transaction: {}"
 msgstr "Fout tijdens het opslaan van transactie: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
-"Waarschuwing, de volgende problemen zijn opgetreden tijdens het opnieuw "
-"afspelen van de transactie:"
+"Waarschuwing, de volgende problemen zijn opgetreden tijdens het uitvoeren "
+"van een transactie:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1541,7 +1535,7 @@ msgstr "Pakket {} behoort toe aan meerdere modules, wordt overgeslagen"
 
 #: dnf/cli/commands/module.py:277
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "schakel een module naar een stream en distrosync rpm-pakketten"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -3714,7 +3708,7 @@ msgstr "repo %s: importeerde sleutel 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "niet-versleuteld ophalen van repo sleutel voor %s van %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3904,20 +3898,19 @@ msgstr ""
 "Het installeren van module van de Fail-Safe repository is niet toegestaan"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Alle matches voor argument '{0}' in module '{1}:{2}' zijn niet actief"
+msgstr "Geen actieve matches voor argument '{0}' in module '{1}:{2}'"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Standaard profiel {} niet beschikbaar in module {}:{}"
+msgstr ""
+"Geïnstalleerd profiel '{0}' is niet beschikbaar in module '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Geen pakketten beschikbaar voor distrosync voor pakketnaam '{}'"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -4042,6 +4035,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change is uitgeschakeld. Deze optie wordt momenteel niet "
+"ondersteund voor downgrade- en distro-sync-commando's"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4090,24 +4085,19 @@ msgid "Preparing"
 msgstr "Voorbereiden"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Waarschuwing, de volgende problemen zijn opgetreden tijdens het opnieuw "
-"afspelen van de transactie:"
+"De volgende problemen zijn opgetreden tijdens het opnieuw afspelen van de "
+"transactie van bestand \"{filename}\":"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
 msgstr ""
-"Waarschuwing, de volgende problemen zijn opgetreden tijdens het opnieuw "
-"afspelen van de transactie:"
+"De volgende problemen zijn opgetreden tijdens het uitvoeren van een "
+"transactie:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4132,6 +4122,8 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Er zijn tegenstrijdige TransactionReplay-argumenten opgegeven: bestandsnaam, "
+"data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
