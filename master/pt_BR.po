@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-01 09:18-0500\n"
-"PO-Revision-Date: 2021-02-26 19:40+0000\n"
+"PO-Revision-Date: 2021-03-03 21:46+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
@@ -109,6 +109,7 @@ msgid "Started dnf-automatic."
 msgstr "Iniciado dnf-automatic."
 
 #: dnf/automatic/main.py:308
+#, fuzzy
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Dormir por {} segundo"
@@ -1579,8 +1580,9 @@ msgid "Package {} belongs to multiple modules, skipping"
 msgstr "O pacote {} pertence a vários módulos, ignorando"
 
 #: dnf/cli/commands/module.py:280
+#, fuzzy
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "mudar um módulo para um stream e distribuir pacotes rpm"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3739,17 +3741,19 @@ msgid "repo %s: imported key 0x%s."
 msgstr "repo %s: chave importada 0x%s."
 
 #: dnf/crypto.py:145
+#, fuzzy
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Verificado usando registro DNS com assinatura DNSSEC."
 
 #: dnf/crypto.py:147
+#, fuzzy
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NÃO verificado usando o registro DNS."
 
 #: dnf/crypto.py:184
-#, python-format
+#, fuzzy, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "recuperando chave repo para %s não criptografada de %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3886,8 +3890,9 @@ msgid "No such module: {}"
 msgstr "Esse módulo não existe: {}"
 
 #: dnf/module/exceptions.py:33
+#, fuzzy
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Esse fluxo não existe: {}"
 
 #: dnf/module/exceptions.py:39
 #, fuzzy
@@ -3896,20 +3901,24 @@ msgid "No enabled stream for module: {}"
 msgstr "Nenhum fluxo ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:46
+#, fuzzy
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Não é possível habilitar mais fluxos do módulo '{}' ao mesmo tempo"
 
 #: dnf/module/exceptions.py:52
+#, fuzzy
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Fluxo diferente ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:58
+#, fuzzy
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Esse perfil não existe: {}"
 
 #: dnf/module/exceptions.py:64
+#, fuzzy
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Perfil especificado não instalado para {}"
 
 #: dnf/module/exceptions.py:70
 #, fuzzy
@@ -4011,8 +4020,9 @@ msgstr ""
 "O perfil instalado '{0}' não está disponível no módulo '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:267
+#, fuzzy
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Nenhum pacote disponível para distrosync para o nome do pacote '{}'"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -4038,11 +4048,13 @@ msgstr ""
 "O módulo de atualização do repositório à prova de falhas não é permitido"
 
 #: dnf/module/module_base.py:422
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but non of the streams are enabled or default"
 msgstr ""
+"O argumento '{argument}' corresponde a {stream_count} streams ('{streams}') "
+"do módulo '{module}', mas nenhum dos streams está ativado ou é padrão"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4233,9 +4245,12 @@ msgstr ""
 "\"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
+#, fuzzy
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Argumentos conflitantes de TransactionReplay foram especificados: nome do "
+"arquivo, dados"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4253,20 +4268,21 @@ msgid "Missing object key \"{key}\" in an rpm."
 msgstr "Chave de objeto \"{key}\" faltando em um rpm."
 
 #: dnf/transaction_sr.py:289
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado do motivo do pacote \"{reason}\" para rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Não é possível analisar NEVRA para o pacote \"{nevra}\"."
 
 #: dnf/transaction_sr.py:321
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Não é possível encontrar rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4288,10 +4304,11 @@ msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr "Pacote nevra \"{nevra}\" não instalado para a ação \"{action}\"."
 
 #: dnf/transaction_sr.py:370
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado da ação do pacote \"{action}\" para rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4314,11 +4331,13 @@ msgid "Environment id '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
 #: dnf/transaction_sr.py:456
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Valor inválido \"{group_type}\" de environment.groups.group_type, apenas "
+"\"obrigatório\" ou \"opcional\" é suportado."
 
 #: dnf/transaction_sr.py:464
 #, python-brace-format
@@ -4326,9 +4345,10 @@ msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Chave \"{key}\" do objeto faltando em environments.groups."
 
 #: dnf/transaction_sr.py:542
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Valor inesperado da ação do grupo \"{action}\" para o grupo \"{group}\"."
 
 #: dnf/transaction_sr.py:547
 #, python-brace-format
@@ -4336,11 +4356,12 @@ msgid "Missing object key \"{key}\" in a group."
 msgstr "Chave \"{key}\" do objeto faltando em um grupo."
 
 #: dnf/transaction_sr.py:571
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Valor inesperado da ação do ambiente \"{action}\" para o ambiente \"{env}\"."
 
 #: dnf/transaction_sr.py:576
 #, python-brace-format
