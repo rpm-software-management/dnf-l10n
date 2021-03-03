@@ -21,23 +21,23 @@
 # Fabio Beneditto <kamikazenh@gmail.com>, 2020.
 # Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
-# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020.
+# Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020, 2021.
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-08-07 17:29+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2021-03-03 21:46+0000\n"
+"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
-"projects/dnf/dnf-master/pt_BR/>\n"
+"projects/dnf/dnf-rhel-8/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -111,8 +111,8 @@ msgstr "Iniciado dnf-automatic."
 #| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Dormir por %s segundos"
-msgstr[1] "Dormir por %s segundos"
+msgstr[0] "Dormir por {} segundo"
+msgstr[1] "Dormir por {} segundos"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -308,8 +308,8 @@ msgstr ""
 #: dnf/base.py:1240
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
-"Não é possível adicionar pacotes locais, porque o trabalho de transação já "
-"existe"
+"Não é possível adicionar pacotes locais, pois uma transação já está em "
+"andamento"
 
 #: dnf/base.py:1254
 msgid "Could not open: {}"
@@ -383,7 +383,7 @@ msgstr "O pacote %s não está instalado, não é possível fazer downgrade."
 #: dnf/cli/commands/upgrade.py:110 dnf/cli/commands/upgrade.py:121
 #, python-format
 msgid "No match for argument: %s"
-msgstr "Nenhuma correspondência para argumento: %s"
+msgstr "Nenhuma correspondência para o argumento: %s"
 
 #: dnf/base.py:2006
 #, python-format
@@ -412,7 +412,7 @@ msgstr "O pacote %s não está instalado, não é possível atualizá-lo."
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
-"A mesma versão ou versão superior de %s já está instalado, não podes "
+"A mesma versão ou uma superior de %s já está instalada, não é possível "
 "atualizá-lo."
 
 #: dnf/base.py:2098 dnf/cli/commands/reinstall.py:81
@@ -480,6 +480,7 @@ msgstr ""
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
+"Impossível de recuperar uma chave para um pacote de linha de comando: %s"
 
 #: dnf/base.py:2339
 #, python-format
@@ -559,7 +560,7 @@ msgstr ""
 
 #: dnf/base.py:2553 dnf/base.py:2573
 msgid "No match for argument"
-msgstr "Nenhuma correspondência para argumento"
+msgstr "Sem correspondência para o argumento"
 
 #: dnf/base.py:2561 dnf/base.py:2581
 msgid "All matches were filtered out by exclude filtering for argument"
@@ -630,6 +631,7 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"A operação resultaria na mudança do módulo '{0}' do fluxo '{1}' para o '{2}'"
 
 #: dnf/cli/cli.py:173
 #, fuzzy, python-brace-format
@@ -765,6 +767,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Pode ser um comando de plugin {PROG}, tente: \"{prog} install 'dnf-"
+"command(%s)'\""
 
 #: dnf/cli/cli.py:755
 #, python-brace-format
@@ -866,6 +870,21 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Você ativou a verificação de pacotes por meio de chaves GPG. Isso é bom.\n"
+"No entanto, você não tem nenhuma chave pública GPG instalada. Você precisa "
+"baixar\n"
+"as chaves dos pacotes que deseja instalar e instalá-los.\n"
+"Você pode fazer isso executando o comando:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Alternativamente, você pode especificar a url da chave que gostaria de usar\n"
+"para um repositório na opção 'gpgkey' em uma seção de repositório e o {prog}"
+"\n"
+"irá instalá-lo para você.\n"
+"\n"
+"Para obter mais informações, entre em contato com sua distribuição ou "
+"provedor de pacotes."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -874,7 +893,7 @@ msgstr "Repositório problema: %s"
 
 #: dnf/cli/commands/__init__.py:158
 msgid "display details about a package or group of packages"
-msgstr "mostra detalhes sobre um pacote ou grupos de pacotes"
+msgstr "exibe detalhes sobre um pacote ou grupo de pacotes"
 
 #: dnf/cli/commands/__init__.py:168 dnf/cli/commands/__init__.py:740
 msgid "show all packages (default)"
@@ -923,7 +942,7 @@ msgstr "lista um pacote ou grupos de pacotes"
 
 #: dnf/cli/commands/__init__.py:235
 msgid "find what package provides the given value"
-msgstr "Localiza qual pacote fornece o valor dado"
+msgstr "localiza qual pacote fornece o valor dado"
 
 #: dnf/cli/commands/__init__.py:239
 msgid "PROVIDE"
@@ -939,7 +958,7 @@ msgstr "Pesquisando por pacotes: "
 
 #: dnf/cli/commands/__init__.py:258
 msgid "check for available package upgrades"
-msgstr "verificar se há atualizações de pacotes disponíveis"
+msgstr "verifica se há atualizações de pacote disponíveis"
 
 #: dnf/cli/commands/__init__.py:264
 msgid "show changelogs before update"
@@ -1016,7 +1035,7 @@ msgstr "{prog} comando para obter ajuda para"
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
-msgstr "Listar ou criar aliases de comando"
+msgstr "Lista ou cria alias de comandos"
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
@@ -1111,7 +1130,7 @@ msgstr "Pacote para remover"
 
 #: dnf/cli/commands/check.py:34
 msgid "check for problems in the packagedb"
-msgstr "procurando por problemas no packagedb"
+msgstr "verifica se há problemas no packagedb"
 
 #: dnf/cli/commands/check.py:40
 msgid "show all problems; default"
@@ -1156,7 +1175,7 @@ msgstr "Removendo arquivo %s"
 
 #: dnf/cli/commands/clean.py:87
 msgid "remove cached data"
-msgstr "Remove os dados do cache"
+msgstr "remove dados em cache"
 
 #: dnf/cli/commands/clean.py:93
 msgid "Metadata type to clean"
@@ -1188,7 +1207,7 @@ msgstr "Listar dependências dos pacotes e quais pacotes as fornecem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr "sincronizar os pacotes instalados para as últimas versões disponíveis"
+msgstr "sincroniza os pacotes instalados com as últimas versões disponíveis"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1204,7 +1223,7 @@ msgstr "Pacote para desatualizar"
 
 #: dnf/cli/commands/group.py:46
 msgid "display, or use, the groups information"
-msgstr "exibir ou usar a informação dos grupos"
+msgstr "exibe ou usa as informações dos grupos"
 
 #: dnf/cli/commands/group.py:72
 msgid "No group data available for configured repositories."
@@ -1221,10 +1240,8 @@ msgstr "Aviso: Nenhum grupo correspondente:"
 
 #: dnf/cli/commands/group.py:179 dnf/cli/commands/group.py:190
 #: dnf/cli/output.py:1139
-#, fuzzy
-#| msgid "<unset>"
 msgid "<name-unset>"
-msgstr "<indefinido>"
+msgstr "<nome indefinido>"
 
 #: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
@@ -1289,29 +1306,36 @@ msgstr "Não foi possível encontrar um pacote de grupo obrigatório."
 
 #: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
-msgstr "exibir ou usar o histórico de transações"
+msgstr "exibe ou usa o histórico de transações"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
 msgstr ""
+"Para o comando \"store\", o caminho do arquivo para armazenar a transação"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Para o comando \"replay\", não verifique se há pacotes instalados que "
+"correspondam aos da transação"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Para o comando \"replay\", não verifique se há pacotes extras puxados para a "
+"transação"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Para o comando \"replay\", ignore os pacotes que não estão disponíveis ou "
+"têm dependências faltando"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1322,16 +1346,12 @@ msgstr ""
 "'{}' requer um ID de transação ou nome de pacote."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Nenhum ID de transação ou nome de pacote fornecido."
+msgstr "Nenhum nome de arquivo de transação fornecido."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Falha ao remover o arquivo de transação %s"
+msgstr "Mais de um argumento fornecido como nome do arquivo de transação."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1402,6 +1422,8 @@ msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
+"Não é possível converter '{}' em ID de transação.\n"
+"Use '<number>', 'last', 'last-<number>'."
 
 #: dnf/cli/commands/history.py:312
 msgid "No transaction which manipulates package '{}' was found."
@@ -1409,23 +1431,19 @@ msgstr "Nenhuma transação que manipula o pacote '{}' foi encontrado."
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} existe, sobrescrever?"
 
 #: dnf/cli/commands/history.py:360
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "{} não sobrescrito, saindo."
 
 #: dnf/cli/commands/history.py:367
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Transação falhou"
+msgstr "Transação salva em {}."
 
 #: dnf/cli/commands/history.py:370
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Erros ocorreram durante a transação."
+msgstr "Erro ao armazenar transação: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
@@ -1433,7 +1451,7 @@ msgstr ""
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
-msgstr "Instala um ou mais pacotes no seu sistema"
+msgstr "instala um ou mais pacotes em seu sistema"
 
 #: dnf/cli/commands/install.py:53
 msgid "Package to install"
@@ -1441,7 +1459,7 @@ msgstr "Pacote para instalar"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "Não foi possível encontrar uma correspondência"
+msgstr "Impossível de encontrar uma correspondência"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
@@ -1463,7 +1481,7 @@ msgstr "Fazendo cache de arquivos para todos os metadados."
 
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
-msgstr "marcar ou desmarcar pacotes instalados como instalados pelo usuário."
+msgstr "marca ou desmarca pacotes instalados como instalados pelo usuário."
 
 #: dnf/cli/commands/mark.py:44
 msgid ""
@@ -1471,6 +1489,9 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"install: marcar como instalado pelo usuário\n"
+"remove: desmarcar como instalado pelo usuário\n"
+"group: marcar como instalado pelo grupo"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
@@ -1546,8 +1567,9 @@ msgid "Package {} belongs to multiple modules, skipping"
 msgstr "O pacote {} pertence a vários módulos, ignorando"
 
 #: dnf/cli/commands/module.py:277
+#, fuzzy
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "mudar um módulo para um stream e distribuir pacotes rpm"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -1679,73 +1701,74 @@ msgstr "Nome do repo          : "
 
 #: dnf/cli/commands/repolist.py:166
 msgid "Repo-status        : "
-msgstr "Repo-status        : "
+msgstr "Estado do Repo.        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr ""
+msgstr "Revisão do Repo.      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr ""
+msgstr "Tags do Repo.          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
-msgstr ""
+msgstr "Tags da distro. do repo.      : "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
-msgstr ""
+msgstr "Repo. atualizado       : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr ""
+msgstr "Pacotes de repo.          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Pacotes disponíveis do repo.: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
-msgstr ""
+msgstr "Tamanho do repo.          : "
 
 #: dnf/cli/commands/repolist.py:199
 msgid "Repo-metalink      : "
-msgstr ""
+msgstr "Metalink do repo.      : "
 
 #: dnf/cli/commands/repolist.py:204
 msgid "  Updated          : "
-msgstr ""
+msgstr "  Atualizado          : "
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr ""
+msgstr "Espelhos do repo.       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr ""
+msgstr "URL base do repo.       : "
 
 #: dnf/cli/commands/repolist.py:219
+#, fuzzy
 msgid "Repo-expire        : "
-msgstr ""
+msgstr "Repo-expire        : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Repo. excluído       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr ""
+msgstr "Repo. incluído       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
 msgid "Repo-excluded      : "
-msgstr ""
+msgstr "Repo. excluído       : "
 
 #: dnf/cli/commands/repolist.py:236
 msgid "Repo-filename      : "
-msgstr ""
+msgstr "Nome do arquivo do repo.      : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
@@ -1764,11 +1787,11 @@ msgstr "nome do repo"
 
 #: dnf/cli/commands/repolist.py:291
 msgid "Total packages: {}"
-msgstr ""
+msgstr "Pacotes totais: {}"
 
 #: dnf/cli/commands/repoquery.py:107
 msgid "search for packages matching keyword"
-msgstr "pesquise por pacotes coincidindo com a palavra-chave"
+msgstr "pesquisa por pacotes coincidindo com a palavra-chave"
 
 #: dnf/cli/commands/repoquery.py:121
 msgid ""
@@ -2052,6 +2075,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"A opção '--recursive' deve ser usada com '--whatrequires <REQ>' ("
+"opcionalmente com '--alldeps', mas não com '--exactdeps') ou com '--requires "
+"<REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2134,7 +2160,7 @@ msgstr "Nenhuma correspondência encontrada."
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr "executar um interativo {prog} shell"
+msgstr "executa um shell interativo {prog}"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -2306,7 +2332,7 @@ msgstr "Baixo/Seg."
 
 #: dnf/cli/commands/updateinfo.py:63
 msgid "display advisories about packages"
-msgstr "mostra avisos sobre pacotes"
+msgstr "exibe avisos sobre pacotes"
 
 #: dnf/cli/commands/updateinfo.py:77
 msgid "advisories about newer versions of installed packages (default)"
@@ -2463,7 +2489,7 @@ msgstr "verdadeiro"
 
 #: dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr "atualiza um ou mais pacotes do seu sistema"
+msgstr "atualiza um ou mais pacotes em seu sistema"
 
 #: dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -2474,7 +2500,7 @@ msgid ""
 "upgrade, but only 'newest' package match which fixes a problem that affects "
 "your system"
 msgstr ""
-"atualizar, mas apenas o pacote 'mais recentes' que coincide e que corrige um "
+"atualiza, mas apenas o pacote 'mais recente' que coincide e que corrige um "
 "problema que afeta o seu sistema"
 
 #: dnf/cli/main.py:88
@@ -2798,8 +2824,9 @@ msgstr "Nome"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
+#, fuzzy
 msgid "Epoch"
-msgstr "Epoch"
+msgstr "Época"
 
 #. Translators: This is the short version of 'Version'. You can
 #. use the full (unabbreviated) term 'Version' if you think that
@@ -2848,7 +2875,7 @@ msgstr "Tamanho"
 #: dnf/cli/output.py:474 dnf/cli/output.py:1263
 msgctxt "short"
 msgid "Size"
-msgstr "Tamanho"
+msgstr "Tam."
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:478
@@ -2950,7 +2977,7 @@ msgstr "Grupo: %s"
 #: dnf/cli/output.py:743
 #, python-format
 msgid " Group-Id: %s"
-msgstr " Group-Id: %s"
+msgstr " ID do grupo: %s"
 
 #: dnf/cli/output.py:745 dnf/cli/output.py:784
 #, python-format
@@ -2986,7 +3013,7 @@ msgstr "Grupo ambiente: %s"
 #: dnf/cli/output.py:781
 #, python-format
 msgid " Environment-Id: %s"
-msgstr " Environment-Id: %s"
+msgstr " ID do ambiente: %s"
 
 #: dnf/cli/output.py:787
 msgid " Mandatory Groups:"
@@ -3003,12 +3030,12 @@ msgstr "Resultado a partir de:"
 #: dnf/cli/output.py:823
 #, python-format
 msgid "Filename    : %s"
-msgstr "Nome de arquivo    : %s"
+msgstr "Nome do arquivo    : %s"
 
 #: dnf/cli/output.py:848
 #, python-format
 msgid "Repo        : %s"
-msgstr "Repo        : %s"
+msgstr "Repo.        : %s"
 
 #: dnf/cli/output.py:857
 msgid "Description : "
@@ -3027,7 +3054,7 @@ msgstr "Licença     : %s"
 #: dnf/cli/output.py:871
 #, python-format
 msgid "Provide    : %s"
-msgstr "Fornecer    : %s"
+msgstr "Fornece    : %s"
 
 #: dnf/cli/output.py:891
 #, python-format
@@ -3157,7 +3184,7 @@ msgstr "Redefinindo módulos"
 
 #: dnf/cli/output.py:1143
 msgid "Installing Environment Groups"
-msgstr "Instalando grupos de ambiente"
+msgstr "Instalando Grupos de Ambiente"
 
 #: dnf/cli/output.py:1150
 msgid "Upgrading Environment Groups"
@@ -3577,16 +3604,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "O módulo ou grupo '%s' não existe."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Ambiente '%s' não está instalado."
+msgstr "Ambiente de ID '%s' não está instalado."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Ambiente '%s' não está instalado."
+msgstr "O ambiente '%s' não está instalado."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3599,10 +3624,9 @@ msgid "Environment '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Group_id '%s' não existe."
+msgstr "O grupo '%s' não existe."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3618,6 +3642,8 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"Não foi possível baixar o arquivo de configuração do URL \"{}\":\n"
+"  {}"
 
 #: dnf/conf/config.py:355 dnf/conf/config.py:391
 #, python-format
@@ -3680,7 +3706,7 @@ msgstr "O nome do repositório '{}' está ausente na configuração, usando o id
 
 #: dnf/conf/read.py:104
 msgid "Parsing file \"{}\" failed: {}"
-msgstr "O arquivo de análise \"{}\" falhou: {}"
+msgstr "A análise do arquivo \"{}\" falhou: {}"
 
 #: dnf/crypto.py:108
 #, python-format
@@ -3693,9 +3719,9 @@ msgid "repo %s: imported key 0x%s."
 msgstr "repo %s: chave importada 0x%s."
 
 #: dnf/crypto.py:177
-#, python-format
+#, fuzzy, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "recuperando chave repo para %s não criptografada de %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3869,7 +3895,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:106 dnf/module/module_base.py:216
 msgid "Unable to match profile for argument {}"
-msgstr "Não foi possível corresponder ao perfil para o argumento {}"
+msgstr "Impossível de corresponder o perfil ao argumento {}"
 
 #: dnf/module/module_base.py:118
 msgid "No default profiles for module {}:{}. Available profiles: {}"
@@ -3902,8 +3928,9 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Perfil padrão {} não disponível no módulo {}: {}"
 
 #: dnf/module/module_base.py:265
+#, fuzzy
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Nenhum pacote disponível para distrosync para o nome do pacote '{}'"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -3953,12 +3980,12 @@ msgstr "%s é um arquivo vazio"
 #: dnf/persistor.py:91
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Falha ao carregar cache de repositórios expirados: %s"
 
 #: dnf/persistor.py:99
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Falha ao armazenar cache de repositórios expirados: %s"
 
 #: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
@@ -4029,6 +4056,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change está desabilitado. Esta opção não é atualmente suportada "
+"para os comandos downgrade e distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4092,12 +4121,12 @@ msgstr "Erros ocorreram durante a transação."
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Versão principal \"{major}\" inválida, número esperado."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Versão secundária \"{minor}\" inválida, número esperado."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
@@ -4105,48 +4134,53 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Versão principal \"{major}\" incompatível, a versão principal suportada é \""
+"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
+#, fuzzy
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Argumentos conflitantes de TransactionReplay foram especificados: nome do "
+"arquivo, dados"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Tipo inesperado de \"{id}\", esperado {exp}."
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Falta a chave \"{key}\"."
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Chave de objeto \"{key}\" faltando em um rpm."
 
 #: dnf/transaction_sr.py:289
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado do motivo do pacote \"{reason}\" para rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Não é possível analisar NEVRA para o pacote \"{nevra}\"."
 
 #: dnf/transaction_sr.py:321
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Não é possível encontrar rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:336
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "O pacote %s já está instalado."
+msgstr "O pacote \"{na}\" já está instalado para a ação \"{action}\"."
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
@@ -4154,34 +4188,35 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Pacote nevra \"{nevra}\" não disponível em repositórios para a ação \""
+"{action}\"."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Pacote nevra \"{nevra}\" não instalado para a ação \"{action}\"."
 
 #: dnf/transaction_sr.py:370
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado da ação do pacote \"{action}\" para rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "O módulo ou grupo '%s' não está disponível."
+msgstr "A id do grupo '%s' não está disponível."
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Chave \"{key}\" do objeto faltando em groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "O módulo ou grupo '%s' não está instalado."
+msgstr "Grupo de ID '%s' não está instalado."
 
 #: dnf/transaction_sr.py:432
 #, fuzzy, python-format
@@ -4190,38 +4225,42 @@ msgid "Environment id '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
 #: dnf/transaction_sr.py:456
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Valor inválido \"{group_type}\" de environment.groups.group_type, apenas "
+"\"obrigatório\" ou \"opcional\" é suportado."
 
 #: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Chave \"{key}\" do objeto faltando em environments.groups."
 
 #: dnf/transaction_sr.py:542
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Valor inesperado da ação do grupo \"{action}\" para o grupo \"{group}\"."
 
 #: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Chave \"{key}\" do objeto faltando em um grupo."
 
 #: dnf/transaction_sr.py:571
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Valor inesperado da ação do ambiente \"{action}\" para o ambiente \"{env}\"."
 
 #: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Chave\"{key}\" do objeto faltando em um ambiente."
 
 #: dnf/transaction_sr.py:615
 #, python-brace-format
@@ -4229,6 +4268,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"O pacote nevra \"{nevra}\", que não estava presente no arquivo de transação, "
+"foi inserido na transação."
 
 #: dnf/util.py:393 dnf/util.py:395
 msgid "Problem"
