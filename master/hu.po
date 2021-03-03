@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-01 09:18-0500\n"
+"POT-Creation-Date: 2021-03-03 09:18-0500\n"
 "PO-Revision-Date: 2021-02-12 11:40+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -215,43 +215,43 @@ msgstr "Hibás tsflag a következő konfigurációs fájlban: %s"
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "A csoportfájl hozzáadása sikertelen a következő tárolónál: %s - %s"
 
-#: dnf/base.py:892
+#: dnf/base.py:902
 msgid "Running transaction check"
 msgstr "Tranzakció ellenőrzés futtatása"
 
-#: dnf/base.py:900
+#: dnf/base.py:910
 msgid "Error: transaction check vs depsolve:"
 msgstr "Hiba: tranzakció ellenőrzésnél és függőségfeloldásnál:"
 
-#: dnf/base.py:906
+#: dnf/base.py:916
 msgid "Transaction check succeeded."
 msgstr "Tranzakció ellenőrzés sikeres."
 
-#: dnf/base.py:909
+#: dnf/base.py:919
 msgid "Running transaction test"
 msgstr "Tranzakció teszt futtatása"
 
-#: dnf/base.py:919 dnf/base.py:1070
+#: dnf/base.py:929 dnf/base.py:1080
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:920
+#: dnf/base.py:930
 msgid "Transaction test error:"
 msgstr "Tranzakció teszt hiba:"
 
-#: dnf/base.py:931
+#: dnf/base.py:941
 msgid "Transaction test succeeded."
 msgstr "Tranzakció teszt sikeres."
 
-#: dnf/base.py:952
+#: dnf/base.py:962
 msgid "Running transaction"
 msgstr "Tranzakció futtatása"
 
-#: dnf/base.py:989
+#: dnf/base.py:999
 msgid "Disk Requirements:"
 msgstr "Szükséges hely:"
 
-#: dnf/base.py:992
+#: dnf/base.py:1002
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
@@ -260,40 +260,40 @@ msgstr[0] ""
 msgstr[1] ""
 "Még legalább {0} MB szabad helyre van szükség a(z) {1} fájlrendszeren."
 
-#: dnf/base.py:999
+#: dnf/base.py:1009
 msgid "Error Summary"
 msgstr "Hiba összegzés"
 
-#: dnf/base.py:1025
+#: dnf/base.py:1035
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "Az RPMDB a(z) {prog} programon kívül lett módosítva."
 
-#: dnf/base.py:1071 dnf/base.py:1079
+#: dnf/base.py:1081 dnf/base.py:1089
 msgid "Could not run transaction."
 msgstr "Tranzakció futtatása meghiúsult."
 
-#: dnf/base.py:1074
+#: dnf/base.py:1084
 msgid "Transaction couldn't start:"
 msgstr "Tranzakció nem indítható:"
 
-#: dnf/base.py:1088
+#: dnf/base.py:1098
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "A következő tranzakció-fájl eltávolítása meghiúsult: %s"
 
-#: dnf/base.py:1170
+#: dnf/base.py:1180
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Néhány csomag nem lett letöltve. Újrapróbálkozás."
 
-#: dnf/base.py:1200
+#: dnf/base.py:1210
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr ""
 "A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra. "
 "(%d.1%% megspórolva)"
 
-#: dnf/base.py:1203
+#: dnf/base.py:1213
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
@@ -301,76 +301,76 @@ msgstr ""
 "A sikertelen Delta RPM-ek megnövelték a(z) %.1f MB-nyi frissítést %.1f MB-"
 "ra. (%d.1%% elpazarolva)"
 
-#: dnf/base.py:1245
+#: dnf/base.py:1255
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "Nem adhatók hozzá helyi csomagok, mert a tranzakciós feladat már létezik"
 
-#: dnf/base.py:1259
+#: dnf/base.py:1269
 msgid "Could not open: {}"
 msgstr "Nem nyitható meg: {}"
 
-#: dnf/base.py:1297
+#: dnf/base.py:1307
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "A publikus kulcs nincs telepítve a következőhöz: %s"
 
-#: dnf/base.py:1301
+#: dnf/base.py:1311
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Hiba a következő csomag megnyitásánál: %s"
 
-#: dnf/base.py:1309
+#: dnf/base.py:1319
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "A publikus kulcs nem megbízható a következőhöz: %s"
 
-#: dnf/base.py:1313
+#: dnf/base.py:1323
 #, python-format
 msgid "Package %s is not signed"
 msgstr "A következő csomag nincs aláírva: %s"
 
-#: dnf/base.py:1343
+#: dnf/base.py:1353
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Nem távolítható el: %s"
 
-#: dnf/base.py:1347
+#: dnf/base.py:1357
 #, python-format
 msgid "%s removed"
 msgstr "%s eltávolítva"
 
-#: dnf/base.py:1627
+#: dnf/base.py:1637
 msgid "No match for group package \"{}\""
 msgstr "Nincs találat a(z) „{}” csomagcsoportra"
 
-#: dnf/base.py:1713
+#: dnf/base.py:1723
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Csomagok hozzáadása a(z) „%s” csoportból: %s"
 
-#: dnf/base.py:1736 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:442
+#: dnf/base.py:1746 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:442
 #: dnf/cli/commands/__init__.py:499 dnf/cli/commands/__init__.py:592
 #: dnf/cli/commands/__init__.py:641 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Nincs tennivaló."
 
-#: dnf/base.py:1754
+#: dnf/base.py:1764
 msgid "No groups marked for removal."
 msgstr "Nincsenek eltávolításra jelölt csoportok."
 
-#: dnf/base.py:1788
+#: dnf/base.py:1798
 msgid "No group marked for upgrade."
 msgstr "Nincsenek frissítésre jelölt csoportok."
 
-#: dnf/base.py:2002
+#: dnf/base.py:2012
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 
-#: dnf/base.py:2004 dnf/base.py:2023 dnf/base.py:2036 dnf/base.py:2057
-#: dnf/base.py:2106 dnf/base.py:2114 dnf/base.py:2248 dnf/cli/cli.py:417
+#: dnf/base.py:2014 dnf/base.py:2033 dnf/base.py:2046 dnf/base.py:2067
+#: dnf/base.py:2116 dnf/base.py:2124 dnf/base.py:2258 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:425 dnf/cli/commands/__init__.py:482
 #: dnf/cli/commands/__init__.py:586 dnf/cli/commands/__init__.py:633
 #: dnf/cli/commands/__init__.py:711 dnf/cli/commands/install.py:147
@@ -380,29 +380,29 @@ msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 msgid "No match for argument: %s"
 msgstr "Nem található egyezés a következő argumentumra: %s"
 
-#: dnf/base.py:2011
+#: dnf/base.py:2021
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "A(z) %s csomag egy alacsonyabb verziója már telepítve van, nem lehet "
 "visszaállítani."
 
-#: dnf/base.py:2034
+#: dnf/base.py:2044
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet újratelepíteni."
 
-#: dnf/base.py:2049
+#: dnf/base.py:2059
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "A(z) %s egy forráscsomag, és nem frissíthető, figyelmen kívül hagyva."
 
-#: dnf/base.py:2055
+#: dnf/base.py:2065
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet frissíteni."
 
-#: dnf/base.py:2064
+#: dnf/base.py:2074
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -410,107 +410,107 @@ msgstr ""
 "A(z) %s megegyező vagy egy magasabb verziója már telepítve van, nem lehet "
 "frissíteni."
 
-#: dnf/base.py:2103 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2113 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "A(z) %s csomag elérhető, de nincs telepítve."
 
-#: dnf/base.py:2109
+#: dnf/base.py:2119
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "A(z) %s csomag elérhető, de más architektúrához van telepítve."
 
-#: dnf/base.py:2134
+#: dnf/base.py:2144
 #, python-format
 msgid "No package %s installed."
 msgstr "Nincs telepítve a(z) %s csomag."
 
-#: dnf/base.py:2152 dnf/cli/commands/install.py:136
+#: dnf/base.py:2162 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Nem érvényes űrlap: %s"
 
-#: dnf/base.py:2167 dnf/cli/commands/__init__.py:681
+#: dnf/base.py:2177 dnf/cli/commands/__init__.py:681
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Nincsenek eltávolításra kijelölt csomagok."
 
-#: dnf/base.py:2255 dnf/cli/cli.py:428
+#: dnf/base.py:2265 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "A(z) %s argumentumhoz érhetőek el csomagok, de nincsenek telepítve."
 
-#: dnf/base.py:2260
+#: dnf/base.py:2270
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "A legalacsonyabb verziójú %s csomag már telepítve van, nem lehet "
 "visszaállítani."
 
-#: dnf/base.py:2307
+#: dnf/base.py:2317
 msgid "No security updates needed, but {} update available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2309
+#: dnf/base.py:2319
 msgid "No security updates needed, but {} updates available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2313
+#: dnf/base.py:2323
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
-#: dnf/base.py:2315
+#: dnf/base.py:2325
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2336
+#: dnf/base.py:2346
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Egy kulcs nem kérhető le egy parancssoros csomaghoz: %s"
 
-#: dnf/base.py:2344
+#: dnf/base.py:2354
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". A hibás csomag: %s"
 
-#: dnf/base.py:2345
+#: dnf/base.py:2355
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "A GPG kulcsok beállítva mint: %s"
 
-#: dnf/base.py:2357
+#: dnf/base.py:2367
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "A következő GPG kulcs már telepítve van: %s (0x%s)"
 
-#: dnf/base.py:2393
+#: dnf/base.py:2403
 msgid "The key has been approved."
 msgstr "A kulcs jóváhagyásra került."
 
-#: dnf/base.py:2396
+#: dnf/base.py:2406
 msgid "The key has been rejected."
 msgstr "A kulcs elutasításra került."
 
-#: dnf/base.py:2429
+#: dnf/base.py:2439
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "A kulcs importálása meghiúsult (hibakód %d)"
 
-#: dnf/base.py:2431
+#: dnf/base.py:2441
 msgid "Key imported successfully"
 msgstr "A kulcs importálása sikeres"
 
-#: dnf/base.py:2435
+#: dnf/base.py:2445
 msgid "Didn't install any keys"
 msgstr "Nem lett telepítve egyetlen kulcs sem"
 
-#: dnf/base.py:2438
+#: dnf/base.py:2448
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -522,27 +522,27 @@ msgstr ""
 "Kérjük, ellenőrizze, hogy az URL címek helyesen vannak-e megadva ehhez a "
 "tárolóhoz."
 
-#: dnf/base.py:2449
+#: dnf/base.py:2459
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "A kulcs(ok) importálása nem segített, rossz kulcs(ok)?"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2512
 msgid "  * Maybe you meant: {}"
 msgstr "  * Talán erre gondolt: {}"
 
-#: dnf/base.py:2534
+#: dnf/base.py:2544
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "A(z) „{}”, „{}” helyi tárolóban lévő csomag ellenőrzőösszege hibás"
 
-#: dnf/base.py:2537
+#: dnf/base.py:2547
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Néhány csomagnak hibás az ellenőrzőösszege a helyi tárolóban"
 
-#: dnf/base.py:2540
+#: dnf/base.py:2550
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "A(z) „{}”, „{}” tárolóban lévő csomag ellenőrzőösszege hibás"
 
-#: dnf/base.py:2543
+#: dnf/base.py:2553
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -550,23 +550,23 @@ msgstr ""
 "Néhány csomag gyorsítótára érvénytelen, de nem tölthető le a „--cacheonly” "
 "kapcsoló miatt"
 
-#: dnf/base.py:2561 dnf/base.py:2581
+#: dnf/base.py:2571 dnf/base.py:2591
 msgid "No match for argument"
 msgstr "Nincs találat"
 
-#: dnf/base.py:2569 dnf/base.py:2589
+#: dnf/base.py:2579 dnf/base.py:2599
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Az összes találat ki lett szűrve kizáró szűréssel"
 
-#: dnf/base.py:2571
+#: dnf/base.py:2581
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Az összes találat ki lett szűrve moduláris szűréssel"
 
-#: dnf/base.py:2587
+#: dnf/base.py:2597
 msgid "All matches were installed from a different repository for argument"
 msgstr "Az összes találat egy másik tárolóból lett telepítve"
 
-#: dnf/base.py:2634
+#: dnf/base.py:2644
 #, python-format
 msgid "Package %s is already installed."
 msgstr "A(z) %s csomag már telepítve van."
@@ -2495,7 +2495,7 @@ msgid "Files"
 msgstr "Fájlok"
 
 #: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1654
-#: dnf/cli/output.py:1656 dnf/util.py:596
+#: dnf/cli/output.py:1656 dnf/util.py:617
 msgid "Installed"
 msgstr "Telepítve"
 
@@ -3362,11 +3362,11 @@ msgstr "Nem lett megadva tranzakció azonosító vagy csomag"
 msgid "Erased"
 msgstr "Törölve"
 
-#: dnf/cli/output.py:1655 dnf/cli/output.py:1822 dnf/util.py:595
+#: dnf/cli/output.py:1655 dnf/cli/output.py:1822 dnf/util.py:616
 msgid "Downgraded"
 msgstr "Visszaállítva"
 
-#: dnf/cli/output.py:1655 dnf/cli/output.py:1824 dnf/util.py:594
+#: dnf/cli/output.py:1655 dnf/cli/output.py:1824 dnf/util.py:615
 msgid "Upgraded"
 msgstr "Frissítve"
 
@@ -3700,39 +3700,39 @@ msgstr ""
 msgid "Repo %s did not have a %s attr. before setopt"
 msgstr "A(z) %s tárolónak nincs %s attribútuma a setopt előtt"
 
-#: dnf/conf/read.py:51
+#: dnf/conf/read.py:60
 #, python-format
 msgid "Warning: failed loading '%s', skipping."
 msgstr "Figyelmeztetés: nem sikerült betölteni: „%s”, átugrás."
 
-#: dnf/conf/read.py:63
+#: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Hibás tárolóazonosító: {} ({}), bájt = {} {}"
 
-#: dnf/conf/read.py:67
+#: dnf/conf/read.py:76
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Hibás tárolóazonosító: {}, bájt = {} {}"
 
-#: dnf/conf/read.py:75
+#: dnf/conf/read.py:84
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "„{}” ({}) tároló: Hiba a konfiguráció feldolgozásakor: {}"
 
-#: dnf/conf/read.py:78
+#: dnf/conf/read.py:87
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "„{}” tároló: Hiba a konfiguráció feldolgozásakor: {}"
 
-#: dnf/conf/read.py:84
+#: dnf/conf/read.py:93
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
 "A(z) „{}” ({}) tároló neve hiányzik a konfigurációban, az azonosító "
 "használata."
 
-#: dnf/conf/read.py:87
+#: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
 "A(z) „{}” tároló neve hiányzik a konfigurációban, az azonosító használata."
 
-#: dnf/conf/read.py:104
+#: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "A(z) „{}” fájl feldolgozása sikertelen: {}"
 
@@ -3759,7 +3759,7 @@ msgstr ""
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr ""
 
-#: dnf/db/group.py:293
+#: dnf/db/group.py:294
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3767,11 +3767,11 @@ msgstr ""
 "A moduláris metaadatok nem érhetőek el a(z) „{}” moduláris csomaghoz, ezért "
 "nem telepíthető a rendszerre"
 
-#: dnf/db/group.py:343
+#: dnf/db/group.py:344
 msgid "No available modular metadata for modular package"
 msgstr "A moduláris metaadatok nem érhetőek el a moduláris csomaghoz"
 
-#: dnf/db/group.py:377
+#: dnf/db/group.py:378
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Nem fogja telepíteni a forrásrpm csomagot (%s)."
@@ -4344,35 +4344,35 @@ msgid ""
 "pulled into the transaction."
 msgstr ""
 
-#: dnf/util.py:398 dnf/util.py:400
+#: dnf/util.py:419 dnf/util.py:421
 msgid "Problem"
 msgstr "Probléma"
 
-#: dnf/util.py:451
+#: dnf/util.py:472
 msgid "TransactionItem not found for key: {}"
 msgstr "Nem található tranzakcióelem a kulcshoz: {}"
 
-#: dnf/util.py:461
+#: dnf/util.py:482
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Nem található tranzakciós szoftveradatbázis-elem a kulcshoz: {}"
 
-#: dnf/util.py:464
+#: dnf/util.py:485
 msgid "Errors occurred during transaction."
 msgstr "Hiba történt a tranzakció során."
 
-#: dnf/util.py:600
+#: dnf/util.py:621
 msgid "Reinstalled"
 msgstr "Újratelepítve"
 
-#: dnf/util.py:601
+#: dnf/util.py:622
 msgid "Skipped"
 msgstr "Kihagyva"
 
-#: dnf/util.py:602
+#: dnf/util.py:623
 msgid "Removed"
 msgstr "Eltávolítva"
 
-#: dnf/util.py:605
+#: dnf/util.py:626
 msgid "Failed"
 msgstr "Sikertelen"
 
