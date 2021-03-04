@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2021-03-03 21:46+0000\n"
+"PO-Revision-Date: 2021-03-05 08:01+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/fi/>\n"
@@ -205,7 +205,7 @@ msgstr "Virheellinen tsflag asetustiedostossa: %s"
 #: dnf/base.py:655
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr "Ryhmätiedoston lisääminen asennuslähteelle epäonnistui: %s - %s"
+msgstr "Ryhmien tiedoston lisääminen ohjelmislähteelle epäonnistui: %s - %s"
 
 #: dnf/base.py:887
 msgid "Running transaction check"
@@ -503,9 +503,9 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
-"Asennuslähteelle ”%s” luetellut GPG-avaimet on jo asennettu, mutta ne eivät "
-"vastaa tätä pakettia.\n"
-"Tarkista että tälle asennuslähteelle on asetettu oikeat avainten URL:t."
+"Ohjelmistolähteelle ”%s” luetellut GPG-avaimet on jo asennettu, mutta ne "
+"eivät vastaa tätä pakettia.\n"
+"Tarkista, että tälle ohjelmistolähteelle on asetettu oikeat avainten URL:t."
 
 #: dnf/base.py:2441
 msgid "Import of key(s) didn't help, wrong key(s)?"
@@ -741,8 +741,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
-"Se voi olla {PROG}-liitännäiskomento, kokeile: \"{prog} install 'dnf-"
-"command(%s)'\""
+"Se voi olla {PROG}-liitännäiskomento, kokeile: '{prog} install 'dnf-"
+"command(%s)''"
 
 #: dnf/cli/cli.py:755
 #, python-brace-format
@@ -861,7 +861,7 @@ msgstr ""
 #: dnf/cli/commands/__init__.py:71
 #, python-format
 msgid "Problem repository: %s"
-msgstr "Ohjelmistolähdeongelm: %s"
+msgstr "Ohjelmistolähdeongelma: %s"
 
 #: dnf/cli/commands/__init__.py:158
 msgid "display details about a package or group of packages"
@@ -910,7 +910,7 @@ msgstr "Paketin nimen määrittely"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
-msgstr "Luettele paketti tai pakettiryhmät"
+msgstr "luettele paketti tai pakettien ryhmät"
 
 #: dnf/cli/commands/__init__.py:235
 msgid "find what package provides the given value"
@@ -976,7 +976,7 @@ msgstr "Paketteja ei ole merkitty päivitettäväksi."
 
 #: dnf/cli/commands/__init__.py:726
 msgid "run commands on top of all packages in given repository"
-msgstr "Suorita komennot tietyn ohjelmistolähteen kaikkien pakettien päällä"
+msgstr "suorita komennot tietyn ohjelmistolähteen kaikkien pakettien päällä"
 
 #: dnf/cli/commands/__init__.py:765
 msgid "REPOID"
@@ -1006,7 +1006,7 @@ msgstr "{prog}-komento avun saamiseen"
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
-msgstr "Listaa tai luo komentoaliaksia"
+msgstr "Luettele tai luo komentoaliaksia"
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
@@ -1375,7 +1375,7 @@ msgstr "Transaktiohistoria on puutteellinen %u:n jälkeen."
 
 #: dnf/cli/commands/history.py:256
 msgid "No packages to list"
-msgstr "Ei yhtään listattavaa pakettia"
+msgstr "Ei lueteltavia paketteja"
 
 #: dnf/cli/commands/history.py:279
 msgid ""
@@ -2189,10 +2189,10 @@ msgid ""
 "  disable: disable repositories. option = repository id"
 msgstr ""
 "{} arg [vaihtoehto]\n"
-"  list: listaa asennuslähteet ja niiden tila. vaihtoehdot = [all | id | glob]"
-"\n"
-"  enable: ota asennuslähteet käyttöön. vaihtoehto = repository id\n"
-"  disable: poista asennuslähteet käytöstä. vaihtoehto = repository id"
+"  list: luettele ohjelmistolähteet ja niiden tilat. vaihtoehdot = [all | id |"
+" glob]\n"
+"  enable: ota ohjelmistolähteet käyttöön. vaihtoehto = repository id\n"
+"  disable: poista ohjelmistolähteet käytöstä. vaihtoehto = repository id"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
@@ -2210,8 +2210,8 @@ msgid ""
 "  run: run the transaction"
 msgstr ""
 "{} arg\n"
-"  list: listaa transaktion sisältö\n"
-"  reset: palauta (nollaa) transaktio\n"
+"  list: luettele transaktion sisällöt\n"
+"  reset: nollaa (nollilla) transaktio\n"
 "  run: suorita transaktio"
 
 #: dnf/cli/commands/shell.py:201
@@ -2242,15 +2242,15 @@ msgid ""
 "run                      resolve and run the transaction set\n"
 "exit (or quit)           exit the shell"
 msgstr ""
-"Komentotulkin argumentit:\n"
+"Komentotulkille ominaiset argumentit:\n"
 "\n"
-"config                   aseta konfiguraatiovaihtoehdot\n"
+"config                   määritä kokoonpanon ovaihtoehdot\n"
 "help                     tulosta ohje\n"
-"repository (or repo)     ota käyttöön, poista käytöstä tai listaa "
-"asennuslähde\n"
-"resolvedep               selvitä transaktiosetti\n"
-"transaction (or ts)      listaa, resetoi tai suorita transaktiosetti\n"
-"run                      selvitä ja ruosita transaktiosetti\n"
+"repository (or repo)     ota käyttöön, poista käytöstä tai luettele "
+"ohjelmistolähteet\n"
+"resolvedep               selvitä transaktiosarja\n"
+"transaction (or ts)      luettele, nollaa tai suorita transaktiosarja\n"
+"run                      selvitä ja suorita transaktiosarja\n"
 "exit (or quit)           poistu komentokehoitteesta"
 
 #: dnf/cli/commands/shell.py:262
@@ -2629,7 +2629,8 @@ msgstr "kirjoita yksityiskohtaiset ratkaisutulokset tiedostoihin"
 
 #: dnf/cli/option_parser.py:240
 msgid "show duplicates, in repos, in list/search commands"
-msgstr "näytä duplikaatit asennuslähteissä ja list/search-komennoissa"
+msgstr ""
+"näytä kaksoiskappaleet ohjelmistolähteissä ja 'list'/'search'-komennoissa"
 
 #: dnf/cli/option_parser.py:243
 msgid "error output level"
@@ -2641,9 +2642,8 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
-"ottaa käyttöön {prog}:t poistaa käytöstä käsittelylogiikan päivitys- tai "
-"näyttöominaisuuksille, jotka paketti tekee vanhanmallisiksi tiedoille, "
-"luetteloille ja asennuslähdekyselyille"
+"ottaa käyttöön {prog}:t vanhentaa käsittelylogiikan päivitystä varten tai "
+"näyttää kyvyt, jotka paketti vanhentaa näitä varten, info, list ja repoquery"
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
@@ -2662,16 +2662,16 @@ msgid ""
 "Enable additional repositories. List option. Supports globs, can be "
 "specified multiple times."
 msgstr ""
-"Ota käyttöön lisäasennuslähteitä. Luetteloi vaihtoehto. Tukee villikortteja, "
-"voidaan määrittää useita kertoja."
+"Ota käyttöön lisäaohjelmistolähteitä. Luetteloi vaihtoehto. Tukee "
+"villikortteja, voidaan määrittää useita kertoja."
 
 #: dnf/cli/option_parser.py:266
 msgid ""
 "Disable repositories. List option. Supports globs, can be specified multiple "
 "times."
 msgstr ""
-"Poista käyttöstä asennuslähteitä. Luetteloi vaihtoehto. Tukee villikortteja, "
-"voidaan määrittää useita kertoja."
+"Poista käyttöstä ohjelmistolähteitä. Luetteloi vaihtoehto. Tukee "
+"villikortteja, voidaan määrittää useita kertoja."
 
 #: dnf/cli/option_parser.py:270
 msgid ""
@@ -2706,8 +2706,8 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
-"nimiö ja polku ylimääräiseen käytettävään asennuslähteeseen (sama polku kuin "
-"baseurl:ssa), voidaan määrittää useita kertoja."
+"nimiö ja polku ylimääräiseen käytettävään ohjelmistolähteeseen (sama polku "
+"kuin baseurl:ssa), voidaan määrittää useita kertoja."
 
 #: dnf/cli/option_parser.py:297
 msgid "disable removal of dependencies that are no longer used"
@@ -2785,11 +2785,11 @@ msgstr "Pakota jokin arkkitehtuurin käyttö"
 
 #: dnf/cli/option_parser.py:375
 msgid "List of Main Commands:"
-msgstr "Listaus pääkomennoista:"
+msgstr "Luettelo pääkomennoista:"
 
 #: dnf/cli/option_parser.py:376
 msgid "List of Plugin Commands:"
-msgstr "Listaus liitännäiskomennoista:"
+msgstr "Luettelo liitännäiskomennoista:"
 
 #: dnf/cli/option_parser.py:413
 #, python-format
@@ -2875,7 +2875,7 @@ msgstr "Lähde"
 #: dnf/cli/output.py:480 dnf/cli/output.py:1257
 msgctxt "long"
 msgid "Repository"
-msgstr "Asennuslähde"
+msgstr "Ohjelmistolähde"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:487
@@ -3669,7 +3669,7 @@ msgstr "Väärä tunnus ohjelmistolähteelle: {}, byte = {} {}"
 
 #: dnf/conf/read.py:75
 msgid "Repository '{}' ({}): Error parsing config: {}"
-msgstr "Ohjelmistolähde '{}' ({}): virhe jäsennettäessä määrityksiä: {}"
+msgstr "Ohjelmistolähde '{}' ({}): Virhe jäsennettäessä määrityksiä: {}"
 
 #: dnf/conf/read.py:78
 msgid "Repository '{}': Error parsing config: {}"
