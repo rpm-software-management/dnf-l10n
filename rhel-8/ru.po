@@ -9,27 +9,27 @@
 # Misha Shnurapet <shnurapet AT fedoraproject.org>, 2011
 # Misha Shnurapet <shnurapet@fedoraproject.org>, 2011
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020, 2021.
 # Igor Gnatenko <i.gnatenko.brain@gmail.com>, 2017. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020, 2021.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-09-13 13:29+0000\n"
+"PO-Revision-Date: 2021-03-08 10:29+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -99,13 +99,11 @@ msgid "Started dnf-automatic."
 msgstr "Запущен dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Ожидание на %s секунд"
-msgstr[1] "Ожидание на %s секунд"
-msgstr[2] "Ожидание на %s секунд"
+msgstr[0] "Ожидание на {} секунду"
+msgstr[1] "Ожидание на {} секунды"
+msgstr[2] "Ожидание на {} секунд"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -1352,10 +1350,9 @@ msgid "No transaction ID given"
 msgstr "Не указан идентификатор транзакции"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Не найден идентификатор транзакции «{id}»."
+msgstr "Не найден идентификатор транзакции «{0}»."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1412,12 +1409,8 @@ msgid "Error storing transaction: {}"
 msgstr "Ошибка при сохранении транзакции: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+msgstr "Предупреждение, в ходе транзакции возникли следующие проблемы:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1540,7 +1533,7 @@ msgstr "Пакет {} принадлежит нескольким модулям
 
 #: dnf/cli/commands/module.py:277
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "переключить модуль на поток и выполнить distrosync пакетов rpm"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -3713,7 +3706,7 @@ msgstr "репозиторий %s: импортирован ключ 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "получение ключа репозитория для %s незашифрованным из %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3901,20 +3894,18 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Не разрешается установка модуля из репозитория Fail-Safe"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Все совпадения для аргумента «{0}» в модуле «{1}:{2}» неактивны"
+msgstr "Нет активных совпадений для аргумента «{0}» в модуле «{1}:{2}»"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Профиля по умолчанию {} нет в модуле {}:{}"
+msgstr "Установленный профиль «{0}» недоступен в модуле «{1}», поток «{2}»"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Нет пакетов для выполнения distrosync для названия пакета «{}»"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -4035,6 +4026,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change деактивирован. Этот параметр в настоящее время не "
+"поддерживается для команд downgrade и distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4083,22 +4076,17 @@ msgid "Preparing"
 msgstr "Подготовка"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+"При воспроизведении транзакции из файла «{filename}» возникли следующие "
+"проблемы:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
-"Предупреждение, при воспроизведении транзакции возникли следующие проблемы:"
+msgstr "При выполнении транзакции возникли следующие проблемы:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4123,6 +4111,7 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Указаны конфликтующие аргументы для TransactionReplay: имя файла, данные"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
