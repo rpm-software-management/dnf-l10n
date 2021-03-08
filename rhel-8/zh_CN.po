@@ -26,21 +26,22 @@
 # Anonymous <noreply@weblate.org>, 2020.
 # Hongqiao Chen <harrychen0314@gmail.com>, 2020.
 # Harry Chen <harrychen0314@gmail.com>, 2020.
+# Sundeep Anand <suanand@redhat.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-08-02 08:29+0000\n"
-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
+"PO-Revision-Date: 2021-03-08 10:29+0000\n"
+"Last-Translator: Sundeep Anand <suanand@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/dnf/dnf-master/zh_CN/>\n"
+"projects/dnf/dnf-rhel-8/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -110,11 +111,9 @@ msgid "Started dnf-automatic."
 msgstr "启动的 dnf-automatic。"
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "休眠 %s 秒"
+msgstr[0] "休眠 {} 秒"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -455,7 +454,7 @@ msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可
 #: dnf/base.py:2331
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "无法获取命令行软件包的密钥： %s"
 
 #: dnf/base.py:2339
 #, python-format
@@ -1252,25 +1251,25 @@ msgstr "显示或使用事务历史"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "对于 store 命令，将事务保存到的文件路径"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
-msgstr ""
+msgstr "对于 replay 命令，不检查与事务中匹配的安装的软件包"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
-msgstr ""
+msgstr "对于 replay 命令，不检查提取到事务中的额外的软件包"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
-msgstr ""
+msgstr "对于 replay 命令，跳过不可用或者缺少依赖项的软件包"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1281,16 +1280,12 @@ msgstr ""
 "'{}' 需要一个事务 ID 或软件包名。"
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "没有提供事务 ID 或软件包名。"
+msgstr "没有给定事务文件名称。"
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "移除事务文件 %s 失败"
+msgstr "提供了多于一个的作为事务文件名的参数。"
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1320,10 +1315,9 @@ msgid "No transaction ID given"
 msgstr "没有事务 ID"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "找不到键的 TransactionItem: {}"
+msgstr "没有找到事务 ID \"{0}\"。"
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1365,27 +1359,23 @@ msgstr "没有找到操作软件包 '{}' 的事务。"
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} 已存在，是否覆盖？"
 
 #: dnf/cli/commands/history.py:360
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "不覆盖 {}，退出。"
 
 #: dnf/cli/commands/history.py:367
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "事务失败"
+msgstr "事务保存到 {}。"
 
 #: dnf/cli/commands/history.py:370
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "事务过程中出现错误。"
+msgstr "存储事务出错：{}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
+msgstr "警告，在运行事务时发生以下问题："
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1504,7 +1494,7 @@ msgstr "软件包 {} 属于多个模块，正在跳过"
 
 #: dnf/cli/commands/module.py:277
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "将模块切换到流和 distrosync rpm 软件包"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -3506,16 +3496,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "模块或者组 '%s' 不存在。"
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "环境组 '%s' 没有安装。"
+msgstr "环境 id '%s' 不存在。"
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "环境组 '%s' 没有安装。"
+msgstr "环境 id '%s' 没有安装。"
 
 #: dnf/comps.py:639
 #, python-format
@@ -3528,10 +3516,9 @@ msgid "Environment '%s' is not available."
 msgstr "环境 '%s' 不可用。"
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Group_id '%s' 不存在。"
+msgstr "组 id '%s' 不存在。"
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3590,7 +3577,7 @@ msgstr "repo 的 id 无效: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:67
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr "repo 的 id 无效: %s, byte = %s %d"
+msgstr "repo 的 id 无效: {}, byte = {} {}"
 
 #: dnf/conf/read.py:75
 msgid "Repository '{}' ({}): Error parsing config: {}"
@@ -3625,7 +3612,7 @@ msgstr "repo %s: 已导入密钥 0x%s。"
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "为 %s 从 %s 获取的 repo 密钥未加密"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3772,12 +3759,12 @@ msgstr "正在忽略无用的配置文件'{}/{}'"
 #: dnf/module/module_base.py:84
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr "模块 '{1}:{2}' 中参数 '{0}' 的所有匹配项目都未激活"
+msgstr "模块 '{1}:{2}' 中的参数 '{0}' 的所有匹配项目都未激活"
 
 #: dnf/module/module_base.py:92 dnf/module/module_base.py:202
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "不允许从失效保险仓库 {1} 安装模块 '{0}'"
+msgstr "不允许从 Fail-Safe repository {1} 安装模块 '{0}'"
 
 #: dnf/module/module_base.py:102 dnf/module/module_base.py:212
 msgid ""
@@ -3805,20 +3792,18 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "不允许从失效保险仓库中安装模块"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "模块 '{1}:{2}' 中参数 '{0}' 的所有匹配项目都未激活"
+msgstr "模块 '{1}:{2}' 中的参数 '{0}' 没有活跃的匹配"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "默认配置文件 {} 在模块 {}:{} 中不可用"
+msgstr "在模块 '{1}' 流 '{2}' 中没有安装的配置集 '{0}'"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "软件包名称 '{}' 没有可用的软件包用于 distrosync"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -3863,12 +3848,12 @@ msgstr "%s 为空文件"
 #: dnf/persistor.py:91
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "加载过期的仓库缓存失败： %s"
 
 #: dnf/persistor.py:99
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "存储已过期的仓库缓存失败： %s"
 
 #: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
@@ -3934,7 +3919,7 @@ msgstr "测试事务过程中出现错误。"
 msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
-msgstr ""
+msgstr "allow_vendor_change 被禁用。目前不支持 downgrade 和 distro-sync 命令"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -3987,113 +3972,107 @@ msgstr "准备中"
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr ""
+msgstr "在从文件 \"{filename}\" replay 事务时发生以下问题："
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "The following problems occurred while running a transaction:"
-msgstr "事务过程中出现错误。"
+msgstr "运行事务时发生以下问题："
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "无效的主版本 \"{major}\"，需要是数字。"
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "无效的次版本 \"{minor}\"，需要是数字。"
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr ""
+msgstr "不兼容的主版本 \"{major}\"，支持的主版本是 \"{major_supp}\"。"
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "指定了有冲突的 TransactionReplay 参数： filename、data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "意外类型 \"{id}\"，需要是 {exp}。"
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "缺少键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "在 rpm 中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "rpm nevra \"{reason}\" 的软件包原因 \"{nevra}\" 的值无效。"
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "无法为软件包 \"{nevra}\" 解析 NEVRA。"
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "无法找到 rpm nevra \"{nevra}\"。"
 
 #: dnf/transaction_sr.py:336
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "软件包 %s 已安装。"
+msgstr "已为操作 \"{action}\" 安装了软件包 \"{na}\"。"
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
-msgstr ""
+msgstr "对于操作 \"{action}\"，软件包 nevra \"{nevra}\" 没有包括在仓库中。"
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "没有为操作 \"{action}\" 安装软件包 nevra \"{nevra}\"。"
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "rpm nevra \"{action}\" 的软件包操作 \"{nevra}\" 无效。"
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "模块或者组 '%s' 不可用。"
+msgstr "组 id '%s' 不可用。"
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "在 groups.packages 中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "模块或者组 '%s' 未安装。"
+msgstr "组 id '%s' 没有安装。"
 
 #: dnf/transaction_sr.py:432
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "环境 '%s' 不可用。"
+msgstr "环境 id '%s' 不可用。"
 
 #: dnf/transaction_sr.py:456
 #, python-brace-format
@@ -4101,40 +4080,42 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"environments.groups.group_type 无效的值 \"{group_type}\"，只支持 \"mandatory\" 或 "
+"\"optional\"。"
 
 #: dnf/transaction_sr.py:464
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "在 environment.groups 中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "组 \"{action}\" 的组操作 \"{group}\" 的值无效。"
 
 #: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "在一个组中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr ""
+msgstr "环境 \"{env}\" 的环境操作 \"{action}\" 的值无效。"
 
 #: dnf/transaction_sr.py:576
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "在环境中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:615
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
-msgstr ""
+msgstr "软件包 nevra \"{nevra}\" 没有包括在事务文件中，但它被拉取到事务中。"
 
 #: dnf/util.py:393 dnf/util.py:395
 msgid "Problem"
