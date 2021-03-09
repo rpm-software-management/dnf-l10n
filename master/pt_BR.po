@@ -22,7 +22,7 @@
 # Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020, 2021.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2020.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021.
 # Gustavo Costa <gusta@null.net>, 2020.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 msgid ""
@@ -30,8 +30,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-07 09:18-0500\n"
-"PO-Revision-Date: 2021-03-03 21:46+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-03-10 14:01+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -39,7 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -231,7 +231,7 @@ msgstr "Erro: verificação de transação vs depsolve:"
 
 #: dnf/base.py:918
 msgid "Transaction check succeeded."
-msgstr "Verificação de transação completa."
+msgstr "Verificação de transação concluída."
 
 #: dnf/base.py:921
 msgid "Running transaction test"
@@ -1395,10 +1395,9 @@ msgid "No transaction ID given"
 msgstr "Nenhum ID de transação fornecido"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "ID de transação \"{0}\" não encontrado."
+msgstr "Transação de ID \"{0}\" não encontrada."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1455,12 +1454,9 @@ msgid "Error storing transaction: {}"
 msgstr "Erro ao armazenar transação: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
-"Aviso, os seguintes problemas ocorreram durante a execução de uma transação:"
+"Atenção, os seguintes problemas ocorreram durante a reprodução da transação:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -2101,7 +2097,7 @@ msgid "Package {} contains no files"
 msgstr "Pacote {} não contém arquivos"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2111,13 +2107,12 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of thepackages."
 msgstr ""
-"No valid switch specified\n"
-"usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
+"Nenhuma opção válida especificada\n"
+"uso: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--recomm"
+"ends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
-"description:\n"
-"  For the given packages print a tree of thepackages."
+"descrição:\n"
+"  Para os pacotes dados, imprime uma árvore dos pacotes."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
