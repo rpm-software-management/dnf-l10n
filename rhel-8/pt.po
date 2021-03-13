@@ -8,22 +8,22 @@
 # pedro andrade <pmm.andrade@gmail.com>, 2016. #zanata
 # Joao Almeida <intjalmeida@gmail.com>, 2017. #zanata
 # Rodrigo de Araujo Sousa Fonseca <rodrigodearaujo@fedoraproject.org>, 2017. #zanata
+# Pedro Flores <pedro_flores_16@hotmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2017-04-16 05:43+0000\n"
-"Last-Translator: Rodrigo de Araujo Sousa Fonseca "
-"<rodrigodearaujo@fedoraproject.org>\n"
-"Language-Team: Portuguese (http://www.transifex.com/projects/p/dnf/language/"
-"pt/)\n"
+"PO-Revision-Date: 2021-03-14 08:01+0000\n"
+"Last-Translator: Pedro Flores <pedro_flores_16@hotmail.com>\n"
+"Language-Team: Portuguese <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.6.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -31,10 +31,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "As seguintes atualizações foram aplicadas a '%s':"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Atualizações aplicadas em '%s'."
+msgstr "Atualizações completas em '%s'."
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -69,7 +68,7 @@ msgstr "Falha ao enviar email via '%s': %s"
 #: dnf/automatic/emitter.py:140
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
-msgstr ""
+msgstr "Falhou a execução do comando '%s': devolveu %d"
 
 #: dnf/automatic/main.py:164 dnf/conf/config.py:151
 #, python-format
@@ -83,25 +82,25 @@ msgstr "Opção de configuração desconhecida: %s = %s em %s"
 
 #: dnf/automatic/main.py:237 dnf/cli/cli.py:304
 msgid "GPG check FAILED"
-msgstr ""
+msgstr "Validação GPG FALHOU"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "A aguardar por uma ligação à Internet..."
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
-msgstr ""
+msgstr "dnf-automatic iniciado."
 
 #: dnf/automatic/main.py:308
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Dormir por {} segundo"
+msgstr[1] "Dormir por {} segundos"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr ""
+msgstr "O sistema está offline."
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -115,11 +114,13 @@ msgstr ""
 
 #: dnf/base.py:148
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "O carregamento do repositório '{}' falhou"
 
 #: dnf/base.py:322
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Cacheamento do temporizador de metadados desativado quando está sobre uma "
+"ligação com dados limitados."
 
 #: dnf/base.py:327
 #, fuzzy
@@ -138,28 +139,28 @@ msgstr "Cache de metadados atualizada recentemente."
 
 #: dnf/base.py:343 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
+msgstr "Não há repositórios ativado em \"{}\"."
 
 #: dnf/base.py:350
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: nunca expirará e não será refrescado."
 
 #: dnf/base.py:352
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: expirou e será refrescado."
 
 #. expires within the checking period:
 #: dnf/base.py:356
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: metadados irão expirar após %d segundos e serão refrescados agora"
 
 #: dnf/base.py:360
 #, python-format
 msgid "%s: will expire after %d seconds."
-msgstr ""
+msgstr "%s: irá expirar após %d segundos."
 
 #. performs the md sync
 #: dnf/base.py:366
@@ -174,7 +175,7 @@ msgstr "%s: a usar metadata de %s."
 #: dnf/base.py:411 dnf/base.py:479
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "A ignorar repositórios: %s"
 
 #: dnf/base.py:414
 #, python-format
@@ -222,11 +223,11 @@ msgstr "A executar o teste de transação"
 
 #: dnf/base.py:914 dnf/base.py:1065
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:915
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Error no teste da transação:"
 
 #: dnf/base.py:926
 msgid "Transaction test succeeded."
@@ -244,7 +245,8 @@ msgstr "Requisitos de Disco:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "Pelo menos mais {0}MB necessário no sistema de ficheiros {1}."
+msgstr[1] "Pelo menos mais {0}MB necessários no sistema de ficheiros {1}."
 
 #: dnf/base.py:994
 msgid "Error Summary"
@@ -253,7 +255,7 @@ msgstr "Resumo de Erros"
 #: dnf/base.py:1020
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "A RPMDB foi alterada fora do {prog}."
 
 #: dnf/base.py:1066 dnf/base.py:1074
 msgid "Could not run transaction."
@@ -283,10 +285,12 @@ msgstr ""
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
 msgstr ""
+"Delta RPMs falhados aumentaram %.1f MB de atualizações para %.1f MB (%d.1%% "
+"desperdiçados)"
 
 #: dnf/base.py:1240
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "Não é possível adicionar pacotes locais, porque uma transação já existe"
 
 #: dnf/base.py:1254
 msgid "Could not open: {}"
@@ -657,7 +661,7 @@ msgstr "Nenhum pacote marcado para sincronização"
 #: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
 #, python-format
 msgid "No package %s available."
-msgstr "Nenhum pacote %s está disponível."
+msgstr "Nenhum pacote %s disponível."
 
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
@@ -1383,7 +1387,7 @@ msgstr "Pacote a instalar"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr "Não foi possível encontrar correspondência"
+msgstr "Não foi possível encontrar uma correspondência"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
