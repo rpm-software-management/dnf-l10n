@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-15 09:18-0400\n"
-"PO-Revision-Date: 2021-03-16 04:01+0000\n"
+"PO-Revision-Date: 2021-03-19 05:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -36,7 +36,7 @@ msgstr "'%s'에서 다음 업데이트를 사용할 수 있습니다:"
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "'%s'에 다음 업데이트가 다운로드되었습니다:"
+msgstr "'%s'에 다음 최신화가 내려받기 되었습니다:"
 
 #: dnf/automatic/emitter.py:83
 #, python-format
@@ -46,7 +46,7 @@ msgstr "'%s'에 업데이트가 적용되었습니다."
 #: dnf/automatic/emitter.py:85
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "'%s'에 업데이트가 다운로드되었습니다."
+msgstr "'%s'에 최신화가 내려받기 되었습니다."
 
 #: dnf/automatic/emitter.py:87
 #, python-format
@@ -173,7 +173,7 @@ msgstr "마지막 메타자료 만료 확인 :%s이전에 %s."
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
-msgstr "내려받기된 꾸러미는 다음 번 성공적인 거래까지 캐쉬에 저장됩니다."
+msgstr "내려받기된 꾸러미는 다음 번 성공적인 연결까지 캐쉬에 저장됩니다."
 
 #: dnf/base.py:514
 #, python-format
@@ -192,19 +192,19 @@ msgstr "리포지토리의 그룹 파일을 추가하지 못했습니다. %s - %
 
 #: dnf/base.py:904
 msgid "Running transaction check"
-msgstr "거래 확인 실행 중"
+msgstr "연결 확인 실행 중"
 
 #: dnf/base.py:912
 msgid "Error: transaction check vs depsolve:"
-msgstr "오류 : 거래 확인 및 종속성 해결 오류:"
+msgstr "오류 : 연결 확인 및 종속성 해결 오류:"
 
 #: dnf/base.py:918
 msgid "Transaction check succeeded."
-msgstr "거래 확인에 성공했습니다."
+msgstr "연결 확인에 성공했습니다."
 
 #: dnf/base.py:921
 msgid "Running transaction test"
-msgstr "거래 시험 실행 중"
+msgstr "연결 시험 실행 중"
 
 #: dnf/base.py:931 dnf/base.py:1082
 msgid "RPM: {}"
@@ -212,15 +212,15 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:932
 msgid "Transaction test error:"
-msgstr "거래 시험 오류:"
+msgstr "연결 시험 오류:"
 
 #: dnf/base.py:943
 msgid "Transaction test succeeded."
-msgstr "거래 시험에 성공했습니다."
+msgstr "연결 시험에 성공했습니다."
 
 #: dnf/base.py:964
 msgid "Running transaction"
-msgstr "거래 실행 중"
+msgstr "연결 실행 중"
 
 #: dnf/base.py:1001
 msgid "Disk Requirements:"
@@ -243,16 +243,16 @@ msgstr "RPMDB는 {prog} 외부에서 변경되었습니다."
 
 #: dnf/base.py:1083 dnf/base.py:1091
 msgid "Could not run transaction."
-msgstr "거래를 실행 할 수 없습니다."
+msgstr "연결를 실행 할 수 없습니다."
 
 #: dnf/base.py:1086
 msgid "Transaction couldn't start:"
-msgstr "거래를 시작 할 수 없습니다 :"
+msgstr "연결을 시작 할 수 없습니다 :"
 
 #: dnf/base.py:1100
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr "%s 거래 파일을 삭제하지 못했습니다"
+msgstr "%s 연결 파일을 삭제하지 못했습니다"
 
 #: dnf/base.py:1182
 msgid "Some packages were not downloaded. Retrying."
@@ -261,8 +261,7 @@ msgstr "일부 꾸러미가 내려받기되지 않았습니다. 다시 시도 �
 #: dnf/base.py:1212
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
-msgstr ""
-"Delta RPM이 %.1f MB의 업데이트를 %.1f MB로 줄였습니다. (%d.1 %% 절약됨)"
+msgstr "Delta RPM이 %.1f MB의 업데이트를 %.1f MB로 줄였습니다. (%d.1%% 절약됨)"
 
 #: dnf/base.py:1215
 #, python-format
@@ -274,7 +273,7 @@ msgstr ""
 
 #: dnf/base.py:1257
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr "거래 작업이 이미 존재하므로 로컬 꾸러미를 추가할 수 없습니다"
+msgstr "연결 작업이 이미 존재하므로 로컬 꾸러미를 추가할 수 없습니다"
 
 #: dnf/base.py:1271
 msgid "Could not open: {}"
@@ -529,7 +528,7 @@ msgstr "모든 일치 항목이 인수의 다른 리포지토리에서 설치되
 #: dnf/base.py:2698
 #, python-format
 msgid "Package %s is already installed."
-msgstr "꾸러미 %s이/가 이미 설치되어 있습니다."
+msgstr "꾸러미 %s 가 이미 설치되어 있습니다."
 
 #: dnf/cli/aliases.py:96
 #, python-format
@@ -564,7 +563,7 @@ msgstr "%s, 원래 인수를 사용."
 #: dnf/cli/cli.py:137
 #, python-format
 msgid "  Installed: %s-%s at %s"
-msgstr "  설치됨:  %s-%s (일시: %s)"
+msgstr "  설치되었습니다: %s-%s (일시: %s)"
 
 #: dnf/cli/cli.py:139
 #, python-format
@@ -603,11 +602,11 @@ msgstr "{prog}은/는 연결용 꾸러미만 내려받기합니다."
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
-msgstr "{prog}은/는 꾸러미만 내려받기하고 gpg 키를 설치하며 거래를 확인합니다."
+msgstr "{prog}은/는 꾸러미만 내려받기하고 gpg 키를 설치하며 연결을 확인합니다."
 
 #: dnf/cli/cli.py:219
 msgid "Operation aborted."
-msgstr "작업이 중단되었습니다."
+msgstr "작업이 중지됩니다."
 
 #: dnf/cli/cli.py:226
 msgid "Downloading Packages:"
@@ -619,7 +618,7 @@ msgstr "꾸러미 내려받기 중 오류 발생:"
 
 #: dnf/cli/cli.py:264
 msgid "Transaction failed"
-msgstr "거래 실패"
+msgstr "연결 실패"
 
 #: dnf/cli/cli.py:287
 msgid ""
@@ -1243,7 +1242,7 @@ msgstr "필수 그룹 꾸러미를 찾을 수 없습니다."
 
 #: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
-msgstr "거래 내역 표시 또는 사용"
+msgstr "연결 내역 표시 또는 사용"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
@@ -1253,14 +1252,13 @@ msgstr "저장 명령을 위해, 트랜젝션을 저장할 파일 경로"
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
-msgstr ""
-"재생명령을 위하여, 거래에 그것들과 일치하는 설치된 꾸러미를 확인하지 마세요"
+msgstr "재생명령을 위하여, 연결에 그것들과 일치하는 설치된 꾸러미를 확인하지 마세요"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
-msgstr "응답 명령을 위하여, 거래에 추가 된 꾸러미를 확인하지 마세요"
+msgstr "응답 명령을 위하여, 연결에 추가 된 꾸러미를 확인하지 마세요"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
@@ -1275,8 +1273,8 @@ msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
 msgstr ""
-"둘 이상의 거래 ID를 찾았습니다.\n"
-"'{}'에는 하나의 거래 ID 또는 꾸러미 이름이 필요합니다."
+"둘 이상의 연결 ID를 찾았습니다.\n"
+"'{}'에는 하나의 연결 ID 또는 꾸러미 이름이 필요합니다."
 
 #: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
@@ -1284,11 +1282,11 @@ msgstr "제공된 트랜젝션 파일 이름이 없습니다."
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
-msgstr "거래 파일 이름으로 주어진 하나 이상의 인수 이상."
+msgstr "연결 파일 이름으로 주어진 하나 이상의 인수 이상."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
-msgstr "거래 ID 또는 꾸러미 이름이 없습니다."
+msgstr "연결 ID 또는 꾸러미 이름이 없습니다."
 
 #: dnf/cli/commands/history.py:142
 #, python-format
@@ -1300,22 +1298,18 @@ msgstr "기록 DB에 액세스할 수 없습니다: %s"
 msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
-msgstr ""
-"%s 거래을 취소할 수 없습니다. 취소하면 꾸러미 자료저장소가 일치하지 않게 됩니"
-"다."
+msgstr "%s 연결을 취소 할 수 없습니다. 취소하면 꾸러미 자료 저장소가 일치하지 않게 됩니다."
 
 #: dnf/cli/commands/history.py:156
 #, python-format
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
-msgstr ""
-"%s 거래을 되돌 릴 수 없습니다. 이렇게하면 꾸러미 자료저장소(pacakge database)"
-"가 일치하지 않게 됩니다."
+msgstr "%s 연결을 되돌릴 수 없습니다. 이렇게 하면 꾸러미 자료저장소가 일치하지 않게 됩니다."
 
 #: dnf/cli/commands/history.py:175
 msgid "No transaction ID given"
-msgstr "지정된 거래 ID가 없습니다"
+msgstr "지정된 연결 ID가 없습니다"
 
 #: dnf/cli/commands/history.py:179
 #, python-brace-format
@@ -1324,17 +1318,17 @@ msgstr "Transaction ID \"{0}\" 를 찾을 수 없음."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
-msgstr "두 개 이상의 거래 ID를 찾았습니다!"
+msgstr "두 개 이상의 연결 ID를 찾았습니다!"
 
 #: dnf/cli/commands/history.py:203
 #, python-format
 msgid "Transaction history is incomplete, before %u."
-msgstr "%u이전 거래 내역이 불완전합니다."
+msgstr "%u이전 연결 내역이 불완전합니다."
 
 #: dnf/cli/commands/history.py:205
 #, python-format
 msgid "Transaction history is incomplete, after %u."
-msgstr "%u이후 거래 내역이 불완전합니다."
+msgstr "%u 이후 연결 내역이 불완전합니다."
 
 #: dnf/cli/commands/history.py:256
 msgid "No packages to list"
@@ -1345,7 +1339,7 @@ msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
-"잘못된 거래 ID 범위 정의 '{}'. \n"
+"잘못된 연결 ID 범위 정의 '{}'.\n"
 "'<transaction-id>..<transaction-id>' 사용."
 
 #: dnf/cli/commands/history.py:283
@@ -1353,12 +1347,12 @@ msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
-"'{}'을 (를) 거래 ID로 변환 할 수 없습니다. \n"
+"'{}'을 (를) 연결 ID로 변환 할 수 없습니다.\n"
 "'<number>', 'last', 'last-<number>' 사용."
 
 #: dnf/cli/commands/history.py:312
 msgid "No transaction which manipulates package '{}' was found."
-msgstr "꾸러미 '{}'를 사용하는 거래가 없습니다."
+msgstr "꾸러미 '{}'를 사용하는 연결이 없습니다."
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
@@ -1370,15 +1364,15 @@ msgstr "존재하기 때문에, {} 덮어 쓸 수 없습니다."
 
 #: dnf/cli/commands/history.py:367
 msgid "Transaction saved to {}."
-msgstr "거래가 {}에 저장되었습니다."
+msgstr "연결이 {}에 저장되었습니다."
 
 #: dnf/cli/commands/history.py:370
 msgid "Error storing transaction: {}"
-msgstr "저장 중 거래 오류: {}"
+msgstr "저장 중 연결 오류: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "경고, 거래 동작 중에 다음 문제가 발생하였습니다:"
+msgstr "경고, 연결 동작 중에 다음 문제가 발생하였습니다:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -2151,7 +2145,7 @@ msgid ""
 "    resolve the transaction set"
 msgstr ""
 "{}\n"
-" 거래 집합을 분석합니다"
+" 연결 집합을 분석합니다"
 
 #: dnf/cli/commands/shell.py:195
 msgid ""
@@ -2161,9 +2155,9 @@ msgid ""
 "  run: run the transaction"
 msgstr ""
 "{} arg\n"
-"  list : 거래 내용을 나열합니다\n"
-"  reset : 거래를 재설정합니다 (zero-out)\n"
-"  run: 거래를 실행합니다"
+"  list : 연결 내용을 나열합니다\n"
+"  reset : 연결을 재설정합니다 (zero-out)\n"
+"  run: 연결을 실행합니다"
 
 #: dnf/cli/commands/shell.py:201
 msgid ""
@@ -2171,7 +2165,7 @@ msgid ""
 "    run the transaction"
 msgstr ""
 "{}\n"
-"거래를 실행합니다"
+"연결을 실행합니다"
 
 #: dnf/cli/commands/shell.py:205
 msgid ""
@@ -2195,13 +2189,13 @@ msgid ""
 msgstr ""
 "쉘 관련 인수:\n"
 "\n"
-"config                   설정 옵션 설정\n"
-"help                     도움말 인쇄\n"
-"repository (or repo)     저장소 활성화,비활성화 또는 나열\n"
-"resolvedep               거래 구성 분석\n"
-"transaction (or ts)      거래 구성 목록,재설정 또는 실행\n"
-"run                      거래 구성 분석 및 실행\n"
-"exit (or quit)           쉘 종료"
+"config  설정 옵션 설정\n"
+"help  도움말 인쇄\n"
+"repository (or repo)  저장소 활성화,비활성화 또는 나열\n"
+"resolvedep  연결 구성 분석\n"
+"transaction (or ts)  연결 구성 목록,재설정 또는 실행\n"
+"run  연결 구성 분석 및 실행\n"
+"exit (or quit)  쉘 종료"
 
 #: dnf/cli/commands/shell.py:262
 #, python-format
@@ -2305,7 +2299,7 @@ msgstr "bugzilla 참조가 있는 권고 만 표시"
 
 #: dnf/cli/commands/updateinfo.py:168
 msgid "installed"
-msgstr "설치됨"
+msgstr "설치되었습니다"
 
 #: dnf/cli/commands/updateinfo.py:171
 msgid "updates"
@@ -2408,7 +2402,7 @@ msgstr "파일"
 #: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1654
 #: dnf/cli/output.py:1656 dnf/util.py:617
 msgid "Installed"
-msgstr "설치됨"
+msgstr "설치되었습니다"
 
 #: dnf/cli/commands/updateinfo.py:385
 msgid "false"
@@ -2552,11 +2546,11 @@ msgstr "종속성을 해결하기 위해 설치된 꾸러미 지우기 허용"
 
 #: dnf/cli/option_parser.py:221
 msgid "try the best available package versions in transactions."
-msgstr "거래에서 사용 가능한 최상의 꾸러미 버전을 사용해보십시오."
+msgstr "연결에서 사용 가능한 최상의 꾸러미 버전을 사용해보십시오."
 
 #: dnf/cli/option_parser.py:223
 msgid "do not limit the transaction to the best candidate"
-msgstr "거래를 최상의 선택 옵션으로 제한하지 마십시오"
+msgstr "연결를 최상의 선택 옵션으로 제한하지 마십시오"
 
 #: dnf/cli/option_parser.py:226
 msgid "run entirely from system cache, don't update cache"
@@ -2685,7 +2679,7 @@ msgstr "꾸러미만 내려받기"
 
 #: dnf/cli/option_parser.py:319
 msgid "add a comment to transaction"
-msgstr "거래에 의견을 추가하십시오"
+msgstr "연결에 의견을 추가하십시오"
 
 #: dnf/cli/option_parser.py:322
 msgid "Include bugfix relevant packages, in updates"
@@ -2984,7 +2978,7 @@ msgstr "기타       : %s"
 
 #: dnf/cli/output.py:940
 msgid "There was an error calculating total download size"
-msgstr "총 다운로드 크기를 계산하는 중에 오류가 발생했습니다"
+msgstr "총 내려받기 크기를 계산하는 중에 오류가 발생했습니다"
 
 #: dnf/cli/output.py:946
 #, python-format
@@ -2994,7 +2988,7 @@ msgstr "전체 크기: %s"
 #: dnf/cli/output.py:949
 #, python-format
 msgid "Total download size: %s"
-msgstr "총 다운로드 크기 : %s"
+msgstr "총계 내려받기 크기: %s"
 
 #: dnf/cli/output.py:952
 #, python-format
@@ -3174,7 +3168,7 @@ msgid ""
 "%s\n"
 msgstr ""
 "\n"
-"거래 요약\n"
+"연결 요약\n"
 "%s\n"
 
 #. TODO: remove
@@ -3252,7 +3246,7 @@ msgstr "변경됨"
 
 #: dnf/cli/output.py:1580
 msgid "No transactions"
-msgstr "거래 없음"
+msgstr "연결 없음"
 
 #: dnf/cli/output.py:1581 dnf/cli/output.py:1597
 msgid "Failed history info"
@@ -3260,7 +3254,7 @@ msgstr "실패 기록 정보"
 
 #: dnf/cli/output.py:1596
 msgid "No transaction ID, or package, given"
-msgstr "거래 ID 또는 꾸러미가 지정되지 않았습니다"
+msgstr "연결 ID 또는 꾸러미가 지정되지 않았습니다"
 
 #: dnf/cli/output.py:1654
 msgid "Erased"
@@ -3272,7 +3266,7 @@ msgstr "다운 그레이드"
 
 #: dnf/cli/output.py:1655 dnf/cli/output.py:1824 dnf/util.py:615
 msgid "Upgraded"
-msgstr "업그레이드 됨"
+msgstr "업그레이드되었습니다"
 
 #: dnf/cli/output.py:1656
 msgid "Not installed"
@@ -3288,7 +3282,7 @@ msgstr "이전"
 
 #: dnf/cli/output.py:1705 dnf/cli/output.py:1707
 msgid "Transaction ID :"
-msgstr "거래 ID :"
+msgstr "연결 ID :"
 
 #: dnf/cli/output.py:1710
 msgid "Begin time     :"
@@ -3365,7 +3359,7 @@ msgstr "댓글 :"
 
 #: dnf/cli/output.py:1785
 msgid "Transaction performed with:"
-msgstr "실행된 거래:"
+msgstr "실행된 연결:"
 
 #: dnf/cli/output.py:1794
 msgid "Packages Altered:"
@@ -3456,9 +3450,9 @@ msgid ""
 " From       : %s"
 msgstr ""
 "GPG키 0x%s 가져오는 중:\n"
-" 사용자 ID     : \"%s\"\n"
-"  지문: %s\n"
-" 출처        : %s"
+"사용자 ID : \"%s\"\n"
+"지문: %s\n"
+"출처 : %s"
 
 #: dnf/cli/utils.py:98
 msgid "Running"
@@ -3516,17 +3510,17 @@ msgstr "건너 뛰기."
 #: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr "모듈 또는 그룹 '%s'이/가 설치되지 않았습니다."
+msgstr "모듈 또는 그룹 '%s'가 설치되지 않았습니다."
 
 #: dnf/comps.py:198 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr "모듈 또는 그룹 '%s'을/를 사용할 수 없습니다."
+msgstr "모듈 또는 그룹 '%s'을 사용 할 수 없습니다."
 
 #: dnf/comps.py:200
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr "모듈 또는 그룹 '%s'이/가 존재하지 않습니다."
+msgstr "모듈 또는 그룹 '%s'가 존재하지 않습니다."
 
 #: dnf/comps.py:599
 #, python-format
@@ -3567,7 +3561,7 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
-"구성 파일 URL \"{}\"을 (를) 다운로드 할 수 없습니다:\n"
+"구성 파일 URL \"{}\"를 내려받기 할 수 없습니다:\n"
 "  {}"
 
 #: dnf/conf/config.py:355 dnf/conf/config.py:391
@@ -3992,7 +3986,7 @@ msgstr "%s와 일치하는 payload factory가 없습니다"
 
 #: dnf/repo.py:111
 msgid "Already downloaded"
-msgstr "이미 다운로드 됨"
+msgstr "이미 내려받음"
 
 #. pinging mirrors, this might take a while
 #: dnf/repo.py:347
@@ -4012,7 +4006,7 @@ msgstr "%s 에서 %s repo를 추가했습니다"
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
-msgstr "거래 시험 중에 오류가 발생했습니다."
+msgstr "연결 시험 중에 오류가 발생했습니다."
 
 #: dnf/sack.py:47
 msgid ""
@@ -4073,11 +4067,11 @@ msgstr "준비 중"
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr "다음 문제는 파일에서 거래 응답 할 때에 발생합니다 \"{filename}\":"
+msgstr "다음 문제는 파일에서 연결 응답 할 때에 발생합니다 \"{filename}\":"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
-msgstr "거래 중에 오류가 발생했습니다:"
+msgstr "연결 중에 오류가 발생했습니다:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4100,7 +4094,7 @@ msgstr ""
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr "거래 지연 인수의 충돌은 명시됩니다: 파일이름, 자료"
+msgstr "연결 지연 인수의 충돌은 명시됩니다: 파일이름, 자료"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4221,8 +4215,7 @@ msgstr "환경에 누락된 객체 키 \"{key}\"."
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
-msgstr ""
-"꾸러미 nevra \"{nevra}\", 거래 파일에 존재하지 않는 것은 거래로 가져왔습니다."
+msgstr "꾸러미 nevra \"{nevra}\", 연겨 파일에 존재하지 않는 것은 연결로 가져왔습니다."
 
 #: dnf/util.py:419 dnf/util.py:421
 msgid "Problem"
@@ -4238,11 +4231,11 @@ msgstr "{} 키에 대한 TransactionSWDBItem을 찾을 수 없습니다"
 
 #: dnf/util.py:485
 msgid "Errors occurred during transaction."
-msgstr "거래 중에 오류가 발생했습니다."
+msgstr "연결 중에 오류가 발생했습니다."
 
 #: dnf/util.py:621
 msgid "Reinstalled"
-msgstr "다시 설치됨"
+msgstr "다시 설치되었습니다"
 
 #: dnf/util.py:622
 msgid "Skipped"
