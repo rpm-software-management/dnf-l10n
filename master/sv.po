@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-15 09:18-0400\n"
+"POT-Creation-Date: 2021-03-18 09:18-0400\n"
 "PO-Revision-Date: 2021-02-26 19:40+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -434,71 +434,71 @@ msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Paketet %s med lägsta version är redan installerat, kan inte nedgradera det."
 
-#: dnf/base.py:2371
+#: dnf/base.py:2372
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs, men {} uppdatering finns tillgänglig"
 
-#: dnf/base.py:2373
+#: dnf/base.py:2374
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs, men {} uppdateringar finns tillgängliga"
 
-#: dnf/base.py:2377
+#: dnf/base.py:2378
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs för ”{}”, men {} uppdatering finns "
 "tillgänglig"
 
-#: dnf/base.py:2379
+#: dnf/base.py:2380
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs för ”{}”, men {} uppdateringar finns "
 "tillgängliga"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2400
+#: dnf/base.py:2401
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Kan inte hämta en nyckel för ett kommandoradspaket: %s"
 
-#: dnf/base.py:2408
+#: dnf/base.py:2409
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Paketet som misslyckas är: %s"
 
-#: dnf/base.py:2409
+#: dnf/base.py:2410
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-nycklar är konfigurerade som: %s"
 
-#: dnf/base.py:2421
+#: dnf/base.py:2422
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-nyckel vid %s (0x%s) är redan installerad"
 
-#: dnf/base.py:2457
+#: dnf/base.py:2458
 msgid "The key has been approved."
 msgstr "Nyckeln har godkänts."
 
-#: dnf/base.py:2460
+#: dnf/base.py:2461
 msgid "The key has been rejected."
 msgstr "Nyckeln har avvisats."
 
-#: dnf/base.py:2493
+#: dnf/base.py:2494
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Nyckelimport misslyckades (kod %d)"
 
-#: dnf/base.py:2495
+#: dnf/base.py:2496
 msgid "Key imported successfully"
 msgstr "Nyckelimport lyckades"
 
-#: dnf/base.py:2499
+#: dnf/base.py:2500
 msgid "Didn't install any keys"
 msgstr "Installerade inte några nycklar"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2503
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -509,28 +509,28 @@ msgstr ""
 "inte korrekta för detta paket.\n"
 "Kontrollera att de rätta nyckel-URL:erna är konfigurerade för detta förråd."
 
-#: dnf/base.py:2513
+#: dnf/base.py:2514
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import av nycklar hjälpte inte, fel nycklar?"
 
-#: dnf/base.py:2566
+#: dnf/base.py:2567
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kanske du menade: {}"
 
-#: dnf/base.py:2598
+#: dnf/base.py:2599
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketet ”{}” från det lokala förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2601
+#: dnf/base.py:2602
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Några paket från ett lokalt förråd har felaktig kontrollsumma"
 
-#: dnf/base.py:2604
+#: dnf/base.py:2605
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paketet ”{}” från förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2607
+#: dnf/base.py:2608
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -538,23 +538,23 @@ msgstr ""
 "Några paket har en ogiltig cache, men kan inte hämtas på grund av flaggan ”--"
 "cacheonly”"
 
-#: dnf/base.py:2625 dnf/base.py:2645
+#: dnf/base.py:2626 dnf/base.py:2646
 msgid "No match for argument"
 msgstr "Ingen matching för argumentet"
 
-#: dnf/base.py:2633 dnf/base.py:2653
+#: dnf/base.py:2634 dnf/base.py:2654
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Alla matchningar filtrerades ut av uteslutsfilter för argumentet"
 
-#: dnf/base.py:2635
+#: dnf/base.py:2636
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alla matchningar filtrerades ut av modulfilter för argumentet"
 
-#: dnf/base.py:2651
+#: dnf/base.py:2652
 msgid "All matches were installed from a different repository for argument"
 msgstr "Alla matchningar installerades från ett annat förråd för argumentet"
 
-#: dnf/base.py:2698
+#: dnf/base.py:2699
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketet %s är redan installerat."
@@ -3793,7 +3793,7 @@ msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Modulärt beroendeproblem med standard:"
 msgstr[1] "Modulära beroendeproblem med standard:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:850
+#: dnf/exceptions.py:131 dnf/module/module_base.py:854
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Modulärt beroendeproblem:"
@@ -3892,7 +3892,7 @@ msgstr ""
 "Ledtråd: [d]standard, [e]aktiverad, [x]avaktiverad, [i]nstallerad, [a]ktiv"
 
 #: dnf/module/module_base.py:56 dnf/module/module_base.py:556
-#: dnf/module/module_base.py:612 dnf/module/module_base.py:678
+#: dnf/module/module_base.py:615 dnf/module/module_base.py:681
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Ignorerar onödig profil: ”{}/{}”"
 
@@ -3953,8 +3953,8 @@ msgstr "Inga paket är tillgängliga för distributionssynk för paketnamnet ”
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
-#: dnf/module/module_base.py:552 dnf/module/module_base.py:608
-#: dnf/module/module_base.py:674 dnf/module/module_base.py:836
+#: dnf/module/module_base.py:552 dnf/module/module_base.py:611
+#: dnf/module/module_base.py:677 dnf/module/module_base.py:840
 msgid "Unable to resolve argument {}"
 msgstr "Kan inte lösa upp argumentet {}"
 
@@ -3991,7 +3991,7 @@ msgid ""
 msgstr ""
 "Endast modulnamn behövs. Ignorerar oanvänd information i argumentet: ”{}”"
 
-#: dnf/module/module_base.py:837
+#: dnf/module/module_base.py:841
 msgid "No match for package {}"
 msgstr "Ingen matchning för paketet {}"
 
