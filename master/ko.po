@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-21 09:18-0400\n"
-"PO-Revision-Date: 2021-03-22 10:01+0000\n"
+"PO-Revision-Date: 2021-03-25 14:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -643,7 +643,7 @@ msgstr "배포 동기화가 필요한 꾸러미가 없습니다."
 #: dnf/cli/cli.py:425 dnf/cli/commands/group.py:395
 #, python-format
 msgid "No package %s available."
-msgstr "가용한 꾸러미 %s가 없습니다."
+msgstr "가용한 꾸러미(package) %s가 없습니다."
 
 #: dnf/cli/cli.py:434
 msgid "No packages marked for downgrade."
@@ -809,16 +809,16 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
-"GPG 키를 통해 꾸러미 검사를 활성화했습니다. 이는 적절한 작업 실행입니다. \n"
-"그러나 GPG 공개 키가 설치되어 있지 않습니다. \n"
-"설치하려는 꾸러미의 키를 내려받기하여 설치해야합니다.\n"
+"GPG 키를 통해 꾸러미 검사를 활성화했습니다. 이는 적절한 작업 실행입니다.\n"
+"그러나 GPG 공개 키가 설치되어 있지 않습니다.\n"
+"설치하려는 꾸러미의 키를 내려받기하여 설치해야 합니다.\n"
 "다음 명령으로 이 작업을 수행할 수 있습니다:\n"
-"    rpm --import public.gpg.key\n"
+"rpm --import public.gpg.key\n"
 "\n"
 "\n"
-"또는 저장소 섹션의 'gpgkey' 옵션을 사용하여 \n"
-"저장소에 사용할 키의 URL을 지정할 수 있으며 {prog}이/가 \n"
-"이를 설치합니다 \n"
+"또는 저장소 섹션의 'gpgkey' 옵션을 사용하여\n"
+"저장소에 사용할 키의 URL을 지정할 수 있으며 {prog}가\n"
+"이를 설치합니다\n"
 "\n"
 "자세한 내용은 배포 또는 꾸러미 공급 업체에 문의하십시오."
 
@@ -866,7 +866,7 @@ msgstr "최근에 변경된 꾸러미만 표시"
 #: dnf/cli/commands/install.py:51 dnf/cli/commands/reinstall.py:44
 #: dnf/cli/commands/remove.py:61 dnf/cli/commands/upgrade.py:46
 msgid "PACKAGE"
-msgstr "꾸러미"
+msgstr "꾸러미(package)"
 
 #: dnf/cli/commands/__init__.py:193
 msgid "Package name specification"
@@ -3372,7 +3372,7 @@ msgstr "변경된 꾸러미 :"
 
 #: dnf/cli/output.py:1800
 msgid "Scriptlet output:"
-msgstr "Scriptlet 출력 :"
+msgstr "스크립트릿 출력 :"
 
 #: dnf/cli/output.py:1807
 msgid "Errors:"
@@ -3401,7 +3401,7 @@ msgstr "재설치"
 #: dnf/cli/output.py:1894
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
-msgstr "---> 꾸러미 %s.%s %s이/가 설치됩니다"
+msgstr "---> 꾸러미 %s.%s %s가 설치됩니다"
 
 #: dnf/cli/output.py:1896
 #, python-format
@@ -4056,7 +4056,7 @@ msgstr "확인 중"
 
 #: dnf/transaction.py:97
 msgid "Running scriptlet"
-msgstr "scriptlet 실행 중"
+msgstr "스크립트릿 실행 중"
 
 #: dnf/transaction.py:99
 msgid "Preparing"
