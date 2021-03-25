@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-21 09:18-0400\n"
+"POT-Creation-Date: 2021-03-25 09:18-0400\n"
 "PO-Revision-Date: 2020-07-27 05:29+0000\n"
 "Last-Translator: Hajime Taira <htaira@pantora.net>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -369,8 +369,8 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr ""
 "パッケージ %s はインストールされていないので、ダウングレードできません。"
 
-#: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2069
-#: dnf/base.py:2118 dnf/base.py:2126 dnf/base.py:2260 dnf/cli/cli.py:417
+#: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2075
+#: dnf/base.py:2128 dnf/base.py:2136 dnf/base.py:2270 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -398,12 +398,12 @@ msgstr ""
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "ファイル %s はソースパッケージで更新できません。無視します。"
 
-#: dnf/base.py:2067
+#: dnf/base.py:2072
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "パッケージ %s はインストールされていないので、更新できません。"
 
-#: dnf/base.py:2076
+#: dnf/base.py:2082
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -411,105 +411,105 @@ msgstr ""
 "同じまたはさらに新しいバージョンの %s が既にインストールされています、アップ"
 "デートできません。"
 
-#: dnf/base.py:2115 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2125 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "パッケージ %s は利用可能ですが、インストールされていません。"
 
-#: dnf/base.py:2121
+#: dnf/base.py:2131
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "パッケージ %s は利用可能ですが、他のアーキテクチャー用にインストールされてい"
 "ます。"
 
-#: dnf/base.py:2146
+#: dnf/base.py:2156
 #, python-format
 msgid "No package %s installed."
 msgstr "パッケージ %s はインストールされていません。"
 
-#: dnf/base.py:2164 dnf/cli/commands/install.py:136
+#: dnf/base.py:2174 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "有効な形式ではありません: %s"
 
-#: dnf/base.py:2179 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2189 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "削除対象のパッケージはありません。"
 
-#: dnf/base.py:2267 dnf/cli/cli.py:428
+#: dnf/base.py:2277 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "引数  %s のパッケージは利用可能ですが、インストールされていません。"
 
-#: dnf/base.py:2272
+#: dnf/base.py:2282
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "最下位バージョンのパッケージ %s はインストール済みなので、ダウングレードでき"
 "ません。"
 
-#: dnf/base.py:2372
+#: dnf/base.py:2382
 msgid "No security updates needed, but {} update available"
 msgstr "セキュリティー更新は必要ありませんが、{} 更新が利用可能です"
 
-#: dnf/base.py:2374
+#: dnf/base.py:2384
 msgid "No security updates needed, but {} updates available"
 msgstr "セキュリティー更新は必要ありませんが、{} 更新が利用可能です"
 
-#: dnf/base.py:2378
+#: dnf/base.py:2388
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "\"{}\" のセキュリティー更新は必要ありませんが、{} 更新が利用可能です"
 
-#: dnf/base.py:2380
+#: dnf/base.py:2390
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "\"{}\" のセキュリティー更新は必要ありませんが、{} 更新が利用可能です"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2401
+#: dnf/base.py:2411
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2409
+#: dnf/base.py:2419
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". 失敗したパッケージは: %s"
 
-#: dnf/base.py:2410
+#: dnf/base.py:2420
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG 鍵が設定されています: %s"
 
-#: dnf/base.py:2422
+#: dnf/base.py:2432
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s (0x%s) の GPG 鍵はインストール済みです"
 
-#: dnf/base.py:2458
+#: dnf/base.py:2468
 msgid "The key has been approved."
 msgstr "鍵が承認されました。"
 
-#: dnf/base.py:2461
+#: dnf/base.py:2471
 msgid "The key has been rejected."
 msgstr "鍵が拒否されました。"
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "鍵のインポートに失敗しました (コード: %d)"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "Key imported successfully"
 msgstr "鍵のインポートに成功しました"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "Didn't install any keys"
 msgstr "鍵を 1 つもインストールしませんでした"
 
-#: dnf/base.py:2503
+#: dnf/base.py:2513
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -520,31 +520,31 @@ msgstr ""
 "パッケージには適切ではありません。\n"
 "正しい鍵 URL がこのリポジトリー用に設定されているか確認してください。"
 
-#: dnf/base.py:2514
+#: dnf/base.py:2524
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "鍵をインポートしても役に立ちませんでした。鍵が間違っていませんか?"
 
-#: dnf/base.py:2567
+#: dnf/base.py:2577
 msgid "  * Maybe you meant: {}"
 msgstr "  * おそらく: {}"
 
-#: dnf/base.py:2599
+#: dnf/base.py:2609
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "ローカルリポジトリー \"{}\" のパッケージ \"{}\" のチェックサムは正しくありま"
 "せん"
 
-#: dnf/base.py:2602
+#: dnf/base.py:2612
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "ローカルリポジトリーのいくつかのパッケージのチェックサムは正しくありません"
 
-#: dnf/base.py:2605
+#: dnf/base.py:2615
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "リポジトリー \"{}\" のパッケージ \"{}\" のチェックサムは正しくありません"
 
-#: dnf/base.py:2608
+#: dnf/base.py:2618
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -552,25 +552,25 @@ msgstr ""
 "いくつかのパッケージには無効なキャッシュがありますが、\"--cacheonly\" オプ"
 "ションによりダウンロードできません"
 
-#: dnf/base.py:2626 dnf/base.py:2646
+#: dnf/base.py:2636 dnf/base.py:2656
 msgid "No match for argument"
 msgstr "一致した引数がありません"
 
-#: dnf/base.py:2634 dnf/base.py:2654
+#: dnf/base.py:2644 dnf/base.py:2664
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "すべての検索結果は引数の除外フィルタリングに一致しません(filter out)"
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "すべての検出結果は引数のモジュラーフィルタリングに一致しません(filter out)"
 
-#: dnf/base.py:2652
+#: dnf/base.py:2662
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "すべての検索結果は引数に対し異なるレポジトリからインストールされたものです"
 
-#: dnf/base.py:2699
+#: dnf/base.py:2709
 #, python-format
 msgid "Package %s is already installed."
 msgstr "パッケージ %s は既にインストールされています。"

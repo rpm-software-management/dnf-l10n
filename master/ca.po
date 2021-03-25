@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-21 09:18-0400\n"
+"POT-Creation-Date: 2021-03-25 09:18-0400\n"
 "PO-Revision-Date: 2018-11-03 06:46+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (https://fedora.zanata.org/language/view/ca) "
@@ -356,8 +356,8 @@ msgstr "No s'ha marcat cap grup per actualitzar."
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "El paquet %s no està instal·lat, no es pot revertir."
 
-#: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2069
-#: dnf/base.py:2118 dnf/base.py:2126 dnf/base.py:2260 dnf/cli/cli.py:417
+#: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2075
+#: dnf/base.py:2128 dnf/base.py:2136 dnf/base.py:2270 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -383,123 +383,123 @@ msgstr "El paquet %s no està instal·lat, no es pot reinstal·lar."
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "El fitxer %s és un paquet de fonts i no es pot actualitzar, s'ignora."
 
-#: dnf/base.py:2067
+#: dnf/base.py:2072
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "El paquet %s no està instal·lat, no es pot actualitzar."
 
-#: dnf/base.py:2076
+#: dnf/base.py:2082
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 
-#: dnf/base.py:2115 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2125 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "El paquet %s està disponible, però no està instal·lat."
 
-#: dnf/base.py:2121
+#: dnf/base.py:2131
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "El paquet %s està disponible, però està instal·lat per a una arquitectura "
 "diferent."
 
-#: dnf/base.py:2146
+#: dnf/base.py:2156
 #, python-format
 msgid "No package %s installed."
 msgstr "Cap paquet %s instal·lat."
 
-#: dnf/base.py:2164 dnf/cli/commands/install.py:136
+#: dnf/base.py:2174 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "No és una forma vàlida: %s"
 
-#: dnf/base.py:2179 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2189 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "No s'ha marcat cap paquet per treure."
 
-#: dnf/base.py:2267 dnf/cli/cli.py:428
+#: dnf/base.py:2277 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
 
-#: dnf/base.py:2272
+#: dnf/base.py:2282
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Ja hi ha instal·lada la versió més baixa del paquet %s, no es pot revertir."
 
-#: dnf/base.py:2372
+#: dnf/base.py:2382
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "No es requereix cap actualització de seguretat, però hi ha {} actualització "
 "disponible"
 
-#: dnf/base.py:2374
+#: dnf/base.py:2384
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "No es requereix cap actualització de seguretat, però hi ha {} "
 "actualitzacions disponibles"
 
-#: dnf/base.py:2378
+#: dnf/base.py:2388
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "No es requereix cap actualització de seguretat per «{}», però hi ha {} "
 "actualització disponible"
 
-#: dnf/base.py:2380
+#: dnf/base.py:2390
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "No es requereix cap actualització de seguretat per «{}», però hi ha {} "
 "actualitzacions disponibles"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2401
+#: dnf/base.py:2411
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2409
+#: dnf/base.py:2419
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". El paquet que falla és: %s"
 
-#: dnf/base.py:2410
+#: dnf/base.py:2420
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Les claus GPG estan configurades com a: %s"
 
-#: dnf/base.py:2422
+#: dnf/base.py:2432
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "La clau GPG de %s (0x%s) ja està instal·lada"
 
-#: dnf/base.py:2458
+#: dnf/base.py:2468
 msgid "The key has been approved."
 msgstr "S'ha aprovat la clau."
 
-#: dnf/base.py:2461
+#: dnf/base.py:2471
 msgid "The key has been rejected."
 msgstr "S'ha rebutjat la clau."
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "La importació de la clau ha fallat (codi %d)"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "Key imported successfully"
 msgstr "La clau s'ha importat amb èxit"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "Didn't install any keys"
 msgstr "No s'ha instal·lat cap clau"
 
-#: dnf/base.py:2503
+#: dnf/base.py:2513
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -510,53 +510,53 @@ msgstr ""
 "són correctes per a aquest paquet.\n"
 "Comproveu que aquest dipòsit tingui configurats els URL amb la clau correcta."
 
-#: dnf/base.py:2514
+#: dnf/base.py:2524
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "La importació de claus no ha ajudat, eren claus incorrectes?"
 
-#: dnf/base.py:2567
+#: dnf/base.py:2577
 msgid "  * Maybe you meant: {}"
 msgstr "  * Potser voleu dir: {}"
 
-#: dnf/base.py:2599
+#: dnf/base.py:2609
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquet \"{}\" del dipòsit local \"{}\" té una suma de comprovació "
 "incorrecta"
 
-#: dnf/base.py:2602
+#: dnf/base.py:2612
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Alguns paquets del dipòsit local tenen una suma de comprovació incorrecta"
 
-#: dnf/base.py:2605
+#: dnf/base.py:2615
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquet \"{}\" del dipòsit \"{}\" té una suma de comprovació incorrecta"
 
-#: dnf/base.py:2608
+#: dnf/base.py:2618
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
 
-#: dnf/base.py:2626 dnf/base.py:2646
+#: dnf/base.py:2636 dnf/base.py:2656
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2634 dnf/base.py:2654
+#: dnf/base.py:2644 dnf/base.py:2664
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2652
+#: dnf/base.py:2662
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2699
+#: dnf/base.py:2709
 #, python-format
 msgid "Package %s is already installed."
 msgstr "El paquet %s ja està instal·lat."
