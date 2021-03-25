@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-25 09:18-0400\n"
-"PO-Revision-Date: 2021-02-18 18:40+0000\n"
+"PO-Revision-Date: 2021-03-25 14:10+0000\n"
 "Last-Translator: Qiyu Yan <yanqiyu01@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -453,7 +453,7 @@ msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可
 #: dnf/base.py:2411
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "无法获取来自命令行的软件包的密钥：%s"
 
 #: dnf/base.py:2419
 #, python-format
@@ -596,12 +596,7 @@ msgid ""
 msgstr "这个操作会把模块 '{0}' 从流 '{1}' 切换到流 '{2}'"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -609,9 +604,9 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"无法切换已启用模块的流。\n"
-"推荐移除来自模块的所有已安装内容，然后通过 '{prog} module reset "
-"<module_name>' 命令重置模块。在您重置模块之后，就可以安装其他的流。"
+"无法切换已启用模块的流，除非显式的通过配置选项 module_stream_switch 启用。\n"
+"推荐移除来自模块的所有已安装内容，然后通过 '{prog} module reset <module_name>' "
+"命令重置模块。在您重置模块之后，就可以安装其他的流。"
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
