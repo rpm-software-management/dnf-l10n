@@ -14,17 +14,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-25 09:18-0400\n"
-"PO-Revision-Date: 2021-02-28 07:40+0000\n"
+"PO-Revision-Date: 2021-03-28 06:01+0000\n"
 "Last-Translator: Марко Костић (Marko Kostić) <marko.m.kostic@gmail.com>\n"
-"Language-Team: Serbian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sr/>\n"
+"Language-Team: Serbian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sr/>\n"
 "Language: sr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.5.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -603,7 +603,7 @@ msgstr ""
 #: dnf/cli/cli.py:212
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} само преузима пакете за трансакцију."
 
 #: dnf/cli/cli.py:215
 #, python-brace-format
@@ -611,6 +611,7 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} само преузима пакете, инсталира gpg кључеве и проверава транскацију."
 
 #: dnf/cli/cli.py:219
 msgid "Operation aborted."
@@ -1349,10 +1350,8 @@ msgid "Not overwriting {}, exiting."
 msgstr ""
 
 #: dnf/cli/commands/history.py:367
-#, fuzzy
-#| msgid "Transaction ID :"
 msgid "Transaction saved to {}."
-msgstr "ИБ трансакције :"
+msgstr "Трансакција сачувана у путањи {}."
 
 #: dnf/cli/commands/history.py:370
 #, fuzzy
@@ -2650,7 +2649,7 @@ msgstr "Нема подударања за аргумент: %s"
 #: dnf/cli/output.py:459
 msgctxt "short"
 msgid "Name"
-msgstr ""
+msgstr "Назив"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
@@ -2664,13 +2663,13 @@ msgstr "Епоха"
 #: dnf/cli/output.py:466 dnf/cli/output.py:1248
 msgctxt "short"
 msgid "Version"
-msgstr ""
+msgstr "Издање"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:467 dnf/cli/output.py:1250
 msgctxt "long"
 msgid "Version"
-msgstr ""
+msgstr "Издање"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:470
@@ -2682,20 +2681,20 @@ msgstr "Издање"
 #: dnf/cli/output.py:471 dnf/cli/output.py:1239
 msgctxt "short"
 msgid "Arch"
-msgstr ""
+msgstr "Архит."
 
 #. Translators: This is the full word 'Architecture', used when
 #. we have enough space.
 #: dnf/cli/output.py:472 dnf/cli/output.py:1242
 msgctxt "long"
 msgid "Architecture"
-msgstr ""
+msgstr "Архитектура"
 
 #. Translators: This is the full (unabbreviated) term 'Size'.
 #: dnf/cli/output.py:474 dnf/cli/output.py:1265
 msgctxt "long"
 msgid "Size"
-msgstr ""
+msgstr "Величина"
 
 #. Translators: This is the short version of 'Size'. It should
 #. not be longer than 5 characters. If the term 'Size' in your
@@ -2704,26 +2703,26 @@ msgstr ""
 #: dnf/cli/output.py:474 dnf/cli/output.py:1263
 msgctxt "short"
 msgid "Size"
-msgstr ""
+msgstr "Вел."
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:478
 msgid "Source"
-msgstr ""
+msgstr "Извор"
 
 #. Translators: This is abbreviated 'Repository', used when
 #. we have not enough space to display the full word.
 #: dnf/cli/output.py:479 dnf/cli/output.py:1254
 msgctxt "short"
 msgid "Repo"
-msgstr ""
+msgstr "Ризн."
 
 #. Translators: This is the full word 'Repository', used when
 #. we have enough space.
 #: dnf/cli/output.py:480 dnf/cli/output.py:1257
 msgctxt "long"
 msgid "Repository"
-msgstr ""
+msgstr "Ризница"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:487
@@ -2736,7 +2735,7 @@ msgstr "Из ризнице"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:493
 msgid "Packager"
-msgstr ""
+msgstr "Паковалац"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:495
@@ -2759,7 +2758,7 @@ msgstr "Инсталирано од стране"
 #: dnf/cli/output.py:512
 msgctxt "short"
 msgid "Summary"
-msgstr ""
+msgstr "Сажетак"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:518
@@ -2952,7 +2951,7 @@ msgstr ""
 #: dnf/cli/output.py:1053
 msgctxt "summary"
 msgid "Upgrading"
-msgstr ""
+msgstr "Надограђујем"
 
 #. TRANSLATORS: This is for a list of packages to be reinstalled.
 #: dnf/cli/output.py:1055
@@ -2966,7 +2965,7 @@ msgstr "Инсталирам зависности"
 
 #: dnf/cli/output.py:1058
 msgid "Installing weak dependencies"
-msgstr ""
+msgstr "Инсталирам слабе зависности"
 
 #. TRANSLATORS: This is for a list of packages to be removed.
 #: dnf/cli/output.py:1060
@@ -2985,7 +2984,7 @@ msgstr ""
 #: dnf/cli/output.py:1064
 msgctxt "summary"
 msgid "Downgrading"
-msgstr ""
+msgstr "Уназађујем"
 
 #: dnf/cli/output.py:1089
 msgid "Installing module profiles"
@@ -3017,7 +3016,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1150
 msgid "Upgrading Environment Groups"
-msgstr ""
+msgstr "Надограђујем групе окружења"
 
 #: dnf/cli/output.py:1157
 msgid "Removing Environment Groups"
@@ -3029,7 +3028,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1171
 msgid "Upgrading Groups"
-msgstr ""
+msgstr "Надограђујем групе"
 
 #: dnf/cli/output.py:1178
 msgid "Removing Groups"
@@ -3060,17 +3059,17 @@ msgstr ""
 #: dnf/cli/output.py:1233
 msgctxt "short"
 msgid "Package"
-msgstr ""
+msgstr "Пак."
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
 #: dnf/cli/output.py:1235
 msgctxt "long"
 msgid "Package"
-msgstr ""
+msgstr "Пакет"
 
 #: dnf/cli/output.py:1284
 msgid "replacing"
-msgstr ""
+msgstr "мења пакет"
 
 #: dnf/cli/output.py:1291
 #, python-format
@@ -3624,11 +3623,11 @@ msgstr ""
 
 #: dnf/exceptions.py:115
 msgid "missing packages: "
-msgstr ""
+msgstr "недостајући пакети: "
 
 #: dnf/exceptions.py:117
 msgid "broken packages: "
-msgstr ""
+msgstr "сломљени пакети: "
 
 #: dnf/exceptions.py:119
 msgid "missing groups or modules: "
@@ -3908,7 +3907,7 @@ msgstr ""
 #: dnf/transaction.py:80
 msgctxt "currently"
 msgid "Downgrading"
-msgstr "Деградирам"
+msgstr "Уназађујем"
 
 #: dnf/transaction.py:81 dnf/transaction.py:88 dnf/transaction.py:93
 #: dnf/transaction.py:95
@@ -4126,7 +4125,7 @@ msgstr "Поново инсталирано"
 
 #: dnf/util.py:622
 msgid "Skipped"
-msgstr ""
+msgstr "Прескочено"
 
 #: dnf/util.py:623
 msgid "Removed"
