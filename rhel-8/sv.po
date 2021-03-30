@@ -12,21 +12,22 @@
 # Göran Uddeborg <goeran@uddeborg.se>, 2019. #zanata, 2020.
 # Göran Uddeborg <goeran@uddeborg.se>, 2020. #zanata
 # Mikael Granberg <mikael@famgra.se>, 2020.
+# Luna Jernberg <bittin@reimu.nl>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-09-13 13:29+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"PO-Revision-Date: 2021-04-02 09:01+0000\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.2.2\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1354,10 +1355,9 @@ msgid "No transaction ID given"
 msgstr "Inget transaktions-ID angivet"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Transaktions-ID ”{id}” finns inte."
+msgstr "Transaktions-ID ”{0}” finns inte."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1414,11 +1414,8 @@ msgid "Error storing transaction: {}"
 msgstr "Fel när transaktionen sparades: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "Varning, följande problem uppstod när transaktionen spelades om:"
+msgstr "Varning, följande problem uppstod när en transaktion kördes:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1540,7 +1537,7 @@ msgstr "Paketet {} till hör flera moduler, hoppar över"
 
 #: dnf/cli/commands/module.py:277
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "byt en modul mot en ström och distributionsynka rpm-paket"
 
 #: dnf/cli/commands/module.py:299
 msgid "list modular packages"
@@ -3695,7 +3692,7 @@ msgstr "Paketkatalog %s: importerade nyckeln 0x%s."
 #: dnf/crypto.py:177
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "hämtar förrådsnyckel för %s okrypterad från %s"
 
 #: dnf/db/group.py:293
 msgid ""
@@ -3884,21 +3881,20 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Att installera en modul från ett felsäkert förråd är inte tillåtet"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
-"Inga av matchningarna för argumentet ”{0}” i modulen ”{1}:{2}” är aktiva"
+msgstr "Inga aktiva matchningarna för argumentet '{0}' i modulen '{1}:{2}'"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "Standardprofilen {} är inte tillgänglig i modulen {}:{}"
+msgstr ""
+"Den installerade profilen {0} är inte tillgänglig i modulen ”{1}” strömmen "
+"”{2}”"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Inga paket är tillgängliga för distributionssynk för paketnamnet ”{}”"
 
 #: dnf/module/module_base.py:308 dnf/module/module_base.py:452
 #: dnf/module/module_base.py:477 dnf/module/module_base.py:496
@@ -4022,6 +4018,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change är avaktiverat. Denna flagga stödjs för närvarande inte "
+"för kommandona downgrade och distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4070,20 +4068,17 @@ msgid "Preparing"
 msgstr "Förbereder"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr "Varning, följande problem uppstod när transaktionen spelades om:"
+msgstr ""
+"Följande problem uppstod när transaktionen spelades om från filen "
+"”{filename}”:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr "Varning, följande problem uppstod när transaktionen spelades om:"
+msgstr "Följande problem uppstod när en transaktion kördes:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4107,7 +4102,7 @@ msgstr ""
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Motstridiga TransactionReplay-argument har angivits: filnamn, data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
