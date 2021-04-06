@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2021-04-04 06:01+0000\n"
+"PO-Revision-Date: 2021-04-06 08:39+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/ko/>\n"
@@ -329,12 +329,12 @@ msgstr "제거할 꾸러미 그룹이 없습니다."
 
 #: dnf/base.py:1783
 msgid "No group marked for upgrade."
-msgstr "업그레이드용으로 표시된 그룹이 없습니다."
+msgstr "향상을 위해 표시된 그룹이 없습니다."
 
 #: dnf/base.py:1997
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 다운 그레이드할 수 없습니다."
+msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 하향설치 할 수 없습니다."
 
 #: dnf/base.py:1999 dnf/base.py:2018 dnf/base.py:2031 dnf/base.py:2052
 #: dnf/base.py:2101 dnf/base.py:2109 dnf/base.py:2243 dnf/cli/cli.py:416
@@ -350,7 +350,7 @@ msgstr "인수가 일치하지 않습니다: %s"
 #: dnf/base.py:2006
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 하위 버전이 이미 설치되어 있으므로 다운 그레이드할 수 없습니다."
+msgstr "%s 꾸러미의 하위 상태번호가 이미 설치되어 있으므로 하향설치 할 수 없습니다."
 
 #: dnf/base.py:2029
 #, python-format
@@ -371,7 +371,7 @@ msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 업데이트할 수
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr "%s 이상의 버전이 이미 설치되어 있으므로 업데이트할 수 없습니다."
+msgstr "%s 이상의 상태번호가 이미 설치되어 있으므로 최신화 할 수 없습니다."
 
 #: dnf/base.py:2098 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -407,7 +407,7 @@ msgstr "%s 인수에 대한 꾸러미를 사용할 수 있지만 설치되어 �
 #: dnf/base.py:2255
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 최하위 버전이 이미 설치되어 있으므로 다운그레이드할 수 없습니다."
+msgstr "%s 꾸러미의 최하위 상태번호가 이미 설치되어 있으므로 하향설치 할 수 없습니다."
 
 #: dnf/base.py:2302
 msgid "No security updates needed, but {} update available"
@@ -639,7 +639,7 @@ msgstr "가용한 꾸러미(package) %s가 없습니다."
 
 #: dnf/cli/cli.py:433
 msgid "No packages marked for downgrade."
-msgstr "다운그레이드 대상으로 표시된 꾸러미가 없습니다."
+msgstr "하향설치 대상으로 표시된 꾸러미가 없습니다."
 
 #: dnf/cli/cli.py:484
 msgid "Installed Packages"
@@ -742,7 +742,7 @@ msgstr "설정 파일 \"{}\" 이 존재하지 않습니다"
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
-msgstr "출시 버전을 찾을 수 없습니다 ('--releasever'를 사용하여 출시 버전을 지정하십시오)"
+msgstr "출시 상태번호를 찾을 수 없습니다 ('--releasever'를 사용하여 출시 상태번호를 지정하십시오)"
 
 #: dnf/cli/cli.py:1028 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
@@ -839,7 +839,7 @@ msgstr "엑스트라 꾸러미만 표시"
 #: dnf/cli/commands/__init__.py:180 dnf/cli/commands/__init__.py:183
 #: dnf/cli/commands/__init__.py:752 dnf/cli/commands/__init__.py:755
 msgid "show only upgrades packages"
-msgstr "업그레이드 꾸러미만 표시"
+msgstr "향상 꾸러미만 표시"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:758
 msgid "show only autoremove packages"
@@ -882,7 +882,7 @@ msgstr "꾸러미 검색 : "
 
 #: dnf/cli/commands/__init__.py:258
 msgid "check for available package upgrades"
-msgstr "사용 가능한 꾸러미 업그레이드 확인"
+msgstr "사용 가능한 꾸러미 향상 확인"
 
 #: dnf/cli/commands/__init__.py:264
 msgid "show changelogs before update"
@@ -1127,7 +1127,7 @@ msgstr "꾸러미(package)의 종속성 및 꾸러미(packages)를 제공하는 
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr "설치된 꾸러미를 사용 가능한 최신 버전으로 동기화합니다"
+msgstr "설치된 꾸러미를 사용 가능한 최신 상태번호로 동기화합니다"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1135,11 +1135,11 @@ msgstr "동기화할 꾸러미"
 
 #: dnf/cli/commands/downgrade.py:34
 msgid "Downgrade a package"
-msgstr "꾸러미 다운그레이드"
+msgstr "꾸러미 하향설치"
 
 #: dnf/cli/commands/downgrade.py:38
 msgid "Package to downgrade"
-msgstr "다운그레이드 할 꾸러미"
+msgstr "하향설치 할 꾸러미"
 
 #: dnf/cli/commands/group.py:46
 msgid "display, or use, the groups information"
@@ -1218,7 +1218,7 @@ msgstr "그룹 하위 명령의 인수"
 #: dnf/cli/commands/group.py:343
 #, python-format
 msgid "Invalid groups sub-command, use: %s."
-msgstr "그룹 하위 명령이 잘못되었습니다. %s을/를 사용합니다."
+msgstr "그룹 하위 명령이 잘못되었습니다. %s를 사용합니다."
 
 #: dnf/cli/commands/group.py:398
 msgid "Unable to find a mandatory group package."
@@ -1704,7 +1704,7 @@ msgstr "모든 꾸러미를 쿼리하십시오 (repoquery '*'의 축약형 또�
 
 #: dnf/cli/commands/repoquery.py:124
 msgid "Query all versions of packages (default)"
-msgstr "꾸러미의 모든 버전 쿼리 (기본값)"
+msgstr "꾸러미의 모든 상태번호 질문 (기본값)"
 
 #: dnf/cli/commands/repoquery.py:127
 msgid "show only results from this ARCH"
@@ -1920,7 +1920,7 @@ msgstr "사용 가능한 저장소에 없는 꾸러미만 표시합니다."
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
-msgstr "이미 설치된 일부 꾸러미에 대한 업그레이드를 제공하는 꾸러미만 표시합니다."
+msgstr "이미 설치된 일부 꾸러미에 대한 향상를 제공하는 꾸러미만 표시합니다."
 
 #: dnf/cli/commands/repoquery.py:256
 #, python-brace-format
@@ -2222,21 +2222,21 @@ msgstr "꾸러미관련 권고 표시"
 
 #: dnf/cli/commands/updateinfo.py:77
 msgid "advisories about newer versions of installed packages (default)"
-msgstr "설치된 최신 버전의 꾸러미에 대한 권고 (기본값)"
+msgstr "설치된 최신 상태번호의 꾸러미에 대한 권고 (기본값)"
 
 #: dnf/cli/commands/updateinfo.py:80
 msgid "advisories about equal and older versions of installed packages"
-msgstr "설치된 꾸러미의 동일한 버전 및 이전 버전에 대한 권고"
+msgstr "설치된 꾸러미의 동일한 상태번호 및 이전 상태번호에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:83
 msgid ""
 "advisories about newer versions of those installed packages for which a "
 "newer version is available"
-msgstr "최신 버전을 사용할 수있는 설치된 꾸러미의 최신 버전에 대한 권고"
+msgstr "최신 상태번호를 사용할 수 있는 설치된 꾸러미의 최신 상태번호에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:87
 msgid "advisories about any versions of installed packages"
-msgstr "설치된 꾸러미 모든 버전에 대한 권고"
+msgstr "설치된 꾸러미 모든 상태번호에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:92
 msgid "show summary of advisories (default)"
@@ -2461,7 +2461,7 @@ msgstr "상세 작업"
 #: dnf/cli/option_parser.py:185
 #, python-brace-format
 msgid "show {prog} version and exit"
-msgstr "{prog} 버전 표시 및 종료"
+msgstr "{prog} 상태번호 표시 및 종료"
 
 #: dnf/cli/option_parser.py:187
 msgid "set install root"
@@ -2505,7 +2505,7 @@ msgstr "종속성을 해결하기 위해 설치된 꾸러미 지우기 허용"
 
 #: dnf/cli/option_parser.py:221
 msgid "try the best available package versions in transactions."
-msgstr "연결에서 사용 가능한 최상의 꾸러미 버전을 사용해보십시오."
+msgstr "연결에서 사용 가능한 최상의 꾸러미 상태번호를 사용해보십시오."
 
 #: dnf/cli/option_parser.py:223
 msgid "do not limit the transaction to the best candidate"
@@ -2709,13 +2709,13 @@ msgstr "기간"
 #: dnf/cli/output.py:466 dnf/cli/output.py:1248
 msgctxt "short"
 msgid "Version"
-msgstr "버전"
+msgstr "상태번호"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:467 dnf/cli/output.py:1250
 msgctxt "long"
 msgid "Version"
-msgstr "버전"
+msgstr "상태번호"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:470
@@ -2997,7 +2997,7 @@ msgstr "설치중"
 #: dnf/cli/output.py:1053
 msgctxt "summary"
 msgid "Upgrading"
-msgstr "업그레이드 중"
+msgstr "향상 중"
 
 #. TRANSLATORS: This is for a list of packages to be reinstalled.
 #: dnf/cli/output.py:1055
@@ -3032,7 +3032,7 @@ msgstr "사용하지 않는 종속 꾸러미 제거"
 #: dnf/cli/output.py:1064
 msgctxt "summary"
 msgid "Downgrading"
-msgstr "다운그레이드중"
+msgstr "하향설치 중"
 
 #: dnf/cli/output.py:1089
 msgid "Installing module profiles"
@@ -3064,7 +3064,7 @@ msgstr "환경 그룹 설치중"
 
 #: dnf/cli/output.py:1150
 msgid "Upgrading Environment Groups"
-msgstr "환경 그룹 업그레이드"
+msgstr "환경 그룹 향상"
 
 #: dnf/cli/output.py:1157
 msgid "Removing Environment Groups"
@@ -3076,7 +3076,7 @@ msgstr "그룹 설치"
 
 #: dnf/cli/output.py:1171
 msgid "Upgrading Groups"
-msgstr "그룹 업그레이드"
+msgstr "그룹 향상"
 
 #: dnf/cli/output.py:1178
 msgid "Removing Groups"
@@ -3138,7 +3138,7 @@ msgstr "설치"
 # ctx::sourcefile::Navigation Menu
 #: dnf/cli/output.py:1300 dnf/cli/output.py:1821
 msgid "Upgrade"
-msgstr "업그레이드"
+msgstr "향상"
 
 #: dnf/cli/output.py:1301
 msgid "Remove"
@@ -3146,7 +3146,7 @@ msgstr "삭제"
 
 #: dnf/cli/output.py:1303 dnf/cli/output.py:1819
 msgid "Downgrade"
-msgstr "다운 그레이드"
+msgstr "하향설치"
 
 #: dnf/cli/output.py:1304
 msgid "Skip"
@@ -3221,11 +3221,11 @@ msgstr "제거됨"
 
 #: dnf/cli/output.py:1653 dnf/cli/output.py:1820 dnf/util.py:590
 msgid "Downgraded"
-msgstr "다운 그레이드"
+msgstr "하향설치됨"
 
 #: dnf/cli/output.py:1653 dnf/cli/output.py:1822 dnf/util.py:589
 msgid "Upgraded"
-msgstr "업그레이드되었습니다"
+msgstr "향상되었습니다"
 
 #: dnf/cli/output.py:1654
 msgid "Not installed"
@@ -3375,7 +3375,7 @@ msgstr "---> 꾸러미 %s.%s %s가 다시 설치됩니다"
 #: dnf/cli/output.py:1900
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
-msgstr "---> 꾸러미 %s.%s %s가 다운그레이드됩니다"
+msgstr "---> 꾸러미 %s.%s %s가 하향설치됩니다"
 
 #: dnf/cli/output.py:1902
 #, python-format
@@ -3499,7 +3499,7 @@ msgstr "환경 '%s'이 설치되지 않았습니다."
 #: dnf/comps.py:641
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr "환경 '%s'을/를 사용할 수 없습니다."
+msgstr "환경 '%s'을 사용 할 수 없습니다."
 
 #: dnf/comps.py:673
 #, python-format
@@ -3531,7 +3531,7 @@ msgstr "알 수 없는 설정 옵션 : %s = %s"
 #: dnf/conf/config.py:372
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
-msgstr "키 ‘%s', 값 '%s'을/를 사용하여 --setopt 구문 분석 중 오류 발생: %s"
+msgstr "키 ‘%s', 값 '%s'를 사용하여 --setopt 구문 분석 중 오류 발생: %s"
 
 #: dnf/conf/config.py:380
 #, python-format
@@ -3545,7 +3545,7 @@ msgstr "잘못되었거나 알 수 없음 \"{}\": {}"
 #: dnf/conf/config.py:501
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
-msgstr "키 %s.%s', 값 '%s'을/를 사용하여 --setopt 구문 분석 중 오류 발생: %s"
+msgstr "키 %s.%s', 값 '%s'를 사용하여 --setopt 구문 분석 중 오류 발생: %s"
 
 #: dnf/conf/config.py:504
 #, python-format
@@ -3555,7 +3555,7 @@ msgstr "Repo %s에 setopt 이전에 %s attr이 없습니다"
 #: dnf/conf/read.py:51
 #, python-format
 msgid "Warning: failed loading '%s', skipping."
-msgstr "경고: '%s'을/를 로드하지 못했습니다, 건너 뛰기."
+msgstr "경고: '%s'을 적재하지 못했습니다, 건너 뛰기."
 
 #: dnf/conf/read.py:63
 msgid "Bad id for repo: {} ({}), byte = {} {}"
@@ -3710,7 +3710,7 @@ msgstr "표시할 것이 없습니다."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr "지정된 버전보다 새 버전의 '{}'을/를 설치합니다. 이유 : {}"
+msgstr "지정된 상태번호 보다 새로운 상태번호의 '{}'를 설치합니다. 이유 : {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3754,7 +3754,7 @@ msgstr ""
 #: dnf/module/module_base.py:92 dnf/module/module_base.py:202
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "Fail-Safe 리포지토리 {1}에서 모듈 '{0}’을/를 설치할 수 없습니다"
+msgstr "실패 방지 저장소 {1}에서 모듈 '{0}’를 설치 할 수 없습니다"
 
 #: dnf/module/module_base.py:102 dnf/module/module_base.py:212
 msgid ""
@@ -3805,7 +3805,7 @@ msgstr "인수 {}을 (를) 구문 분석할 수 없습니다"
 #: dnf/module/module_base.py:319
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "Fail-Safe 리포지토리 {1}에서 모듈 '{0}’을/를 업그레이드할 수 없습니다"
+msgstr "실패방지 저장소 {1}에서 모듈 '{0}’를 향상 할 수 없습니다"
 
 #: dnf/module/module_base.py:338 dnf/module/module_base.py:366
 msgid "Unable to match profile in argument {}"
@@ -3813,7 +3813,7 @@ msgstr "인수 {}에서 프로파일이 일치하지 않습니다"
 
 #: dnf/module/module_base.py:346
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr "Fail-Safe 리포지토리에서 모듈을 업그레이드할 수 없습니다"
+msgstr "실패-방지 저장소에서 모듈을 향상 할 수 없습니다"
 
 #: dnf/module/module_base.py:500
 msgid ""
@@ -3866,7 +3866,7 @@ msgstr "로드된 플러그인 : %s"
 #: dnf/plugin.py:199
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
-msgstr "플러그인 \"%s\"을/를 불러오지 못했습니다: %s"
+msgstr "플러그인 \"%s\"를 불러오지 못했습니다: %s"
 
 #: dnf/plugin.py:231
 msgid "No matches found for the following enable plugin patterns: {}"
@@ -3915,7 +3915,7 @@ msgstr "허용_공급업체_변화는 사용 할 수 없습니다. 이 선택은
 #: dnf/transaction.py:80
 msgctxt "currently"
 msgid "Downgrading"
-msgstr "다운그레이드중"
+msgstr "하향설치중"
 
 #: dnf/transaction.py:81 dnf/transaction.py:88 dnf/transaction.py:93
 #: dnf/transaction.py:95
@@ -3943,7 +3943,7 @@ msgstr "삭제 중"
 #: dnf/transaction.py:92
 msgctxt "currently"
 msgid "Upgrading"
-msgstr "업그레이드 중"
+msgstr "향상 중"
 
 #: dnf/transaction.py:96
 msgid "Verifying"
@@ -3971,19 +3971,19 @@ msgstr "연결 중에 오류가 발생했습니다:"
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr "잘못된 주요 버전 \"{major}\", 번호가 예상됩니다."
+msgstr "잘못된 주요 상태번호 \"{major}\", 번호가 예상됩니다."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr "잘못된 하위 버전 \"{minor}\", 번호가 예상됩니다."
+msgstr "잘못된 하위 상태번호 \"{minor}\", 번호가 예상됩니다."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr "호환되지 않는 주요 버전 \"{major}\", 지원되는 주요 버전 \"{major_supp}\"."
+msgstr "호환되지 않는 주요 상태번호 \"{major}\", 지원되는 주요 상태번호 \"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
