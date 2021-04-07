@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-02-12 11:40+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -76,7 +76,7 @@ msgstr "Sikertelen e-mail küldési kísérlet: „%s”: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "A(z) „%s” parancs végrehajtása sikertelen, visszatérési érték: %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Ismeretlen konfigurációs érték: %s=%s itt: %s; %s"
@@ -3657,6 +3657,12 @@ msgstr "A(z) „%s” csoportazonosító nem létezik."
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "Hiba a(z) „%s” feldolgozásakor: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Ismeretlen konfigurációs érték: %s=%s itt: %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

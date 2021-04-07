@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-01-03 23:36+0000\n"
 "Last-Translator: David Schwörer <david08741@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -99,7 +99,7 @@ msgstr "E-Mail konnte nicht an »%s« gesendet werden: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Ausführung des Befehls '%s' fehlgeschlagen. Fehlermeldung: %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Unbekannter Konfigurationswert: %s=%s in %s; %s"
@@ -3627,6 +3627,12 @@ msgstr "Gruppenkennung »%s« existiert nicht."
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "Verarbeitungsfehler »%s«: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Unbekannter Konfigurationswert: %s=%s in %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

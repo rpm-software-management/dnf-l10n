@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-03-25 14:01+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -74,7 +74,7 @@ msgstr "Misslyckades att skicka e-post via ”%s”: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Misslyckades att köra kommandot ”%s”: returnerade %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Okänt konfigurationsvärde: %s=%s i %s; %s"
@@ -3608,6 +3608,12 @@ msgstr "Grupp-id ”%s” finns inte."
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "Fel vid tolkning av ”%s”: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Okänt konfigurationsvärde: %s=%s i %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

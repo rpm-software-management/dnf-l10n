@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-04-07 13:58+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -66,7 +66,7 @@ msgstr "'%s' üzerinden e-posta gönderilemedi: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "'%s' komutu çalıştırılamadı: %d yanıtı döndürüldü"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
@@ -3600,6 +3600,12 @@ msgstr "'%s' diye bir grup kimliği yok."
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "'%s' ayrıştırılırken hata oluştu: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

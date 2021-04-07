@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-04-06 08:39+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -63,7 +63,7 @@ msgstr "'%s'를 통한 이메일 전송을 실패했습니다: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "명령’%s'을 실행하지 못했습니다: %d를 반환했습니다"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "알 수없는 설정: %s=%s in %s; %s"
@@ -3556,6 +3556,12 @@ msgstr "Group id '%s' 가 존재하지 않습니다."
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "'%s' 구문 분석 중 오류 발생: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "알 수없는 설정: %s=%s in %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

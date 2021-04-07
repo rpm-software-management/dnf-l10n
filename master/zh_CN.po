@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-03-28 06:01+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -87,7 +87,7 @@ msgstr "使用 '%s' 发送邮件失败: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "无法执行命令 '%s' ：返回 %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "未知配置值： %s=%s 在 %s 中; %s"
@@ -3527,6 +3527,12 @@ msgstr "组 id '%s' 不存在。"
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "解析 “%s” 时错误： %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "未知配置值： %s=%s 在 %s 中; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

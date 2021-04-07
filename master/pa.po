@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-01-24 17:38+0000\n"
 "Last-Translator: A S Alam <amanpreet.alam@gmail.com>\n"
 "Language-Team: Punjabi <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -73,7 +73,7 @@ msgstr "'%s' ਰਾਹੀਂ ਈਮੇਲ ਭੇਜਣ ਲਈ ਫੇਲ੍ਹ �
 msgid "Failed to execute command '%s': returned %d"
 msgstr "'%s' ਕਮਾਂਡ ਚਲਾਉਣ ਲਈ ਅਸਫ਼ਲ: %d ਵਾਪਸ ਕੀਤਾ"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "ਅਣਪਛਾਤਾ ਸੰਰਚਨਾ ਮੁੱਲ: %s=%s %s ਵਿੱਚ; %s"
@@ -3450,6 +3450,12 @@ msgstr "ਗਰੁੱਪ_ਆਈਡੀ '%s' ਮੌਜੂਦ ਨਹੀਂ ਹੈ।
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr "'%s' ਪਾਰਸ ਕਰਨ 'ਚ ਗਲਤੀ: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "ਅਣਪਛਾਤਾ ਸੰਰਚਨਾ ਮੁੱਲ: %s=%s %s ਵਿੱਚ; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

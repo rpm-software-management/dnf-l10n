@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2021-01-01 03:36+0000\n"
 "Last-Translator: Robbi Nespu <robbinespu@gmail.com>\n"
 "Language-Team: Malay <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -67,7 +67,7 @@ msgstr "Emel gagal di hantar melalui '%s': %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Perintah '%s' gagal dijalankan: dikembalikan %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Konfigurasi tidak dikenalpasti: %s=%s pada %s; %s"
@@ -3407,6 +3407,12 @@ msgstr ""
 #, python-format
 msgid "Error parsing '%s': %s"
 msgstr ""
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Konfigurasi tidak dikenalpasti: %s=%s pada %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"

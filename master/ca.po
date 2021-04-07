@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-05 09:18-0400\n"
+"POT-Creation-Date: 2021-04-07 09:18-0400\n"
 "PO-Revision-Date: 2018-11-03 06:46+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan (https://fedora.zanata.org/language/view/ca) "
@@ -72,7 +72,7 @@ msgstr "No s'ha pogut enviar un correu electrònic a través de «%s»: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Ha fallat l'execució de l'ordre «%s»: ha tornat %d"
 
-#: dnf/automatic/main.py:164 dnf/conf/config.py:151
+#: dnf/automatic/main.py:164
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Valor de configuració desconegut: %s = %s a %s; %s"
@@ -3541,6 +3541,12 @@ msgid "Error parsing '%s': %s"
 msgstr ""
 "S'ha produït un error mentre s'analitzaven sintàcticament les opcions de "
 "«%s»: %s"
+
+#: dnf/conf/config.py:151
+#, fuzzy, python-format
+#| msgid "Unknown configuration value: %s=%s in %s; %s"
+msgid "Invalid configuration value: %s=%s in %s; %s"
+msgstr "Valor de configuració desconegut: %s = %s a %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
