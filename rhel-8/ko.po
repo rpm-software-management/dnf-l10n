@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2021-04-06 08:39+0000\n"
+"PO-Revision-Date: 2021-04-13 07:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/ko/>\n"
@@ -350,7 +350,7 @@ msgstr "인수가 일치하지 않습니다: %s"
 #: dnf/base.py:2006
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 하위 상태번호가 이미 설치되어 있으므로 하향설치 할 수 없습니다."
+msgstr "%s 꾸러미의 하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
 
 #: dnf/base.py:2029
 #, python-format
@@ -371,7 +371,7 @@ msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 업데이트할 수
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr "%s 이상의 상태번호가 이미 설치되어 있으므로 최신화 할 수 없습니다."
+msgstr "%s 이상의 버전이 이미 설치되어 있으므로 최신화 할 수 없습니다."
 
 #: dnf/base.py:2098 dnf/cli/commands/reinstall.py:81
 #, python-format
@@ -407,7 +407,7 @@ msgstr "%s 인수에 대한 꾸러미를 사용할 수 있지만 설치되어 �
 #: dnf/base.py:2255
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 최하위 상태번호가 이미 설치되어 있으므로 하향설치 할 수 없습니다."
+msgstr "%s 꾸러미의 최하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
 
 #: dnf/base.py:2302
 msgid "No security updates needed, but {} update available"
@@ -742,7 +742,7 @@ msgstr "설정 파일 \"{}\" 이 존재하지 않습니다"
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
-msgstr "출시 상태번호를 찾을 수 없습니다 ('--releasever'를 사용하여 출시 상태번호를 지정하십시오)"
+msgstr "출시 버전을 찾을 수 없습니다 ('--releasever'를 사용하여 출시 버전을 지정하십시오)"
 
 #: dnf/cli/cli.py:1028 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
@@ -1127,7 +1127,7 @@ msgstr "꾸러미(package)의 종속성 및 꾸러미(packages)를 제공하는 
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr "설치된 꾸러미를 사용 가능한 최신 상태번호로 동기화합니다"
+msgstr "설치된 꾸러미를 사용 가능한 최신 버전으로 동기화합니다"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1287,7 +1287,7 @@ msgstr "%s 연결을 취소 할 수 없습니다. 취소하면 꾸러미 자료 
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
-msgstr "%s 연결을 되돌릴 수 없습니다. 이렇게 하면 꾸러미 자료저장소가 일치하지 않게 됩니다."
+msgstr "%s 연결을 되돌릴 수 없습니다. 이렇게 하면 꾸러미 데이타베이스가 일치하지 않게 됩니다."
 
 #: dnf/cli/commands/history.py:175
 msgid "No transaction ID given"
@@ -1704,7 +1704,7 @@ msgstr "모든 꾸러미를 쿼리하십시오 (repoquery '*'의 축약형 또�
 
 #: dnf/cli/commands/repoquery.py:124
 msgid "Query all versions of packages (default)"
-msgstr "꾸러미의 모든 상태번호 질문 (기본값)"
+msgstr "꾸러미의 모든 버전 질문 (기본값)"
 
 #: dnf/cli/commands/repoquery.py:127
 msgid "show only results from this ARCH"
@@ -2222,21 +2222,21 @@ msgstr "꾸러미관련 권고 표시"
 
 #: dnf/cli/commands/updateinfo.py:77
 msgid "advisories about newer versions of installed packages (default)"
-msgstr "설치된 최신 상태번호의 꾸러미에 대한 권고 (기본값)"
+msgstr "설치된 최신 버전의 꾸러미에 대한 권고 (기본값)"
 
 #: dnf/cli/commands/updateinfo.py:80
 msgid "advisories about equal and older versions of installed packages"
-msgstr "설치된 꾸러미의 동일한 상태번호 및 이전 상태번호에 대한 권고"
+msgstr "설치된 꾸러미의 동일한 버전 및 이전 버전에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:83
 msgid ""
 "advisories about newer versions of those installed packages for which a "
 "newer version is available"
-msgstr "최신 상태번호를 사용할 수 있는 설치된 꾸러미의 최신 상태번호에 대한 권고"
+msgstr "최신 버전를 사용할 수 있는 설치된 꾸러미의 최신 버전에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:87
 msgid "advisories about any versions of installed packages"
-msgstr "설치된 꾸러미 모든 상태번호에 대한 권고"
+msgstr "설치된 꾸러미 모든 버전에 대한 권고"
 
 #: dnf/cli/commands/updateinfo.py:92
 msgid "show summary of advisories (default)"
@@ -2461,7 +2461,7 @@ msgstr "상세 작업"
 #: dnf/cli/option_parser.py:185
 #, python-brace-format
 msgid "show {prog} version and exit"
-msgstr "{prog} 상태번호 표시 및 종료"
+msgstr "{prog} 버전 표시 및 종료"
 
 #: dnf/cli/option_parser.py:187
 msgid "set install root"
@@ -2505,7 +2505,7 @@ msgstr "종속성을 해결하기 위해 설치된 꾸러미 지우기 허용"
 
 #: dnf/cli/option_parser.py:221
 msgid "try the best available package versions in transactions."
-msgstr "연결에서 사용 가능한 최상의 꾸러미 상태번호를 사용해보십시오."
+msgstr "연결에서 사용 가능한 최상의 꾸러미 버전을 사용해보십시오."
 
 #: dnf/cli/option_parser.py:223
 msgid "do not limit the transaction to the best candidate"
@@ -2709,13 +2709,13 @@ msgstr "기간"
 #: dnf/cli/output.py:466 dnf/cli/output.py:1248
 msgctxt "short"
 msgid "Version"
-msgstr "상태번호"
+msgstr "버전"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:467 dnf/cli/output.py:1250
 msgctxt "long"
 msgid "Version"
-msgstr "상태번호"
+msgstr "버전"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:470
@@ -2781,7 +2781,7 @@ msgstr "리포지터리에서"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:493
 msgid "Packager"
-msgstr "포장기"
+msgstr "꾸러미 생성자"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:495
@@ -3710,7 +3710,7 @@ msgstr "표시할 것이 없습니다."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr "지정된 상태번호 보다 새로운 상태번호의 '{}'를 설치합니다. 이유 : {}"
+msgstr "지정된 버전 보다 새로운 버전의 '{}'를 설치합니다. 이유 : {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3971,19 +3971,19 @@ msgstr "연결 중에 오류가 발생했습니다:"
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr "잘못된 주요 상태번호 \"{major}\", 번호가 예상됩니다."
+msgstr "잘못된 주요 버전 \"{major}\", 번호가 예상됩니다."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr "잘못된 하위 상태번호 \"{minor}\", 번호가 예상됩니다."
+msgstr "잘못된 하위 버전 \"{minor}\", 번호가 예상됩니다."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr "호환되지 않는 주요 상태번호 \"{major}\", 지원되는 주요 상태번호 \"{major_supp}\"."
+msgstr "호환되지 않는 주요 버전 \"{major}\", 지원되는 주요 버전 \"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
