@@ -41,7 +41,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 09:18-0400\n"
+"POT-Creation-Date: 2021-04-12 09:18-0400\n"
 "PO-Revision-Date: 2021-01-03 23:36+0000\n"
 "Last-Translator: David Schwörer <david08741@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -4066,6 +4066,17 @@ msgstr "Paketquelle %s wird aktiviert"
 #, python-format
 msgid "Added %s repo from %s"
 msgstr "%s-Paketquelle von %s wurde hinzugefügt"
+
+#: dnf/rpm/miscutils.py:35
+#, python-brace-format
+msgid ""
+"Using rpmkeys executable from {path} to verify signature for package: "
+"{package}."
+msgstr ""
+
+#: dnf/rpm/miscutils.py:39
+msgid "Cannot find rpmkeys executable to verify signatures."
+msgstr ""
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."

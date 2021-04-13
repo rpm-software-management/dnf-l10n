@@ -6,11 +6,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 09:18-0400\n"
+"POT-Creation-Date: 2021-04-12 09:18-0400\n"
 "PO-Revision-Date: 2021-04-13 07:01+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -352,7 +352,8 @@ msgstr "인수가 일치하지 않습니다: %s"
 #: dnf/base.py:2023
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
+msgstr ""
+"%s 꾸러미의 하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
 
 #: dnf/base.py:2046
 #, python-format
@@ -409,7 +410,8 @@ msgstr "%s 인수에 대한 꾸러미를 사용할 수 있지만 설치되어 �
 #: dnf/base.py:2282
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "%s 꾸러미의 최하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
+msgstr ""
+"%s 꾸러미의 최하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
 
 #: dnf/base.py:2382
 msgid "No security updates needed, but {} update available"
@@ -750,7 +752,9 @@ msgstr "설정 파일 \"{}\" 이 존재하지 않습니다"
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
-msgstr "출시 버전을 찾을 수 없습니다 ('--releasever'를 사용하여 출시 버전을 지정하십시오)"
+msgstr ""
+"출시 버전을 찾을 수 없습니다 ('--releasever'를 사용하여 출시 버전을 지정하십"
+"시오)"
 
 #: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
@@ -1304,7 +1308,9 @@ msgstr ""
 msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
-msgstr "%s 연결을 되돌릴 수 없습니다. 이렇게 하면 꾸러미 데이타베이스가 일치하지 않게 됩니다."
+msgstr ""
+"%s 연결을 되돌릴 수 없습니다. 이렇게 하면 꾸러미 데이타베이스가 일치하지 않"
+"게 됩니다."
 
 #: dnf/cli/commands/history.py:175
 msgid "No transaction ID given"
@@ -4002,6 +4008,17 @@ msgstr "%s 리포지토리 활성화"
 msgid "Added %s repo from %s"
 msgstr "%s 에서 %s repo를 추가했습니다"
 
+#: dnf/rpm/miscutils.py:35
+#, python-brace-format
+msgid ""
+"Using rpmkeys executable from {path} to verify signature for package: "
+"{package}."
+msgstr ""
+
+#: dnf/rpm/miscutils.py:39
+msgid "Cannot find rpmkeys executable to verify signatures."
+msgstr ""
+
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
 msgstr "연결 시험 중에 오류가 발생했습니다."
@@ -4086,7 +4103,8 @@ msgstr "잘못된 하위 버전 \"{minor}\", 번호가 예상됩니다."
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr "호환되지 않는 주요 버전 \"{major}\", 지원되는 주요 버전 \"{major_supp}\"."
+msgstr ""
+"호환되지 않는 주요 버전 \"{major}\", 지원되는 주요 버전 \"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""

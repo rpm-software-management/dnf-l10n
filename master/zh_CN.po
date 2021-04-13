@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-08 09:18-0400\n"
+"POT-Creation-Date: 2021-04-12 09:18-0400\n"
 "PO-Revision-Date: 2021-03-28 06:01+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -3972,6 +3972,17 @@ msgstr "正在启用 %s 仓库"
 #, python-format
 msgid "Added %s repo from %s"
 msgstr "已添加 %s 仓库来自 %s"
+
+#: dnf/rpm/miscutils.py:35
+#, python-brace-format
+msgid ""
+"Using rpmkeys executable from {path} to verify signature for package: "
+"{package}."
+msgstr ""
+
+#: dnf/rpm/miscutils.py:39
+msgid "Cannot find rpmkeys executable to verify signatures."
+msgstr ""
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
