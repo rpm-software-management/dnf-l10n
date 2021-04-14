@@ -17,10 +17,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-13 09:18-0400\n"
-"PO-Revision-Date: 2021-04-07 13:58+0000\n"
-"Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fi/>\n"
+"PO-Revision-Date: 2021-04-16 15:02+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3625,10 +3625,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Virhe jäsennettäessä %s: %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Tuntematon kokoonpanoarvo: %s=%s %s:ssa; %s"
+msgstr "Virheellinen kokoonpanoarvo: %s=%s %s:ssa; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -4099,10 +4098,12 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Paketin {package} allekirjoituksen vahvistaminen käyttämällä osoitteen {path}"
+" rpmkeys ohjelmaa."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "Rpmkeys ohjelmaa ei löydy allekirjoitusten vahvistamiseksi."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
