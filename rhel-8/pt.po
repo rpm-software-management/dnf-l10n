@@ -9,13 +9,14 @@
 # Joao Almeida <intjalmeida@gmail.com>, 2017. #zanata
 # Rodrigo de Araujo Sousa Fonseca <rodrigodearaujo@fedoraproject.org>, 2017. #zanata
 # Pedro Flores <pedro_flores_16@hotmail.com>, 2021.
+# Hugo Carvalho <hugokarvalho@hotmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2021-03-14 08:01+0000\n"
-"Last-Translator: Pedro Flores <pedro_flores_16@hotmail.com>\n"
+"PO-Revision-Date: 2021-04-16 15:02+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/pt/>\n"
 "Language: pt\n"
@@ -23,7 +24,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -33,7 +34,7 @@ msgstr "As seguintes atualizações foram aplicadas a '%s':"
 #: dnf/automatic/emitter.py:33
 #, python-format
 msgid "Updates completed at %s"
-msgstr "Atualizações completas em '%s'."
+msgstr "Atualizações concluídas em %s"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -624,7 +625,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:218
 msgid "Operation aborted."
-msgstr "Operação cancelada."
+msgstr "Operação abortada."
 
 #: dnf/cli/cli.py:225
 msgid "Downloading Packages:"
@@ -656,7 +657,7 @@ msgstr "A Tornar Obsoletos os Pacotes"
 
 #: dnf/cli/cli.py:398
 msgid "No packages marked for distribution synchronization."
-msgstr "Nenhum pacote marcado para sincronização"
+msgstr "Nenhum pacote marcado para sincronização."
 
 #: dnf/cli/cli.py:424 dnf/cli/commands/group.py:395
 #, python-format
@@ -930,7 +931,7 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:716 dnf/cli/commands/upgrade.py:89
 msgid "No packages marked for upgrade."
-msgstr "Nenhum pacote marcado para atualização"
+msgstr "Nenhum pacote marcado para atualização."
 
 #: dnf/cli/commands/__init__.py:726
 msgid "run commands on top of all packages in given repository"
@@ -1095,9 +1096,8 @@ msgid "{} is obsoleted by {}"
 msgstr "{} é tornado obsoleto por {}"
 
 #: dnf/cli/commands/check.py:138
-#, fuzzy
 msgid "{} provides {} but it cannot be found"
-msgstr "{}  fornece {} mas não foi possível encontrá-lo"
+msgstr "{} fornece {} mas não foi possível encontrá-lo"
 
 #: dnf/cli/commands/clean.py:68
 #, python-format
@@ -1235,7 +1235,7 @@ msgstr "Sub comando de grupos inválido, utilize: %s."
 
 #: dnf/cli/commands/group.py:398
 msgid "Unable to find a mandatory group package."
-msgstr "Incapaz de encontrar um pacote de grupo obrigatório:"
+msgstr "Incapaz de encontrar um pacote de grupo obrigatório."
 
 #: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
@@ -1286,10 +1286,9 @@ msgid "No transaction ID or package name given."
 msgstr ""
 
 #: dnf/cli/commands/history.py:142
-#, fuzzy, python-format
-#| msgid "You don't have access to the history DB."
+#, python-format
 msgid "You don't have access to the history DB: %s"
-msgstr "Não tem acesso à BD de histórico."
+msgstr "Não tem acesso à BD de histórico: %s"
 
 #: dnf/cli/commands/history.py:151
 #, python-format
@@ -1314,10 +1313,9 @@ msgid "No transaction ID given"
 msgstr "Não foi fornecido ID de transação"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID :"
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "ID de Transação:"
+msgstr "ID de Transação \"{0}\" não encontrado."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
