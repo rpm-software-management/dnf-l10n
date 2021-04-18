@@ -20,17 +20,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-16 09:18-0400\n"
-"PO-Revision-Date: 2021-03-08 10:29+0000\n"
+"PO-Revision-Date: 2021-04-19 08:44+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.5.1\n"
+"X-Generator: Weblate 4.5.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -3623,10 +3623,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Ошибка разбора «%s»: %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Неизвестное значение параметра: %s=%s в %s; %s"
+msgstr "Неправильное значение параметра: %s=%s в %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3740,7 +3739,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Произошло исключение у rpm: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4095,10 +4094,12 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Использование исполняемого файла rpmkeys из {path} для проверки подписи "
+"пакета: {package}."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "Не удается найти исполняемый файл rpmkeys для проверки подписей."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
