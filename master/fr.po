@@ -17,7 +17,7 @@
 # Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2018. #zanata, 2020, 2021.
 # Ludek Janda <ljanda@redhat.com>, 2018. #zanata
 # Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2019. #zanata, 2020, 2021.
-# Julien Humbert <julroy67@gmail.com>, 2020.
+# Julien Humbert <julroy67@gmail.com>, 2020, 2021.
 # Karim ALI ABDELMAKSOU ABDELHAMID <contact@maksoud-karim.net>, 2020.
 # Arnaud T. <listes.00@gmail.com>, 2020, 2021.
 # Guillaume Jacob <abun.lp@gmail.com>, 2021.
@@ -26,16 +26,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-05-13 09:18-0400\n"
-"PO-Revision-Date: 2021-03-28 06:01+0000\n"
-"Last-Translator: Guillaume Jacob <abun.lp@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"PO-Revision-Date: 2021-05-17 03:02+0000\n"
+"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.5.2\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -107,8 +107,8 @@ msgstr "dnf-automatic démarré."
 #: dnf/automatic/main.py:308
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Mise en sommeil pendant %s seconde"
-msgstr[1] "Mise en sommeil pendant %s secondes"
+msgstr[0] "Mise en sommeil pendant {} seconde"
+msgstr[1] "Mise en sommeil pendant {} secondes"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -645,12 +645,7 @@ msgstr ""
 "» vers le flux« {2} »"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -658,9 +653,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Il n’est pas possible de basculer les flux actifs d’un module.\n"
-"Il et recommandé de retirer tout contenu installé par le module, et de "
-"réinitialiser le mode en utilisant la commande « {prog} module reset "
+"Il n’est pas possible de basculer les flux actifs d’un module sauf si cela "
+"est explicitement activé par l’option de configuration module_stream_switch."
+"\n"
+"Il est plutôt recommandé de retirer tout contenu installé par le module, et "
+"de réinitialiser le mode en utilisant la commande « {prog} module reset "
 "<nom_du_module> ». Après la réinitialisation, vous pouvez installer les "
 "autres flux."
 
@@ -1411,7 +1408,7 @@ msgstr "Aucun identifiant de transaction n’a été fourni"
 #: dnf/cli/commands/history.py:179
 #, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "ID de transaction « {0} » non trouvée."
+msgstr "ID de transaction « {0} » non trouvé."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1471,7 +1468,7 @@ msgstr "Erreur lors du stockage de la transaction : {}"
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
-"Attention, les problèmes suivants sont survenus lors de l'exécution de la "
+"Attention, les problèmes suivants sont survenus lors de l'exécution d’une "
 "transaction :"
 
 #: dnf/cli/commands/install.py:47
@@ -1594,7 +1591,7 @@ msgstr "Le paquet {} appartient à de multiples modules, ignorer"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr "basculer un module vers un flux et des paquets rpm de distrosync"
+msgstr "passer un module à un flux et à des paquets de rpm de distrosync"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3701,10 +3698,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Erreur lors l’analyse de « %s » : %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Valeur de configuration inconnue : %s=%s dans %s ; %s"
+msgstr "Valeur de configuration non valide : %s=%s dans %s ; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3797,11 +3793,11 @@ msgstr "dépôt %s : clé importée 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Vérifié en utilisant un enregistrement DNS avec une signature DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NON vérifié avec un enregistrement DNS."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3819,7 +3815,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Une exception rpm s’est produite : %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4008,8 +4004,8 @@ msgstr "Profil inutile ignoré : {}/{}"
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr ""
-"Toutes les correspondances pour le paramètre « {0} » dans le mode module "
-"« {1}:{2} » ne sont pas actives"
+"Toutes les correspondances pour le paramètre « {0} » dans le mode module « "
+"{1}:{2} » ne sont pas actives"
 
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
@@ -4049,15 +4045,15 @@ msgstr "L’installation du module à partir du dépôt Fail-Safe n’est pas pe
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
-"Pas de correspondance active pour le paramètre « {0} » dans le module « {1}:"
-"{2} »"
+"Aucune correspondance active pour le paramètre « {0} » dans le module « "
+"{1}:{2} »"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr ""
-"Le profil installé « {0} » n’est pas disponible dans le module « {1} » flux "
-"« {2} »"
+"Le profil installé « {0} » n’est pas disponible dans le module « {1} » flux «"
+" {2} »"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
@@ -4187,10 +4183,13 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Utilisation de l’exécutable rpmkeys de {path} pour vérifier la signature du "
+"paquet : {package}."
 
 #: dnf/rpm/miscutils.py:41
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"Impossible de trouver l’exécutable rpmkeys pour vérifier les signatures."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
@@ -4201,8 +4200,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
-"allow_vendor_change est désactivé. Cette option n'est actuellement pas "
-"supportée par les commandes downgrade et distro-sync"
+"allow_vendor_change est désactivé. Cette option n’est actuellement pas prise "
+"en charge pour les commandes downgrade et distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4257,7 +4256,7 @@ msgid ""
 "\"{filename}\":"
 msgstr ""
 "Les problèmes suivants sont survenus lors de la relecture de la transaction "
-"du fichier « {filename} » :"
+"à partir du fichier « {filename} » :"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
@@ -4287,8 +4286,8 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
-"Des arguments TransactionReplay conflictuels ont été spécifiés : nom de "
-"fichier, données"
+"Des arguments contradictoires de TransactionReplay ont été spécifiés : nom "
+"de fichier, données"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4310,13 +4309,13 @@ msgstr "Clé objet « {key} » manquante dans un rpm."
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
-"Valeur inattendue pour le paquet de raison « {reason} » pour le rpm nevra "
-"« {nevra} »."
+"Valeur inattendue pour le paquet de raison « {reason} » pour le rpm nevra « "
+"{nevra} »."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr "Impossible d’analyser le NEVRA pour le paquet « {nevra} »."
+msgstr "Impossible d’analyser NEVRA pour le paquet « {nevra} »."
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
@@ -4334,8 +4333,8 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
-"Le paquet nevra « {nevra} » n’est pas disponible dans le dépôt pour l’action "
-"« {action} »."
+"Le paquet nevra « {nevra} » n’est pas disponible dans les dépôts pour l’"
+"action « {action} »."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
@@ -4348,8 +4347,8 @@ msgstr ""
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
-"Valeur inattendue pour l’action de paquet « {action} » pour le rpm nevra "
-"« {nevra} »."
+"Valeur inattendue pour l’action de paquet « {action} » pour le rpm nevra « "
+"{nevra} »."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4369,7 +4368,7 @@ msgstr "ID de groupe « %s » non installé."
 #: dnf/transaction_sr.py:432
 #, python-format
 msgid "Environment id '%s' is not available."
-msgstr "L’ID d’environnement « %s » n’est pas disponible."
+msgstr "ID d’environnement « %s » non disponible."
 
 #: dnf/transaction_sr.py:456
 #, python-brace-format
@@ -4377,8 +4376,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
-"Valeur invalide « {group_type} » pour environments.groups.group_type, seuls "
-"« mandatory » ou « optional » sont pris en charge."
+"Valeur invalide « {group_type} » pour environments.groups.group_type, seuls «"
+" mandatory » ou « optional » sont pris en charge."
 
 #: dnf/transaction_sr.py:464
 #, python-brace-format
@@ -4389,8 +4388,8 @@ msgstr "Clé d’objet « {key} » manquante dans environments.groups."
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
-"Valeur inattendue pour l’action de groupe « {action} » pour le groupe "
-"« {group} »."
+"Valeur inattendue pour l’action de groupe « {action} » pour le groupe « "
+"{group} »."
 
 #: dnf/transaction_sr.py:547
 #, python-brace-format
@@ -4403,8 +4402,8 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
-"Valeur inattendue pour l’action d’environnement « {action} » pour "
-"l’environnement « {env} »."
+"Valeur inattendue pour l’action d’environnement « {action} » pour l’"
+"environnement « {env} »."
 
 #: dnf/transaction_sr.py:576
 #, python-brace-format
