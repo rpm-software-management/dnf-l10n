@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 09:18-0400\n"
+"POT-Creation-Date: 2021-06-05 09:18-0400\n"
 "PO-Revision-Date: 2021-04-19 08:44+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -4095,16 +4095,13 @@ msgstr "otetaan käyttöön %s ohjelmistolähde"
 msgid "Added %s repo from %s"
 msgstr "Lisätty %s ohjelmistolähde %s:sta"
 
-#: dnf/rpm/miscutils.py:37
-#, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
-msgstr ""
-"Paketin {package} allekirjoituksen vahvistaminen käyttämällä osoitteen "
-"{path} rpmkeys ohjelmaa."
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+#| msgid "Cannot find rpmkeys executable to verify signatures."
+msgid "Using rpmkeys executable at %s to verify signatures"
+msgstr "Rpmkeys ohjelmaa ei löydy allekirjoitusten vahvistamiseksi."
 
-#: dnf/rpm/miscutils.py:41
+#: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "Rpmkeys ohjelmaa ei löydy allekirjoitusten vahvistamiseksi."
 
@@ -4362,6 +4359,13 @@ msgstr "Epäonnistui"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nimi-ei-määritelty>"
+
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr ""
+#~ "Paketin {package} allekirjoituksen vahvistaminen käyttämällä osoitteen "
+#~ "{path} rpmkeys ohjelmaa."
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: %s tarkistus epäonnistui: %s %s:ta vastaan"

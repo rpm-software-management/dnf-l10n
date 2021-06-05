@@ -15,11 +15,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 09:18-0400\n"
+"POT-Creation-Date: 2021-06-05 09:18-0400\n"
 "PO-Revision-Date: 2021-06-03 08:57+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/pl/>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -285,16 +285,16 @@ msgstr "Część pakietów nie została pobrana. Próbowanie ponownie."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Użycie DeltaRPM zmniejszyło %.1f MB aktualizacji do %.1f MB (oszczędzono %."
-"1f%%)"
+"Użycie DeltaRPM zmniejszyło %.1f MB aktualizacji do %.1f MB (oszczędzono %.1f"
+"%%)"
 
 #: dnf/base.py:1216
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Niepowodzenie DeltaRPM zwiększyło %.1f MB aktualizacji do %.1f MB ("
-"zmarnowano %.1f%%)"
+"Niepowodzenie DeltaRPM zwiększyło %.1f MB aktualizacji do %.1f MB "
+"(zmarnowano %.1f%%)"
 
 #: dnf/base.py:1258
 msgid "Cannot add local packages, because transaction job already exists"
@@ -4122,16 +4122,15 @@ msgstr "włączanie repozytorium %s"
 msgid "Added %s repo from %s"
 msgstr "Dodawanie repozytorium %s z %s"
 
-#: dnf/rpm/miscutils.py:37
-#, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+#| msgid "Cannot find rpmkeys executable to verify signatures."
+msgid "Using rpmkeys executable at %s to verify signatures"
 msgstr ""
-"Używanie pliku wykonywalnego rpmkeys z {path} do sprawdzenia poprawności "
-"podpisu pakietu: {package}."
+"Nie można odnaleźć pliku wykonywalnego rpmkeys do sprawdzenia poprawności "
+"podpisów."
 
-#: dnf/rpm/miscutils.py:41
+#: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
 "Nie można odnaleźć pliku wykonywalnego rpmkeys do sprawdzenia poprawności "
@@ -4394,6 +4393,13 @@ msgstr "Niepowodzenie"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nie ustawiono nazwy>"
+
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr ""
+#~ "Używanie pliku wykonywalnego rpmkeys z {path} do sprawdzenia poprawności "
+#~ "podpisu pakietu: {package}."
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: sprawdzenie %s się nie powiodło: %s a %s"

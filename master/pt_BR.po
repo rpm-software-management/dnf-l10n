@@ -29,7 +29,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 09:18-0400\n"
+"POT-Creation-Date: 2021-06-05 09:18-0400\n"
 "PO-Revision-Date: 2021-04-21 14:02+0000\n"
 "Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -4148,16 +4148,13 @@ msgstr "habilitando o repositório %s"
 msgid "Added %s repo from %s"
 msgstr "Adicionado repo %s a partir de %s"
 
-#: dnf/rpm/miscutils.py:37
-#, fuzzy, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+msgid "Using rpmkeys executable at %s to verify signatures"
 msgstr ""
-"Usando o executável rpmkeys de {path} para verificar a assinatura do pacote: "
-"{package}."
+"Não é possível encontrar o executável rpmkeys para verificar as assinaturas."
 
-#: dnf/rpm/miscutils.py:41
+#: dnf/rpm/miscutils.py:66
 #, fuzzy
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
@@ -4428,6 +4425,14 @@ msgstr "Falhou"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nome indefinido>"
+
+#, fuzzy
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr ""
+#~ "Usando o executável rpmkeys de {path} para verificar a assinatura do "
+#~ "pacote: {package}."
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: %s verificação falhou: %s vs %s"

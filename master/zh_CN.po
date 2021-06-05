@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 09:18-0400\n"
+"POT-Creation-Date: 2021-06-05 09:18-0400\n"
 "PO-Revision-Date: 2021-04-23 08:02+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -3975,14 +3975,13 @@ msgstr "正在启用 %s 仓库"
 msgid "Added %s repo from %s"
 msgstr "已添加 %s 仓库来自 %s"
 
-#: dnf/rpm/miscutils.py:37
-#, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
-msgstr "使用来自 {path} 的 rpmkeys 可执行文件以验证此包的签名：{package}。"
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+#| msgid "Cannot find rpmkeys executable to verify signatures."
+msgid "Using rpmkeys executable at %s to verify signatures"
+msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
 
-#: dnf/rpm/miscutils.py:41
+#: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
 
@@ -4229,6 +4228,11 @@ msgstr "失败"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<名称-未设定>"
+
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr "使用来自 {path} 的 rpmkeys 可执行文件以验证此包的签名：{package}。"
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: %s 检查失败：%s vs %s"

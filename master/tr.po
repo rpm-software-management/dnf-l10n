@@ -9,11 +9,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-02 09:18-0400\n"
+"POT-Creation-Date: 2021-06-05 09:18-0400\n"
 "PO-Revision-Date: 2021-06-05 14:03+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -271,8 +271,8 @@ msgstr "Bazı paketler indirilmedi. Yeniden deniyor."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPM'ler %.1f MB boyutundaki güncellemeyi azaltarak %.1f MB yaptı ("
-"%%%.1f tasarruf edildi)"
+"Delta RPM'ler %.1f MB boyutundaki güncellemeyi azaltarak %.1f MB yaptı (%%"
+"%.1f tasarruf edildi)"
 
 #: dnf/base.py:1216
 #, python-format
@@ -4059,16 +4059,13 @@ msgstr "%s deposu etkinleştiriliyor"
 msgid "Added %s repo from %s"
 msgstr "%s deposu %s kaynağından eklendi"
 
-#: dnf/rpm/miscutils.py:37
-#, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
-msgstr ""
-"{package} paketinin imzasını doğrulamak için {path} yolundaki rpmkeys "
-"programı kullanılıyor."
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+#| msgid "Cannot find rpmkeys executable to verify signatures."
+msgid "Using rpmkeys executable at %s to verify signatures"
+msgstr "İmzaları doğrulamak için çalıştırılabilir rpmkeys bulunamıyor."
 
-#: dnf/rpm/miscutils.py:41
+#: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "İmzaları doğrulamak için çalıştırılabilir rpmkeys bulunamıyor."
 
@@ -4321,6 +4318,13 @@ msgstr "Başarısız Oldu"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<isim-ayarlanmadı>"
+
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr ""
+#~ "{package} paketinin imzasını doğrulamak için {path} yolundaki rpmkeys "
+#~ "programı kullanılıyor."
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: %s denetimi başarısız oldu: %s vs %s"
