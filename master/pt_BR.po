@@ -25,13 +25,14 @@
 # Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021.
 # Gustavo Costa <gusta@null.net>, 2020.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
+# Gustavo Costa <xfgusta@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-05 09:18-0400\n"
-"PO-Revision-Date: 2021-04-21 14:02+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2021-06-07 17:15+0000\n"
+"Last-Translator: Gustavo Costa <xfgusta@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -39,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -293,20 +294,17 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "Alguns pacotes não foram baixados. Tentando novamente."
 
 #: dnf/base.py:1212
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPMs reduziu %.1f MB de atualizações para %.1f MB (%d.1%% economizado)"
+"Delta RPMs reduziu %.1f MB de atualizações para %.1f MB (%.1f%% economizado)"
 
 #: dnf/base.py:1216
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Delta RPMs falhos aumentaram %.1f MB de atualizações para %.1f MB (%d.1%% "
+"Delta RPMs falhos aumentaram %.1f MB de atualizações para %.1f MB (%.1f%% "
 "desperdiçado)"
 
 #: dnf/base.py:1258
@@ -638,12 +636,7 @@ msgstr ""
 "A operação resultaria na mudança do módulo '{0}' do fluxo '{1}' para o '{2}'"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -651,10 +644,12 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Não é possível alternar fluxos ativados de um módulo.\n"
-"É recomendável remover todo o conteúdo instalado do módulo e redefinir o "
-"módulo usando o comando '{prog} module reset <nome_do_módulo>'. Depois de "
-"redefinir o módulo, você pode instalar o outro fluxo."
+"Não é possível alternar fluxos ativados de um módulo, a menos que "
+"explicitamente ativado por meio da opção de configuração "
+"module_stream_switch.\n"
+"É recomendado, em vez disso, remover todo o conteúdo instalado do módulo e "
+"redefinir o módulo usando o comando '{prog} module reset <nome_do_módulo>'. "
+"Depois de redefinir o módulo, você pode instalar o outro fluxo."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -1211,12 +1206,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Aguardando processo com pid %d finalizar."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Lista as dependências dos pacotes e quais pacotes as fornecem"
+msgstr ""
+"[obsoleto, use repoquery --deplist] Lista as dependências dos pacotes e "
+"quais pacotes as fornecem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -2839,7 +2834,6 @@ msgstr "Nome"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
-#, fuzzy
 msgid "Epoch"
 msgstr "Época"
 
@@ -3650,10 +3644,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Erro ao analisar '%s': %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Valor de configuração desconhecido: %s=%s in %s; %s"
+msgstr "Valor de configuração inválido: %s=%s em %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3778,9 +3771,6 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Um pacote rpm fonte não será instalado (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3906,12 +3896,10 @@ msgid "No enabled stream for module: {}"
 msgstr "Nenhum fluxo ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:46
-#, fuzzy
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Não é possível habilitar mais fluxos do módulo '{}' ao mesmo tempo"
 
 #: dnf/module/exceptions.py:52
-#, fuzzy
 msgid "Different stream enabled for module: {}"
 msgstr "Fluxo diferente ativado para o módulo: {}"
 
@@ -3921,7 +3909,6 @@ msgid "No such profile: {}"
 msgstr "Esse perfil não existe: {}"
 
 #: dnf/module/exceptions.py:64
-#, fuzzy
 msgid "Specified profile not installed for {}"
 msgstr "Perfil especificado não instalado para {}"
 
