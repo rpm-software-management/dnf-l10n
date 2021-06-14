@@ -12,7 +12,7 @@
 # Zoltan Hoppar <zoltanh721@fedoraproject.org>, 2017. #zanata
 # Meskó Balázs <meskobalazs@gmail.com>, 2018. #zanata
 # Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
-# Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020.
+# Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020, 2021.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2020.
 # Balázs Meskó <meskobalazs@mailbox.org>, 2020.
 msgid ""
@@ -20,16 +20,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-07-21 13:29+0000\n"
-"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
+"PO-Revision-Date: 2021-06-15 20:04+0000\n"
+"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/hu/>\n"
+"dnf-rhel-8/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -99,12 +99,10 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic elindítva."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Alvás %s másodpercig"
-msgstr[1] "Alvás %s másodpercig"
+msgstr[0] "Alvás {} másodpercig"
+msgstr[1] "Alvás {} másodpercig"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -255,10 +253,8 @@ msgstr "Szükséges hely:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
-"Még legalább {0} MB szabad helyre van szükség a(z) {1} fájlrendszeren."
-msgstr[1] ""
-"Még legalább {0} MB szabad helyre van szükség a(z) {1} fájlrendszeren."
+msgstr[0] "Legalább {0}MB több hely szükséges az {1} fájlrendszeren."
+msgstr[1] "Legalább {0}MB több hely szükséges az {1} fájlrendszeren."
 
 #: dnf/base.py:994
 msgid "Error Summary"
@@ -472,7 +468,7 @@ msgstr ""
 #: dnf/base.py:2331
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Nem sikerült lekérdezni a kulcsot egy parancssori csomaghoz: %s"
 
 #: dnf/base.py:2339
 #, python-format
@@ -532,7 +528,9 @@ msgstr "  * Talán erre gondolt: {}"
 
 #: dnf/base.py:2526
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr "A(z) „{}”, „{}” helyi tárolóban lévő csomag ellenőrzőösszege hibás"
+msgstr ""
+"A \"{}\" csomag a \"{}\" helyi adattárból hibás ellenőrző összeggel "
+"rendelkezik"
 
 #: dnf/base.py:2529
 msgid "Some packages from local repository have incorrect checksum"
@@ -540,7 +538,8 @@ msgstr "Néhány csomagnak hibás az ellenőrzőösszege a helyi tárolóban"
 
 #: dnf/base.py:2532
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr "A(z) „{}”, „{}” tárolóban lévő csomag ellenőrzőösszege hibás"
+msgstr ""
+"A \"{}\" csomag a \"{}\" tárolóból hibás ellenőrző összeggel rendelkezik"
 
 #: dnf/base.py:2535
 msgid ""
@@ -1178,7 +1177,7 @@ msgstr "Gyorsítótár lejárt"
 msgid "%d file removed"
 msgid_plural "%d files removed"
 msgstr[0] "%d fájl eltávolítva"
-msgstr[1] "%d fájl eltávolítva"
+msgstr[1] "%d fájlok eltávolítva"
 
 #: dnf/cli/commands/clean.py:119 dnf/lock.py:139
 #, python-format
@@ -1302,6 +1301,8 @@ msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"A visszajátszás parancs esetében ne ellenőrizze, hogy a telepített csomagok "
+"megegyeznek-e a tranzakcióban szereplő csomagokkal"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
@@ -1324,16 +1325,12 @@ msgstr ""
 "„{}”' egy tranzakció azonosítót vagy csomagnevet igényel."
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Nem lett megadva tranzakció azonosító vagy csomagnév."
+msgstr "Nincs tranzakciós fájlnév megadva."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "A következő tranzakció-fájl eltávolítása meghiúsult: %s"
+msgstr "Egynél több argumentum tranzakciós fájlnévként megadva."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1367,10 +1364,9 @@ msgid "No transaction ID given"
 msgstr "Nem lett megadva tranzakció azonosító"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "Nem található tranzakcióelem a kulcshoz: {}"
+msgstr "Tranzakció azonosító \"{0}\" nem található."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1412,23 +1408,19 @@ msgstr "Nem található tranzakció, ami a(z) „{}” csomagot módosítja."
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} létezik, felülírja?"
 
 #: dnf/cli/commands/history.py:360
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Nem írja felül {}, kilépés."
 
 #: dnf/cli/commands/history.py:367
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Tranzakció sikertelen"
+msgstr "Tranzakció mentve {}."
 
 #: dnf/cli/commands/history.py:370
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "Hiba történt a tranzakció során."
+msgstr "Hiba a tranzakció tárolásában: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
@@ -1709,7 +1701,7 @@ msgstr "Tároló csomagok       : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr "Tároló elérhető cs.   : "
+msgstr "Tároló-elérhető csomagok: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
@@ -3051,7 +3043,7 @@ msgstr "Tároló    : %s"
 
 #: dnf/cli/output.py:857
 msgid "Description : "
-msgstr "Leírás    : "
+msgstr "Leírás : "
 
 #: dnf/cli/output.py:861
 #, python-format
@@ -3616,16 +3608,14 @@ msgid "Module or Group '%s' does not exist."
 msgstr "A(z) „%s” csoport vagy modul nem létezik."
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "A(z) „%s” környezet nincs telepítve."
+msgstr "A(z) '%s' környezeti azonosító nem létezik."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "A(z) „%s” környezet nincs telepítve."
+msgstr "A(z) '%s' környezet nincs telepítve."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3638,10 +3628,9 @@ msgid "Environment '%s' is not available."
 msgstr "A(z) „%s” környezet nem érhető el."
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "A(z) „%s” csoportazonosító nem létezik."
+msgstr "A(z) '%s' csoportazonosító nem létezik."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3888,7 +3877,7 @@ msgstr ""
 #: dnf/module/module_base.py:54 dnf/module/module_base.py:547
 #: dnf/module/module_base.py:603 dnf/module/module_base.py:669
 msgid "Ignoring unnecessary profile: '{}/{}'"
-msgstr "Szükségtelen profil mellőzése: „{}/{}”"
+msgstr "A szükségtelen profil figyelmen kívül hagyása: '{}/{}'"
 
 #: dnf/module/module_base.py:84
 #, python-brace-format
@@ -3900,13 +3889,13 @@ msgstr ""
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
-"A(z) „{0}” modul telepítése a(z) {1} üzembiztos tárolóból nem engedélyezett"
+"A(z) '{0}' modul telepítése a(z) {1} üzembiztos tárolóból nem engedélyezett"
 
 #: dnf/module/module_base.py:102 dnf/module/module_base.py:212
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
-"Nem illik a profil a(z) {} argumentumhoz. A(z) „{}:{}” elérhető profiljai: {}"
+"Nem illik a profil a(z) {} argumentumhoz. A(z) '{}:{}' elérhető profiljai: {}"
 
 #: dnf/module/module_base.py:106 dnf/module/module_base.py:216
 msgid "Unable to match profile for argument {}"
@@ -3930,17 +3919,15 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "A modul telepítése az üzembiztos tárolóból nem engedélyezett"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
-"A(z) „{0}” argumentum egyetlen egyezése sem aktív a(z) „{1}:{2}” modulban"
+msgstr "Nincs aktív találat a '{0}' argumentumra a '{1}:{2}' modulban"
 
 #: dnf/module/module_base.py:226
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "A(z) {} alapértelmezett profil nem érhető el a(z) {}:{} modulban"
+msgstr ""
+"A telepített '{0}' profil nem érhető el a '{1}' modulban, a '{2}' folyamban"
 
 #: dnf/module/module_base.py:265
 msgid "No packages available to distrosync for package name '{}'"
@@ -4119,10 +4106,8 @@ msgid ""
 msgstr ""
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "The following problems occurred while running a transaction:"
-msgstr "Hiba történt a tranzakció során."
+msgstr "A tranzakció futtatása során a következő problémák merültek fel:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4178,10 +4163,9 @@ msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
 #: dnf/transaction_sr.py:336
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "A(z) %s csomag már telepítve van."
+msgstr "A \"{na}\" csomag már telepítve van a \"{action}\" művelethez."
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
@@ -4202,10 +4186,9 @@ msgid ""
 msgstr ""
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "A(z) „%s” modul vagy csoport nem érhető el."
+msgstr "A '%s' csoport azonosítója nem elérhető."
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
@@ -4213,16 +4196,14 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "A(z) „%s” modul vagy csoport nincs telepítve."
+msgstr "A '%s' csoport azonosítója nincs telepítve."
 
 #: dnf/transaction_sr.py:432
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "A(z) „%s” környezet nem érhető el."
+msgstr "A '%s' környezeti azonosító nem elérhető."
 
 #: dnf/transaction_sr.py:456
 #, python-brace-format
