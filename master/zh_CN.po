@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-23 01:37+0000\n"
-"PO-Revision-Date: 2021-04-23 08:02+0000\n"
+"PO-Revision-Date: 2021-06-26 19:04+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.7\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -283,18 +283,15 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "某些软件包没有被下载。正在重试。"
 
 #: dnf/base.py:1212
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "增量 RPM 将 %.1f MB 的更新减少至 %.1f MB（已节省 %d.1%% ）"
+msgstr "增量 RPM 将 %.1f MB 的更新减少至 %.1f MB（已节省 %.1f%% ）"
 
 #: dnf/base.py:1216
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr "增量 RPM 未能将 %.1f MB 的更新减少至 %.1f MB（已浪费 %d.1%% ）"
+msgstr "增量 RPM 将 %.1f MB 的更新增加至 %.1f MB（已浪费 %.1f%% ）"
 
 #: dnf/base.py:1258
 msgid "Cannot add local packages, because transaction job already exists"
@@ -1252,7 +1249,7 @@ msgstr "显示或使用事务历史"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr "对于 store 命令，将事务保存到的文件路径"
+msgstr "对于 store 命令，要将事务保存到的文件路径"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
@@ -3533,7 +3530,7 @@ msgstr "无效配置值： %s=%s 在 %s 中; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "无法将“{}”设置为“{}”：{}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3980,10 +3977,9 @@ msgid "Added %s repo from %s"
 msgstr "已添加 %s 仓库来自 %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
+msgstr "使用位于 %s 的 rpmkeys 的可执行文件以验证签名"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
