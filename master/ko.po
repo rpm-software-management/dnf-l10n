@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-06-29 01:42+0000\n"
-"PO-Revision-Date: 2021-06-26 19:04+0000\n"
+"PO-Revision-Date: 2021-07-03 09:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -168,7 +168,7 @@ msgstr "저장소를 무시합니다: %s"
 #: dnf/base.py:419
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr "마지막 메타자료 만료 확인: %s 이전에 %s."
+msgstr "마지막 메타자료 만료확인 %s 이전인: %s."
 
 #: dnf/base.py:512
 msgid ""
@@ -197,7 +197,7 @@ msgstr "연결 확인 실행 중"
 
 #: dnf/base.py:912
 msgid "Error: transaction check vs depsolve:"
-msgstr "오류 : 연결 확인 및 종속성 해결 오류:"
+msgstr "오류: 연결 확인 및 종속성 해결 오류:"
 
 #: dnf/base.py:918
 msgid "Transaction check succeeded."
@@ -257,20 +257,18 @@ msgstr "%s 연결 파일을 삭제하지 못했습니다"
 
 #: dnf/base.py:1182
 msgid "Some packages were not downloaded. Retrying."
-msgstr "일부 꾸러미가 내려받기되지 않았습니다. 다시 시도 중입니다."
+msgstr "일부 꾸러미를 내려받지 못했습니다. 다시 시도합니다."
 
 #: dnf/base.py:1212
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "델타 RPM이 %.1f MB의 최신화를 %.1f MB로 줄였습니다. (%.1f%% 절약됨)"
+msgstr "델타 RPM은 %.1fMB의 최신화를 %.1fMB으로 줄였습니다.(%.1f%% 절약됨)"
 
 #: dnf/base.py:1216
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr ""
-"Delta RPM은 %.1f MB의 최신화를 %.1f MB로 줄이는데 실패했습니다. (%.1f%% 손실"
-"됨)"
+msgstr "Delta RPM은 %.1fMB의 최신화를 %.1fMB로 줄이는데 실패했습니다.(%.1f%% 손실됨)"
 
 #: dnf/base.py:1258
 msgid "Cannot add local packages, because transaction job already exists"
@@ -529,7 +527,7 @@ msgstr "모든 일치 항목이 인수의 다른 리포지토리에서 설치되
 #: dnf/base.py:2710
 #, python-format
 msgid "Package %s is already installed."
-msgstr "꾸러미 %s 가 이미 설치되어 있습니다."
+msgstr "꾸러미 %s가 이미 설치되어 있습니다."
 
 #: dnf/cli/aliases.py:96
 #, python-format
@@ -2069,14 +2067,14 @@ msgstr " & "
 #: dnf/cli/commands/search.py:80
 #, python-format
 msgid "%s Exactly Matched: %%s"
-msgstr "%s 정확히 일치하는 항목: %%s"
+msgstr "%s과 정확히 일치하는 항목: %%s"
 
 #. TRANSLATORS: %s  - translated package attributes,
 #. %%s - found keys (in listed attributes)
 #: dnf/cli/commands/search.py:84
 #, python-format
 msgid "%s Matched: %%s"
-msgstr "%s 일치하는 항목: %%s"
+msgstr "%s과 일치하는 항목: %%s"
 
 #: dnf/cli/commands/search.py:134
 msgid "No matches found."
@@ -2438,7 +2436,7 @@ msgstr "현재 디렉토리에서 읽기 / 실행 액세스가 없습니다. /�
 
 #: dnf/cli/main.py:135
 msgid "try to add '{}' to command line to replace conflicting packages"
-msgstr "충돌하는 꾸러미를 바꾸려면 명령 줄에 '{}'을 (를) 추가하십시오"
+msgstr "충돌하는 꾸러미를 교체하려면 명령줄에 '{}'을 추가하세요"
 
 #: dnf/cli/main.py:139
 msgid "try to add '{}' to skip uninstallable packages"
@@ -3129,8 +3127,8 @@ msgid ""
 "Skipping packages with conflicts:\n"
 "(add '%s' to command line to force their upgrade)"
 msgstr ""
-"충돌 꾸러미 건너 뛰기 :\n"
-"(최신화를 강제하려면 명령행에 '%s' 추가)"
+"충돌 꾸러미 건너 뛰기:\n"
+"(향상을 강제하려면 명령행에 '%s' 추가)"
 
 #: dnf/cli/output.py:1203
 #, python-format
