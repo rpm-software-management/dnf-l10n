@@ -34,21 +34,22 @@
 # Flo <fed@lowspace.de>, 2020.
 # Jens Maucher <jensmaucher@gmail.com>, 2020.
 # Sebastian Poeplau <sebastian.poeplau@mailbox.org>, 2020.
+# CoconutNut <patrick.vollandt@mein-gym.de>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2020-08-10 22:41+0000\n"
-"Last-Translator: Sebastian Poeplau <sebastian.poeplau@mailbox.org>\n"
-"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/de/>\n"
+"PO-Revision-Date: 2021-07-07 00:04+0000\n"
+"Last-Translator: CoconutNut <patrick.vollandt@mein-gym.de>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -56,10 +57,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "Die folgenden Aktualisierungen wurden auf »%s« angewendet:"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Aktualisierungen wurden auf »%s« angewendet."
+msgstr "Aktualisierungen abgeschlossen um %s"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -112,23 +112,21 @@ msgstr "GPG-Überprüfung fehlgeschlagen"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "Warten auf Internetverbindung..."
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
 msgstr "Startet dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Schlaf für %s Sekunden"
-msgstr[1] "Schlaf für %s Sekunden"
+msgstr[0] "Schlaf für {} Sekunde"
+msgstr[1] "Schlaf für {} Sekunden"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
-msgstr ""
+msgstr "System ist offline."
 
 #: dnf/automatic/main.py:344 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -499,6 +497,7 @@ msgstr ""
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
+"Ein Schlüssel für ein Befehlszeilenpaket kann nicht abgerufen werden: %s"
 
 #: dnf/base.py:2339
 #, python-format
@@ -650,6 +649,8 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"Der Vorgang würde zu einer Umschaltung von Modul '{0}' Stream '{1}' auf "
+"Stream '{2}' führen"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
