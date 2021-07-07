@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-22 09:22+0100\n"
-"PO-Revision-Date: 2021-06-03 00:03+0000\n"
+"PO-Revision-Date: 2021-07-08 11:04+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/da/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -93,12 +93,10 @@ msgid "Started dnf-automatic."
 msgstr "Starter dnf-automatic."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Sov i %s sekunder"
-msgstr[1] "Sov i %s sekunder"
+msgstr[0] "Sov i {} sekund"
+msgstr[1] "Sov i {} sekunder"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -3881,10 +3879,9 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Installation af modulet fra Fail-Safe-softwarearkiv er ikke tilladt"
 
 #: dnf/module/module_base.py:194
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Alle match for argumentet '{0}' i modulet '{1}:{2}' er ikke aktive"
+msgstr "Ingen aktive match for argumentet '{0}' i modulet '{1}:{2}'"
 
 #: dnf/module/module_base.py:226
 #, fuzzy, python-brace-format
@@ -4063,22 +4060,17 @@ msgid "Preparing"
 msgstr "Forbereder"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Advarsel, følgende problemer opstod under genafspilning af transaktionen:"
+"Følgende problemer opstod under genafspilning af transaktionen fra filen \""
+"{filename}\":"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
-"Advarsel, følgende problemer opstod under genafspilning af transaktionen:"
+msgstr "Følgende problemer opstod under afspilning af en transaktion:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
