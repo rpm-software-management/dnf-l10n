@@ -14,16 +14,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-06 01:46+0000\n"
-"PO-Revision-Date: 2021-06-03 00:03+0000\n"
+"PO-Revision-Date: 2021-07-08 11:04+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/da/>\n"
+"Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.7.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -272,20 +272,17 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "Nogle pakker blev ikke downloadet - Prøver igen."
 
 #: dnf/base.py:1212
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPMs reducerede %.1f MB af opdateringen til %.1f MB (%d.1%% sparet)"
+"Delta-RPM'er reducerede %.1f MB af opdateringen til %.1f MB (%.1f%% sparet)"
 
 #: dnf/base.py:1216
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Mislykkede delta-RPM'er øgede %.1f MB af opdatering til %.1f MB (%d.1%% "
+"Mislykkede delta-RPM'er øgede %.1f MB af opdatering til %.1f MB (%.1f%% "
 "spildt)"
 
 #: dnf/base.py:1258
@@ -3618,7 +3615,7 @@ msgstr "Ugyldig konfigurationsværdi: %s=%s i %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "Kan ikke indstille \"{}\" til \"{}\": {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3884,10 +3881,8 @@ msgid "No such profile: {}. No profiles available"
 msgstr "Ingen softwarearkiver tilgængelige"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Ingen profiler for modulet {}:{}"
+msgstr "Ingen profil at fjerne for '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3954,10 +3949,9 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Installation af modulet fra Fail-Safe-softwarearkiv er ikke tilladt"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "Alle match for argumentet '{0}' i modulet '{1}:{2}' er ikke aktive"
+msgstr "Ingen aktive match for argumentet '{0}' i modulet '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
 #, fuzzy, python-brace-format
@@ -4149,22 +4143,17 @@ msgid "Preparing"
 msgstr "Forbereder"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"Advarsel, følgende problemer opstod under genafspilning af transaktionen:"
+"Følgende problemer opstod under genafspilning af transaktionen fra filen \""
+"{filename}\":"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
-"Advarsel, følgende problemer opstod under genafspilning af transaktionen:"
+msgstr "Følgende problemer opstod under afspilning af en transaktion:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
