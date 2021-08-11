@@ -7,16 +7,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 01:42+0000\n"
-"PO-Revision-Date: 2021-07-10 10:39+0000\n"
+"PO-Revision-Date: 2021-08-12 16:04+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.7.1\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -586,11 +586,10 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"설정 선택 module_stream_switch을 통해 명시적으로 활성화 하지 않는한 모듈의 활"
-"성화된 스트림을 전환 할 수 없습니다.\n"
-"모듈에서 설치된 모든 내용을 모듈에서 제거하고, '{prog} module reset "
-"<module_name>'명령을 사용하여 모듈을 재설정하는 것을 권장합니다. 모듈을 재설"
-"정 후에, 다른 스트림을 설치 할 수 있습니다."
+"구성 선택(옵션) module_stream_switch를 통해 명시적으로 활성화하지 않는 한 활성화된 모듈 스트림을 전환 할 수 없습니다."
+"\n"
+"설치된 모든 내용을 모듈에서 제거하고 ‘{prog} module reset <module_name>' 명령을 사용하여 모듈을 재설정하는 "
+"것이 좋습니다. 모듈을 재설정한 후 다른 스트림을 설치할 수 있습니다."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -1137,9 +1136,7 @@ msgstr "PID %d 프로세스가 종료되기를 기다리고 있습니다."
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr ""
-"[비추천, repoquery --deplist 사용] 꾸러미 의존성과 이를 제공하는 꾸러미를 나"
-"열"
+msgstr "[더 이상 사용되지 않음, repoquery --deplist 사용] 꾸러미의 종속성과 이를 제공하는 꾸러미 목록 나열"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3554,7 +3551,7 @@ msgstr "'%s' 구문 분석 중 오류 발생: %s"
 #: dnf/conf/config.py:151
 #, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "알 수없는 설정 값: %s; %s에서 %s=%s"
+msgstr "잘못된 구성 값: %s=%s (%s; %s에서)"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
@@ -3647,11 +3644,11 @@ msgstr "repo %s: 0x%s 키를 가져왔습니다."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr "DNSSEC 서명과 함께 DNS 기록을 사용하여 확인되었습니다."
+msgstr "DNSSEC 서명이 있는 DNS 레코드를 사용하여 확인됨."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr "DNS 기록 사용은 검증되지 않았습니다."
+msgstr "DNS 레코드를 사용하여 확인되지 않음."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3683,8 +3680,7 @@ msgstr "소스 RPM 꾸러미를 설치하지 않습니다 (%s)."
 #: dnf/dnssec.py:171
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
-msgstr ""
-"설정 선택 'gpgkey_dns_verification'는 python3-unbound ({}) 가 필요합니다"
+msgstr "구성 선택(옵션) 'gpgkey_dns_verification'에는 python3-unbound ({})가 필요합니다"
 
 #: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
@@ -3792,19 +3788,19 @@ msgstr "그런 모듈이 없습니다: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr "그런 스트림: {} 없습니다"
+msgstr "그런 스트림이 없습니다: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr "모듈에 대한 스트림이 없습니다 : {}"
+msgstr "모듈에 대한 활성화된 스트림이 없습니다: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr "동시에 모듈'{}'에서 더이상 스트림을 활성화 할 수 없습니다"
+msgstr "동시에 모듈 '{}'에서 더 많은 스트림을 활성화 할 수 없습니다"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr "모듈: {} 을 위한 다른 스트림이 활성화되었습니다"
+msgstr "모듈에 대해 활성화된 다른 스트림: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3812,19 +3808,19 @@ msgstr "그런 프로파일이 없습니다: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr "{}을 위한 지정한 프로파일이 설치되어 있지 않습니다"
+msgstr "{}를 위한 지정된 프로필이 설치되지 않았습니다"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
-msgstr "'{}'에 지정된 프로필이 없습니다. 프로필을 지정하십시오"
+msgstr "'{}'을 위한 지정된 스트림이 없으며, 스트림을 지정해주세요"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
-msgstr "그런 프로파일이 없습니다: {}. 가용한 프로파일이 없습니다"
+msgstr "그런 프로파일이 없습니다: {}. 사용 가능한 프로파일이 없습니다"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
-msgstr "'{}' 위해 제거 할 프로파일이 없습니다"
+msgstr "제거되는 프로파일이 없습니다('{}'를 위해 )"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3928,8 +3924,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
-"인수 '{argument}' 일치 {stream_count} 스트림 ('{streams}') of 모듈 "
-"'{module}', 그러나 활성화 된 스트림 또는 기본 스트림이 없습니다"
+"인수 '{argument}'는 {stream_count} 스트림 ('{streams}')과 일치합니다 (모듈의 '{module}'), "
+"하지만 활성화 되었거나 지정된 스트림이 없습니다"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4019,7 +4015,7 @@ msgstr "%s에서 실행 가능한 rpmkey를 사용하여 서명 확인"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr "서명 확인에서 실행 가능한 rpmkey를 찾을 수 없습니다."
+msgstr "서명을 확인하기 위해 실행 할 수 있는 rpmkeys를 찾을 수 없습니다."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
