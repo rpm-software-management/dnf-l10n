@@ -16,7 +16,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-03-03 21:46+0000\n"
+"PO-Revision-Date: 2021-08-12 16:04+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/uk/>\n"
@@ -26,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -610,12 +610,7 @@ msgstr ""
 "«{2}»"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -623,7 +618,8 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Перемкнути увімкнені потоки модуля неможливо.\n"
+"Перемкнути увімкнені потоки модуля неможливо, якщо перемикання не увімкнено "
+"явним чином за допомогою параметра module_stream_switch.\n"
 "Рекомендуємо вилучити усі встановлені дані із модулі і відновити початкові "
 "налаштування за допомогою команди «{prog} module reset <назва_модуля>». "
 "Після відновлення початкових налаштувань модуля ви зможете встановити інший "
@@ -1185,12 +1181,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Очікуємо на завершення процесу з pid %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Показати список залежностей пакунка та пакунки, які їх надають"
+msgstr ""
+"[застарілий, користуйтеся repoquery --deplist] Показати список залежностей "
+"пакунка та пакунки, які їх надають"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3637,10 +3633,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Помилка під час обробки «%s»: %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Невідоме значення налаштувань: %s=%s у %s; %s"
+msgstr "Некоректне значення налаштувань: %s=%s у %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3731,11 +3726,11 @@ msgstr "сховище %s: імпортовано ключ 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Перевірено за допомогою запису DNS із підписом DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "НЕ перевірено за допомогою запису DNS."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3760,14 +3755,11 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Не буде встановлено пакунок rpm із початковим кодом (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
 "Для використання параметра налаштувань gpgkey_dns_verification потрібна "
-"libunbound ({})"
+"python3-unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3873,54 +3865,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Не вказано профілю для «{}». Будь ласка, вкажіть профіль."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає такого модуля: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Немає такого потоку: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає увімкненого потоку для модуля: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Не можна вмикати додаткові потоки з модуля «{}» одночасно"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Для модуля увімкнено інший потік: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Немає такого профілю: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Вказаний профіль не встановлено для {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Не вказано профілю для «{}». Будь ласка, вкажіть профіль."
+msgstr "Не вказано потоку для «{}». Будь ласка, вкажіть потік."
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Немає доступних сховищ"
+msgstr "Немає такого профілю: {}. Немає доступних профілів"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Немає профілів для модуля {}:{}"
+msgstr "Немає профілю для вилучення для «{}»"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4027,6 +4009,9 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"Аргумент «{argument}» відповідає {stream_count} потокам («{streams}») модуля "
+"«{module}», але жоден з цих потоків не увімкнено і жоден з цих потоків не є "
+"типовим"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4118,10 +4103,12 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Використовуємо виконуваний файл rpmkeys з {path} для перевірки підпису "
+"пакунка: {package}."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "Не вдалося знайти виконуваний файл rpmkeys для перевірки підписів."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
