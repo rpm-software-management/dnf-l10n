@@ -10,16 +10,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-04-07 13:58+0000\n"
+"PO-Revision-Date: 2021-08-12 16:04+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-8/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-8/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 4.5.3\n"
+"X-Generator: Weblate 4.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -89,12 +89,10 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic başlatıldı."
 
 #: dnf/automatic/main.py:308
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "%s saniye uykuda bekle"
-msgstr[1] "%s saniye uykuda bekle"
+msgstr[0] "{} saniye uykuda bekle"
+msgstr[1] "{} saniye uykuda bekle"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -592,12 +590,7 @@ msgstr ""
 "olur"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -605,10 +598,12 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Bir modülün etkin akışlarını değiştirmek mümkün değildir.\n"
+"module_stream_switch yapılandırma seçeneği aracılığıyla açıkça "
+"etkinleştirilmedikçe, bir modülün etkin akışlarını değiştirmek mümkün "
+"değildir\n"
 "Kurulu tüm içeriği modülden kaldırmanız ve '{prog} module reset <modül_adı>' "
-"komutunu kullanarak modülü sıfırlamanız önerilir. Modülü sıfırladıktan sonra "
-"diğer akışı kurabilirsiniz."
+"komutunu kullanarak modülü sıfırlamanız tavsiye edilir. Modülü sıfırladıktan "
+"sonra diğer akışı kurabilirsiniz."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -1162,12 +1157,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "%d pid numaralı işlemin bitmesi için bekleniyor."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Paketin bağımlılıklarını ve hangi paketlerin sağladığını listele"
+msgstr ""
+"[kullanımdan kaldırıldı, repoquery --deplist kullanın] Paketin "
+"bağımlılıklarını ve hangi paketlerin sağladığını listele"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1345,10 +1340,9 @@ msgid "No transaction ID given"
 msgstr "İşlem kimliği verilmedi"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "Transaction ID \"{id}\" not found."
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "İşlem kimliği \"{id}\" bulunamadı."
+msgstr "İşlem kimliği \"{0}\" bulunamadı."
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1405,11 +1399,8 @@ msgid "Error storing transaction: {}"
 msgstr "İşlem kaydedilirken hata oluştu: {}"
 
 #: dnf/cli/commands/history.py:386
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr "Uyarı, işlem gerçekleştirilirken aşağıdaki sorunlar oluştu:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1532,7 +1523,7 @@ msgstr "{} paketi birden fazla modüle ait, atlanıyor"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "bir modülü bir akışa değiştir ve rpm paketlerini dağıtıma eşzamanla"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -3611,10 +3602,9 @@ msgid "Error parsing '%s': %s"
 msgstr "'%s' ayrıştırılırken hata oluştu: %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
+msgstr "Geçersiz yapılandırma değeri: %s=%s, %s içinde; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3704,16 +3694,16 @@ msgstr "depo %s: 0x%s anahtarı içe aktarıldı."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "DNSSEC imzasıyla DNS kaydı kullanılarak doğrulandı."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "DNS kaydı kullanılarak DOĞRULANMADI."
 
 #: dnf/crypto.py:184
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "%s için depo anahtarı %s adresinden şifrelenmemiş olarak alınıyor"
 
 #: dnf/db/group.py:301
 msgid ""
@@ -3733,13 +3723,11 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Kaynak rpm paketi kurulmayacak (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"'gpgkey_dns_verification' yapılandırma seçeneği libunbound gerektiriyor ({})"
+"'gpgkey_dns_verification' yapılandırma seçeneği python3-unbound gerektiriyor "
+"({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3842,54 +3830,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "'{}' için profil belirtilmedi, lütfen profil belirtin."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "{}:{} modülü için profil yok"
+msgstr "Böyle bir modül yok: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Böyle bir akış yok: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "{}:{} modülü için profil yok"
+msgstr "Modül için etkinleştirilmiş akış yok: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Aynı anda '{}' modülünden daha fazla akış etkinleştirilemiyor"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Modül için farklı akış etkinleştirildi: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Böyle bir profil yok: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "{} için belirtilen profil kurulu değil"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "'{}' için profil belirtilmedi, lütfen profil belirtin."
+msgstr "'{}' için akış belirtilmedi, lütfen akış belirtin"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Kullanılabilir depo yok"
+msgstr "Böyle bir profil yok: {}. Kullanılabilir profil yok"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "{}:{} modülü için profil yok"
+msgstr "'{}' için kaldırılacak profil yok"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3954,20 +3932,19 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "Fail-Safe deposundan modül kurulmasına izin verilmiyor"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "'{0}' argümanı için '{1}:{2}' modülündeki tüm eşleşmeler aktif değil"
+msgstr "'{0}' argümanı için '{1}:{2}' modülünde aktif eşleşme yok"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "{} öntanımlı profili, {}:{} modülünde kullanılabilir değil"
+msgstr ""
+"Kurulu '{0}' profili, '{1}' modülünün '{2}' akışında kullanılabilir değil"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "'{}' paket adı için dağıtıma eşzamanlanacak paket yok"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3996,6 +3973,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"'{argument}' argümanı, '{module}' modülünün {stream_count} akışıyla "
+"('{streams}') eşleşiyor ancak akışların hiçbiri etkin veya öntanımlı değil"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4086,10 +4065,12 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"{package} paketinin imzasını doğrulamak için {path} rpmkeys programı "
+"kullanılıyor."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "İmzaları doğrulamak için rpmkeys programı bulunamıyor."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
@@ -4100,6 +4081,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change devre dışı. Bu seçenek şu anda downgrade ve distro-sync "
+"komutları için desteklenmiyor"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4148,20 +4131,17 @@ msgid "Preparing"
 msgstr "Hazırlanıyor"
 
 #: dnf/transaction_sr.py:66
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
+#, python-brace-format
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr ""
+"\"{filename}\" dosyasından işlem yeniden yürütülürken aşağıdaki sorunlar "
+"oluştu:"
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid ""
-#| "Warning, the following problems occurred while replaying the transaction:"
 msgid "The following problems occurred while running a transaction:"
-msgstr "Uyarı, işlem yeniden yürütülürken aşağıdaki sorunlar oluştu:"
+msgstr "İşlem gerçekleştirilirken aşağıdaki sorunlar oluştu:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4183,7 +4163,7 @@ msgstr "Uyumsuz ana sürüm \"{major}\", desteklenen ana sürüm \"{major_supp}\
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Çakışan TransactionReplay argümanları belirtildi: dosya adı, veri"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
