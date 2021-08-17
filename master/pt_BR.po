@@ -32,7 +32,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-14 01:39+0000\n"
-"PO-Revision-Date: 2021-08-11 01:04+0000\n"
+"PO-Revision-Date: 2021-08-19 06:05+0000\n"
 "Last-Translator: Gustavo Costa <xfgusta@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
@@ -1707,11 +1707,11 @@ msgstr "Estado do Repo.        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr "Revisão do Repo.      : "
+msgstr "Revisão do repo.      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr "Tags do Repo.          : "
+msgstr "Tags do repo.          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
@@ -3037,12 +3037,12 @@ msgstr "Resultado a partir de:"
 #: dnf/cli/output.py:823
 #, python-format
 msgid "Filename    : %s"
-msgstr "Nome do arquivo    : %s"
+msgstr "Nome do arquivo: %s"
 
 #: dnf/cli/output.py:848
 #, python-format
 msgid "Repo        : %s"
-msgstr "Repo.        : %s"
+msgstr "Repositório: %s"
 
 #: dnf/cli/output.py:857
 msgid "Description : "
@@ -3882,13 +3882,10 @@ msgid "No such module: {}"
 msgstr "Esse módulo não existe: {}"
 
 #: dnf/module/exceptions.py:33
-#, fuzzy
 msgid "No such stream: {}"
 msgstr "Esse fluxo não existe: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
 msgstr "Nenhum fluxo ativado para o módulo: {}"
 
@@ -3901,7 +3898,6 @@ msgid "Different stream enabled for module: {}"
 msgstr "Fluxo diferente ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:58
-#, fuzzy
 msgid "No such profile: {}"
 msgstr "Esse perfil não existe: {}"
 
@@ -3910,8 +3906,6 @@ msgid "Specified profile not installed for {}"
 msgstr "Perfil especificado não instalado para {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Nenhum fluxo especificado para '{}', especifique o fluxo"
 
@@ -3922,8 +3916,6 @@ msgid "No such profile: {}. No profiles available"
 msgstr "Nenhum repositório disponível"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
 msgstr "Nenhum perfil para remover para '{}'"
 
@@ -4037,13 +4029,13 @@ msgstr ""
 "O módulo de atualização do repositório à prova de falhas não é permitido"
 
 #: dnf/module/module_base.py:422
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
-"O argumento '{argument}' corresponde a {stream_count} streams ('{streams}') "
-"do módulo '{module}', mas nenhum dos streams está ativado ou é padrão"
+"O argumento '{argument}' corresponde a {stream_count} fluxos ('{streams}') "
+"do módulo '{module}', mas nenhum dos fluxos está ativado ou é padrão"
 
 #: dnf/module/module_base.py:509
 msgid ""
