@@ -30,7 +30,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-08-11 01:04+0000\n"
+"PO-Revision-Date: 2021-08-19 06:05+0000\n"
 "Last-Translator: Gustavo Costa <xfgusta@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-rhel-8/pt_BR/>\n"
@@ -1208,12 +1208,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Aguardando processo com pid %d finalizar."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Listar dependências dos pacotes e quais pacotes as fornecem"
+msgstr ""
+"[obsoleto, use repoquery --deplist] lista as dependências dos pacotes e "
+"quais pacotes as fornecem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1715,11 +1715,11 @@ msgstr "Estado do Repo.        : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr "Revisão do Repo.      : "
+msgstr "Revisão do repo.      : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr "Tags do Repo.          : "
+msgstr "Tags do repo.          : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
@@ -3045,12 +3045,12 @@ msgstr "Resultado a partir de:"
 #: dnf/cli/output.py:823
 #, python-format
 msgid "Filename    : %s"
-msgstr "Nome do arquivo    : %s"
+msgstr "Nome do arquivo: %s"
 
 #: dnf/cli/output.py:848
 #, python-format
 msgid "Repo        : %s"
-msgstr "Repo.        : %s"
+msgstr "Repositório: %s"
 
 #: dnf/cli/output.py:857
 msgid "Description : "
@@ -3649,10 +3649,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Erro ao analisar '%s': %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Valor de configuração desconhecido: %s=%s in %s; %s"
+msgstr "Valor de configuração inválido: %s=%s em %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3741,11 +3740,11 @@ msgstr "repo %s: chave importada 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Verificado usando registro DNS com assinatura DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NÃO verificado usando o registro DNS."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3770,13 +3769,10 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Um pacote rpm fonte não será instalado (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"A opção de configuração 'gpgkey_dns_verification' requer libunbound ({})"
+"A opção de configuração 'gpgkey_dns_verification' requer python3-unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3881,42 +3877,36 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Nenhum perfil especificado para '{}', especifique o perfil."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Esse módulo não existe: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Esse fluxo não existe: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Nenhum fluxo ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Não é possível habilitar mais fluxos do módulo '{}' ao mesmo tempo"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Fluxo diferente ativado para o módulo: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Esse perfil não existe: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Perfil especificado não instalado para {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Nenhum perfil especificado para '{}', especifique o perfil."
+msgstr "Nenhum fluxo especificado para '{}', especifique o fluxo"
 
 #: dnf/module/exceptions.py:82
 #, fuzzy
@@ -3925,10 +3915,8 @@ msgid "No such profile: {}. No profiles available"
 msgstr "Nenhum repositório disponível"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Nenhum perfil para o módulo {}: {}"
+msgstr "Nenhum perfil para remover para '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4045,6 +4033,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"O argumento '{argument}' corresponde a {stream_count} fluxos ('{streams}') "
+"do módulo '{module}', mas nenhum dos fluxos está ativado ou é padrão"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4143,6 +4133,8 @@ msgstr ""
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"Não foi possível encontrar o executável rpmkeys para verificar as "
+"assinaturas."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
