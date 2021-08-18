@@ -19,7 +19,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
 "PO-Revision-Date: 2021-08-19 06:05+0000\n"
-"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
+"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/sv/>\n"
 "Language: sv\n"
@@ -1173,12 +1173,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Väntar på att processen med pid %d skall avsluta."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Lista pakets beroenden och vilka paket som tillhandahåller dem"
+msgstr ""
+"[deprekerad, använd repoquery --deplist] Lista pakets beroenden och vilka "
+"paket som tillhandahåller dem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3700,11 +3700,11 @@ msgstr "Paketkatalog %s: importerade nyckeln 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Verifierat med en DNS-post med DNSSEC-signatur."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "INTE verifierad med en DNS-post."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3836,54 +3836,45 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Ingen profil angiven för ”{}”, ange en profil."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen sådan modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Ingen sådan ström: {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen aktiverade ström för modulen: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
+"Det går inte att aktivera flera strömmar från modulen ”{}” på samma gång"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Olika strömmar är aktiverade för modulen: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Ingen sådan profil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Specificerad profil inte installerad för: {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Ingen profil angiven för ”{}”, ange en profil."
+msgstr "Ingen ström angiven för ”{}”, ange en ström"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Inga förråd tillgängliga"
+msgstr "Ingen sådan profil: {}. Ingen profil tillgänglig"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Inga profiler för modulen {}:{}"
+msgstr "Ingen profil att ta bort för '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3993,6 +3984,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"Argumentet ”{argument}” matchar {stream_count} strömmar (”{streams}”) i "
+"modulen ”{module}”, men ingen av strömmarna är aktiverad eller standard"
 
 #: dnf/module/module_base.py:509
 msgid ""
