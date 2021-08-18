@@ -18,8 +18,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-08-14 08:04+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"PO-Revision-Date: 2021-08-19 06:05+0000\n"
+"Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/sv/>\n"
 "Language: sv\n"
@@ -609,12 +609,7 @@ msgstr ""
 "”{2}”"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -622,10 +617,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Det är inte möjligt att byta aktiverade strömmar för en modul.\n"
-"Det är rekommenderat att ta bort allt innehåll från modulen, och återställa "
-"modulen med kommandot ”{prog} module reset <modulnamn>”. Efter att du "
-"återställt modulen kan du installera den andra strömmen."
+"Det är inte möjligt att byta aktiverade strömmar för en modul om inte "
+"uttryckligen aktiverat med konfigurationsflaggan module_stream_switch.\n"
+"Det är rekommenderat att istället ta bort allt innehåll från modulen, och "
+"återställa modulen med kommandot ”{prog} module reset <modulnamn>”. Efter "
+"att du återställt modulen kan du installera den andra strömmen."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -4090,10 +4086,12 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Använder programmet rpmkeys från {path} för att verifiera signaturer för "
+"paketet: {package}."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "Kan inte hitta programmet rpmkeys för att verifiera signaturer."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
