@@ -21,7 +21,7 @@
 # Germano Massullo <germano.massullo@gmail.com>, 2018. #zanata
 # Giovanni Grieco <giovanni.grc96@gmail.com>, 2018. #zanata
 # Ludek Janda <ljanda@redhat.com>, 2018. #zanata
-# Alessio <alciregi@posteo.net>, 2020.
+# Alessio <alciregi@posteo.net>, 2020, 2021.
 # Enrico Bella <enric@e.email>, 2020.
 # G B <fas@albirt.cloud>, 2021.
 # dav ide <davide.luigi@gmail.com>, 2021.
@@ -32,7 +32,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-21 01:40+0000\n"
 "PO-Revision-Date: 2021-08-30 16:43+0000\n"
-"Last-Translator: dav ide <davide.luigi@gmail.com>\n"
+"Last-Translator: Alessio <alciregi@posteo.net>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/it/>\n"
 "Language: it\n"
@@ -298,14 +298,12 @@ msgstr ""
 "risparmiato)"
 
 #: dnf/base.py:1216
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "I delta RPM non riusciti hanno incrementato %.1f MB di aggiornamenti a %.1f "
-"MB (%d.1%% sprecato)"
+"MB (%.1f%% sprecato)"
 
 #: dnf/base.py:1258
 msgid "Cannot add local packages, because transaction job already exists"
@@ -648,6 +646,13 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"Non è possibile passare a stream attivi di un modulo a meno che questo non "
+"sia esplicitamente abilitato dall'opzione di configurazione "
+"module_stream_switch.\n"
+"È invece raccomandato rimuovere dal modulo tutti i contenuti installati e "
+"reimpostare il modulo stesso usando il comando '{prog} module reset "
+"<module_name>'. Dopo aver reimpostato il modulo, puoi installare l'altro "
+"stream."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -756,6 +761,8 @@ msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Questo comando deve essere eseguito con privilegi di superuser (sotto "
+"l'utente root nella maggior parte dei sistemi)."
 
 #: dnf/cli/cli.py:749
 #, python-format
