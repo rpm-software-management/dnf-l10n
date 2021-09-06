@@ -25,16 +25,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-01 09:05+0200\n"
-"PO-Revision-Date: 2021-05-17 03:02+0000\n"
-"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-8/fr/>\n"
+"PO-Revision-Date: 2021-09-06 17:24+0000\n"
+"Last-Translator: Sundeep Anand <suanand@redhat.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-9/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.6.2\n"
+"X-Generator: Weblate 4.8\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -97,7 +97,7 @@ msgstr "La vérification GPG a ÉCHOUÉ"
 
 #: dnf/automatic/main.py:274
 msgid "Waiting for internet connection..."
-msgstr "En attente d'une connexion Internet…"
+msgstr "En attente d'une connexion Internet..."
 
 #: dnf/automatic/main.py:304
 msgid "Started dnf-automatic."
@@ -644,12 +644,7 @@ msgstr ""
 "» vers le flux« {2} »"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -657,9 +652,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Il n’est pas possible de basculer les flux actifs d’un module.\n"
-"Il et recommandé de retirer tout contenu installé par le module, et de "
-"réinitialiser le mode en utilisant la commande « {prog} module reset "
+"Il n’est pas possible de basculer les flux actifs d’un module sauf si cela "
+"est explicitement activé par l’option de configuration module_stream_switch."
+"\n"
+"Il est plutôt recommandé de retirer tout contenu installé par le module, et "
+"de réinitialiser le mode en utilisant la commande « {prog} module reset "
 "<nom_du_module> ». Après la réinitialisation, vous pouvez installer les "
 "autres flux."
 
@@ -1219,13 +1216,12 @@ msgstr ""
 "En attente de la fin d’exécution du processus ayant l’identifiant (pid) %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
 msgstr ""
-"Liste les dépendances du paquet et indique quels paquets les fournissent"
+"[obsolète, utilsez repoquery --deplist] Liste les dépendances du paquet et "
+"indique quels paquets les fournissent"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -3701,10 +3697,9 @@ msgid "Error parsing '%s': %s"
 msgstr "Erreur lors l’analyse de « %s » : %s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Valeur de configuration inconnue : %s=%s dans %s ; %s"
+msgstr "Valeur de configuration non valide : %s=%s dans %s ; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
@@ -3797,11 +3792,11 @@ msgstr "dépôt %s : clé importée 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Vérifié en utilisant un enregistrement DNS avec une signature DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NON vérifié avec un enregistrement DNS."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3826,14 +3821,11 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Un paquet source rpm ne sera pas installé (%s)."
 
 #: dnf/dnssec.py:168
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"L’option de configuration « gpgkey_dns_verification » nécessite libunbound "
-"({})"
+"L’option de configuration « gpgkey_dns_verification » nécessite "
+"python3-unbound({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3938,54 +3930,44 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Aucun profil spécifié pour « {} », veuillez spécifier un profil."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun module de ce type : {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Aucun flux de ce type : {}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun flux activé pour le module : {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Ne peut pas activer plus de flux du module « {} » en même temps"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Différent flux activé pour le module : {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Aucun profil de ce type : {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Le profil spécifié n'est pas installé pour {}"
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Aucun profil spécifié pour « {} », veuillez spécifier un profil."
+msgstr "Aucun flux spécifié pour « {} », veuillez spécifier un flux"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Aucun dépôt n’est disponible"
+msgstr "Aucun dépôt de ce type : {}. Aucun profile n’est disponible"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "Aucun profil pour le module {} : {}"
+msgstr "Aucun profil à retirer pour « {} »"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4100,6 +4082,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"L'argument « {argument} » correspond à {stream_count} flux (« {streams} ») "
+"du module « {module} », mais aucun des flux n'est activé ou par défaut"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4193,10 +4177,13 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"Utilisation de l'exécutable rpmkeys de {path} pour vérifier la signature du "
+"package : {package}."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"Impossible de trouver l’exécutable rpmkeys pour vérifier les signatures."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
