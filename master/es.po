@@ -27,21 +27,22 @@
 # Cristhian Vanessa Gonzalez <cristhian.vanessa.g@gmail.com>, 2020.
 # Emilio Herrera <ehespinosa57@gmail.com>, 2020, 2021.
 # Luis Mosquera <aikyu.sama@gmail.com>, 2020.
+# Pedro Luis Valades Viera <perikiyoxd@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-30 01:51+0000\n"
-"PO-Revision-Date: 2021-01-08 16:56+0000\n"
-"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/es/>\n"
+"PO-Revision-Date: 2021-10-09 03:05+0000\n"
+"Last-Translator: Pedro Luis Valades Viera <perikiyoxd@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.8\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1346,12 +1347,16 @@ msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Para el comando de repetición, no comprobar si hay paquetes adicionales "
+"incluidos en la transacción"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Para el comando de repetición, omitir los paquetes que no están disponibles "
+"o tienen dependencias que faltan"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1448,23 +1453,25 @@ msgstr "No se ha encontrado ninguna transacción que manipule el paquete '{}'."
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} ya existe, ¿sobreescribir?"
 
 #: dnf/cli/commands/history.py:360
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "No se sobreescribe {}, saliendo."
 
 #: dnf/cli/commands/history.py:367
 msgid "Transaction saved to {}."
-msgstr "Transacción guardada a {}."
+msgstr "Transacción guardada en {}."
 
 #: dnf/cli/commands/history.py:370
 msgid "Error storing transaction: {}"
-msgstr "Error almacenando la transacción: {}"
+msgstr "Error al almacenar la transacción: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
+"Advertencia, se han producido los siguientes problemas al ejecutar una "
+"transacción:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1587,6 +1594,8 @@ msgstr "El paquete {} pertenece a múltiples módulos, saltando"
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
 msgstr ""
+"cambiar un módulo a un flujo y sincronizar los paquetes rpm de la "
+"distribución"
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
@@ -1971,6 +1980,8 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"formato de visualización de la lista de paquetes: \"%%{name} %%{version} ..."
+"\", utilice \"--querytags\" para ver la lista completa de etiquetas"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
@@ -3741,7 +3752,7 @@ msgstr "Valor de configuración desconocido: %s=%s en %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "No se puede establecer \"{}\" a \" {}\": {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3832,16 +3843,16 @@ msgstr "repo %s: importada clave 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Verificado mediante registro DNS con firma DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NO se ha verificado mediante el registro DNS."
 
 #: dnf/crypto.py:184
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "recuperando la clave del repositorio para %s sin cifrar de %s"
 
 #: dnf/db/group.py:302
 msgid ""
@@ -3854,7 +3865,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Se ha producido una excepción de rpm: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -3982,7 +3993,7 @@ msgstr "No hay perfiles para el módulo {}:{}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "No existe el flujo: {}"
 
 #: dnf/module/exceptions.py:39
 #, fuzzy
@@ -3992,19 +4003,19 @@ msgstr "No hay perfiles para el módulo {}:{}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "No se pueden habilitar más flujos desde el módulo '{}' a la vez"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Diferentes flujos habilitados para el módulo: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "No existe el perfil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "El perfil especificado no ha sido instalado para {}"
 
 #: dnf/module/exceptions.py:70
 #, fuzzy
@@ -4109,6 +4120,8 @@ msgstr "El perfil predeterminado {} no está disponible en el módulo {}: {}"
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
+"No hay paquetes disponibles para la \"distrosync\" para el nombre de paquete "
+"'{}'"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -4138,6 +4151,9 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"El argumento '{argument}' coincide con {stream_count} flujos ('{streams}') "
+"del módulo '{module}', pero ninguno de los flujos están habilitados o "
+"predeterminados"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4159,12 +4175,12 @@ msgstr "%s es un archivo vacío"
 #: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Fallo al cargar la caché de los repositorios caducados: %s"
 
 #: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Fallo al almacenar la caché de los repositorios caducados: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
@@ -4229,11 +4245,12 @@ msgstr "Añadido repositorio %s desde %s"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "Usando el ejecutable \"rpmkeys\" en %s para verificar las firmas"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"No se puede encontrar el ejecutable \"rpmkeys\" para verificar las firmas."
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
@@ -4244,6 +4261,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"\"allow_vendor_change\" está desactivado. Esta opción no está actualmente "
+"soportada por los comandos \"downgrade\" y \"distro-sync\""
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4297,6 +4316,8 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"Se han producido los siguientes problemas mientras se repetía la transacción "
+"del archivo \"{filename}\":"
 
 #: dnf/transaction_sr.py:68
 #, fuzzy
@@ -4307,12 +4328,12 @@ msgstr "Se produjo algún error durante la transacción."
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Versión mayor inválida \"{major}\", se esperaba un número."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Versión menor inválida \"{minor}\", se esperaba un número."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
@@ -4320,26 +4341,30 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Versión mayor incompatible \"{major}\", la versión mayor soportada es \""
+"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Se han especificado argumentos de TransactionReplay en conflicto: \"filename"
+"\", \"data\""
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Tipo inesperado para \"{id}\", se espera {exp}."
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Falta la clave \"{key}\"."
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Falta la clave del objeto \"{key}\" de un rpm."
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
