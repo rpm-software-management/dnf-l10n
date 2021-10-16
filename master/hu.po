@@ -21,7 +21,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-30 01:51+0000\n"
 "PO-Revision-Date: 2021-10-16 19:33+0000\n"
-"Last-Translator: Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
 "Language: hu\n"
@@ -620,12 +620,7 @@ msgstr ""
 "adatfolyamra váltson"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -633,8 +628,9 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"A modulok engedélyezett adatfolyamainak átváltása nem lehetséges.\n"
-"Ajánlatos eltávolítani a modul összes telepített tartalmát, és "
+"A modulok engedélyezett adatfolyamainak átváltása nem lehetséges, hacsak nem "
+"engedélyezte a module_stream_switch beállítási kapcsolóval.\n"
+"Ajánlatos inkább eltávolítani a modul összes telepített tartalmát, és "
 "visszaállítani a modult a(z) „{prog} module reset <modulnév>” paranccsal. Ha "
 "visszaállította a modult, akkor telepítheti a másik adatfolyamot."
 
@@ -1428,7 +1424,7 @@ msgstr "Hiba a tranzakció tárolásában: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
+msgstr "Figyelem, a következő hibák történtek a tranzakció futtatásakor:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -3648,7 +3644,7 @@ msgstr "Érvénytelen konfigurációs érték: %s=%s in %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "A(z) „{}” nem állítható erre: „{}”: {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
