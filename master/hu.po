@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-30 01:51+0000\n"
-"PO-Revision-Date: 2021-11-01 08:30+0000\n"
+"PO-Revision-Date: 2021-11-02 22:05+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
@@ -253,8 +253,8 @@ msgstr "Szükséges hely:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] "Legalább {0}MB több hely szükséges az {1} fájlrendszeren."
-msgstr[1] "Legalább {0}MB több hely szükséges az {1} fájlrendszeren."
+msgstr[0] "Legalább {0} MB további hely szükséges a(z) {1} fájlrendszeren."
+msgstr[1] "Legalább {0} MB további hely szükséges a(z) {1} fájlrendszeren."
 
 #: dnf/base.py:1011
 msgid "Error Summary"
@@ -616,8 +616,8 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
-"A művelet azt eredményezné, hogy „{0}” modul „{1}” adatfolyama a(z) „{2}” "
-"adatfolyamra váltson"
+"A művelet azt eredményezné, hogy „{0}” modul „{1}” forrása a(z) „{2}” "
+"forrásra váltson"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -628,11 +628,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"A modulok engedélyezett adatfolyamainak átváltása nem lehetséges, hacsak nem "
+"A modulok engedélyezett forrásainak átváltása nem lehetséges, hacsak nem "
 "engedélyezte a module_stream_switch beállítási kapcsolóval.\n"
 "Ajánlatos inkább eltávolítani a modul összes telepített tartalmát, és "
 "visszaállítani a modult a(z) „{prog} module reset <modulnév>” paranccsal. Ha "
-"visszaállította a modult, akkor telepítheti a másik adatfolyamot."
+"visszaállította a modult, akkor telepítheti a másik forrást."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -1505,12 +1505,12 @@ msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
 msgstr ""
-"Csak a modulnév, adatfolyam, architektúra vagy profil lesz használva. A "
+"Csak a modulnév, forrás, architektúra vagy profil lesz használva. A "
 "szükségtelen információk mellőzése az argumentumban: „{}”"
 
 #: dnf/cli/commands/module.py:80
 msgid "list all module streams, profiles and states"
-msgstr "az összes moduladatfolyam, profil és állapot listázása"
+msgstr "az összes modulforrás, profil és állapot felsorolása"
 
 #: dnf/cli/commands/module.py:108 dnf/cli/commands/module.py:131
 msgid "No matching Modules to list"
@@ -1522,11 +1522,11 @@ msgstr "részletes információ megjelenítése egy modulról"
 
 #: dnf/cli/commands/module.py:136
 msgid "enable a module stream"
-msgstr "egy moduladatfolyam engedélyezése"
+msgstr "egy modulforrás engedélyezése"
 
 #: dnf/cli/commands/module.py:160
 msgid "disable a module with all its streams"
-msgstr "egy modul letiltása az összes adatfolyamával együtt"
+msgstr "egy modul letiltása az összes forrásával együtt"
 
 #: dnf/cli/commands/module.py:184
 msgid "reset a module"
@@ -1538,7 +1538,7 @@ msgstr "modulprofil telepítése a csomagjaival együtt"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
-msgstr "az aktív adatfolyammal kapcsolatos csomagok frissítése"
+msgstr "az aktív forrással kapcsolatos csomagok frissítése"
 
 #: dnf/cli/commands/module.py:243
 msgid "remove installed module profiles and their packages"
@@ -1887,7 +1887,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:177
 msgid "list also packages of inactive module streams"
-msgstr "az inaktív modul adatfolyamok felsorolása"
+msgstr "az inaktív modul forrásainak felsorolása"
 
 #: dnf/cli/commands/repoquery.py:182
 msgid "show detailed information about the package"
@@ -3177,11 +3177,11 @@ msgstr "Modulprofilok letiltása"
 
 #: dnf/cli/output.py:1107
 msgid "Enabling module streams"
-msgstr "Moduladatfolyamok engedélyezése"
+msgstr "Modulforrások engedélyezése"
 
 #: dnf/cli/output.py:1115
 msgid "Switching module streams"
-msgstr "Moduladatfolyamok váltása"
+msgstr "Modulforrások váltása"
 
 #: dnf/cli/output.py:1123
 msgid "Disabling modules"
@@ -3863,7 +3863,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
-msgstr "Különböző adatfolyam engedélyeztése ehhez : „{}”."
+msgstr "Különböző forrás engedélyezése ennél : „{}”."
 
 #: dnf/module/__init__.py:27
 msgid "Nothing to show."
@@ -3887,19 +3887,19 @@ msgstr "Nincs ilyen modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr "Nincs ilyen folyam: {}"
+msgstr "Nincs ilyen forrás: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr "Nincs engedélyezett folyamat a modulhoz: {}"
+msgstr "Nincs engedélyezett forrás a modulhoz: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr "Nem engedélyezhető több adatfolyam egyszerre a(z) „{}” modulból"
+msgstr "Nem engedélyezhető több forrás egyszerre a(z) „{}” modulból"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr "Különböző folyamat engedélyezve a modulhoz: {}"
+msgstr "Különböző forrás engedélyezve a modulhoz: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3907,11 +3907,11 @@ msgstr "Nincs ilyen profil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr "A megadott profil nincs telepítve a {}"
+msgstr "A megadott profil nincs telepítve ehhez: {}"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
-msgstr "Nincs stream megadva a '{}' számára, kérjük, adja meg a streamet"
+msgstr "Nincs forrás megadva ehhez: „{}”, adja meg a forrást"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
@@ -4001,6 +4001,7 @@ msgstr ""
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
+"Nem érhetők el csomagok a distrosync futtatásához ennél a csomagnál: „{}”"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -4029,6 +4030,9 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"A(z) „{argument}” argumentum a(z) „{module}” modul {stream_count} forrásának "
+"felel meg („{streams}”), de egyik forrás sem engedélyezett vagy "
+"alapértelmezett"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4236,17 +4240,17 @@ msgstr "A(z) „{key}” objektumkulcs hiányzik egy RPM-ből."
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Váratlan „{reason}” csomagindok érték a(z) „{nevra}” RMP NEVRA-hoz."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "A(z) „{nevra}” csomag NEVRA értéke nem dolgozható fel."
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "A(z) „{nevra}” RPM NEVRA nem található."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4259,17 +4263,19 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"A(z) „{nevra}” csomag NEVRA nem érhető el a tárolókban a(z) „{action}” "
+"művelethez."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "A(z) „{nevra}” csomag NEVRA nincs telepítve a(z) „{action}” művelethez."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Váratlan „{action}” csomagművelet a(z) „{nevra}” RMP NEVRA-hoz."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4333,6 +4339,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"A(z) „{nevra}” csomag NEVRA, amely nem szerepelt a tranzakciófájlban, be "
+"lett húzva a tranzakcióba."
 
 #: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
