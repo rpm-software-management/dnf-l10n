@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-11-02 22:05+0000\n"
+"PO-Revision-Date: 2021-11-04 21:05+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/hu/>\n"
@@ -1340,7 +1340,7 @@ msgstr "Nincs tranzakciófájlnév megadva."
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
-msgstr "Több mint egy argumentum lett tranzakciófájl-névként megadva."
+msgstr "Egynél több argumentum lett megadva tranzakciófájl-névként."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -3878,10 +3878,8 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "Nincs profil megadva ehhez: „{}”, adja meg a profilt."
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "Nincsenek profilok a(z) {} modulhoz: {}"
+msgstr "Nincs ilyen modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -3901,7 +3899,7 @@ msgstr "Különböző forrás engedélyezve a modulhoz: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Nincs ilyen profil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
@@ -4121,6 +4119,8 @@ msgid ""
 "Using rpmkeys executable from {path} to verify signature for package: "
 "{package}."
 msgstr ""
+"A(z) {path} útvonalon lévő rpmkeys bináris használata a csomag aláírásának "
+"ellenőrzéséhez: {package}."
 
 #: dnf/rpm/miscutils.py:39
 msgid "Cannot find rpmkeys executable to verify signatures."
