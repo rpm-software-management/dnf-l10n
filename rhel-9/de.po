@@ -41,7 +41,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-01 09:05+0200\n"
-"PO-Revision-Date: 2021-11-06 23:17+0000\n"
+"PO-Revision-Date: 2021-11-08 00:48+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/de/>\n"
@@ -415,8 +415,8 @@ msgstr ""
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
-"Ignore Datei »%s«, die Datei ist ein Quellpaket und kann nicht aktualisiert "
-"werden"
+"Datei %s ist ein Quellpaket und kann nicht aktualisiert werden, wird "
+"ignoriert."
 
 #: dnf/base.py:2072
 #, python-format
@@ -712,7 +712,7 @@ msgstr "Veraltete Pakete"
 
 #: dnf/cli/cli.py:399
 msgid "No packages marked for distribution synchronization."
-msgstr "Keine Pakete zur Distributionsaktualisierung markiert"
+msgstr "Keine Pakete für die Distributionssynchronisation markiert."
 
 #: dnf/cli/cli.py:425 dnf/cli/commands/group.py:395
 #, python-format
@@ -774,7 +774,7 @@ msgstr ""
 #: dnf/cli/cli.py:749
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "Kein solcher Befehl: %s. Bitte %s --help verwenden."
+msgstr "Kein solcher Befehl: %s. Bitte %s --help verwenden"
 
 #: dnf/cli/cli.py:752
 #, python-format, python-brace-format
@@ -1226,7 +1226,7 @@ msgstr "Gruppeninformation anzeigen oder verwenden"
 
 #: dnf/cli/commands/group.py:72
 msgid "No group data available for configured repositories."
-msgstr "Keine Gruppendaten für konfigurierte Paketquellen verfügbar"
+msgstr "Keine Gruppendaten für konfigurierte Paketquellen verfügbar."
 
 #: dnf/cli/commands/group.py:126
 #, python-format
@@ -1497,7 +1497,7 @@ msgstr "Markierung für %s als vom Benutzer installiert wurde entfernt."
 #: dnf/cli/commands/mark.py:60
 #, python-format
 msgid "%s marked as group installed."
-msgstr "%s als markierte Gruppe installiert"
+msgstr "%s als installierte Gruppe markiert."
 
 #: dnf/cli/commands/mark.py:85 dnf/cli/commands/shell.py:129
 #: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:282
@@ -1829,7 +1829,7 @@ msgstr "Nur Ergebnisse anzeigen, welche Bereitstellungen und Dateien benötigen"
 
 #: dnf/cli/commands/repoquery.py:148
 msgid "show only results that recommend REQ"
-msgstr "Nur Ergebnisse anzeigen, die Abhängigkeiten vorschlagen."
+msgstr "nur Ergebnisse anzeigen, die REQ empfehlen"
 
 #: dnf/cli/commands/repoquery.py:151
 msgid "show only results that enhance REQ"
@@ -1858,8 +1858,8 @@ msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
-"zusammen mit --whatrequires und --requires --resolve, rekursive Abfrage der "
-"Pakete"
+"zusammen mit --whatrequires und --requires --resolve verwendet, Pakete "
+"rekursiv abfragen."
 
 #: dnf/cli/commands/repoquery.py:166
 msgid "show a list of all dependencies and what packages provide them"
@@ -1964,7 +1964,7 @@ msgstr "Quelle anzeigen, von der die Pakete heruntergeladen werden können"
 
 #: dnf/cli/commands/repoquery.py:233
 msgid "Display capabilities that the package conflicts with."
-msgstr "Fähigkeiten anzeigen, zu denen das Paket im Konflikt steht"
+msgstr "Fähigkeiten, mit denen das Paket in Konflikt steht, anzeigen."
 
 #: dnf/cli/commands/repoquery.py:234
 msgid ""
@@ -1980,15 +1980,15 @@ msgstr "Fähigkeiten anzeigen, die das Paket verbessert."
 
 #: dnf/cli/commands/repoquery.py:237
 msgid "Display capabilities provided by the package."
-msgstr "Fähigkeiten anzeigen, die das Paket bereitstellt"
+msgstr "Vom Paket bereitgestellte Fähigkeiten anzeigen."
 
 #: dnf/cli/commands/repoquery.py:238
 msgid "Display capabilities that the package recommends."
-msgstr "Fähigkeiten anzeigen, die das Paket empfiehlt"
+msgstr "Vom Paket empfohlene Fähigkeiten anzeigen."
 
 #: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package depends on."
-msgstr "Fähigkeiten anzeigen, von denen das Paket abhängt"
+msgstr "Fähigkeiten, von denen das Paket abhängt, anzeigen."
 
 #: dnf/cli/commands/repoquery.py:240
 #, python-format
@@ -2157,7 +2157,7 @@ msgstr "Skript zur Ausführung in der Shell {prog}"
 
 #: dnf/cli/commands/shell.py:142
 msgid "Unsupported key value."
-msgstr "Nicht unterstützter Schlüsselwert"
+msgstr "Nicht unterstützter Schlüsselwert."
 
 #: dnf/cli/commands/shell.py:158
 #, python-format
@@ -2172,11 +2172,11 @@ msgid ""
 "    If no value is given it prints the current value.\n"
 "    If value is given it sets that value."
 msgstr ""
-"{} arg [value]\n"
+"{} arg [Wert]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
 "        repo_id.gpgcheck, repo_id.exclude\n"
-"    Wenn kein value gesetzt wird, wird der aktuelle value ausgegeben.\n"
-"    Wenn ein value gegeben wird, wird dieser eingesetzt"
+"    Wenn kein Wert festgelegt wird, wird der aktuelle Wert ausgegeben.\n"
+"    Wenn ein Wert angegeben wird, wird dieser festgelegt."
 
 #: dnf/cli/commands/shell.py:181
 msgid ""
@@ -2265,7 +2265,7 @@ msgstr "Fehler: Öffnen von %s zu Lesezwecken schlug fehl"
 
 #: dnf/cli/commands/shell.py:284 dnf/cli/main.py:187
 msgid "Complete!"
-msgstr "Fertig."
+msgstr "Fertig!"
 
 #: dnf/cli/commands/shell.py:294
 msgid "Leaving Shell"
@@ -2792,7 +2792,7 @@ msgstr "Hauptbefehle"
 
 #: dnf/cli/option_parser.py:376
 msgid "List of Plugin Commands:"
-msgstr "Plugin-Befehle"
+msgstr "Liste der Plugin-Befehle:"
 
 #: dnf/cli/option_parser.py:413
 #, python-format
@@ -3547,7 +3547,7 @@ msgstr "Unbekannt"
 msgid "Unable to find information about the locking process (PID %d)"
 msgstr ""
 "Informationen über den blockierenden Prozess können nicht gefunden werden ("
-"Prozesskennung %d)."
+"Prozesskennung %d)"
 
 #: dnf/cli/utils.py:117
 #, python-format
@@ -4004,7 +4004,7 @@ msgstr "Kein Treffer für Paket {}"
 #: dnf/persistor.py:54
 #, python-format
 msgid "%s is empty file"
-msgstr "%s ist eine leere Datei."
+msgstr "%s ist eine leere Datei"
 
 #: dnf/persistor.py:91
 #, python-format
