@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-30 01:51+0000\n"
+"POT-Creation-Date: 2021-11-15 01:42+0000\n"
 "PO-Revision-Date: 2021-06-29 20:27+0000\n"
 "Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -208,43 +208,43 @@ msgstr "Virheellinen tsflag asetustiedostossa: %s"
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "Ryhmien tiedoston lisääminen ohjelmislähteelle epäonnistui: %s - %s"
 
-#: dnf/base.py:904
+#: dnf/base.py:922
 msgid "Running transaction check"
 msgstr "Suoritetaan transaktiotarkistus"
 
-#: dnf/base.py:912
+#: dnf/base.py:930
 msgid "Error: transaction check vs depsolve:"
 msgstr "Virhe: transaktion tarkistus vs. depsolve:"
 
-#: dnf/base.py:918
+#: dnf/base.py:936
 msgid "Transaction check succeeded."
 msgstr "Transaktiotarkistus onnistui."
 
-#: dnf/base.py:921
+#: dnf/base.py:939
 msgid "Running transaction test"
 msgstr "Suoritetaan transaktiotesti"
 
-#: dnf/base.py:931 dnf/base.py:1082
+#: dnf/base.py:949 dnf/base.py:1100
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:932
+#: dnf/base.py:950
 msgid "Transaction test error:"
 msgstr "Transaktion testivirhe:"
 
-#: dnf/base.py:943
+#: dnf/base.py:961
 msgid "Transaction test succeeded."
 msgstr "Transaktiotesti onnistui."
 
-#: dnf/base.py:964
+#: dnf/base.py:982
 msgid "Running transaction"
 msgstr "Suoritetaan transaktio"
 
-#: dnf/base.py:1001
+#: dnf/base.py:1019
 msgid "Disk Requirements:"
 msgstr "Levyvaatimukset:"
 
-#: dnf/base.py:1004
+#: dnf/base.py:1022
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
@@ -253,40 +253,40 @@ msgstr[0] ""
 msgstr[1] ""
 "Tiedostojärjestelmässä {1} tarvitaan vähintään {0} Mt enemmän tilaa."
 
-#: dnf/base.py:1011
+#: dnf/base.py:1029
 msgid "Error Summary"
 msgstr "Yhteenveto virheistä"
 
-#: dnf/base.py:1037
+#: dnf/base.py:1055
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB muutettu {prog}:n ulkopuolella."
 
-#: dnf/base.py:1083 dnf/base.py:1091
+#: dnf/base.py:1101 dnf/base.py:1109
 msgid "Could not run transaction."
 msgstr "Transaktiota ei voitu suorittaa."
 
-#: dnf/base.py:1086
+#: dnf/base.py:1104
 msgid "Transaction couldn't start:"
 msgstr "Transaktiota ei voitu aloittaa:"
 
-#: dnf/base.py:1100
+#: dnf/base.py:1118
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Transaktiotiedoston %s poistaminen epäonnistui"
 
-#: dnf/base.py:1182
+#: dnf/base.py:1200
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Joitain paketteja ei ladattu. Yritetään uudelleen."
 
-#: dnf/base.py:1212
+#: dnf/base.py:1230
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
 "Delta RPM -paketit vähensivät %.1f megatavun päivitykset %.1f megatavuun "
 "(%.1f%% säästetty)"
 
-#: dnf/base.py:1216
+#: dnf/base.py:1234
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
@@ -294,76 +294,76 @@ msgstr ""
 "Epäonnistuneet Delta RPM -paketit suurensivat %.1f megatavun päivitykset "
 "%.1f megatavuun (%.1f%% tuhlattu)"
 
-#: dnf/base.py:1258
+#: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "Paikallisia paketteja ei voi lisätä, koska transaktiotyö on jo olemassa"
 
-#: dnf/base.py:1272
+#: dnf/base.py:1290
 msgid "Could not open: {}"
 msgstr "Avaus ei onnistunut: {}"
 
-#: dnf/base.py:1310
+#: dnf/base.py:1328
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "Julkista avainta pakettia %s varten ei ole asennettu"
 
-#: dnf/base.py:1314
+#: dnf/base.py:1332
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Ongelma paketin %s avaamisessa"
 
-#: dnf/base.py:1322
+#: dnf/base.py:1340
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "Paketin %s julkiseen avaimeen ei luoteta"
 
-#: dnf/base.py:1326
+#: dnf/base.py:1344
 #, python-format
 msgid "Package %s is not signed"
 msgstr "Pakettia %s ei ole allekirjoitettu"
 
-#: dnf/base.py:1356
+#: dnf/base.py:1374
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Ei voida poistaa tiedostoa %s"
 
-#: dnf/base.py:1360
+#: dnf/base.py:1378
 #, python-format
 msgid "%s removed"
 msgstr "tiedosto %s on poistettu"
 
-#: dnf/base.py:1640
+#: dnf/base.py:1658
 msgid "No match for group package \"{}\""
 msgstr "Ei vastaavaa ryhmäpaketille \"{}\""
 
-#: dnf/base.py:1726
+#: dnf/base.py:1740
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Pakettien lisääminen ryhmästä '%s': %s"
 
-#: dnf/base.py:1749 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
+#: dnf/base.py:1763 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Ei mitään tehtävää."
 
-#: dnf/base.py:1767
+#: dnf/base.py:1781
 msgid "No groups marked for removal."
 msgstr "Ryhmiä ei ole merkitty poistettaviksi."
 
-#: dnf/base.py:1801
+#: dnf/base.py:1815
 msgid "No group marked for upgrade."
 msgstr "Ryhmää ei ole merkitty päivitettäväksi."
 
-#: dnf/base.py:2015
+#: dnf/base.py:2029
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Pakettia %s ei ole asennettu, sitä ei voi varhentaa."
 
-#: dnf/base.py:2017 dnf/base.py:2036 dnf/base.py:2049 dnf/base.py:2076
-#: dnf/base.py:2129 dnf/base.py:2137 dnf/base.py:2271 dnf/cli/cli.py:417
+#: dnf/base.py:2031 dnf/base.py:2050 dnf/base.py:2063 dnf/base.py:2090
+#: dnf/base.py:2143 dnf/base.py:2151 dnf/base.py:2285 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -373,134 +373,134 @@ msgstr "Pakettia %s ei ole asennettu, sitä ei voi varhentaa."
 msgid "No match for argument: %s"
 msgstr "Ei vastaavaa argumentille: %s"
 
-#: dnf/base.py:2024
+#: dnf/base.py:2038
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "Paketti %s alemmasta versiosta on jo asennettu, ei voi taaksepäin päivittää "
 "sitä."
 
-#: dnf/base.py:2047
+#: dnf/base.py:2061
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr ""
 "Pakettia %s ei ole asennettu, joten sen asentaminen uudelleen ei onnistu."
 
-#: dnf/base.py:2062
+#: dnf/base.py:2076
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "Tiedosto %s on lähdepaketti eikä sitä voida päivittää, ohitetaan."
 
-#: dnf/base.py:2073
+#: dnf/base.py:2087
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Pakettia %s ei ole asennettu, joten sitä ei voi päivittää."
 
-#: dnf/base.py:2083
+#: dnf/base.py:2097
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "%s:n sama tai uudempi versio on jo asennettu, ei voi päivittää sitä."
 
-#: dnf/base.py:2126 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2140 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Paketti %s saatavilla, mutta ei asennettu."
 
-#: dnf/base.py:2132
+#: dnf/base.py:2146
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paketti %s on saatavana, mutta asennettu eri arkkitehtuurille."
 
-#: dnf/base.py:2157
+#: dnf/base.py:2171
 #, python-format
 msgid "No package %s installed."
 msgstr "Pakettia %s ei ole asennettu."
 
-#: dnf/base.py:2175 dnf/cli/commands/install.py:136
+#: dnf/base.py:2189 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Ei kelvollinen muoto: %s"
 
-#: dnf/base.py:2190 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2204 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Paketteja ei ole merkitty poistettavaksi."
 
-#: dnf/base.py:2278 dnf/cli/cli.py:428
+#: dnf/base.py:2292 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Argumentin %s paketit saatavilla, mutta ei asennettu."
 
-#: dnf/base.py:2283
+#: dnf/base.py:2297
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Paketti %s alhaisimmasta versiosta on jo asennettu, ei voi taaksepäin "
 "päivittää sitä."
 
-#: dnf/base.py:2383
+#: dnf/base.py:2397
 msgid "No security updates needed, but {} update available"
 msgstr "Ei tarvittavia tietoturvapäivityksiä, mutta {} päivitys saatavilla"
 
-#: dnf/base.py:2385
+#: dnf/base.py:2399
 msgid "No security updates needed, but {} updates available"
 msgstr "Tietoturvapäivityksiä ei tarvita, mutta päivityksiä on {} saatavilla"
 
-#: dnf/base.py:2389
+#: dnf/base.py:2403
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita \"{}\":lle, mutta {} päivitys saatavilla"
 
-#: dnf/base.py:2391
+#: dnf/base.py:2405
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita \"{}\":lle, mutta {} päivitystä saatavilla"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2412
+#: dnf/base.py:2426
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Avainta ei voi noutaa komentorivipaketille: %s"
 
-#: dnf/base.py:2420
+#: dnf/base.py:2434
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Epäonnistunut paketti on: %s"
 
-#: dnf/base.py:2421
+#: dnf/base.py:2435
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-avaimet on määritetty %s:ksi"
 
-#: dnf/base.py:2433
+#: dnf/base.py:2447
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "Osoitteesta %s ladattu GPG-avain (0x%s) on jo asennetuna"
 
-#: dnf/base.py:2469
+#: dnf/base.py:2483
 msgid "The key has been approved."
 msgstr "Avain on hyväksytty."
 
-#: dnf/base.py:2472
+#: dnf/base.py:2486
 msgid "The key has been rejected."
 msgstr "Avain on hylätty."
 
-#: dnf/base.py:2505
+#: dnf/base.py:2519
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Avaimen tuonti epäonnistui (koodi %d)"
 
-#: dnf/base.py:2507
+#: dnf/base.py:2521
 msgid "Key imported successfully"
 msgstr "Avaimen tuonti onnistui"
 
-#: dnf/base.py:2511
+#: dnf/base.py:2525
 msgid "Didn't install any keys"
 msgstr "Mitään avaimia ei asennettu"
 
-#: dnf/base.py:2514
+#: dnf/base.py:2528
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -511,32 +511,32 @@ msgstr ""
 "eivät vastaa tätä pakettia.\n"
 "Tarkista, että tälle ohjelmistolähteelle on asetettu oikeat avainten URL:t."
 
-#: dnf/base.py:2525
+#: dnf/base.py:2539
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Avainten tuonti ei auttanut, ovatko avaimet vääriä?"
 
-#: dnf/base.py:2578
+#: dnf/base.py:2592
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kenties tarkoitit: {}"
 
-#: dnf/base.py:2610
+#: dnf/base.py:2624
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paikallisen ohjelmistolähteen \"{}\" paketilla \"{}\" on virheellinen "
 "tarkistussumma"
 
-#: dnf/base.py:2613
+#: dnf/base.py:2627
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Joillakin paikallisen ohjelmistolähteen paketeilla on virheellinen "
 "tarkistussumma"
 
-#: dnf/base.py:2616
+#: dnf/base.py:2630
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketti \"{}\" ohjelmistolähteestä \"{}\" on virheellinen tarkistussumma"
 
-#: dnf/base.py:2619
+#: dnf/base.py:2633
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -544,24 +544,24 @@ msgstr ""
 "Joissakin paketeissa on virheellinen välimuisti, mutta niitä ei voi ladata "
 "\"--cacheonly\" -vaihtoehdon takia"
 
-#: dnf/base.py:2637 dnf/base.py:2657
+#: dnf/base.py:2651 dnf/base.py:2671
 msgid "No match for argument"
 msgstr "Ei osumaa tälle argumentille"
 
-#: dnf/base.py:2645 dnf/base.py:2665
+#: dnf/base.py:2659 dnf/base.py:2679
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Kaikki osumat suodatettiin pois sulkemalla suodatus argumentille"
 
-#: dnf/base.py:2647
+#: dnf/base.py:2661
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Kaikki osumat suodatettiin modulaarisella suodatuksella argumentille"
 
-#: dnf/base.py:2663
+#: dnf/base.py:2677
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Kaikki vastaavuudet asennettiin toisesta ohjelmistolähteestä argumentille"
 
-#: dnf/base.py:2710
+#: dnf/base.py:2724
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketti %s on jo asennettu."
@@ -1790,8 +1790,12 @@ msgid "show only results that conflict REQ"
 msgstr "Näytä vain VAATIMUKSEN kanssa ristiriidassa olevat tulokset"
 
 #: dnf/cli/commands/repoquery.py:135
+#, fuzzy
+#| msgid ""
+#| "shows results that requires, suggests, supplements, enhances,or "
+#| "recommends package provides and files REQ"
 msgid ""
-"shows results that requires, suggests, supplements, enhances,or recommends "
+"shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
 msgstr ""
 "näyttää tulokset, jotka edellyttävät, ehdottavat, täydentävät, parantavat "
@@ -2065,7 +2069,15 @@ msgid "Package {} contains no files"
 msgstr "Paketti {} ei sisällä tiedostoja"
 
 #: dnf/cli/commands/repoquery.py:561
-#, python-brace-format
+#, fuzzy, python-brace-format
+#| msgid ""
+#| "No valid switch specified\n"
+#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
+#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
+#| "tree]\n"
+#| "\n"
+#| "description:\n"
+#| "  For the given packages print a tree of thepackages."
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2073,7 +2085,7 @@ msgid ""
 "tree]\n"
 "\n"
 "description:\n"
-"  For the given packages print a tree of thepackages."
+"  For the given packages print a tree of the packages."
 msgstr ""
 "Yhtään sopivaa vaihtoehtoa ei annettu:\n"
 "käyttö: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -3571,10 +3583,6 @@ msgstr "    Aloitettu : %s - %s sitten"
 msgid "    State  : %s"
 msgstr "    Tila  : %s"
 
-#: dnf/comps.py:104
-msgid "skipping."
-msgstr "ohitetaan."
-
 #: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
@@ -3775,7 +3783,7 @@ msgstr "DNSSEC-laajennus: "
 msgid "Testing already imported keys for their validity."
 msgstr "Testataan jo tuotujen avainten pätevyys."
 
-#: dnf/drpm.py:62 dnf/repo.py:268
+#: dnf/drpm.py:62 dnf/repo.py:267
 #, python-format
 msgid "unsupported checksum type: %s"
 msgstr "Ei tuettu tarkistussumman tyyppi: %s"
@@ -4082,7 +4090,7 @@ msgid "Already downloaded"
 msgstr "Ladattu jo"
 
 #. pinging mirrors, this might take a while
-#: dnf/repo.py:347
+#: dnf/repo.py:346
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
 msgstr "päätellään nopein peilipalvelin (%s palvelinta).. "
@@ -4361,6 +4369,9 @@ msgstr "Epäonnistui"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nimi-ei-määritelty>"
+
+#~ msgid "skipping."
+#~ msgstr "ohitetaan."
 
 #~ msgid ""
 #~ "Using rpmkeys executable from {path} to verify signature for package: "
