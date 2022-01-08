@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 01:46+0000\n"
+"POT-Creation-Date: 2022-01-08 01:50+0000\n"
 "PO-Revision-Date: 2021-11-17 21:16+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -2598,21 +2598,20 @@ msgstr "모든 질문에 대해 \"아니오\"(no)로 자동 응답합니다"
 
 #: dnf/cli/option_parser.py:261
 msgid ""
-"Enable additional repositories. List option. Supports globs, can be "
-"specified multiple times."
+"Temporarily enable repositories for the purposeof the current dnf command. "
+"Accepts an id, acomma-separated list of ids, or a glob of ids.This option "
+"can be specified multiple times."
 msgstr ""
-"추가 저장소를 활성화하십시오. 옵션이 나열됩니다. glob를 지원하며 여러 번 지"
-"정 할 수 있습니다."
 
-#: dnf/cli/option_parser.py:266
+#: dnf/cli/option_parser.py:268
 msgid ""
-"Disable repositories. List option. Supports globs, can be specified multiple "
-"times."
+"Temporarily disable active repositories for thepurpose of the current dnf "
+"command. Accepts an id,a comma-separated list of ids, or a glob of ids.This "
+"option can be specified multiple times, butis mutually exclusive with `--"
+"repo`."
 msgstr ""
-"저장소를 비활성화 합니다. 옵션이 나열됩니다. glob를 지원하며 여러 번 지정 할 "
-"수 있습니다."
 
-#: dnf/cli/option_parser.py:270
+#: dnf/cli/option_parser.py:275
 msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
@@ -2620,23 +2619,23 @@ msgstr ""
 "id 나 glob로 특정 리포지토리를 활성화할 수 있습니다. 여러 번 지정할 수 있습니"
 "다"
 
-#: dnf/cli/option_parser.py:275
+#: dnf/cli/option_parser.py:280
 msgid "enable repos with config-manager command (automatically saves)"
 msgstr "config-manager 명령으로 repos를 활성화합니다 (자동 저장)"
 
-#: dnf/cli/option_parser.py:279
+#: dnf/cli/option_parser.py:284
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr "config-manager 명령으로 repos를 비활성화합니다 (자동 저장)"
 
-#: dnf/cli/option_parser.py:283
+#: dnf/cli/option_parser.py:288
 msgid "exclude packages by name or glob"
 msgstr "이름이나 glob로 꾸러미를 제거합니다"
 
-#: dnf/cli/option_parser.py:288
+#: dnf/cli/option_parser.py:293
 msgid "disable excludepkgs"
 msgstr "excludepkgs 비활성화"
 
-#: dnf/cli/option_parser.py:293
+#: dnf/cli/option_parser.py:298
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
@@ -2644,87 +2643,87 @@ msgstr ""
 "사용 할 추가 레포지터리에 대한 이름표와 경로 (baseurl과 동일한 경로)를 여러 "
 "번 지정와 할 수 있습니다."
 
-#: dnf/cli/option_parser.py:297
+#: dnf/cli/option_parser.py:302
 msgid "disable removal of dependencies that are no longer used"
 msgstr "더 이상 사용되지 않는 종속성 제거를 비활성화"
 
-#: dnf/cli/option_parser.py:300
+#: dnf/cli/option_parser.py:305
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr "gpg 서명 확인을 비활성화 (RPM 정책이 허용하는 경우)"
 
-#: dnf/cli/option_parser.py:302
+#: dnf/cli/option_parser.py:307
 msgid "control whether color is used"
 msgstr "색상 사용 여부 제어"
 
-#: dnf/cli/option_parser.py:305
+#: dnf/cli/option_parser.py:310
 msgid "set metadata as expired before running the command"
 msgstr "명령을 실행하기 전에 메타 데이터를 만료된 것으로 설정"
 
-#: dnf/cli/option_parser.py:308
+#: dnf/cli/option_parser.py:313
 msgid "resolve to IPv4 addresses only"
 msgstr "IPv4 주소 만 확인"
 
-#: dnf/cli/option_parser.py:311
+#: dnf/cli/option_parser.py:316
 msgid "resolve to IPv6 addresses only"
 msgstr "IPv6 주소 만 확인"
 
-#: dnf/cli/option_parser.py:314
+#: dnf/cli/option_parser.py:319
 msgid "set directory to copy packages to"
 msgstr "꾸러미를 복사할 디렉토리를 설정하십시오"
 
-#: dnf/cli/option_parser.py:317
+#: dnf/cli/option_parser.py:322
 msgid "only download packages"
 msgstr "꾸러미만 내려받기"
 
-#: dnf/cli/option_parser.py:319
+#: dnf/cli/option_parser.py:324
 msgid "add a comment to transaction"
 msgstr "연결에 의견을 추가하십시오"
 
-#: dnf/cli/option_parser.py:322
+#: dnf/cli/option_parser.py:327
 msgid "Include bugfix relevant packages, in updates"
 msgstr "결점(bug) 수정 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:325
+#: dnf/cli/option_parser.py:330
 msgid "Include enhancement relevant packages, in updates"
 msgstr "개선된 기능과 관련된 꾸러미를 초신화에 포함"
 
-#: dnf/cli/option_parser.py:328
+#: dnf/cli/option_parser.py:333
 msgid "Include newpackage relevant packages, in updates"
 msgstr "새 꾸러미 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:331
+#: dnf/cli/option_parser.py:336
 msgid "Include security relevant packages, in updates"
 msgstr "보안 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:335
+#: dnf/cli/option_parser.py:340
 msgid "Include packages needed to fix the given advisory, in updates"
 msgstr "주어진 권고를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:339
+#: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given BZ, in updates"
 msgstr "주어진 BZ를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:342
+#: dnf/cli/option_parser.py:347
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr "주어진 CVE를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:347
+#: dnf/cli/option_parser.py:352
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr "심각도와 일치하는 보안 관련 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:353
+#: dnf/cli/option_parser.py:358
 msgid "Force the use of an architecture"
 msgstr "구조의 사용을 강제합니다"
 
-#: dnf/cli/option_parser.py:375
+#: dnf/cli/option_parser.py:380
 msgid "List of Main Commands:"
 msgstr "주요 명령 목록:"
 
-#: dnf/cli/option_parser.py:376
+#: dnf/cli/option_parser.py:381
 msgid "List of Plugin Commands:"
 msgstr "플러그인 명령 목록:"
 
-#: dnf/cli/option_parser.py:413
+#: dnf/cli/option_parser.py:418
 #, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr "‘%s' 인수를 인코딩할 수 없습니다: %s"
@@ -4267,6 +4266,20 @@ msgstr "실패하였습니다"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<name-unset>"
+
+#~ msgid ""
+#~ "Enable additional repositories. List option. Supports globs, can be "
+#~ "specified multiple times."
+#~ msgstr ""
+#~ "추가 저장소를 활성화하십시오. 옵션이 나열됩니다. glob를 지원하며 여러 번 "
+#~ "지정 할 수 있습니다."
+
+#~ msgid ""
+#~ "Disable repositories. List option. Supports globs, can be specified "
+#~ "multiple times."
+#~ msgstr ""
+#~ "저장소를 비활성화 합니다. 옵션이 나열됩니다. glob를 지원하며 여러 번 지정 "
+#~ "할 수 있습니다."
 
 #~ msgid "skipping."
 #~ msgstr "건너 뛰기."

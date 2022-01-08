@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-13 01:46+0000\n"
+"POT-Creation-Date: 2022-01-08 01:50+0000\n"
 "PO-Revision-Date: 2021-11-15 20:47+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -2684,21 +2684,20 @@ msgstr "automatycznie odpowiada nie na wszystkie pytania"
 
 #: dnf/cli/option_parser.py:261
 msgid ""
-"Enable additional repositories. List option. Supports globs, can be "
-"specified multiple times."
+"Temporarily enable repositories for the purposeof the current dnf command. "
+"Accepts an id, acomma-separated list of ids, or a glob of ids.This option "
+"can be specified multiple times."
 msgstr ""
-"Włącza dodatkowe repozytoria. Wyświetla listę opcji. Obsługuje wyrażenia "
-"regularne, może być podawane wiele razy."
 
-#: dnf/cli/option_parser.py:266
+#: dnf/cli/option_parser.py:268
 msgid ""
-"Disable repositories. List option. Supports globs, can be specified multiple "
-"times."
+"Temporarily disable active repositories for thepurpose of the current dnf "
+"command. Accepts an id,a comma-separated list of ids, or a glob of ids.This "
+"option can be specified multiple times, butis mutually exclusive with `--"
+"repo`."
 msgstr ""
-"Wyłącza repozytoria. Wyświetla listę opcji. Obsługuje wyrażenia regularne, "
-"może być podawane wiele razy."
 
-#: dnf/cli/option_parser.py:270
+#: dnf/cli/option_parser.py:275
 msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
@@ -2706,27 +2705,27 @@ msgstr ""
 "włącza tylko repozytoria podane według identyfikatora lub wyrażenia "
 "regularnego, może być podawane wiele razy"
 
-#: dnf/cli/option_parser.py:275
+#: dnf/cli/option_parser.py:280
 msgid "enable repos with config-manager command (automatically saves)"
 msgstr ""
 "włącza repozytoria za pomocą polecenia config-manager (zapisuje "
 "automatycznie)"
 
-#: dnf/cli/option_parser.py:279
+#: dnf/cli/option_parser.py:284
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr ""
 "wyłącza repozytoria za pomocą polecenia config-manager (zapisuje "
 "automatycznie)"
 
-#: dnf/cli/option_parser.py:283
+#: dnf/cli/option_parser.py:288
 msgid "exclude packages by name or glob"
 msgstr "wyklucza pakiety po nazwie lub wyrażeniu regularnym"
 
-#: dnf/cli/option_parser.py:288
+#: dnf/cli/option_parser.py:293
 msgid "disable excludepkgs"
 msgstr "wyłącza wykluczenia pakietów"
 
-#: dnf/cli/option_parser.py:293
+#: dnf/cli/option_parser.py:298
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
@@ -2734,95 +2733,95 @@ msgstr ""
 "etykieta i ścieżka do dodatkowego repozytorium (ta sama ścieżka, co "
 "w podstawowym adresie URL), może być podawane wiele razy."
 
-#: dnf/cli/option_parser.py:297
+#: dnf/cli/option_parser.py:302
 msgid "disable removal of dependencies that are no longer used"
 msgstr "wyłącza usuwanie nieużywanych zależności"
 
-#: dnf/cli/option_parser.py:300
+#: dnf/cli/option_parser.py:305
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr "wyłącza sprawdzanie podpisów GPG (jeśli zasady RPM na to pozwalają)"
 
-#: dnf/cli/option_parser.py:302
+#: dnf/cli/option_parser.py:307
 msgid "control whether color is used"
 msgstr "kontroluje, czy używać kolorów"
 
-#: dnf/cli/option_parser.py:305
+#: dnf/cli/option_parser.py:310
 msgid "set metadata as expired before running the command"
 msgstr "oznacza metadane jako nieważne przed wykonaniem polecenia"
 
-#: dnf/cli/option_parser.py:308
+#: dnf/cli/option_parser.py:313
 msgid "resolve to IPv4 addresses only"
 msgstr "rozwiązuje tylko adresy IPv4"
 
-#: dnf/cli/option_parser.py:311
+#: dnf/cli/option_parser.py:316
 msgid "resolve to IPv6 addresses only"
 msgstr "rozwiązuje tylko adresy IPv6"
 
-#: dnf/cli/option_parser.py:314
+#: dnf/cli/option_parser.py:319
 msgid "set directory to copy packages to"
 msgstr "ustawia katalog do skopiowania pakietów"
 
-#: dnf/cli/option_parser.py:317
+#: dnf/cli/option_parser.py:322
 msgid "only download packages"
 msgstr "tylko pobiera pakiety"
 
-#: dnf/cli/option_parser.py:319
+#: dnf/cli/option_parser.py:324
 msgid "add a comment to transaction"
 msgstr "dodaje komentarz do transakcji"
 
-#: dnf/cli/option_parser.py:322
+#: dnf/cli/option_parser.py:327
 msgid "Include bugfix relevant packages, in updates"
 msgstr "uwzględnia pakiety z poprawkami błędów w aktualizacjach"
 
-#: dnf/cli/option_parser.py:325
+#: dnf/cli/option_parser.py:330
 msgid "Include enhancement relevant packages, in updates"
 msgstr "uwzględnia pakiety z ulepszeniami w aktualizacjach"
 
-#: dnf/cli/option_parser.py:328
+#: dnf/cli/option_parser.py:333
 msgid "Include newpackage relevant packages, in updates"
 msgstr "uwzględnia nowe pakiety w aktualizacjach"
 
-#: dnf/cli/option_parser.py:331
+#: dnf/cli/option_parser.py:336
 msgid "Include security relevant packages, in updates"
 msgstr "uwzględnia pakiety z poprawkami bezpieczeństwa w aktualizacjach"
 
-#: dnf/cli/option_parser.py:335
+#: dnf/cli/option_parser.py:340
 msgid "Include packages needed to fix the given advisory, in updates"
 msgstr ""
 "uwzględnia pakiety wymagane do naprawienia podanego błędu bezpieczeństwa "
 "w aktualizacjach"
 
-#: dnf/cli/option_parser.py:339
+#: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given BZ, in updates"
 msgstr ""
 "uwzględnia pakiety wymagane do naprawienia podanego błędu z Bugzilli "
 "w aktualizacjach"
 
-#: dnf/cli/option_parser.py:342
+#: dnf/cli/option_parser.py:347
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr ""
 "uwzględnia pakiety wymagane do naprawienia podanego błędu bezpieczeństwa CVE "
 "w aktualizacjach"
 
-#: dnf/cli/option_parser.py:347
+#: dnf/cli/option_parser.py:352
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr ""
 "uwzględnia pakiety z poprawkami bezpieczeństwa pasujące ważnością "
 "w aktualizacjach"
 
-#: dnf/cli/option_parser.py:353
+#: dnf/cli/option_parser.py:358
 msgid "Force the use of an architecture"
 msgstr "wymusza użycie architektury"
 
-#: dnf/cli/option_parser.py:375
+#: dnf/cli/option_parser.py:380
 msgid "List of Main Commands:"
 msgstr "Lista głównych poleceń:"
 
-#: dnf/cli/option_parser.py:376
+#: dnf/cli/option_parser.py:381
 msgid "List of Plugin Commands:"
 msgstr "Lista poleceń wtyczek:"
 
-#: dnf/cli/option_parser.py:413
+#: dnf/cli/option_parser.py:418
 #, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr "Nie można zakodować parametru „%s”: %s"
@@ -4391,6 +4390,20 @@ msgstr "Niepowodzenie"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nie ustawiono nazwy>"
+
+#~ msgid ""
+#~ "Enable additional repositories. List option. Supports globs, can be "
+#~ "specified multiple times."
+#~ msgstr ""
+#~ "Włącza dodatkowe repozytoria. Wyświetla listę opcji. Obsługuje wyrażenia "
+#~ "regularne, może być podawane wiele razy."
+
+#~ msgid ""
+#~ "Disable repositories. List option. Supports globs, can be specified "
+#~ "multiple times."
+#~ msgstr ""
+#~ "Wyłącza repozytoria. Wyświetla listę opcji. Obsługuje wyrażenia "
+#~ "regularne, może być podawane wiele razy."
 
 #~ msgid "skipping."
 #~ msgstr "pomijanie."
