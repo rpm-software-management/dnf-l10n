@@ -2,14 +2,14 @@
 # Valentin Laskov <laskov@festa.bg>, 2016. #zanata
 # Valentin Laskov <laskov@festa.bg>, 2017. #zanata
 # Valentin Laskov <laskov@festa.bg>, 2018. #zanata
-# Valentin Laskov <v_laskov@mail.bg>, 2020, 2021.
+# Valentin Laskov <v_laskov@mail.bg>, 2020, 2021, 2022.
 # Nickys Music Group <nickys.music.group@gmail.com>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-01-20 01:58+0000\n"
-"PO-Revision-Date: 2021-01-07 21:36+0000\n"
+"PO-Revision-Date: 2022-01-26 22:16+0000\n"
 "Last-Translator: Valentin Laskov <v_laskov@mail.bg>\n"
 "Language-Team: Bulgarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/bg/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -90,8 +90,8 @@ msgstr "Стартиран dnf-automatic."
 #: dnf/automatic/main.py:308
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Почивка %s секунда"
-msgstr[1] "Почивка %s секунди"
+msgstr[0] "Изчакване %s секунда"
+msgstr[1] "Изчакване %s секунди"
 
 #: dnf/automatic/main.py:315
 msgid "System is off-line."
@@ -105,7 +105,7 @@ msgstr "Грешка: %s"
 
 #: dnf/base.py:148 dnf/base.py:477 dnf/base.py:479
 msgid "loading repo '{}' failure: {}"
-msgstr "хранилище '{}', проблем при зареждане: {}"
+msgstr "зареждане на хранилище '{}' проблем: {}"
 
 #: dnf/base.py:150
 msgid "Loading repository '{}' has failed"
@@ -510,15 +510,16 @@ msgstr "  * Може би имахте предвид: {}"
 
 #: dnf/base.py:2624
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr "Пакетът \"{}\" от локалното хранилище \"{}\" има некоректна чексума"
+msgstr ""
+"Пакетът \"{}\" от локалното хранилище \"{}\" има некоректна контролна сума"
 
 #: dnf/base.py:2627
 msgid "Some packages from local repository have incorrect checksum"
-msgstr "Някои пакети от локалното хранилище имат некоректна чексума"
+msgstr "Някои пакети от локалното хранилище имат некоректна контролна сума"
 
 #: dnf/base.py:2630
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr "Пакетът \"{}\" от хранилището \"{}\" има некоректна чексума"
+msgstr "Пакетът \"{}\" от хранилището \"{}\" има некоректна контролна сума"
 
 #: dnf/base.py:2633
 msgid ""
@@ -1097,7 +1098,7 @@ msgstr "покажи дублирани проблеми"
 
 #: dnf/cli/commands/check.py:49
 msgid "show obsoleted packages"
-msgstr "покажи остарелите пакети"
+msgstr "покажи пакетите, излизащи от употреба"
 
 #: dnf/cli/commands/check.py:52
 msgid "show problems with provides"
@@ -1227,11 +1228,11 @@ msgstr "показва скритите групи също"
 
 #: dnf/cli/commands/group.py:324
 msgid "show only installed groups"
-msgstr "показва инсталираните грули само"
+msgstr "показва инсталираните групи само"
 
 #: dnf/cli/commands/group.py:326
 msgid "show only available groups"
-msgstr "показва достъпните грули само"
+msgstr "показва достъпните групи само"
 
 #: dnf/cli/commands/group.py:328
 msgid "show also ID of groups"
@@ -3333,7 +3334,7 @@ msgstr "---> Пакетът %s.%s %s ще бъде инсталиран"
 #: dnf/cli/output.py:1895
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
-msgstr "---> Пакетът %s.%s %s ще бъде обновление"
+msgstr "---> Пакетът %s.%s %s е обновлението"
 
 #: dnf/cli/output.py:1897
 #, python-format
