@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 01:47+0000\n"
+"POT-Creation-Date: 2022-02-02 01:45+0000\n"
 "PO-Revision-Date: 2021-11-04 21:05+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -585,8 +585,8 @@ msgstr "A(z) „%s” fájl feldolgozása meghiúsult: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "A(z) „%s” fájl nem olvasható: %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
-#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:806
+#: dnf/cli/cli.py:810 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Konfigurációs hiba: %s"
@@ -722,20 +722,22 @@ msgid "No matching Packages to list"
 msgstr "Nem található csomag"
 
 #: dnf/cli/cli.py:604
-msgid "No Matches found"
-msgstr "Nincsenek találatok"
+msgid ""
+"No matches found. If searching for a file, try specifying the full path or "
+"using a wildcard prefix (\"*/\") at the beginning."
+msgstr ""
 
-#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Ismeretlen tároló: „%s”"
 
-#: dnf/cli/cli.py:685
+#: dnf/cli/cli.py:687
 #, python-format
 msgid "No repository match: %s"
 msgstr "Nincs illeszkedő tároló: %s"
 
-#: dnf/cli/cli.py:719
+#: dnf/cli/cli.py:721
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -743,12 +745,12 @@ msgstr ""
 "A parancsot rendszergazdai jogosultsággal kell futtatni (a legtöbb "
 "rendszeren a root felhasználóval)."
 
-#: dnf/cli/cli.py:749
+#: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Nincs ilyen parancs: %s. Kérjük használja a következőt: %s --help"
 
-#: dnf/cli/cli.py:752
+#: dnf/cli/cli.py:754
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -757,7 +759,7 @@ msgstr ""
 "Lehet hogy egy {PROG} bővítmény parancs, próbálja ezt: „{prog} install 'dnf-"
 "command(%s)'”"
 
-#: dnf/cli/cli.py:756
+#: dnf/cli/cli.py:758
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -766,7 +768,7 @@ msgstr ""
 "Lehet hogy egy {prog} bővítmény parancs, de a bővítmények betöltése jelenleg "
 "tiltott."
 
-#: dnf/cli/cli.py:814
+#: dnf/cli/cli.py:816
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -774,7 +776,7 @@ msgstr ""
 "A --destdir vagy a --downloaddir a --downloadonly, download vagy system-"
 "upgrade paranccsal együtt használandó."
 
-#: dnf/cli/cli.py:820
+#: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -782,7 +784,7 @@ msgstr ""
 "Az --enable, --set-enabled és a --disable, --set-disabled a config-manager "
 "paranccsal együtt használandó."
 
-#: dnf/cli/cli.py:902
+#: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -791,11 +793,11 @@ msgstr ""
 "biztonsági házirend alapján (az üzenet némításához lásd a „gpgcheck” "
 "bejegyzést a dnf.conf(5) man oldalon)"
 
-#: dnf/cli/cli.py:922
+#: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
 msgstr "A(z) „{}” konfigurációs fájl nem létezik"
 
-#: dnf/cli/cli.py:942
+#: dnf/cli/cli.py:944
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -803,28 +805,28 @@ msgstr ""
 "A kiadási verziószám nem észlelhető (használja a „--releasever” kapcsolót a "
 "megadásához)"
 
-#: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "{} argumentum: nem engedélyezett a(z) {} argumentummal"
 
-#: dnf/cli/cli.py:1023
+#: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "A(z) „%s” parancs már létezik"
 
-#: dnf/cli/cli.py:1043
+#: dnf/cli/cli.py:1045
 msgid "Excludes in dnf.conf: "
 msgstr "Kizárások a dnf.conf-ban: "
 
-#: dnf/cli/cli.py:1046
+#: dnf/cli/cli.py:1048
 msgid "Includes in dnf.conf: "
 msgstr "Belevételek a dnf.conf-ban: "
 
-#: dnf/cli/cli.py:1049
+#: dnf/cli/cli.py:1051
 msgid "Excludes in repo "
 msgstr "Kizárások a tárolóban "
 
-#: dnf/cli/cli.py:1052
+#: dnf/cli/cli.py:1054
 msgid "Includes in repo "
 msgstr "Belevételek a tárolóban "
 
@@ -4386,6 +4388,9 @@ msgstr "Sikertelen"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<üres név>"
+
+#~ msgid "No Matches found"
+#~ msgstr "Nincsenek találatok"
 
 #~ msgid ""
 #~ "Enable additional repositories. List option. Supports globs, can be "

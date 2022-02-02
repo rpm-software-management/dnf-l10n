@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 01:47+0000\n"
+"POT-Creation-Date: 2022-02-02 01:45+0000\n"
 "PO-Revision-Date: 2021-08-31 17:04+0000\n"
 "Last-Translator: Alessio <alciregi@posteo.net>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -603,8 +603,8 @@ msgstr "File di analisi \"%s\"fallito: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Impossibile leggere il file \"%s\": %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
-#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:806
+#: dnf/cli/cli.py:810 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Errore di configurazione: %s"
@@ -743,20 +743,22 @@ msgid "No matching Packages to list"
 msgstr "Nessun pacchetto corrispondente"
 
 #: dnf/cli/cli.py:604
-msgid "No Matches found"
-msgstr "Nessuna corrispondenza trovata"
+msgid ""
+"No matches found. If searching for a file, try specifying the full path or "
+"using a wildcard prefix (\"*/\") at the beginning."
+msgstr ""
 
-#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Repository sconosciuto: '%s'"
 
-#: dnf/cli/cli.py:685
+#: dnf/cli/cli.py:687
 #, python-format
 msgid "No repository match: %s"
 msgstr "Respository senza corrispondenza: %s"
 
-#: dnf/cli/cli.py:719
+#: dnf/cli/cli.py:721
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -764,12 +766,12 @@ msgstr ""
 "Questo comando deve essere eseguito con privilegi di superuser (sotto "
 "l'utente root nella maggior parte dei sistemi)."
 
-#: dnf/cli/cli.py:749
+#: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Comando sconosciuto: %s. Eseguire %s --help"
 
-#: dnf/cli/cli.py:752
+#: dnf/cli/cli.py:754
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -778,7 +780,7 @@ msgstr ""
 "Potrebbe essere il comando di un plugin di {PROG} , provare: \"{prog} "
 "install 'dnf-command(%s)'\""
 
-#: dnf/cli/cli.py:756
+#: dnf/cli/cli.py:758
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -787,7 +789,7 @@ msgstr ""
 "Potrebbe essere il comando di un plugin di {prog} , ma il caricamento dei "
 "plugin è disabilitato."
 
-#: dnf/cli/cli.py:814
+#: dnf/cli/cli.py:816
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -795,7 +797,7 @@ msgstr ""
 "--destdir o --downloaddir devono essere usati con --downloadonly oppure coi "
 "comandi download o system-upgrade."
 
-#: dnf/cli/cli.py:820
+#: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -803,7 +805,7 @@ msgstr ""
 "--enable, --set-enabled e --disable, --set-disabled devono essere usati col "
 "comando config-manager."
 
-#: dnf/cli/cli.py:902
+#: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -812,11 +814,11 @@ msgstr ""
 "politica di sicurezza vigente degli RPM (guarda 'gpgcheck' in dnf.conf(5) "
 "per come zittire questo messaggio)"
 
-#: dnf/cli/cli.py:922
+#: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
 msgstr "Il file di configurazione \"{}\" non esiste"
 
-#: dnf/cli/cli.py:942
+#: dnf/cli/cli.py:944
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -824,31 +826,31 @@ msgstr ""
 "Impossibile determinare la versione del sistema (usa '--releasever' per "
 "specificare la versione di sistema)"
 
-#: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "argomento {}: non permesso con l'argomento {}"
 
-#: dnf/cli/cli.py:1023
+#: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Comando \"%s\" già definito"
 
-#: dnf/cli/cli.py:1043
+#: dnf/cli/cli.py:1045
 #, fuzzy
 msgid "Excludes in dnf.conf: "
 msgstr "Escluso in dnf.conf: "
 
-#: dnf/cli/cli.py:1046
+#: dnf/cli/cli.py:1048
 #, fuzzy
 msgid "Includes in dnf.conf: "
 msgstr "Incluso in dnf.conf: "
 
-#: dnf/cli/cli.py:1049
+#: dnf/cli/cli.py:1051
 #, fuzzy
 msgid "Excludes in repo "
 msgstr "Escluso nel repo "
 
-#: dnf/cli/cli.py:1052
+#: dnf/cli/cli.py:1054
 #, fuzzy
 msgid "Includes in repo "
 msgstr "Incluso nel repo "
@@ -4345,6 +4347,9 @@ msgstr "Non riuscito"
 #| msgid "<unset>"
 msgid "<name-unset>"
 msgstr "<non impostato>"
+
+#~ msgid "No Matches found"
+#~ msgstr "Nessuna corrispondenza trovata"
 
 #~ msgid "skipping."
 #~ msgstr "operazione saltata."

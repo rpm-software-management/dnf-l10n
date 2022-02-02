@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 01:47+0000\n"
+"POT-Creation-Date: 2022-02-02 01:45+0000\n"
 "PO-Revision-Date: 2020-09-08 22:00+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -549,8 +549,8 @@ msgstr "解析「%s」檔案失敗：%s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "無法讀取「%s」檔案：%s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
-#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:806
+#: dnf/cli/cli.py:810 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "設定檔錯誤：%s"
@@ -685,31 +685,33 @@ msgid "No matching Packages to list"
 msgstr "沒有符合的軟體包可列出"
 
 #: dnf/cli/cli.py:604
-msgid "No Matches found"
-msgstr "沒有符合項目"
+msgid ""
+"No matches found. If searching for a file, try specifying the full path or "
+"using a wildcard prefix (\"*/\") at the beginning."
+msgstr ""
 
-#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "未知的軟體庫：「%s」"
 
-#: dnf/cli/cli.py:685
+#: dnf/cli/cli.py:687
 #, python-format
 msgid "No repository match: %s"
 msgstr "沒有軟體庫符合：%s"
 
-#: dnf/cli/cli.py:719
+#: dnf/cli/cli.py:721
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr "此命令需要以超級使用者權限執行（大部分系統是在 root 使用者下）。"
 
-#: dnf/cli/cli.py:749
+#: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "未知的指令：%s。請使用 %s --help"
 
-#: dnf/cli/cli.py:752
+#: dnf/cli/cli.py:754
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -717,14 +719,14 @@ msgid ""
 msgstr ""
 "其可能是 {PROG} 插件的命令，請試試：「{prog} install 'dnf-command(%s)'」"
 
-#: dnf/cli/cli.py:756
+#: dnf/cli/cli.py:758
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr "其可能是 {prog} 插件的命令，但目前載入插件的功能處於停用狀態。"
 
-#: dnf/cli/cli.py:814
+#: dnf/cli/cli.py:816
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -732,7 +734,7 @@ msgstr ""
 "--destdir 或 --downloaddir 必須與 --downloadonly、download 或 system-upgrade "
 "指令一起使用。"
 
-#: dnf/cli/cli.py:820
+#: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -740,7 +742,7 @@ msgstr ""
 "--enable、--set-enabled 及 --disable、--set-disabled 必須與 config-manager 命"
 "令一起使用。"
 
-#: dnf/cli/cli.py:902
+#: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -748,38 +750,38 @@ msgstr ""
 "警告：因為作用中的 RPM 安全性策略，已強制執行全域 GPG 簽名檢查（請參閱 dnf."
 "conf(5) 的「gpgcheck」以了解如何隱藏此則訊息）"
 
-#: dnf/cli/cli.py:922
+#: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
 msgstr "「{}」組態檔不存在"
 
-#: dnf/cli/cli.py:942
+#: dnf/cli/cli.py:944
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr "無法偵測發行版本（使用「--releasever」指定發行版本）"
 
-#: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "引數 {}：不允許與 {} 引數使用"
 
-#: dnf/cli/cli.py:1023
+#: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "指令「%s」已經定義"
 
-#: dnf/cli/cli.py:1043
+#: dnf/cli/cli.py:1045
 msgid "Excludes in dnf.conf: "
 msgstr "排除於 dnf.conf： "
 
-#: dnf/cli/cli.py:1046
+#: dnf/cli/cli.py:1048
 msgid "Includes in dnf.conf: "
 msgstr "包含於 dnf.conf： "
 
-#: dnf/cli/cli.py:1049
+#: dnf/cli/cli.py:1051
 msgid "Excludes in repo "
 msgstr "排除於軟體庫 "
 
-#: dnf/cli/cli.py:1052
+#: dnf/cli/cli.py:1054
 msgid "Includes in repo "
 msgstr "包含於軟體庫 "
 
@@ -4257,6 +4259,9 @@ msgstr "失敗"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<名稱未設定>"
+
+#~ msgid "No Matches found"
+#~ msgstr "沒有符合項目"
 
 #~ msgid ""
 #~ "Enable additional repositories. List option. Supports globs, can be "

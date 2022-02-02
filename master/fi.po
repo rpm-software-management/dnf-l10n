@@ -17,11 +17,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-01 01:47+0000\n"
+"POT-Creation-Date: 2022-02-02 01:45+0000\n"
 "PO-Revision-Date: 2022-02-02 11:16+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -581,8 +581,8 @@ msgstr "Tiedoston \"%s\" jäsentäminen epäonnistui: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Tiedostoa \"%s\" ei voi lukea: %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
-#: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:806
+#: dnf/cli/cli.py:810 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Asetusvirhe: %s"
@@ -715,20 +715,22 @@ msgid "No matching Packages to list"
 msgstr "Ei yhtään vastaavaa pakettia lueteltavaksi"
 
 #: dnf/cli/cli.py:604
-msgid "No Matches found"
-msgstr "Hakutuloksia ei löytynyt"
+msgid ""
+"No matches found. If searching for a file, try specifying the full path or "
+"using a wildcard prefix (\"*/\") at the beginning."
+msgstr ""
 
-#: dnf/cli/cli.py:671 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Tuntematon ohjelmistolähde: '%s'"
 
-#: dnf/cli/cli.py:685
+#: dnf/cli/cli.py:687
 #, python-format
 msgid "No repository match: %s"
 msgstr "Ei ohjelmistolähdevastaavuutta: %s"
 
-#: dnf/cli/cli.py:719
+#: dnf/cli/cli.py:721
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -736,12 +738,12 @@ msgstr ""
 "Tämä komento on suoritettava pääkäyttäjän oikeuksilla (käyttäjänä root "
 "useimmissa järjestelmissä)."
 
-#: dnf/cli/cli.py:749
+#: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Komentoa %s ei ole olemassa. Käytä komentoa %s --help"
 
-#: dnf/cli/cli.py:752
+#: dnf/cli/cli.py:754
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -750,7 +752,7 @@ msgstr ""
 "Se voi olla {PROG}-liitännäiskomento, kokeile: '{prog} install 'dnf-"
 "command(%s)''"
 
-#: dnf/cli/cli.py:756
+#: dnf/cli/cli.py:758
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -759,7 +761,7 @@ msgstr ""
 "Se voi olla {prog}-liitännäiskomento, mutta liitännäisten lataaminen on "
 "tällä hetkellä pois käytöstä."
 
-#: dnf/cli/cli.py:814
+#: dnf/cli/cli.py:816
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -767,7 +769,7 @@ msgstr ""
 "--destdir tai --downloaddir on käytettävä yhdessä --downloadonly tai "
 "download tai system-upgrade -komennon kanssa."
 
-#: dnf/cli/cli.py:820
+#: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -775,7 +777,7 @@ msgstr ""
 "--enable, --set-enabled ja --disable, --set-disabled on käytettävä config-"
 "manager -komennon kanssa."
 
-#: dnf/cli/cli.py:902
+#: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -784,11 +786,11 @@ msgstr ""
 "aktiivisen RPM-tietoturvakäytännön mukaisesti (katso tämän viestin "
 "kutistaminen kohdasta dnf.conf (5) 'gpgcheck')"
 
-#: dnf/cli/cli.py:922
+#: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
 msgstr "Asetustiedostoa \"{}\" ei ole olemassa"
 
-#: dnf/cli/cli.py:942
+#: dnf/cli/cli.py:944
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -796,28 +798,28 @@ msgstr ""
 "Julkaisuversiota ei voitu havaita (käytä valitsinta '--releasever' "
 "määrittääksesi julkaisuversion)"
 
-#: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
 msgstr "argumentti {}: ei sallittu argumentin {} kanssa"
 
-#: dnf/cli/cli.py:1023
+#: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Komento ”%s” on jo määritelty"
 
-#: dnf/cli/cli.py:1043
+#: dnf/cli/cli.py:1045
 msgid "Excludes in dnf.conf: "
 msgstr "Ei sisällytä dnf.conf:iin: "
 
-#: dnf/cli/cli.py:1046
+#: dnf/cli/cli.py:1048
 msgid "Includes in dnf.conf: "
 msgstr "Sisällytä dnf.conf:iin: "
 
-#: dnf/cli/cli.py:1049
+#: dnf/cli/cli.py:1051
 msgid "Excludes in repo "
 msgstr "Ei sisällytä ohjelmistolähteeseen "
 
-#: dnf/cli/cli.py:1052
+#: dnf/cli/cli.py:1054
 msgid "Includes in repo "
 msgstr "Sisällytä ohjelmistolähteeseen "
 
@@ -4363,6 +4365,9 @@ msgstr "Epäonnistui"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nimi-ei-määritelty>"
+
+#~ msgid "No Matches found"
+#~ msgstr "Hakutuloksia ei löytynyt"
 
 #~ msgid ""
 #~ "Enable additional repositories. List option. Supports globs, can be "
