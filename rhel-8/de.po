@@ -36,13 +36,14 @@
 # Sebastian Poeplau <sebastian.poeplau@mailbox.org>, 2020.
 # CoconutNut <patrick.vollandt@mein-gym.de>, 2021.
 # Ettore Atalan <atalanttore@googlemail.com>, 2021.
+# Philipp Trulson <philipp@trulson.de>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2021-12-13 13:16+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"PO-Revision-Date: 2022-02-04 15:48+0000\n"
+"Last-Translator: Philipp Trulson <philipp@trulson.de>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/de/>\n"
 "Language: de\n"
@@ -50,7 +51,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -803,6 +804,8 @@ msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable und --set-enabled sowie --disable und --set-disabled müssen mit dem "
+"config-manager Befehl verwendet werden."
 
 #: dnf/cli/cli.py:902
 msgid ""
@@ -1483,6 +1486,9 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"install: Als vom Benutzer installiert markieren\n"
+"remove: Bestehende Markierung entfernen\n"
+"group: Als von Gruppe installiert markieren"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
@@ -1531,11 +1537,11 @@ msgstr "detaillierte Informationen über ein Modul ausgeben"
 
 #: dnf/cli/commands/module.py:136
 msgid "enable a module stream"
-msgstr ""
+msgstr "Modul-Stream aktivieren"
 
 #: dnf/cli/commands/module.py:160
 msgid "disable a module with all its streams"
-msgstr ""
+msgstr "Modul mit allen Streams deaktivieren"
 
 #: dnf/cli/commands/module.py:184
 msgid "reset a module"
@@ -2033,6 +2039,8 @@ msgstr ""
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
+"Nur Pakete anzeigen, die mit dem \"{prog} autoremove\" Befehl entfernt "
+"werden können."
 
 #: dnf/cli/commands/repoquery.py:258
 msgid "Display only packages that were installed by user."
@@ -2504,10 +2512,14 @@ msgstr ""
 #: dnf/cli/main.py:135
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
+"Versuchen Sie '{}' zur Befehlszeile hinzuzufügen, um Pakete mit Konflikten "
+"zu ersetzen"
 
 #: dnf/cli/main.py:139
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr ""
+"Versuchen Sie '{}' zur Befehlszeile hinzuzufügen, um nicht-installierbare "
+"Pakete zu überspringen"
 
 #: dnf/cli/main.py:142
 msgid " or '{}' to skip uninstallable packages"
@@ -2616,7 +2628,6 @@ msgid "try the best available package versions in transactions."
 msgstr "Die bestmöglich verfügbaren Paketversionen in Transaktionen verwenden."
 
 #: dnf/cli/option_parser.py:223
-#, fuzzy
 msgid "do not limit the transaction to the best candidate"
 msgstr "die Transaktion nicht auf den besten Kandidaten beschränken"
 
@@ -2788,7 +2799,7 @@ msgstr "Eine bestimmte Architektur erzwingen"
 
 #: dnf/cli/option_parser.py:375
 msgid "List of Main Commands:"
-msgstr "Hauptbefehle"
+msgstr "Hauptbefehle:"
 
 #: dnf/cli/option_parser.py:376
 msgid "List of Plugin Commands:"
