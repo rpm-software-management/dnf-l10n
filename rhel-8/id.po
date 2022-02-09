@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-11 16:00+0200\n"
-"PO-Revision-Date: 2022-02-06 10:16+0000\n"
+"PO-Revision-Date: 2022-02-10 02:20+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/id/>\n"
@@ -196,28 +196,28 @@ msgstr "Anda dapa menghapus paket yang disinggahkan dengan mengeksekusi '%s'."
 #: dnf/base.py:606
 #, python-format
 msgid "Invalid tsflag in config file: %s"
-msgstr ""
+msgstr "tsflag tak valid dalam berkas konfig: %s"
 
 #: dnf/base.py:662
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr ""
+msgstr "Gagal menambah berkas grup untuk repositori: %s - %s"
 
 #: dnf/base.py:904
 msgid "Running transaction check"
-msgstr ""
+msgstr "Menjalankan pemeriksaan transaksi"
 
 #: dnf/base.py:912
 msgid "Error: transaction check vs depsolve:"
-msgstr ""
+msgstr "Galat: pemeriksaan transaksi vs depsolve:"
 
 #: dnf/base.py:918
 msgid "Transaction check succeeded."
-msgstr ""
+msgstr "Pemeriksaan transaksi sukses."
 
 #: dnf/base.py:921
 msgid "Running transaction test"
-msgstr ""
+msgstr "Menjalankan uji transaksi"
 
 #: dnf/base.py:931 dnf/base.py:1082
 msgid "RPM: {}"
@@ -225,47 +225,47 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:932
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Galat uji transaksi:"
 
 #: dnf/base.py:943
 msgid "Transaction test succeeded."
-msgstr ""
+msgstr "Uji transaksi sukses."
 
 #: dnf/base.py:964
 msgid "Running transaction"
-msgstr ""
+msgstr "Menjalankan transaksi"
 
 #: dnf/base.py:1001
 msgid "Disk Requirements:"
-msgstr ""
+msgstr "Kebutuhan Disk:"
 
 #: dnf/base.py:1004
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "Paling tidak {0}MB lagi diperlukan ruang pada sistem berkas {1}."
 
 #: dnf/base.py:1011
 msgid "Error Summary"
-msgstr ""
+msgstr "Ringkasan Galat"
 
 #: dnf/base.py:1037
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB diubah di luar dari {prog}."
 
 #: dnf/base.py:1083 dnf/base.py:1091
 msgid "Could not run transaction."
-msgstr ""
+msgstr "Tidak bisa menjalankan transaksi."
 
 #: dnf/base.py:1086
 msgid "Transaction couldn't start:"
-msgstr ""
+msgstr "Transaksi tidak bisa mulai:"
 
 #: dnf/base.py:1100
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr ""
+msgstr "Gagal menghapus berkas transaksi %s"
 
 #: dnf/base.py:1182
 msgid "Some packages were not downloaded. Retrying."
@@ -324,12 +324,12 @@ msgstr "%s dihapus"
 
 #: dnf/base.py:1639
 msgid "No match for group package \"{}\""
-msgstr ""
+msgstr "Tidak ada yang cocok untuk paket grup \"{}\""
 
 #: dnf/base.py:1725
 #, python-format
 msgid "Adding packages from group '%s': %s"
-msgstr ""
+msgstr "Menambahkan paket dari grup '%s': %s"
 
 #: dnf/base.py:1748 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
@@ -340,16 +340,16 @@ msgstr "Tidak ada yang dilakukan."
 
 #: dnf/base.py:1766
 msgid "No groups marked for removal."
-msgstr ""
+msgstr "Tidak ada grup yang ditandai untuk penghapusan."
 
 #: dnf/base.py:1800
 msgid "No group marked for upgrade."
-msgstr ""
+msgstr "Tidak ada grup yang ditandai untuk peningkatan."
 
 #: dnf/base.py:2014
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr ""
+msgstr "Paket %s tidak terpasang, tidak bisa menuruntingkatkan itu."
 
 #: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2075
 #: dnf/base.py:2128 dnf/base.py:2136 dnf/base.py:2270 dnf/cli/cli.py:417
@@ -366,48 +366,52 @@ msgstr "Tidak ada yang cocok untuk argumen: %s"
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
+"Paket %s dengan versi lebih rendah sudah terpasang, tidak bisa "
+"menuruntingkatkan itu."
 
 #: dnf/base.py:2046
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr ""
+msgstr "Paket %s tidak terpasang, tidak bisa memasang ulang itu."
 
 #: dnf/base.py:2061
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
-msgstr ""
+msgstr "Berkas %s adalah paket sumber dan tidak bisa diperbarui, mengabaikan."
 
 #: dnf/base.py:2072
 #, python-format
 msgid "Package %s not installed, cannot update it."
-msgstr ""
+msgstr "Paket %s tidak terpasang, tidak bisa memperbarui itu."
 
 #: dnf/base.py:2082
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
+"Versi %s yang sama atau lebih tinggi telah terpasang, tidak bisa memperbarui "
+"itu."
 
 #: dnf/base.py:2125 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
-msgstr ""
+msgstr "Paket %s tersedia, tapi tidak terpasang."
 
 #: dnf/base.py:2131
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr ""
+msgstr "Paket %s tersedia, tapi terpasang untuk arsitektur lain."
 
 #: dnf/base.py:2156
 #, python-format
 msgid "No package %s installed."
-msgstr ""
+msgstr "Tidak ada paket %s yang terpasang."
 
 #: dnf/base.py:2174 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Bukan bentuk yang valid: %s"
 
 #: dnf/base.py:2189 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
@@ -417,70 +421,78 @@ msgstr "Tidak ada paket yang ditandai untuk dihapus."
 #: dnf/base.py:2277 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr ""
+msgstr "Paket untuk argumen %s tersedia, tapi tidak terpasang."
 
 #: dnf/base.py:2282
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
+"Paket %s dengan versi terrendah telah terpasang, tidak bisa "
+"menuruntingkatkan itu."
 
 #: dnf/base.py:2382
 msgid "No security updates needed, but {} update available"
 msgstr ""
+"Tidak ada pembaruan keamanan yang diperlukan, tapi tersedia {} pembaruan"
 
 #: dnf/base.py:2384
 msgid "No security updates needed, but {} updates available"
 msgstr ""
+"Tidak ada pembaruan keamanan yang diperlukan, tapi tersedia {} pembaruan"
 
 #: dnf/base.py:2388
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
+"Tidak ada pembaruan keamanan yang diperlukan bagi \"{}\", tapi tersedia {} "
+"pembaruan"
 
 #: dnf/base.py:2390
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
+"Tidak ada pembaruan keamanan yang diperlukan bagi \"{}\", tapi tersedia {} "
+"pembaruan"
 
 #. raise an exception, because po.repoid is not in self.repos
 #: dnf/base.py:2411
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Tidak bisa mengambil suatu kunci bagi sebuah paket baris perintah: %s"
 
 #: dnf/base.py:2419
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". Paket yang gagal adalah: %s"
 
 #: dnf/base.py:2420
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr ""
+msgstr "Kunci GPG dikonfigurasi sebagai: %s"
 
 #: dnf/base.py:2432
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
-msgstr ""
+msgstr "Kunci GPG pada %s (0x%s) telah terpasang"
 
 #: dnf/base.py:2468
 msgid "The key has been approved."
-msgstr ""
+msgstr "Kunci telah disetujui."
 
 #: dnf/base.py:2471
 msgid "The key has been rejected."
-msgstr ""
+msgstr "Kunci telah ditolak."
 
 #: dnf/base.py:2504
 #, python-format
 msgid "Key import failed (code %d)"
-msgstr ""
+msgstr "Impor kunci gagal (kode %d)"
 
 #: dnf/base.py:2506
 msgid "Key imported successfully"
-msgstr ""
+msgstr "Kunci sukses diimpor"
 
 #: dnf/base.py:2510
 msgid "Didn't install any keys"
-msgstr ""
+msgstr "Tidak memasang kunci apa pun"
 
 #: dnf/base.py:2513
 #, python-format
@@ -489,48 +501,53 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
+"Kunci-kunci GPG yang didaftar untuk repositori \"%s\" telah terpasang namun "
+"mereka tidak benar bagi paket ini.\n"
+"Periksa apakah URL kunci yang benar dikonfigurasikan untuk repositori ini."
 
 #: dnf/base.py:2524
 msgid "Import of key(s) didn't help, wrong key(s)?"
-msgstr ""
+msgstr "Mengimpor kunci tidak membantu, salah kunci?"
 
 #: dnf/base.py:2577
 msgid "  * Maybe you meant: {}"
-msgstr ""
+msgstr "  * Mungkin maksud Anda: {}"
 
 #: dnf/base.py:2609
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Paket \"{}\" dari repositori lokal \"{}\" memiliki checksum salah"
 
 #: dnf/base.py:2612
 msgid "Some packages from local repository have incorrect checksum"
-msgstr ""
+msgstr "Beberapa paket dari repositori lokal memiliki checksum salah"
 
 #: dnf/base.py:2615
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Paket \"{}\" dari repositori \"{}\" memiliki checksum salah"
 
 #: dnf/base.py:2618
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Beberapa paket memiliki singgahan yamg tidak valid, tetapi tidak dapat "
+"diunduh karena opsi \"--cacheonly\""
 
 #: dnf/base.py:2636 dnf/base.py:2656
 msgid "No match for argument"
-msgstr "Tidak ada cocok untuk argumen"
+msgstr "Tidak ada yang cocok untuk argumen"
 
 #: dnf/base.py:2644 dnf/base.py:2664
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Semua kecocokan tersaring oleh penyaringan eksklusi bagi argumen"
 
 #: dnf/base.py:2646
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Semua kecocokan tersaring oleh penyaringan modular bagi argumen"
 
 #: dnf/base.py:2662
 msgid "All matches were installed from a different repository for argument"
-msgstr ""
+msgstr "Semua kecocokan terpasang dari repositori lain bagi argumen"
 
 #: dnf/base.py:2709
 #, python-format
@@ -540,17 +557,17 @@ msgstr "Paket %s telah terpasang."
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Nilai variabel lingkungan yang tidak diharapkan: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:457
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
-msgstr ""
+msgstr "Penguraian berkas \"%s\" gagal: %s"
 
 #: dnf/cli/aliases.py:108
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "Tidak bisa membaca berkas \"%s\": %s"
 
 #: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:804
 #: dnf/cli/cli.py:808 dnf/cli/commands/alias.py:108
@@ -560,12 +577,12 @@ msgstr "Galat konfigurasi: %s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Alias memuat rekursi tak hingga"
 
 #: dnf/cli/aliases.py:209
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, memakai argumen asli."
 
 #: dnf/cli/cli.py:137
 #, python-format
@@ -575,7 +592,7 @@ msgstr "  Terpasang: %s-%s di %s"
 #: dnf/cli/cli.py:139
 #, python-format
 msgid "  Built    : %s at %s"
-msgstr ""
+msgstr "  Dibangun : %s pada %s"
 
 #: dnf/cli/cli.py:147
 #, python-brace-format
@@ -583,6 +600,7 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"Operasi akan menyebabkan beralihnya stream '{1}' modul '{0}' ke stream '{2}'"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -597,7 +615,7 @@ msgstr ""
 #: dnf/cli/cli.py:212
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} hanya akan mengunduh paket untuk transaksi."
 
 #: dnf/cli/cli.py:215
 #, python-brace-format
@@ -605,10 +623,12 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} hanya akan mengunduh paket, memasang kunci gpg, dan memeriksa "
+"transaksi."
 
 #: dnf/cli/cli.py:219
 msgid "Operation aborted."
-msgstr "Operasi dibatalkan."
+msgstr "Operasi digugrkan."
 
 #: dnf/cli/cli.py:226
 msgid "Downloading Packages:"
@@ -616,21 +636,24 @@ msgstr "Mengunduh Paket:"
 
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
-msgstr ""
+msgstr "Galah saat mengunduh paket:"
 
 #: dnf/cli/cli.py:264
 msgid "Transaction failed"
-msgstr ""
+msgstr "Transaksi gagal"
 
 #: dnf/cli/cli.py:287
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
 msgstr ""
+"Menolak untuk secara otomatis mengimpor kunci-kunci ketika dijalankan tanpa "
+"pengawasan.\n"
+"Gunakan \"-y\" untuk menimpa."
 
 #: dnf/cli/cli.py:337
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "Changelog bagi {}"
 
 #: dnf/cli/cli.py:370 dnf/cli/cli.py:511 dnf/cli/cli.py:517
 msgid "Obsoleting Packages"
@@ -689,13 +712,15 @@ msgstr "Repo tidak diketahui: '%s'"
 #: dnf/cli/cli.py:685
 #, python-format
 msgid "No repository match: %s"
-msgstr ""
+msgstr "Tidak ada kecocokan repositori: %s"
 
 #: dnf/cli/cli.py:719
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Perintah ini mesti dijalankan dengan hak superuser (di bawah pengguna root "
+"pada kebanyakan sistem)."
 
 #: dnf/cli/cli.py:749
 #, python-format
@@ -708,6 +733,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Itu mungkin suatu perintah pengaya {PROG}, cobalah \"{prog} install 'dnf-"
+"command(%s)'\""
 
 #: dnf/cli/cli.py:756
 #, python-brace-format
@@ -715,18 +742,24 @@ msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Itu mungkin suatu perintah pengaya {prog}, tapi pemuatan pengaya saat ini "
+"dinonaktifkan."
 
 #: dnf/cli/cli.py:814
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir atau --downloaddir harus dipakai dengan perintah --downloadonly "
+"atau download atau system-upgrade."
 
 #: dnf/cli/cli.py:820
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled dan --disable, --set-disabled harus dipakai dengan "
+"perintah config-manager."
 
 #: dnf/cli/cli.py:902
 msgid ""
@@ -736,17 +769,19 @@ msgstr ""
 
 #: dnf/cli/cli.py:922
 msgid "Config file \"{}\" does not exist"
-msgstr ""
+msgstr "Berkas konfig \"{}\" tidak ada"
 
 #: dnf/cli/cli.py:942
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
+"Tidak bisa mendeteksi versi rilis (gunakan '--releasever' untuk menyatakan "
+"versi rilis)"
 
 #: dnf/cli/cli.py:1016 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
-msgstr ""
+msgstr "argumen {}: tidak diizinkan dengan argumen {}"
 
 #: dnf/cli/cli.py:1023
 #, python-format
@@ -755,19 +790,19 @@ msgstr "Perintah \"%s\" telah terdefinisi"
 
 #: dnf/cli/cli.py:1043
 msgid "Excludes in dnf.conf: "
-msgstr ""
+msgstr "Dieksklusi dalam dnf.conf: "
 
 #: dnf/cli/cli.py:1046
 msgid "Includes in dnf.conf: "
-msgstr ""
+msgstr "Disertakan dalam dnf.conf: "
 
 #: dnf/cli/cli.py:1049
 msgid "Excludes in repo "
-msgstr ""
+msgstr "Dieksklusi dalam repo "
 
 #: dnf/cli/cli.py:1052
 msgid "Includes in repo "
-msgstr ""
+msgstr "Disertakan dalam repo "
 
 #: dnf/cli/commands/__init__.py:38
 #, python-format
@@ -808,25 +843,25 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:168 dnf/cli/commands/__init__.py:735
 msgid "show all packages (default)"
-msgstr ""
+msgstr "tunjukkan semua paket (baku)"
 
 #: dnf/cli/commands/__init__.py:171 dnf/cli/commands/__init__.py:738
 #: dnf/cli/commands/module.py:376
 msgid "show only available packages"
-msgstr ""
+msgstr "tunjukkan hanya paket yang tersedia"
 
 #: dnf/cli/commands/__init__.py:174 dnf/cli/commands/__init__.py:741
 msgid "show only installed packages"
-msgstr ""
+msgstr "tunjukkan hanya paket yang terpasang"
 
 #: dnf/cli/commands/__init__.py:177 dnf/cli/commands/__init__.py:744
 msgid "show only extras packages"
-msgstr ""
+msgstr "tunjukkan hanya paket ekstra"
 
 #: dnf/cli/commands/__init__.py:180 dnf/cli/commands/__init__.py:183
 #: dnf/cli/commands/__init__.py:747 dnf/cli/commands/__init__.py:750
 msgid "show only upgrades packages"
-msgstr ""
+msgstr "tunjukkan hanya paket pembaruan"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:753
 msgid "show only autoremove packages"
@@ -834,7 +869,7 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:756
 msgid "show only recently changed packages"
-msgstr ""
+msgstr "tunjukkan hanya paket yang baru-baru ini berubah"
 
 #: dnf/cli/commands/__init__.py:190 dnf/cli/commands/__init__.py:265
 #: dnf/cli/commands/__init__.py:769 dnf/cli/commands/autoremove.py:48
@@ -845,7 +880,7 @@ msgstr "PAKET"
 
 #: dnf/cli/commands/__init__.py:193
 msgid "Package name specification"
-msgstr ""
+msgstr "Spesifikasi nama paket"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
@@ -869,11 +904,11 @@ msgstr "Mencari Paket: "
 
 #: dnf/cli/commands/__init__.py:258
 msgid "check for available package upgrades"
-msgstr ""
+msgstr "memeriksa peningkatan paket yang tersedia"
 
 #: dnf/cli/commands/__init__.py:264
 msgid "show changelogs before update"
-msgstr ""
+msgstr "tampilkan changelog sebelum memperbarui"
 
 #: dnf/cli/commands/__init__.py:356 dnf/cli/commands/__init__.py:409
 #: dnf/cli/commands/__init__.py:465
@@ -886,7 +921,7 @@ msgstr "Tidak ada paket yang ditandai untuk dipasang."
 
 #: dnf/cli/commands/__init__.py:407
 msgid "No package installed."
-msgstr ""
+msgstr "Tidak ada paket yang terpasang."
 
 #: dnf/cli/commands/__init__.py:427 dnf/cli/commands/__init__.py:484
 #: dnf/cli/commands/reinstall.py:91
@@ -898,12 +933,12 @@ msgstr " (dari %s)"
 #: dnf/cli/commands/reinstall.py:92 dnf/cli/commands/remove.py:105
 #, python-format
 msgid "Installed package %s%s not available."
-msgstr ""
+msgstr "Paket terpasang %s%s tidak tersedia."
 
 #: dnf/cli/commands/__init__.py:462 dnf/cli/commands/__init__.py:571
 #: dnf/cli/commands/__init__.py:614 dnf/cli/commands/__init__.py:661
 msgid "No package installed from the repository."
-msgstr ""
+msgstr "Tidak ada paket yang terpasang dari repositori."
 
 #: dnf/cli/commands/__init__.py:525 dnf/cli/commands/reinstall.py:101
 msgid "No packages marked for reinstall."
@@ -915,7 +950,7 @@ msgstr "Tidak ada paket yang ditandai untuk peningkatan."
 
 #: dnf/cli/commands/__init__.py:721
 msgid "run commands on top of all packages in given repository"
-msgstr ""
+msgstr "jalankan perintah di atas semua paket dalam repositori yang diberikan"
 
 #: dnf/cli/commands/__init__.py:760
 msgid "REPOID"
@@ -932,7 +967,7 @@ msgstr "Spesifikasi paket"
 
 #: dnf/cli/commands/__init__.py:796
 msgid "display a helpful usage message"
-msgstr ""
+msgstr "menampilkan suatu pesan cara penggunaan yang membantu"
 
 #: dnf/cli/commands/__init__.py:800
 msgid "COMMAND"
@@ -941,7 +976,7 @@ msgstr "PERINTAH"
 #: dnf/cli/commands/__init__.py:801
 #, python-brace-format
 msgid "{prog} command to get help for"
-msgstr ""
+msgstr "perintah {prog} yang ingin diperoleh bantuan tentangnya"
 
 #: dnf/cli/commands/alias.py:40
 msgid "List or create command aliases"
@@ -949,15 +984,15 @@ msgstr ""
 
 #: dnf/cli/commands/alias.py:47
 msgid "enable aliases resolving"
-msgstr ""
+msgstr "fungsikan penguraian alias"
 
 #: dnf/cli/commands/alias.py:50
 msgid "disable aliases resolving"
-msgstr ""
+msgstr "nonaktifkan penguraian alias"
 
 #: dnf/cli/commands/alias.py:53
 msgid "action to do with aliases"
-msgstr ""
+msgstr "aksi yang akan dilakukan dengan alias"
 
 #: dnf/cli/commands/alias.py:55
 msgid "alias definition"
@@ -979,7 +1014,7 @@ msgstr "Kunci alias tidak valid: %s"
 #: dnf/cli/commands/alias.py:96
 #, python-format
 msgid "Alias argument has no value: %s"
-msgstr ""
+msgstr "Argumen alias tidak punya nilai: %s"
 
 #: dnf/cli/commands/alias.py:130
 #, python-format
@@ -1008,24 +1043,24 @@ msgstr "Alias %s='%s'"
 
 #: dnf/cli/commands/alias.py:161
 msgid "Aliases resolving is disabled."
-msgstr ""
+msgstr "Penguraian alias dinonaktifkan."
 
 #: dnf/cli/commands/alias.py:166
 msgid "No aliases specified."
-msgstr ""
+msgstr "Tidak ada alias yang dinyatakan."
 
 #: dnf/cli/commands/alias.py:173
 msgid "No alias specified."
-msgstr ""
+msgstr "Tidak ada alias yang dinyatakan."
 
 #: dnf/cli/commands/alias.py:179
 msgid "No aliases defined."
-msgstr ""
+msgstr "Tidak ada alias yang didefinisikan."
 
 #: dnf/cli/commands/alias.py:186
 #, python-format
 msgid "No match for alias: %s"
-msgstr ""
+msgstr "Tidak ada kecocokan untuk alias: %s"
 
 #: dnf/cli/commands/autoremove.py:41
 msgid ""
@@ -1040,23 +1075,23 @@ msgstr "Paket yang akan dihapus"
 
 #: dnf/cli/commands/check.py:34
 msgid "check for problems in the packagedb"
-msgstr ""
+msgstr "periksa masalah dalam packagedb"
 
 #: dnf/cli/commands/check.py:40
 msgid "show all problems; default"
-msgstr ""
+msgstr "tampilkan semua masalah, baku"
 
 #: dnf/cli/commands/check.py:43
 msgid "show dependency problems"
-msgstr ""
+msgstr "tampilkan masalah dependensi"
 
 #: dnf/cli/commands/check.py:46
 msgid "show duplicate problems"
-msgstr ""
+msgstr "tampilkan masalah duplikat"
 
 #: dnf/cli/commands/check.py:49
 msgid "show obsoleted packages"
-msgstr ""
+msgstr "tampilkan paket yang diusangkan"
 
 #: dnf/cli/commands/check.py:52
 msgid "show problems with provides"
@@ -1064,15 +1099,15 @@ msgstr ""
 
 #: dnf/cli/commands/check.py:98
 msgid "{} has missing requires of {}"
-msgstr ""
+msgstr "{} kekurangan require {}"
 
 #: dnf/cli/commands/check.py:118
 msgid "{} is a duplicate with {}"
-msgstr ""
+msgstr "{} duplikat dengan {}"
 
 #: dnf/cli/commands/check.py:129
 msgid "{} is obsoleted by {}"
-msgstr ""
+msgstr "{} diusangkan oleh {}"
 
 #: dnf/cli/commands/check.py:138
 msgid "{} provides {} but it cannot be found"
@@ -1081,7 +1116,7 @@ msgstr ""
 #: dnf/cli/commands/clean.py:68
 #, python-format
 msgid "Removing file %s"
-msgstr ""
+msgstr "Menghapus berkas %s"
 
 #: dnf/cli/commands/clean.py:87
 msgid "remove cached data"
@@ -1115,22 +1150,24 @@ msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
 msgstr ""
+"[usang, gunakan repoquery --deplist] Menyajikan dependensi paket dan paket "
+"apa yang menyediakan mereka"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr ""
+msgstr "menyelaraskan paket terpasang ke versi teakhir yang tersedia"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
-msgstr ""
+msgstr "Paket yang akan diselaraskan"
 
 #: dnf/cli/commands/downgrade.py:34
 msgid "Downgrade a package"
-msgstr ""
+msgstr "Turun tingkatkan suatu paket"
 
 #: dnf/cli/commands/downgrade.py:38
 msgid "Package to downgrade"
-msgstr ""
+msgstr "Paket yang akan diturun tingkatkan"
 
 #: dnf/cli/commands/group.py:46
 msgid "display, or use, the groups information"
@@ -1151,8 +1188,6 @@ msgstr "Peringatan: Tidak ada grup yang cocok:"
 
 #: dnf/cli/commands/group.py:179 dnf/cli/commands/group.py:190
 #: dnf/cli/output.py:1139
-#, fuzzy
-#| msgid "<unset>"
 msgid "<name-unset>"
 msgstr "<unset>"
 
@@ -1198,15 +1233,15 @@ msgstr "hanya tampilkan grup yang tersedia"
 
 #: dnf/cli/commands/group.py:328
 msgid "show also ID of groups"
-msgstr ""
+msgstr "tampilkan juga ID grup"
 
 #: dnf/cli/commands/group.py:330
 msgid "available subcommands: {} (default), {}"
-msgstr ""
+msgstr "sub perintah yang tersedia: {} (baku), {}"
 
 #: dnf/cli/commands/group.py:334
 msgid "argument for group subcommand"
-msgstr ""
+msgstr "argumen untuk sub perintah grup"
 
 #: dnf/cli/commands/group.py:343
 #, python-format
@@ -1219,29 +1254,35 @@ msgstr "Tidak bisa menemukan paket grup wajib."
 
 #: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
-msgstr ""
+msgstr "tampilkan, atau gunakan, riwayat transaksi"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "Untuk perintah menyimpan, path berkas tempat menyimpan transaksi"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"Untuk perintah main ulang, jangan periksa paket terpasang yang cocok dengan "
+"mereka yang ada dalam transaksi"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"Untuk perintah main ulang, jangan periksa paket ekstra yang ditarik ke dalam "
+"transaksi"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"Untuk perintah main ulang, lewati paket yang tidak tersedia atau kekurangan "
+"dependensi"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1250,14 +1291,12 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "Tidak ada ID transaksi atau nama paket yang diberikan."
+msgstr "Tidak ada nama berkas transaksi yang diberikan."
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
-msgstr ""
+msgstr "Lebih dari satu argumen diberikan sebagai nama berkas transaksi."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1314,24 +1353,28 @@ msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
+"Definisi rentang ID transaksi '{}' tidak valid.\n"
+"Gunakan '<transaction-id>..<transaction-id>'."
 
 #: dnf/cli/commands/history.py:283
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
+"Tidak bisa mengubah '{}' ke ID transaksi.\n"
+"Gunakan '<number>', 'last', 'last-<number>'."
 
 #: dnf/cli/commands/history.py:312
 msgid "No transaction which manipulates package '{}' was found."
-msgstr ""
+msgstr "Tidak ditemukan transaksi yang memanipulasi paket '{}'."
 
 #: dnf/cli/commands/history.py:357
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} sudah ada, timpa?"
 
 #: dnf/cli/commands/history.py:360
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "Tidak menimpa {}, keluar."
 
 #: dnf/cli/commands/history.py:367
 msgid "Transaction saved to {}."
@@ -1343,41 +1386,42 @@ msgstr "Gagal menyimpan transaksi: {}"
 
 #: dnf/cli/commands/history.py:386
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
+msgstr "Peringatan, masalah berikut terjadi ketika menjalankan suatu transaksi:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
-msgstr ""
+msgstr "memasang suatu paket atau paket-paket pada sistem Anda"
 
 #: dnf/cli/commands/install.py:53
 msgid "Package to install"
-msgstr ""
+msgstr "Pakat yang akan dipasang"
 
 #: dnf/cli/commands/install.py:118
 msgid "Unable to find a match"
-msgstr ""
+msgstr "Tidak berhasil menemukan yang cocok"
 
 #: dnf/cli/commands/install.py:131
 #, python-format
 msgid "Not a valid rpm file path: %s"
-msgstr ""
+msgstr "Bukan path berkas rpm yang valid: %s"
 
 #: dnf/cli/commands/install.py:166
 #, python-brace-format
 msgid "There are following alternatives for \"{0}\": {1}"
-msgstr ""
+msgstr "Ada alternatif berikut bagi \"{0}\": {1}"
 
 #: dnf/cli/commands/makecache.py:37
 msgid "generate the metadata cache"
-msgstr ""
+msgstr "bangkitkan singgahan meta data"
 
 #: dnf/cli/commands/makecache.py:48
 msgid "Making cache files for all metadata files."
-msgstr ""
+msgstr "Membuat berkas singgahan untuk semua berkas metadata."
 
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
 msgstr ""
+"tandai atau hapus tandai paket terpasang sebagai dipasang oleh pengguna."
 
 #: dnf/cli/commands/mark.py:44
 msgid ""
@@ -1385,21 +1429,24 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"pasang: tandai sebagai dipasang oleh pengguna\n"
+"hapus: hapus tanda sebagai dipasang oleh pengguna\n"
+"grup: tandai sebagai dipasang oleh grup"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
 msgid "%s marked as user installed."
-msgstr ""
+msgstr "%s ditandai sebagai dipasang oleh pengguna."
 
 #: dnf/cli/commands/mark.py:56
 #, python-format
 msgid "%s unmarked as user installed."
-msgstr ""
+msgstr "%s dihapus tanda sebagai dipasang oleh pengguna."
 
 #: dnf/cli/commands/mark.py:60
 #, python-format
 msgid "%s marked as group installed."
-msgstr ""
+msgstr "%s ditandai sebagai dipasang oleh grup."
 
 #: dnf/cli/commands/mark.py:85 dnf/cli/commands/shell.py:129
 #: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:282
@@ -1409,7 +1456,7 @@ msgstr "Galat:"
 #: dnf/cli/commands/mark.py:87
 #, python-format
 msgid "Package %s is not installed."
-msgstr ""
+msgstr "Paket %s tidak terpasang."
 
 #: dnf/cli/commands/module.py:54
 msgid ""
