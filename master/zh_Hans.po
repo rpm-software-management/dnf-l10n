@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-13 01:48+0000\n"
-"PO-Revision-Date: 2022-02-07 15:56+0000\n"
+"PO-Revision-Date: 2022-02-16 23:16+0000\n"
 "Last-Translator: 文一 <chuxuec@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_Hans/>\n"
@@ -261,17 +261,17 @@ msgstr "正在尝试下载缺失的软件包."
 #: dnf/base.py:1230
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr ""
+msgstr "增量 RPM 将会把预定为 %.1f 的更新包缩减至 %.1f MB (较先前节省 %.1f%%)"
 
 #: dnf/base.py:1234
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr ""
+msgstr "增量 RPM 将会把预定为 %.1f 的更新包膨胀至 %.1f MB (较先前增大 %.1f%%)"
 
 #: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "事务工作的存在使得本地软件包无法完成添加"
 
 #: dnf/base.py:1290
 msgid "Could not open: {}"
@@ -280,61 +280,61 @@ msgstr "无法打开: {}"
 #: dnf/base.py:1328
 #, python-format
 msgid "Public key for %s is not installed"
-msgstr ""
+msgstr "%s 的公钥没有安装"
 
 #: dnf/base.py:1332
 #, python-format
 msgid "Problem opening package %s"
-msgstr ""
+msgstr "启动软件包 %s 时出现错误"
 
 #: dnf/base.py:1340
 #, python-format
 msgid "Public key for %s is not trusted"
-msgstr ""
+msgstr "%s 的公钥不可信任"
 
 #: dnf/base.py:1344
 #, python-format
 msgid "Package %s is not signed"
-msgstr ""
+msgstr "软件包 %s 不存在签名"
 
 #: dnf/base.py:1374
 #, python-format
 msgid "Cannot remove %s"
-msgstr ""
+msgstr "无法移除 %s"
 
 #: dnf/base.py:1378
 #, python-format
 msgid "%s removed"
-msgstr ""
+msgstr "%s 已经移除"
 
 #: dnf/base.py:1658
 msgid "No match for group package \"{}\""
-msgstr ""
+msgstr "没有与组 \"{}\" 匹配的包"
 
 #: dnf/base.py:1740
 #, python-format
 msgid "Adding packages from group '%s': %s"
-msgstr ""
+msgstr "从组 '%s': %s 添加软件包"
 
 #: dnf/base.py:1763 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
-msgstr ""
+msgstr "无需处理."
 
 #: dnf/base.py:1781
 msgid "No groups marked for removal."
-msgstr ""
+msgstr "没有软件包组需要被移除."
 
 #: dnf/base.py:1815
 msgid "No group marked for upgrade."
-msgstr ""
+msgstr "没有软件包组需要被升级."
 
 #: dnf/base.py:2029
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr ""
+msgstr "不能对未安装的包(%s)进行降级."
 
 #: dnf/base.py:2031 dnf/base.py:2050 dnf/base.py:2063 dnf/base.py:2090
 #: dnf/base.py:2143 dnf/base.py:2151 dnf/base.py:2285 dnf/cli/cli.py:417
@@ -345,27 +345,27 @@ msgstr ""
 #: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
-msgstr ""
+msgstr "没能匹配参数: %s"
 
 #: dnf/base.py:2038
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr ""
+msgstr "软件包 %s 更低的版本已经安装,降级工作无法安装."
 
 #: dnf/base.py:2061
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr ""
+msgstr "不能对没有安装的软件 %s 进行重装."
 
 #: dnf/base.py:2076
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
-msgstr ""
+msgstr "%s 为源代码包,无法进行升级,已经忽略."
 
 #: dnf/base.py:2087
 #, python-format
 msgid "Package %s not installed, cannot update it."
-msgstr ""
+msgstr "不能对没有安装的软件 %s 进行更新."
 
 #: dnf/base.py:2097
 #, python-format
