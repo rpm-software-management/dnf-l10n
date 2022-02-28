@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-01 09:05+0200\n"
+"POT-Creation-Date: 2022-02-28 11:37+0100\n"
 "PO-Revision-Date: 2021-08-19 06:05+0000\n"
 "Last-Translator: Oğuz Ersen <oguzersen@protonmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -198,159 +198,162 @@ msgstr "Yapılandırma dosyasında geçersiz tsflag: %s"
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "Depo için grup dosyası eklenemedi: %s -%s"
 
-#: dnf/base.py:904
+#: dnf/base.py:922
 msgid "Running transaction check"
 msgstr "İşlem denetimi çalıştırılıyor"
 
-#: dnf/base.py:912
+#: dnf/base.py:930
 msgid "Error: transaction check vs depsolve:"
 msgstr "Hata: bağımlılık çözümleme için işlem denetimi:"
 
-#: dnf/base.py:918
+#: dnf/base.py:936
 msgid "Transaction check succeeded."
 msgstr "İşlem denetimi başarılı."
 
-#: dnf/base.py:921
+#: dnf/base.py:939
 msgid "Running transaction test"
 msgstr "İşlem sınama çalıştırılıyor"
 
-#: dnf/base.py:931 dnf/base.py:1082
+#: dnf/base.py:949 dnf/base.py:1100
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:932
+#: dnf/base.py:950
 msgid "Transaction test error:"
 msgstr "İşlem sınama hatası:"
 
-#: dnf/base.py:943
+#: dnf/base.py:961
 msgid "Transaction test succeeded."
 msgstr "İşlem sınama başarılı."
 
-#: dnf/base.py:964
+#: dnf/base.py:982
 msgid "Running transaction"
 msgstr "İşlem çalıştırılıyor"
 
-#: dnf/base.py:1001
+#: dnf/base.py:1019
 msgid "Disk Requirements:"
 msgstr "Disk Gereksinimleri:"
 
-#: dnf/base.py:1004
+#: dnf/base.py:1022
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
 msgstr[1] "{1} dosya sisteminde en az {0} MB daha alan gerekli."
 
-#: dnf/base.py:1011
+#: dnf/base.py:1029
 msgid "Error Summary"
 msgstr "Hata Özeti"
 
-#: dnf/base.py:1037
+#: dnf/base.py:1055
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB {prog} dışında değiştirildi."
 
-#: dnf/base.py:1083 dnf/base.py:1091
+#: dnf/base.py:1101 dnf/base.py:1109
 msgid "Could not run transaction."
 msgstr "İşlem çalıştırılamadı."
 
-#: dnf/base.py:1086
+#: dnf/base.py:1104
 msgid "Transaction couldn't start:"
 msgstr "İşlem başlatılamadı:"
 
-#: dnf/base.py:1100
+#: dnf/base.py:1118
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "%s işlem dosyası kaldırılamadı"
 
-#: dnf/base.py:1182
+#: dnf/base.py:1200
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Bazı paketler indirilmedi. Yeniden deniyor."
 
-#: dnf/base.py:1212
-#, python-format
-msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#: dnf/base.py:1230
+#, fuzzy, python-format
+#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
 "Delta RPM'ler %.1f MB boyutundaki güncellemeyi azaltarak %.1f MB yaptı (%%"
 "%d.1 tasarruf edildi)"
 
-#: dnf/base.py:1215
-#, python-format
+#: dnf/base.py:1234
+#, fuzzy, python-format
+#| msgid ""
+#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
 msgid ""
-"Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+"Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "Başarısız Delta RPM'ler %.1f MB boyutundaki güncellemeyi arttırarak %.1f MB "
 "yaptı (%%%d.1 boşa harcandı)"
 
-#: dnf/base.py:1257
+#: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr "İşlem görevi zaten var olduğundan yerel paketler eklenemiyor"
 
-#: dnf/base.py:1271
+#: dnf/base.py:1290
 msgid "Could not open: {}"
 msgstr "Açılamıyor: {}"
 
-#: dnf/base.py:1309
+#: dnf/base.py:1328
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "%s için genel anahtar kurulu değil"
 
-#: dnf/base.py:1313
+#: dnf/base.py:1332
 #, python-format
 msgid "Problem opening package %s"
 msgstr "%s paketi açılırken sorun oluştu"
 
-#: dnf/base.py:1321
+#: dnf/base.py:1340
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "%s için genel anahtar güvenilir değil"
 
-#: dnf/base.py:1325
+#: dnf/base.py:1344
 #, python-format
 msgid "Package %s is not signed"
 msgstr "%s paketi imzalanmamış"
 
-#: dnf/base.py:1355
+#: dnf/base.py:1374
 #, python-format
 msgid "Cannot remove %s"
 msgstr "%s silinemiyor"
 
-#: dnf/base.py:1359
+#: dnf/base.py:1378
 #, python-format
 msgid "%s removed"
 msgstr "%s kaldırıldı"
 
-#: dnf/base.py:1639
+#: dnf/base.py:1658
 msgid "No match for group package \"{}\""
 msgstr "\"{}\" grup paketi için eşleşme yok"
 
-#: dnf/base.py:1725
+#: dnf/base.py:1740
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "'%s' grubundan paketler ekle: %s"
 
-#: dnf/base.py:1748 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
+#: dnf/base.py:1763 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Yapılacak bir şey yok."
 
-#: dnf/base.py:1766
+#: dnf/base.py:1781
 msgid "No groups marked for removal."
 msgstr "Kaldırmak için işaretlenen grup yok."
 
-#: dnf/base.py:1800
+#: dnf/base.py:1815
 msgid "No group marked for upgrade."
 msgstr "Yükseltmek için işaretlenen grup yok."
 
-#: dnf/base.py:2014
+#: dnf/base.py:2029
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "%s paketi kurulu değil, sürümü düşürülemiyor."
 
-#: dnf/base.py:2016 dnf/base.py:2035 dnf/base.py:2048 dnf/base.py:2075
-#: dnf/base.py:2128 dnf/base.py:2136 dnf/base.py:2270 dnf/cli/cli.py:417
+#: dnf/base.py:2031 dnf/base.py:2050 dnf/base.py:2063 dnf/base.py:2090
+#: dnf/base.py:2143 dnf/base.py:2151 dnf/base.py:2285 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -360,127 +363,127 @@ msgstr "%s paketi kurulu değil, sürümü düşürülemiyor."
 msgid "No match for argument: %s"
 msgstr "Argüman için eşleşme yok: %s"
 
-#: dnf/base.py:2023
+#: dnf/base.py:2038
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "%s paketinin düşük sürümü zaten kurulu, sürümü düşürülemiyor."
 
-#: dnf/base.py:2046
+#: dnf/base.py:2061
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "%s paketi kurulu değil, yeniden kurulamıyor."
 
-#: dnf/base.py:2061
+#: dnf/base.py:2076
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "%s dosyası bir kaynak pakettir ve güncellenemez, yok sayılıyor."
 
-#: dnf/base.py:2072
+#: dnf/base.py:2087
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "%s paketi kurulu değil, güncellenemiyor."
 
-#: dnf/base.py:2082
+#: dnf/base.py:2097
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "%s'nin aynı veya daha yüksek sürümü zaten kurulu, güncellenemiyor."
 
-#: dnf/base.py:2125 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2140 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "%s paketi kullanılabilir, ama kurulu değil."
 
-#: dnf/base.py:2131
+#: dnf/base.py:2146
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "%s paketi kullanılabilir, ama farklı bir mimari için kurulmuş."
 
-#: dnf/base.py:2156
+#: dnf/base.py:2171
 #, python-format
 msgid "No package %s installed."
 msgstr "%s paketi kurulu değil."
 
-#: dnf/base.py:2174 dnf/cli/commands/install.py:136
+#: dnf/base.py:2189 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Geçerli bir biçim değil: %s"
 
-#: dnf/base.py:2189 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2204 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Kaldırılması için işaretlenen paket yok."
 
-#: dnf/base.py:2277 dnf/cli/cli.py:428
+#: dnf/base.py:2292 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "%s argümanı için kullanılabilir paketler var, ama kurulu değil."
 
-#: dnf/base.py:2282
+#: dnf/base.py:2297
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "%s paketinin zaten en düşük sürümü kurulu, sürümü düşürülemiyor."
 
-#: dnf/base.py:2382
+#: dnf/base.py:2397
 msgid "No security updates needed, but {} update available"
 msgstr "Güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
-#: dnf/base.py:2384
+#: dnf/base.py:2399
 msgid "No security updates needed, but {} updates available"
 msgstr "Güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
-#: dnf/base.py:2388
+#: dnf/base.py:2403
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "\"{}\" için güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
-#: dnf/base.py:2390
+#: dnf/base.py:2405
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "\"{}\" için güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2411
+#: dnf/base.py:2426
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Bir komut satırı paketi için anahtar alınamadı: %s"
 
-#: dnf/base.py:2419
+#: dnf/base.py:2434
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Sorunlu paket: %s"
 
-#: dnf/base.py:2420
+#: dnf/base.py:2435
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG Anahtarları şöyle yapılandırıldı: %s"
 
-#: dnf/base.py:2432
+#: dnf/base.py:2447
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s'deki GPG anahtarı (0x%s) zaten kurulu"
 
-#: dnf/base.py:2468
+#: dnf/base.py:2483
 msgid "The key has been approved."
 msgstr "Anahtar onaylandı."
 
-#: dnf/base.py:2471
+#: dnf/base.py:2486
 msgid "The key has been rejected."
 msgstr "Anahtar reddedildi."
 
-#: dnf/base.py:2504
+#: dnf/base.py:2519
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Anahtar içe aktarılamadı (kod %d)"
 
-#: dnf/base.py:2506
+#: dnf/base.py:2521
 msgid "Key imported successfully"
 msgstr "Anahtar başarıyla içeri aktarıldı"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2525
 msgid "Didn't install any keys"
 msgstr "Hiç anahtar kurulmadı"
 
-#: dnf/base.py:2513
+#: dnf/base.py:2528
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -491,27 +494,27 @@ msgstr ""
 "doğru değil.\n"
 "Bu depo için doğru anahtar URL'lerinin yapılandırıldığını denetleyin."
 
-#: dnf/base.py:2524
+#: dnf/base.py:2539
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Anahtar(lar)ın içe aktarılması yardımcı olmadı, yanlış anahtar(lar)?"
 
-#: dnf/base.py:2577
+#: dnf/base.py:2592
 msgid "  * Maybe you meant: {}"
 msgstr "  * Belki bunu demek istedin: {}"
 
-#: dnf/base.py:2609
+#: dnf/base.py:2624
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" yerel deposundan) yanlış"
 
-#: dnf/base.py:2612
+#: dnf/base.py:2627
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Yerel paket deposundaki bazı paketlerin sağlama değeri hatalı"
 
-#: dnf/base.py:2615
+#: dnf/base.py:2630
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" deposundan) yanlış"
 
-#: dnf/base.py:2618
+#: dnf/base.py:2633
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -519,23 +522,23 @@ msgstr ""
 "Bazı paketler geçersiz önbelleğe sahip, ancak \"--cacheonly\" seçeneği "
 "nedeniyle indirilemiyor"
 
-#: dnf/base.py:2636 dnf/base.py:2656
+#: dnf/base.py:2651 dnf/base.py:2671
 msgid "No match for argument"
 msgstr "Argüman için eşleşme yok"
 
-#: dnf/base.py:2644 dnf/base.py:2664
+#: dnf/base.py:2659 dnf/base.py:2679
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Argüman için tüm eşleşmeler hariç tutma filtresi ile filtrelendi"
 
-#: dnf/base.py:2646
+#: dnf/base.py:2661
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Argüman için tüm eşleşmeler modüler filtreleme ile filtrelendi"
 
-#: dnf/base.py:2662
+#: dnf/base.py:2677
 msgid "All matches were installed from a different repository for argument"
 msgstr "Argüman için tüm eşleşmeler farklı bir depodan kuruldu"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2724
 #, python-format
 msgid "Package %s is already installed."
 msgstr "%s paketi zaten kurulu."
@@ -545,7 +548,7 @@ msgstr "%s paketi zaten kurulu."
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
 msgstr "Beklenmeyen ortam değişkeni değeri: DNF_DISABLE_ALIASES=%s"
 
-#: dnf/cli/aliases.py:105 dnf/conf/config.py:457
+#: dnf/cli/aliases.py:105 dnf/conf/config.py:475
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
 msgstr "\"%s\" dosyası ayrıştırılamadı: %s"
@@ -1196,11 +1199,6 @@ msgstr "Uyarı: %s diye bir grup yok."
 #: dnf/cli/commands/group.py:167
 msgid "Warning: No groups match:"
 msgstr "Uyarı: Eşleşen grup yok:"
-
-#: dnf/cli/commands/group.py:179 dnf/cli/commands/group.py:190
-#: dnf/cli/output.py:1139
-msgid "<name-unset>"
-msgstr "<isim-ayarlanmadı>"
 
 #: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
@@ -2440,8 +2438,8 @@ msgstr "Ciddiyet"
 msgid "Files"
 msgstr "Dosyalar"
 
-#: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1654
-#: dnf/cli/output.py:1656 dnf/util.py:617
+#: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1653
+#: dnf/cli/output.py:1655 dnf/util.py:615
 msgid "Installed"
 msgstr "Kuruldu"
 
@@ -2801,13 +2799,13 @@ msgstr "Dönem"
 #. use the full (unabbreviated) term 'Version' if you think that
 #. the translation to your language is not too long and will
 #. always fit to limited space.
-#: dnf/cli/output.py:466 dnf/cli/output.py:1248
+#: dnf/cli/output.py:466 dnf/cli/output.py:1247
 msgctxt "short"
 msgid "Version"
 msgstr "Sürüm"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
-#: dnf/cli/output.py:467 dnf/cli/output.py:1250
+#: dnf/cli/output.py:467 dnf/cli/output.py:1249
 msgctxt "long"
 msgid "Version"
 msgstr "Sürüm"
@@ -2819,20 +2817,20 @@ msgstr "Dağıtım"
 
 #. Translators: This is abbreviated 'Architecture', used when
 #. we have not enough space to display the full word.
-#: dnf/cli/output.py:471 dnf/cli/output.py:1239
+#: dnf/cli/output.py:471 dnf/cli/output.py:1238
 msgctxt "short"
 msgid "Arch"
 msgstr "Mimari"
 
 #. Translators: This is the full word 'Architecture', used when
 #. we have enough space.
-#: dnf/cli/output.py:472 dnf/cli/output.py:1242
+#: dnf/cli/output.py:472 dnf/cli/output.py:1241
 msgctxt "long"
 msgid "Architecture"
 msgstr "Mimari"
 
 #. Translators: This is the full (unabbreviated) term 'Size'.
-#: dnf/cli/output.py:474 dnf/cli/output.py:1265
+#: dnf/cli/output.py:474 dnf/cli/output.py:1264
 msgctxt "long"
 msgid "Size"
 msgstr "Boyut"
@@ -2841,7 +2839,7 @@ msgstr "Boyut"
 #. not be longer than 5 characters. If the term 'Size' in your
 #. language is not longer than 5 characters then you can use it
 #. unabbreviated.
-#: dnf/cli/output.py:474 dnf/cli/output.py:1263
+#: dnf/cli/output.py:474 dnf/cli/output.py:1262
 msgctxt "short"
 msgid "Size"
 msgstr "Boyut"
@@ -2853,14 +2851,14 @@ msgstr "Kaynak"
 
 #. Translators: This is abbreviated 'Repository', used when
 #. we have not enough space to display the full word.
-#: dnf/cli/output.py:479 dnf/cli/output.py:1254
+#: dnf/cli/output.py:479 dnf/cli/output.py:1253
 msgctxt "short"
 msgid "Repo"
 msgstr "Depo"
 
 #. Translators: This is the full word 'Repository', used when
 #. we have enough space.
-#: dnf/cli/output.py:480 dnf/cli/output.py:1257
+#: dnf/cli/output.py:480 dnf/cli/output.py:1256
 msgctxt "long"
 msgid "Repository"
 msgstr "Depo"
@@ -3151,31 +3149,31 @@ msgstr "Modüller devre dışı bırakılıyor"
 msgid "Resetting modules"
 msgstr "Modüller sıfırlanıyor"
 
-#: dnf/cli/output.py:1143
+#: dnf/cli/output.py:1142
 msgid "Installing Environment Groups"
 msgstr "Ortam Grupları Kuruluyor"
 
-#: dnf/cli/output.py:1150
+#: dnf/cli/output.py:1149
 msgid "Upgrading Environment Groups"
 msgstr "Ortam Grupları Yükseltiliyor"
 
-#: dnf/cli/output.py:1157
+#: dnf/cli/output.py:1156
 msgid "Removing Environment Groups"
 msgstr "Ortam Grupları Kaldırılıyor"
 
-#: dnf/cli/output.py:1164
+#: dnf/cli/output.py:1163
 msgid "Installing Groups"
 msgstr "Gruplar Kuruluyor"
 
-#: dnf/cli/output.py:1171
+#: dnf/cli/output.py:1170
 msgid "Upgrading Groups"
 msgstr "Gruplar Yükseltiliyor"
 
-#: dnf/cli/output.py:1178
+#: dnf/cli/output.py:1177
 msgid "Removing Groups"
 msgstr "Gruplar Kaldırılıyor"
 
-#: dnf/cli/output.py:1194
+#: dnf/cli/output.py:1193
 #, python-format
 msgid ""
 "Skipping packages with conflicts:\n"
@@ -3184,12 +3182,12 @@ msgstr ""
 "Çakışan paketler atlanıyor:\n"
 "(yükseltmeye zorlamak için komut satırına '%s' ekleyin)"
 
-#: dnf/cli/output.py:1204
+#: dnf/cli/output.py:1203
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
 msgstr "Hatalı bağımlılıkları olan paketler atlanıyor%s"
 
-#: dnf/cli/output.py:1208
+#: dnf/cli/output.py:1207
 msgid " or part of a group"
 msgstr " veya bir grubun parçası"
 
@@ -3197,22 +3195,22 @@ msgstr " veya bir grubun parçası"
 #. use the full (unabbreviated) term 'Package' if you think that
 #. the translation to your language is not too long and will
 #. always fit to limited space.
-#: dnf/cli/output.py:1233
+#: dnf/cli/output.py:1232
 msgctxt "short"
 msgid "Package"
 msgstr "Paket"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
-#: dnf/cli/output.py:1235
+#: dnf/cli/output.py:1234
 msgctxt "long"
 msgid "Package"
 msgstr "Paket"
 
-#: dnf/cli/output.py:1284
+#: dnf/cli/output.py:1283
 msgid "replacing"
 msgstr "değiştiriliyor"
 
-#: dnf/cli/output.py:1291
+#: dnf/cli/output.py:1290
 #, python-format
 msgid ""
 "\n"
@@ -3224,273 +3222,273 @@ msgstr ""
 "%s\n"
 
 #. TODO: remove
-#: dnf/cli/output.py:1296 dnf/cli/output.py:1814 dnf/cli/output.py:1815
+#: dnf/cli/output.py:1295 dnf/cli/output.py:1813 dnf/cli/output.py:1814
 msgid "Install"
 msgstr "Kur"
 
-#: dnf/cli/output.py:1300 dnf/cli/output.py:1823
+#: dnf/cli/output.py:1299 dnf/cli/output.py:1822
 msgid "Upgrade"
 msgstr "Yükselt"
 
-#: dnf/cli/output.py:1301
+#: dnf/cli/output.py:1300
 msgid "Remove"
 msgstr "Kaldır"
 
-#: dnf/cli/output.py:1303 dnf/cli/output.py:1821
+#: dnf/cli/output.py:1302 dnf/cli/output.py:1820
 msgid "Downgrade"
 msgstr "Sürümü düşür"
 
-#: dnf/cli/output.py:1304
+#: dnf/cli/output.py:1303
 msgid "Skip"
 msgstr "Atla"
 
-#: dnf/cli/output.py:1313 dnf/cli/output.py:1329
+#: dnf/cli/output.py:1312 dnf/cli/output.py:1328
 msgid "Package"
 msgid_plural "Packages"
 msgstr[0] "Paket"
 msgstr[1] "Paketler"
 
-#: dnf/cli/output.py:1331
+#: dnf/cli/output.py:1330
 msgid "Dependent package"
 msgid_plural "Dependent packages"
 msgstr[0] "Bağımlı paket"
 msgstr[1] "Bağımlı paketler"
 
-#: dnf/cli/output.py:1439
+#: dnf/cli/output.py:1438
 msgid "Total"
 msgstr "Toplam"
 
-#: dnf/cli/output.py:1467
+#: dnf/cli/output.py:1466
 msgid "<unset>"
 msgstr "<ayarlanmadı>"
 
-#: dnf/cli/output.py:1468
+#: dnf/cli/output.py:1467
 msgid "System"
 msgstr "Sistem"
 
-#: dnf/cli/output.py:1518
+#: dnf/cli/output.py:1517
 msgid "Command line"
 msgstr "Komut satırı"
 
 #. TRANSLATORS: user names who executed transaction in history command output
-#: dnf/cli/output.py:1531
+#: dnf/cli/output.py:1530
 msgid "User name"
 msgstr "Kullanıcı adı"
 
-#: dnf/cli/output.py:1533
+#: dnf/cli/output.py:1532
 msgid "ID"
 msgstr "ID"
 
-#: dnf/cli/output.py:1535
+#: dnf/cli/output.py:1534
 msgid "Date and time"
 msgstr "Tarih ve zaman"
 
-#: dnf/cli/output.py:1536
+#: dnf/cli/output.py:1535
 msgid "Action(s)"
 msgstr "Eylem(ler)"
 
-#: dnf/cli/output.py:1537
+#: dnf/cli/output.py:1536
 msgid "Altered"
 msgstr "Değiştirilmiş"
 
-#: dnf/cli/output.py:1580
+#: dnf/cli/output.py:1579
 msgid "No transactions"
 msgstr "İşlem yok"
 
-#: dnf/cli/output.py:1581 dnf/cli/output.py:1597
+#: dnf/cli/output.py:1580 dnf/cli/output.py:1596
 msgid "Failed history info"
 msgstr "Geçmiş bilgisi alınamadı"
 
-#: dnf/cli/output.py:1596
+#: dnf/cli/output.py:1595
 msgid "No transaction ID, or package, given"
 msgstr "İşlem kimliği veya paket verilmedi"
 
-#: dnf/cli/output.py:1654
+#: dnf/cli/output.py:1653
 msgid "Erased"
 msgstr "Silindi"
 
-#: dnf/cli/output.py:1655 dnf/cli/output.py:1822 dnf/util.py:616
+#: dnf/cli/output.py:1654 dnf/cli/output.py:1821 dnf/util.py:614
 msgid "Downgraded"
 msgstr "Sürümü düşürüldü"
 
-#: dnf/cli/output.py:1655 dnf/cli/output.py:1824 dnf/util.py:615
+#: dnf/cli/output.py:1654 dnf/cli/output.py:1823 dnf/util.py:613
 msgid "Upgraded"
 msgstr "Yükseltildi"
 
-#: dnf/cli/output.py:1656
+#: dnf/cli/output.py:1655
 msgid "Not installed"
 msgstr "Kurulmadı"
 
-#: dnf/cli/output.py:1657
+#: dnf/cli/output.py:1656
 msgid "Newer"
 msgstr "Yeni"
 
-#: dnf/cli/output.py:1657
+#: dnf/cli/output.py:1656
 msgid "Older"
 msgstr "Eski"
 
-#: dnf/cli/output.py:1705 dnf/cli/output.py:1707
+#: dnf/cli/output.py:1704 dnf/cli/output.py:1706
 msgid "Transaction ID :"
 msgstr "İşlem kimliği:"
 
-#: dnf/cli/output.py:1710
+#: dnf/cli/output.py:1709
 msgid "Begin time     :"
 msgstr "Başlangıç zamanı  :"
 
-#: dnf/cli/output.py:1713 dnf/cli/output.py:1715
+#: dnf/cli/output.py:1712 dnf/cli/output.py:1714
 msgid "Begin rpmdb    :"
 msgstr "Başlangıç rpmdb:"
 
-#: dnf/cli/output.py:1721
+#: dnf/cli/output.py:1720
 #, python-format
 msgid "(%u seconds)"
 msgstr "(%u saniye)"
 
-#: dnf/cli/output.py:1723
+#: dnf/cli/output.py:1722
 #, python-format
 msgid "(%u minutes)"
 msgstr "(%u dakika)"
 
-#: dnf/cli/output.py:1725
+#: dnf/cli/output.py:1724
 #, python-format
 msgid "(%u hours)"
 msgstr "(%u saat)"
 
-#: dnf/cli/output.py:1727
+#: dnf/cli/output.py:1726
 #, python-format
 msgid "(%u days)"
 msgstr "(%u gün)"
 
-#: dnf/cli/output.py:1728
+#: dnf/cli/output.py:1727
 msgid "End time       :"
 msgstr "Bitiş zamanı  :"
 
-#: dnf/cli/output.py:1731 dnf/cli/output.py:1733
+#: dnf/cli/output.py:1730 dnf/cli/output.py:1732
 msgid "End rpmdb      :"
 msgstr "Bitiş rpmdb    :"
 
-#: dnf/cli/output.py:1740 dnf/cli/output.py:1742
+#: dnf/cli/output.py:1739 dnf/cli/output.py:1741
 msgid "User           :"
 msgstr "Kullanıcı  :"
 
-#: dnf/cli/output.py:1746 dnf/cli/output.py:1753
+#: dnf/cli/output.py:1745 dnf/cli/output.py:1752
 msgid "Aborted"
 msgstr "İptal edildi"
 
-#: dnf/cli/output.py:1746 dnf/cli/output.py:1749 dnf/cli/output.py:1751
-#: dnf/cli/output.py:1753 dnf/cli/output.py:1755 dnf/cli/output.py:1757
+#: dnf/cli/output.py:1745 dnf/cli/output.py:1748 dnf/cli/output.py:1750
+#: dnf/cli/output.py:1752 dnf/cli/output.py:1754 dnf/cli/output.py:1756
 msgid "Return-Code    :"
 msgstr "Yanıt-Kodu    :"
 
-#: dnf/cli/output.py:1749 dnf/cli/output.py:1757
+#: dnf/cli/output.py:1748 dnf/cli/output.py:1756
 msgid "Success"
 msgstr "Başarılı"
 
-#: dnf/cli/output.py:1751
+#: dnf/cli/output.py:1750
 msgid "Failures:"
 msgstr "Hatalar:"
 
-#: dnf/cli/output.py:1755
+#: dnf/cli/output.py:1754
 msgid "Failure:"
 msgstr "Hata:"
 
-#: dnf/cli/output.py:1765 dnf/cli/output.py:1767
+#: dnf/cli/output.py:1764 dnf/cli/output.py:1766
 msgid "Releasever     :"
 msgstr "Dağıtım sürümü :"
 
-#: dnf/cli/output.py:1772 dnf/cli/output.py:1774
+#: dnf/cli/output.py:1771 dnf/cli/output.py:1773
 msgid "Command Line   :"
 msgstr "Komut Satırı:"
 
-#: dnf/cli/output.py:1779 dnf/cli/output.py:1781
+#: dnf/cli/output.py:1778 dnf/cli/output.py:1780
 msgid "Comment        :"
 msgstr "Açıklama        :"
 
-#: dnf/cli/output.py:1785
+#: dnf/cli/output.py:1784
 msgid "Transaction performed with:"
 msgstr "İşlem şununla yapıldı:"
 
-#: dnf/cli/output.py:1794
+#: dnf/cli/output.py:1793
 msgid "Packages Altered:"
 msgstr "Değiştirilmiş Paketler:"
 
-#: dnf/cli/output.py:1800
+#: dnf/cli/output.py:1799
 msgid "Scriptlet output:"
 msgstr "Betik çıktısı:"
 
-#: dnf/cli/output.py:1807
+#: dnf/cli/output.py:1806
 msgid "Errors:"
 msgstr "Hatalar:"
 
-#: dnf/cli/output.py:1816
+#: dnf/cli/output.py:1815
 msgid "Dep-Install"
 msgstr "Bağımlılık Kur"
 
-#: dnf/cli/output.py:1817
+#: dnf/cli/output.py:1816
 msgid "Obsoleted"
 msgstr "Kullanım dışı bırakıldı"
 
-#: dnf/cli/output.py:1818 dnf/transaction.py:84 dnf/transaction.py:85
+#: dnf/cli/output.py:1817 dnf/transaction.py:84 dnf/transaction.py:85
 msgid "Obsoleting"
 msgstr "Kullanım dışı bırakan"
 
-#: dnf/cli/output.py:1819
+#: dnf/cli/output.py:1818
 msgid "Erase"
 msgstr "Sil"
 
-#: dnf/cli/output.py:1820
+#: dnf/cli/output.py:1819
 msgid "Reinstall"
 msgstr "Yeniden Kur"
 
-#: dnf/cli/output.py:1894
+#: dnf/cli/output.py:1893
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
 msgstr "---> %s.%s %s paketi kurulacak"
 
-#: dnf/cli/output.py:1896
+#: dnf/cli/output.py:1895
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
 msgstr "---> %s.%s %s paketi bir yükseltme olacak"
 
-#: dnf/cli/output.py:1898
+#: dnf/cli/output.py:1897
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
 msgstr "---> %s.%s %s paketi silinecek"
 
-#: dnf/cli/output.py:1900
+#: dnf/cli/output.py:1899
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
 msgstr "---> %s.%s %s paketi yeniden kurulacak"
 
-#: dnf/cli/output.py:1902
+#: dnf/cli/output.py:1901
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
 msgstr "---> %s.%s %s paketinin sürümü düşürülecek"
 
-#: dnf/cli/output.py:1904
+#: dnf/cli/output.py:1903
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
 msgstr "---> %s.%s %s paketi kullanım dışı bırakan olacak"
 
-#: dnf/cli/output.py:1906
+#: dnf/cli/output.py:1905
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
 msgstr "---> %s.%s %s paketi yükseltilecek"
 
-#: dnf/cli/output.py:1908
+#: dnf/cli/output.py:1907
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
 msgstr "---> %s.%s %s paketi kullanım dışı bırakılacak"
 
-#: dnf/cli/output.py:1917
+#: dnf/cli/output.py:1916
 msgid "--> Starting dependency resolution"
 msgstr "--> Bağımlılık çözümleme başlatılıyor"
 
-#: dnf/cli/output.py:1921
+#: dnf/cli/output.py:1920
 msgid "--> Finished dependency resolution"
 msgstr "--> Bağımlılık çözümleme sona erdi"
 
-#: dnf/cli/output.py:1935 dnf/crypto.py:132
+#: dnf/cli/output.py:1934 dnf/crypto.py:132
 #, python-format
 msgid ""
 "Importing GPG key 0x%s:\n"
@@ -3552,10 +3550,6 @@ msgstr "    Başladı: %s - %s önce"
 msgid "    State  : %s"
 msgstr "    Durum  : %s"
 
-#: dnf/comps.py:104
-msgid "skipping."
-msgstr "atlanıyor."
-
 #: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
@@ -3606,11 +3600,15 @@ msgstr "'%s' ayrıştırılırken hata oluştu: %s"
 msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Geçersiz yapılandırma değeri: %s=%s, %s içinde; %s"
 
-#: dnf/conf/config.py:226
+#: dnf/conf/config.py:194
+msgid "Cannot set \"{}\" to \"{}\": {}"
+msgstr ""
+
+#: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
 msgstr "Önbellek dizini ayarlanamadı: {}"
 
-#: dnf/conf/config.py:275
+#: dnf/conf/config.py:293
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3618,33 +3616,33 @@ msgstr ""
 "\"{}\" yapılandırma dosyası URL'si indirilemedi:\n"
 "  {}"
 
-#: dnf/conf/config.py:355 dnf/conf/config.py:391
+#: dnf/conf/config.py:373 dnf/conf/config.py:409
 #, python-format
 msgid "Unknown configuration option: %s = %s"
 msgstr "Bilinmeyen yapılandırma seçeneği: %s = %s"
 
-#: dnf/conf/config.py:372
+#: dnf/conf/config.py:390
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
 msgstr ""
 "'%s' anahtarı, '%s' değeri ile --setopt ayrıştırılırken hata oluştu: %s"
 
-#: dnf/conf/config.py:380
+#: dnf/conf/config.py:398
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
 msgstr "Ana yapılandırmada setopt'tan önce %s özelliği yok"
 
-#: dnf/conf/config.py:427 dnf/conf/config.py:445
+#: dnf/conf/config.py:445 dnf/conf/config.py:463
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Yanlış veya bilinmeyen \"{}\": {}"
 
-#: dnf/conf/config.py:501
+#: dnf/conf/config.py:519
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
 msgstr ""
 "'%s.%s' anahtarı, '%s' değeri ile --setopt ayrıştırılırken hata oluştu: %s"
 
-#: dnf/conf/config.py:504
+#: dnf/conf/config.py:522
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
 msgstr "%s deposunun setopt'tan önce %s özelliği yok"
@@ -3705,7 +3703,7 @@ msgstr "DNS kaydı kullanılarak DOĞRULANMADI."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "%s için depo anahtarı %s adresinden şifrelenmemiş olarak alınıyor"
 
-#: dnf/db/group.py:301
+#: dnf/db/group.py:302
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3713,43 +3711,48 @@ msgstr ""
 "'{}' modüler paketi için kullanılabilir modüler üst veri yok, sisteme "
 "kurulamıyor"
 
-#: dnf/db/group.py:351
+#: dnf/db/group.py:353
+#, python-format
+msgid "An rpm exception occurred: %s"
+msgstr ""
+
+#: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
 msgstr "Modüler paket için kullanılabilir modüler üst veri yok"
 
-#: dnf/db/group.py:385
+#: dnf/db/group.py:389
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Kaynak rpm paketi kurulmayacak (%s)."
 
-#: dnf/dnssec.py:168
+#: dnf/dnssec.py:171
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
 "'gpgkey_dns_verification' yapılandırma seçeneği python3-unbound gerektiriyor "
 "({})"
 
-#: dnf/dnssec.py:239
+#: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
 msgstr "DNSSEC uzantısı: Kullanıcı anahtarı "
 
-#: dnf/dnssec.py:241
+#: dnf/dnssec.py:245
 msgid "is valid."
 msgstr "geçerli."
 
-#: dnf/dnssec.py:243
+#: dnf/dnssec.py:247
 msgid "has unknown status."
 msgstr "durumu bilinmiyor."
 
-#: dnf/dnssec.py:251
+#: dnf/dnssec.py:255
 msgid "DNSSEC extension: "
 msgstr "DNSSEC uzantısı: "
 
-#: dnf/dnssec.py:283
+#: dnf/dnssec.py:287
 msgid "Testing already imported keys for their validity."
 msgstr "İçe aktarılmış anahtarların geçerlilikleri sınanıyor."
 
-#: dnf/drpm.py:62 dnf/repo.py:268
+#: dnf/drpm.py:62 dnf/repo.py:267
 #, python-format
 msgid "unsupported checksum type: %s"
 msgstr "desteklenmeyen sağlama toplamı türü: %s"
@@ -3792,7 +3795,7 @@ msgid_plural "Modular dependency problems with Defaults:"
 msgstr[0] "Öntanımlı değerlerle modüler bağımlılık sorunu:"
 msgstr[1] "Öntanımlı değerlerle modüler bağımlılık sorunları:"
 
-#: dnf/exceptions.py:131 dnf/module/module_base.py:854
+#: dnf/exceptions.py:131 dnf/module/module_base.py:857
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
 msgstr[0] "Modüler bağımlılık sorunu:"
@@ -3890,7 +3893,7 @@ msgstr ""
 "İpucu: [d] öntanımlı, [e] etkin, [x] devre dışı, [i] kurulu, [a] aktif"
 
 #: dnf/module/module_base.py:56 dnf/module/module_base.py:556
-#: dnf/module/module_base.py:615 dnf/module/module_base.py:681
+#: dnf/module/module_base.py:615 dnf/module/module_base.py:684
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Gereksiz profil yok sayılıyor: '{}/{}'"
 
@@ -3949,7 +3952,7 @@ msgstr "'{}' paket adı için dağıtıma eşzamanlanacak paket yok"
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
 #: dnf/module/module_base.py:552 dnf/module/module_base.py:611
-#: dnf/module/module_base.py:677 dnf/module/module_base.py:840
+#: dnf/module/module_base.py:680 dnf/module/module_base.py:843
 msgid "Unable to resolve argument {}"
 msgstr "{} argümanı çözümlenemedi"
 
@@ -3983,31 +3986,31 @@ msgstr ""
 "Yalnızca modül adı gereklidir. Argümandaki gereksiz bilgiler yok sayılıyor: "
 "'{}'"
 
-#: dnf/module/module_base.py:841
+#: dnf/module/module_base.py:844
 msgid "No match for package {}"
 msgstr "{} paketi için eşleşme yok"
 
 #. empty file is invalid json format
-#: dnf/persistor.py:54
+#: dnf/persistor.py:53
 #, python-format
 msgid "%s is empty file"
 msgstr "%s boş bir dosya"
 
-#: dnf/persistor.py:91
+#: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
 msgstr "Süresi dolmuş depo önbelleği yüklenemedi: %s"
 
-#: dnf/persistor.py:99
+#: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
 msgstr "Süresi dolmuş depo önbelleği kaydedilemedi: %s"
 
-#: dnf/persistor.py:106
+#: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
 msgstr "Son makecache zamanı kaydedilemedi."
 
-#: dnf/persistor.py:113
+#: dnf/persistor.py:112
 msgid "Failed determining last makecache time."
 msgstr "Son makecache zamanı belirlenemedi."
 
@@ -4044,7 +4047,7 @@ msgid "Already downloaded"
 msgstr "Zaten indirildi"
 
 #. pinging mirrors, this might take a while
-#: dnf/repo.py:347
+#: dnf/repo.py:346
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
 msgstr "en hızlı yansı belirleniyor (%s sunucu).. "
@@ -4059,20 +4062,25 @@ msgstr "%s deposu etkinleştiriliyor"
 msgid "Added %s repo from %s"
 msgstr "%s deposu %s kaynağından eklendi"
 
-#: dnf/rpm/miscutils.py:35
-#, python-brace-format
-msgid ""
-"Using rpmkeys executable from {path} to verify signature for package: "
-"{package}."
-msgstr ""
-"{package} paketinin imzasını doğrulamak için {path} rpmkeys programı "
-"kullanılıyor."
+#: dnf/rpm/miscutils.py:32
+#, fuzzy, python-format
+#| msgid "Cannot find rpmkeys executable to verify signatures."
+msgid "Using rpmkeys executable at %s to verify signatures"
+msgstr "İmzaları doğrulamak için rpmkeys programı bulunamıyor."
 
-#: dnf/rpm/miscutils.py:39
+#: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "İmzaları doğrulamak için rpmkeys programı bulunamıyor."
 
-#: dnf/rpm/transaction.py:119
+#: dnf/rpm/transaction.py:70
+msgid "The openDB() function connot open rpm database."
+msgstr ""
+
+#: dnf/rpm/transaction.py:75
+msgid "The dbCookie() function did not return cookie of rpm database."
+msgstr ""
+
+#: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
 msgstr "Sınama işleminde hatalar oluştu."
 
@@ -4285,37 +4293,52 @@ msgid ""
 msgstr ""
 "İşlem dosyasında bulunmayan paket NEVRA \"{nevra}\" işleme dahil edildi."
 
-#: dnf/util.py:419 dnf/util.py:421
+#: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
 msgstr "Sorun"
 
-#: dnf/util.py:472
+#: dnf/util.py:470
 msgid "TransactionItem not found for key: {}"
 msgstr "Anahtar için TransactionItem bulunamadı: {}"
 
-#: dnf/util.py:482
+#: dnf/util.py:480
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Anahtar için TransactionSWDBItem bulunamadı: {}"
 
-#: dnf/util.py:485
+#: dnf/util.py:483
 msgid "Errors occurred during transaction."
 msgstr "İşlem sırasında hatalar oluştu."
 
-#: dnf/util.py:621
+#: dnf/util.py:619
 msgid "Reinstalled"
 msgstr "Yeniden Kuruldu"
 
-#: dnf/util.py:622
+#: dnf/util.py:620
 msgid "Skipped"
 msgstr "Atlandı"
 
-#: dnf/util.py:623
+#: dnf/util.py:621
 msgid "Removed"
 msgstr "Kaldırıldı"
 
-#: dnf/util.py:626
+#: dnf/util.py:624
 msgid "Failed"
 msgstr "Başarısız Oldu"
+
+#. returns <name-unset> for everything that evaluates to False (None, empty..)
+#: dnf/util.py:633
+msgid "<name-unset>"
+msgstr "<isim-ayarlanmadı>"
+
+#~ msgid "skipping."
+#~ msgstr "atlanıyor."
+
+#~ msgid ""
+#~ "Using rpmkeys executable from {path} to verify signature for package: "
+#~ "{package}."
+#~ msgstr ""
+#~ "{package} paketinin imzasını doğrulamak için {path} rpmkeys programı "
+#~ "kullanılıyor."
 
 #~ msgid "%s: %s check failed: %s vs %s"
 #~ msgstr "%s: %s denetimi başarısız oldu: %s vs %s"
