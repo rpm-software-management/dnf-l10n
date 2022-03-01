@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-02-23 06:16+0000\n"
+"PO-Revision-Date: 2022-03-02 04:16+0000\n"
 "Last-Translator: Kim InSoo <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-9/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-9/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -261,20 +261,16 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "일부 꾸러미를 내려받지 못했습니다. 다시 시도합니다."
 
 #: dnf/base.py:1230
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "델타 RPM이 %.1f MB의 최신화를 %.1f MB로 줄였습니다. (%d.1%% 절약됨)"
+msgstr "델타 RPM은 %.1f MB의 최신화를 %.1f MB으로 줄였습니다.(%.1f%% 절약됨)"
 
 #: dnf/base.py:1234
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr ""
-"Delta RPM은 %.1f MB의 최신화를 %.1f MB로 줄이는데 실패했습니다. (%d.1 %% 손실"
-"됨)"
+msgstr "Delta RPM은 %.1f MB의 최신화를 %.1f MB로 늘리는데 실패했습니다.(%.1f%% "
+"낭비됨)"
 
 #: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
@@ -3559,7 +3555,7 @@ msgstr "잘못된 구성 값: %s=%s (%s; %s에서)"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "\"{}\"을 \"{}\" 으로 설정 할 수 없습니다: {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3670,7 +3666,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "rpm 예외가 발생했습니다: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4014,10 +4010,9 @@ msgid "Added %s repo from %s"
 msgstr "%s 에서 %s repo를 추가했습니다"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "서명을 확인하기 위해 실행 할 수 있는 rpmkeys를 찾을 수 없습니다."
+msgstr "%s에 실행 할 수 있는 rpmkey를 사용하여 서명을 확인합니다"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4025,11 +4020,11 @@ msgstr "서명을 확인하기 위해 실행 할 수 있는 rpmkeys를 찾을 �
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function connot open rpm database."
-msgstr ""
+msgstr "openDB() 함수는 rpm 데이타베이스를 열 수 없습니다."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "dbCookie() 함수는 rpm 데이타베이스의 쿠키를 반환 하지 않습니다."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
