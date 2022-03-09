@@ -28,13 +28,14 @@
 # Harry Chen <harrychen0314@gmail.com>, 2020.
 # Sundeep Anand <suanand@redhat.com>, 2021.
 # weidong <weidongkl@sina.com>, 2021.
+# Transtats <suanand@redhat.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:24+0100\n"
-"PO-Revision-Date: 2021-12-04 02:16+0000\n"
-"Last-Translator: weidong <weidongkl@sina.com>\n"
+"PO-Revision-Date: 2022-03-09 12:39+0000\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-rhel-8/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -42,7 +43,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -256,7 +257,7 @@ msgstr "磁盘需求："
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] "在文件系统{1}上至少需要{0}MB的可用空间。"
+msgstr[0] "在 {1} 文件系统上至少需要 {0}MB 的空间。"
 
 #: dnf/base.py:1011
 msgid "Error Summary"
@@ -1187,7 +1188,7 @@ msgstr "警告：没有匹配的组："
 #: dnf/cli/commands/group.py:179 dnf/cli/commands/group.py:190
 #: dnf/cli/output.py:1139
 msgid "<name-unset>"
-msgstr "<名称-未设定>"
+msgstr "<name-unset>"
 
 #: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
@@ -3191,7 +3192,7 @@ msgstr "总计"
 
 #: dnf/cli/output.py:1467
 msgid "<unset>"
-msgstr "<空>"
+msgstr "<unset>"
 
 #: dnf/cli/output.py:1468
 msgid "System"
@@ -3814,12 +3815,12 @@ msgstr "正在忽略无用的配置文件'{}/{}'"
 #: dnf/module/module_base.py:86
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr "模块 '{1}:{2}' 中参数 '{0}' 的所有匹配项目都未激活"
+msgstr "模块 '{1}:{2}' 中参数 '{0}' 的所有匹配项都未处于活动状态"
 
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "不允许从失效保险仓库 {1} 安装模块 '{0}'"
+msgstr "不允许从自动防故障仓库 {1} 安装模块 '{0}'"
 
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
@@ -3844,12 +3845,12 @@ msgstr "默认配置文件 {} 在模块 {}:{} 中不可用"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr "不允许从失效保险仓库中安装模块"
+msgstr "不允许从自动防故障仓库安装模块"
 
 #: dnf/module/module_base.py:196
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "模块 '{1}:{2}' 中的参数 '{0}' 没有已激活的匹配项目"
+msgstr "模块 '{1}:{2}' 中的参数 '{0}' 没有活动匹配项"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
@@ -3870,7 +3871,7 @@ msgstr "无法解析参数 {}"
 #: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr "不允许从失效保险仓库 {1} 中升级模块 '{0}'"
+msgstr "不允许从自动防故障仓库 {1} 升级模块 '{0}'"
 
 #: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
@@ -3878,7 +3879,7 @@ msgstr "无法匹配参数 {} 中的配置档案"
 
 #: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr "不允许从失效保险仓库中升级模块"
+msgstr "不允许从自动防故障仓库升级模块"
 
 #: dnf/module/module_base.py:422
 #, python-brace-format
@@ -3886,8 +3887,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
-"参数 '{argument}' 可以匹配模块 '{module}' 的 {stream_count} 个流"
-"（'{streams}'），但是这些流都未被启用或非默认"
+"参数 '{argument}' 匹配模块 '{module}' 的 {stream_count} 流 ('{streams}') "
+"，但是这些流都未被启用或为默认"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -3971,10 +3972,9 @@ msgid "Added %s repo from %s"
 msgstr "已添加 %s 仓库来自 %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
+msgstr "使用 %s 处的 rpmkeys 可执行文件来验证签名"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4089,7 +4089,7 @@ msgstr "在 rpm 中缺少对象键 \"{key}\"。"
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr "rpm nevra \"{nevra}\" 的软件包原因 \"{reason}\" 的值无效。"
+msgstr "rpm nevra \"{nevra}\" 的软件包原因 \"{reason}\" 的意外值。"
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
@@ -4104,25 +4104,25 @@ msgstr "无法找到 rpm nevra \"{nevra}\"。"
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "已为操作 \"{action}\" 安装了软件包 \"{na}\"。"
+msgstr "操作 \"{action}\" 的软件包 \"{na}\"已安装。"
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
-msgstr "对于操作 \"{action}\"，软件包 nevra \"{nevra}\" 没有包括在仓库中。"
+msgstr "对于操作 \"{action}\"，软件包 nevra \"{nevra}\" 未在软件仓库中提供。"
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr "软件包 nevra \"{nevra}\" 没有为操作 \"{action}\" 安装。"
+msgstr "没有为操作 \"{action}\" 安装软件包 nevra \"{nevra}\" 。"
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr "rpm nevra \"{nevra}\" 的软件包操作 \"{action}\" 无效。"
+msgstr "rpm nevra \"{nevra}\" 的软件包操作 \"{action}\" 的意外值。"
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4161,19 +4161,19 @@ msgstr "在 environment.groups 中缺少对象键 \"{key}\"。"
 #: dnf/transaction_sr.py:542
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr "组 \"{group}\" 的组操作 \"{action}\" 的值无效。"
+msgstr "对组 \"{group}\" 的组操作 \"{action}\" 的意外值。"
 
 #: dnf/transaction_sr.py:547
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr "在一个组中缺少对象键 \"{key}\"。"
+msgstr "在组中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr "环境 \"{env}\" 的环境操作 \"{action}\" 的值无效。"
+msgstr "对环境 \"{env}\" 的环境操作 \"{action}\" 的意外值。"
 
 #: dnf/transaction_sr.py:576
 #, python-brace-format
