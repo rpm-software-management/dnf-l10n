@@ -24,21 +24,22 @@
 # Côme Borsoi <fedora@borsoi.fr>, 2021.
 # Sundeep Anand <suanand@redhat.com>, 2021.
 # Titouan Bénard <itotutona@evta.fr>, 2021.
+# Transtats <suanand@redhat.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-09 02:01+0000\n"
-"PO-Revision-Date: 2021-10-10 00:45+0000\n"
-"Last-Translator: Titouan Bénard <itotutona@evta.fr>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"PO-Revision-Date: 2022-03-09 12:39+0000\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -301,16 +302,16 @@ msgstr "Certains paquets n’ont pas été téléchargés. Nouvel essai."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Les Delta RPM ont réduit la taille des mises à jour de %.1f Mio à %.1f Mio "
-"(%.1f%% économisés)"
+"Les RPM Delta ont réduit les mises à jour de %.1f Mo à %.1f Mo (%.1f%% "
+"économisé)"
 
 #: dnf/base.py:1239
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"L’échec des Delta RPMs ont fait augmenter les %.1f Mio de mises à jour de "
-"%.1f Mio (%.1f%% gaspillés)"
+"Les échecs des RPM Delta ont augmenté les mises à jour de %.1f Mo à %.1f Mo ("
+"%.1f%% gaspillés)"
 
 #: dnf/base.py:1281
 msgid "Cannot add local packages, because transaction job already exists"
@@ -3711,7 +3712,7 @@ msgstr "Valeur de configuration non valide : %s=%s dans %s ; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr "Impossible de définir \"{}\" sur \"{}\" : {}"
+msgstr "Impossible de définir \"{}\" à \"{}\" : {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3826,7 +3827,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr "Une exception rpm s’est produite : %s"
+msgstr "Une exception rpm s'est produite : %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4191,7 +4192,8 @@ msgstr "Ajout du dépôt %s depuis le %s"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "Utilisation de l'exécutable rpmkeys à %s pour vérifier les signatures"
+msgstr ""
+"Utilisation de l'exécutable rpmkeys dans %s pour vérifier les signatures"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4205,6 +4207,7 @@ msgstr ""
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
 msgstr ""
+"La fonction dbCookie() n'a pas retourné le cookie de la base de données rpm."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
