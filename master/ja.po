@@ -23,13 +23,14 @@
 # Casey Jones <nahareport@yahoo.com>, 2020.
 # Hajime Taira <htaira@pantora.net>, 2020.
 # Sundeep Anand <suanand@redhat.com>, 2021.
+# Transtats <suanand@redhat.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-09 02:01+0000\n"
-"PO-Revision-Date: 2021-09-06 17:24+0000\n"
-"Last-Translator: Sundeep Anand <suanand@redhat.com>\n"
+"PO-Revision-Date: 2022-03-09 12:39+0000\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ja/>\n"
 "Language: ja\n"
@@ -37,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -284,22 +285,17 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "一部のパッケージはダウンロードされませんでした。再試行中です。"
 
 #: dnf/base.py:1235
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr ""
-"Delta RPM により %.1f MB の更新を %.1f MB に削減できました。(%d.1%% がキャッ"
-"シュされていました)"
+msgstr "デルタ RPM は、更新の %.1f MB を %.1f MB に削減しました (%.1f%% "
+"節約しました)。"
 
 #: dnf/base.py:1239
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr ""
-"非効率な Delta RPM により %.1f MB の更新が増加し、%.1f MB となりました。"
-"(%d.1%% が無駄になりました)"
+msgstr "失敗した Delta RPMs は、更新の %.1f MB を %.1f MB に増加しました (%.1f%% "
+"は無駄になりました)"
 
 #: dnf/base.py:1281
 msgid "Cannot add local packages, because transaction job already exists"
@@ -3642,7 +3638,7 @@ msgstr "正しくない設定値: %s=%s in %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "\"{}\" を \"{}\": {} に設定できません。"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3752,7 +3748,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "rpm 例外が発生しました: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4110,7 +4106,7 @@ msgstr "%s から %s repo を追加しました"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "%s で rpmkeys 実行可能ファイルを使用して、署名を検証します"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4122,7 +4118,7 @@ msgstr ""
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "dbCookie() 関数は rpm データベースのクッキーを返しませんでした。"
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
