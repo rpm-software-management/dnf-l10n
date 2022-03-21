@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-03-14 15:16+0000\n"
+"PO-Revision-Date: 2022-03-22 05:16+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/ka/>\n"
@@ -565,7 +565,7 @@ msgstr "  დაყენებულია: %s-%s. დრო:%s"
 #: dnf/cli/cli.py:139
 #, python-format
 msgid "  Built    : %s at %s"
-msgstr "  კომპილაციის დრო      : %s დრო %s"
+msgstr "  აგებულია      : %s დრო %s"
 
 #: dnf/cli/cli.py:147
 #, python-brace-format
@@ -1192,7 +1192,7 @@ msgstr "არგუმენტი ჯგუფის ქვებრძან�
 #: dnf/cli/commands/group.py:343
 #, python-format
 msgid "Invalid groups sub-command, use: %s."
-msgstr ""
+msgstr "ქვებრძანებების არასწორი ჯგუფი. გამოიყენეთ: %s."
 
 #: dnf/cli/commands/group.py:398
 msgid "Unable to find a mandatory group package."
@@ -1378,7 +1378,7 @@ msgstr "%s მომხმარებლის დაყენებულა�
 #: dnf/cli/commands/mark.py:60
 #, python-format
 msgid "%s marked as group installed."
-msgstr ""
+msgstr "%s მონიშნულია, როგორც დაყენებული ჯგუფის წევრი."
 
 #: dnf/cli/commands/mark.py:85 dnf/cli/commands/shell.py:129
 #: dnf/cli/commands/shell.py:237 dnf/cli/commands/shell.py:282
@@ -1659,7 +1659,7 @@ msgstr "პაკეტები სულ: {}"
 
 #: dnf/cli/commands/repoquery.py:107
 msgid "search for packages matching keyword"
-msgstr ""
+msgstr "მოძებნეთ საკვანძო სიტყვის შესაბამისი პაკეტები"
 
 #: dnf/cli/commands/repoquery.py:121
 msgid ""
@@ -1737,15 +1737,15 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:168
 msgid "resolve capabilities to originating package(s)"
-msgstr ""
+msgstr "საწყისი პაკეტების შესაძლებლობების გადაწყვეტა"
 
 #: dnf/cli/commands/repoquery.py:170
 msgid "show recursive tree for package(s)"
-msgstr ""
+msgstr "პაკეტების რეკურსიული ხის ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:172
 msgid "operate on corresponding source RPM"
-msgstr ""
+msgstr "შესაბამის წყაროს RPM-ზე მუშაობა"
 
 #: dnf/cli/commands/repoquery.py:174
 msgid ""
@@ -1767,11 +1767,11 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:188
 msgid "show package source RPM name"
-msgstr ""
+msgstr "პაკეტის წყაროს RPM-ის სახელის ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:191
 msgid "show changelogs of the package"
-msgstr ""
+msgstr "პაკეტის ცვლილებების ჟურნალის ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:194
 #, python-format, python-brace-format
@@ -1895,11 +1895,11 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:270
 msgid "Display only recently edited packages"
-msgstr ""
+msgstr "მხოლოდ ახლახანს ჩასწორებული პაკეტების ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:273
 msgid "the key to search for"
-msgstr ""
+msgstr "ძებნის გასაღები"
 
 #: dnf/cli/commands/repoquery.py:295
 msgid ""
@@ -1921,7 +1921,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:344
 msgid "Package {} contains no files"
-msgstr ""
+msgstr "პაკეტი {} ფაილებს არ შეიცავს"
 
 #: dnf/cli/commands/repoquery.py:561
 #, python-brace-format
@@ -1996,7 +1996,7 @@ msgstr "დამთხვევის გარეშე."
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr ""
+msgstr "გაუშვით ინტერაქტიური {prog} გარსი"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -2014,7 +2014,7 @@ msgstr "გასაღების მხარდაუჭერელი მ�
 #: dnf/cli/commands/shell.py:158
 #, python-format
 msgid "Could not find repository: %s"
-msgstr ""
+msgstr "რეპოზიტორიის პოვნა შეუძლებელია: %s"
 
 #: dnf/cli/commands/shell.py:174
 msgid ""
@@ -2046,6 +2046,8 @@ msgid ""
 "{}\n"
 "    resolve the transaction set"
 msgstr ""
+"{}\n"
+"   ტრანზაქციის ნაკრების გადაწყვეტა"
 
 #: dnf/cli/commands/shell.py:195
 msgid ""
@@ -2166,7 +2168,7 @@ msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:92
 msgid "show summary of advisories (default)"
-msgstr ""
+msgstr "რჩევების მიმოხილვის ჩვენება (ნაგულისხმები)"
 
 #: dnf/cli/commands/updateinfo.py:95
 msgid "show list of advisories"
@@ -2385,7 +2387,7 @@ msgstr "ოპერაციების ღრმა დეტალები"
 #: dnf/cli/option_parser.py:185
 #, python-brace-format
 msgid "show {prog} version and exit"
-msgstr ""
+msgstr "{prog}-ის ვერსიის ჩვენება და გასვლა"
 
 #: dnf/cli/option_parser.py:187
 msgid "set install root"
@@ -2468,7 +2470,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:251
 msgid "debugging output level for rpm"
-msgstr ""
+msgstr "rpm-ის გამართვის დონე"
 
 #: dnf/cli/option_parser.py:254
 msgid "automatically answer yes for all questions"
@@ -2528,7 +2530,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:302
 msgid "control whether color is used"
-msgstr ""
+msgstr "ფერების გამოყენების ჩართვა"
 
 #: dnf/cli/option_parser.py:305
 msgid "set metadata as expired before running the command"
@@ -2536,11 +2538,11 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:308
 msgid "resolve to IPv4 addresses only"
-msgstr ""
+msgstr "მხოლოდ IPv4 მისამართების გადაწყვეტა"
 
 #: dnf/cli/option_parser.py:311
 msgid "resolve to IPv6 addresses only"
-msgstr ""
+msgstr "მხოლოდ IPv6 მისამართების გადაწყვეტა"
 
 #: dnf/cli/option_parser.py:314
 msgid "set directory to copy packages to"
@@ -2552,7 +2554,7 @@ msgstr "პაკეტების მხოლოდ გადმოწერ�
 
 #: dnf/cli/option_parser.py:319
 msgid "add a comment to transaction"
-msgstr ""
+msgstr "ტრანზაქციისთვის კომენტარის დამატება"
 
 #: dnf/cli/option_parser.py:322
 msgid "Include bugfix relevant packages, in updates"
@@ -2601,7 +2603,7 @@ msgstr "დამატებების ბრძანებების ს�
 #: dnf/cli/option_parser.py:413
 #, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr ""
+msgstr "არგუმენტის (%s) დაშიფვრის შეცდომა: %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -3004,11 +3006,11 @@ msgstr ""
 #: dnf/cli/output.py:1203
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
-msgstr ""
+msgstr "გამოსატოვებელი გაფუჭებული დამოკიდებულებების მქონე პაკეტები %s"
 
 #: dnf/cli/output.py:1207
 msgid " or part of a group"
-msgstr ""
+msgstr " ან ჯგუფის წევრი"
 
 #. Translators: This is the short version of 'Package'. You can
 #. use the full (unabbreviated) term 'Package' if you think that
@@ -3396,7 +3398,7 @@ msgstr "გარემო დაყენებული არაა:'%s'."
 #: dnf/comps.py:641
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "გარემო (%s) ხელმიუწვდომელია."
 
 #: dnf/comps.py:673
 #, python-format
@@ -3419,7 +3421,7 @@ msgstr ""
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
-msgstr ""
+msgstr "ქეშის საქაღალდის დაყენების შეცდომა: {}"
 
 #: dnf/conf/config.py:293
 msgid ""
@@ -3444,7 +3446,7 @@ msgstr ""
 
 #: dnf/conf/config.py:445 dnf/conf/config.py:463
 msgid "Incorrect or unknown \"{}\": {}"
-msgstr ""
+msgstr "არასწორი ან უცნობი \"{}\": {}"
 
 #: dnf/conf/config.py:519
 #, python-format
@@ -3459,7 +3461,7 @@ msgstr ""
 #: dnf/conf/read.py:60
 #, python-format
 msgid "Warning: failed loading '%s', skipping."
-msgstr ""
+msgstr "გაფრთხილება: %s-ის ჩატვირთვის პრობლემა, გამოტოვებულია."
 
 #: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
@@ -3487,7 +3489,7 @@ msgstr ""
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
-msgstr ""
+msgstr "ფაილის \"{}\" დამუშავების შეცდომა: {}"
 
 #: dnf/crypto.py:108
 #, python-format
