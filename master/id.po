@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-27 02:11+0000\n"
-"PO-Revision-Date: 2022-03-27 09:16+0000\n"
+"PO-Revision-Date: 2022-03-27 13:32+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/id/>\n"
@@ -1459,6 +1459,7 @@ msgstr ""
 "tandai atau hapus tandai paket terpasang sebagai dipasang oleh pengguna."
 
 #: dnf/cli/commands/mark.py:44
+#, fuzzy
 msgid ""
 "install: mark as installed by user\n"
 "remove: unmark as installed by user\n"
@@ -2259,6 +2260,7 @@ msgstr "Meninggalkan Shell"
 #, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
 msgstr ""
+"menjalankan mod {prog} interaktif untuk menghapus dan memasang satu spec"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2302,45 +2304,48 @@ msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:63
 msgid "display advisories about packages"
-msgstr ""
+msgstr "menampilkan advisori tentang paket"
 
 #: dnf/cli/commands/updateinfo.py:77
 msgid "advisories about newer versions of installed packages (default)"
-msgstr ""
+msgstr "advisori tentang versi yang lebih baru dari paket yang dipasang (baku)"
 
 #: dnf/cli/commands/updateinfo.py:80
 msgid "advisories about equal and older versions of installed packages"
 msgstr ""
+"advisori tentang versi yang sama dan lebih lama dari paket yang dipasang"
 
 #: dnf/cli/commands/updateinfo.py:83
 msgid ""
 "advisories about newer versions of those installed packages for which a "
 "newer version is available"
 msgstr ""
+"advisori tentang versi yang lebih baru dari paket yang dipasang yang "
+"tersedia versi yang lebih baru"
 
 #: dnf/cli/commands/updateinfo.py:87
 msgid "advisories about any versions of installed packages"
-msgstr ""
+msgstr "advisori tentang versi paket yang dipasang"
 
 #: dnf/cli/commands/updateinfo.py:92
 msgid "show summary of advisories (default)"
-msgstr ""
+msgstr "tampilkan ringkasan advisori (baku)"
 
 #: dnf/cli/commands/updateinfo.py:95
 msgid "show list of advisories"
-msgstr ""
+msgstr "tampilkan daftar advisori"
 
 #: dnf/cli/commands/updateinfo.py:98
 msgid "show info of advisories"
-msgstr ""
+msgstr "tampilkan info advisori"
 
 #: dnf/cli/commands/updateinfo.py:101
 msgid "show only advisories with CVE reference"
-msgstr ""
+msgstr "hanya menunjukkan advisori dengan referensi CVE"
 
 #: dnf/cli/commands/updateinfo.py:104
 msgid "show only advisories with bugzilla reference"
-msgstr ""
+msgstr "hanya menunjukkan advisori dengan referensi bugzilla"
 
 #: dnf/cli/commands/updateinfo.py:168
 msgid "installed"
@@ -2457,7 +2462,7 @@ msgstr ""
 
 #: dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr ""
+msgstr "meningkatkan paket atau paket-paket pada sistem Anda"
 
 #: dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -2468,6 +2473,8 @@ msgid ""
 "upgrade, but only 'newest' package match which fixes a problem that affects "
 "your system"
 msgstr ""
+"meningkatkan, tetapi hanya cocok dengan paket 'terbaru' yang memperbaiki "
+"masalah yang memengaruhi sistem Anda"
 
 #: dnf/cli/main.py:88
 msgid "Terminated."
@@ -2568,11 +2575,11 @@ msgstr "nonaktifkan pengaya berdasarkan nama"
 
 #: dnf/cli/option_parser.py:203
 msgid "override the value of $releasever in config and repo files"
-msgstr ""
+msgstr "menimpa nilai $releasever dalam berkas konfigurasi dan repo"
 
 #: dnf/cli/option_parser.py:207
 msgid "set arbitrary config and repo options"
-msgstr ""
+msgstr "atur sebarai opsi konfigurasi dan repo"
 
 #: dnf/cli/option_parser.py:210
 msgid "resolve depsolve problems by skipping packages"
@@ -2594,7 +2601,7 @@ msgstr "mencoba versi paket terbaik yang tersedia dalam transaksi."
 
 #: dnf/cli/option_parser.py:223
 msgid "do not limit the transaction to the best candidate"
-msgstr ""
+msgstr "jangan membatasi transaksi ke kandidat terbaik"
 
 #: dnf/cli/option_parser.py:226
 msgid "run entirely from system cache, don't update cache"
@@ -2611,7 +2618,7 @@ msgstr "tingkat keluaran debug"
 
 #: dnf/cli/option_parser.py:236
 msgid "dumps detailed solving results into files"
-msgstr ""
+msgstr "curahkan hasil pemecahan terperinci ke dalam berkas"
 
 #: dnf/cli/option_parser.py:240
 msgid "show duplicates, in repos, in list/search commands"
@@ -2660,22 +2667,25 @@ msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
 msgstr ""
+"aktifkan hanya repositori tertentu dengan id atau glob, dapat dinyatakan "
+"beberapa kali"
 
 #: dnf/cli/option_parser.py:280
 msgid "enable repos with config-manager command (automatically saves)"
-msgstr ""
+msgstr "aktifkan repo dengan perintah config-manager (disimpan secara otomatis)"
 
 #: dnf/cli/option_parser.py:284
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr ""
+"nonaktifkan repo dengan perintah config-manager (disimpan secara otomatis)"
 
 #: dnf/cli/option_parser.py:288
 msgid "exclude packages by name or glob"
-msgstr ""
+msgstr "mengecualikan paket berdasarkan nama atau glob"
 
 #: dnf/cli/option_parser.py:293
 msgid "disable excludepkgs"
-msgstr ""
+msgstr "nonaktifkan excludepkgs"
 
 #: dnf/cli/option_parser.py:298
 msgid ""
@@ -2709,7 +2719,7 @@ msgstr "uraikan hanya untuk alamat IPv6"
 
 #: dnf/cli/option_parser.py:319
 msgid "set directory to copy packages to"
-msgstr ""
+msgstr "mengatur direktori tempat tujuan menyalin paket"
 
 #: dnf/cli/option_parser.py:322
 msgid "only download packages"
@@ -2721,7 +2731,7 @@ msgstr "tambah komentar ke transaksi"
 
 #: dnf/cli/option_parser.py:327
 msgid "Include bugfix relevant packages, in updates"
-msgstr ""
+msgstr "Sertakan paket yang relevan dengan perbaikan bug, dalam pembaruan"
 
 #: dnf/cli/option_parser.py:330
 msgid "Include enhancement relevant packages, in updates"
@@ -2757,11 +2767,11 @@ msgstr "Paksa penggunaan suatu arsitektur"
 
 #: dnf/cli/option_parser.py:380
 msgid "List of Main Commands:"
-msgstr ""
+msgstr "Daftar Perintah Utama:"
 
 #: dnf/cli/option_parser.py:381
 msgid "List of Plugin Commands:"
-msgstr ""
+msgstr "Daftar Perintah Plugin:"
 
 #: dnf/cli/option_parser.py:418
 #, python-format
@@ -2865,7 +2875,7 @@ msgstr "Pemaket"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:495
 msgid "Buildtime"
-msgstr ""
+msgstr "Waktu build"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:499
@@ -3012,7 +3022,7 @@ msgstr ""
 #: dnf/cli/output.py:891
 #, python-format
 msgid "Other       : %s"
-msgstr ""
+msgstr "Lainnya     : %s"
 
 #: dnf/cli/output.py:940
 msgid "There was an error calculating total download size"
@@ -3044,11 +3054,11 @@ msgstr "Ruang dibebaskan: %s"
 
 #: dnf/cli/output.py:983
 msgid "Marking packages as installed by the group:"
-msgstr ""
+msgstr "Menandai paket sebagai dipasang oleh grup:"
 
 #: dnf/cli/output.py:990
 msgid "Marking packages as removed by the group:"
-msgstr ""
+msgstr "Menandai paket sebagai dihapus oleh grup:"
 
 #: dnf/cli/output.py:1000
 msgid "Group"
@@ -3173,7 +3183,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1207
 msgid " or part of a group"
-msgstr ""
+msgstr " atau bagian dari grup"
 
 #. Translators: This is the short version of 'Package'. You can
 #. use the full (unabbreviated) term 'Package' if you think that
@@ -3192,7 +3202,7 @@ msgstr "Paket"
 
 #: dnf/cli/output.py:1283
 msgid "replacing"
-msgstr ""
+msgstr "menggantikan"
 
 #: dnf/cli/output.py:1290
 #, python-format
@@ -3279,7 +3289,7 @@ msgstr "Tidak ada transaksi"
 
 #: dnf/cli/output.py:1580 dnf/cli/output.py:1596
 msgid "Failed history info"
-msgstr ""
+msgstr "Info riwayat gagal"
 
 #: dnf/cli/output.py:1595
 msgid "No transaction ID, or package, given"
@@ -3510,7 +3520,7 @@ msgstr "Tak diketahui"
 #: dnf/cli/utils.py:113
 #, python-format
 msgid "Unable to find information about the locking process (PID %d)"
-msgstr ""
+msgstr "Tidak dapat menemukan informasi tentang proses penguncian (PID %d)"
 
 #: dnf/cli/utils.py:117
 #, python-format
@@ -3595,6 +3605,8 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"URL berkas konfigurasi \"{}\" tidak dapat diunduh:\n"
+"  {}"
 
 #: dnf/conf/config.py:373 dnf/conf/config.py:409
 #, python-format
@@ -3632,49 +3644,49 @@ msgstr "Peringatan: gagal memuat '%s', lewatkan."
 
 #: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr ""
+msgstr "Id buruk untuk repo: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:76
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr ""
+msgstr "Id buruk untuk repo: {}, byte = {} {}"
 
 #: dnf/conf/read.py:84
 msgid "Repository '{}' ({}): Error parsing config: {}"
-msgstr ""
+msgstr "Repositori '{}' ({}): Galat saat mengurai konfigurasi: {}"
 
 #: dnf/conf/read.py:87
 msgid "Repository '{}': Error parsing config: {}"
-msgstr ""
+msgstr "Repositori '{}': Galat saat mengurai konfigurasi: {}"
 
 #: dnf/conf/read.py:93
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
-msgstr ""
+msgstr "Repositori '{}' ({}) kurang nama dalam konfigurasi, menggunakan id."
 
 #: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
-msgstr ""
+msgstr "Repositori '{}' kurang nama dalam konfigurasi, menggunakan id."
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
-msgstr ""
+msgstr "Penguraian berkas \"{}\" gagal: {}"
 
 #: dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr ""
+msgstr "repo %s: 0x%s sudah diimpor"
 
 #: dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr ""
+msgstr "repo %s: kunci yang diimpor 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Diverifikasi menggunakan catatan DNS dengan tanda tangan DNSSEC."
 
 #: dnf/crypto.py:147
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "TIDAK diverifikasi menggunakan catatan DNS."
 
 #: dnf/crypto.py:184
 #, python-format
@@ -3749,19 +3761,19 @@ msgstr ""
 
 #: dnf/exceptions.py:115
 msgid "missing packages: "
-msgstr ""
+msgstr "paket hilang: "
 
 #: dnf/exceptions.py:117
 msgid "broken packages: "
-msgstr ""
+msgstr "paket rusak: "
 
 #: dnf/exceptions.py:119
 msgid "missing groups or modules: "
-msgstr ""
+msgstr "grup atau modul hilang: "
 
 #: dnf/exceptions.py:121
 msgid "broken groups or modules: "
-msgstr ""
+msgstr "grup atau modul yang rusak: "
 
 #: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
@@ -3771,7 +3783,7 @@ msgstr[0] ""
 #: dnf/exceptions.py:131 dnf/module/module_base.py:857
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
-msgstr[0] ""
+msgstr[0] "Masalah ketergantungan modular:"
 
 #: dnf/lock.py:100
 #, python-format
@@ -3787,7 +3799,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:27
 msgid "Nothing to show."
-msgstr ""
+msgstr "Tidak ada yang bisa ditunjukkan."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
@@ -3795,7 +3807,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
-msgstr ""
+msgstr "Modul yang diaktifkan: {}."
 
 #: dnf/module/__init__.py:30
 msgid "No profile specified for '{}', please specify profile."
@@ -3803,7 +3815,7 @@ msgstr ""
 
 #: dnf/module/exceptions.py:27
 msgid "No such module: {}"
-msgstr ""
+msgstr "Tidak ada modul seperti itu: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -3823,7 +3835,7 @@ msgstr ""
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Tidak ada profil seperti itu: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
@@ -3839,7 +3851,7 @@ msgstr "Profil itu tidak ada: {}. Tidak ada profil yang tersedia"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
-msgstr ""
+msgstr "Tidak ada profil yang akan dihapus untuk '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3858,7 +3870,7 @@ msgstr ""
 #: dnf/module/module_base.py:56 dnf/module/module_base.py:556
 #: dnf/module/module_base.py:615 dnf/module/module_base.py:684
 msgid "Ignoring unnecessary profile: '{}/{}'"
-msgstr ""
+msgstr "Mengabaikan profil yang tidak perlu: '{}/{}'"
 
 #: dnf/module/module_base.py:86
 #, python-brace-format
@@ -3885,7 +3897,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "Tidak ada profil untuk modul {}:{}"
 
 #: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
