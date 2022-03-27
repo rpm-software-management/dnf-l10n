@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:24+0100\n"
-"PO-Revision-Date: 2022-03-27 13:32+0000\n"
+"PO-Revision-Date: 2022-03-28 07:01+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/id/>\n"
@@ -1462,7 +1462,6 @@ msgstr ""
 "tandai atau hapus tandai paket terpasang sebagai dipasang oleh pengguna."
 
 #: dnf/cli/commands/mark.py:44
-#, fuzzy
 msgid ""
 "install: mark as installed by user\n"
 "remove: unmark as installed by user\n"
@@ -1551,11 +1550,11 @@ msgstr ""
 
 #: dnf/cli/commands/module.py:302
 msgid "list modular packages"
-msgstr ""
+msgstr "tampilkan daftar paket modular"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
-msgstr ""
+msgstr "tampilkan daftar paket milik modul"
 
 #: dnf/cli/commands/module.py:352
 msgid "Interact with Modules."
@@ -1966,7 +1965,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:237
 msgid "Display capabilities provided by the package."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang disediakan oleh paket."
 
 #: dnf/cli/commands/repoquery.py:238
 msgid "Display capabilities that the package recommends."
@@ -2697,11 +2696,12 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:297
 msgid "disable removal of dependencies that are no longer used"
-msgstr ""
+msgstr "menonaktifkan penghapusan dependensi yang tidak lagi digunakan"
 
 #: dnf/cli/option_parser.py:300
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr ""
+"nonaktifkan pemeriksaan tanda tangan gpg (jika kebijakan RPM mengizinkan)"
 
 #: dnf/cli/option_parser.py:302
 msgid "control whether color is used"
@@ -3623,7 +3623,7 @@ msgstr ""
 
 #: dnf/conf/config.py:427 dnf/conf/config.py:445
 msgid "Incorrect or unknown \"{}\": {}"
-msgstr ""
+msgstr "\"{}\" yang salah atau tidak dikenal: {}"
 
 #: dnf/conf/config.py:501
 #, python-format
@@ -3633,7 +3633,7 @@ msgstr ""
 #: dnf/conf/config.py:504
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr ""
+msgstr "Repo %s tidak memiliki attr. %s sebelum setopt"
 
 #: dnf/conf/read.py:60
 #, python-format
@@ -3710,6 +3710,7 @@ msgstr ""
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
+"Opsi konfigurasi 'gpgkey_dns_verification' memerlukan python3-unbound ({})"
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
@@ -3721,7 +3722,7 @@ msgstr ""
 
 #: dnf/dnssec.py:243
 msgid "has unknown status."
-msgstr ""
+msgstr "memiliki status yang tidak diketahui."
 
 #: dnf/dnssec.py:251
 msgid "DNSSEC extension: "
@@ -3832,7 +3833,7 @@ msgstr "Tidak ada profil seperti itu: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Profil yang dinyatakan tidak dipasang untuk {}"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
@@ -3868,7 +3869,7 @@ msgstr "Mengabaikan profil yang tidak perlu: '{}/{}'"
 #: dnf/module/module_base.py:86
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr ""
+msgstr "Semua kecocokan untuk argumen '{0}' dalam modul '{1}:{2}' tidak aktif"
 
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
@@ -3894,7 +3895,7 @@ msgstr "Tidak ada profil untuk modul {}:{}"
 
 #: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
-msgstr ""
+msgstr "Profil baku {} tidak tersedia dalam modul {}:{}"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
@@ -3908,7 +3909,7 @@ msgstr ""
 #: dnf/module/module_base.py:228
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr ""
+msgstr "Profil terpasang '{0}' tidak tersedia di modul '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
@@ -3945,6 +3946,8 @@ msgstr ""
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
+"Hanya nama modul yang diperlukan. Mengabaikan informasi yang tidak perlu "
+"dalam argumen: '{}'"
 
 #: dnf/module/module_base.py:841
 msgid "No match for package {}"
@@ -3959,12 +3962,12 @@ msgstr "%s adalah sebuah berkas kosong"
 #: dnf/persistor.py:91
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Gagal memuat singgahan repo kedaluwarsa: %s"
 
 #: dnf/persistor.py:99
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Gagal menyimpan singgahan repo kedaluwarsa: %s"
 
 #: dnf/persistor.py:106
 msgid "Failed storing last makecache time."
@@ -3977,17 +3980,17 @@ msgstr ""
 #: dnf/plugin.py:63
 #, python-format
 msgid "Parsing file failed: %s"
-msgstr ""
+msgstr "Penguraian berkas gagal: %s"
 
 #: dnf/plugin.py:141
 #, python-format
 msgid "Loaded plugins: %s"
-msgstr ""
+msgstr "Plugin yang dimuat: %s"
 
 #: dnf/plugin.py:211
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
-msgstr ""
+msgstr "Gagal memuat plugin \"%s\": %s"
 
 #: dnf/plugin.py:243
 msgid "No matches found for the following enable plugin patterns: {}"
@@ -4033,7 +4036,7 @@ msgstr ""
 
 #: dnf/rpm/transaction.py:119
 msgid "Errors occurred during test transaction."
-msgstr ""
+msgstr "Kesalahan terjadi selama transaksi pengujian."
 
 #: dnf/sack.py:47
 msgid ""
@@ -4123,12 +4126,12 @@ msgstr ""
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Tipe \"{id}\" yang tidak terduga, diharapkan {exp}."
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Kurang kunci \"{key}\"."
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
@@ -4154,7 +4157,7 @@ msgstr ""
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr ""
+msgstr "Paket \"{na}\" sudah dipasang untuk tindakan \"{action}\"."
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
@@ -4249,7 +4252,7 @@ msgstr ""
 
 #: dnf/util.py:485
 msgid "Errors occurred during transaction."
-msgstr ""
+msgstr "Kesalahan terjadi selama transaksi."
 
 #: dnf/util.py:621
 msgid "Reinstalled"
