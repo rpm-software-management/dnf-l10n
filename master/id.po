@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-22 02:15+0000\n"
-"PO-Revision-Date: 2022-03-14 15:16+0000\n"
+"PO-Revision-Date: 2022-03-27 09:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/id/>\n"
@@ -1626,7 +1626,7 @@ msgstr "Tak pernah (terakhir: %s)"
 #: dnf/cli/commands/repolist.py:42
 #, python-format
 msgid "Instant (last: %s)"
-msgstr ""
+msgstr "Instan (terakhir: %s)"
 
 #: dnf/cli/commands/repolist.py:45
 #, python-format
@@ -1771,6 +1771,8 @@ msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr ""
+"Kueri semua paket (singkatan untuk repoquery '*' atau repoquery tanpa "
+"argumen)"
 
 #: dnf/cli/commands/repoquery.py:124
 msgid "Query all versions of packages (default)"
@@ -1824,17 +1826,20 @@ msgstr "hanya tampilkan hasil yang melengkapi REQ"
 
 #: dnf/cli/commands/repoquery.py:160
 msgid "check non-explicit dependencies (files and Provides); default"
-msgstr ""
+msgstr "periksa dependensi non-eksplisit (berkas dan Provides); baku"
 
 #: dnf/cli/commands/repoquery.py:162
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr ""
+"periksa dependensi persis seperti yang diberikan, berlawanan dengan --alldeps"
 
 #: dnf/cli/commands/repoquery.py:164
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
+"digunakan dengan --whatrequires, dan --requires --resolve, kueri paket "
+"secara rekursif."
 
 #: dnf/cli/commands/repoquery.py:166
 msgid "show a list of all dependencies and what packages provide them"
@@ -1843,7 +1848,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:168
 msgid "resolve capabilities to originating package(s)"
-msgstr ""
+msgstr "mengurai kapabilitas ke paket asal"
 
 #: dnf/cli/commands/repoquery.py:170
 msgid "show recursive tree for package(s)"
@@ -1858,18 +1863,20 @@ msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
 msgstr ""
+"tampilkan N paket terbaru untuk nama.arch tertentu (atau terbaru selain N "
+"jika N negatif)"
 
 #: dnf/cli/commands/repoquery.py:177
 msgid "list also packages of inactive module streams"
-msgstr ""
+msgstr "cantumkan juga paket dari stream modul yang tidak aktif"
 
 #: dnf/cli/commands/repoquery.py:182
 msgid "show detailed information about the package"
-msgstr ""
+msgstr "tampilkan informasi terperinci tentang paket"
 
 #: dnf/cli/commands/repoquery.py:185
 msgid "show list of files in the package"
-msgstr ""
+msgstr "menunjukkan daftar berkas dalam paket"
 
 #: dnf/cli/commands/repoquery.py:188
 msgid "show package source RPM name"
@@ -1885,28 +1892,36 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"format tampilan untuk menyajikan daftar paket: \"%%{name} %%{version} ...\", "
+"gunakan --querytags untuk melihat daftar tag lengkap"
 
 #: dnf/cli/commands/repoquery.py:198
 msgid "show available tags to use with --queryformat"
-msgstr ""
+msgstr "memperlihatkan tag yang tersedia untuk digunakan dengan --queryformat"
 
 #: dnf/cli/commands/repoquery.py:202
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
 msgstr ""
+"gunakan format name-epoch:version-release.architecture untuk menampilkan "
+"paket yang ditemukan (baku)"
 
 #: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
 msgstr ""
+"gunakan format name-version-release untuk menampilkan paket yang ditemukan ("
+"baku kueri rpm)"
 
 #: dnf/cli/commands/repoquery.py:211
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
 msgstr ""
+"gunakan format epoch:name-version-release.architecture untuk menampilkan "
+"paket yang ditemukan"
 
 #: dnf/cli/commands/repoquery.py:214
 msgid "Display in which comps groups are presented selected packages"
@@ -1914,23 +1929,24 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:218
 msgid "limit the query to installed duplicate packages"
-msgstr ""
+msgstr "membatasi kueri ke paket duplikat yang dipasang"
 
 #: dnf/cli/commands/repoquery.py:225
 msgid "limit the query to installed installonly packages"
-msgstr ""
+msgstr "membatasi kueri ke paket installonly yang terpasang"
 
 #: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
+"membatasi kueri ke paket terpasang dengan dependensi yang tidak terpenuhi"
 
 #: dnf/cli/commands/repoquery.py:230
 msgid "show a location from where packages can be downloaded"
-msgstr ""
+msgstr "menunjukkan lokasi dari mana paket dapat diunduh"
 
 #: dnf/cli/commands/repoquery.py:233
 msgid "Display capabilities that the package conflicts with."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang konflik dengan paket."
 
 #: dnf/cli/commands/repoquery.py:234
 msgid ""
@@ -1981,31 +1997,35 @@ msgstr "Tampilkan hanya paket yang terpasang."
 #: dnf/cli/commands/repoquery.py:254
 msgid ""
 "Display only packages that are not present in any of available repositories."
-msgstr ""
+msgstr "Hanya menampilkan paket yang tidak ada di repositori yang tersedia."
 
 #: dnf/cli/commands/repoquery.py:255
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
 msgstr ""
+"Tampilkan hanya paket yang menyediakan peningkatan untuk beberapa paket yang "
+"sudah dipasang."
 
 #: dnf/cli/commands/repoquery.py:256
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
+"Tampilkan hanya paket yang dapat dihapus dengan perintah \"{prog} "
+"autoremove\"."
 
 #: dnf/cli/commands/repoquery.py:258
 msgid "Display only packages that were installed by user."
-msgstr ""
+msgstr "Hanya menampilkan paket yang dipasang oleh pengguna."
 
 #: dnf/cli/commands/repoquery.py:270
 msgid "Display only recently edited packages"
-msgstr ""
+msgstr "Hanya menampilkan paket yang baru-baru ini disunting"
 
 #: dnf/cli/commands/repoquery.py:273
 msgid "the key to search for"
-msgstr ""
+msgstr "kunci yang akan dicari"
 
 #: dnf/cli/commands/repoquery.py:295
 msgid ""
@@ -2013,6 +2033,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
+"Opsi '--resolve' harus digunakan bersama dengan salah satu opsi '--"
+"conflicts', '--depends', '--enhances', '--provides', '--recommends', '--"
+"requires', '--requires-pre', '--suggests', atau '--supplements'"
 
 #: dnf/cli/commands/repoquery.py:305
 msgid ""
@@ -2020,14 +2043,17 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"Opsi '--recursive' harus digunakan dengan '---whatrequires <REQ>' (opsional "
+"dengan '--alldeps', tetapi tidak dengan '--exactdeps'), atau dengan '---"
+"requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:312
 msgid "argument {} requires --whatrequires or --whatdepends option"
-msgstr ""
+msgstr "argumen {} membutuhkan opsi --whatrequires atau --whatdepends"
 
 #: dnf/cli/commands/repoquery.py:344
 msgid "Package {} contains no files"
-msgstr ""
+msgstr "Paket {} tidak berisi berkas"
 
 #: dnf/cli/commands/repoquery.py:561
 #, python-brace-format
@@ -2043,11 +2069,11 @@ msgstr ""
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
-msgstr ""
+msgstr "mencari detail paket untuk string yang diberikan"
 
 #: dnf/cli/commands/search.py:51
 msgid "search also package description and URL"
-msgstr ""
+msgstr "cari juga deskripsi paket dan URL"
 
 #: dnf/cli/commands/search.py:52
 msgid "KEYWORD"
@@ -2130,12 +2156,19 @@ msgid ""
 "    If no value is given it prints the current value.\n"
 "    If value is given it sets that value."
 msgstr ""
+"{} arg [nilai]\n"
+"  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
+"        repo_id.gpgcheck, repo_id.exclude\n"
+"    Jika tidak ada nilai yang diberikan, mencetak nilai saat ini.\n"
+"    Jika nilai diberikan, menetapkan nilainya."
 
 #: dnf/cli/commands/shell.py:181
 msgid ""
 "{} [command]\n"
 "    print help"
 msgstr ""
+"{} [perintah]\n"
+"    mencetak bantuan"
 
 #: dnf/cli/commands/shell.py:185
 msgid ""
@@ -2144,12 +2177,18 @@ msgid ""
 "  enable: enable repositories. option = repository id\n"
 "  disable: disable repositories. option = repository id"
 msgstr ""
+"{} arg [opsi]\n"
+"  list: daftar repositori dan statusnya. opsi = [semua | id | glob]\n"
+"  enable: aktifkan repositori. opsi = id repositori\n"
+"  disable: nonaktifkan repositori. opsi = id repositori"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
 "{}\n"
 "    resolve the transaction set"
 msgstr ""
+"{}\n"
+"    menguraikan set transaksi"
 
 #: dnf/cli/commands/shell.py:195
 msgid ""
@@ -2158,18 +2197,26 @@ msgid ""
 "  reset: reset (zero-out) the transaction\n"
 "  run: run the transaction"
 msgstr ""
+"{} arg\n"
+"  list: daftar isi transaksi\n"
+"  reset: reset (mengenolkan) transaksi\n"
+"  run: jalankan transaksi"
 
 #: dnf/cli/commands/shell.py:201
 msgid ""
 "{}\n"
 "    run the transaction"
 msgstr ""
+"{}\n"
+"    menjalankan transaksi"
 
 #: dnf/cli/commands/shell.py:205
 msgid ""
 "{}\n"
 "    exit the shell"
 msgstr ""
+"{}\n"
+"    keluar dari shell"
 
 #: dnf/cli/commands/shell.py:210
 msgid ""
@@ -2183,11 +2230,22 @@ msgid ""
 "run                      resolve and run the transaction set\n"
 "exit (or quit)           exit the shell"
 msgstr ""
+"Argumen spesifik shell:\n"
+"\n"
+"config                  set config options\n"
+"help                    mencetak bantuan\n"
+"repository (atau repo)  mengaktifkan, menonaktifkan, atau mencetak daftar "
+"repositori\n"
+"resolvedep              menguraikan set transaksi\n"
+"transaction (atau ts)   menampilkan daftar, mengatur ulang, atau menjalankan "
+"set transaksi\n"
+"run                     mengurai dan menjalankan set transaksi\n"
+"exit (atau quit)        keluar dari shell"
 
 #: dnf/cli/commands/shell.py:262
 #, python-format
 msgid "Error: Cannot open %s for reading"
-msgstr ""
+msgstr "Galat: Tidak dapat membuka %s untuk membaca"
 
 #: dnf/cli/commands/shell.py:284 dnf/cli/main.py:187
 msgid "Complete!"
