@@ -25,7 +25,7 @@
 # Luis Manuel Segundo <luis@blackfile.net>, 2019. #zanata
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2019. #zanata
 # Cristhian Vanessa Gonzalez <cristhian.vanessa.g@gmail.com>, 2020.
-# Emilio Herrera <ehespinosa57@gmail.com>, 2020.
+# Emilio Herrera <ehespinosa57@gmail.com>, 2020, 2022.
 # Luis Mosquera <aikyu.sama@gmail.com>, 2020.
 # Pedro Luis Valades Viera <perikiyoxd@gmail.com>, 2021.
 # Daniel Hernandez <hernandez101900daniel@gmail.com>, 2022.
@@ -35,16 +35,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-02-04 15:48+0000\n"
-"Last-Translator: Dennis Tobar <DENNIS.TOBAR@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-9/es/>\n"
+"PO-Revision-Date: 2022-03-30 13:23+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-9/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -4010,10 +4010,8 @@ msgid "No such profile: {}. No profiles available"
 msgstr "No existe el perfil: {}. No hay perfiles disponibles"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "No hay perfiles para el módulo {}:{}"
+msgstr "No hay perfiles que borrar para '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4084,18 +4082,16 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "No está permitido instalar el módulo desde el repositorio Fail-Safe"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
-"Todas las coincidencias para el argumento '{0}' en el módulo '{1}:{2}' no "
-"están activas"
+"No hay coincidencias activas para el argumento '{0}' en el módulo '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "El perfil predeterminado {} no está disponible en el módulo {}: {}"
+msgstr ""
+"El perfil instalado '{0}' no está disponible en el módulo '{1}' arroyo '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
