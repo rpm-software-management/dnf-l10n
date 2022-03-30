@@ -25,7 +25,7 @@
 # Luis Manuel Segundo <luis@blackfile.net>, 2019. #zanata
 # Máximo Castañeda Riloba <mcrcctm@gmail.com>, 2019. #zanata
 # Cristhian Vanessa Gonzalez <cristhian.vanessa.g@gmail.com>, 2020.
-# Emilio Herrera <ehespinosa57@gmail.com>, 2020, 2021.
+# Emilio Herrera <ehespinosa57@gmail.com>, 2020, 2021, 2022.
 # Luis Mosquera <aikyu.sama@gmail.com>, 2020.
 # Pedro Luis Valades Viera <perikiyoxd@gmail.com>, 2021.
 # Daniel Hernandez <hernandez101900daniel@gmail.com>, 2022.
@@ -35,16 +35,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-03-28 02:20+0000\n"
-"PO-Revision-Date: 2022-02-04 15:48+0000\n"
-"Last-Translator: Dennis Tobar <DENNIS.TOBAR@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/es/>\n"
+"PO-Revision-Date: 2022-03-30 13:23+0000\n"
+"Last-Translator: Emilio Herrera <ehespinosa57@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -754,6 +754,9 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"No se encuentran coincidencias. Si está buscando un archivo intente "
+"especificar la ruta completa o utilizar el prefijo comodín (\"*/\") al "
+"principio."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -2785,6 +2788,9 @@ msgid ""
 "Accepts an id, acomma-separated list of ids, or a glob of ids.This option "
 "can be specified multiple times."
 msgstr ""
+"Habilitar temporalmente los repositorios para el propósito del comando dnf "
+"actual. Acepta una id, una lista de ids separadas por comas o un conjunto de "
+"ids. Esta opción se puede especificar múltiples veces."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2793,6 +2799,10 @@ msgid ""
 "option can be specified multiple times, butis mutually exclusive with `--"
 "repo`."
 msgstr ""
+"Deshabilitar temporalmente los repositorios para el propósito del comando "
+"dnf actual. Acepta una id, una lista separada por comas de ids o un conjunto "
+"de ids. Esta opción se puede especificar múltiples veces, pero es mutuamente "
+"excluyente con `--repo`."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -4008,10 +4018,8 @@ msgid "No such profile: {}. No profiles available"
 msgstr "No existe el perfil: {}. No hay perfiles disponibles"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "No hay perfiles para el módulo {}:{}"
+msgstr "No hay perfiles que borrar para '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4082,18 +4090,16 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "No está permitido instalar el módulo desde el repositorio Fail-Safe"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
-"Todas las coincidencias para el argumento '{0}' en el módulo '{1}:{2}' no "
-"están activas"
+"No hay coincidencias activas para el argumento '{0}' en el módulo '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "El perfil predeterminado {} no está disponible en el módulo {}: {}"
+msgstr ""
+"El perfil instalado '{0}' no está disponible en el módulo '{1}' arroyo '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
