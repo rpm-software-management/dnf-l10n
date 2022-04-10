@@ -3,22 +3,22 @@
 # This file is distributed under the same license as the PACKAGE package.
 #
 # Translators:
-# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2020, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2011, 2020, 2021, 2022.
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata, 2020, 2021.
-# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata, 2020, 2021.
-# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata, 2020, 2021.
-# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata, 2020, 2021.
-# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2020, 2021.
-# Yuri Chornoivan <yurchor@ukr.net>, 2020. #zanata, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2019. #zanata, 2020, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2020. #zanata, 2021, 2022.
 # Taras Panchenko <top39@ukr.net>, 2021.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2021-12-07 22:16+0000\n"
-"Last-Translator: Taras Panchenko <top39@ukr.net>\n"
+"PO-Revision-Date: 2022-04-11 06:17+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/uk/>\n"
 "Language: uk\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.9.1\n"
+"X-Generator: Weblate 4.11.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -278,22 +278,19 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "Деякі з пакунків не було отримано. Повторюємо спробу."
 
 #: dnf/base.py:1230
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"RPM-різниці надали змогу зменшити обсяг у %.1f МБ оновлень до %.1f МБ "
-"(зекономлено %d.1%%)"
+"RPM-різниці надали змогу зменшити обсяг у %.1f МБ оновлень до %.1f МБ ("
+"зекономлено %.1f%%)"
 
 #: dnf/base.py:1234
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "Помилкові RPM-різниці збільшать обсяг оновлень з %.1f МБ до %.1f МБ (буде "
-"втрачено %d.1%%)"
+"втрачено %.1f%%)"
 
 #: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
@@ -3634,7 +3631,7 @@ msgstr "Некоректне значення налаштувань: %s=%s у %
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "Не вдалося встановити «{}» у значення «{}»: {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3747,7 +3744,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Сталося виключення rpm: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4102,10 +4099,9 @@ msgid "Added %s repo from %s"
 msgstr "Додано сховище %s з %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "Не вдалося знайти виконуваний файл rpmkeys для перевірки підписів."
+msgstr "Використовуємо виконуваний файл rpmkeys у %s для перевірки підписів"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4113,11 +4109,11 @@ msgstr "Не вдалося знайти виконуваний файл rpmkeys
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function connot open rpm database."
-msgstr ""
+msgstr "Функція openDB() не може відкрити базу даних rpm."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "Функцією dbCookie() не повернуто куки бази даних rpm."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
