@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-04-09 20:16+0000\n"
+"PO-Revision-Date: 2022-04-11 06:17+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/ru/>\n"
@@ -280,19 +280,16 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "Некоторые пакеты не были загружены. Повторная попытка."
 
 #: dnf/base.py:1230
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%d.1%% сохранено)"
+msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%.1f%% сохранено)"
 
 #: dnf/base.py:1234
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%d.1%% "
+"Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%.1f%% "
 "потрачено)"
 
 #: dnf/base.py:1276
@@ -3623,7 +3620,7 @@ msgstr "Неверное значение параметра: %s=%s в %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "Не удалось установить для «{}» значение «{}»: {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3737,7 +3734,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Произошло исключение у rpm: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4087,10 +4084,9 @@ msgid "Added %s repo from %s"
 msgstr "Добавлен %s репозиторий из %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "Не удается найти исполняемый файл rpmkeys для проверки подписей."
+msgstr "Использование исполняемого файла rpmkeys в %s для проверки подписей"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4098,7 +4094,7 @@ msgstr "Не удается найти исполняемый файл rpmkeys �
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function connot open rpm database."
-msgstr ""
+msgstr "Функции openDB() не удается открыть базу данных rpm."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
