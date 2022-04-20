@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:24+0100\n"
-"PO-Revision-Date: 2022-03-28 07:01+0000\n"
+"PO-Revision-Date: 2022-04-20 15:17+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/id/>\n"
@@ -3596,7 +3596,7 @@ msgstr "Nilai konfigurasi tidak valid: %s=%s di %s; %s"
 
 #: dnf/conf/config.py:226
 msgid "Could not set cachedir: {}"
-msgstr ""
+msgstr "Tidak dapat mengatur cachedir: {}"
 
 #: dnf/conf/config.py:275
 msgid ""
@@ -3614,12 +3614,12 @@ msgstr "Opsi konfigurasi tak dikenal: %s = %s"
 #: dnf/conf/config.py:372
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
-msgstr ""
+msgstr "Kesalahan saat mengurai --setopt dengan kunci '%s', nilai '%s': %s"
 
 #: dnf/conf/config.py:380
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
-msgstr ""
+msgstr "Konfigurasi utama tidak memiliki attr. %s sebelum setopt"
 
 #: dnf/conf/config.py:427 dnf/conf/config.py:445
 msgid "Incorrect or unknown \"{}\": {}"
@@ -3628,7 +3628,7 @@ msgstr "\"{}\" yang salah atau tidak dikenal: {}"
 #: dnf/conf/config.py:501
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
-msgstr ""
+msgstr "Kesalahan saat mengurai --setopt dengan kunci '%s.%s', nilai '%s': %s"
 
 #: dnf/conf/config.py:504
 #, python-format
@@ -3689,7 +3689,7 @@ msgstr "TIDAK diverifikasi menggunakan catatan DNS."
 #: dnf/crypto.py:184
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "mengambil kunci repo untuk %s tidak terenkripsi dari %s"
 
 #: dnf/db/group.py:301
 msgid ""
@@ -3704,7 +3704,7 @@ msgstr ""
 #: dnf/db/group.py:385
 #, python-format
 msgid "Will not install a source rpm package (%s)."
-msgstr ""
+msgstr "Tidak akan memasang paket rpm sumber (%s)."
 
 #: dnf/dnssec.py:168
 msgid ""
@@ -3714,11 +3714,11 @@ msgstr ""
 
 #: dnf/dnssec.py:239
 msgid "DNSSEC extension: Key for user "
-msgstr ""
+msgstr "Ekstensi DNSSEC: Kunci untuk pengguna "
 
 #: dnf/dnssec.py:241
 msgid "is valid."
-msgstr ""
+msgstr "valid."
 
 #: dnf/dnssec.py:243
 msgid "has unknown status."
@@ -3726,11 +3726,11 @@ msgstr "memiliki status yang tidak diketahui."
 
 #: dnf/dnssec.py:251
 msgid "DNSSEC extension: "
-msgstr ""
+msgstr "Ekstensi DNSSEC: "
 
 #: dnf/dnssec.py:283
 msgid "Testing already imported keys for their validity."
-msgstr ""
+msgstr "Menguji kunci yang sudah diimpor untuk validitasnya."
 
 #: dnf/drpm.py:62 dnf/repo.py:267
 #, python-format
@@ -3751,7 +3751,7 @@ msgstr "selesai"
 
 #: dnf/exceptions.py:113
 msgid "Problems in request:"
-msgstr ""
+msgstr "Masalah dalam permintaan:"
 
 #: dnf/exceptions.py:115
 msgid "missing packages: "
@@ -3797,7 +3797,7 @@ msgstr "Tidak ada yang bisa ditunjukkan."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr ""
+msgstr "Memasang versi '{}' yang lebih baru dari yang ditentukan. Alasan: {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3805,7 +3805,7 @@ msgstr "Modul yang diaktifkan: {}."
 
 #: dnf/module/__init__.py:30
 msgid "No profile specified for '{}', please specify profile."
-msgstr ""
+msgstr "Tidak ada profil yang ditentukan untuk '{}', harap tentukan profil."
 
 #: dnf/module/exceptions.py:27
 msgid "No such module: {}"
@@ -3813,19 +3813,20 @@ msgstr "Tidak ada modul seperti itu: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Tidak ada stream seperti itu: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr ""
+msgstr "Tidak ada stream yang diaktifkan untuk modul: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
+"Tidak dapat mengaktifkan lebih banyak stream dari modul '{}' secara bersamaan"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Strea, berbeda diaktifkan untuk modul: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3837,7 +3838,7 @@ msgstr "Profil yang dinyatakan tidak dipasang untuk {}"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
-msgstr ""
+msgstr "Tidak ada stream yang ditentukan untuk '{}', harap tentukan stream"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
@@ -3853,6 +3854,9 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 msgstr ""
+"\n"
+"\n"
+"Petunjuk: [d]efault, [e]difungsikan, [x]dinonaktifkan, d[i]pasang"
 
 #: dnf/module/module_base.py:36
 msgid ""
@@ -3860,6 +3864,9 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 msgstr ""
+"\n"
+"\n"
+"Petunjuk: [d]efault, [e]difungsikan, [x]dinonaktifkan, d[i]pasang, [a]ktif"
 
 #: dnf/module/module_base.py:56 dnf/module/module_base.py:556
 #: dnf/module/module_base.py:615 dnf/module/module_base.py:681
@@ -3874,20 +3881,22 @@ msgstr "Semua kecocokan untuk argumen '{0}' dalam modul '{1}:{2}' tidak aktif"
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "Memasang modul '{0}' dari repositori Fail-Safe {1} tidak diizinkan"
 
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
+"Tidak dapat mencocokkan profil untuk {} argumen. Profil yang tersedia untuk "
+"'{}:{}': {}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr ""
+msgstr "Tidak dapat mencocokkan profil untuk argumen {}"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr ""
+msgstr "Tidak ada profil baku untuk modul {}:{}. Profil yang tersedia: {}"
 
 #: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
