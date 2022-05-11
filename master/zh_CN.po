@@ -28,13 +28,14 @@
 # Harry Chen <harrychen0314@gmail.com>, 2020.
 # weidong <weidongkl@sina.com>, 2021.
 # Transtats <suanand@redhat.com>, 2022.
+# Edward Zhang <edwardzcn98@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-11 02:39+0000\n"
-"PO-Revision-Date: 2022-03-09 12:39+0000\n"
-"Last-Translator: Transtats <suanand@redhat.com>\n"
+"PO-Revision-Date: 2022-05-13 07:18+0000\n"
+"Last-Translator: Edward Zhang <edwardzcn98@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -42,7 +43,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -699,7 +700,8 @@ msgstr "没有匹配的软件包可以列出"
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
-msgstr ""
+msgstr "未找到匹配项。如果搜索的是一个文件，尝试使用完整路径或者在开头使用通配符前缀("
+"\"*/\")。"
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1283,7 +1285,7 @@ msgstr ""
 
 #: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
-msgstr "没有指定事务文件名。"
+msgstr "没有提供事务文件名。"
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
@@ -1319,7 +1321,7 @@ msgstr "没有事务 ID"
 #: dnf/cli/commands/history.py:179
 #, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "事务 ID \"{0}\" 未找到。"
+msgstr "无法找到事务 ID \"{0}\" 对应的事务。"
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1365,7 +1367,7 @@ msgstr "{} 已存在，是否覆盖？"
 
 #: dnf/cli/commands/history.py:371
 msgid "Not overwriting {}, exiting."
-msgstr "不覆盖 {}，退出。"
+msgstr "未覆盖 {}，正在退出。"
 
 #: dnf/cli/commands/history.py:378
 msgid "Transaction saved to {}."
@@ -2591,7 +2593,8 @@ msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
-msgstr ""
+msgstr "基于当前的dnf指令目前可用的仓库，可以接受一个id，一个由分隔符分割的id列表或一"
+"个id的glob。该选项可以被多次指定。"
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2600,6 +2603,8 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"基于当前的dnf指令目前不可用的仓库，可以接受一个id，一个由分隔符分割的id列表或"
+"一个id的glob。该选项可以被多次指定，但使用\"--repo\"显式互斥。"
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -3986,7 +3991,7 @@ msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "函数openDB()不能打开rpm数据库。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
