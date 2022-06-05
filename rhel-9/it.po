@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-04-17 10:17+0000\n"
+"PO-Revision-Date: 2022-06-06 20:18+0000\n"
 "Last-Translator: Nathan <nathan95@live.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/it/>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -832,22 +832,18 @@ msgid "Command \"%s\" already defined"
 msgstr "Comando \"%s\" già definito"
 
 #: dnf/cli/cli.py:1043
-#, fuzzy
 msgid "Excludes in dnf.conf: "
 msgstr "Escluso in dnf.conf: "
 
 #: dnf/cli/cli.py:1046
-#, fuzzy
 msgid "Includes in dnf.conf: "
 msgstr "Incluso in dnf.conf: "
 
 #: dnf/cli/cli.py:1049
-#, fuzzy
 msgid "Excludes in repo "
 msgstr "Escluso nel repo "
 
 #: dnf/cli/cli.py:1052
-#, fuzzy
 msgid "Includes in repo "
 msgstr "Incluso nel repo "
 
@@ -880,6 +876,23 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"È stato abilitato il controllo dei pacchetti tramite le chiavi GPG. Questo è "
+"positivo.\n"
+"Tuttavia, non avete installato alcuna chiave pubblica GPG. È necessario "
+"scaricare\n"
+"le chiavi dei pacchetti che si desidera installare e installarle.\n"
+"È possibile farlo eseguendo il comando\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"In alternativa, è possibile specificare l'url della chiave che si desidera "
+"utilizzare\n"
+"per un repository nell'opzione \"gpgkey\" nella sezione di un repository e "
+"{prog}\n"
+"la installerà per voi.\n"
+"\n"
+"Per ulteriori informazioni, contattare la distribuzione o il fornitore del "
+"pacchetto."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -1007,12 +1020,12 @@ msgstr "REPOID"
 
 #: dnf/cli/commands/__init__.py:760
 msgid "Repository ID"
-msgstr ""
+msgstr "ID Repository"
 
 #: dnf/cli/commands/__init__.py:772 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
 msgid "Package specification"
-msgstr ""
+msgstr "Specifiche del pacchetto"
 
 #: dnf/cli/commands/__init__.py:796
 msgid "display a helpful usage message"
