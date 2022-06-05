@@ -31,16 +31,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-04 02:27+0000\n"
-"PO-Revision-Date: 2022-04-17 10:16+0000\n"
+"PO-Revision-Date: 2022-06-06 20:18+0000\n"
 "Last-Translator: Nathan <nathan95@live.it>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/it/>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.12.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -745,6 +745,9 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Nessuna corrispondenza trovata. Se si cerca un file, provare a specificare "
+"il percorso completo o a usare un prefisso wildcard (\"*/\") all'inizio del "
+"percorso."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -834,22 +837,18 @@ msgid "Command \"%s\" already defined"
 msgstr "Comando \"%s\" già definito"
 
 #: dnf/cli/cli.py:1045
-#, fuzzy
 msgid "Excludes in dnf.conf: "
 msgstr "Escluso in dnf.conf: "
 
 #: dnf/cli/cli.py:1048
-#, fuzzy
 msgid "Includes in dnf.conf: "
 msgstr "Incluso in dnf.conf: "
 
 #: dnf/cli/cli.py:1051
-#, fuzzy
 msgid "Excludes in repo "
 msgstr "Escluso nel repo "
 
 #: dnf/cli/cli.py:1054
-#, fuzzy
 msgid "Includes in repo "
 msgstr "Incluso nel repo "
 
@@ -882,6 +881,23 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"È stato abilitato il controllo dei pacchetti tramite le chiavi GPG. Questo è "
+"positivo.\n"
+"Tuttavia, non avete installato alcuna chiave pubblica GPG. È necessario "
+"scaricare\n"
+"le chiavi dei pacchetti che si desidera installare e installarle.\n"
+"È possibile farlo eseguendo il comando\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"In alternativa, è possibile specificare l'url della chiave che si desidera "
+"utilizzare\n"
+"per un repository nell'opzione \"gpgkey\" nella sezione di un repository e "
+"{prog}\n"
+"la installerà per voi.\n"
+"\n"
+"Per ulteriori informazioni, contattare la distribuzione o il fornitore del "
+"pacchetto."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -1009,12 +1025,12 @@ msgstr "REPOID"
 
 #: dnf/cli/commands/__init__.py:760
 msgid "Repository ID"
-msgstr ""
+msgstr "ID Repository"
 
 #: dnf/cli/commands/__init__.py:772 dnf/cli/commands/mark.py:48
 #: dnf/cli/commands/updateinfo.py:108
 msgid "Package specification"
-msgstr ""
+msgstr "Specifiche del pacchetto"
 
 #: dnf/cli/commands/__init__.py:796
 msgid "display a helpful usage message"
