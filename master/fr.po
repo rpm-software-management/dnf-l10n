@@ -26,21 +26,22 @@
 # Titouan Bénard <itotutona@evta.fr>, 2021.
 # Transtats <suanand@redhat.com>, 2022.
 # Alexandre GUIOT--VALENTIN <reach@42paris.fr>, 2022.
+# Arthur Tavernier <arthur.tavernier45@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-06-20 02:40+0000\n"
-"PO-Revision-Date: 2022-03-09 16:16+0000\n"
-"Last-Translator: Alexandre GUIOT--VALENTIN <reach@42paris.fr>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"PO-Revision-Date: 2022-06-22 19:18+0000\n"
+"Last-Translator: Arthur Tavernier <arthur.tavernier45@gmail.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.13\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1843,10 +1844,6 @@ msgid "show only results that conflict REQ"
 msgstr "ne montre que les résultats en conflit avec REQ"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -2125,15 +2122,7 @@ msgid "Package {} contains no files"
 msgstr "Le paquet {} ne contient aucun fichier"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2144,12 +2133,12 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Aucune option valide spécifiée\n"
-"utilisation : {prog} repoquery [--conflicts|--enhances|--obsoletes|--"
-"provides|--recommends|--requires|--suggest|--supplements|--whatrequires] "
-"[key] [--tree]\n"
+"utilisation : {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides"
+"|--recommends|--requires|--suggest|--supplements|--whatrequires] [key] "
+"[--tree]\n"
 "\n"
 "description :\n"
-" Afficher une arborescence des paquets pour le paquet donné."
+" Afficher une arborescence des paquets pour les paquets donnés."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2743,11 +2732,6 @@ msgid "automatically answer no for all questions"
 msgstr "répond automatiquement non à toutes les questions"
 
 #: dnf/cli/option_parser.py:261
-#, fuzzy
-#| msgid ""
-#| "Temporarily enable repositories for the purposeof the current dnf "
-#| "command. Accepts an id, acomma-separated list of ids, or a glob of ids."
-#| "This option can be specified multiple times."
 msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
@@ -2758,20 +2742,16 @@ msgstr ""
 "glob d'ids. Cette option peut être spécifiée plusieurs fois."
 
 #: dnf/cli/option_parser.py:268
-#, fuzzy
-#| msgid ""
-#| "Temporarily enable repositories for the purposeof the current dnf "
-#| "command. Accepts an id, acomma-separated list of ids, or a glob of ids."
-#| "This option can be specified multiple times."
 msgid ""
 "Temporarily disable active repositories for the purpose of the current dnf "
 "command. Accepts an id, a comma-separated list of ids, or a glob of ids. "
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
-"Active temporairement les dépots lors de l'exécution de la commande dnf "
-"courante. Accepte un id, une liste d'ids séparés par des virgules, ou un "
-"glob d'ids. Cette option peut être spécifiée plusieurs fois."
+"Désactive temporairement les dépots actifs lors de l'exécution de la "
+"commande dnf courante. Accepte un id, une liste d'ids séparés par des "
+"virgules, ou un glob d'ids. Cette option peut être spécifiée plusieurs fois, "
+"mais est mutuellement exclusiver avec '--repo'."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
