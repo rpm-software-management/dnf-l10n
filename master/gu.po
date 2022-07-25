@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 03:04+0000\n"
+"POT-Creation-Date: 2022-07-25 03:01+0000\n"
 "PO-Revision-Date: 2015-06-16 12:06+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Gujarati (http://www.transifex.com/projects/p/dnf/language/"
@@ -341,7 +341,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr ""
 
 #: dnf/base.py:2077 dnf/base.py:2096 dnf/base.py:2109 dnf/base.py:2136
-#: dnf/base.py:2189 dnf/base.py:2197 dnf/base.py:2331 dnf/cli/cli.py:417
+#: dnf/base.py:2206 dnf/base.py:2214 dnf/base.py:2348 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -377,101 +377,101 @@ msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 
-#: dnf/base.py:2186 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2203 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr ""
 
-#: dnf/base.py:2192
+#: dnf/base.py:2209
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 
-#: dnf/base.py:2217
+#: dnf/base.py:2234
 #, python-format
 msgid "No package %s installed."
 msgstr ""
 
-#: dnf/base.py:2235 dnf/cli/commands/install.py:136
+#: dnf/base.py:2252 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr ""
 
-#: dnf/base.py:2250 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2267 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr ""
 
-#: dnf/base.py:2338 dnf/cli/cli.py:428
+#: dnf/base.py:2355 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
 
-#: dnf/base.py:2343
+#: dnf/base.py:2360
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 
-#: dnf/base.py:2443
+#: dnf/base.py:2460
 msgid "No security updates needed, but {} update available"
 msgstr ""
 
-#: dnf/base.py:2445
+#: dnf/base.py:2462
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 
-#: dnf/base.py:2449
+#: dnf/base.py:2466
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 
-#: dnf/base.py:2451
+#: dnf/base.py:2468
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2472
+#: dnf/base.py:2489
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2480
+#: dnf/base.py:2497
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ""
 
-#: dnf/base.py:2481
+#: dnf/base.py:2498
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr ""
 
-#: dnf/base.py:2493
+#: dnf/base.py:2510
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr ""
 
-#: dnf/base.py:2529
+#: dnf/base.py:2546
 msgid "The key has been approved."
 msgstr ""
 
-#: dnf/base.py:2532
+#: dnf/base.py:2549
 msgid "The key has been rejected."
 msgstr ""
 
-#: dnf/base.py:2565
+#: dnf/base.py:2582
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr ""
 
-#: dnf/base.py:2567
+#: dnf/base.py:2584
 msgid "Key imported successfully"
 msgstr ""
 
-#: dnf/base.py:2571
+#: dnf/base.py:2588
 msgid "Didn't install any keys"
 msgstr ""
 
-#: dnf/base.py:2574
+#: dnf/base.py:2591
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -479,49 +479,49 @@ msgid ""
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
 
-#: dnf/base.py:2585
+#: dnf/base.py:2602
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 
-#: dnf/base.py:2638
+#: dnf/base.py:2655
 msgid "  * Maybe you meant: {}"
 msgstr ""
 
-#: dnf/base.py:2670
+#: dnf/base.py:2687
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2673
+#: dnf/base.py:2690
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2676
+#: dnf/base.py:2693
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2679
+#: dnf/base.py:2696
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
 
-#: dnf/base.py:2697 dnf/base.py:2717
+#: dnf/base.py:2714 dnf/base.py:2734
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2705 dnf/base.py:2725
+#: dnf/base.py:2722 dnf/base.py:2742
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2707
+#: dnf/base.py:2724
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2723
+#: dnf/base.py:2740
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2770
+#: dnf/base.py:2787
 #, python-format
 msgid "Package %s is already installed."
 msgstr ""

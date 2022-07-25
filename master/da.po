@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-07-07 03:04+0000\n"
+"POT-Creation-Date: 2022-07-25 03:01+0000\n"
 "PO-Revision-Date: 2021-07-08 11:04+0000\n"
 "Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -353,7 +353,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "Pakken %s er ikke installeret, kan ikke nedgradere den."
 
 #: dnf/base.py:2077 dnf/base.py:2096 dnf/base.py:2109 dnf/base.py:2136
-#: dnf/base.py:2189 dnf/base.py:2197 dnf/base.py:2331 dnf/cli/cli.py:417
+#: dnf/base.py:2206 dnf/base.py:2214 dnf/base.py:2348 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -393,108 +393,108 @@ msgstr ""
 "Den samme eller højere version af %s er allerede installeret - kan ikke "
 "opdatere den."
 
-#: dnf/base.py:2186 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2203 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Pakke %s tilgængelig, men ikke installeret."
 
-#: dnf/base.py:2192
+#: dnf/base.py:2209
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Pakken %s er tilgængelig - men installeret til anden arkitektur."
 
-#: dnf/base.py:2217
+#: dnf/base.py:2234
 #, python-format
 msgid "No package %s installed."
 msgstr "Pakken %s ikke installeret."
 
-#: dnf/base.py:2235 dnf/cli/commands/install.py:136
+#: dnf/base.py:2252 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Ikke en gyldig form: %s"
 
-#: dnf/base.py:2250 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2267 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Ingen pakker markeret til fjernelse."
 
-#: dnf/base.py:2338 dnf/cli/cli.py:428
+#: dnf/base.py:2355 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Pakker til argumentet %s tilgængelige, min ikke installeret."
 
-#: dnf/base.py:2343
+#: dnf/base.py:2360
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Pakken %s af laveste version er allerede installeret - kan ikke nedgradere "
 "den."
 
-#: dnf/base.py:2443
+#: dnf/base.py:2460
 msgid "No security updates needed, but {} update available"
 msgstr "Ingen sikkerhedsopdateringer nødvendige, men {} opdatering tilgængelig"
 
-#: dnf/base.py:2445
+#: dnf/base.py:2462
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Ingen sikkerhedsopdateringer nødvendige, men {} opdateringer tilgængelige"
 
-#: dnf/base.py:2449
+#: dnf/base.py:2466
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Ingen sikkerhedsopdateringer nødvendige for \"{}\", men {} opdatering "
 "tilgængelig"
 
-#: dnf/base.py:2451
+#: dnf/base.py:2468
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Ingen sikkerhedsopdateringer nødvendige for \"{}\", men {} opdateringer "
 "tilgængelige"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2472
+#: dnf/base.py:2489
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Kan ikke indhente en nøgle til en kommandolinjepakke: %s"
 
-#: dnf/base.py:2480
+#: dnf/base.py:2497
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Mislykkede pakke er: %s"
 
-#: dnf/base.py:2481
+#: dnf/base.py:2498
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-nøgler er konfigureret som: %s"
 
-#: dnf/base.py:2493
+#: dnf/base.py:2510
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-nøgle på %s (0x%s) er allerede installeret"
 
-#: dnf/base.py:2529
+#: dnf/base.py:2546
 msgid "The key has been approved."
 msgstr "Nøglen er blevet godkendt."
 
-#: dnf/base.py:2532
+#: dnf/base.py:2549
 msgid "The key has been rejected."
 msgstr "Nøglen er blevet afvist."
 
-#: dnf/base.py:2565
+#: dnf/base.py:2582
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Import af nøgle mislykkedes (kode %d)"
 
-#: dnf/base.py:2567
+#: dnf/base.py:2584
 msgid "Key imported successfully"
 msgstr "Nøglen blev importeret"
 
-#: dnf/base.py:2571
+#: dnf/base.py:2588
 msgid "Didn't install any keys"
 msgstr "Installerede ingen nøgler"
 
-#: dnf/base.py:2574
+#: dnf/base.py:2591
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -506,27 +506,27 @@ msgstr ""
 "Kontrollér at konfigurationen af nøgle-URL'er er korrekt for dette "
 "softwarearkiv."
 
-#: dnf/base.py:2585
+#: dnf/base.py:2602
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import af nøgle(r) hjalp ikke, forkerte nøgle(r)?"
 
-#: dnf/base.py:2638
+#: dnf/base.py:2655
 msgid "  * Maybe you meant: {}"
 msgstr "  * Måske mente du: {}"
 
-#: dnf/base.py:2670
+#: dnf/base.py:2687
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Pakken \"{}\" fra lokalt softwarearkiv \"{}\" har ukorrekt tjeksum"
 
-#: dnf/base.py:2673
+#: dnf/base.py:2690
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Nogle pakker fra lokalt softwarearkiv har ukorrekte tjeksumme"
 
-#: dnf/base.py:2676
+#: dnf/base.py:2693
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Pakken \"{}\" fra softwarearkivet \"{}\" har ukorrekt tjeksum"
 
-#: dnf/base.py:2679
+#: dnf/base.py:2696
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -534,23 +534,23 @@ msgstr ""
 "Nogle pakker har ugyldigt mellemlager, men kan ikke downloades pga. \"--"
 "cacheonly\"-tilvalg"
 
-#: dnf/base.py:2697 dnf/base.py:2717
+#: dnf/base.py:2714 dnf/base.py:2734
 msgid "No match for argument"
 msgstr "Intet match for argument"
 
-#: dnf/base.py:2705 dnf/base.py:2725
+#: dnf/base.py:2722 dnf/base.py:2742
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Alle match blev filtreret ud af ekskluder-filtrering for argument"
 
-#: dnf/base.py:2707
+#: dnf/base.py:2724
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alle match blev filtreret ud af modulær-filtrering for argument"
 
-#: dnf/base.py:2723
+#: dnf/base.py:2740
 msgid "All matches were installed from a different repository for argument"
 msgstr "Alle match blev installeret fra et andet softwarearkiv for argument"
 
-#: dnf/base.py:2770
+#: dnf/base.py:2787
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Pakken %s er allerede installeret."
