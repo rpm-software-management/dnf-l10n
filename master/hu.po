@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-03 03:04+0000\n"
-"PO-Revision-Date: 2022-06-09 19:18+0000\n"
+"PO-Revision-Date: 2022-08-08 14:19+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.13\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -227,7 +227,7 @@ msgstr "Tranzakció ellenőrzés sikeres."
 
 #: dnf/base.py:985
 msgid "Running transaction test"
-msgstr "Tranzakció teszt futtatása"
+msgstr "Tranzakcióteszt futtatása"
 
 #: dnf/base.py:995 dnf/base.py:1146
 msgid "RPM: {}"
@@ -235,11 +235,11 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:996
 msgid "Transaction test error:"
-msgstr "Tranzakció teszt hiba:"
+msgstr "Tranzakcióteszt hiba:"
 
 #: dnf/base.py:1007
 msgid "Transaction test succeeded."
-msgstr "Tranzakció teszt sikeres."
+msgstr "A tranzakcióteszt sikeres."
 
 #: dnf/base.py:1028
 msgid "Running transaction"
@@ -258,7 +258,7 @@ msgstr[1] "Legalább {0} MB további hely szükséges a(z) {1} fájlrendszeren."
 
 #: dnf/base.py:1075
 msgid "Error Summary"
-msgstr "Hiba összegzés"
+msgstr "Hiba összegzése"
 
 #: dnf/base.py:1101
 #, python-brace-format
@@ -267,16 +267,16 @@ msgstr "Az RPMDB a(z) {prog} programon kívül lett módosítva."
 
 #: dnf/base.py:1147 dnf/base.py:1155
 msgid "Could not run transaction."
-msgstr "Tranzakció futtatása meghiúsult."
+msgstr "A tranzakció nem futtatható."
 
 #: dnf/base.py:1150
 msgid "Transaction couldn't start:"
-msgstr "Tranzakció nem indítható:"
+msgstr "A tranzakció nem indítható el:"
 
 #: dnf/base.py:1164
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr "A következő tranzakció-fájl eltávolítása meghiúsult: %s"
+msgstr "A következő tranzakciófájl eltávolítása sikertelen: %s"
 
 #: dnf/base.py:1246
 msgid "Some packages were not downloaded. Retrying."
@@ -286,8 +286,8 @@ msgstr "Néhány csomag nem lett letöltve. Újrapróbálkozás."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra. (%.1f"
-"%% megspórolva)"
+"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra ("
+"%.1f%% megspórolva)"
 
 #: dnf/base.py:1280
 #, python-format
@@ -726,6 +726,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Nincs találat. Ha fájlra keres, akkor próbálja megadni a teljes útvonalat, "
+"vagy használjon dzsóker előtagot („*/”) az elején."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1805,7 +1807,7 @@ msgid ""
 "package provides and files REQ"
 msgstr ""
 "az eredmények megjelenítése azokból, amelyek csomag és fájl FÜGGŐSÉGeket "
-"igényelnek, javasolnak, kiegészítenek, fejlesztenek vagy ajánlanak"
+"igényelnek, javasolnak, kiegészítenek, fejlesztenek vagy javasolnak"
 
 #: dnf/cli/commands/repoquery.py:139
 msgid "show only results that obsolete REQ"
@@ -2695,6 +2697,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Tárolók ideiglenes engedélyezése a jelenlegi dnf parancshoz. Egy azonosítót, "
+"azonosítók vesszővel elválasztott listáját vagy egy mintát fogad el. Ez a "
+"kapcsoló többször is megadható."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2703,6 +2708,10 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"Tárolók ideiglenes letiltása a jelenlegi dnf parancshoz. Egy azonosítót, "
+"azonosítók vesszővel elválasztott listáját vagy egy mintát fogad el. Ez a "
+"kapcsoló többször is megadható, de a „--repo” kapcsolóval kölcsönösen "
+"kizárják egymást."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
