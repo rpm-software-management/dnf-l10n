@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:37+0100\n"
-"PO-Revision-Date: 2022-06-09 19:18+0000\n"
+"PO-Revision-Date: 2022-08-08 14:19+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.13\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -227,7 +227,7 @@ msgstr "Tranzakció ellenőrzés sikeres."
 
 #: dnf/base.py:939
 msgid "Running transaction test"
-msgstr "Tranzakció teszt futtatása"
+msgstr "Tranzakcióteszt futtatása"
 
 #: dnf/base.py:949 dnf/base.py:1100
 msgid "RPM: {}"
@@ -235,11 +235,11 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:950
 msgid "Transaction test error:"
-msgstr "Tranzakció teszt hiba:"
+msgstr "Tranzakcióteszt hiba:"
 
 #: dnf/base.py:961
 msgid "Transaction test succeeded."
-msgstr "Tranzakció teszt sikeres."
+msgstr "A tranzakcióteszt sikeres."
 
 #: dnf/base.py:982
 msgid "Running transaction"
@@ -258,7 +258,7 @@ msgstr[1] "Legalább {0} MB további hely szükséges a(z) {1} fájlrendszeren."
 
 #: dnf/base.py:1029
 msgid "Error Summary"
-msgstr "Hiba összegzés"
+msgstr "Hiba összegzése"
 
 #: dnf/base.py:1055
 #, python-brace-format
@@ -267,38 +267,35 @@ msgstr "Az RPMDB a(z) {prog} programon kívül lett módosítva."
 
 #: dnf/base.py:1101 dnf/base.py:1109
 msgid "Could not run transaction."
-msgstr "Tranzakció futtatása meghiúsult."
+msgstr "A tranzakció nem futtatható."
 
 #: dnf/base.py:1104
 msgid "Transaction couldn't start:"
-msgstr "Tranzakció nem indítható:"
+msgstr "A tranzakció nem indítható el:"
 
 #: dnf/base.py:1118
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr "A következő tranzakció-fájl eltávolítása meghiúsult: %s"
+msgstr "A következő tranzakciófájl eltávolítása sikertelen: %s"
 
 #: dnf/base.py:1200
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Néhány csomag nem lett letöltve. Újrapróbálkozás."
 
 #: dnf/base.py:1230
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra. "
-"(%d.1%% megspórolva)"
+"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra ("
+"%.1f%% megspórolva)"
 
 #: dnf/base.py:1234
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "A sikertelen Delta RPM-ek megnövelték a(z) %.1f MB-nyi frissítést %.1f MB-"
-"ra. (%d.1%% elpazarolva)"
+"ra. (%.1f%% elpazarolva)"
 
 #: dnf/base.py:1276
 msgid "Cannot add local packages, because transaction job already exists"
@@ -3648,7 +3645,7 @@ msgstr "Érvénytelen konfigurációs érték: %s=%s itt: %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "A(z) „{}” nem állítható erre: „{}”: {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3762,7 +3759,7 @@ msgstr ""
 #: dnf/db/group.py:353
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "Egy rpm kivétel történt: %s"
 
 #: dnf/db/group.py:355
 msgid "No available modular metadata for modular package"
@@ -4117,10 +4114,9 @@ msgid "Added %s repo from %s"
 msgstr "Hozzáadott %s tároló, innen: %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "Az aláírások ellenőrzéséhez szükséges rpmkeys bináris nem található."
+msgstr "Az rpmkeys bináris használata az aláírások ellenőrzéséhez itt: %s"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4128,7 +4124,7 @@ msgstr "Az aláírások ellenőrzéséhez szükséges rpmkeys bináris nem talá
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function connot open rpm database."
-msgstr ""
+msgstr "Az openDB() függvény nem tudja megnyitni az rpm adatbázist."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
