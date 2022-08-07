@@ -14,13 +14,13 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
 # Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020, 2021.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2020.
-# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-02-28 11:24+0100\n"
-"PO-Revision-Date: 2021-11-04 21:05+0000\n"
+"PO-Revision-Date: 2022-08-08 14:19+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.13\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -227,7 +227,7 @@ msgstr "Tranzakció ellenőrzés sikeres."
 
 #: dnf/base.py:921
 msgid "Running transaction test"
-msgstr "Tranzakció teszt futtatása"
+msgstr "Tranzakcióteszt futtatása"
 
 #: dnf/base.py:931 dnf/base.py:1082
 msgid "RPM: {}"
@@ -235,11 +235,11 @@ msgstr "RPM: {}"
 
 #: dnf/base.py:932
 msgid "Transaction test error:"
-msgstr "Tranzakció teszt hiba:"
+msgstr "Tranzakcióteszt hiba:"
 
 #: dnf/base.py:943
 msgid "Transaction test succeeded."
-msgstr "Tranzakció teszt sikeres."
+msgstr "A tranzakcióteszt sikeres."
 
 #: dnf/base.py:964
 msgid "Running transaction"
@@ -258,7 +258,7 @@ msgstr[1] "Legalább {0} MB további hely szükséges a(z) {1} fájlrendszeren."
 
 #: dnf/base.py:1011
 msgid "Error Summary"
-msgstr "Hiba összegzés"
+msgstr "Hiba összegzése"
 
 #: dnf/base.py:1037
 #, python-brace-format
@@ -267,16 +267,16 @@ msgstr "Az RPMDB a(z) {prog} programon kívül lett módosítva."
 
 #: dnf/base.py:1083 dnf/base.py:1091
 msgid "Could not run transaction."
-msgstr "Tranzakció futtatása meghiúsult."
+msgstr "A tranzakció nem futtatható."
 
 #: dnf/base.py:1086
 msgid "Transaction couldn't start:"
-msgstr "Tranzakció nem indítható:"
+msgstr "A tranzakció nem indítható el:"
 
 #: dnf/base.py:1100
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr "A következő tranzakció-fájl eltávolítása meghiúsult: %s"
+msgstr "A következő tranzakciófájl eltávolítása sikertelen: %s"
 
 #: dnf/base.py:1182
 msgid "Some packages were not downloaded. Retrying."
@@ -4110,10 +4110,9 @@ msgid "Added %s repo from %s"
 msgstr "Hozzáadott %s tároló, innen: %s"
 
 #: dnf/rpm/miscutils.py:32
-#, fuzzy, python-format
-#| msgid "Cannot find rpmkeys executable to verify signatures."
+#, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "Az aláírások ellenőrzéséhez szükséges rpmkeys bináris nem található."
+msgstr "Az rpmkeys bináris használata az aláírások ellenőrzéséhez itt: %s"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
