@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-11 02:46+0000\n"
+"POT-Creation-Date: 2022-08-20 02:59+0000\n"
 "PO-Revision-Date: 2022-05-25 10:18+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -341,8 +341,8 @@ msgstr "향상을 위해 표시된 그룹이 없습니다."
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 하향설치 할 수 없습니다."
 
-#: dnf/base.py:2077 dnf/base.py:2096 dnf/base.py:2109 dnf/base.py:2136
-#: dnf/base.py:2206 dnf/base.py:2214 dnf/base.py:2348 dnf/cli/cli.py:417
+#: dnf/base.py:2077 dnf/base.py:2096 dnf/base.py:2109 dnf/base.py:2140
+#: dnf/base.py:2210 dnf/base.py:2218 dnf/base.py:2352 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -368,113 +368,113 @@ msgstr "꾸러미 %s가 설치되지 않아서, 다시 설치 할 수 없습니�
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "%s 파일은 소스 꾸러미이며 최신화 할 수 없습니다. 무시합니다."
 
-#: dnf/base.py:2133
+#: dnf/base.py:2137
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 최신화 할 수 없습니다."
 
-#: dnf/base.py:2143
+#: dnf/base.py:2147
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "%s 이상의 버전이 이미 설치되어 있으므로 최신화 할 수 없습니다."
 
-#: dnf/base.py:2203 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2207 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "%s 꾸러미는 사용할 수는 있지만 설치되어 있지 않습니다."
 
-#: dnf/base.py:2209
+#: dnf/base.py:2213
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "%s 꾸러미는 사용 가능하지만 다른 구조용으로 설치되어 있습니다."
 
-#: dnf/base.py:2234
+#: dnf/base.py:2238
 #, python-format
 msgid "No package %s installed."
 msgstr "%s 꾸러미는 설치되어 있지 않습니다."
 
-#: dnf/base.py:2252 dnf/cli/commands/install.py:136
+#: dnf/base.py:2256 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "잘못된 형식: %s"
 
-#: dnf/base.py:2267 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2271 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "제거 대상 꾸러미가 없습니다."
 
-#: dnf/base.py:2355 dnf/cli/cli.py:428
+#: dnf/base.py:2359 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "%s 인수에 대한 꾸러미를 사용할 수 있지만 설치되어 있지 않습니다."
 
-#: dnf/base.py:2360
+#: dnf/base.py:2364
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "%s 꾸러미의 최하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
 
-#: dnf/base.py:2460
+#: dnf/base.py:2464
 msgid "No security updates needed, but {} update available"
 msgstr "보안 최신화가 필요하지 않지만, {} 최신화가 가능합니다"
 
-#: dnf/base.py:2462
+#: dnf/base.py:2466
 msgid "No security updates needed, but {} updates available"
 msgstr "보안 최신화는 필요하지 않지만 {} 최신화는 가능합니다"
 
-#: dnf/base.py:2466
+#: dnf/base.py:2470
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "\"{}\"에는 보안 최신화가 필요하지 않지만 {} 최신화가 가능합니다"
 
-#: dnf/base.py:2468
+#: dnf/base.py:2472
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "\"{}\"에는 보안 최신화가 필요하지 않지만 {} 최신화가 가능합니다"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2489
+#: dnf/base.py:2493
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "명령줄 꾸러미: %s 대한 키를 검색 할 수 없습니다"
 
-#: dnf/base.py:2497
+#: dnf/base.py:2501
 #, python-format
 msgid ". Failing package is: %s"
 msgstr "실패한 꾸러미는 다음과 같습니다. %s"
 
-#: dnf/base.py:2498
+#: dnf/base.py:2502
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG 키는 다음과 같이 설정되어 있습니다. %s"
 
-#: dnf/base.py:2510
+#: dnf/base.py:2514
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s (0x%s)의 GPG 키가 이미 설치되어 있습니다"
 
-#: dnf/base.py:2546
+#: dnf/base.py:2550
 msgid "The key has been approved."
 msgstr "키가 승인되었습니다."
 
-#: dnf/base.py:2549
+#: dnf/base.py:2553
 msgid "The key has been rejected."
 msgstr "키가 거부되었습니다."
 
-#: dnf/base.py:2582
+#: dnf/base.py:2586
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "키 가져 오기에 실패했습니다 (코드 %d)"
 
-#: dnf/base.py:2584
+#: dnf/base.py:2588
 msgid "Key imported successfully"
 msgstr "키 가져오기에 성공했습니다"
 
-#: dnf/base.py:2588
+#: dnf/base.py:2592
 msgid "Didn't install any keys"
 msgstr "키를 하나도 설치하지 못했습니다"
 
-#: dnf/base.py:2591
+#: dnf/base.py:2595
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -484,27 +484,27 @@ msgstr ""
 "해당 GPG 키는 \"%s\"저장소가 이미 설치되어 있지만이 꾸러미에 맞지 않습니다.\n"
 "이 저장소에 대해 올바른 키 URL이 구성되었는지 확인하십시오."
 
-#: dnf/base.py:2602
+#: dnf/base.py:2606
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "가져온 키에 문제가 있습니다. 잘못된 키입니까?"
 
-#: dnf/base.py:2655
+#: dnf/base.py:2659
 msgid "  * Maybe you meant: {}"
 msgstr "  * 다음을 의미 할 수도 있습니다: {}"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2691
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "로컬 저장소 \"{}\"의 \"{}\"꾸러미에 잘못된 체크섬이 있습니다"
 
-#: dnf/base.py:2690
+#: dnf/base.py:2694
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "로컬 저장소의 일부 꾸러미에 잘못된 체크섬이 있습니다"
 
-#: dnf/base.py:2693
+#: dnf/base.py:2697
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "저장소 \"{}\"의 꾸러미 \"{}\"에 잘못된 체크섬이 있습니다"
 
-#: dnf/base.py:2696
+#: dnf/base.py:2700
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -512,23 +512,23 @@ msgstr ""
 "일부 꾸러미에는 유효하지 않은 캐쉬가 있지만 \"--cacheonly\"옵션으로 인해 내려"
 "받기 할 수 없습니다"
 
-#: dnf/base.py:2714 dnf/base.py:2734
+#: dnf/base.py:2718 dnf/base.py:2738
 msgid "No match for argument"
 msgstr "일치하는 인수가 없습니다"
 
-#: dnf/base.py:2722 dnf/base.py:2742
+#: dnf/base.py:2726 dnf/base.py:2746
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "모든 일치 항목이 인수의 제외 필터로 필터링되었습니다"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2728
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "모든 일치 항목이 인수의 모듈식 필터로 필터링되었습니다"
 
-#: dnf/base.py:2740
+#: dnf/base.py:2744
 msgid "All matches were installed from a different repository for argument"
 msgstr "모든 일치 항목이 인수의 다른 리포지토리에서 설치되었습니다"
 
-#: dnf/base.py:2787
+#: dnf/base.py:2791
 #, python-format
 msgid "Package %s is already installed."
 msgstr "꾸러미 %s가 이미 설치되어 있습니다."
