@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-28 11:24+0100\n"
+"POT-Creation-Date: 2022-08-30 15:24+0200\n"
 "PO-Revision-Date: 2020-03-31 02:38+0000\n"
 "Last-Translator: Marek Lach Bc <mareklachbc@tutanota.com>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -105,246 +105,246 @@ msgstr ""
 msgid "Error: %s"
 msgstr "Chyba: %s"
 
-#: dnf/base.py:148 dnf/base.py:477 dnf/base.py:479
+#: dnf/base.py:149 dnf/base.py:478 dnf/base.py:480
 msgid "loading repo '{}' failure: {}"
 msgstr ""
 
-#: dnf/base.py:150
+#: dnf/base.py:151
 msgid "Loading repository '{}' has failed"
 msgstr ""
 
-#: dnf/base.py:327
+#: dnf/base.py:328
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
 
-#: dnf/base.py:332
+#: dnf/base.py:333
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
 
-#: dnf/base.py:337
+#: dnf/base.py:338
 msgid "Metadata timer caching disabled."
 msgstr ""
 
-#: dnf/base.py:342
+#: dnf/base.py:343
 msgid "Metadata cache refreshed recently."
 msgstr ""
 
-#: dnf/base.py:348 dnf/cli/commands/__init__.py:91
+#: dnf/base.py:349 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
 msgstr ""
 
-#: dnf/base.py:355
+#: dnf/base.py:356
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
 msgstr ""
 
-#: dnf/base.py:357
+#: dnf/base.py:358
 #, python-format
 msgid "%s: has expired and will be refreshed."
 msgstr ""
 
 #. expires within the checking period:
-#: dnf/base.py:361
+#: dnf/base.py:362
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
 msgstr ""
 
-#: dnf/base.py:365
+#: dnf/base.py:366
 #, python-format
 msgid "%s: will expire after %d seconds."
 msgstr ""
 
 #. performs the md sync
-#: dnf/base.py:371
+#: dnf/base.py:372
 msgid "Metadata cache created."
 msgstr ""
 
-#: dnf/base.py:404 dnf/base.py:471
+#: dnf/base.py:405 dnf/base.py:472
 #, python-format
 msgid "%s: using metadata from %s."
 msgstr "%s: používajú sa metadáta z %s."
 
-#: dnf/base.py:416 dnf/base.py:484
+#: dnf/base.py:417 dnf/base.py:485
 #, python-format
 msgid "Ignoring repositories: %s"
 msgstr ""
 
-#: dnf/base.py:419
+#: dnf/base.py:420
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
 msgstr "Posledná kontrola expirácie metadát:  pred %s, %s."
 
-#: dnf/base.py:512
+#: dnf/base.py:513
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
 
-#: dnf/base.py:514
+#: dnf/base.py:515
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
 msgstr ""
 
-#: dnf/base.py:606
+#: dnf/base.py:647
 #, python-format
 msgid "Invalid tsflag in config file: %s"
 msgstr ""
 
-#: dnf/base.py:662
+#: dnf/base.py:703
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr ""
 
-#: dnf/base.py:904
+#: dnf/base.py:945
 msgid "Running transaction check"
 msgstr "Spúšťa sa kontrola transakcie"
 
-#: dnf/base.py:912
+#: dnf/base.py:953
 msgid "Error: transaction check vs depsolve:"
 msgstr ""
 
-#: dnf/base.py:918
+#: dnf/base.py:959
 msgid "Transaction check succeeded."
 msgstr "Kontrola transakcie bola úspešná"
 
-#: dnf/base.py:921
+#: dnf/base.py:962
 msgid "Running transaction test"
 msgstr "Spúšťa sa test transakcie"
 
-#: dnf/base.py:931 dnf/base.py:1082
+#: dnf/base.py:972 dnf/base.py:1123
 msgid "RPM: {}"
 msgstr ""
 
-#: dnf/base.py:932
+#: dnf/base.py:973
 msgid "Transaction test error:"
 msgstr ""
 
-#: dnf/base.py:943
+#: dnf/base.py:984
 msgid "Transaction test succeeded."
 msgstr "Test transakcie bol úspešný."
 
-#: dnf/base.py:964
+#: dnf/base.py:1005
 msgid "Running transaction"
 msgstr "Spúšťa sa transakcia"
 
-#: dnf/base.py:1001
+#: dnf/base.py:1042
 msgid "Disk Requirements:"
 msgstr ""
 
-#: dnf/base.py:1004
+#: dnf/base.py:1045
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] ""
 
-#: dnf/base.py:1011
+#: dnf/base.py:1052
 msgid "Error Summary"
 msgstr ""
 
-#: dnf/base.py:1037
+#: dnf/base.py:1078
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr ""
 
-#: dnf/base.py:1083 dnf/base.py:1091
+#: dnf/base.py:1124 dnf/base.py:1132
 msgid "Could not run transaction."
 msgstr "Nepodarilo sa spustiť transakciu."
 
-#: dnf/base.py:1086
+#: dnf/base.py:1127
 msgid "Transaction couldn't start:"
 msgstr "Nepodarilo sa spustiť transakciu:"
 
-#: dnf/base.py:1100
+#: dnf/base.py:1141
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Zlyhalo odstránenie súboru transakcie %s"
 
-#: dnf/base.py:1182
+#: dnf/base.py:1223
 msgid "Some packages were not downloaded. Retrying."
 msgstr ""
 
-#: dnf/base.py:1212
+#: dnf/base.py:1253
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr ""
 "Balíky delta RPM zredukovali aktualizácie o veľkosti %.1f MB na %.1f MB "
 "(%d.1%% usporených)"
 
-#: dnf/base.py:1215
+#: dnf/base.py:1256
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
 msgstr ""
 
-#: dnf/base.py:1257
+#: dnf/base.py:1298
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 
-#: dnf/base.py:1271
+#: dnf/base.py:1312
 msgid "Could not open: {}"
 msgstr ""
 
-#: dnf/base.py:1309
+#: dnf/base.py:1350
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr ""
 
-#: dnf/base.py:1313
+#: dnf/base.py:1354
 #, python-format
 msgid "Problem opening package %s"
 msgstr ""
 
-#: dnf/base.py:1321
+#: dnf/base.py:1362
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr ""
 
-#: dnf/base.py:1325
+#: dnf/base.py:1366
 #, python-format
 msgid "Package %s is not signed"
 msgstr ""
 
-#: dnf/base.py:1355
+#: dnf/base.py:1396
 #, python-format
 msgid "Cannot remove %s"
 msgstr ""
 
-#: dnf/base.py:1359
+#: dnf/base.py:1400
 #, python-format
 msgid "%s removed"
 msgstr ""
 
-#: dnf/base.py:1639
+#: dnf/base.py:1680
 msgid "No match for group package \"{}\""
 msgstr ""
 
-#: dnf/base.py:1721
+#: dnf/base.py:1762
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr ""
 
-#: dnf/base.py:1744 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
+#: dnf/base.py:1785 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "Nie je čo robiť."
 
-#: dnf/base.py:1762
+#: dnf/base.py:1803
 msgid "No groups marked for removal."
 msgstr ""
 
-#: dnf/base.py:1796
+#: dnf/base.py:1837
 msgid "No group marked for upgrade."
 msgstr ""
 
-#: dnf/base.py:2010
+#: dnf/base.py:2051
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr ""
 
-#: dnf/base.py:2012 dnf/base.py:2031 dnf/base.py:2044 dnf/base.py:2071
-#: dnf/base.py:2124 dnf/base.py:2132 dnf/base.py:2266 dnf/cli/cli.py:417
+#: dnf/base.py:2053 dnf/base.py:2072 dnf/base.py:2085 dnf/base.py:2112
+#: dnf/base.py:2165 dnf/base.py:2173 dnf/base.py:2307 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -354,127 +354,127 @@ msgstr ""
 msgid "No match for argument: %s"
 msgstr ""
 
-#: dnf/base.py:2019
+#: dnf/base.py:2060
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 
-#: dnf/base.py:2042
+#: dnf/base.py:2083
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr ""
 
-#: dnf/base.py:2057
+#: dnf/base.py:2098
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 
-#: dnf/base.py:2068
+#: dnf/base.py:2109
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr ""
 
-#: dnf/base.py:2078
+#: dnf/base.py:2119
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 
-#: dnf/base.py:2121 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2162 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Balík %s dostupný ale nenainštalovaný."
 
-#: dnf/base.py:2127
+#: dnf/base.py:2168
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 
-#: dnf/base.py:2152
+#: dnf/base.py:2193
 #, python-format
 msgid "No package %s installed."
 msgstr ""
 
-#: dnf/base.py:2170 dnf/cli/commands/install.py:136
+#: dnf/base.py:2211 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr ""
 
-#: dnf/base.py:2185 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2226 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Žiadne balíky označené na zmazanie."
 
-#: dnf/base.py:2273 dnf/cli/cli.py:428
+#: dnf/base.py:2314 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
 
-#: dnf/base.py:2278
+#: dnf/base.py:2319
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 
-#: dnf/base.py:2378
+#: dnf/base.py:2419
 msgid "No security updates needed, but {} update available"
 msgstr ""
 
-#: dnf/base.py:2380
+#: dnf/base.py:2421
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 
-#: dnf/base.py:2384
+#: dnf/base.py:2425
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 
-#: dnf/base.py:2386
+#: dnf/base.py:2427
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2407
+#: dnf/base.py:2448
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2415
+#: dnf/base.py:2456
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ""
 
-#: dnf/base.py:2416
+#: dnf/base.py:2457
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr ""
 
-#: dnf/base.py:2428
+#: dnf/base.py:2469
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr ""
 
-#: dnf/base.py:2464
+#: dnf/base.py:2505
 msgid "The key has been approved."
 msgstr ""
 
-#: dnf/base.py:2467
+#: dnf/base.py:2508
 msgid "The key has been rejected."
 msgstr ""
 
-#: dnf/base.py:2500
+#: dnf/base.py:2541
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Zlyhal import kľúča (kód %d)"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2543
 msgid "Key imported successfully"
 msgstr ""
 
-#: dnf/base.py:2506
+#: dnf/base.py:2547
 msgid "Didn't install any keys"
 msgstr ""
 
-#: dnf/base.py:2509
+#: dnf/base.py:2550
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -482,49 +482,49 @@ msgid ""
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
 
-#: dnf/base.py:2520
+#: dnf/base.py:2561
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 
-#: dnf/base.py:2573
+#: dnf/base.py:2614
 msgid "  * Maybe you meant: {}"
 msgstr ""
 
-#: dnf/base.py:2605
+#: dnf/base.py:2646
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2608
+#: dnf/base.py:2649
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2611
+#: dnf/base.py:2652
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2614
+#: dnf/base.py:2655
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
 
-#: dnf/base.py:2632 dnf/base.py:2652
+#: dnf/base.py:2673 dnf/base.py:2693
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2640 dnf/base.py:2660
+#: dnf/base.py:2681 dnf/base.py:2701
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2642
+#: dnf/base.py:2683
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2658
+#: dnf/base.py:2699
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2705
+#: dnf/base.py:2746
 #, python-format
 msgid "Package %s is already installed."
 msgstr ""
@@ -632,7 +632,7 @@ msgstr "Zastarávajú sa balíky"
 msgid "No packages marked for distribution synchronization."
 msgstr "Na synchronizáciu s distribúciou neboli označené žiadne balíčky."
 
-#: dnf/cli/cli.py:425 dnf/cli/commands/group.py:395
+#: dnf/cli/cli.py:425 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
 msgstr ""
@@ -1205,7 +1205,7 @@ msgstr ""
 msgid "Invalid groups sub-command, use: %s."
 msgstr ""
 
-#: dnf/cli/commands/group.py:398
+#: dnf/cli/commands/group.py:399
 msgid "Unable to find a mandatory group package."
 msgstr ""
 
@@ -1300,47 +1300,47 @@ msgstr "História transakcie je nekompletná, pred %u."
 msgid "Transaction history is incomplete, after %u."
 msgstr "História transakcie je nekompletná, po %u."
 
-#: dnf/cli/commands/history.py:256
+#: dnf/cli/commands/history.py:267
 msgid "No packages to list"
 msgstr ""
 
-#: dnf/cli/commands/history.py:279
+#: dnf/cli/commands/history.py:290
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
 
-#: dnf/cli/commands/history.py:283
+#: dnf/cli/commands/history.py:294
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
 
-#: dnf/cli/commands/history.py:312
+#: dnf/cli/commands/history.py:323
 msgid "No transaction which manipulates package '{}' was found."
 msgstr ""
 
-#: dnf/cli/commands/history.py:357
+#: dnf/cli/commands/history.py:368
 msgid "{} exists, overwrite?"
 msgstr ""
 
-#: dnf/cli/commands/history.py:360
+#: dnf/cli/commands/history.py:371
 msgid "Not overwriting {}, exiting."
 msgstr ""
 
-#: dnf/cli/commands/history.py:367
+#: dnf/cli/commands/history.py:378
 #, fuzzy
 #| msgid "Transaction ID :"
 msgid "Transaction saved to {}."
 msgstr "ID transakcie:"
 
-#: dnf/cli/commands/history.py:370
+#: dnf/cli/commands/history.py:381
 #, fuzzy
 #| msgid "Running transaction"
 msgid "Error storing transaction: {}"
 msgstr "Spúšťa sa transakcia"
 
-#: dnf/cli/commands/history.py:386
+#: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
 msgstr ""
 
@@ -3852,10 +3852,6 @@ msgstr ""
 #: dnf/repo.py:84
 #, python-format
 msgid "no matching payload factory for %s"
-msgstr ""
-
-#: dnf/repo.py:111
-msgid "Already downloaded"
 msgstr ""
 
 #. pinging mirrors, this might take a while
