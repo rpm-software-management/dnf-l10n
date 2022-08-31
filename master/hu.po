@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-08-08 14:19+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -3623,7 +3623,8 @@ msgstr "A(z) „%s” csoport vagy modul nem létezik."
 msgid "Environment id '%s' does not exist."
 msgstr "A(z) „%s” környezetazonosító nem létezik."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "A(z) „%s” környezetazonosító nincs telepítve."
@@ -3758,7 +3759,7 @@ msgstr "NEM lett DNS-rekord használatával ellenőrizve."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "a(z) %s tárolókulcsának lekérése titkosítatlanul innen: %s"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3766,16 +3767,16 @@ msgstr ""
 "A moduláris metaadatok nem érhetőek el a(z) „{}” moduláris csomaghoz, ezért "
 "nem telepíthető a rendszerre"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "Egy rpm kivétel történt: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "A moduláris metaadatok nem érhetőek el a moduláris csomaghoz"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Nem fogja telepíteni a forrásrpm csomagot (%s)."
@@ -4303,16 +4304,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "A(z) „{key}” objektumkulcs hiányzik a groups.packages-ből."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "A(z) „%s” csoportazonosító nincs telepítve."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "A(z) „%s” környezetazonosító nem érhető el."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4321,34 +4323,34 @@ msgstr ""
 "Érvénytelen „{group_type}” érték az environments.groups.group_type-ban, csak "
 "a „mandatory” vagy az „optional” támogatott."
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "A(z) „{key}” objektumkulcs hiányzik az environments.groups-ból."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "Váratlan „{action}” csoportművelet a(z) „{group}” csoporthoz."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "A(z) „{key}” objektumkulcs hiányzik egy csoportban."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr "Váratlan „{action}” környezeti művelet a(z) „{env}” környezethez."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "A(z) „{key}” objektumkulcs hiányzik egy környezetben."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

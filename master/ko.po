@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-08-31 11:37+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -3534,7 +3534,8 @@ msgstr "모듈 또는 그룹 '%s'가 존재하지 않습니다."
 msgid "Environment id '%s' does not exist."
 msgstr "환경 id '%s' 가 존재하지 않습니다."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "환경id '%s'가 설치되지 않았습니다."
@@ -3666,7 +3667,7 @@ msgstr "DNS 레코드를 사용하여 확인되지 않음."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "%s에서 암호화 하지 않은 %s를 위한 저장소 키 검색"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3674,16 +3675,16 @@ msgstr ""
 "모듈 꾸러미 '{}'에 사용 가능한 메타 자료가 없으며 시스템에 설치 할 수 없습니"
 "다"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "rpm 예외가 발생했습니다: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "모듈 꾸러미에 사용 가능한 모듈 메타 자료가 없습니다"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "소스 RPM 꾸러미를 설치하지 않습니다 (%s)."
@@ -4198,16 +4199,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "group.packages에 있는 객체 키 \"{key}\" 누락."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "그룹 '%s'는 설치되어 있지 않습니다."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "환경 id '%s'는 사용 할 수 없습니다."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4216,34 +4218,34 @@ msgstr ""
 "잘못된 environments.groups.group_type의 값 \"{group_type}\", \"필 수\" 또는 "
 "\"선택\"만 지원합니다."
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "환경 그룹에서 누락된 객체 키 \"{key}\"."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "그룹 \"{group}\"을 위해 예상치 못한 그룹 활동 \"{action}\"의 값."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "그룹 안에 누락된 객체 키 \"{key}\"."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr "환경 \"{env}\"를 위해 예상하지 못한 환경 활동 \"{action}\"의 값."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "환경에 누락된 객체 키 \"{key}\"."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

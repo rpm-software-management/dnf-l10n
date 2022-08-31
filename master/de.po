@@ -47,7 +47,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-08-20 14:32+0000\n"
 "Last-Translator: Wilko Meyer <w@wmeyer.eu>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -3659,7 +3659,8 @@ msgstr "Modul oder Gruppe »%s« existiert nicht."
 msgid "Environment id '%s' does not exist."
 msgstr "Umgebungskennung »%s« existiert nicht."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "Umgebungskennung »%s« ist nicht installiert."
@@ -3791,7 +3792,7 @@ msgstr "NICHT durch DNS-Eintrag verifiziert."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "Paketquellenschlüssel für %s wird unverschlüsselt von %s abgerufen"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3799,16 +3800,16 @@ msgstr ""
 "Keine modularen Metadaten für modulares Paket »{}« verfügbar, es kann nicht "
 "auf dem System installiert werden"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "Eine rpm-Ausnahme ist aufgetreten: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "Keine modularen Metadaten für modulares Paket verfügbar"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Ein Source-RPM-Paket wird nicht installiert (%s)."
@@ -4323,39 +4324,40 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Gruppenkennung »%s« ist nicht installiert."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "Umgebungskennung »%s« ist nicht verfügbar."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Fehlender Objektschlüssel »{key}« in Umgebungen.Gruppen."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 "Unerwarteter Wert der Gruppenaktion »{action}« für die Gruppe »{group}«."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Fehlender Objektschlüssel »{key}« in einer Gruppe."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4363,12 +4365,12 @@ msgid ""
 msgstr ""
 "Unerwarteter Wert der Umgebungsaktion »{action}« für die Umgebung »{env}«."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Fehlender Objektschlüssel »{key}« in einer Umgebung."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

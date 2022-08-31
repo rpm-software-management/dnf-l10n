@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-08-11 03:19+0000\n"
 "Last-Translator: Cheng Ming <chengming@bjuci.com.cn>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -3509,7 +3509,8 @@ msgstr "模块或者组 '%s' 不存在。"
 msgid "Environment id '%s' does not exist."
 msgstr "环境 id '%s' 不存在。"
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "环境 id '%s' 没有安装。"
@@ -3640,22 +3641,22 @@ msgstr "并未被 DNS 记录验证。"
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "为 %s 从 %s 获取的 repo 密钥未加密"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
 msgstr "对于模块软件包 '{}' 没有可用的模块元数据，它将不能被安装至此系统上"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "发生了 rpm 异常：%s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "对于模块软件包没有可用的模块元数据"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "将不安装一个源码 RPM 软件包 (%s)。"
@@ -4159,16 +4160,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "在 groups.packages 中缺少对象键 \"{key}\"。"
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "组 id '%s' 未安装。"
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "环境 id '%s' 不可用。"
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4177,34 +4179,34 @@ msgstr ""
 "environments.groups.group_type 的值 \"{group_type}\" 无效，仅支持 \"mandatory"
 "\" 或者 \"optional\"。"
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "在 environment.groups 中缺少对象键 \"{key}\"。"
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "对组 \"{group}\" 的组操作 \"{action}\" 的意外值。"
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "在组中缺少对象键 \"{key}\"。"
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr "对环境 \"{env}\" 的环境操作 \"{action}\" 的意外值。"
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "在环境中缺少对象键 \"{key}\"。"
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

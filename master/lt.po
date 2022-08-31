@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2021-11-02 22:05+0000\n"
 "Last-Translator: Tom Urisk <tomsonas835@protonmail.ch>\n"
 "Language-Team: Lithuanian <https://translate.fedoraproject.org/projects/dnf/"
@@ -3425,7 +3425,8 @@ msgstr "Modulis ar grupė „%s“ neegzistuoja."
 msgid "Environment id '%s' does not exist."
 msgstr ""
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr ""
@@ -3554,22 +3555,22 @@ msgstr ""
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr ""
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
 msgstr ""
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr ""
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr ""
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Neįdiegs kodo rpm paketo (%s)."
@@ -4070,50 +4071,51 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Grupė „%s“ neįdiegta."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr ""
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr ""
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "Netikėta grupės veiksmo „{action}“ grupei „{group}“ reikšmė."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr ""
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr ""
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

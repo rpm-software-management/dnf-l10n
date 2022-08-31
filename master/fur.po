@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-06-09 19:18+0000\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <https://translate.fedoraproject.org/projects/dnf/"
@@ -3595,7 +3595,8 @@ msgstr "Il modul o il grup '%s' nol esist."
 msgid "Environment id '%s' does not exist."
 msgstr "L'id di ambient '%s' nol esist."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "L'id di ambient '%s' nol è instalât."
@@ -3727,7 +3728,7 @@ msgstr "NO verificât doprant une regjistrazion DNS."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "daûr a recuperâ la clâf dal dipuesit par %s no-cifrât a partî di %s"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3735,16 +3736,16 @@ msgstr ""
 "Nissun metadât modulâr disponibil pal pachet modulâr '{}', nol è pussibil "
 "instalâlu sul sisteme"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "E je vignude fûr une ecezion rpm: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "Nissun metadât modulâr disponibil pal pachet modulâr"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "No si instalarà un pachet sorzint rpm (%s)."
@@ -4276,16 +4277,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "In groups.packages e mancje la clâf \"{key}\" dal ogjet."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "L'ID dal grup '%s' nol è instalât."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "L'ID di ambient '%s' nol è disponibil."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4294,22 +4296,22 @@ msgstr ""
 "Valôr \"{group_type}\" di environments.groups.group_type no valit, a son "
 "supuartâts dome \"mandatory\" o \"optional\"."
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "In environments.groups e mancje la clâf \"{key}\" dal ogjet."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "Valôr inspietât de azion \"{action}\" dal grup pal grup \"{group}\"."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Intun grup e mancje la clâf \"{key}\" dal ogjet."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4317,12 +4319,12 @@ msgid ""
 msgstr ""
 "Valôr inspietât de \"{action}\" azion dal ambient pal ambient \"{env}\"."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Intun ambient e mancje la clâf \"{key}\" dal ogjet."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

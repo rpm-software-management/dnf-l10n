@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-05-03 11:26+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -3610,7 +3610,8 @@ msgstr "Модуля або групи «%s» не існує."
 msgid "Environment id '%s' does not exist."
 msgstr "Середовища із ідентифікатором «%s» не існує."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "Середовище із ідентифікатором «%s» не встановлено."
@@ -3744,7 +3745,7 @@ msgstr "НЕ перевірено за допомогою запису DNS."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "отримуємо ключ сховища для %s, розшифровано з %s"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3752,16 +3753,16 @@ msgstr ""
 "Немає доступних модульних метаданих для модульного пакунка «{}», отже його "
 "не можна встановити у системі"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "Сталося виключення rpm: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "Немає доступних модульних метаданих для модульного пакунка"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Не буде встановлено пакунок rpm із початковим кодом (%s)."
@@ -4287,16 +4288,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "Пропущено ключ об'єкта «{key}» у groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Групу з ідентифікатором «%s» не встановлено."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "Ідентифікатор середовища «%s» є недоступним."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4305,22 +4307,22 @@ msgstr ""
 "Некоректне значення «{group_type}» environments.groups.group_type. "
 "Передбачено підтримку лише значень «mandatory» та «optional»."
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Пропущено ключ об'єкта «{key}» у environments.groups."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr "Неочікуване значення дії з групою «{action}» для групи «{group}»."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Пропущено ключ об'єкта «{key}» у групі."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4328,12 +4330,12 @@ msgid ""
 msgstr ""
 "Неочікуване значення для дії з середовищем «{action}» для середовища «{env}»."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Пропущено ключ об'єкта «{key}» у середовищі."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "

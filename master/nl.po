@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 03:28+0000\n"
+"POT-Creation-Date: 2022-08-31 03:40+0000\n"
 "PO-Revision-Date: 2022-05-03 11:26+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -3605,7 +3605,8 @@ msgstr "Module of groep '%s' bestaat niet."
 msgid "Environment id '%s' does not exist."
 msgstr "Omgevings-id '%s' bestaat niet."
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "Omgevings-id '%s' is niet geïnstalleerd."
@@ -3736,7 +3737,7 @@ msgstr "NIET geverifieerd met DNS-record."
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "niet-versleuteld ophalen van repo sleutel voor %s van %s"
 
-#: dnf/db/group.py:302
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3744,16 +3745,16 @@ msgstr ""
 "Geen modulaire metadata beschikbaar voor modulair pakket '{}', het kan niet "
 "op het systeem geïnstalleerd worden"
 
-#: dnf/db/group.py:353
+#: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
 msgstr "Er is een rpm uitzondering opgetreden: %s"
 
-#: dnf/db/group.py:355
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr "Geen modulaire metadata beschikbaar voor modulair pakket"
 
-#: dnf/db/group.py:389
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr "Zal een bron-rpmpakket (%s) niet installeren."
@@ -4290,16 +4291,17 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr "Ontbrekende objectsleutel \"{key}\" in groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr "Groeps-id '%s' is niet geïnstalleerd."
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "Omgevings-id '%s' is niet beschikbaar."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
@@ -4308,23 +4310,23 @@ msgstr ""
 "Ongeldige waarde \"{group_type}\" voor environments.groups.group_type, "
 "alleen \"mandatory\" of \"optional\" wordt ondersteund."
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Ontbrekende objectsleutel \"{key}\" in environments.groups."
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:564
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 "Onverwachte waarde voor groepactie \"{action}\" voor groep \"{group}\"."
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:569
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr "Ontbrekende objectsleutel \"{key}\" in een groep."
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:595
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
@@ -4332,12 +4334,12 @@ msgid ""
 msgstr ""
 "Onverwachte waarde voor omgevingsactie \"{action}\" voor omgeving \"{env}\"."
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:600
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr "Ontbrekende objectsleutel \"{key}\" in een omgeving."
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:639
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
