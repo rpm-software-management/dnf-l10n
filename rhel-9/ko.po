@@ -9,16 +9,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-05-25 10:18+0000\n"
+"PO-Revision-Date: 2022-09-02 12:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-9/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-9/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: Weblate 4.14\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -686,6 +686,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"일치되는 점을 찾지 못했습니다. 만약 파일을 위해 검색하고자 한다면, 전체 "
+"경로를 지정 하거나 시작에서 와일드카드 접두사 (\"*/\")를 사용하여 시도하세요."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1745,16 +1747,11 @@ msgid "show only results that conflict REQ"
 msgstr "REQ와 충돌하는 결과 만 표시"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
-msgstr ""
-"꾸러미 제공과 파일 REQ를 요구, 제안, 보완, 향상 또는 권장하는 결과를 표시합니"
-"다"
+msgstr "꾸러미 제공과 파일 REQ를 요구, 제안, 보완, 향상 또는 권장하는 결과를 "
+"표시합니다"
 
 #: dnf/cli/commands/repoquery.py:139
 msgid "show only results that obsolete REQ"
@@ -2014,15 +2011,7 @@ msgid "Package {} contains no files"
 msgstr "꾸러미 {}에 파일이 없습니다"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2032,13 +2021,12 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
-"유효한 매개 변수를 지정하지 않았습니다.\n"
-"사용법: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
-"\n"
-"설명:\n"
-"  지정된 꾸러미의 경우 꾸러미 트리를 출력하십시오."
+"유효한 스위치가 지정되지 않았습니다 \n"
+"사용법: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--rec"
+"ommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree] \n"
+" \n"
+"설명: \n"
+"  지정된 꾸러미의 경우 꾸러미 트리를 출력합니다."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2619,6 +2607,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"임시로 현재 dnf 명령의 용도를 위해 저장소를 활성화합니다. id, 쉼표로-구분된 "
+"ids 목록 또는 ids의 glob을 허용합니다. 이와 같은 옵션은 여러 번 지정 할 수 "
+"있습니다."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2627,6 +2618,9 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"임시적으로 현재 dnf 명령의 용도를 위해 동적 저장소를 비활성화 합니다. id, "
+"쉼표로-구분된 ids의 목록 또는 ids의 glob를 허용합니다. 이와 같은 옵션은 여러 "
+"번 지정 할 수 있으나, 이는 `--repo`와 함께 상호 배타적입니다."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -4030,8 +4024,6 @@ msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "서명을 확인하기 위해 실행 할 수 있는 rpmkeys를 찾을 수 없습니다."
 
 #: dnf/rpm/transaction.py:70
-#, fuzzy
-#| msgid "The openDB() function connot open rpm database."
 msgid "The openDB() function cannot open rpm database."
 msgstr "openDB() 함수는 rpm 데이타베이스를 열 수 없습니다."
 
