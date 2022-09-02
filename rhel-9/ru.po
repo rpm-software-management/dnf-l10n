@@ -15,22 +15,23 @@
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021, 2022.
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021, 2022.
 # Alexey Rubtsov <rushills@gmail.com>, 2021.
+# V I <xasertop@gmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-06-22 19:18+0000\n"
-"Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"rhel-9/ru/>\n"
+"PO-Revision-Date: 2022-09-03 10:26+0000\n"
+"Last-Translator: V I <xasertop@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-rhel-9/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -160,7 +161,7 @@ msgstr "%s: истекло и будет обновляться."
 #: dnf/base.py:363
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr "%s: метаданные истекают через %d секунд сейчас будут обновляться"
+msgstr "%s: метаданные истекают через %d секунд и сейчас будут обновлены"
 
 #: dnf/base.py:367
 #, python-format
@@ -249,9 +250,9 @@ msgstr "Требования к диску:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] "По меньшей мере необходимо еще {0} МБ места в файловой системе {1}."
-msgstr[1] "По меньшей мере необходимо еще {0} МБ места в файловой системе {1}."
-msgstr[2] "По меньшей мере необходимо еще {0} МБ места в файловой системе {1}."
+msgstr[0] "Необходим ещё как минимум {0} МБ места в файловой системе {1}."
+msgstr[1] "Необходимо ещё как минимум {0} МБ места в файловой системе {1}."
+msgstr[2] "Необходимо ещё как минимум {0} МБ места в файловой системе {1}."
 
 #: dnf/base.py:1075
 msgid "Error Summary"
@@ -282,7 +283,7 @@ msgstr "Некоторые пакеты не были загружены. Пов
 #: dnf/base.py:1276
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%.1f%% сохранено)"
+msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%.1f%% сэкономлено)"
 
 #: dnf/base.py:1280
 #, python-format
@@ -290,7 +291,7 @@ msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%.1f%% "
-"потрачено)"
+"загружено дополнительно)"
 
 #: dnf/base.py:1322
 msgid "Cannot add local packages, because transaction job already exists"
@@ -346,7 +347,7 @@ msgstr "Добавление пакетов из группы «%s»: %s"
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
-msgstr "Отсутствуют действия для выполнения."
+msgstr "Нет действий для выполнения."
 
 #: dnf/base.py:1827
 msgid "No groups marked for removal."
@@ -615,8 +616,8 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"Невозможно переключить активированные потоки модуля, ,если это явно не "
-"разрешено с помощью параметра конфигурации module_stream_switch.\n"
+"Невозможно переключить активированные потоки модуля, если это явно не "
+"включено с помощью параметра конфигурации module_stream_switch.\n"
 "Рекомендуется удалить из модуля всё установленное и обновить модуль с "
 "помощью команды «{prog} module reset <имя_модуля>». После обновления модуля "
 "можно установить другой поток."
@@ -712,6 +713,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Совпадений не найдено. При поиске файла попробуйте указать полный путь или "
+"использовать подстановочный знак (\"*/\") в начале."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -788,8 +791,8 @@ msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
-"Не удается определить версию выпуска (используйте '--releasever' для задания "
-"версии выпуска)"
+"Не удаётся определить версию выпуска (используйте '--releasever' для "
+"указания версии выпуска)"
 
 #: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
@@ -1414,7 +1417,7 @@ msgstr "Ошибка при сохранении транзакции: {}"
 
 #: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr "Предупреждение, в ходе транзакции возникли следующие проблемы:"
+msgstr "Предупреждение, при выполнении транзакции возникли следующие проблемы:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1786,15 +1789,11 @@ msgid "show only results that conflict REQ"
 msgstr "показывать только результаты, конфликтующие с REQ"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
 msgstr ""
-"показывать результаты, которые требуют, предполагают, дополняют, улучшают "
+"показывает результаты, которые требуют, предполагают, дополняют, улучшают "
 "или рекомендуют состав пакета и файлы REQ"
 
 #: dnf/cli/commands/repoquery.py:139
@@ -2061,15 +2060,7 @@ msgid "Package {} contains no files"
 msgstr "В пакете {} нет файлов"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2080,9 +2071,9 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Не задано правильных параметров\n"
-"использование: {prog} repoquery [--conflicts|--enhances|--obsoletes|--"
-"provides|--recommends|--requires|--suggest|--supplements|--whatrequires] "
-"[key] [--tree]\n"
+"использование: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provide"
+"s|--recommends|--requires|--suggest|--supplements|--whatrequires] [key] "
+"[--tree]\n"
 "\n"
 "описание:\n"
 "  Для данных пакетов выводит дерево пакетов."
@@ -2674,6 +2665,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Временно включите репозитории для текущей команды dnf. Принимает "
+"идентификатор, список идентификаторов через запятую или набор "
+"идентификаторов. Этот параметр можно указать несколько раз."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -3869,7 +3863,7 @@ msgstr "Для «{}» не задан профиль, задайте профи�
 
 #: dnf/module/exceptions.py:27
 msgid "No such module: {}"
-msgstr "Нет такого модуля:{}"
+msgstr "Нет такого модуля: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -4102,10 +4096,8 @@ msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "Не удается найти исполняемый файл rpmkeys для проверки подписей."
 
 #: dnf/rpm/transaction.py:70
-#, fuzzy
-#| msgid "The openDB() function connot open rpm database."
 msgid "The openDB() function cannot open rpm database."
-msgstr "Функции openDB() не удается открыть базу данных rpm."
+msgstr "Функции openDB() не удаётся открыть базу данных rpm."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
