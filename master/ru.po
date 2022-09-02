@@ -15,23 +15,23 @@
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021, 2022.
 # Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021, 2022.
 # Vitaliy Bukatkin <vitaliy.bukatkin@gmail.com>, 2020.
-# Alexey Rubtsov <rushills@gmail.com>, 2021.
+# Alexey Rubtsov <rushills@gmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-02 03:24+0000\n"
-"PO-Revision-Date: 2022-06-22 19:18+0000\n"
-"Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
-"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ru/>\n"
+"PO-Revision-Date: 2022-09-02 12:29+0000\n"
+"Last-Translator: Alexey Rubtsov <rushills@gmail.com>\n"
+"Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -283,7 +283,7 @@ msgstr "Некоторые пакеты не были загружены. Пов
 #: dnf/base.py:1281
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%.1f%% сохранено)"
+msgstr "Delta RPM уменьшил %.1f МБ обновлений до %.1f МБ (%.1f%% сэкономлено)"
 
 #: dnf/base.py:1285
 #, python-format
@@ -291,7 +291,7 @@ msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "Сбой Delta RPM привел к увеличению %.1f МБ обновлений до %.1f МБ (%.1f%% "
-"потрачено)"
+"загружено дополнительно)"
 
 #: dnf/base.py:1327
 msgid "Cannot add local packages, because transaction job already exists"
@@ -791,8 +791,8 @@ msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
-"Не удается определить версию выпуска (используйте '--releasever' для задания "
-"версии выпуска)"
+"Не удаётся определить версию релиза (используйте '--releasever' для указания "
+"версии релиза)"
 
 #: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
