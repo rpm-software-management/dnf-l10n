@@ -30,7 +30,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
 "PO-Revision-Date: 2022-09-06 07:19+0000\n"
-"Last-Translator: Ludek Janda <ljanda@redhat.com>\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/ja/>\n"
 "Language: ja\n"
@@ -729,6 +729,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"一致する項目はありませんでした。ファイルを検索する場合は、完全パスを指定する"
+"か、最初にワイルドカードの接頭辞 (「*/」) を使用してみてください。"
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1802,15 +1804,10 @@ msgid "show only results that conflict REQ"
 msgstr "REQ と競合する結果のみを表示します"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
-msgstr ""
-"REQ を提供およびファイルするパッケージを必要、提案、補完、機能強化、または推"
+msgstr "REQ を提供およびファイルするパッケージを必要、提案、補完、機能強化、または推"
 "奨する結果を表示します"
 
 #: dnf/cli/commands/repoquery.py:139
@@ -2075,15 +2072,7 @@ msgid "Package {} contains no files"
 msgstr "パッケージ {} はファイルを含んでいません"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2093,13 +2082,12 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
-"正規のスイッチが特定されません\n"
-"usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
+"有効なスイッチが指定されていません\n"
+"使用方法: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--r"
+"ecommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
 "説明:\n"
-"  与えられたパッケージではパッケージのツリーを表示します。"
+" 特定のパッケージに関しては、パッケージのツリーを出力します。"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2694,6 +2682,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"現在の dnf コマンドを機能させるため、リポジトリーを一時的に有効にします。ID、"
+"コンマ区切りの ID 一覧、または ID の glob "
+"を使用できます。このオプションは複数回指定できます。"
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2702,6 +2693,10 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"現在の dnf コマンドを機能させるため、アクティブなリポジトリーを一時的に無効に"
+"します。ID、コンマ区切りの ID 一覧、または ID の glob "
+"を受け入れます。このオプションは複数回指定できますが、'-repo' "
+"と同時には使用できません。"
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -4109,10 +4104,8 @@ msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "署名を検証する rpmkeys 実行ファイルが見つかりません。"
 
 #: dnf/rpm/transaction.py:70
-#, fuzzy
-#| msgid "The openDB() function connot open rpm database."
 msgid "The openDB() function cannot open rpm database."
-msgstr "openDB() 関数は rpm データベースを開けません。"
+msgstr "openDB () 関数は rpm データベースを開けません。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
