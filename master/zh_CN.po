@@ -35,8 +35,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-09-04 03:22+0000\n"
-"PO-Revision-Date: 2022-08-11 03:19+0000\n"
-"Last-Translator: Cheng Ming <chengming@bjuci.com.cn>\n"
+"PO-Revision-Date: 2022-09-06 07:19+0000\n"
+"Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -44,7 +44,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.14\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -701,9 +701,8 @@ msgstr "没有匹配的软件包可以列出"
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
-msgstr ""
-"未找到匹配项。如果搜索的是一个文件，尝试使用完整路径或者在开头使用通配符前缀"
-"(\"*/\")。"
+msgstr "未找到匹配项。如果搜索一个文件，请尝试使用完整路径或在开始使用通配符前缀 (\""
+"*/\")。"
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -2595,9 +2594,8 @@ msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
-msgstr ""
-"基于当前的dnf指令目前可用的仓库，可以接受一个id，一个由分隔符分割的id列表或一"
-"个id的glob。该选项可以被多次指定。"
+msgstr "为当前 dnf 命令临时启用仓库。接受一个 id、以逗号分隔的多个 id 列表，或 ids "
+"glob。此选项可多次指定。"
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2606,8 +2604,8 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
-"基于当前的dnf指令目前不可用的仓库，可以接受一个id，一个由分隔符分割的id列表或"
-"一个id的glob。该选项可以被多次指定，但使用\"--repo\"显式互斥。"
+"为当前 dnf 命令临时禁用仓库。接受一个 id、以逗号分隔的多个 id 列表，或 ids "
+"glob。此选项可多次指定，但它与 `--repo` 是相互排斥的。"
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -3621,12 +3619,12 @@ msgstr "解析文件 \"{}\" 失败：{}"
 #: dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr "repo %s: 0x%s 已被导入"
+msgstr "存储库 %s: 0x%s 已被导入"
 
 #: dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "repo %s: 已导入密钥 0x%s。"
+msgstr "存储库 %s: 已导入密钥 0x%s。"
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
@@ -3999,7 +3997,7 @@ msgstr "无法找到 rpmkeys 的可执行文件以验证签名。"
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr "函数openDB()不能打开rpm数据库。"
+msgstr "openDB() 无法打开 rpm 数据库。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
