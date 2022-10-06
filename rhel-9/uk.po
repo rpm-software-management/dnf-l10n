@@ -17,7 +17,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-04-11 06:17+0000\n"
+"PO-Revision-Date: 2022-10-07 14:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/uk/>\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -719,6 +719,9 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Відповідників не знайдено. Якщо ви шукали файл, спробуйте вказати шлях до "
+"нього повністю або скористайтеся префіксом-замінником («*/») на початку "
+"запиту."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1422,7 +1425,7 @@ msgstr "Операцію збережено до {}."
 
 #: dnf/cli/commands/history.py:381
 msgid "Error storing transaction: {}"
-msgstr "Помилка під час спроби зберегти операцію: {}"
+msgstr "Помилка при збереженні операції: {}"
 
 #: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
@@ -1799,10 +1802,6 @@ msgid "show only results that conflict REQ"
 msgstr "показати лише результати, які конфліктують з REQ"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -2071,15 +2070,7 @@ msgid "Package {} contains no files"
 msgstr "У пакунку {} не міститься файлів"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2090,9 +2081,9 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Не вказано перемикач\n"
-"Користування: {prog} repoquery [--conflicts|--enhances|--obsoletes|--"
-"provides|--recommends|--requires|--suggest|--supplements|--whatrequires] "
-"[ключ] [--tree]\n"
+"Користування: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides"
+"|--recommends|--requires|--suggest|--supplements|--whatrequires] [ключ] "
+"[--tree]\n"
 "\n"
 "Опис:\n"
 "  Для вказаних пакунків виводить ієрархію пакунків."
@@ -2688,6 +2679,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Тимчасово увімкнути сховища для виконання поточної команди dnf. Приймає "
+"ідентифікатор, список ідентифікаторів, відокремлених комами або формальний "
+"вираз ідентифікаторів. Цей параметр можна вказувати декілька разів."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2696,6 +2690,10 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"Тимчасово вимкнути активні сховища для виконання поточної команди dnf. "
+"Приймає ідентифікатор, список ідентифікаторів, відокремлених комами або "
+"формальний вираз ідентифікаторів. Цей параметр можна вказувати декілька "
+"разів, але він є несумісним із параметром «--repo»."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -4117,8 +4115,6 @@ msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "Не вдалося знайти виконуваний файл rpmkeys для перевірки підписів."
 
 #: dnf/rpm/transaction.py:70
-#, fuzzy
-#| msgid "The openDB() function connot open rpm database."
 msgid "The openDB() function cannot open rpm database."
 msgstr "Функція openDB() не може відкрити базу даних rpm."
 
