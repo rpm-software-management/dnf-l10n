@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-09-02 12:19+0000\n"
+"PO-Revision-Date: 2022-10-09 17:19+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/ko/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -355,8 +355,7 @@ msgstr "인수가 일치하지 않습니다: %s"
 #: dnf/base.py:2084
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr ""
-"%s 꾸러미의 하위 버전이 이미 설치되어 있으므로 다운그레이드 할 수 없습니다."
+msgstr "하위 버전의 꾸러미 %s가 이미 설치되어 있어서, 버전을 내릴 수 없습니다."
 
 #: dnf/base.py:2107
 #, python-format
@@ -598,14 +597,14 @@ msgstr ""
 #: dnf/cli/cli.py:212
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr "{prog}은/는 연결용 꾸러미만 내려받기합니다."
+msgstr "{prog}는 연결을 위해 꾸러미만 내려받기 합니다."
 
 #: dnf/cli/cli.py:215
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
-msgstr "{prog}은/는 꾸러미만 내려받기하고 gpg 키를 설치하며 연결을 확인합니다."
+msgstr "{prog}는 꾸러미만 내려받기 하고, gpg 키를 설치하며 연결을 확인합니다."
 
 #: dnf/cli/cli.py:219
 msgid "Operation aborted."
@@ -765,12 +764,12 @@ msgstr ""
 
 #: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
 msgid "argument {}: not allowed with argument {}"
-msgstr "인수 {}: 인수 {}과 함께 사용할 수 없습니다"
+msgstr "인수 {}: 인수 {}를 허용하지 않음"
 
 #: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
-msgstr "\"%s\" 명령이 이미 정의되어 있습니다"
+msgstr "명령 \"%s\"가 이미 정의되었습니다"
 
 #: dnf/cli/cli.py:1045
 msgid "Excludes in dnf.conf: "
@@ -910,11 +909,11 @@ msgstr "최신화 전에 변경기록 표시"
 #: dnf/cli/commands/__init__.py:356 dnf/cli/commands/__init__.py:409
 #: dnf/cli/commands/__init__.py:465
 msgid "No package available."
-msgstr "사용할 수 있는 꾸러미가 없습니다."
+msgstr "사용 할 수 있는 꾸러미가 없습니다."
 
 #: dnf/cli/commands/__init__.py:371
 msgid "No packages marked for install."
-msgstr "설치용으로 표시된 꾸러미 없습니다."
+msgstr "설치를 위해 표시된 꾸러미가 없습니다."
 
 #: dnf/cli/commands/__init__.py:407
 msgid "No package installed."
@@ -2818,7 +2817,7 @@ msgstr "레포지터리"
 #: dnf/cli/output.py:480 dnf/cli/output.py:1256
 msgctxt "long"
 msgid "Repository"
-msgstr "레포지터리"
+msgstr "저장소"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:487
@@ -4083,7 +4082,7 @@ msgstr "확인 중"
 
 #: dnf/transaction.py:97
 msgid "Running scriptlet"
-msgstr "스크립트릿 실행 중"
+msgstr "구현 중"
 
 #: dnf/transaction.py:99
 msgid "Preparing"
