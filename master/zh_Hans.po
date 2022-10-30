@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # 文一 <chuxuec@outlook.com>, 2022.
+# Jingge Chen <mariocanfly@hotmail.com>, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-23 03:20+0000\n"
-"PO-Revision-Date: 2022-02-16 23:16+0000\n"
-"Last-Translator: 文一 <chuxuec@outlook.com>\n"
+"PO-Revision-Date: 2022-10-30 10:39+0000\n"
+"Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -16,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 4.14.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -371,75 +372,75 @@ msgstr "不能对没有安装的软件 %s 进行更新."
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr ""
+msgstr "已经安装了软件包%s的相同或更高版本，无法更新。"
 
 #: dnf/base.py:2212 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
-msgstr ""
+msgstr "软件包 %s 可用，但没有被安装。"
 
 #: dnf/base.py:2218
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr ""
+msgstr "软件包 %s 可用，当是为其它架构安装。"
 
 #: dnf/base.py:2243
 #, python-format
 msgid "No package %s installed."
-msgstr ""
+msgstr "没有软件包 %s 安装。"
 
 #: dnf/base.py:2261 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "无效: %s"
 
 #: dnf/base.py:2276 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
-msgstr ""
+msgstr "没有软件包需要移除。"
 
 #: dnf/base.py:2364 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr ""
+msgstr "针对于参数 %s 的软件包可用， 但是目前没有安装。"
 
 #: dnf/base.py:2369
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr ""
+msgstr "软件包 %s 的最低版本已经安装，无法再进行降级。"
 
 #: dnf/base.py:2469
 msgid "No security updates needed, but {} update available"
-msgstr ""
+msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
 #: dnf/base.py:2471
 msgid "No security updates needed, but {} updates available"
-msgstr ""
+msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
 #: dnf/base.py:2475
 msgid "No security updates needed for \"{}\", but {} update available"
-msgstr ""
+msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
 #: dnf/base.py:2477
 msgid "No security updates needed for \"{}\", but {} updates available"
-msgstr ""
+msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
 #. raise an exception, because po.repoid is not in self.repos
 #: dnf/base.py:2498
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "无法获取来自命令行的软件包的密钥：%s"
 
 #: dnf/base.py:2506
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". 失败的软件包是：%s"
 
 #: dnf/base.py:2507
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr ""
+msgstr "GPG密钥配置为：%s"
 
 #: dnf/base.py:2519
 #, python-format
@@ -4037,60 +4038,60 @@ msgstr ""
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "组中没有对象键“{key}”。"
 
 #: dnf/transaction_sr.py:599
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr ""
+msgstr "环境“{env}”的环境操作“{action}”产生意外值。"
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "环境中没有对象键“{key}”。"
 
 #: dnf/transaction_sr.py:643
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
-msgstr ""
+msgstr "事务文件中不存在的包nevra“{nevra}”已被拉入事务。"
 
 #: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
-msgstr ""
+msgstr "问题"
 
 #: dnf/util.py:470
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "找不到键{}的TransactionItem"
 
 #: dnf/util.py:480
 msgid "TransactionSWDBItem not found for key: {}"
-msgstr ""
+msgstr "找不到键{}的TransactionSWDBItem"
 
 #: dnf/util.py:483
 msgid "Errors occurred during transaction."
-msgstr ""
+msgstr "在处理事项时发生错误。"
 
 #: dnf/util.py:619
 msgid "Reinstalled"
-msgstr ""
+msgstr "已重装"
 
 #: dnf/util.py:620
 msgid "Skipped"
-msgstr ""
+msgstr "跳过"
 
 #: dnf/util.py:621
 msgid "Removed"
-msgstr ""
+msgstr "已移除"
 
 #: dnf/util.py:624
 msgid "Failed"
-msgstr ""
+msgstr "失败"
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
 #: dnf/util.py:633
 msgid "<name-unset>"
-msgstr ""
+msgstr "<名称未设定>"
