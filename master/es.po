@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-20 02:36+0000\n"
+"POT-Creation-Date: 2022-11-30 02:14+0000\n"
 "PO-Revision-Date: 2022-05-02 18:18+0000\n"
 "Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -837,7 +837,7 @@ msgstr ""
 "No se pudo detectar la versión de lanzamiento (use '--releasever' para "
 "especificarla)"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:471
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:472
 msgid "argument {}: not allowed with argument {}"
 msgstr "opción {}: no permitida con la opción {}"
 
@@ -1817,11 +1817,11 @@ msgstr "Paquetes totales: {}"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:107
+#: dnf/cli/commands/repoquery.py:108
 msgid "search for packages matching keyword"
 msgstr "buscar paquetes que coincidan con la palabra clave"
 
-#: dnf/cli/commands/repoquery.py:121
+#: dnf/cli/commands/repoquery.py:122
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1829,27 +1829,27 @@ msgstr ""
 "Consultar todos los paquetes (atajo para repoquery '*' o repoquery sin "
 "parámetros)"
 
-#: dnf/cli/commands/repoquery.py:124
+#: dnf/cli/commands/repoquery.py:125
 msgid "Query all versions of packages (default)"
 msgstr "Consultar todas las versiones de los paquetes (opción predeterminada)"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:127
+#: dnf/cli/commands/repoquery.py:128
 msgid "show only results from this ARCH"
 msgstr "mostrar solamente resultados de esta ARCH"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results that owns FILE"
 msgstr "mostrar solamente resultados que sean dueños de este FILE"
 
-#: dnf/cli/commands/repoquery.py:132
+#: dnf/cli/commands/repoquery.py:133
 msgid "show only results that conflict REQ"
 msgstr "mostrar sólo resultados con conflictos con REQ"
 
-#: dnf/cli/commands/repoquery.py:135
+#: dnf/cli/commands/repoquery.py:136
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1857,17 +1857,17 @@ msgstr ""
 "muestra resultados que requieren, sugieren, complementan, mejoran o "
 "recomiendan archivos REQ o paquetes que proporcionan REQ"
 
-#: dnf/cli/commands/repoquery.py:139
+#: dnf/cli/commands/repoquery.py:140
 msgid "show only results that obsolete REQ"
 msgstr "mostrar sólo los resultados que reemplazan a REQ"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:142
+#: dnf/cli/commands/repoquery.py:143
 msgid "show only results that provide REQ"
 msgstr "mostrar sólo los resultados que proporcionan REQ"
 
-#: dnf/cli/commands/repoquery.py:145
+#: dnf/cli/commands/repoquery.py:146
 msgid "shows results that requires package provides and files REQ"
 msgstr ""
 "mostrar los resultados que requieren el archivo REQ o que algún paquete "
@@ -1875,71 +1875,71 @@ msgstr ""
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:148
+#: dnf/cli/commands/repoquery.py:149
 msgid "show only results that recommend REQ"
 msgstr "mostrar solo los resultados que recomiendan REQ"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:151
+#: dnf/cli/commands/repoquery.py:152
 msgid "show only results that enhance REQ"
 msgstr "mostrar solo los resultados que mejoran REQ"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:154
+#: dnf/cli/commands/repoquery.py:155
 msgid "show only results that suggest REQ"
 msgstr "mostrar solo los resultados que sugieren REQ"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:157
+#: dnf/cli/commands/repoquery.py:158
 msgid "show only results that supplement REQ"
 msgstr "mostrar solo los resultados que complementan REQ"
 
-#: dnf/cli/commands/repoquery.py:160
+#: dnf/cli/commands/repoquery.py:161
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr ""
 "comprobar dependencias implícitas (archivos y provisiones); opción "
 "predeterminada"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr ""
 "comprobar las dependencias tal como se indican, opción contraria a --alldeps"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
 "con --whatrequires y --requires --resolve, hace una consulta recursiva."
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid "show a list of all dependencies and what packages provide them"
 msgstr "mostrar todas las dependencias y qué paquetes las suplen"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "resolve capabilities to originating package(s)"
 msgstr "resolver las capacidades hasta los paquetes que las originan"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "show recursive tree for package(s)"
 msgstr "mostrar el árbol recursivo para paquete(s)"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "operate on corresponding source RPM"
 msgstr "operar en el RPM fuente correspondiente"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1947,33 +1947,33 @@ msgstr ""
 "mostrar los N paquetes más recientes para un nombre.arquitectura dado (o los "
 "anteriores a los N más recientes si N es negativo)"
 
-#: dnf/cli/commands/repoquery.py:177
+#: dnf/cli/commands/repoquery.py:178
 msgid "list also packages of inactive module streams"
 msgstr "listar también paquetes de flujos de módulos inactivos"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:182
+#: dnf/cli/commands/repoquery.py:183
 msgid "show detailed information about the package"
 msgstr "mostrar información detallada del paquete"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:185
+#: dnf/cli/commands/repoquery.py:186
 msgid "show list of files in the package"
 msgstr "mostrar la lista de archivos del paquete"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:188
+#: dnf/cli/commands/repoquery.py:189
 msgid "show package source RPM name"
 msgstr "mostrar el nombre del paquete fuente RPM"
 
-#: dnf/cli/commands/repoquery.py:191
+#: dnf/cli/commands/repoquery.py:192
 msgid "show changelogs of the package"
 msgstr "mostrar cambios del paquete"
 
-#: dnf/cli/commands/repoquery.py:194
+#: dnf/cli/commands/repoquery.py:195
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1984,11 +1984,11 @@ msgstr ""
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:198
+#: dnf/cli/commands/repoquery.py:199
 msgid "show available tags to use with --queryformat"
 msgstr "mostrar etiquetas disponibles para usar con --queryformat"
 
-#: dnf/cli/commands/repoquery.py:202
+#: dnf/cli/commands/repoquery.py:203
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1996,7 +1996,7 @@ msgstr ""
 "usar nombre-epoch:versión-lanzamiento.arquitectura para mostrar los paquetes "
 "(predeterminado)"
 
-#: dnf/cli/commands/repoquery.py:205
+#: dnf/cli/commands/repoquery.py:206
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -2004,45 +2004,45 @@ msgstr ""
 "usar nombre-versión-lanzamiento para mostrar los paquetes (opción "
 "predeterminada de rpm)"
 
-#: dnf/cli/commands/repoquery.py:211
+#: dnf/cli/commands/repoquery.py:212
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
 msgstr ""
 "usar epoch:nombre-versión-lanzamiento.arquitecura para mostrar los pquetes"
 
-#: dnf/cli/commands/repoquery.py:214
+#: dnf/cli/commands/repoquery.py:215
 msgid "Display in which comps groups are presented selected packages"
 msgstr "Mostrar en qué grupos están presentes los paquetes seleccionados"
 
-#: dnf/cli/commands/repoquery.py:218
+#: dnf/cli/commands/repoquery.py:219
 msgid "limit the query to installed duplicate packages"
 msgstr "limitar la consulta a los paquetes duplicados instalados"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:225
+#: dnf/cli/commands/repoquery.py:226
 msgid "limit the query to installed installonly packages"
 msgstr "limitar la consulta a paquetes «installonly» instalados"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:228
+#: dnf/cli/commands/repoquery.py:229
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
 "limitar la consulta a paquetes instalados con dependencias sin satisfacer"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "show a location from where packages can be downloaded"
 msgstr "mostrar de dónde se pueden descargar los paquetes"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:233
+#: dnf/cli/commands/repoquery.py:234
 msgid "Display capabilities that the package conflicts with."
 msgstr "Mostrar las capacidades con las que el paquete tiene conflictos."
 
-#: dnf/cli/commands/repoquery.py:234
+#: dnf/cli/commands/repoquery.py:235
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
@@ -2052,29 +2052,29 @@ msgstr ""
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid "Display capabilities that the package can enhance."
 msgstr "Mostrar las capacidades que el paquete puede mejorar."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:237
+#: dnf/cli/commands/repoquery.py:238
 msgid "Display capabilities provided by the package."
 msgstr "Mostrar las capacidades proporcionadas por el paquete."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package recommends."
 msgstr "Mostrar las capacidades que el paquete recomienda."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities that the package depends on."
 msgstr "Mostrar las capacidades de las que el paquete depende."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -2087,31 +2087,31 @@ msgstr ""
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:243
+#: dnf/cli/commands/repoquery.py:244
 msgid "Display capabilities that the package suggests."
 msgstr "Mostrar las capacidades que el paquete sugiere."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:244
+#: dnf/cli/commands/repoquery.py:245
 msgid "Display capabilities that the package can supplement."
 msgstr "Mostrar las capacidades que el paquete puede complementar."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:250
+#: dnf/cli/commands/repoquery.py:251
 msgid "Display only available packages."
 msgstr "Mostrar sólo paquetes disponibles."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:253
+#: dnf/cli/commands/repoquery.py:254
 msgid "Display only installed packages."
 msgstr "Mostrar solo paquetes instalados."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:254
+#: dnf/cli/commands/repoquery.py:255
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
@@ -2120,13 +2120,13 @@ msgstr ""
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
 msgstr "Mostrar sólo paquetes que actualizan para alguno ya instalado."
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
@@ -2134,23 +2134,23 @@ msgstr ""
 "Mostrar solo los paquetes que pueden quitarse con el comando \"{prog} "
 "autoremove\"."
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 msgid "Display only packages that were installed by user."
 msgstr "Mostrar sólo paquetes instalados por el usuario."
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:270
+#: dnf/cli/commands/repoquery.py:271
 msgid "Display only recently edited packages"
 msgstr "Mostrar sólo paquetes editados recientemente"
 
 # auto translated by TM merge from project: dnf-plugins-core, version: master,
 # DocId: dnf-plugins-core
-#: dnf/cli/commands/repoquery.py:273
+#: dnf/cli/commands/repoquery.py:274
 msgid "the key to search for"
 msgstr "la clave para buscar"
 
-#: dnf/cli/commands/repoquery.py:295
+#: dnf/cli/commands/repoquery.py:296
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -2160,7 +2160,7 @@ msgstr ""
 "enhances', '--provides', '--recommends', '--requires', '--requires-pre', '--"
 "suggests' o '--supplements'"
 
-#: dnf/cli/commands/repoquery.py:305
+#: dnf/cli/commands/repoquery.py:306
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2170,15 +2170,15 @@ msgstr ""
 "<REQ>' (opcionalmente con '--alldeps', pero no con '--exactdeps'), o con '--"
 "requires <REQ> --resolve'"
 
-#: dnf/cli/commands/repoquery.py:312
+#: dnf/cli/commands/repoquery.py:313
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "la opción {} necesita --whatrequires o --whatdepends"
 
-#: dnf/cli/commands/repoquery.py:344
+#: dnf/cli/commands/repoquery.py:345
 msgid "Package {} contains no files"
 msgstr "El paquete {} no contiene archivos"
 
-#: dnf/cli/commands/repoquery.py:561
+#: dnf/cli/commands/repoquery.py:562
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -3839,6 +3839,11 @@ msgstr ""
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Análisis de archivo \"{}\" fallado: {}"
+
+#: dnf/conf/substitutions.py:66
+#, python-brace-format
+msgid "Error when parsing a variable from file '{0}': {1}"
+msgstr ""
 
 #: dnf/crypto.py:108
 #, python-format
