@@ -14,13 +14,13 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
 # Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020, 2021.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2020.
-# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021, 2022.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-08-08 14:19+0000\n"
+"PO-Revision-Date: 2023-01-17 09:20+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13\n"
+"X-Generator: Weblate 4.15\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -726,6 +726,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Nincs találat. Ha fájlra keres, akkor próbálja megadni a teljes útvonalat, "
+"vagy használjon dzsóker előtagot („*/”) az elején."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -1423,7 +1425,7 @@ msgstr "Nem írja felül {}, kilépés."
 
 #: dnf/cli/commands/history.py:378
 msgid "Transaction saved to {}."
-msgstr "Tranzakció ide mentve: {}."
+msgstr "Tranzakció mentve ide: {}."
 
 #: dnf/cli/commands/history.py:381
 msgid "Error storing transaction: {}"
@@ -1800,10 +1802,6 @@ msgid "show only results that conflict REQ"
 msgstr "csak azokat jelenítse meg, amelyek ütköznek a FÜGGŐSÉGgel"
 
 #: dnf/cli/commands/repoquery.py:135
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -2090,15 +2088,7 @@ msgid "Package {} contains no files"
 msgstr "A(z) {} csomag nem tartalmaz fájlokat"
 
 #: dnf/cli/commands/repoquery.py:561
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2110,8 +2100,8 @@ msgid ""
 msgstr ""
 "Nincs kapcsoló megadva\n"
 "használat: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [kulcs] [--"
-"tree]\n"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [kulcs] "
+"[--tree]\n"
 "\n"
 "leírás:\n"
 " Kiírja a csomagfát a megadott csomagokhoz."
@@ -2707,6 +2697,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Tárolók ideiglenes engedélyezése a jelenlegi dnf parancshoz. Egy azonosítót, "
+"azonosítók vesszővel elválasztott listáját vagy egy mintát fogad el. Ez a "
+"kapcsoló többször is megadható."
 
 #: dnf/cli/option_parser.py:268
 msgid ""
@@ -2715,6 +2708,10 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"Tárolók ideiglenes letiltása a jelenlegi dnf parancshoz. Egy azonosítót, "
+"azonosítók vesszővel elválasztott listáját vagy egy mintát fogad el. Ez a "
+"kapcsoló többször is megadható, de a „--repo” kapcsolóval kölcsönösen "
+"kizárják egymást."
 
 #: dnf/cli/option_parser.py:275
 msgid ""
@@ -4132,8 +4129,6 @@ msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr "Az aláírások ellenőrzéséhez szükséges rpmkeys bináris nem található."
 
 #: dnf/rpm/transaction.py:70
-#, fuzzy
-#| msgid "The openDB() function connot open rpm database."
 msgid "The openDB() function cannot open rpm database."
 msgstr "Az openDB() függvény nem tudja megnyitni az rpm adatbázist."
 
