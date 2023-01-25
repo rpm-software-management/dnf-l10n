@@ -24,13 +24,15 @@
 # Hajime Taira <htaira@pantora.net>, 2020.
 # Sundeep Anand <suanand@redhat.com>, 2021.
 # Transtats <suanand@redhat.com>, 2022.
+# middlingphys <middlingphys@users.noreply.translate.fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-30 15:24+0200\n"
-"PO-Revision-Date: 2022-03-09 12:39+0000\n"
-"Last-Translator: Transtats <suanand@redhat.com>\n"
+"PO-Revision-Date: 2023-01-26 06:20+0000\n"
+"Last-Translator: middlingphys <middlingphys@users.noreply.translate."
+"fedoraproject.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-8/ja/>\n"
 "Language: ja\n"
@@ -38,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -191,7 +193,7 @@ msgstr "リポジトリーを無視します: %s"
 #: dnf/base.py:420
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr "メタデータの期限切れの最終確認: %s 時間前の %s に実施しました。"
+msgstr "メタデータの期限切れの最終確認: %s 前の %s に実施しました。"
 
 #: dnf/base.py:513
 msgid ""
@@ -2311,7 +2313,7 @@ msgstr "セキュリティー"
 
 #: dnf/cli/commands/updateinfo.py:48
 msgid "newpackage"
-msgstr "newpackage"
+msgstr "新しいパッケージ"
 
 #: dnf/cli/commands/updateinfo.py:50
 msgid "Critical/Sec."
@@ -2775,7 +2777,7 @@ msgstr "機能拡張関連パッケージを更新に含めます"
 
 #: dnf/cli/option_parser.py:328
 msgid "Include newpackage relevant packages, in updates"
-msgstr "newpackage の関連パッケージを更新に含めます"
+msgstr "新しいパッケージの関連パッケージを更新に含めます"
 
 #: dnf/cli/option_parser.py:331
 msgid "Include security relevant packages, in updates"
@@ -3424,7 +3426,7 @@ msgstr "失敗しました:"
 
 #: dnf/cli/output.py:1765 dnf/cli/output.py:1767
 msgid "Releasever     :"
-msgstr "Releasever     :"
+msgstr "リリースバージョン  :"
 
 #: dnf/cli/output.py:1772 dnf/cli/output.py:1774
 msgid "Command Line   :"
@@ -3432,7 +3434,7 @@ msgstr "コマンドライン      :"
 
 #: dnf/cli/output.py:1779 dnf/cli/output.py:1781
 msgid "Comment        :"
-msgstr "コメント        :"
+msgstr "コメント            :"
 
 #: dnf/cli/output.py:1785
 msgid "Transaction performed with:"
@@ -3452,7 +3454,7 @@ msgstr "エラー:"
 
 #: dnf/cli/output.py:1816
 msgid "Dep-Install"
-msgstr "Dep-Install"
+msgstr "依存先インストール"
 
 #: dnf/cli/output.py:1817
 msgid "Obsoleted"
@@ -3678,11 +3680,11 @@ msgstr "警告: '%s' のロードに失敗、スキップします。"
 
 #: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr "repo: {} ({}) に正しくないid、 byte = {} {}"
+msgstr "repo の id が不正: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:76
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr "repo: {} に正しくないid、byte = {} {}"
+msgstr "repo の id が不正: {}, byte = {} {}"
 
 #: dnf/conf/read.py:84
 msgid "Repository '{}' ({}): Error parsing config: {}"
@@ -3810,7 +3812,7 @@ msgstr "破損したグループまたはモジュール: "
 #: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
-msgstr[0] "デフォルトのモジュラー依存問題:"
+msgstr[0] "モジュラーのデフォルトの依存関係問題:"
 
 #: dnf/exceptions.py:131 dnf/module/module_base.py:854
 msgid "Modular dependency problem:"
@@ -3937,7 +3939,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr "引数 {} でプロファイルが見つかりません"
+msgstr "引数 {} に一致するプロファイルが見つかりません"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
