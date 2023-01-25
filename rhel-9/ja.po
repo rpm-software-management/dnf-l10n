@@ -24,13 +24,15 @@
 # Hajime Taira <htaira@pantora.net>, 2020.
 # Sundeep Anand <suanand@redhat.com>, 2021.
 # Transtats <suanand@redhat.com>, 2022.
+# middlingphys <middlingphys@users.noreply.translate.fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-08-31 13:42+0200\n"
-"PO-Revision-Date: 2022-09-06 07:19+0000\n"
-"Last-Translator: Transtats <suanand@redhat.com>\n"
+"PO-Revision-Date: 2023-01-26 06:20+0000\n"
+"Last-Translator: middlingphys <middlingphys@users.noreply.translate."
+"fedoraproject.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-rhel-9/ja/>\n"
 "Language: ja\n"
@@ -38,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14\n"
+"X-Generator: Weblate 4.15.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -191,7 +193,7 @@ msgstr "リポジトリーを無視します: %s"
 #: dnf/base.py:421
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr "メタデータの期限切れの最終確認: %s 時間前の %s に実施しました。"
+msgstr "メタデータの期限切れの最終確認: %s 前の %s に実施しました。"
 
 #: dnf/base.py:514
 msgid ""
@@ -287,15 +289,15 @@ msgstr "一部のパッケージはダウンロードされませんでした。
 #: dnf/base.py:1276
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "デルタ RPM は、更新の %.1f MB を %.1f MB に削減しました (%.1f%% 節約しました)"
+msgstr "Delta RPM により %.1f MB の更新を %.1f MB に削減できました (%.1f%% "
+"節約しました)"
 
 #: dnf/base.py:1280
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr ""
-"失敗した Delta RPMs は、更新の %.1f MB を %.1f MB に増加しました (%.1f%% は無"
-"駄になりました)"
+msgstr "非効率な Delta RPM により %.1f MB の更新が増大して %.1f MB となりました ("
+"%.1f%% が無駄になりました)"
 
 #: dnf/base.py:1322
 msgid "Cannot add local packages, because transaction job already exists"
@@ -2087,7 +2089,7 @@ msgstr ""
 "ecommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
 "説明:\n"
-" 特定のパッケージに関しては、パッケージのツリーを出力します。"
+" 与えられたパッケージに対し、パッケージのツリーを出力します。"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2306,7 +2308,7 @@ msgstr "セキュリティー"
 
 #: dnf/cli/commands/updateinfo.py:48
 msgid "newpackage"
-msgstr "newpackage"
+msgstr "新しいパッケージ"
 
 #: dnf/cli/commands/updateinfo.py:50
 msgid "Critical/Sec."
@@ -2776,7 +2778,7 @@ msgstr "機能拡張関連パッケージを更新に含めます"
 
 #: dnf/cli/option_parser.py:333
 msgid "Include newpackage relevant packages, in updates"
-msgstr "newpackage の関連パッケージを更新に含めます"
+msgstr "新しいパッケージの関連パッケージを更新に含めます"
 
 #: dnf/cli/option_parser.py:336
 msgid "Include security relevant packages, in updates"
@@ -3425,7 +3427,7 @@ msgstr "失敗しました:"
 
 #: dnf/cli/output.py:1764 dnf/cli/output.py:1766
 msgid "Releasever     :"
-msgstr "Releasever     :"
+msgstr "リリースバージョン  :"
 
 #: dnf/cli/output.py:1771 dnf/cli/output.py:1773
 msgid "Command Line   :"
@@ -3433,7 +3435,7 @@ msgstr "コマンドライン      :"
 
 #: dnf/cli/output.py:1778 dnf/cli/output.py:1780
 msgid "Comment        :"
-msgstr "コメント        :"
+msgstr "コメント            :"
 
 #: dnf/cli/output.py:1784
 msgid "Transaction performed with:"
@@ -3453,7 +3455,7 @@ msgstr "エラー:"
 
 #: dnf/cli/output.py:1815
 msgid "Dep-Install"
-msgstr "Dep-Install"
+msgstr "依存先インストール"
 
 #: dnf/cli/output.py:1816
 msgid "Obsoleted"
@@ -3683,11 +3685,11 @@ msgstr "警告: '%s' のロードに失敗、スキップします。"
 
 #: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr "repo: {} ({}) に正しくないid、 byte = {} {}"
+msgstr "repo の id が不正: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:76
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr "repo: {} に正しくないid、byte = {} {}"
+msgstr "repo の id が不正: {}, byte = {} {}"
 
 #: dnf/conf/read.py:84
 msgid "Repository '{}' ({}): Error parsing config: {}"
@@ -3820,7 +3822,7 @@ msgstr "破損したグループまたはモジュール: "
 #: dnf/exceptions.py:126
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
-msgstr[0] "デフォルトのモジュラー依存問題:"
+msgstr[0] "モジュラーのデフォルトの依存関係問題:"
 
 #: dnf/exceptions.py:131 dnf/module/module_base.py:857
 msgid "Modular dependency problem:"
@@ -3947,7 +3949,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr "引数 {} でプロファイルが見つかりません"
+msgstr "引数 {} に一致するプロファイルが見つかりません"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
@@ -4105,7 +4107,7 @@ msgstr "署名を検証する rpmkeys 実行ファイルが見つかりません
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr "openDB () 関数は rpm データベースを開けません。"
+msgstr "openDB() 関数は rpm データベースを開けません。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
