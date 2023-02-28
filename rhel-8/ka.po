@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-08-30 15:24+0200\n"
+"POT-Creation-Date: 2023-02-28 10:03+0100\n"
 "PO-Revision-Date: 2023-01-17 09:20+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
@@ -102,7 +102,7 @@ msgstr "სისტემა გათიშულია."
 msgid "Error: %s"
 msgstr "შეცდომა: %s"
 
-#: dnf/base.py:149 dnf/base.py:478 dnf/base.py:480
+#: dnf/base.py:149 dnf/base.py:483 dnf/base.py:485
 msgid "loading repo '{}' failure: {}"
 msgstr "რეპოზიტორიის '{}' ჩატვირთვის შეცდომა: {}"
 
@@ -110,236 +110,236 @@ msgstr "რეპოზიტორიის '{}' ჩატვირთვის
 msgid "Loading repository '{}' has failed"
 msgstr "რეპოზიტორიის '{}' ჩატვირთვის შეცდომა"
 
-#: dnf/base.py:328
+#: dnf/base.py:333
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr "ზომვადი კავშირებისას მეტამომაცემების ტაიმერის კეშინგი გამორთულია."
 
-#: dnf/base.py:333
+#: dnf/base.py:338
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr "მეტამონაცემების ტაიმერის კეშინგი გამორთულია ელემენტზე გაშვების დროს."
 
-#: dnf/base.py:338
+#: dnf/base.py:343
 msgid "Metadata timer caching disabled."
 msgstr "მეტამონაცემების ტაიმერის ქეშინგი გამორთულია."
 
-#: dnf/base.py:343
+#: dnf/base.py:348
 msgid "Metadata cache refreshed recently."
 msgstr "მეტამონაცემების ქეში ახლახანს განახლდა."
 
-#: dnf/base.py:349 dnf/cli/commands/__init__.py:91
+#: dnf/base.py:354 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
 msgstr ""
 
-#: dnf/base.py:356
+#: dnf/base.py:361
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
 msgstr ""
 
-#: dnf/base.py:358
+#: dnf/base.py:363
 #, python-format
 msgid "%s: has expired and will be refreshed."
 msgstr ""
 
 #. expires within the checking period:
-#: dnf/base.py:362
+#: dnf/base.py:367
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
 msgstr "%s: მეტამონაცემების ვადა %d წამის შემდეგ გავა და განახლდება"
 
-#: dnf/base.py:366
+#: dnf/base.py:371
 #, python-format
 msgid "%s: will expire after %d seconds."
 msgstr ""
 
 #. performs the md sync
-#: dnf/base.py:372
+#: dnf/base.py:377
 msgid "Metadata cache created."
 msgstr "მეტამონაცემების კეში შეიქმნა."
 
-#: dnf/base.py:405 dnf/base.py:472
+#: dnf/base.py:410 dnf/base.py:477
 #, python-format
 msgid "%s: using metadata from %s."
 msgstr "%s: გამოიყენება მეტამონაცემები %s-დან."
 
-#: dnf/base.py:417 dnf/base.py:485
+#: dnf/base.py:422 dnf/base.py:490
 #, python-format
 msgid "Ignoring repositories: %s"
 msgstr "გამოტოვებული რეპოზიტორიები: %s"
 
-#: dnf/base.py:420
+#: dnf/base.py:425
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
 msgstr "მეტამონაცემების ვადის ბოლო შემოწმების თარიღი: %s-ის წინ %s-ზე."
 
-#: dnf/base.py:513
+#: dnf/base.py:518
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
 
-#: dnf/base.py:515
+#: dnf/base.py:520
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
 msgstr ""
 
-#: dnf/base.py:647
+#: dnf/base.py:652
 #, python-format
 msgid "Invalid tsflag in config file: %s"
 msgstr ""
 
-#: dnf/base.py:703
+#: dnf/base.py:708
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr ""
 
-#: dnf/base.py:945
+#: dnf/base.py:950
 msgid "Running transaction check"
 msgstr "მიმდინარეობს ტრანზაქციის შემოწმება"
 
-#: dnf/base.py:953
+#: dnf/base.py:958
 msgid "Error: transaction check vs depsolve:"
 msgstr "შეცდომა: ტრანზაქციის შემოწმება depsolve-ის წინააღმდეგ:"
 
-#: dnf/base.py:959
+#: dnf/base.py:964
 msgid "Transaction check succeeded."
 msgstr "ტრანზაქცია წარმატებით შემოწმდა."
 
-#: dnf/base.py:962
+#: dnf/base.py:967
 msgid "Running transaction test"
 msgstr "ტრანზაქციის შემოწმება"
 
-#: dnf/base.py:972 dnf/base.py:1123
+#: dnf/base.py:977 dnf/base.py:1128
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:973
+#: dnf/base.py:978
 msgid "Transaction test error:"
 msgstr "ტრანზაქციის შემოწმების შეცდომა:"
 
-#: dnf/base.py:984
+#: dnf/base.py:989
 msgid "Transaction test succeeded."
 msgstr "ტრანზაქცია წარმატებით შემოწმდა."
 
-#: dnf/base.py:1005
+#: dnf/base.py:1010
 msgid "Running transaction"
 msgstr "ტრანზაქციის გაშვება"
 
-#: dnf/base.py:1042
+#: dnf/base.py:1047
 msgid "Disk Requirements:"
 msgstr "საჭირო ადგილი დისკზე:"
 
-#: dnf/base.py:1045
+#: dnf/base.py:1050
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] ""
 
-#: dnf/base.py:1052
+#: dnf/base.py:1057
 msgid "Error Summary"
 msgstr "შეცდომის მოკლე მიმოხილვა"
 
-#: dnf/base.py:1078
+#: dnf/base.py:1083
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB შეიცვალა {prog}-ის გარეთ."
 
-#: dnf/base.py:1124 dnf/base.py:1132
+#: dnf/base.py:1129 dnf/base.py:1137
 msgid "Could not run transaction."
 msgstr "ტრანზაქციის გაშვების შეცდომა."
 
-#: dnf/base.py:1127
+#: dnf/base.py:1132
 msgid "Transaction couldn't start:"
 msgstr "ტრანზაქციის დაწყების შეცდომა:"
 
-#: dnf/base.py:1141
+#: dnf/base.py:1146
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr ""
 
-#: dnf/base.py:1223
+#: dnf/base.py:1228
 msgid "Some packages were not downloaded. Retrying."
 msgstr ""
 
-#: dnf/base.py:1253
+#: dnf/base.py:1258
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
 msgstr ""
 
-#: dnf/base.py:1256
+#: dnf/base.py:1261
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
 msgstr ""
 
-#: dnf/base.py:1298
+#: dnf/base.py:1303
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 
-#: dnf/base.py:1312
+#: dnf/base.py:1317
 msgid "Could not open: {}"
 msgstr "გახსნის შეცდომა: {}"
 
-#: dnf/base.py:1350
+#: dnf/base.py:1355
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "%s-ის საჯარო გასაღები დაყენებული არაა"
 
-#: dnf/base.py:1354
+#: dnf/base.py:1359
 #, python-format
 msgid "Problem opening package %s"
 msgstr "პრობლემა %s პაკეტის გახსნისას"
 
-#: dnf/base.py:1362
+#: dnf/base.py:1367
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "%s-ის საჯარო გასაღები სანდო არაა"
 
-#: dnf/base.py:1366
+#: dnf/base.py:1371
 #, python-format
 msgid "Package %s is not signed"
 msgstr "პაკეტი %s არაა ხელმოწერილი"
 
-#: dnf/base.py:1396
+#: dnf/base.py:1401
 #, python-format
 msgid "Cannot remove %s"
 msgstr "%s-ის წაშლის შეცდომა"
 
-#: dnf/base.py:1400
+#: dnf/base.py:1405
 #, python-format
 msgid "%s removed"
 msgstr "%s წაიშალა"
 
-#: dnf/base.py:1680
+#: dnf/base.py:1685
 msgid "No match for group package \"{}\""
 msgstr ""
 
-#: dnf/base.py:1762
+#: dnf/base.py:1767
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr ""
 
-#: dnf/base.py:1785 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
+#: dnf/base.py:1790 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "გასაკეთებელი არაფერია."
 
-#: dnf/base.py:1803
+#: dnf/base.py:1808
 msgid "No groups marked for removal."
 msgstr "არცერთი ჯგუფი წასაშლელად მონიშნული არაა."
 
-#: dnf/base.py:1837
+#: dnf/base.py:1842
 msgid "No group marked for upgrade."
 msgstr "არცერთი ჯგუფი არაა მონიშნული განსაახლებლად."
 
-#: dnf/base.py:2051
+#: dnf/base.py:2056
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "პაკეტი %s დაყენებული არაა. ვერსიის ჩამოწევა შეუძლებელია."
 
-#: dnf/base.py:2053 dnf/base.py:2072 dnf/base.py:2085 dnf/base.py:2112
-#: dnf/base.py:2165 dnf/base.py:2173 dnf/base.py:2307 dnf/cli/cli.py:417
+#: dnf/base.py:2058 dnf/base.py:2077 dnf/base.py:2090 dnf/base.py:2121
+#: dnf/base.py:2191 dnf/base.py:2199 dnf/base.py:2333 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -349,127 +349,127 @@ msgstr "პაკეტი %s დაყენებული არაა. ვ�
 msgid "No match for argument: %s"
 msgstr "არგუმენტს არაფერი ემთხვევა: %s"
 
-#: dnf/base.py:2060
+#: dnf/base.py:2065
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "პაკეტი %s უკვე მითითებულზე უფრო ძველია. ვერსიის ჩამოწევა შეუძლებელია."
 
-#: dnf/base.py:2083
+#: dnf/base.py:2088
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "პაკეტი %s დაყენებული არაა. თავიდან დაყენება შეუძლებელია."
 
-#: dnf/base.py:2098
+#: dnf/base.py:2103
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 
-#: dnf/base.py:2109
+#: dnf/base.py:2118
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "პაკეტი %s დაყენებული არაა. მისი განახლება შეუძლებელია."
 
-#: dnf/base.py:2119
+#: dnf/base.py:2128
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "პაკეტი %s უფრო ახალი ან იგივე ვერსიისაა. მისი განახლება შეუძლებელია."
 
-#: dnf/base.py:2162 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2188 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "პაკეტი %s ხელმისაწვდომია, მაგრამ არა დაყენებული."
 
-#: dnf/base.py:2168
+#: dnf/base.py:2194
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "პაკეტი %s ხელმისაწვდომია, მაგრამ დაყენებულია სხვა არქიტექტურისთვის."
 
-#: dnf/base.py:2193
+#: dnf/base.py:2219
 #, python-format
 msgid "No package %s installed."
 msgstr "პაკეტი %s დაყენებული არაა."
 
-#: dnf/base.py:2211 dnf/cli/commands/install.py:136
+#: dnf/base.py:2237 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "არასწორი ფორმა: %s"
 
-#: dnf/base.py:2226 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2252 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "არცერთი პაკეტი არაა წასაშლელად მონიშნული."
 
-#: dnf/base.py:2314 dnf/cli/cli.py:428
+#: dnf/base.py:2340 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "პაკეტები არგუმენტისთვის %s ხელმისაწვდომია, მაგრამ არა დაყენებული."
 
-#: dnf/base.py:2319
+#: dnf/base.py:2345
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "პაკეტი %s უკვე უფრო დაბალი ვერსიისაა. ვერსიის დაწევა შეუძლებელია."
 
-#: dnf/base.py:2419
+#: dnf/base.py:2445
 msgid "No security updates needed, but {} update available"
 msgstr ""
 
-#: dnf/base.py:2421
+#: dnf/base.py:2447
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 
-#: dnf/base.py:2425
+#: dnf/base.py:2451
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 
-#: dnf/base.py:2427
+#: dnf/base.py:2453
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2448
+#: dnf/base.py:2474
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2456
+#: dnf/base.py:2482
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". შეცდომიანი პაკეტია: %s"
 
-#: dnf/base.py:2457
+#: dnf/base.py:2483
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr ""
 
-#: dnf/base.py:2469
+#: dnf/base.py:2495
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG გასაღები %s-თან (0x%s) უკვე დაყენებულია"
 
-#: dnf/base.py:2505
+#: dnf/base.py:2531
 msgid "The key has been approved."
 msgstr "გასაღები მიღებულია."
 
-#: dnf/base.py:2508
+#: dnf/base.py:2534
 msgid "The key has been rejected."
 msgstr "გასაღები უარყოფილია."
 
-#: dnf/base.py:2541
+#: dnf/base.py:2567
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "გასაღების შემოტანა ვერ მოხერხდა (კოდი %d)"
 
-#: dnf/base.py:2543
+#: dnf/base.py:2569
 msgid "Key imported successfully"
 msgstr "გასაღები წარმატებით იქნა შემოტანილი"
 
-#: dnf/base.py:2547
+#: dnf/base.py:2573
 msgid "Didn't install any keys"
 msgstr "არცერთი გასაღები არ დამიყენებია"
 
-#: dnf/base.py:2550
+#: dnf/base.py:2576
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -480,49 +480,49 @@ msgstr ""
 "პაკეტისთვის.\n"
 "შეამოწმეთ რეპოზიტორიის ბმულები."
 
-#: dnf/base.py:2561
+#: dnf/base.py:2587
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 
-#: dnf/base.py:2614
+#: dnf/base.py:2640
 msgid "  * Maybe you meant: {}"
 msgstr "  * შეიძლება იგულისხმეთ: {}"
 
-#: dnf/base.py:2646
+#: dnf/base.py:2672
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2649
+#: dnf/base.py:2675
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2652
+#: dnf/base.py:2678
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 
-#: dnf/base.py:2655
+#: dnf/base.py:2681
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
 
-#: dnf/base.py:2673 dnf/base.py:2693
+#: dnf/base.py:2699 dnf/base.py:2719
 msgid "No match for argument"
 msgstr "არგუმენტს არაფერი ემთხვევა"
 
-#: dnf/base.py:2681 dnf/base.py:2701
+#: dnf/base.py:2707 dnf/base.py:2727
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2683
+#: dnf/base.py:2709
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2699
+#: dnf/base.py:2725
 msgid "All matches were installed from a different repository for argument"
 msgstr "ყველა დამთხვევა დაყენებულია არგუმენტის სხვადასხვა რეპოზიტორიებიდან"
 
-#: dnf/base.py:2746
+#: dnf/base.py:2772
 #, python-format
 msgid "Package %s is already installed."
 msgstr "პაკეტი %s უკვე დაყენებულია."
@@ -3394,7 +3394,8 @@ msgstr ""
 msgid "Environment id '%s' does not exist."
 msgstr ""
 
-#: dnf/comps.py:622 dnf/transaction_sr.py:477 dnf/transaction_sr.py:487
+#: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
+#: dnf/transaction_sr.py:507
 #, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "გარემო დაყენებული არაა:'%s'."
@@ -3496,6 +3497,11 @@ msgstr ""
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "ფაილის \"{}\" დამუშავების შეცდომა: {}"
 
+#: dnf/conf/substitutions.py:66
+#, python-brace-format
+msgid "Error when parsing a variable from file '{0}': {1}"
+msgstr ""
+
 #: dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
@@ -3519,7 +3525,7 @@ msgstr ""
 msgid "retrieving repo key for %s unencrypted from %s"
 msgstr ""
 
-#: dnf/db/group.py:301
+#: dnf/db/group.py:308
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3527,11 +3533,16 @@ msgstr ""
 "მოდულული პაკეტი '{}'-თვის მოდულული მეტამონაცემები მიუწვდომელია; თქვენს "
 "სისტემაზე ვერ დააყენებთ"
 
-#: dnf/db/group.py:351
+#: dnf/db/group.py:359
+#, python-format
+msgid "An rpm exception occurred: %s"
+msgstr ""
+
+#: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
 msgstr ""
 
-#: dnf/db/group.py:385
+#: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
 msgstr ""
@@ -3816,21 +3827,21 @@ msgstr "Makecache ბრძანების ბოლო გაშვები
 msgid "Parsing file failed: %s"
 msgstr "ფაილის დამუშავების შეცდომა: %s"
 
-#: dnf/plugin.py:141
+#: dnf/plugin.py:144
 #, python-format
 msgid "Loaded plugins: %s"
 msgstr "ჩატვირთული დამატებები: %s"
 
-#: dnf/plugin.py:211
+#: dnf/plugin.py:216
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
 msgstr ""
 
-#: dnf/plugin.py:243
+#: dnf/plugin.py:248
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
 
-#: dnf/plugin.py:247
+#: dnf/plugin.py:252
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 
@@ -4018,50 +4029,51 @@ msgid "Missing object key \"{key}\" in groups.packages."
 msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
+#: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
 msgstr ""
 
-#: dnf/transaction_sr.py:432
+#: dnf/transaction_sr.py:442
 #, python-format
 msgid "Environment id '%s' is not available."
 msgstr "გარემოს ID '%s' ხელმიუწვდომელია."
 
-#: dnf/transaction_sr.py:456
+#: dnf/transaction_sr.py:466
 #, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 
-#: dnf/transaction_sr.py:464
+#: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
 msgstr ""
 
-#: dnf/transaction_sr.py:542
+#: dnf/transaction_sr.py:566
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:547
+#: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
 msgstr ""
 
-#: dnf/transaction_sr.py:571
+#: dnf/transaction_sr.py:599
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
 
-#: dnf/transaction_sr.py:576
+#: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
 msgstr ""
 
-#: dnf/transaction_sr.py:615
+#: dnf/transaction_sr.py:643
 #, python-brace-format
 msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
