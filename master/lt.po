@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-03-21 01:52+0000\n"
-"PO-Revision-Date: 2023-03-21 20:25+0000\n"
+"PO-Revision-Date: 2023-03-22 21:20+0000\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lithuanian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/lt/>\n"
@@ -22,14 +22,14 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
-"%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && ("
+"n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Weblate 4.15.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates have been applied on '%s':"
-msgstr "Šie atnaujinimai buvo pritaikyti '%s':"
+msgstr "Šie atnaujinimai buvo pritaikyti „%s“:"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -39,12 +39,12 @@ msgstr "Naujinimai baigti %s"
 #: dnf/automatic/emitter.py:34
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Šie atnaujinimai prieinami '%s':"
+msgstr "Šie atnaujinimai prieinami „%s“:"
 
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Šie atnaujinimai atsisiųsti '%s':"
+msgstr "Šie atnaujinimai atsisiųsti „%s“:"
 
 #: dnf/automatic/emitter.py:83
 #, python-format
@@ -54,7 +54,7 @@ msgstr "Naujinimai atlikti „%s“."
 #: dnf/automatic/emitter.py:85
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Atnaujinimai, atsisiųsti '%s':"
+msgstr "Atnaujinimai, atsisiųsti „%s“:"
 
 #: dnf/automatic/emitter.py:87
 #, python-format
@@ -74,12 +74,12 @@ msgstr "Nepavyko įvykdyti komandos '%s': grąžinta %d"
 #: dnf/automatic/main.py:165
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr ""
+msgstr "Nežinoma konfigūracijos vertė: %s=%s %s; %s"
 
 #: dnf/automatic/main.py:169 dnf/conf/config.py:158
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
-msgstr ""
+msgstr "Nežinomas konfigūracijos parametras: %s = %s %s"
 
 #: dnf/automatic/main.py:241 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
@@ -120,7 +120,7 @@ msgstr "Saugyklos '{}' įkėlimas nepavyko"
 
 #: dnf/base.py:334
 msgid "Metadata timer caching disabled when running on metered connection."
-msgstr ""
+msgstr "Meta duomenų laikmačio podėlis išjungtas vykdant su matuojamu ryšiu."
 
 #: dnf/base.py:339
 msgid "Metadata timer caching disabled when running on a battery."
@@ -153,6 +153,7 @@ msgstr "%s: nustojo galioti ir bus atnaujinta."
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
 msgstr ""
+"%s: meta duomenų galiojimas baigsis po %d sekundžių ir dabar bus atnaujintas"
 
 #: dnf/base.py:372
 #, python-format
@@ -167,7 +168,7 @@ msgstr "Metaduomenų podėlis sukurtas."
 #: dnf/base.py:411 dnf/base.py:478
 #, python-format
 msgid "%s: using metadata from %s."
-msgstr ""
+msgstr "%s: naudojami meta duomenys iš %s"
 
 #: dnf/base.py:423 dnf/base.py:491
 #, python-format
@@ -177,7 +178,7 @@ msgstr "Ignoruojamos talpyklos: %s"
 #: dnf/base.py:426
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr ""
+msgstr "Paskutinis meta duomenų galiojimo pabaigos tikrinimas: prieš %s iš %s."
 
 #: dnf/base.py:519
 msgid ""
@@ -206,7 +207,7 @@ msgstr "Vykdoma operacijos patikra"
 
 #: dnf/base.py:981
 msgid "Error: transaction check vs depsolve:"
-msgstr ""
+msgstr "Klaida: tranzakcijos tikrinimas prieš priklausomybių sprendimą:"
 
 #: dnf/base.py:987
 msgid "Transaction check succeeded."
@@ -218,7 +219,7 @@ msgstr "Operacija tikrinama"
 
 #: dnf/base.py:1000 dnf/base.py:1151
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:1001
 msgid "Transaction test error:"
@@ -251,7 +252,7 @@ msgstr "Klaidų santrauka"
 #: dnf/base.py:1106
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB pakeista už {prog} ribų."
 
 #: dnf/base.py:1152 dnf/base.py:1160
 msgid "Could not run transaction."
@@ -273,17 +274,18 @@ msgstr "Kai kurie paketai nebuvo parsiųsti. Kartojama."
 #: dnf/base.py:1281
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr ""
+msgstr "Delta RPM sumažino %.1f MB atnaujinimų iki %.1f MB (sutaupyta %.1f%%)"
 
 #: dnf/base.py:1285
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
+"Nepavykę Delta RPM padidino %.1f MB atnaujinimų iki %.1f MB (pralošta %.1f%%)"
 
 #: dnf/base.py:1327
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "Nepavyko pridėti vietinių peketų, nes tranzakcijos darbas jau yra"
 
 #: dnf/base.py:1341
 msgid "Could not open: {}"
@@ -346,7 +348,7 @@ msgstr "Jokia grupė nepažymėta naujovinimui."
 #: dnf/base.py:2084
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr ""
+msgstr "Paketas %s neįdiegtas, negalima jo pažeminti."
 
 #: dnf/base.py:2086 dnf/base.py:2105 dnf/base.py:2118 dnf/base.py:2149
 #: dnf/base.py:2219 dnf/base.py:2227 dnf/base.py:2361 dnf/cli/cli.py:417
@@ -362,7 +364,7 @@ msgstr "Nėra atitikmens argumentui: %s"
 #: dnf/base.py:2093
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Žemesnės versijos paketas %s jau įdiegtas, negalima jo pažeminti."
 
 #: dnf/base.py:2116
 #, python-format
@@ -404,7 +406,7 @@ msgstr "Nėra įdiegto paketo %s."
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Netinkama forma: %s"
 
 #: dnf/base.py:2280 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
@@ -419,7 +421,7 @@ msgstr "Paketai argumentui „%s“ yra pasiekiami, bet neįrašyti."
 #: dnf/base.py:2373
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Žemiausios versijos paketas %s jau įdiegtas, negalima jo pažeminti."
 
 #: dnf/base.py:2473
 msgid "No security updates needed, but {} update available"
@@ -427,31 +429,31 @@ msgstr "Nėra reikalingų saugumo naujinimų, tačiau {} naujinys yra pasiekiama
 
 #: dnf/base.py:2475
 msgid "No security updates needed, but {} updates available"
-msgstr ""
+msgstr "Nėra saugumo atnaujinimų, bet prieinama {} atnaujinimų"
 
 #: dnf/base.py:2479
 msgid "No security updates needed for \"{}\", but {} update available"
-msgstr ""
+msgstr "Nėra saugumo atnaujinimų „{}“, bet prieinama {} atnaujinimų"
 
 #: dnf/base.py:2481
 msgid "No security updates needed for \"{}\", but {} updates available"
-msgstr ""
+msgstr "Nėra saugumo atnaujinimų „{}“, bet prieinama {} atnaujinimų"
 
 #. raise an exception, because po.repoid is not in self.repos
 #: dnf/base.py:2502
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Nepavyksta gauti rakto komandų eilutės paketui: %s"
 
 #: dnf/base.py:2510
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". Nepavykęs paketas yra: %s"
 
 #: dnf/base.py:2511
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr ""
+msgstr "GPG raktai sukonfigūruoti kaip: %s"
 
 #: dnf/base.py:2523
 #, python-format
@@ -460,11 +462,11 @@ msgstr "GPG raktas iš %s (0x%s) jau įdiegtas"
 
 #: dnf/base.py:2559
 msgid "The key has been approved."
-msgstr ""
+msgstr "Raktas buvo patvirtintas."
 
 #: dnf/base.py:2562
 msgid "The key has been rejected."
-msgstr ""
+msgstr "Raktas buvo atmestas."
 
 #: dnf/base.py:2595
 #, python-format
@@ -496,7 +498,7 @@ msgstr "Rakto(-ų) importas nepadėjo, neteisingas(-i) raktas(-ai)?"
 
 #: dnf/base.py:2668
 msgid "  * Maybe you meant: {}"
-msgstr ""
+msgstr "  * Galbūt norėjote: {}"
 
 #: dnf/base.py:2700
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
@@ -517,6 +519,8 @@ msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Kai kurie paketai turi netinkamą podėlį, bet negali būti atsisiųsti dėl "
+"parametro „--cacheonly“"
 
 #: dnf/base.py:2727 dnf/base.py:2747
 msgid "No match for argument"
@@ -524,15 +528,15 @@ msgstr "Nėra atitikmens argumentui"
 
 #: dnf/base.py:2735 dnf/base.py:2755
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Visi atitikmenys buvo nufiltruoti išimties filtro argumentui"
 
 #: dnf/base.py:2737
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Visi atitikmenys buvo nufiltruoti modulinio filtravimo argumentui"
 
 #: dnf/base.py:2753
 msgid "All matches were installed from a different repository for argument"
-msgstr ""
+msgstr "Visi atitikmenys buvo įdiegti iš kitos saugyklos argumentui"
 
 #: dnf/base.py:2814
 #, python-format
@@ -542,12 +546,12 @@ msgstr "Paketas „%s“ jau įdiegtas."
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Nelaukta vertė aplinkos kintamajam: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:476
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
-msgstr ""
+msgstr "Nepavyko išanalizuoti failo „%s“: %s"
 
 #: dnf/cli/aliases.py:108
 #, python-format
@@ -562,12 +566,12 @@ msgstr "Konfigūracijos klaida: %s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Alternatyviuose pavadinimuose yra begalinė rekursija"
 
 #: dnf/cli/aliases.py:209
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, naudojami pradiniai argumentai."
 
 #: dnf/cli/cli.py:137
 #, python-format
@@ -584,7 +588,7 @@ msgstr "  Sukurta  : %s %s"
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
-msgstr ""
+msgstr "Veiksmas baigtųsi modulio „{0}“ srauto „{1}“ pakeitimu į srautą „{2}“"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -595,6 +599,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"Negalima keisti įjungtų srautų moduliui nebent tai išreikštinai leista "
+"konfigūracijos parametru module_stream_switch.\n"
+"Rekomenduojama geriau pašalinti įdiegtą turinį moduliui bei atstatyti modulį "
+"naudojant komandą „{prog} module reset <modulio_pav>“. Atstačius modulį "
+"galite įdiegti kitą srautą."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -636,7 +645,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:337
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "Pakeitimų žurnalas {}"
 
 #: dnf/cli/cli.py:370 dnf/cli/cli.py:511 dnf/cli/cli.py:517
 msgid "Obsoleting Packages"
@@ -653,7 +662,7 @@ msgstr "Paketas „%s“ nepasiekiamas."
 
 #: dnf/cli/cli.py:434
 msgid "No packages marked for downgrade."
-msgstr ""
+msgstr "Nėra paketų, pažymėtų pažeminimui."
 
 #: dnf/cli/cli.py:485
 msgid "Installed Packages"
@@ -665,7 +674,7 @@ msgstr "Prieinami paketai"
 
 #: dnf/cli/cli.py:497
 msgid "Autoremove Packages"
-msgstr ""
+msgstr "Automatiškai pašalinti paketus"
 
 #: dnf/cli/cli.py:499
 msgid "Extra Packages"
@@ -688,6 +697,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Nerasta atitikmenų. Jei ieškote failo, bandykite ieškoti viso kelio arba "
+"naudokite pakaitos priešdėlį („*/“)."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -704,6 +715,8 @@ msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Ši komanda turi būti įvykdyta super naudotojo privilegijomis (daugumoje "
+"sistemų root naudotoju)."
 
 #: dnf/cli/cli.py:751
 #, python-format
@@ -733,32 +746,41 @@ msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir arba --downloaddir turi būti naudojama su --downloadonly arba "
+"download ar system-upgrade komandomis."
 
 #: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled bei --disable, --set-disabled turi būti naudojami su "
+"config-manager komanda."
 
 #: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
+"Įspėjimas: užtikrinamas GPG parašo tikrinimas visuotinai pagal aktyvią RPM "
+"saugumo tvarką (žr. „gpgcheck] dnf.conf(5) kaip susitvarkyti su šiuo "
+"pranešimu)"
 
 #: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
-msgstr ""
+msgstr "Konfigūracijos failo „{}“ nėra"
 
 #: dnf/cli/cli.py:944
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
+"Nepavyko aptikti leidimo versijos (naudokite „--releasever“ leidimo versijai "
+"nurodyti)"
 
 #: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:473
 msgid "argument {}: not allowed with argument {}"
-msgstr ""
+msgstr "argumentas {}: neleidžiama su argumentu {}"
 
 #: dnf/cli/cli.py:1025
 #, python-format
