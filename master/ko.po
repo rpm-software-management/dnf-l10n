@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22 01:55+0000\n"
+"POT-Creation-Date: 2023-03-30 02:01+0000\n"
 "PO-Revision-Date: 2023-03-03 22:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -2477,111 +2477,106 @@ msgstr "잘못된 형식: %s"
 
 #: dnf/cli/option_parser.py:115
 #, python-format
-msgid "Setopt argument has multiple values: %s"
-msgstr "Setopt 인수는 여러 값을 갖습니다. %s"
-
-#: dnf/cli/option_parser.py:118
-#, python-format
 msgid "Setopt argument has no value: %s"
 msgstr "Setopt 인수에 값이 없습니다 : %s"
 
 #. All defaults need to be a None, so we can always tell whether the user
 #. has set something or whether we are getting a default.
-#: dnf/cli/option_parser.py:174
+#: dnf/cli/option_parser.py:171
 #, python-brace-format
 msgid "General {prog} options"
 msgstr "일반 {prog} 옵션"
 
-#: dnf/cli/option_parser.py:178
+#: dnf/cli/option_parser.py:175
 msgid "config file location"
 msgstr "설정 파일 위치"
 
-#: dnf/cli/option_parser.py:181
+#: dnf/cli/option_parser.py:178
 msgid "quiet operation"
 msgstr "자동 실행"
 
-#: dnf/cli/option_parser.py:183
+#: dnf/cli/option_parser.py:180
 msgid "verbose operation"
 msgstr "상세 작업"
 
-#: dnf/cli/option_parser.py:185
+#: dnf/cli/option_parser.py:182
 #, python-brace-format
 msgid "show {prog} version and exit"
 msgstr "{prog} 버전 표시 및 종료"
 
-#: dnf/cli/option_parser.py:187
+#: dnf/cli/option_parser.py:184
 msgid "set install root"
 msgstr "설치 root 설정"
 
-#: dnf/cli/option_parser.py:190
+#: dnf/cli/option_parser.py:187
 msgid "do not install documentations"
 msgstr "문서를 설치하지 마십시오"
 
-#: dnf/cli/option_parser.py:193
+#: dnf/cli/option_parser.py:190
 msgid "disable all plugins"
 msgstr "모든 플러그인 비활성화"
 
-#: dnf/cli/option_parser.py:196
+#: dnf/cli/option_parser.py:193
 msgid "enable plugins by name"
 msgstr "지정된 이름으로 플러그인 활성화"
 
-#: dnf/cli/option_parser.py:200
+#: dnf/cli/option_parser.py:197
 msgid "disable plugins by name"
 msgstr "지정된 이름으로 플러그인 비활성화"
 
-#: dnf/cli/option_parser.py:203
+#: dnf/cli/option_parser.py:200
 msgid "override the value of $releasever in config and repo files"
 msgstr "설정 파일과 저장소 파일의 $releasever 값을 재정의합니다"
 
-#: dnf/cli/option_parser.py:207
+#: dnf/cli/option_parser.py:204
 msgid "set arbitrary config and repo options"
 msgstr "임의의 설정과 저장소 옵션을 설정합니다"
 
-#: dnf/cli/option_parser.py:210
+#: dnf/cli/option_parser.py:207
 msgid "resolve depsolve problems by skipping packages"
 msgstr "꾸러미를 건너뛰어 종속성 문제 해결"
 
-#: dnf/cli/option_parser.py:213
+#: dnf/cli/option_parser.py:210
 msgid "show command help"
 msgstr "명령 도움말 표시"
 
-#: dnf/cli/option_parser.py:217
+#: dnf/cli/option_parser.py:214
 msgid "allow erasing of installed packages to resolve dependencies"
 msgstr "종속성을 해결하기 위해 설치된 꾸러미 지우기 허용"
 
-#: dnf/cli/option_parser.py:221
+#: dnf/cli/option_parser.py:218
 msgid "try the best available package versions in transactions."
 msgstr "연결에서 사용 가능한 최상의 꾸러미 버전을 사용해보십시오."
 
-#: dnf/cli/option_parser.py:223
+#: dnf/cli/option_parser.py:220
 msgid "do not limit the transaction to the best candidate"
 msgstr "연결을 최상의 선택 옵션으로 제한하지 마십시오"
 
-#: dnf/cli/option_parser.py:226
+#: dnf/cli/option_parser.py:223
 msgid "run entirely from system cache, don't update cache"
 msgstr "시스템 캐쉬에서 완전히 실행하고, 캐쉬를 최신화하지 않습니다"
 
-#: dnf/cli/option_parser.py:230
+#: dnf/cli/option_parser.py:227
 msgid "maximum command wait time"
 msgstr "최대 명령 대기 시간"
 
-#: dnf/cli/option_parser.py:233
+#: dnf/cli/option_parser.py:230
 msgid "debugging output level"
 msgstr "디버깅 출력 레벨"
 
-#: dnf/cli/option_parser.py:236
+#: dnf/cli/option_parser.py:233
 msgid "dumps detailed solving results into files"
 msgstr "자세한 해결 결과를 파일로 덤프합니다"
 
-#: dnf/cli/option_parser.py:240
+#: dnf/cli/option_parser.py:237
 msgid "show duplicates, in repos, in list/search commands"
 msgstr "repos에 있는 중복 목록을 목록/검색 명령에 표시합니다"
 
-#: dnf/cli/option_parser.py:243
+#: dnf/cli/option_parser.py:240
 msgid "error output level"
 msgstr "오류 출력 수준"
 
-#: dnf/cli/option_parser.py:246
+#: dnf/cli/option_parser.py:243
 #, python-brace-format
 msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
@@ -2590,19 +2585,19 @@ msgstr ""
 "꾸러미가 info, list, repoquery에 더 이상 사용하지 않는 최신화 또는 표시 기능"
 "을 위해 {prog}의 더 이상 사용되지 않는 처리 로직을 활성화합니다"
 
-#: dnf/cli/option_parser.py:251
+#: dnf/cli/option_parser.py:248
 msgid "debugging output level for rpm"
 msgstr "rpm 용 디버깅 출력 레벨"
 
-#: dnf/cli/option_parser.py:254
+#: dnf/cli/option_parser.py:251
 msgid "automatically answer yes for all questions"
 msgstr "모든 질문에 대해 “예\"(yes)로 자동 응답합니다"
 
-#: dnf/cli/option_parser.py:257
+#: dnf/cli/option_parser.py:254
 msgid "automatically answer no for all questions"
 msgstr "모든 질문에 대해 \"아니오\"(no)로 자동 응답합니다"
 
-#: dnf/cli/option_parser.py:261
+#: dnf/cli/option_parser.py:258
 msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
@@ -2612,7 +2607,7 @@ msgstr ""
 "ids 목록 또는 ids의 glob을 허용합니다. 이와 같은 옵션은 여러 번 지정 할 수 있"
 "습니다."
 
-#: dnf/cli/option_parser.py:268
+#: dnf/cli/option_parser.py:265
 msgid ""
 "Temporarily disable active repositories for the purpose of the current dnf "
 "command. Accepts an id, a comma-separated list of ids, or a glob of ids. "
@@ -2623,7 +2618,7 @@ msgstr ""
 "표로-구분된 ids의 목록 또는 ids의 glob를 허용합니다. 이와 같은 옵션은 여러 "
 "번 지정 할 수 있으나, 이는 `--repo`와 함께 상호 배타적입니다."
 
-#: dnf/cli/option_parser.py:275
+#: dnf/cli/option_parser.py:272
 msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
@@ -2631,23 +2626,23 @@ msgstr ""
 "id 나 glob로 특정 리포지토리를 활성화할 수 있습니다. 여러 번 지정할 수 있습니"
 "다"
 
-#: dnf/cli/option_parser.py:280
+#: dnf/cli/option_parser.py:277
 msgid "enable repos with config-manager command (automatically saves)"
 msgstr "config-manager 명령으로 저장소를 활성화합니다 (자동 저장)"
 
-#: dnf/cli/option_parser.py:284
+#: dnf/cli/option_parser.py:281
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr "config-manager 명령으로 저장소를 비활성화합니다 (자동 저장)"
 
-#: dnf/cli/option_parser.py:288
+#: dnf/cli/option_parser.py:285
 msgid "exclude packages by name or glob"
 msgstr "이름이나 glob로 꾸러미를 제거합니다"
 
-#: dnf/cli/option_parser.py:293
+#: dnf/cli/option_parser.py:290
 msgid "disable excludepkgs"
 msgstr "excludepkgs 비활성화"
 
-#: dnf/cli/option_parser.py:298
+#: dnf/cli/option_parser.py:295
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
@@ -2655,87 +2650,87 @@ msgstr ""
 "사용 할 추가 저장소에 대한 이름표와 경로(baseurl과 동일한 경로)를 여러 번 지"
 "정 할 수 있습니다."
 
-#: dnf/cli/option_parser.py:302
+#: dnf/cli/option_parser.py:299
 msgid "disable removal of dependencies that are no longer used"
 msgstr "더 이상 사용되지 않는 종속성 제거를 비활성화"
 
-#: dnf/cli/option_parser.py:305
+#: dnf/cli/option_parser.py:302
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr "gpg 서명 확인을 비활성화 (RPM 정책이 허용하는 경우)"
 
-#: dnf/cli/option_parser.py:307
+#: dnf/cli/option_parser.py:304
 msgid "control whether color is used"
 msgstr "색상 사용 여부 제어"
 
-#: dnf/cli/option_parser.py:310
+#: dnf/cli/option_parser.py:307
 msgid "set metadata as expired before running the command"
 msgstr "명령을 실행하기 전에 메타 데이터를 만료된 것으로 설정"
 
-#: dnf/cli/option_parser.py:313
+#: dnf/cli/option_parser.py:310
 msgid "resolve to IPv4 addresses only"
 msgstr "IPv4 주소만 확인"
 
-#: dnf/cli/option_parser.py:316
+#: dnf/cli/option_parser.py:313
 msgid "resolve to IPv6 addresses only"
 msgstr "IPv6 주소만 확인"
 
-#: dnf/cli/option_parser.py:319
+#: dnf/cli/option_parser.py:316
 msgid "set directory to copy packages to"
 msgstr "꾸러미를 복사할 디렉토리를 설정하십시오"
 
-#: dnf/cli/option_parser.py:322
+#: dnf/cli/option_parser.py:319
 msgid "only download packages"
 msgstr "꾸러미만 내려받기"
 
-#: dnf/cli/option_parser.py:324
+#: dnf/cli/option_parser.py:321
 msgid "add a comment to transaction"
 msgstr "연결에 의견을 추가하십시오"
 
-#: dnf/cli/option_parser.py:327
+#: dnf/cli/option_parser.py:324
 msgid "Include bugfix relevant packages, in updates"
 msgstr "결점 수정 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:330
+#: dnf/cli/option_parser.py:327
 msgid "Include enhancement relevant packages, in updates"
 msgstr "개선된 기능과 관련된 꾸러미를 초신화에 포함"
 
-#: dnf/cli/option_parser.py:333
+#: dnf/cli/option_parser.py:330
 msgid "Include newpackage relevant packages, in updates"
 msgstr "새 꾸러미 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:336
+#: dnf/cli/option_parser.py:333
 msgid "Include security relevant packages, in updates"
 msgstr "보안 관련 꾸러미 최신화에 포함"
 
-#: dnf/cli/option_parser.py:340
+#: dnf/cli/option_parser.py:337
 msgid "Include packages needed to fix the given advisory, in updates"
 msgstr "주어진 권고를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:344
+#: dnf/cli/option_parser.py:341
 msgid "Include packages needed to fix the given BZ, in updates"
 msgstr "주어진 BZ를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:347
+#: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr "주어진 CVE를 수정하는 데 필요한 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:352
+#: dnf/cli/option_parser.py:349
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr "심각도와 일치하는 보안 관련 꾸러미를 최신화에 포함"
 
-#: dnf/cli/option_parser.py:358
+#: dnf/cli/option_parser.py:355
 msgid "Force the use of an architecture"
 msgstr "구조의 사용을 강제합니다"
 
-#: dnf/cli/option_parser.py:380
+#: dnf/cli/option_parser.py:377
 msgid "List of Main Commands:"
 msgstr "주요 명령 목록:"
 
-#: dnf/cli/option_parser.py:381
+#: dnf/cli/option_parser.py:378
 msgid "List of Plugin Commands:"
 msgstr "플러그인 명령 목록:"
 
-#: dnf/cli/option_parser.py:418
+#: dnf/cli/option_parser.py:415
 #, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr "‘%s' 인수를 인코딩할 수 없습니다: %s"
@@ -4288,6 +4283,9 @@ msgstr "실패함"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<name-unset>"
+
+#~ msgid "Setopt argument has multiple values: %s"
+#~ msgstr "Setopt 인수는 여러 값을 갖습니다. %s"
 
 #~ msgid "list modular packages"
 #~ msgstr "모듈러 꾸러미지 목록"

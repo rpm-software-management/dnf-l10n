@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-22 01:55+0000\n"
+"POT-Creation-Date: 2023-03-30 02:01+0000\n"
 "PO-Revision-Date: 2023-03-15 07:20+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -2467,111 +2467,106 @@ msgstr "损坏的格式：%s"
 
 #: dnf/cli/option_parser.py:115
 #, python-format
-msgid "Setopt argument has multiple values: %s"
-msgstr "Setopt 参数有多个值：%s"
-
-#: dnf/cli/option_parser.py:118
-#, python-format
 msgid "Setopt argument has no value: %s"
 msgstr "Setopt 参数没有值：%s"
 
 #. All defaults need to be a None, so we can always tell whether the user
 #. has set something or whether we are getting a default.
-#: dnf/cli/option_parser.py:174
+#: dnf/cli/option_parser.py:171
 #, python-brace-format
 msgid "General {prog} options"
 msgstr "{prog} 一般选项"
 
-#: dnf/cli/option_parser.py:178
+#: dnf/cli/option_parser.py:175
 msgid "config file location"
 msgstr "配置文件位置"
 
-#: dnf/cli/option_parser.py:181
+#: dnf/cli/option_parser.py:178
 msgid "quiet operation"
 msgstr "静默执行"
 
-#: dnf/cli/option_parser.py:183
+#: dnf/cli/option_parser.py:180
 msgid "verbose operation"
 msgstr "详尽执行"
 
-#: dnf/cli/option_parser.py:185
+#: dnf/cli/option_parser.py:182
 #, python-brace-format
 msgid "show {prog} version and exit"
 msgstr "显示 {prog} 的版本并退出"
 
-#: dnf/cli/option_parser.py:187
+#: dnf/cli/option_parser.py:184
 msgid "set install root"
 msgstr "设置目标根目录"
 
-#: dnf/cli/option_parser.py:190
+#: dnf/cli/option_parser.py:187
 msgid "do not install documentations"
 msgstr "不要安装文档"
 
-#: dnf/cli/option_parser.py:193
+#: dnf/cli/option_parser.py:190
 msgid "disable all plugins"
 msgstr "禁用所有插件"
 
-#: dnf/cli/option_parser.py:196
+#: dnf/cli/option_parser.py:193
 msgid "enable plugins by name"
 msgstr "启用指定名称的插件"
 
-#: dnf/cli/option_parser.py:200
+#: dnf/cli/option_parser.py:197
 msgid "disable plugins by name"
 msgstr "禁用指定名称的插件"
 
-#: dnf/cli/option_parser.py:203
+#: dnf/cli/option_parser.py:200
 msgid "override the value of $releasever in config and repo files"
 msgstr "覆盖在配置文件和仓库文件中 $releasever 的值"
 
-#: dnf/cli/option_parser.py:207
+#: dnf/cli/option_parser.py:204
 msgid "set arbitrary config and repo options"
 msgstr "设置任意配置和仓库选项"
 
-#: dnf/cli/option_parser.py:210
+#: dnf/cli/option_parser.py:207
 msgid "resolve depsolve problems by skipping packages"
 msgstr "通过跳过软件包来解决依赖问题"
 
-#: dnf/cli/option_parser.py:213
+#: dnf/cli/option_parser.py:210
 msgid "show command help"
 msgstr "显示命令帮助"
 
-#: dnf/cli/option_parser.py:217
+#: dnf/cli/option_parser.py:214
 msgid "allow erasing of installed packages to resolve dependencies"
 msgstr "允许解决依赖关系时删除已安装软件包"
 
-#: dnf/cli/option_parser.py:221
+#: dnf/cli/option_parser.py:218
 msgid "try the best available package versions in transactions."
 msgstr "在事务中尝试最佳软件包版本。"
 
-#: dnf/cli/option_parser.py:223
+#: dnf/cli/option_parser.py:220
 msgid "do not limit the transaction to the best candidate"
 msgstr "不将事务限制在最佳候选"
 
-#: dnf/cli/option_parser.py:226
+#: dnf/cli/option_parser.py:223
 msgid "run entirely from system cache, don't update cache"
 msgstr "完全从系统缓存运行，不升级缓存"
 
-#: dnf/cli/option_parser.py:230
+#: dnf/cli/option_parser.py:227
 msgid "maximum command wait time"
 msgstr "最大命令等待时间"
 
-#: dnf/cli/option_parser.py:233
+#: dnf/cli/option_parser.py:230
 msgid "debugging output level"
 msgstr "调试输出级别"
 
-#: dnf/cli/option_parser.py:236
+#: dnf/cli/option_parser.py:233
 msgid "dumps detailed solving results into files"
 msgstr "转储详细解决结果至文件"
 
-#: dnf/cli/option_parser.py:240
+#: dnf/cli/option_parser.py:237
 msgid "show duplicates, in repos, in list/search commands"
 msgstr "在 list/search 命令下，显示仓库里重复的条目"
 
-#: dnf/cli/option_parser.py:243
+#: dnf/cli/option_parser.py:240
 msgid "error output level"
 msgstr "错误输出级别"
 
-#: dnf/cli/option_parser.py:246
+#: dnf/cli/option_parser.py:243
 #, python-brace-format
 msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
@@ -2580,19 +2575,19 @@ msgstr ""
 "对 upgrade 启用 {prog} 的过期处理逻辑，或对 info、list 和 repoquery 启用软件"
 "包过期的显示功能"
 
-#: dnf/cli/option_parser.py:251
+#: dnf/cli/option_parser.py:248
 msgid "debugging output level for rpm"
 msgstr "rpm调试输出等级"
 
-#: dnf/cli/option_parser.py:254
+#: dnf/cli/option_parser.py:251
 msgid "automatically answer yes for all questions"
 msgstr "全部问题自动应答为是"
 
-#: dnf/cli/option_parser.py:257
+#: dnf/cli/option_parser.py:254
 msgid "automatically answer no for all questions"
 msgstr "全部问题自动应答为否"
 
-#: dnf/cli/option_parser.py:261
+#: dnf/cli/option_parser.py:258
 msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
@@ -2601,7 +2596,7 @@ msgstr ""
 "为当前 dnf 命令临时启用仓库。接受一个 id、以逗号分隔的多个 id 列表，或 ids "
 "glob。此选项可多次指定。"
 
-#: dnf/cli/option_parser.py:268
+#: dnf/cli/option_parser.py:265
 msgid ""
 "Temporarily disable active repositories for the purpose of the current dnf "
 "command. Accepts an id, a comma-separated list of ids, or a glob of ids. "
@@ -2611,116 +2606,116 @@ msgstr ""
 "为当前 dnf 命令临时禁用仓库。接受一个 id、以逗号分隔的多个 id 列表，或 ids "
 "glob。此选项可多次指定，但它与 `--repo` 是相互排斥的。"
 
-#: dnf/cli/option_parser.py:275
+#: dnf/cli/option_parser.py:272
 msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
 msgstr "启用指定 id 或 glob 的仓库，可以指定多次"
 
-#: dnf/cli/option_parser.py:280
+#: dnf/cli/option_parser.py:277
 msgid "enable repos with config-manager command (automatically saves)"
 msgstr "使用 config-manager 命令启用 repos (自动保存)"
 
-#: dnf/cli/option_parser.py:284
+#: dnf/cli/option_parser.py:281
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr "使用 config-manager 命令禁用 repos (自动保存)"
 
-#: dnf/cli/option_parser.py:288
+#: dnf/cli/option_parser.py:285
 msgid "exclude packages by name or glob"
 msgstr "用全名或通配符排除软件包"
 
-#: dnf/cli/option_parser.py:293
+#: dnf/cli/option_parser.py:290
 msgid "disable excludepkgs"
 msgstr "禁用 excludepkgs"
 
-#: dnf/cli/option_parser.py:298
+#: dnf/cli/option_parser.py:295
 msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
 "附加仓库所要使用的标签和路径（与 baseurl 中的路径一致），可以指定多次。"
 
-#: dnf/cli/option_parser.py:302
+#: dnf/cli/option_parser.py:299
 msgid "disable removal of dependencies that are no longer used"
 msgstr "禁用删除不再被使用的依赖软件包"
 
-#: dnf/cli/option_parser.py:305
+#: dnf/cli/option_parser.py:302
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr "禁用 gpg 签名检查 (如果 RPM 策略允许)"
 
-#: dnf/cli/option_parser.py:307
+#: dnf/cli/option_parser.py:304
 msgid "control whether color is used"
 msgstr "配置是否使用颜色"
 
-#: dnf/cli/option_parser.py:310
+#: dnf/cli/option_parser.py:307
 msgid "set metadata as expired before running the command"
 msgstr "在运行命令之前将元数据标记为过期"
 
-#: dnf/cli/option_parser.py:313
+#: dnf/cli/option_parser.py:310
 msgid "resolve to IPv4 addresses only"
 msgstr "仅解析 IPv4 地址"
 
-#: dnf/cli/option_parser.py:316
+#: dnf/cli/option_parser.py:313
 msgid "resolve to IPv6 addresses only"
 msgstr "仅解析 IPv6 地址"
 
-#: dnf/cli/option_parser.py:319
+#: dnf/cli/option_parser.py:316
 msgid "set directory to copy packages to"
 msgstr "设置软件包要复制到的目录"
 
-#: dnf/cli/option_parser.py:322
+#: dnf/cli/option_parser.py:319
 msgid "only download packages"
 msgstr "仅下载软件包"
 
-#: dnf/cli/option_parser.py:324
+#: dnf/cli/option_parser.py:321
 msgid "add a comment to transaction"
 msgstr "为事务添加一个注释"
 
-#: dnf/cli/option_parser.py:327
+#: dnf/cli/option_parser.py:324
 msgid "Include bugfix relevant packages, in updates"
 msgstr "在更新中包括与 bug 修复有关的软件包"
 
-#: dnf/cli/option_parser.py:330
+#: dnf/cli/option_parser.py:327
 msgid "Include enhancement relevant packages, in updates"
 msgstr "在更新中包括与功能增强有关的软件包"
 
-#: dnf/cli/option_parser.py:333
+#: dnf/cli/option_parser.py:330
 msgid "Include newpackage relevant packages, in updates"
 msgstr "在更新中包括与新软件包有关的软件包"
 
-#: dnf/cli/option_parser.py:336
+#: dnf/cli/option_parser.py:333
 msgid "Include security relevant packages, in updates"
 msgstr "在更新中包括与安全有关的软件包"
 
-#: dnf/cli/option_parser.py:340
+#: dnf/cli/option_parser.py:337
 msgid "Include packages needed to fix the given advisory, in updates"
 msgstr "在更新中包括修复指定公告所必须的软件包"
 
-#: dnf/cli/option_parser.py:344
+#: dnf/cli/option_parser.py:341
 msgid "Include packages needed to fix the given BZ, in updates"
 msgstr "在更新中包括修复给定 BZ 所必须的软件包"
 
-#: dnf/cli/option_parser.py:347
+#: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr "在更新中包括修复给定 CVE 所必须的软件包"
 
-#: dnf/cli/option_parser.py:352
+#: dnf/cli/option_parser.py:349
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr "在更新中包括匹配给定安全等级的安全相关的软件包"
 
-#: dnf/cli/option_parser.py:358
+#: dnf/cli/option_parser.py:355
 msgid "Force the use of an architecture"
 msgstr "强制使用一个架构"
 
-#: dnf/cli/option_parser.py:380
+#: dnf/cli/option_parser.py:377
 msgid "List of Main Commands:"
 msgstr "主要命令列表："
 
-#: dnf/cli/option_parser.py:381
+#: dnf/cli/option_parser.py:378
 msgid "List of Plugin Commands:"
 msgstr "插件命令列表："
 
-#: dnf/cli/option_parser.py:418
+#: dnf/cli/option_parser.py:415
 #, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr "无法编码参数 '%s': %s"
@@ -4252,6 +4247,9 @@ msgstr "失败"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<name-unset>"
+
+#~ msgid "Setopt argument has multiple values: %s"
+#~ msgstr "Setopt 参数有多个值：%s"
 
 #~ msgid "list modular packages"
 #~ msgstr "列出模块包"
