@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-30 02:01+0000\n"
+"POT-Creation-Date: 2023-04-01 01:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -734,7 +734,7 @@ msgid ""
 "version)"
 msgstr ""
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:473
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
 msgid "argument {}: not allowed with argument {}"
 msgstr ""
 
@@ -1921,11 +1921,22 @@ msgstr ""
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:346
+#. TRANSLATORS: This is the date format for a changelog
+#. in dnf repoquery. You are encouraged to change it
+#. according to the requirements of your language. Format
+#. specifiers used here: %a - abbreviated weekday name in
+#. your language, %b - abbreviated month name in the correct
+#. grammatical form, %d - day number (01-31), %Y - year
+#. number (4 digits).
+#: dnf/cli/commands/repoquery.py:343
+msgid "%a %b %d %Y"
+msgstr ""
+
+#: dnf/cli/commands/repoquery.py:354
 msgid "Package {} contains no files"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:563
+#: dnf/cli/commands/repoquery.py:571
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -1935,6 +1946,16 @@ msgid ""
 "\n"
 "description:\n"
 "  For the given packages print a tree of the packages."
+msgstr ""
+
+#. TRANSLATORS: This is the default time format for dnf repoquery.
+#. TRANSLATORS: This is the time format for dnf history list.
+#. You can change it but do it with caution because the output
+#. must be no longer than 16 characters. Format specifiers:
+#. %Y - year number (4 digits), %m - month (00-12), %d - day
+#. number (01-31), %H - hour (00-23), %M - minute (00-59).
+#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+msgid "%Y-%m-%d %H:%M"
 msgstr ""
 
 #: dnf/cli/commands/search.py:46
@@ -2280,8 +2301,8 @@ msgstr ""
 msgid "Files"
 msgstr ""
 
-#: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1653
-#: dnf/cli/output.py:1655 dnf/util.py:615
+#: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1658
+#: dnf/cli/output.py:1660 dnf/util.py:615
 msgid "Installed"
 msgstr ""
 
@@ -3032,11 +3053,11 @@ msgid ""
 msgstr ""
 
 #. TODO: remove
-#: dnf/cli/output.py:1295 dnf/cli/output.py:1813 dnf/cli/output.py:1814
+#: dnf/cli/output.py:1295 dnf/cli/output.py:1818 dnf/cli/output.py:1819
 msgid "Install"
 msgstr ""
 
-#: dnf/cli/output.py:1299 dnf/cli/output.py:1822
+#: dnf/cli/output.py:1299 dnf/cli/output.py:1827
 msgid "Upgrade"
 msgstr ""
 
@@ -3044,7 +3065,7 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: dnf/cli/output.py:1302 dnf/cli/output.py:1820
+#: dnf/cli/output.py:1302 dnf/cli/output.py:1825
 msgid "Downgrade"
 msgstr ""
 
@@ -3103,204 +3124,204 @@ msgstr ""
 msgid "Altered"
 msgstr ""
 
-#: dnf/cli/output.py:1579
+#: dnf/cli/output.py:1584
 msgid "No transactions"
 msgstr ""
 
-#: dnf/cli/output.py:1580 dnf/cli/output.py:1596
+#: dnf/cli/output.py:1585 dnf/cli/output.py:1601
 msgid "Failed history info"
 msgstr ""
 
-#: dnf/cli/output.py:1595
+#: dnf/cli/output.py:1600
 msgid "No transaction ID, or package, given"
 msgstr ""
 
-#: dnf/cli/output.py:1653
+#: dnf/cli/output.py:1658
 msgid "Erased"
 msgstr ""
 
-#: dnf/cli/output.py:1654 dnf/cli/output.py:1821 dnf/util.py:614
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1826 dnf/util.py:614
 msgid "Downgraded"
 msgstr ""
 
-#: dnf/cli/output.py:1654 dnf/cli/output.py:1823 dnf/util.py:613
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1828 dnf/util.py:613
 msgid "Upgraded"
 msgstr ""
 
-#: dnf/cli/output.py:1655
+#: dnf/cli/output.py:1660
 msgid "Not installed"
 msgstr ""
 
-#: dnf/cli/output.py:1656
+#: dnf/cli/output.py:1661
 msgid "Newer"
 msgstr ""
 
-#: dnf/cli/output.py:1656
+#: dnf/cli/output.py:1661
 msgid "Older"
 msgstr ""
 
-#: dnf/cli/output.py:1704 dnf/cli/output.py:1706
+#: dnf/cli/output.py:1709 dnf/cli/output.py:1711
 msgid "Transaction ID :"
 msgstr ""
 
-#: dnf/cli/output.py:1709
+#: dnf/cli/output.py:1714
 msgid "Begin time     :"
 msgstr ""
 
-#: dnf/cli/output.py:1712 dnf/cli/output.py:1714
+#: dnf/cli/output.py:1717 dnf/cli/output.py:1719
 msgid "Begin rpmdb    :"
 msgstr ""
 
-#: dnf/cli/output.py:1720
+#: dnf/cli/output.py:1725
 #, python-format
 msgid "(%u seconds)"
 msgstr ""
 
-#: dnf/cli/output.py:1722
+#: dnf/cli/output.py:1727
 #, python-format
 msgid "(%u minutes)"
 msgstr ""
 
-#: dnf/cli/output.py:1724
+#: dnf/cli/output.py:1729
 #, python-format
 msgid "(%u hours)"
 msgstr ""
 
-#: dnf/cli/output.py:1726
+#: dnf/cli/output.py:1731
 #, python-format
 msgid "(%u days)"
 msgstr ""
 
-#: dnf/cli/output.py:1727
+#: dnf/cli/output.py:1732
 msgid "End time       :"
 msgstr ""
 
-#: dnf/cli/output.py:1730 dnf/cli/output.py:1732
+#: dnf/cli/output.py:1735 dnf/cli/output.py:1737
 msgid "End rpmdb      :"
 msgstr ""
 
-#: dnf/cli/output.py:1739 dnf/cli/output.py:1741
+#: dnf/cli/output.py:1744 dnf/cli/output.py:1746
 msgid "User           :"
 msgstr ""
 
-#: dnf/cli/output.py:1745 dnf/cli/output.py:1752
+#: dnf/cli/output.py:1750 dnf/cli/output.py:1757
 msgid "Aborted"
 msgstr ""
 
-#: dnf/cli/output.py:1745 dnf/cli/output.py:1748 dnf/cli/output.py:1750
-#: dnf/cli/output.py:1752 dnf/cli/output.py:1754 dnf/cli/output.py:1756
+#: dnf/cli/output.py:1750 dnf/cli/output.py:1753 dnf/cli/output.py:1755
+#: dnf/cli/output.py:1757 dnf/cli/output.py:1759 dnf/cli/output.py:1761
 msgid "Return-Code    :"
 msgstr ""
 
-#: dnf/cli/output.py:1748 dnf/cli/output.py:1756
+#: dnf/cli/output.py:1753 dnf/cli/output.py:1761
 msgid "Success"
 msgstr ""
 
-#: dnf/cli/output.py:1750
+#: dnf/cli/output.py:1755
 msgid "Failures:"
 msgstr ""
 
-#: dnf/cli/output.py:1754
+#: dnf/cli/output.py:1759
 msgid "Failure:"
 msgstr ""
 
-#: dnf/cli/output.py:1764 dnf/cli/output.py:1766
+#: dnf/cli/output.py:1769 dnf/cli/output.py:1771
 msgid "Releasever     :"
 msgstr ""
 
-#: dnf/cli/output.py:1771 dnf/cli/output.py:1773
+#: dnf/cli/output.py:1776 dnf/cli/output.py:1778
 msgid "Command Line   :"
 msgstr ""
 
-#: dnf/cli/output.py:1778 dnf/cli/output.py:1780
+#: dnf/cli/output.py:1783 dnf/cli/output.py:1785
 msgid "Comment        :"
 msgstr ""
 
-#: dnf/cli/output.py:1784
+#: dnf/cli/output.py:1789
 msgid "Transaction performed with:"
 msgstr ""
 
-#: dnf/cli/output.py:1793
+#: dnf/cli/output.py:1798
 msgid "Packages Altered:"
 msgstr ""
 
-#: dnf/cli/output.py:1799
+#: dnf/cli/output.py:1804
 msgid "Scriptlet output:"
 msgstr ""
 
-#: dnf/cli/output.py:1806
+#: dnf/cli/output.py:1811
 msgid "Errors:"
 msgstr ""
 
-#: dnf/cli/output.py:1815
+#: dnf/cli/output.py:1820
 msgid "Dep-Install"
 msgstr ""
 
-#: dnf/cli/output.py:1816
+#: dnf/cli/output.py:1821
 msgid "Obsoleted"
 msgstr ""
 
-#: dnf/cli/output.py:1817 dnf/transaction.py:84 dnf/transaction.py:85
+#: dnf/cli/output.py:1822 dnf/transaction.py:84 dnf/transaction.py:85
 msgid "Obsoleting"
 msgstr ""
 
-#: dnf/cli/output.py:1818
+#: dnf/cli/output.py:1823
 msgid "Erase"
 msgstr ""
 
-#: dnf/cli/output.py:1819
+#: dnf/cli/output.py:1824
 msgid "Reinstall"
 msgstr ""
 
-#: dnf/cli/output.py:1893
+#: dnf/cli/output.py:1898
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
 msgstr ""
 
-#: dnf/cli/output.py:1895
+#: dnf/cli/output.py:1900
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
 msgstr ""
 
-#: dnf/cli/output.py:1897
+#: dnf/cli/output.py:1902
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
 msgstr ""
 
-#: dnf/cli/output.py:1899
+#: dnf/cli/output.py:1904
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
 msgstr ""
 
-#: dnf/cli/output.py:1901
+#: dnf/cli/output.py:1906
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
 msgstr ""
 
-#: dnf/cli/output.py:1903
+#: dnf/cli/output.py:1908
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
 msgstr ""
 
-#: dnf/cli/output.py:1905
+#: dnf/cli/output.py:1910
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
 msgstr ""
 
-#: dnf/cli/output.py:1907
+#: dnf/cli/output.py:1912
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
 msgstr ""
 
-#: dnf/cli/output.py:1916
+#: dnf/cli/output.py:1921
 msgid "--> Starting dependency resolution"
 msgstr ""
 
-#: dnf/cli/output.py:1920
+#: dnf/cli/output.py:1925
 msgid "--> Finished dependency resolution"
 msgstr ""
 
-#: dnf/cli/output.py:1934 dnf/crypto.py:132
+#: dnf/cli/output.py:1939 dnf/crypto.py:132
 #, python-format
 msgid ""
 "Importing GPG key 0x%s:\n"
