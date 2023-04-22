@@ -13,13 +13,14 @@
 # L N <lnwl@proton.me>, 2022, 2023.
 # Tarcisio Oliveira <wyrquill@gmail.com>, 2022, 2023.
 # Pedro Farinha <pedrofarinha@protonmail.com>, 2023.
+# Ian Meyer <ianscuba1465@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-17 01:52+0000\n"
-"PO-Revision-Date: 2023-02-19 00:20+0000\n"
-"Last-Translator: Tarcisio Oliveira <wyrquill@gmail.com>\n"
+"PO-Revision-Date: 2023-04-24 13:20+0000\n"
+"Last-Translator: Ian Meyer <ianscuba1465@gmail.com>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/pt/>\n"
 "Language: pt\n"
@@ -127,7 +128,6 @@ msgstr ""
 "ligação com dados limitados."
 
 #: dnf/base.py:339
-#, fuzzy
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
 "Cache de metadados do temporizador desativada enquanto for utilizada a "
@@ -421,7 +421,7 @@ msgstr "Nenhum pacote %s instalado."
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Não é uma forma válida: %s"
 
 #: dnf/base.py:2280 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
@@ -432,6 +432,7 @@ msgstr "Nenhum pacote marcado para remoção."
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
+"Pacotes para o argumento %s estão disponíveis, mas não estão instalados."
 
 #: dnf/base.py:2373
 #, python-format
@@ -467,12 +468,12 @@ msgstr ""
 #: dnf/base.py:2502
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Incapaz de recuperar uma chave para um pacote de linha de comando: %s"
 
 #: dnf/base.py:2510
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". Pacote com falha é: %s"
 
 #: dnf/base.py:2511
 #, python-format
@@ -486,11 +487,11 @@ msgstr "A chave GPG em %s (0x%s) já está instalada"
 
 #: dnf/base.py:2559
 msgid "The key has been approved."
-msgstr ""
+msgstr "A chave foi aprovada."
 
 #: dnf/base.py:2562
 msgid "The key has been rejected."
-msgstr ""
+msgstr "A chave foi rejeitada."
 
 #: dnf/base.py:2595
 #, python-format
@@ -521,30 +522,33 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "A importação da(s) chave(s) não ajudou, chave(s) errada(s)?"
 
 #: dnf/base.py:2668
+#, fuzzy
 msgid "  * Maybe you meant: {}"
-msgstr ""
+msgstr "  * Talvez você quis dizer: {}"
 
 #: dnf/base.py:2700
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Pacote \"{}\" do repositório local \"{}\" tem checksum incorreto"
 
 #: dnf/base.py:2703
 msgid "Some packages from local repository have incorrect checksum"
-msgstr ""
+msgstr "Alguns pacotes do repositório local tem checksum incorreto"
 
 #: dnf/base.py:2706
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Pacote \"{}\" do repositório \"{}\" tem checksum incorreto"
 
 #: dnf/base.py:2709
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Alguns pacotes têm cache inválido, mas não conseguem ser baixados por conta "
+"da opção \"--cacheonly\""
 
 #: dnf/base.py:2727 dnf/base.py:2747
 msgid "No match for argument"
-msgstr ""
+msgstr "Sem correspondência para o argumento"
 
 #: dnf/base.py:2735 dnf/base.py:2755
 msgid "All matches were filtered out by exclude filtering for argument"
