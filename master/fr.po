@@ -33,7 +33,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 01:52+0000\n"
+"POT-Creation-Date: 2023-04-24 01:55+0000\n"
 "PO-Revision-Date: 2023-03-21 20:25+0000\n"
 "Last-Translator: grimst <grimaitres@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -100,29 +100,29 @@ msgstr "Valeur de configuration inconnue : %s=%s dans %s ; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Option de configuration inconnue : %s=%s dans %s"
 
-#: dnf/automatic/main.py:241 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:242 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "La vérification GPG a ÉCHOUÉ"
 
-#: dnf/automatic/main.py:278
+#: dnf/automatic/main.py:287
 msgid "Waiting for internet connection..."
 msgstr "En attente d'une connexion Internet..."
 
-#: dnf/automatic/main.py:308
+#: dnf/automatic/main.py:317
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic démarré."
 
-#: dnf/automatic/main.py:312
+#: dnf/automatic/main.py:321
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Mise en sommeil pendant {} seconde"
 msgstr[1] "Mise en sommeil pendant {} secondes"
 
-#: dnf/automatic/main.py:319
+#: dnf/automatic/main.py:328
 msgid "System is off-line."
 msgstr "Le système est hors-ligne."
 
-#: dnf/automatic/main.py:355 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -844,7 +844,7 @@ msgstr ""
 "Impossible de détecter le numéro de version (utilisez « --releasever » pour "
 "spécifier une version)"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
 msgstr "paramètre {} : non autorisé avec le paramètre {}"
 
@@ -1818,11 +1818,11 @@ msgstr "nom du dépôt"
 msgid "Total packages: {}"
 msgstr "Total des paquets : {}"
 
-#: dnf/cli/commands/repoquery.py:109
+#: dnf/cli/commands/repoquery.py:110
 msgid "search for packages matching keyword"
 msgstr "recherche les paquets qui correspondent au mot clé"
 
-#: dnf/cli/commands/repoquery.py:123
+#: dnf/cli/commands/repoquery.py:124
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1830,23 +1830,23 @@ msgstr ""
 "Interroge sur tous les paquets (raccourci pour repoquery « * » ou repoquery "
 "sans argument)"
 
-#: dnf/cli/commands/repoquery.py:126
+#: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
 msgstr "interroge sur toutes les versions des paquets (par défaut)"
 
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results from this ARCH"
 msgstr "montre uniquement les résultats de cette architecture (ARCH)"
 
-#: dnf/cli/commands/repoquery.py:131
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that owns FILE"
 msgstr "montre uniquement les résultats qui possèdent FILE"
 
-#: dnf/cli/commands/repoquery.py:134
+#: dnf/cli/commands/repoquery.py:135
 msgid "show only results that conflict REQ"
 msgstr "ne montre que les résultats en conflit avec REQ"
 
-#: dnf/cli/commands/repoquery.py:137
+#: dnf/cli/commands/repoquery.py:138
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1854,46 +1854,46 @@ msgstr ""
 "montre des résultats qui requièrent, suggèrent, complètent, améliorent ou "
 "recommandent le paquet fournit et classe REQ"
 
-#: dnf/cli/commands/repoquery.py:141
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
 msgstr "ne montre que les résultats rendant REQ obsolète"
 
-#: dnf/cli/commands/repoquery.py:144
+#: dnf/cli/commands/repoquery.py:145
 msgid "show only results that provide REQ"
 msgstr "ne montre que les résultats fournissant REQ"
 
-#: dnf/cli/commands/repoquery.py:147
+#: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
 msgstr "affiche les résultats qui nécessitent des paquets et des fichiers REQ"
 
-#: dnf/cli/commands/repoquery.py:150
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
 msgstr "montre uniquement les résultats qui recommandent REQ"
 
-#: dnf/cli/commands/repoquery.py:153
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
 msgstr "montre uniquement les résultats qui améliorent REQ"
 
-#: dnf/cli/commands/repoquery.py:156
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
 msgstr "montre uniquement les résultats qui suggèrent REQ"
 
-#: dnf/cli/commands/repoquery.py:159
+#: dnf/cli/commands/repoquery.py:160
 msgid "show only results that supplement REQ"
 msgstr "montre uniquement les résultats qui complètent REQ"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr ""
 "vérifie les dépendances non explicites (fichiers et fournitures) ; défaut"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr ""
 "vérifie les dépendances exactement telles qu’indiquées, le contraire de --"
 "alldeps"
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
@@ -1901,24 +1901,24 @@ msgstr ""
 "utilisé avec --whatrequires, et --requires --resolve, interroge sur les "
 "paquets récursivement."
 
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr ""
 "montre la liste de toutes les dépendances et quels paquets les fournissent"
 
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
 msgstr "résout les fonctionnalités aux paquets d’origine"
 
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
 msgstr "affiche un arbre récursif pour les paquets"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
 msgstr "opère sur les RPM sources correspondantes"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:177
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1926,27 +1926,27 @@ msgstr ""
 "montre les N derniers paquets pour un nom.arch donné (ou le dernier sauf N "
 "si N est négatif)"
 
-#: dnf/cli/commands/repoquery.py:179
+#: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
 msgstr "lister également les paquets de flux de modules inactifs"
 
-#: dnf/cli/commands/repoquery.py:184
+#: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
 msgstr "montre les informations détaillées à propos du paquet"
 
-#: dnf/cli/commands/repoquery.py:187
+#: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
 msgstr "montre la liste des fichiers du paquet"
 
-#: dnf/cli/commands/repoquery.py:190
+#: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
 msgstr "montre le nom RPM du paquet source"
 
-#: dnf/cli/commands/repoquery.py:193
+#: dnf/cli/commands/repoquery.py:194
 msgid "show changelogs of the package"
 msgstr "affiche les changelogs du paquet"
 
-#: dnf/cli/commands/repoquery.py:196
+#: dnf/cli/commands/repoquery.py:197
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1955,11 +1955,11 @@ msgstr ""
 "format d'affichage pour la liste des paquets : « %%{name} %%{version}… », "
 "utilisez --querytags pour voir la liste complète des étiquettes"
 
-#: dnf/cli/commands/repoquery.py:200
+#: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
 msgstr "montre les balises disponibles à utiliser avec --queryformat"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1967,7 +1967,7 @@ msgstr ""
 "utilise le format « nom-epoch:version-de-parution.architecture » pour "
 "afficher les paquets trouvés (par défaut)"
 
-#: dnf/cli/commands/repoquery.py:207
+#: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -1975,7 +1975,7 @@ msgstr ""
 "utilise le format « nom-version-de-parution » pour afficher les paquets "
 "trouvés (par défaut pour les requêtes rpm)"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
@@ -1983,33 +1983,33 @@ msgstr ""
 "utilise le format « epoch:nom-version-de-parution.architecture » pour "
 "afficher les paquets trouvés"
 
-#: dnf/cli/commands/repoquery.py:216
+#: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr ""
 "Affichage dans quels groupes comps sont présentés les paquets sélectionnés"
 
-#: dnf/cli/commands/repoquery.py:220
+#: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
 msgstr "limite la requête aux paquets installés dupliqués"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
 msgstr "limite la requête aux paquets « installonly » installés"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
 "limite la requête aux paquets installés avec des dépendances non satisfaites"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
 msgstr "montre une localisation d’où les paquets peuvent être téléchargés"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
 msgstr "Affiche les fonctionnalités avec lesquelles le paquet est en conflit."
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
@@ -2017,23 +2017,23 @@ msgstr ""
 "Affiche les fonctionnalités dont le paquet puisse dépendre ou qu’il puisse "
 "améliorer, qui sont recommandées, suggérées ou en complément."
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
 msgstr "Affiche les fonctionnalités que le paquet est capable d’améliorer."
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
 msgstr "Affiche les fonctionnalités que le paquet fournit."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
 msgstr "Affiche les fonctionnalités que le paquet recommande."
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
 msgstr "Affiche les fonctionnalités dont le paquet dépend."
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -2045,30 +2045,30 @@ msgstr ""
 "les fonctionnalités dont il dépend pour les scriptlets %%pre, %%post, "
 "%%preun et %%postun."
 
-#: dnf/cli/commands/repoquery.py:245
+#: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
 msgstr "Affiche les fonctionnalités suggérées par le paquet."
 
-#: dnf/cli/commands/repoquery.py:246
+#: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
 msgstr "Affiche les fonctionnalités que le paquet peut compléter."
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
 msgstr "N’affiche que les paquets disponibles."
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid "Display only installed packages."
 msgstr "N’affiche que les paquets installés."
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
 "N’affiche que les paquets qui ne sont présents dans aucun des dépôts "
 "disponibles."
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -2076,7 +2076,7 @@ msgstr ""
 "N’affiche que les paquets qui fournissent une montée en version pour un "
 "paquet déjà installé."
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
@@ -2084,19 +2084,19 @@ msgstr ""
 "N’affiche que les paquets qui peuvent être retirés par la commande «{prog} "
 "autoremove »."
 
-#: dnf/cli/commands/repoquery.py:260
+#: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
 msgstr "N’affiche que les paquets installés par utilisateur."
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
 msgstr "N’affiche que les paquets modifiés récemment"
 
-#: dnf/cli/commands/repoquery.py:275
+#: dnf/cli/commands/repoquery.py:276
 msgid "the key to search for"
 msgstr "la clé à chercher"
 
-#: dnf/cli/commands/repoquery.py:297
+#: dnf/cli/commands/repoquery.py:298
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -2106,7 +2106,7 @@ msgstr ""
 "« --depends », « --enhances », « --provides », « --recommends », « --"
 "requires », « --requires-pre », « --suggests » ou « --supplements"
 
-#: dnf/cli/commands/repoquery.py:307
+#: dnf/cli/commands/repoquery.py:308
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2116,7 +2116,7 @@ msgstr ""
 "» (optionnellement avec « --alldeps », mais pas avec « --exactdeps »), ou "
 "avec « --requires <REQ> --resolve »"
 
-#: dnf/cli/commands/repoquery.py:314
+#: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argument {} requiert l’option --whatrequires ou --whatdepends"
 
@@ -2127,15 +2127,15 @@ msgstr "argument {} requiert l’option --whatrequires ou --whatdepends"
 #. your language, %b - abbreviated month name in the correct
 #. grammatical form, %d - day number (01-31), %Y - year
 #. number (4 digits).
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:354
+#: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "Le paquet {} ne contient aucun fichier"
 
-#: dnf/cli/commands/repoquery.py:571
+#: dnf/cli/commands/repoquery.py:572
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2160,7 +2160,7 @@ msgstr ""
 #. must be no longer than 16 characters. Format specifiers:
 #. %Y - year number (4 digits), %m - month (00-12), %d - day
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
 msgstr ""
 

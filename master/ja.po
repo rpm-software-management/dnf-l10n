@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 01:52+0000\n"
+"POT-Creation-Date: 2023-04-24 01:55+0000\n"
 "PO-Revision-Date: 2023-03-06 13:20+0000\n"
 "Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -97,28 +97,28 @@ msgstr "不明な設定値: %s=%s in %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "不明な設定オプション: %s = %s in %s"
 
-#: dnf/automatic/main.py:241 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:242 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "GPG の確認に失敗しました"
 
-#: dnf/automatic/main.py:278
+#: dnf/automatic/main.py:287
 msgid "Waiting for internet connection..."
 msgstr "インターネットの接続を待機しています..."
 
-#: dnf/automatic/main.py:308
+#: dnf/automatic/main.py:317
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic を開始しました。"
 
-#: dnf/automatic/main.py:312
+#: dnf/automatic/main.py:321
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "{} 秒スリープします"
 
-#: dnf/automatic/main.py:319
+#: dnf/automatic/main.py:328
 msgid "System is off-line."
 msgstr "システムはオフラインです。"
 
-#: dnf/automatic/main.py:355 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -813,7 +813,7 @@ msgstr ""
 "リリースバージョンを検出できません (リリースバージョンを指定するには '--"
 "releasever' を使用してください)"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
 msgstr "引数 {}: 引数 {} と許可されていません"
 
@@ -1778,11 +1778,11 @@ msgstr "repo の名前"
 msgid "Total packages: {}"
 msgstr "総パッケージ: {}"
 
-#: dnf/cli/commands/repoquery.py:109
+#: dnf/cli/commands/repoquery.py:110
 msgid "search for packages matching keyword"
 msgstr "キーワードに一致するパッケージを検索します"
 
-#: dnf/cli/commands/repoquery.py:123
+#: dnf/cli/commands/repoquery.py:124
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1790,23 +1790,23 @@ msgstr ""
 "すべてのパッケージをクエリーします (repoquery '*' の短縮形、または引数なしの "
 "repoquery)"
 
-#: dnf/cli/commands/repoquery.py:126
+#: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
 msgstr "パッケージのすべてのバージョンをクエリーします (デフォルト)"
 
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results from this ARCH"
 msgstr "この ARCH の結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:131
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that owns FILE"
 msgstr "FILE を所有する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:134
+#: dnf/cli/commands/repoquery.py:135
 msgid "show only results that conflict REQ"
 msgstr "REQ と競合する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:137
+#: dnf/cli/commands/repoquery.py:138
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1814,43 +1814,43 @@ msgstr ""
 "REQ を提供およびファイルするパッケージを必要、提案、補完、機能強化、または推"
 "奨する結果を表示します"
 
-#: dnf/cli/commands/repoquery.py:141
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
 msgstr "REQ を廃止する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:144
+#: dnf/cli/commands/repoquery.py:145
 msgid "show only results that provide REQ"
 msgstr "REQ を提供する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:147
+#: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
 msgstr "REQ を提供およびファイルするパッケージが必要な結果を表示します"
 
-#: dnf/cli/commands/repoquery.py:150
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
 msgstr "REQ を推奨する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:153
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
 msgstr "REQ を機能強化する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:156
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
 msgstr "REQ を提案する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:159
+#: dnf/cli/commands/repoquery.py:160
 msgid "show only results that supplement REQ"
 msgstr "REQ を補完する結果のみを表示します"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr "非明示の依存関係を確認します(ファイルと提供); デフォルト"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr "指定されたとおりに依存関係を確認します。--alldeps の反対になります"
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
@@ -1858,23 +1858,23 @@ msgstr ""
 "--whatrequires および --requires --resolve と共に使用し、パッケージを再帰的に"
 "クエリーします。"
 
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr "すべての依存関係とこれを提供するパッケージがどれかを一覧表示します"
 
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
 msgstr "オリジナルのパッケージの機能を解決します"
 
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
 msgstr "パッケージの再帰的なツリーを表示します"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
 msgstr "対応するソース RPM で操作します"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:177
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1882,27 +1882,27 @@ msgstr ""
 "特定の name.arch に最新パッケージ N を表示します (または N がネガティブな場合"
 "は N 以外の最新のもの)"
 
-#: dnf/cli/commands/repoquery.py:179
+#: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
 msgstr "非アクティブモジュールストリームのパッケージもリスト"
 
-#: dnf/cli/commands/repoquery.py:184
+#: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
 msgstr "パッケージに関する詳細情報を表示します"
 
-#: dnf/cli/commands/repoquery.py:187
+#: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
 msgstr "パッケージのファイルを一覧表示します"
 
-#: dnf/cli/commands/repoquery.py:190
+#: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
 msgstr "パッケージソース RPM 名を表示します"
 
-#: dnf/cli/commands/repoquery.py:193
+#: dnf/cli/commands/repoquery.py:194
 msgid "show changelogs of the package"
 msgstr "パッケージの changelogs を表示します"
 
-#: dnf/cli/commands/repoquery.py:196
+#: dnf/cli/commands/repoquery.py:197
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1911,11 +1911,11 @@ msgstr ""
 "パッケージを一覧表示するための形式の表示： \"%%{name} %%{version} ...\"。--"
 "querytags を指定して完全なタグリストを表示"
 
-#: dnf/cli/commands/repoquery.py:200
+#: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
 msgstr "--queryformat と使うために利用可能なタグを表示します"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1923,7 +1923,7 @@ msgstr ""
 "見つかったパッケージを表示するには name-epoch:version-release.architecture 形"
 "式を使用します (デフォルト)"
 
-#: dnf/cli/commands/repoquery.py:207
+#: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -1931,7 +1931,7 @@ msgstr ""
 "見つかったパッケージを表示するには name-version-release 形式を使用します "
 "(rpm クエリーデフォルト)"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
@@ -1939,55 +1939,55 @@ msgstr ""
 "見つかったパッケージを表示するには epoch:name-version-release.architecture 形"
 "式を使用します"
 
-#: dnf/cli/commands/repoquery.py:216
+#: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr "どの comps グループに選択されたパッケージが提示されたか表示します"
 
-#: dnf/cli/commands/repoquery.py:220
+#: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
 msgstr "インストール済みの重複するパッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
 msgstr "インストール済みの installonly パッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
 "未充足な依存関係があるインストール済みパッケージへのクエリーを制限します"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
 msgstr "パッケージをダウンロードできる場所を表示します"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
 msgstr "パッケージが競合する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
 msgstr ""
 "パッケージが依存、機能強化、推奨、提案、および補完できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
 msgstr "パッケージが機能拡張できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
 msgstr "パッケージが提供する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
 msgstr "パッケージが推奨する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
 msgstr "パッケージが依存する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -1999,28 +1999,28 @@ msgstr ""
 "ている場合、 %%pre, %%post, %%preun と %%postun に依存するケイパビリティを表"
 "示します。"
 
-#: dnf/cli/commands/repoquery.py:245
+#: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
 msgstr "パッケージが提案する機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:246
+#: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
 msgstr "パッケージが補完できる機能を表示します。"
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
 msgstr "利用可能なパッケージのみを表示する。"
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid "Display only installed packages."
 msgstr "インストール済みのパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr "利用可能なリポジトリーに存在しないパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -2028,25 +2028,25 @@ msgstr ""
 "インストール済みのパッケージの一部にアップグレードを提供するパッケージのみを"
 "表示します。"
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr "\"{prog} autoremove\" コマンドにより削除可能なパッケージのみを表示。"
 
-#: dnf/cli/commands/repoquery.py:260
+#: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
 msgstr "ユーザーによってインストールされたパッケージのみを表示します。"
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
 msgstr "最近編集されたパッケージのみを表示します"
 
-#: dnf/cli/commands/repoquery.py:275
+#: dnf/cli/commands/repoquery.py:276
 msgid "the key to search for"
 msgstr "検索するための鍵"
 
-#: dnf/cli/commands/repoquery.py:297
+#: dnf/cli/commands/repoquery.py:298
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -2056,7 +2056,7 @@ msgstr ""
 "provides'、'--recommends'、'--requires'、'--requires-pre'、'--suggests' また"
 "は '--supplements' オプションのいずれか 1 つと使用する必要があります"
 
-#: dnf/cli/commands/repoquery.py:307
+#: dnf/cli/commands/repoquery.py:308
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2066,7 +2066,7 @@ msgstr ""
 "exactdeps' ではなく、'--alldeps' と共に使用) または '--requires <REQ> --"
 "resolve' と共に使用する必要があります"
 
-#: dnf/cli/commands/repoquery.py:314
+#: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr ""
 "引数 {} は --whatrequires または --whatdepends オプションを必要とします"
@@ -2078,15 +2078,15 @@ msgstr ""
 #. your language, %b - abbreviated month name in the correct
 #. grammatical form, %d - day number (01-31), %Y - year
 #. number (4 digits).
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:354
+#: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "パッケージ {} はファイルを含んでいません"
 
-#: dnf/cli/commands/repoquery.py:571
+#: dnf/cli/commands/repoquery.py:572
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2111,7 +2111,7 @@ msgstr ""
 #. must be no longer than 16 characters. Format specifiers:
 #. %Y - year number (4 digits), %m - month (00-12), %d - day
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
 msgstr ""
 

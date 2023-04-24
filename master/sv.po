@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 01:52+0000\n"
+"POT-Creation-Date: 2023-04-24 01:55+0000\n"
 "PO-Revision-Date: 2023-04-05 02:20+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -84,29 +84,29 @@ msgstr "Okänt konfigurationsvärde: %s=%s i %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Okänt konfigurationsalternativ: %s = %s i %s"
 
-#: dnf/automatic/main.py:241 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:242 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "GPG-kontrollen MISSLYCKADES"
 
-#: dnf/automatic/main.py:278
+#: dnf/automatic/main.py:287
 msgid "Waiting for internet connection..."
 msgstr "Väntar på internet-anslutning …"
 
-#: dnf/automatic/main.py:308
+#: dnf/automatic/main.py:317
 msgid "Started dnf-automatic."
 msgstr "Startade dnf-automatic."
 
-#: dnf/automatic/main.py:312
+#: dnf/automatic/main.py:321
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Sov i {} sekund"
 msgstr[1] "Sov i {} sekunder"
 
-#: dnf/automatic/main.py:319
+#: dnf/automatic/main.py:328
 msgid "System is off-line."
 msgstr "Systemet är frånkopplat."
 
-#: dnf/automatic/main.py:355 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -796,7 +796,7 @@ msgstr ""
 "Kan inte avgöra utgåveversionen (använd ”--releasever” för att ange "
 "utgåveversion)"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: inte tillåtet med argumentet {}"
 
@@ -1759,11 +1759,11 @@ msgstr "förrådsnamn"
 msgid "Total packages: {}"
 msgstr "Totalt antal paket: {}"
 
-#: dnf/cli/commands/repoquery.py:109
+#: dnf/cli/commands/repoquery.py:110
 msgid "search for packages matching keyword"
 msgstr "sök efter paket som matchar ett nyckelord"
 
-#: dnf/cli/commands/repoquery.py:123
+#: dnf/cli/commands/repoquery.py:124
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1771,23 +1771,23 @@ msgstr ""
 "Fråga om alla paket (kortform för repoquery '*' eller repoquery utan "
 "argument)"
 
-#: dnf/cli/commands/repoquery.py:126
+#: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
 msgstr "Fråga alla versioner av paket (standard)"
 
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results from this ARCH"
 msgstr "visa endast resultat för denna ARKITEKTUR"
 
-#: dnf/cli/commands/repoquery.py:131
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that owns FILE"
 msgstr "visa endast resultat som äger FIL"
 
-#: dnf/cli/commands/repoquery.py:134
+#: dnf/cli/commands/repoquery.py:135
 msgid "show only results that conflict REQ"
 msgstr "visa endast resultat som står i konflikt med KRAV"
 
-#: dnf/cli/commands/repoquery.py:137
+#: dnf/cli/commands/repoquery.py:138
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1795,43 +1795,43 @@ msgstr ""
 "visar resultat som behöver, föreslår, kompletterar, förbättrar eller "
 "rekommenderar pakettillhandahållanden och filer KRAV"
 
-#: dnf/cli/commands/repoquery.py:141
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
 msgstr "visa endast resultat som fasar ut KRAV"
 
-#: dnf/cli/commands/repoquery.py:144
+#: dnf/cli/commands/repoquery.py:145
 msgid "show only results that provide REQ"
 msgstr "visa endast resultat som tillhandahåller KRAV"
 
-#: dnf/cli/commands/repoquery.py:147
+#: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
 msgstr "visa resultat som behöver paket tillhandahållande och filer KRAV"
 
-#: dnf/cli/commands/repoquery.py:150
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
 msgstr "visa endast resultat som rekommenderar KRAV"
 
-#: dnf/cli/commands/repoquery.py:153
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
 msgstr "visa endast resultat som förbättrar KRAV"
 
-#: dnf/cli/commands/repoquery.py:156
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
 msgstr "visa endast resultat som föreslår KRAV"
 
-#: dnf/cli/commands/repoquery.py:159
+#: dnf/cli/commands/repoquery.py:160
 msgid "show only results that supplement REQ"
 msgstr "visa endast resultat som kompletterar KRAV"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr "kontrollera icke-explicita beroenden (filer och Provides); standard"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr "kontrollera beroenden precis som angivet, motsatsen till --alldeps"
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
@@ -1839,24 +1839,24 @@ msgstr ""
 "använt tillsammans med --whatrequires och --requires --resolve, fråga paket "
 "rekursivt."
 
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr ""
 "visa en lista över alla beroenden och vilka paket som tillhandahåller dem"
 
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
 msgstr "lös upp förmågor till ursprungliga paket"
 
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
 msgstr "visa rekursivt träd för paket"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
 msgstr "arbeta på motsvarande käll-RPM"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:177
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1864,27 +1864,27 @@ msgstr ""
 "visa de N senaste paketen för ett givet namn.arkitektur (eller alla utom de "
 "N senaste om N är negativt)"
 
-#: dnf/cli/commands/repoquery.py:179
+#: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
 msgstr "lista även paket i inaktiva modulströmmar"
 
-#: dnf/cli/commands/repoquery.py:184
+#: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
 msgstr "visa detaljerad information om paketet"
 
-#: dnf/cli/commands/repoquery.py:187
+#: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
 msgstr "visa en lista av filer i paketet"
 
-#: dnf/cli/commands/repoquery.py:190
+#: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
 msgstr "visa paketets käll-RPM-namn"
 
-#: dnf/cli/commands/repoquery.py:193
+#: dnf/cli/commands/repoquery.py:194
 msgid "show changelogs of the package"
 msgstr "visa ändringsloggar för paketet"
 
-#: dnf/cli/commands/repoquery.py:196
+#: dnf/cli/commands/repoquery.py:197
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1893,11 +1893,11 @@ msgstr ""
 "visningsformat för att lista paket: ”%%{name} %%{version} …”, använd --"
 "querytags för att sen den fullständiga tagglistan"
 
-#: dnf/cli/commands/repoquery.py:200
+#: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
 msgstr "visa tillgängliga taggar att använda med --queryformat"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1905,7 +1905,7 @@ msgstr ""
 "använd formatet namn-epok:version-utgåva.arkitektur för att visa funna paket "
 "(standard)"
 
-#: dnf/cli/commands/repoquery.py:207
+#: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -1913,38 +1913,38 @@ msgstr ""
 "använd formatet namn-version-utgåva för att visa funna paket (rpm-"
 "frågestandard)"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
 msgstr ""
 "använd formatet epok:namn-version-utgåva.arkitektur för att visa funna paket"
 
-#: dnf/cli/commands/repoquery.py:216
+#: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr "Visa i vilka comps-grupper valda paket presenteras"
 
-#: dnf/cli/commands/repoquery.py:220
+#: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
 msgstr "begränsa frågan till installerade dubblettpaket"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
 msgstr "begränsa frågan till installerade installonly-paket"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr "begränsa frågan till installerade paket med ouppfyllda beroenden"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
 msgstr "visa en plats som paket kan hämtas ifrån"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
 msgstr "Visa förmågor som paketet står i konflikt med."
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
@@ -1952,23 +1952,23 @@ msgstr ""
 "Visa förmågor som paketet kan bero på, förbättra, rekommendera, föreslå och "
 "komplettera."
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
 msgstr "Visa förmågor som paketet kan förbättra."
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
 msgstr "Visa förmågor som tillhandahålls av paketet."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
 msgstr "Visa förmågor som paketet rekommenderar."
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
 msgstr "Visa förmågor som paketet beror på."
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -1979,28 +1979,28 @@ msgstr ""
 "och %%post scriptlets. Om paketet är installerat, visa beroenden som krävs "
 "för %%pre, %%post, %%preun och %%postun."
 
-#: dnf/cli/commands/repoquery.py:245
+#: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
 msgstr "Visa förmågor som paketet föreslår."
 
-#: dnf/cli/commands/repoquery.py:246
+#: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
 msgstr "Visa förmågor som paketet kan komplettera."
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
 msgstr "Visa endast tillgängliga paket."
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid "Display only installed packages."
 msgstr "Visa endast installerade paket."
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr "Visa endast paket som inte finns i något av de tillgängliga förråden."
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -2008,25 +2008,25 @@ msgstr ""
 "Visa endast paket som tillhandahåller en uppgradering för några redan "
 "installerade paket."
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr "Visa endast paket som kan tas bort med kommandot ”{prog} autoremove”."
 
-#: dnf/cli/commands/repoquery.py:260
+#: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
 msgstr "Visa endast paket som installerades av användaren."
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
 msgstr "Visa endast nyligen redigerade paket"
 
-#: dnf/cli/commands/repoquery.py:275
+#: dnf/cli/commands/repoquery.py:276
 msgid "the key to search for"
 msgstr "nyckelordet att söka efter"
 
-#: dnf/cli/commands/repoquery.py:297
+#: dnf/cli/commands/repoquery.py:298
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -2036,7 +2036,7 @@ msgstr ""
 "conflicts”, ”--depends”, ”--enhances”, ”--provides”, ”--recommends”, ”--"
 "requires”, ”--requires-pre”, ”--suggests” eller ”--supplements”"
 
-#: dnf/cli/commands/repoquery.py:307
+#: dnf/cli/commands/repoquery.py:308
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2046,7 +2046,7 @@ msgstr ""
 "med ”--alldeps”, men inte med ”--exactdeps”), eller med ”--requires <KRAV> --"
 "resolve”"
 
-#: dnf/cli/commands/repoquery.py:314
+#: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argumentet {} behöver flaggan --whatrequires eller --whatdepends"
 
@@ -2057,15 +2057,15 @@ msgstr "argumentet {} behöver flaggan --whatrequires eller --whatdepends"
 #. your language, %b - abbreviated month name in the correct
 #. grammatical form, %d - day number (01-31), %Y - year
 #. number (4 digits).
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
 msgstr "%v %m %d %Å"
 
-#: dnf/cli/commands/repoquery.py:354
+#: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "Paketet {} innehåller inga filer"
 
-#: dnf/cli/commands/repoquery.py:571
+#: dnf/cli/commands/repoquery.py:572
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2090,7 +2090,7 @@ msgstr ""
 #. must be no longer than 16 characters. Format specifiers:
 #. %Y - year number (4 digits), %m - month (00-12), %d - day
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
 msgstr "%Å-%m-%d %T:%M"
 

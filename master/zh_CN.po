@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 01:52+0000\n"
+"POT-Creation-Date: 2023-04-24 01:55+0000\n"
 "PO-Revision-Date: 2023-03-15 07:20+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -103,28 +103,28 @@ msgstr "未知配置值： %s=%s 在 %s 中; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "未知配置选项：%s = %s 在 %s 中"
 
-#: dnf/automatic/main.py:241 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:242 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "GPG 检查失败"
 
-#: dnf/automatic/main.py:278
+#: dnf/automatic/main.py:287
 msgid "Waiting for internet connection..."
 msgstr "正在等待互联网连接…"
 
-#: dnf/automatic/main.py:308
+#: dnf/automatic/main.py:317
 msgid "Started dnf-automatic."
 msgstr "启动的 dnf-automatic。"
 
-#: dnf/automatic/main.py:312
+#: dnf/automatic/main.py:321
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "休眠 {} 秒"
 
-#: dnf/automatic/main.py:319
+#: dnf/automatic/main.py:328
 msgid "System is off-line."
 msgstr "系统离线。"
 
-#: dnf/automatic/main.py:355 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -776,7 +776,7 @@ msgid ""
 "version)"
 msgstr "无法找到发布版本（可用 '--releasever' 指定版本）"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
 msgstr "参数 {}：不允许与参数 {} 一起使用"
 
@@ -1721,33 +1721,33 @@ msgstr "仓库名称"
 msgid "Total packages: {}"
 msgstr "软件包总数：{}"
 
-#: dnf/cli/commands/repoquery.py:109
+#: dnf/cli/commands/repoquery.py:110
 msgid "search for packages matching keyword"
 msgstr "搜索匹配关键字的软件包"
 
-#: dnf/cli/commands/repoquery.py:123
+#: dnf/cli/commands/repoquery.py:124
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr "查询所有软件包（等同于repoquery '*' 的缩写或者不加参数的 repoquery）"
 
-#: dnf/cli/commands/repoquery.py:126
+#: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
 msgstr "查询软件包的所有版本（默认）"
 
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results from this ARCH"
 msgstr "仅显示符合指定架构的结果"
 
-#: dnf/cli/commands/repoquery.py:131
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that owns FILE"
 msgstr "仅显示包含指定文件的结果"
 
-#: dnf/cli/commands/repoquery.py:134
+#: dnf/cli/commands/repoquery.py:135
 msgid "show only results that conflict REQ"
 msgstr "只显示与 REQ 冲突的结果"
 
-#: dnf/cli/commands/repoquery.py:137
+#: dnf/cli/commands/repoquery.py:138
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1755,91 +1755,91 @@ msgstr ""
 "选择 requires、suggest、supplement、enhance 或 recommend 软件包提供和文件 "
 "REQ 的结果"
 
-#: dnf/cli/commands/repoquery.py:141
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
 msgstr "只显示废弃 REQ 的结果"
 
-#: dnf/cli/commands/repoquery.py:144
+#: dnf/cli/commands/repoquery.py:145
 msgid "show only results that provide REQ"
 msgstr "仅显示提供指定依赖的结果"
 
-#: dnf/cli/commands/repoquery.py:147
+#: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
 msgstr "仅显示需要指定软件包提供和文件的结果"
 
-#: dnf/cli/commands/repoquery.py:150
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
 msgstr "仅显示推荐指定依赖的结果"
 
-#: dnf/cli/commands/repoquery.py:153
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
 msgstr "仅显示增强指定依赖的结果"
 
-#: dnf/cli/commands/repoquery.py:156
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
 msgstr "仅显示建议指定依赖的结果"
 
-#: dnf/cli/commands/repoquery.py:159
+#: dnf/cli/commands/repoquery.py:160
 msgid "show only results that supplement REQ"
 msgstr "仅显示补充指定依赖的结果"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr "检查未明示的依赖（文件及提供者）；默认选项"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr "检查如输入指出的依赖关系，并非 --alldeps"
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr "与 --whatrequires、--requires 和 --resolve 一起使用，递归查询软件包。"
 
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr "列出这些软件包的依赖关系以及提供这些软件的源"
 
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
 msgstr "解析功能所来自的软件包"
 
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
 msgstr "显示软件包的递归树"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
 msgstr "在相关源 RPM 中操作"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:177
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
 msgstr "显示 N 个指定 name.arch 下最新的软件包（或者最旧的如果 N 为负值）"
 
-#: dnf/cli/commands/repoquery.py:179
+#: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
 msgstr "同时列出未激活模块流的软件包"
 
-#: dnf/cli/commands/repoquery.py:184
+#: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
 msgstr "显示关于软件包的详细信息"
 
-#: dnf/cli/commands/repoquery.py:187
+#: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
 msgstr "显示软件包中的文件列表"
 
-#: dnf/cli/commands/repoquery.py:190
+#: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
 msgstr "显示软件包的源 RPM 名称"
 
-#: dnf/cli/commands/repoquery.py:193
+#: dnf/cli/commands/repoquery.py:194
 msgid "show changelogs of the package"
 msgstr "显示软件包的 changelogs"
 
-#: dnf/cli/commands/repoquery.py:196
+#: dnf/cli/commands/repoquery.py:197
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1848,11 +1848,11 @@ msgstr ""
 "软件包列表的显示格式 : \"%%{name} %%{version} ...\", 使用 --querytags 参数来"
 "查看完整的标签列表"
 
-#: dnf/cli/commands/repoquery.py:200
+#: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
 msgstr "显示可被 --queryformat 使用的标签"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1860,44 +1860,44 @@ msgstr ""
 "使用 name-epoch:version-release.architecture 的格式来输出找到的软件包（默认格"
 "式）"
 
-#: dnf/cli/commands/repoquery.py:207
+#: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
 msgstr ""
 "使用 name-version-release 的格式来输出找到的软件包（rpm 查询的默认格式）"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
 msgstr "使用 epoch:name-version-release.architecture 的格式来输出找到的软件包"
 
-#: dnf/cli/commands/repoquery.py:216
+#: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr "显示可选择所选软件包的 comps 组"
 
-#: dnf/cli/commands/repoquery.py:220
+#: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
 msgstr "限定查询范围为已安装的重复软件包"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
 msgstr "限定查询范围为已安装的“仅安装”软件包"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr "限定查询范围为已安装且有未满足依赖关系的软件包"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
 msgstr "显示可以下载该软件包的地址"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
 msgstr "显示与该软件包冲突的功能。"
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
@@ -1905,23 +1905,23 @@ msgstr ""
 "显示软件包可用在其中 depend on、enhance、recommend、suggest 和 supplement 的"
 "功能。"
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
 msgstr "显示软件包所增强的功能。"
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
 msgstr "显示软件包所提供的功能。"
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
 msgstr "显示软件包所推荐的功能。"
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
 msgstr "显示软件包所依赖的功能。"
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -1931,52 +1931,52 @@ msgstr ""
 "如果未安装软件包，则显示执行 %%pre 和 %%post 脚本所依赖的功能。如果已经了安装"
 "软件包，则显示执行 %%pre、%%post、%%preun 和 %%postun 脚本所依赖的功能。"
 
-#: dnf/cli/commands/repoquery.py:245
+#: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
 msgstr "显示软件包所建议的功能。"
 
-#: dnf/cli/commands/repoquery.py:246
+#: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
 msgstr "显示软件包所补充的功能。"
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
 msgstr "仅显示可用的软件包。"
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid "Display only installed packages."
 msgstr "仅显示已安装的软件包。"
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr "仅显示不存在于任何可用仓库的软件包。"
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
 msgstr "仅显示为已安装的软件包提供升级的软件包。"
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr "仅显示可被 \"{prog} autoremove\" 命令所移除的软件包。"
 
-#: dnf/cli/commands/repoquery.py:260
+#: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
 msgstr "只显示被用户手动安装的软件包。"
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
 msgstr "仅显示最近修改过的软件包"
 
-#: dnf/cli/commands/repoquery.py:275
+#: dnf/cli/commands/repoquery.py:276
 msgid "the key to search for"
 msgstr "搜索所用的关键词"
 
-#: dnf/cli/commands/repoquery.py:297
+#: dnf/cli/commands/repoquery.py:298
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -1986,7 +1986,7 @@ msgstr ""
 "provides'、'--recommends'、'--requires'、'--requires-pre'、'--suggests' 或 "
 "'--supplements' 选项之一一起使用"
 
-#: dnf/cli/commands/repoquery.py:307
+#: dnf/cli/commands/repoquery.py:308
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -1996,7 +1996,7 @@ msgstr ""
 "alldeps'，但不能是 '--exactdeps'），或和 '--requires <REQ> --resolve' 一起使"
 "用"
 
-#: dnf/cli/commands/repoquery.py:314
+#: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "参数 {} 需要 --whatrequires 或 --whatdepends 选项"
 
@@ -2007,15 +2007,15 @@ msgstr "参数 {} 需要 --whatrequires 或 --whatdepends 选项"
 #. your language, %b - abbreviated month name in the correct
 #. grammatical form, %d - day number (01-31), %Y - year
 #. number (4 digits).
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:354
+#: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "软件包 {} 不包含文件"
 
-#: dnf/cli/commands/repoquery.py:571
+#: dnf/cli/commands/repoquery.py:572
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2040,7 +2040,7 @@ msgstr ""
 #. must be no longer than 16 characters. Format specifiers:
 #. %Y - year number (4 digits), %m - month (00-12), %d - day
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
 msgstr ""
 

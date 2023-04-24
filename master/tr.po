@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-17 01:52+0000\n"
+"POT-Creation-Date: 2023-04-24 01:55+0000\n"
 "PO-Revision-Date: 2023-02-04 14:20+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -77,29 +77,29 @@ msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Bilinmeyen yapılandırma seçeneği: %s = %s, %s içinde"
 
-#: dnf/automatic/main.py:241 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:242 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "GPG denetimi BAŞARISIZ"
 
-#: dnf/automatic/main.py:278
+#: dnf/automatic/main.py:287
 msgid "Waiting for internet connection..."
 msgstr "İnternet bağlantısı bekleniyor..."
 
-#: dnf/automatic/main.py:308
+#: dnf/automatic/main.py:317
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic başlatıldı."
 
-#: dnf/automatic/main.py:312
+#: dnf/automatic/main.py:321
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "{} saniye uykuda bekle"
 msgstr[1] "{} saniye uykuda bekle"
 
-#: dnf/automatic/main.py:319
+#: dnf/automatic/main.py:328
 msgid "System is off-line."
 msgstr "Sistem çevrim dışı."
 
-#: dnf/automatic/main.py:355 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -779,7 +779,7 @@ msgstr ""
 "Dağıtım sürümü algılanamadı (dağıtım sürümü belirtmek için '--releasever' "
 "kullanın)"
 
-#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:481
+#: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
 msgstr "{} argümanı: {} argümanıyla birlikte izin verilmiyor"
 
@@ -1742,11 +1742,11 @@ msgstr "depo ismi"
 msgid "Total packages: {}"
 msgstr "Toplam paketler: {}"
 
-#: dnf/cli/commands/repoquery.py:109
+#: dnf/cli/commands/repoquery.py:110
 msgid "search for packages matching keyword"
 msgstr "anahtar sözcükle eşleşen paketler için ara"
 
-#: dnf/cli/commands/repoquery.py:123
+#: dnf/cli/commands/repoquery.py:124
 msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
@@ -1754,23 +1754,23 @@ msgstr ""
 "Tüm paketleri sorgula (repoquery '*' veya argümansız repoquery komutunun "
 "kısayolu)"
 
-#: dnf/cli/commands/repoquery.py:126
+#: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
 msgstr "Paketlerin tüm sürümlerini sorgula (öntanımlı)"
 
-#: dnf/cli/commands/repoquery.py:129
+#: dnf/cli/commands/repoquery.py:130
 msgid "show only results from this ARCH"
 msgstr "yalnızca bu MİMARİ için sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:131
+#: dnf/cli/commands/repoquery.py:132
 msgid "show only results that owns FILE"
 msgstr "yalnızca DOSYA'ya sahip olan sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:134
+#: dnf/cli/commands/repoquery.py:135
 msgid "show only results that conflict REQ"
 msgstr "yalnızca ŞART ile çakışan sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:137
+#: dnf/cli/commands/repoquery.py:138
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
@@ -1778,45 +1778,45 @@ msgstr ""
 "ŞART paket sağlananları ve dosyalarını gerektiren, öneren, tamamlayan, "
 "iyileştiren veya tavsiye eden sonuçları gösterir"
 
-#: dnf/cli/commands/repoquery.py:141
+#: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
 msgstr "yalnızca ŞART'ı kullanım dışı bırakan sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:144
+#: dnf/cli/commands/repoquery.py:145
 msgid "show only results that provide REQ"
 msgstr "yalnızca ŞART'ı sağlayan sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:147
+#: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
 msgstr "ŞART paket sağlananları ve dosyalarını gerektiren sonuçları gösterir"
 
-#: dnf/cli/commands/repoquery.py:150
+#: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
 msgstr "yalnızca ŞART'ı tavsiye eden sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:153
+#: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
 msgstr "yalnızca ŞART'ı iyileştiren sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:156
+#: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
 msgstr "yalnızca ŞART'ı öneren sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:159
+#: dnf/cli/commands/repoquery.py:160
 msgid "show only results that supplement REQ"
 msgstr "yalnızca ŞART'ı tamamlayan sonuçları göster"
 
-#: dnf/cli/commands/repoquery.py:162
+#: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr ""
 "açıkça belirtilmemiş bağımlılıkları denetle (dosyalar ve sağlananlar); "
 "öntanımlı"
 
-#: dnf/cli/commands/repoquery.py:164
+#: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr "bağımlılıkları tam olarak verildiği gibi denetle, --alldeps'in zıttı"
 
-#: dnf/cli/commands/repoquery.py:166
+#: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
@@ -1824,25 +1824,25 @@ msgstr ""
 "--whatrequires, ve --requires --resolve ile kullanılır, paketleri "
 "özyinelemeli olarak sorgula."
 
-#: dnf/cli/commands/repoquery.py:168
+#: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr ""
 "tüm bağımlılıkların ve onları hangi paketlerin sağladığının bir listesini "
 "göster"
 
-#: dnf/cli/commands/repoquery.py:170
+#: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
 msgstr "yetenekleri kaynak paket(ler)e çözümle"
 
-#: dnf/cli/commands/repoquery.py:172
+#: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
 msgstr "paket(ler) için özyineleme ağacını göster"
 
-#: dnf/cli/commands/repoquery.py:174
+#: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
 msgstr "ilgili kaynak RPM üzerinde çalış"
 
-#: dnf/cli/commands/repoquery.py:176
+#: dnf/cli/commands/repoquery.py:177
 msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
@@ -1850,27 +1850,27 @@ msgstr ""
 "verilen ad.mimari için N adet en son paketi göster (veya N tanesi dışında en "
 "son, eğer N negatifse)"
 
-#: dnf/cli/commands/repoquery.py:179
+#: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
 msgstr "etkin olmayan modül akışı paketlerini de listele"
 
-#: dnf/cli/commands/repoquery.py:184
+#: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
 msgstr "paketle ilgili ayrıntılı bilgiyi göster"
 
-#: dnf/cli/commands/repoquery.py:187
+#: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
 msgstr "paket içindeki dosyaların listesini göster"
 
-#: dnf/cli/commands/repoquery.py:190
+#: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
 msgstr "paket kaynak RPM adını göster"
 
-#: dnf/cli/commands/repoquery.py:193
+#: dnf/cli/commands/repoquery.py:194
 msgid "show changelogs of the package"
 msgstr "paketin değişiklik günlüklerini göster"
 
-#: dnf/cli/commands/repoquery.py:196
+#: dnf/cli/commands/repoquery.py:197
 #, python-format, python-brace-format
 msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
@@ -1879,11 +1879,11 @@ msgstr ""
 "paketleri listeleme biçimi: \"%%{name} %%{version} ...\", tam etiket "
 "listesini görüntülemek için --querytags kullanın"
 
-#: dnf/cli/commands/repoquery.py:200
+#: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
 msgstr "--queryformat ile kullanılabilecek etiketleri göster"
 
-#: dnf/cli/commands/repoquery.py:204
+#: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
@@ -1891,7 +1891,7 @@ msgstr ""
 "bulunan paketleri görüntülemek için isim-dönem:sürüm-dağıtım.mimari biçimi "
 "kullan (öntanımlı)"
 
-#: dnf/cli/commands/repoquery.py:207
+#: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
@@ -1899,7 +1899,7 @@ msgstr ""
 "bulunan paketleri görüntülemek için isim-sürüm-dağıtım biçimi kullan (rpm "
 "sorgu öntanımlısı)"
 
-#: dnf/cli/commands/repoquery.py:213
+#: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
@@ -1907,31 +1907,31 @@ msgstr ""
 "bulunan paketleri görüntülemek için dönem:isim-sürüm-dağıtım.mimari biçimi "
 "kullan"
 
-#: dnf/cli/commands/repoquery.py:216
+#: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr "Hangi grupların seçili paketleri sunduğunu görüntüle"
 
-#: dnf/cli/commands/repoquery.py:220
+#: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
 msgstr "sorguyu kurulu yinelenen paketlerle sınırla"
 
-#: dnf/cli/commands/repoquery.py:227
+#: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
 msgstr "sorguyu kurulu yalnızca-kur (installonly) paketleriyle sınırla"
 
-#: dnf/cli/commands/repoquery.py:230
+#: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr "sorguyu karşılanmamış bağımlılıklara sahip kurulu paketlerle sınırla"
 
-#: dnf/cli/commands/repoquery.py:232
+#: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
 msgstr "paketlerin indirilebileceği bir konum göster"
 
-#: dnf/cli/commands/repoquery.py:235
+#: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
 msgstr "Paketin çakıştığı yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:236
+#: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
@@ -1939,23 +1939,23 @@ msgstr ""
 "Paketin bağımlı olabileceği, iyileştirebileceği, tavsiye edebileceği, "
 "önerebileceği ve tamamlayabileceği yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:238
+#: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
 msgstr "Paketin iyileştirebileceği yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:239
+#: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
 msgstr "Paket tarafından sağlanan yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:240
+#: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
 msgstr "Paketin tavsiye ettiği yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:241
+#: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
 msgstr "Paketin bağımlı olduğu yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:242
+#: dnf/cli/commands/repoquery.py:243
 #, python-format
 msgid ""
 "If the package is not installed display capabilities that it depends on for "
@@ -1966,30 +1966,30 @@ msgstr ""
 "olduğu yetenekleri görüntüle. Paket kurulu ise, %%pre, %%post, %%preun ve "
 "%%postun için bağımlı olduğu yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:245
+#: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
 msgstr "Paketin önerdiği yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:246
+#: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
 msgstr "Paketin tamamlayabileceği yetenekleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:252
+#: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
 msgstr "Yalnızca kullanılabilir paketleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:255
+#: dnf/cli/commands/repoquery.py:256
 msgid "Display only installed packages."
 msgstr "Yalnızca kurulu paketleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:256
+#: dnf/cli/commands/repoquery.py:257
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
 "Yalnızca kullanılabilir depoların herhangi birinde bulunmayan paketleri "
 "görüntüle."
 
-#: dnf/cli/commands/repoquery.py:257
+#: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
@@ -1997,26 +1997,26 @@ msgstr ""
 "Yalnızca önceden kurulmuş bazı paketler için yükseltme sağlayan paketleri "
 "görüntüle."
 
-#: dnf/cli/commands/repoquery.py:258
+#: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
 "Yalnızca \"{prog} autoremove\" komutu ile kaldırılabilen paketleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:260
+#: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
 msgstr "Yalnızca kullanıcı tarafından kurulan paketleri görüntüle."
 
-#: dnf/cli/commands/repoquery.py:272
+#: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
 msgstr "Yalnızca yakın zamanda düzenlenen paketleri görüntüle"
 
-#: dnf/cli/commands/repoquery.py:275
+#: dnf/cli/commands/repoquery.py:276
 msgid "the key to search for"
 msgstr "aranacak anahtar"
 
-#: dnf/cli/commands/repoquery.py:297
+#: dnf/cli/commands/repoquery.py:298
 msgid ""
 "Option '--resolve' has to be used together with one of the '--conflicts', '--"
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
@@ -2026,7 +2026,7 @@ msgstr ""
 "provides', '--recommends', '--requires', '--requires-pre', '--suggests' veya "
 "'--supplements' seçeneklerinden biriyle birlikte kullanılmalıdır"
 
-#: dnf/cli/commands/repoquery.py:307
+#: dnf/cli/commands/repoquery.py:308
 msgid ""
 "Option '--recursive' has to be used with '--whatrequires <REQ>' (optionally "
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
@@ -2036,7 +2036,7 @@ msgstr ""
 "alldeps' ile, ama '--exactdeps' ile değil), veya '--requires <ŞART> --"
 "resolve' ile birlikte kullanılmalıdır"
 
-#: dnf/cli/commands/repoquery.py:314
+#: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "{} argümanı --whatrequires veya --whatdepends seçeneğini gerektiriyor"
 
@@ -2047,15 +2047,15 @@ msgstr "{} argümanı --whatrequires veya --whatdepends seçeneğini gerektiriyo
 #. your language, %b - abbreviated month name in the correct
 #. grammatical form, %d - day number (01-31), %Y - year
 #. number (4 digits).
-#: dnf/cli/commands/repoquery.py:343
+#: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:354
+#: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "{} paketi dosya içermiyor"
 
-#: dnf/cli/commands/repoquery.py:571
+#: dnf/cli/commands/repoquery.py:572
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2080,7 +2080,7 @@ msgstr ""
 #. must be no longer than 16 characters. Format specifiers:
 #. %Y - year number (4 digits), %m - month (00-12), %d - day
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#: dnf/cli/commands/repoquery.py:724 dnf/cli/output.py:1556
+#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
 msgstr ""
 
