@@ -35,10 +35,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-04-30 01:55+0000\n"
-"PO-Revision-Date: 2023-04-17 19:20+0000\n"
+"PO-Revision-Date: 2023-05-02 20:20+0000\n"
 "Last-Translator: Jan Kalabza <jan.kalabza@gmail.com>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -164,7 +164,7 @@ msgstr "Nejsou povoleny repozitáře v \"{}\"."
 #: dnf/base.py:362
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: nikdy nevyprší a nebude obnoveno."
 
 #: dnf/base.py:364
 #, python-format
@@ -263,7 +263,9 @@ msgstr "Požadavky na místo na disku:"
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "Na souborovém systému {1} je potřeba alespoň {0}MB místa."
+msgstr[1] "Na souborovém systému {1} je potřeba alespoň {0}MB více místa."
+msgstr[2] "Na souborovém systému {1} je potřeba alespoň {0}MB více místa."
 
 #: dnf/base.py:1080
 msgid "Error Summary"
@@ -474,7 +476,7 @@ msgstr ""
 #: dnf/base.py:2502
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Nelze načíst klíč pro balíček příkazového řádku: %s"
 
 #: dnf/base.py:2510
 #, python-format
@@ -562,11 +564,11 @@ msgstr "Veškeré shody byly odstraněny filtrem vynechání pro argument"
 
 #: dnf/base.py:2737
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Všechny shody byly odfiltrovány modulárním filtrováním pro argument"
 
 #: dnf/base.py:2753
 msgid "All matches were installed from a different repository for argument"
-msgstr ""
+msgstr "Všechny shody byly nainstalovány z jiného úložiště pro argument"
 
 #: dnf/base.py:2814
 #, python-format
@@ -576,7 +578,7 @@ msgstr "Balíček %s je již nainstalován."
 #: dnf/cli/aliases.py:96
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Neočekávaná hodnota proměnné prostředí: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:105 dnf/conf/config.py:476
 #, python-format
@@ -619,6 +621,7 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"Výsledkem operace by bylo přepnutí modulu '{0}' stream '{1}' na stream '{2}'."
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -629,6 +632,11 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"Není možné přepínat povolené toky modulu, pokud to není výslovně povoleno "
+"pomocí konfigurační volby module_stream_switch.\n"
+"Doporučujeme raději z modulu odstranit veškerý nainstalovaný obsah a modul "
+"resetovat pomocí příkazu '{prog} module reset <název_modulu>'. Po resetování "
+"modulu můžete nainstalovat další stream."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -753,6 +761,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Mohlo by se jednat o příkaz zásuvného modulu {PROG}, zkuste: \"{prog} "
+"install 'dnf-command(%s)'\""
 
 #: dnf/cli/cli.py:758
 #, python-brace-format
@@ -853,6 +863,18 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Povolili jste kontrolu balíčků pomocí klíčů GPG. To je dobře.\n"
+"Nemáte však nainstalovány žádné veřejné klíče GPG. Musíte si stáhnout\n"
+"klíče pro balíčky, které chcete nainstalovat, a nainstalovat je.\n"
+"To můžete provést spuštěním příkazu:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Případně můžete zadat url adresu klíče, který chcete použít.\n"
+"pro úložiště v možnosti 'gpgkey' v sekci úložiště a {prog}\n"
+"nainstaluje za vás.\n"
+"\n"
+"Další informace získáte u své distribuce nebo poskytovatele balíčků."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -1256,9 +1278,8 @@ msgid "show also ID of groups"
 msgstr "zobrazit také identifikátory skupin"
 
 #: dnf/cli/commands/group.py:330
-#, fuzzy
 msgid "available subcommands: {} (default), {}"
-msgstr "Dostupný pod příkaz: {} (default), {}"
+msgstr "dostupný pod příkaz: {} (default), {}"
 
 #: dnf/cli/commands/group.py:334
 msgid "argument for group subcommand"
@@ -1489,6 +1510,8 @@ msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
 msgstr ""
+"Používá se pouze název modulu, stream, architektura nebo profil. Ignorování "
+"nepotřebných informací v argumentu: '{}'"
 
 #: dnf/cli/commands/module.py:80
 msgid "list all module streams, profiles and states"
@@ -1520,7 +1543,7 @@ msgstr "instalace profilu modulu včetně balíků"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "aktualizovat balíčky spojené s aktivním datovým tokem"
 
 #: dnf/cli/commands/module.py:243
 msgid "remove installed module profiles and their packages"
@@ -1532,7 +1555,7 @@ msgstr "Přeskakuji balík {} náležící více modulům"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "přepnutí modulu na stream a distro-synchronizace balíčků rpm"
 
 #: dnf/cli/commands/module.py:302
 msgid "locate a module the modular packages belong to"
@@ -1688,7 +1711,7 @@ msgstr "Repo-pkgs          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Repo-available-pkgs: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
@@ -1708,7 +1731,7 @@ msgstr "Repo-zrcadla       : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr ""
+msgstr "Repo-baseurl       : "
 
 #: dnf/cli/commands/repolist.py:219
 msgid "Repo-expire        : "
@@ -1857,7 +1880,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
-msgstr ""
+msgstr "také seznam balíčků neaktivních modulů"
 
 #: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
@@ -2044,7 +2067,7 @@ msgstr ""
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%d %a %b %Y"
 
 #: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
@@ -2595,8 +2618,9 @@ msgid "try the best available package versions in transactions."
 msgstr "V transakcích zkoušet nejlepší dostupné verze balíčku."
 
 #: dnf/cli/option_parser.py:220
+#, fuzzy
 msgid "do not limit the transaction to the best candidate"
-msgstr ""
+msgstr "neomezujte transakci na nejlepšího kandidáta."
 
 #: dnf/cli/option_parser.py:223
 msgid "run entirely from system cache, don't update cache"
