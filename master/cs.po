@@ -35,10 +35,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-02 01:52+0000\n"
-"PO-Revision-Date: 2023-05-02 20:20+0000\n"
+"PO-Revision-Date: 2023-05-07 20:20+0000\n"
 "Last-Translator: Jan Kalabza <jan.kalabza@gmail.com>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -621,7 +621,7 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
-"Výsledkem operace by bylo přepnutí modulu '{0}' stream '{1}' na stream '{2}'."
+"Výsledkem operace by bylo přepnutí modulu '{0}' stream '{1}' na stream '{2}'"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -1989,6 +1989,9 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"Pokud balíček není nainstalován, zobrazí se možnosti, na kterých závisí "
+"spouštění skriptletů %%pre a %%post. Pokud je balíček nainstalován, zobrazí "
+"schopnosti, na kterých závisí pro %%pre, %%post, %%preun a %%postun."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
@@ -2618,9 +2621,8 @@ msgid "try the best available package versions in transactions."
 msgstr "V transakcích zkoušet nejlepší dostupné verze balíčku."
 
 #: dnf/cli/option_parser.py:220
-#, fuzzy
 msgid "do not limit the transaction to the best candidate"
-msgstr "neomezujte transakci na nejlepšího kandidáta."
+msgstr "neomezujte transakci na nejlepšího kandidáta"
 
 #: dnf/cli/option_parser.py:223
 msgid "run entirely from system cache, don't update cache"
@@ -2671,6 +2673,8 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Dočasně povolí úložiště pro účely aktuálního příkazu dnf. Přijímá id, seznam "
+"id oddělený čárkou nebo glob id. Tuto volbu lze zadat vícekrát."
 
 #: dnf/cli/option_parser.py:265
 msgid ""
@@ -2679,6 +2683,9 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"Dočasně zakáže aktivní úložiště pro účely aktuálního příkazu dnf. Přijímá "
+"id, seznam id oddělený čárkou nebo glob id. Tuto volbu lze zadat vícekrát, "
+"ale vzájemně se vylučuje s volbou `--repo`."
 
 #: dnf/cli/option_parser.py:272
 msgid ""
@@ -2690,11 +2697,11 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:277
 msgid "enable repos with config-manager command (automatically saves)"
-msgstr ""
+msgstr "povolit úložiště pomocí příkazu config-manager (automaticky se uloží)"
 
 #: dnf/cli/option_parser.py:281
 msgid "disable repos with config-manager command (automatically saves)"
-msgstr ""
+msgstr "zakázat úložiště pomocí příkazu config-manager (automaticky se uloží)"
 
 #: dnf/cli/option_parser.py:285
 msgid "exclude packages by name or glob"
@@ -2709,6 +2716,8 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
+"název a cesta k dalšímu úložišti, které se má použít (stejná cesta jako v "
+"baseurl), lze zadat vícekrát."
 
 #: dnf/cli/option_parser.py:299
 msgid "disable removal of dependencies that are no longer used"
@@ -2716,7 +2725,7 @@ msgstr "Zakázat odstranění závislostí, které se již nepoužívají"
 
 #: dnf/cli/option_parser.py:302
 msgid "disable gpg signature checking (if RPM policy allows)"
-msgstr ""
+msgstr "zakázat kontrolu podpisu gpg (pokud to zásady RPM umožňují)"
 
 #: dnf/cli/option_parser.py:304
 msgid "control whether color is used"
@@ -3093,7 +3102,7 @@ msgstr "Balíčky"
 
 #: dnf/cli/output.py:1046
 msgid "Installing group/module packages"
-msgstr ""
+msgstr "Instalace skupiny/modulu balíčků"
 
 #: dnf/cli/output.py:1047
 msgid "Installing group packages"
@@ -3174,23 +3183,23 @@ msgstr "Nainstalované skupiny prostředí"
 
 #: dnf/cli/output.py:1149
 msgid "Upgrading Environment Groups"
-msgstr ""
+msgstr "Aktualizace Skupin Prostředí"
 
 #: dnf/cli/output.py:1156
 msgid "Removing Environment Groups"
-msgstr ""
+msgstr "Odstranění skupin prostředí"
 
 #: dnf/cli/output.py:1163
 msgid "Installing Groups"
-msgstr ""
+msgstr "Instalace Skupin"
 
 #: dnf/cli/output.py:1170
 msgid "Upgrading Groups"
-msgstr ""
+msgstr "Aktualizace Skupin"
 
 #: dnf/cli/output.py:1177
 msgid "Removing Groups"
-msgstr ""
+msgstr "Odstranění Skupin"
 
 #: dnf/cli/output.py:1193
 #, python-format
@@ -3318,7 +3327,7 @@ msgstr "Žádné transakce"
 
 #: dnf/cli/output.py:1585 dnf/cli/output.py:1601
 msgid "Failed history info"
-msgstr ""
+msgstr "Neúspěšné informace o historii"
 
 #: dnf/cli/output.py:1600
 msgid "No transaction ID, or package, given"
@@ -3574,17 +3583,17 @@ msgstr "    Stav : %s"
 #: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr ""
+msgstr "Modul nebo Skupina '%s' není nainstalován."
 
 #: dnf/comps.py:198 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr ""
+msgstr "Modul nebo Skupina '%s' není k dispozici."
 
 #: dnf/comps.py:200
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr ""
+msgstr "Modul nebo skupina '%s' neexistuje."
 
 #: dnf/comps.py:599
 #, python-format
@@ -3605,7 +3614,7 @@ msgstr "Prostředí \"%s\" není nainstalováno."
 #: dnf/comps.py:641
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "Prostředí '%s' není k dispozici."
 
 #: dnf/comps.py:673
 #, python-format
@@ -3624,17 +3633,19 @@ msgstr "Neplatná hodnota konfigurace: %s=%s v %s; %s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "Nelze nastavit \"{}\" na \"{}\": {}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
-msgstr ""
+msgstr "Nepodařilo se nastavit adresář pro cache: {}"
 
 #: dnf/conf/config.py:294
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"Konfigurační soubor URL \"{}\" se nepodařilo stáhnout:\n"
+"  {}"
 
 #: dnf/conf/config.py:374 dnf/conf/config.py:410
 #, python-format
