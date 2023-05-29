@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-03-03 22:20+0000\n"
 "Last-Translator: Fabio Tomat <f.t.public@gmail.com>\n"
 "Language-Team: Friulian <https://translate.fedoraproject.org/projects/dnf/"
@@ -94,7 +94,11 @@ msgstr[1] "Polse par {} seconts"
 msgid "System is off-line."
 msgstr "Il sisteme al è fûr rêt."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "Transazion falide"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -645,10 +649,6 @@ msgstr "Discjariament pachets:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Erôr tal discjariâ i pachets:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "Transazion falide"
 
 #: dnf/cli/cli.py:287
 msgid ""
@@ -2021,8 +2021,8 @@ msgstr ""
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
-"Mostre dome i pachets che al è pussibil gjavâ cul comant \"{prog} autoremove"
-"\"."
+"Mostre dome i pachets che al è pussibil gjavâ cul comant \"{prog} "
+"autoremove\"."
 
 #: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."

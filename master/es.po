@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2022-05-02 18:18+0000\n"
 "Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -124,7 +124,11 @@ msgstr[1] "Espera {} segundos"
 msgid "System is off-line."
 msgstr "El sistema está fuera de línea."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "Falló la transacción"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -685,10 +689,6 @@ msgstr "Descargando paquetes:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Error al descargar los paquetes:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "Falló la transacción"
 
 #: dnf/cli/cli.py:287
 msgid ""
@@ -4372,8 +4372,8 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
-"Se han especificado argumentos de TransactionReplay en conflicto: \"filename"
-"\", \"data\""
+"Se han especificado argumentos de TransactionReplay en conflicto: "
+"\"filename\", \"data\""
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-04-03 18:20+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -100,7 +100,11 @@ msgstr[1] "Ga voor {} seconden slapen"
 msgid "System is off-line."
 msgstr "Systeem is offline."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "De transactie mislukte"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -643,10 +647,6 @@ msgstr "Downloaden pakketten:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Fout bij downloaden pakketten:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "De transactie mislukte"
 
 #: dnf/cli/cli.py:287
 msgid ""
@@ -2026,8 +2026,8 @@ msgstr ""
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
-"Toon alleen pakketten die verwijderd kunen worden met het \"{prog} autoremove"
-"\" commando."
+"Toon alleen pakketten die verwijderd kunen worden met het \"{prog} "
+"autoremove\" commando."
 
 #: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."

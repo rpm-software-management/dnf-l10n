@@ -34,7 +34,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-05-11 17:20+0000\n"
 "Last-Translator: Jan Kalabza <jan.kalabza@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -124,7 +124,11 @@ msgstr[2] "Pozastaveno na {} sekund"
 msgid "System is off-line."
 msgstr "Systém je mimo provoz."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "Transakce selhala"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -303,8 +307,8 @@ msgstr "Delta RPM zmenšil %.1f MB aktualizací na %.1f MB (%.1f%% ušetřeno)"
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Neúspěšná Delta RPM zvýšila %.1f MB aktualizací na %.1f MB (zbytečných %.1f"
-"%%)"
+"Neúspěšná Delta RPM zvýšila %.1f MB aktualizací na %.1f MB (zbytečných "
+"%.1f%%)"
 
 #: dnf/base.py:1327
 msgid "Cannot add local packages, because transaction job already exists"
@@ -662,10 +666,6 @@ msgstr "Stahování balíčků:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Chyba stahování balíčků:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "Transakce selhala"
 
 #: dnf/cli/cli.py:287
 msgid ""

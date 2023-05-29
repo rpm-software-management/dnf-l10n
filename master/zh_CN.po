@@ -36,7 +36,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-03-15 07:20+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -124,7 +124,11 @@ msgstr[0] "休眠 {} 秒"
 msgid "System is off-line."
 msgstr "系统离线。"
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "事务失败"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -637,10 +641,6 @@ msgstr "下载软件包："
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "下载软件包出错 :"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "事务失败"
 
 #: dnf/cli/cli.py:287
 msgid ""
@@ -4195,8 +4195,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
-"environments.groups.group_type 的值 \"{group_type}\" 无效，仅支持 \"mandatory"
-"\" 或者 \"optional\"。"
+"environments.groups.group_type 的值 \"{group_type}\" 无效，仅支持 "
+"\"mandatory\" 或者 \"optional\"。"
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format

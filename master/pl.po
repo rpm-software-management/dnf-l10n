@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-04-01 09:13+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -106,7 +106,11 @@ msgstr[2] "Usypia na {} sekund"
 msgid "System is off-line."
 msgstr "System jest w trybie offline."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "Transakcja się nie powiodła"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -285,8 +289,8 @@ msgstr "Część pakietów nie została pobrana. Próbowanie ponownie."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Użycie DeltaRPM zmniejszyło %.1f MB aktualizacji do %.1f MB (oszczędzono %.1f"
-"%%)"
+"Użycie DeltaRPM zmniejszyło %.1f MB aktualizacji do %.1f MB (oszczędzono "
+"%.1f%%)"
 
 #: dnf/base.py:1285
 #, python-format
@@ -665,10 +669,6 @@ msgstr "Pobieranie pakietów:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Błąd podczas pobierania pakietów:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "Transakcja się nie powiodła"
 
 #: dnf/cli/cli.py:287
 msgid ""

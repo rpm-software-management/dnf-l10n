@@ -30,7 +30,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-03-06 13:20+0000\n"
 "Last-Translator: Transtats <suanand@redhat.com>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -118,7 +118,11 @@ msgstr[0] "{} 秒スリープします"
 msgid "System is off-line."
 msgstr "システムはオフラインです。"
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "トランザクションが失敗しました"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -298,8 +302,8 @@ msgstr ""
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"非効率な Delta RPM により %.1f MB の更新が増大して %.1f MB となりました (%.1f"
-"%% が無駄になりました)"
+"非効率な Delta RPM により %.1f MB の更新が増大して %.1f MB となりました "
+"(%.1f%% が無駄になりました)"
 
 #: dnf/base.py:1327
 msgid "Cannot add local packages, because transaction job already exists"
@@ -665,10 +669,6 @@ msgstr "パッケージのダウンロード:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "パッケージのダウンロード中にエラーが発生しました:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "トランザクションが失敗しました"
 
 #: dnf/cli/cli.py:287
 msgid ""

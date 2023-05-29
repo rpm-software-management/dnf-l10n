@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-14 01:59+0000\n"
+"POT-Creation-Date: 2023-05-29 02:03+0000\n"
 "PO-Revision-Date: 2023-01-17 09:20+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -108,7 +108,11 @@ msgstr[1] "Alvás {} másodpercig"
 msgid "System is off-line."
 msgstr "A rendszer off-line."
 
-#: dnf/automatic/main.py:364 dnf/cli/main.py:59 dnf/cli/main.py:80
+#: dnf/automatic/main.py:359 dnf/cli/cli.py:264
+msgid "Transaction failed"
+msgstr "Tranzakció sikertelen"
+
+#: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
@@ -286,8 +290,8 @@ msgstr "Néhány csomag nem lett letöltve. Újrapróbálkozás."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra (%.1f"
-"%% megspórolva)"
+"A Delta RPM-ek lecsökkentették a(z) %.1f MB-nyi frissítést %.1f MB-ra "
+"(%.1f%% megspórolva)"
 
 #: dnf/base.py:1285
 #, python-format
@@ -659,10 +663,6 @@ msgstr "Csomagok letöltése:"
 #: dnf/cli/cli.py:232
 msgid "Error downloading packages:"
 msgstr "Hiba a csomagok letöltésekor:"
-
-#: dnf/cli/cli.py:264
-msgid "Transaction failed"
-msgstr "Tranzakció sikertelen"
 
 #: dnf/cli/cli.py:287
 msgid ""
