@@ -36,7 +36,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-05-29 02:03+0000\n"
-"PO-Revision-Date: 2023-05-29 09:20+0000\n"
+"PO-Revision-Date: 2023-06-01 18:20+0000\n"
 "Last-Translator: Ian Meyer <ianscuba1465@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
@@ -1577,15 +1577,12 @@ msgid "Package {} belongs to multiple modules, skipping"
 msgstr "O pacote {} pertence a vários módulos, ignorando"
 
 #: dnf/cli/commands/module.py:280
-#, fuzzy
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr "mudar um módulo para um stream e distribuir pacotes rpm"
+msgstr "mudar um módulo para um fluxo e sincronizar pacotes rpm"
 
 #: dnf/cli/commands/module.py:302
-#, fuzzy
-#| msgid "remove all modular packages"
 msgid "locate a module the modular packages belong to"
-msgstr "remova todos os pacotes modulares"
+msgstr "localizar um módulo ao qual pertencem os pacotes modulares"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
@@ -2110,15 +2107,7 @@ msgid "Package {} contains no files"
 msgstr "Pacote {} não contém arquivos"
 
 #: dnf/cli/commands/repoquery.py:572
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2129,9 +2118,8 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Nenhuma opção válida especificada\n"
-"uso: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
+"uso: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--recomm"
+"ends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
 "descrição:\n"
 "  Para os pacotes dados, imprime uma árvore dos pacotes."
@@ -3764,7 +3752,7 @@ msgstr "A análise do arquivo \"{}\" falhou: {}"
 #: dnf/conf/substitutions.py:66
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "Erro ao analisar uma variável do arquivo '{0}': {1}"
 
 #: dnf/crypto.py:108
 #, python-format
@@ -4266,7 +4254,6 @@ msgstr ""
 "\"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
-#, fuzzy
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
@@ -4289,7 +4276,7 @@ msgid "Missing object key \"{key}\" in an rpm."
 msgstr "Chave de objeto \"{key}\" faltando em um rpm."
 
 #: dnf/transaction_sr.py:289
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
@@ -4325,7 +4312,7 @@ msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr "Pacote nevra \"{nevra}\" não instalado para a ação \"{action}\"."
 
 #: dnf/transaction_sr.py:370
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
@@ -4353,7 +4340,7 @@ msgid "Environment id '%s' is not available."
 msgstr "O ambiente '%s' não está disponível."
 
 #: dnf/transaction_sr.py:466
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
@@ -4367,7 +4354,7 @@ msgid "Missing object key \"{key}\" in environments.groups."
 msgstr "Chave \"{key}\" do objeto faltando em environments.groups."
 
 #: dnf/transaction_sr.py:566
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
 "Valor inesperado da ação do grupo \"{action}\" para o grupo \"{group}\"."
@@ -4378,7 +4365,7 @@ msgid "Missing object key \"{key}\" in a group."
 msgstr "Chave \"{key}\" do objeto faltando em um grupo."
 
 #: dnf/transaction_sr.py:599
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
