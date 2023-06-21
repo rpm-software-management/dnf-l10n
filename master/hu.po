@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-07 02:18+0000\n"
-"PO-Revision-Date: 2023-01-17 09:20+0000\n"
+"PO-Revision-Date: 2023-06-22 09:20+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15\n"
+"X-Generator: Weblate 4.18.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -110,7 +110,7 @@ msgstr "A rendszer off-line."
 
 #: dnf/automatic/main.py:359 dnf/cli/cli.py:264
 msgid "Transaction failed"
-msgstr "Tranzakció sikertelen"
+msgstr "A tranzakció sikertelen"
 
 #: dnf/automatic/main.py:371 dnf/cli/main.py:59 dnf/cli/main.py:80
 #: dnf/cli/main.py:83
@@ -219,19 +219,19 @@ msgstr "A csoportfájl hozzáadása sikertelen a következő tárolónál: %s - 
 
 #: dnf/base.py:973
 msgid "Running transaction check"
-msgstr "Tranzakció ellenőrzés futtatása"
+msgstr "A tranzakció-ellenőrzés futtatása"
 
 #: dnf/base.py:981
 msgid "Error: transaction check vs depsolve:"
-msgstr "Hiba: tranzakció ellenőrzésnél és függőségfeloldásnál:"
+msgstr "Hiba: ütközés a tranzakció-ellenőrzés és a függőségfeloldás között:"
 
 #: dnf/base.py:987
 msgid "Transaction check succeeded."
-msgstr "Tranzakció ellenőrzés sikeres."
+msgstr "A tranzakció-ellenőrzés sikeres."
 
 #: dnf/base.py:990
 msgid "Running transaction test"
-msgstr "Tranzakcióteszt futtatása"
+msgstr "A tranzakcióteszt futtatása"
 
 #: dnf/base.py:1000 dnf/base.py:1151
 msgid "RPM: {}"
@@ -1557,10 +1557,8 @@ msgid "switch a module to a stream and distrosync rpm packages"
 msgstr "modul forrásának átváltása, és distrosync futtatása az RPM csomagokon"
 
 #: dnf/cli/commands/module.py:302
-#, fuzzy
-#| msgid "remove all modular packages"
 msgid "locate a module the modular packages belong to"
-msgstr "az összes moduláris csomag eltávolítása"
+msgstr "a modul megkeresése, amelyhez a moduláris csomagok tartoznak"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
@@ -2094,7 +2092,7 @@ msgstr "{} argumentum: a --whatrequires vagy --whatdepends kapcsoló szükséges
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%Y. %b. %d., %a."
 
 #: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
@@ -2113,11 +2111,11 @@ msgid ""
 msgstr ""
 "Nincs kapcsoló megadva\n"
 "használat: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [kulcs] [--"
-"tree]\n"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [kulcs] "
+"[--tree]\n"
 "\n"
 "leírás:\n"
-" Kiírja a csomagfát a megadott csomagokhoz."
+"  Kiírja a csomagfát a megadott csomagokhoz."
 
 #. TRANSLATORS: This is the default time format for dnf repoquery.
 #. TRANSLATORS: This is the time format for dnf history list.
@@ -2127,7 +2125,7 @@ msgstr ""
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y. %m. %d. %H:%M"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
