@@ -35,16 +35,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-03 01:47+0000\n"
-"PO-Revision-Date: 2023-05-11 17:20+0000\n"
+"PO-Revision-Date: 2023-08-09 16:28+0000\n"
 "Last-Translator: Jan Kalabza <jan.kalabza@gmail.com>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1095,7 +1095,7 @@ msgstr "Není zadán žádný alternativní název."
 
 #: dnf/cli/commands/alias.py:173
 msgid "No alias specified."
-msgstr "Není zadán žádný alternativní název."
+msgstr "Není zadán žádný alias."
 
 #: dnf/cli/commands/alias.py:179
 msgid "No aliases defined."
@@ -1740,7 +1740,7 @@ msgstr "Repo-expirace        : "
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Repo-exclude       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
@@ -1904,6 +1904,8 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"formát zobrazení pro výpis balíčků: \"%%{name} %%{version} ...\", pro "
+"zobrazení úplného seznamu tagů použijte --querytags"
 
 #: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
@@ -2716,7 +2718,7 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
-"název a cesta k dalšímu úložišti, které se má použít (stejná cesta jako v "
+"název a cesta k dalšímu repositáři, které se má použít (stejná cesta jako v "
 "baseurl), lze zadat vícekrát."
 
 #: dnf/cli/option_parser.py:299
@@ -3137,7 +3139,7 @@ msgstr "Instalování slabých závislostí"
 #. TRANSLATORS: This is for a list of packages to be removed.
 #: dnf/cli/output.py:1060
 msgid "Removing"
-msgstr "K odstranění"
+msgstr "Odstraňování"
 
 #: dnf/cli/output.py:1061
 msgid "Removing dependent packages"
@@ -3533,7 +3535,7 @@ msgstr ""
 
 #: dnf/cli/utils.py:99
 msgid "Running"
-msgstr "Probíhá"
+msgstr "Běží"
 
 #: dnf/cli/utils.py:100
 msgid "Sleeping"
@@ -3669,12 +3671,12 @@ msgstr "Nesprávné nebo neznámé \"{}\": {}"
 #: dnf/conf/config.py:520
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
-msgstr ""
+msgstr "Chyba při analýze --setopt s klíčem '%s.%s', hodnota '%s': %s"
 
 #: dnf/conf/config.py:523
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr ""
+msgstr "Repo %s nemělo před setopt atr. %s"
 
 #: dnf/conf/read.py:60
 #, python-format
@@ -3707,7 +3709,7 @@ msgstr ""
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
-msgstr ""
+msgstr "Rozbor souboru \"{}\" se nezdařil: {}"
 
 #: dnf/conf/substitutions.py:66
 #, python-brace-format
@@ -3717,12 +3719,12 @@ msgstr ""
 #: dnf/crypto.py:108
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr ""
+msgstr "repo %s: 0x%s již importováno"
 
 #: dnf/crypto.py:115
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr ""
+msgstr "repo %s: importovaný klíč 0x%s."
 
 #: dnf/crypto.py:145
 msgid "Verified using DNS record with DNSSEC signature."
@@ -4122,7 +4124,7 @@ msgstr "Reinstalace"
 #. TODO: 'Removing'?
 #: dnf/transaction.py:90
 msgid "Erasing"
-msgstr "K odstranění"
+msgstr "Mazání"
 
 #. TRANSLATORS: This is for a single package currently being upgraded.
 #: dnf/transaction.py:92
