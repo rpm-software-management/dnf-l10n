@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-11 01:33+0000\n"
-"PO-Revision-Date: 2023-02-02 15:20+0000\n"
+"PO-Revision-Date: 2023-08-14 14:21+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -66,7 +66,7 @@ msgstr "無法透過「%s」發送電子郵件：%s"
 #: dnf/automatic/emitter.py:140
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
-msgstr "無法執行「%s」指令：已回傳 %d"
+msgstr "無法執行「%s」命令：已回傳 %d"
 
 #: dnf/automatic/main.py:165
 #, python-format
@@ -91,11 +91,9 @@ msgid "Started dnf-automatic."
 msgstr "已啟動 dnf-automatic。"
 
 #: dnf/automatic/main.py:321
-#, fuzzy
-#| msgid "Sleep for %s seconds"
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "睡眠 %s 秒"
+msgstr[0] "睡眠 {} 秒"
 
 #: dnf/automatic/main.py:328
 msgid "System is off-line."
@@ -235,7 +233,7 @@ msgstr "執行處理事項"
 
 #: dnf/base.py:1070
 msgid "Disk Requirements:"
-msgstr "需要磁碟："
+msgstr "磁碟要求："
 
 #: dnf/base.py:1073
 #, python-brace-format
@@ -270,18 +268,15 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr "有些軟體包未下載。重試。"
 
 #: dnf/base.py:1281
-#, fuzzy, python-format
-#| msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%d.1%% saved)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
-msgstr "Delta RPM 已將更新所需從 %.1f MB 減少為 %.1f MB（節省 %d.1%%）"
+msgstr "Delta RPM 已將更新所需從 %.1f MB 減少為 %.1f MB（節省 %.1f%%）"
 
 #: dnf/base.py:1285
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
-msgstr "失敗的 Delta RPM 已將更新所需從 %.1f MB 增加為 %.1f MB（浪費 %d.1%%）"
+msgstr "失敗的 Delta RPM 已將更新所需從 %.1f MB 增加為 %.1f MB（浪費 %.1f%%）"
 
 #: dnf/base.py:1327
 msgid "Cannot add local packages, because transaction job already exists"
@@ -583,15 +578,10 @@ msgstr "  建構  ：%s 於 %s"
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
-msgstr "動作可能會導致「{0}」模組的「{1}」串流被切換到「{2}」串流"
+msgstr "動作可能會導致「{0}」模組的「{1}」流道被切換到「{2}」流道"
 
 #: dnf/cli/cli.py:173
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "It is not possible to switch enabled streams of a module.\n"
-#| "It is recommended to remove all installed content from the module, and "
-#| "reset the module using '{prog} module reset <module_name>' command. After "
-#| "you reset the module, you can install the other stream."
+#, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
 "enabled via configuration option module_stream_switch.\n"
@@ -599,9 +589,10 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
-"無法切換模組的已啟用串流。\n"
-"建議移除模組的所有已安裝內容，並使用 '{prog} module reset <module_name>' 命令"
-"重設模組。重設完模組後，就可以安裝其他串流。"
+"無法切換模組的已啟用流道，除非有明確經由組態選項 module_stream_switch 啟用。"
+"\n"
+"建議應移除模組的所有已安裝內容，並使用 '{prog} module reset <module_name>' "
+"命令重設模組。重設完模組後，您可以再安裝其他流道。"
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -711,7 +702,7 @@ msgstr "此命令需要以超級使用者權限執行（大部分系統是在 ro
 #: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "未知的指令：%s。請使用 %s --help"
+msgstr "未知的命令：%s。請使用 %s --help"
 
 #: dnf/cli/cli.py:754
 #, python-format, python-brace-format
@@ -734,7 +725,7 @@ msgid ""
 "system-upgrade command."
 msgstr ""
 "--destdir 或 --downloaddir 必須與 --downloadonly、download 或 system-upgrade "
-"指令一起使用。"
+"命令一起使用。"
 
 #: dnf/cli/cli.py:822
 msgid ""
@@ -769,7 +760,7 @@ msgstr "引數 {}：不允許與 {} 引數使用"
 #: dnf/cli/cli.py:1025
 #, python-format
 msgid "Command \"%s\" already defined"
-msgstr "指令「%s」已經定義"
+msgstr "命令「%s」已經定義"
 
 #: dnf/cli/cli.py:1045
 msgid "Excludes in dnf.conf: "
@@ -945,7 +936,7 @@ msgstr "沒有軟體包為升級標記。"
 
 #: dnf/cli/commands/__init__.py:721
 msgid "run commands on top of all packages in given repository"
-msgstr "在提供的軟體庫於所有軟體包的頂端執行指令"
+msgstr "在提供的軟體庫於所有軟體包的頂端執行命令"
 
 #: dnf/cli/commands/__init__.py:760
 msgid "REPOID"
@@ -966,7 +957,7 @@ msgstr "顯示用法說明訊息"
 
 #: dnf/cli/commands/__init__.py:800
 msgid "COMMAND"
-msgstr "指令"
+msgstr "命令"
 
 #: dnf/cli/commands/__init__.py:801
 #, python-brace-format
@@ -1139,12 +1130,10 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "正在等候 PID %d 處理程序完成。"
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "列出軟體包的依賴關係以及由何軟體包提供"
+msgstr "[已棄用，請改用 repoquery --deplist] 列出軟體包的依賴關係以及由何軟體包提供"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1234,7 +1223,7 @@ msgstr "群組子命令的引數"
 #: dnf/cli/commands/group.py:343
 #, python-format
 msgid "Invalid groups sub-command, use: %s."
-msgstr "無效的群組子指令，請用：%s。"
+msgstr "無效的群組子命令，請用：%s。"
 
 #: dnf/cli/commands/group.py:399
 msgid "Unable to find a mandatory group package."
@@ -1246,45 +1235,41 @@ msgstr "顯示或使用處理事項歷史紀錄"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "store 命令，儲存處理事項的檔案路徑位置"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
-msgstr ""
+msgstr "replay 命令，不檢查處理事項中符合條件的已安裝軟體包"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
-msgstr ""
+msgstr "replay 命令，不檢查處理事項中拉入的額外軟體包"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
-msgstr ""
+msgstr "replay 命令，跳過不可用或依賴關係不齊全的軟體包"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
 msgstr ""
-"找到超過一個處理事項識別碼。\n"
-"「{}」需要一個處理事項識別碼或軟體包名稱。"
+"找到超過一個處理事項 ID。\n"
+"「{}」要求一個處理事項 ID 或軟體包名稱。"
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID or package name given."
 msgid "No transaction file name given."
-msgstr "沒有提供處理事項識別碼或軟體包名稱。"
+msgstr "沒有給予處理事項檔名。"
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "移除處理事項檔案 %s 失敗"
+msgstr "提供多於一個引數作為處理事項檔名。"
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1314,10 +1299,9 @@ msgid "No transaction ID given"
 msgstr "沒有提供處理事項識別碼"
 
 #: dnf/cli/commands/history.py:179
-#, fuzzy, python-brace-format
-#| msgid "TransactionItem not found for key: {}"
+#, python-brace-format
 msgid "Transaction ID \"{0}\" not found."
-msgstr "找不到下述鍵的 TransactionItem：{}"
+msgstr "找不到處理事項 ID「{0}」。"
 
 #: dnf/cli/commands/history.py:185
 msgid "Found more than one transaction ID!"
@@ -1359,27 +1343,23 @@ msgstr "找不到操作「{}」軟體包的處理事項。"
 
 #: dnf/cli/commands/history.py:368
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} 已存在，是否覆蓋？"
 
 #: dnf/cli/commands/history.py:371
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "不覆蓋 {}，正離開。"
 
 #: dnf/cli/commands/history.py:378
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "處理事項失敗"
+msgstr "處理事項儲存至 {}。"
 
 #: dnf/cli/commands/history.py:381
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "Error storing transaction: {}"
-msgstr "在處理事項時發生錯誤。"
+msgstr "儲存處理事項時遭遇錯誤：{}"
 
 #: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
+msgstr "警告，執行處理事項時遭遇下列問題："
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
@@ -1454,11 +1434,11 @@ msgstr "%s 軟體包尚未安裝。"
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
-msgstr "只使用模組名稱、串流、架構或設定檔。忽略引數中的非必要資訊：「{}」"
+msgstr "只使用模組名稱、流道、架構或設定檔。忽略引數中的非必要資訊：「{}」"
 
 #: dnf/cli/commands/module.py:80
 msgid "list all module streams, profiles and states"
-msgstr "列出所有的模組串流、設定檔及狀態"
+msgstr "列出所有的模組流道、設定檔及狀態"
 
 #: dnf/cli/commands/module.py:108 dnf/cli/commands/module.py:131
 msgid "No matching Modules to list"
@@ -1470,11 +1450,11 @@ msgstr "輸出詳細模組資訊"
 
 #: dnf/cli/commands/module.py:136
 msgid "enable a module stream"
-msgstr "啟用模組串流"
+msgstr "啟用模組流道"
 
 #: dnf/cli/commands/module.py:160
 msgid "disable a module with all its streams"
-msgstr "停用模組及其所有串流"
+msgstr "停用模組及其所有流道"
 
 #: dnf/cli/commands/module.py:184
 msgid "reset a module"
@@ -1486,7 +1466,7 @@ msgstr "安裝包含其軟體的模組設定檔"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
-msgstr "更新與作用中串流關聯的軟體包"
+msgstr "更新與作用中流道關聯的軟體包"
 
 #: dnf/cli/commands/module.py:243
 msgid "remove installed module profiles and their packages"
@@ -1498,13 +1478,11 @@ msgstr "{} 軟體包屬於多個模組，跳過"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "切換模組至流道並作 distrosync rpm 軟體包"
 
 #: dnf/cli/commands/module.py:302
-#, fuzzy
-#| msgid "remove all modular packages"
 msgid "locate a module the modular packages belong to"
-msgstr "移除所有模組化軟體包"
+msgstr "定位出模組化軟體包所屬的模組"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
@@ -1747,14 +1725,10 @@ msgid "show only results that conflict REQ"
 msgstr "只顯示衝突 REQ 的結果"
 
 #: dnf/cli/commands/repoquery.py:138
-#, fuzzy
-#| msgid ""
-#| "shows results that requires, suggests, supplements, enhances,or "
-#| "recommends package provides and files REQ"
 msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
-msgstr "顯示提供的必須、建議、補充、增強或推薦軟體包和檔案 REQ 結果"
+msgstr "顯示要求、建議、補充、增強或推薦軟體包所提供和檔案 REQ 的結果"
 
 #: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
@@ -1766,7 +1740,7 @@ msgstr "只顯示提供 REQ 的結果"
 
 #: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
-msgstr "只顯示需要軟體包提供者與檔案 REQ 的結果"
+msgstr "只顯示要求的軟體包所提供與檔案 REQ 的結果"
 
 #: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
@@ -1823,7 +1797,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
-msgstr "亦列出未作用中模組串流的軟體包"
+msgstr "亦列出未作用中模組流道的軟體包"
 
 #: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
@@ -1980,9 +1954,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
-"選項 '--resolve' 需要與 '--conflicts', '--depends', '--enhances', '--"
-"provides', '--recommends', '--requires', '--requires-pre', '--suggests' 或 "
-"'--supplements' 選項一起使用"
+"「--resolve」選項必須與 '--conflicts'、'--depends'、'--enhances'、'--"
+"provides'、'--recommends'、'--requires'、'--requires-pre'、'--suggests' 或 '"
+"--supplements' 選項一同使用"
 
 #: dnf/cli/commands/repoquery.py:308
 msgid ""
@@ -1990,13 +1964,13 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"「--recursive」選項必須與「--whatrequires <REQ>」一起使用（可以選擇與「--"
-"alldeps」一起使用，但不可以是「--exactdeps」），或是與「--requires <REQ> --"
-"resolve」一起使用"
+"「--recursive」選項必須與「--whatrequires <REQ>」一同使用（可以選擇與「--alld"
+"eps」一同使用，但不可以是「--exactdeps」），或是與「--requires <REQ> "
+"--resolve」一同使用"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
-msgstr "{} 引數需要 --whatrequires 或 --whatdepends 選項"
+msgstr "{} 引數要求有 --whatrequires 或 --whatdepends 選項"
 
 #. TRANSLATORS: This is the date format for a changelog
 #. in dnf repoquery. You are encouraged to change it
@@ -2007,22 +1981,14 @@ msgstr "{} 引數需要 --whatrequires 或 --whatdepends 選項"
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%Y年%b%d日（%a）"
 
 #: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
 msgstr "軟體包 {} 不包含任何檔案"
 
 #: dnf/cli/commands/repoquery.py:572
-#, fuzzy, python-brace-format
-#| msgid ""
-#| "No valid switch specified\n"
-#| "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-#| "recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-#| "tree]\n"
-#| "\n"
-#| "description:\n"
-#| "  For the given packages print a tree of thepackages."
+#, python-brace-format
 msgid ""
 "No valid switch specified\n"
 "usage: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
@@ -2033,12 +1999,11 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "未指定有效的開關選項\n"
-"用法：{prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
-"tree]\n"
+"用法：{prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--recom"
+"mends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
 "\n"
 "描述：\n"
-"  列出提供軟體包的樹狀圖。"
+"  列出指定軟體包的軟體包樹狀圖。"
 
 #. TRANSLATORS: This is the time format for dnf history list.
 #. You can change it but do it with caution because the output
@@ -2048,7 +2013,7 @@ msgstr ""
 #. TRANSLATORS: This is the default time format for dnf repoquery.
 #: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2115,7 +2080,7 @@ msgstr "執行互動式 {prog} shell"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
-msgstr "SCRIPT"
+msgstr "指令稿"
 
 #: dnf/cli/commands/shell.py:69
 #, python-brace-format
@@ -2485,7 +2450,7 @@ msgstr "依賴關係解析完畢。"
 #: dnf/cli/option_parser.py:65
 #, python-format
 msgid "Command line error: %s"
-msgstr "指令列錯誤：%s"
+msgstr "命令列錯誤：%s"
 
 #: dnf/cli/option_parser.py:104
 #, python-format
@@ -2555,7 +2520,7 @@ msgstr "透過跳過軟體包來解決問題"
 
 #: dnf/cli/option_parser.py:210
 msgid "show command help"
-msgstr "顯示指令說明"
+msgstr "顯示命令說明"
 
 #: dnf/cli/option_parser.py:214
 msgid "allow erasing of installed packages to resolve dependencies"
@@ -2575,7 +2540,7 @@ msgstr "完全從系統快取中執行而不更新快取"
 
 #: dnf/cli/option_parser.py:227
 msgid "maximum command wait time"
-msgstr "最大指令等待時間"
+msgstr "最大命令等待時間"
 
 #: dnf/cli/option_parser.py:230
 msgid "debugging output level"
@@ -2587,7 +2552,7 @@ msgstr "傾印詳細的解決結果至檔案"
 
 #: dnf/cli/option_parser.py:237
 msgid "show duplicates, in repos, in list/search commands"
-msgstr "顯示在軟體庫和 list/search 指令中的重複項目"
+msgstr "顯示在軟體庫和 list/search 命令中的重複項目"
 
 #: dnf/cli/option_parser.py:240
 msgid "error output level"
@@ -2672,7 +2637,7 @@ msgstr "控制使用什麼顏色"
 
 #: dnf/cli/option_parser.py:307
 msgid "set metadata as expired before running the command"
-msgstr "在執行指令前，設定中介資料為過期狀態"
+msgstr "在執行命令前，設定中介資料為過期狀態"
 
 #: dnf/cli/option_parser.py:310
 msgid "resolve to IPv4 addresses only"
@@ -2732,11 +2697,11 @@ msgstr "強制使用架構"
 
 #: dnf/cli/option_parser.py:377
 msgid "List of Main Commands:"
-msgstr "主要指令清單："
+msgstr "主要命令清單："
 
 #: dnf/cli/option_parser.py:378
 msgid "List of Plugin Commands:"
-msgstr "插件指令清單："
+msgstr "插件命令清單："
 
 #: dnf/cli/option_parser.py:415
 #, python-format
@@ -3096,11 +3061,11 @@ msgstr "正在停用模組設定檔"
 
 #: dnf/cli/output.py:1107
 msgid "Enabling module streams"
-msgstr "正在啟用模組串流"
+msgstr "正在啟用模組流道"
 
 #: dnf/cli/output.py:1115
 msgid "Switching module streams"
-msgstr "正在切換模組串流"
+msgstr "正在切換模組流道"
 
 #: dnf/cli/output.py:1123
 msgid "Disabling modules"
@@ -3141,7 +3106,7 @@ msgid ""
 "(add '%s' to command line to force their upgrade)"
 msgstr ""
 "略過有衝突的軟體包：\n"
-"（加入「%s」到指令列中來強制升級）"
+"（加入「%s」到命令列中來強制升級）"
 
 #: dnf/cli/output.py:1203
 #, python-format
@@ -3227,7 +3192,7 @@ msgstr "系統"
 
 #: dnf/cli/output.py:1517
 msgid "Command line"
-msgstr "指令列"
+msgstr "命令列"
 
 #. TRANSLATORS: user names who executed transaction in history command output
 #: dnf/cli/output.py:1530
@@ -3357,7 +3322,7 @@ msgstr "發行版本  ："
 
 #: dnf/cli/output.py:1776 dnf/cli/output.py:1778
 msgid "Command Line   :"
-msgstr "指令列    ："
+msgstr "命令列    ："
 
 #: dnf/cli/output.py:1783 dnf/cli/output.py:1785
 msgid "Comment        :"
@@ -3691,12 +3656,9 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "將不會安裝 RPM 原始檔（%s）。"
 
 #: dnf/dnssec.py:171
-#, fuzzy
-#| msgid ""
-#| "Configuration option 'gpgkey_dns_verification' requires libunbound ({})"
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
-msgstr "「gpgkey_dns_verification」設定選項需要 libunbound ({})"
+msgstr "「gpgkey_dns_verification」組態選項要求有 python3-unbound ({})"
 
 #: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
@@ -3778,7 +3740,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
-msgstr "正在啟用「{}」的不同串流。"
+msgstr "正在啟用「{}」的不同流道。"
 
 #: dnf/module/__init__.py:27
 msgid "Nothing to show."
@@ -3804,21 +3766,19 @@ msgstr "沒有 {}:{} 模組的設定檔"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "沒有這個流道：{}"
 
 #: dnf/module/exceptions.py:39
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No enabled stream for module: {}"
-msgstr "沒有 {}:{} 模組的設定檔"
+msgstr "此模組沒有啟用的流道：{}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "無法同時為「{}」模組啟用更多流道"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "此模組有啟用不同流道：{}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3829,10 +3789,8 @@ msgid "Specified profile not installed for {}"
 msgstr ""
 
 #: dnf/module/exceptions.py:70
-#, fuzzy
-#| msgid "No profile specified for '{}', please specify profile."
 msgid "No stream specified for '{}', please specify stream"
-msgstr "沒有為 {} 指定的設定檔，請指定設定檔。"
+msgstr "沒有為「{}」指定的流道，請指定流道"
 
 #: dnf/module/exceptions.py:82
 #, fuzzy
@@ -3913,10 +3871,9 @@ msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr "所有「{1}:{2}」模組中的「{0}」引數符合項目皆未作用中"
 
 #: dnf/module/module_base.py:228
-#, fuzzy, python-brace-format
-#| msgid "Default profile {} not available in module {}:{}"
+#, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr "{} 預設設定檔無法在 {}:{} 模組使用"
+msgstr "安裝的「{0}」設定檔在「{1}」模組「{2}」流道中無法使用"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
@@ -3948,11 +3905,13 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"'{argument}' 引數與「{module}」模組的 {stream_count} "
+"個流道（「{streams}」）相符，但流道皆未啟用或是作為預設"
 
 #: dnf/module/module_base.py:509
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
-msgstr "只需要模組名稱。忽略引數中的非必要資訊：「{}」"
+msgstr "只要求模組名稱。忽略引數中的非必要資訊：「{}」"
 
 #: dnf/module/module_base.py:844
 msgid "No match for package {}"
@@ -4079,7 +4038,7 @@ msgstr "正在重新安裝"
 #. TODO: 'Removing'?
 #: dnf/transaction.py:90
 msgid "Erasing"
-msgstr "抹除"
+msgstr "正在抹除"
 
 #. TRANSLATORS: This is for a single package currently being upgraded.
 #: dnf/transaction.py:92
@@ -4089,15 +4048,15 @@ msgstr "正在升級"
 
 #: dnf/transaction.py:96
 msgid "Verifying"
-msgstr "核驗"
+msgstr "正在核驗"
 
 #: dnf/transaction.py:97
 msgid "Running scriptlet"
-msgstr "執行小令稿"
+msgstr "正執行小令稿"
 
 #: dnf/transaction.py:99
 msgid "Preparing"
-msgstr "準備"
+msgstr "正在準備"
 
 #: dnf/transaction_sr.py:66
 #, python-brace-format
@@ -4276,7 +4235,7 @@ msgstr "已重裝"
 
 #: dnf/util.py:620
 msgid "Skipped"
-msgstr "跳過"
+msgstr "已跳過"
 
 #: dnf/util.py:621
 msgid "Removed"
