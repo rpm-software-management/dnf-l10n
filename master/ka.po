@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-23 01:34+0000\n"
-"PO-Revision-Date: 2023-08-23 04:21+0000\n"
+"PO-Revision-Date: 2023-08-25 12:21+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ka/>\n"
@@ -614,6 +614,8 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} მხოლოდ გადმოწერს პაკეტებს, დააყენებს gpg გასაღებებს და ტრანზაქციას "
+"შეამოწმებს."
 
 #: dnf/cli/cli.py:219
 msgid "Operation aborted."
@@ -632,6 +634,8 @@ msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
 msgstr ""
+"უყურადღებოდ გაშვებისას გასაღებების ავტომატური შემოტანა აკრძალულია.\n"
+"გადასაფარად გამოიყენეთ \"-y\"."
 
 #: dnf/cli/cli.py:337
 msgid "Changelogs for {}"
@@ -1439,15 +1443,15 @@ msgstr "მოდულის საწყის მდგომარეობ�
 
 #: dnf/cli/commands/module.py:205
 msgid "install a module profile including its packages"
-msgstr ""
+msgstr "მოდულის პროფილის დაყენება მისი პაკეტების ჩათვლით"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "აქტიურ ნაკადთან ასოცირებული პაკეტების განახლება"
 
 #: dnf/cli/commands/module.py:243
 msgid "remove installed module profiles and their packages"
-msgstr ""
+msgstr "დაყენებული მოდულის პროფილებისა და მათი პაკეტების წაშლა"
 
 #: dnf/cli/commands/module.py:267
 msgid "Package {} belongs to multiple modules, skipping"
@@ -1879,7 +1883,7 @@ msgstr "პაკეტის მიერ ნარჩევი შესაძ
 
 #: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
-msgstr ""
+msgstr "შესაძლებლობების გამოტანა, რომლის ჩანაცვლებაც ამ პაკეტს შეუძლია."
 
 #: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
@@ -2627,7 +2631,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:355
 msgid "Force the use of an architecture"
-msgstr ""
+msgstr "არქიტექტურის ნაძალადევი გამოყენება"
 
 #: dnf/cli/option_parser.py:377
 msgid "List of Main Commands:"
@@ -3157,7 +3161,7 @@ msgstr "ინფორმაცია შეცდომების ისტ�
 
 #: dnf/cli/output.py:1600
 msgid "No transaction ID, or package, given"
-msgstr ""
+msgstr "ტრანზაქციის ID ან პაკეტი მითითებული არაა"
 
 #: dnf/cli/output.py:1658
 msgid "Erased"
@@ -3424,7 +3428,7 @@ msgstr ""
 #: dnf/comps.py:599
 #, python-format
 msgid "Environment id '%s' does not exist."
-msgstr ""
+msgstr "გარემოს ID '%s' არ არსებობს."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
 #: dnf/transaction_sr.py:507
@@ -3519,7 +3523,7 @@ msgstr ""
 
 #: dnf/conf/read.py:87
 msgid "Repository '{}': Error parsing config: {}"
-msgstr ""
+msgstr "რეპოზიტორია '{}': შეცდომა კონფიგურაციის დამუშავებისას: {}"
 
 #: dnf/conf/read.py:93
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
@@ -3619,7 +3623,7 @@ msgstr "დელტა RPM-ის აგება ვერ მოხერხ�
 
 #: dnf/drpm.py:146
 msgid "Checksum of the delta-rebuilt RPM failed"
-msgstr ""
+msgstr "დელტათი თავიდან აგებული RPM-ის საკონტროლო ჯამის შემოწმება ჩავარდა"
 
 #: dnf/drpm.py:149
 msgid "done"
@@ -3693,7 +3697,7 @@ msgstr "ასეთი ნაკადი არ არსებობს: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr ""
+msgstr "ჩართული ნაკადი აღმოჩენილი არაა მოდულისთვის: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
@@ -3701,7 +3705,7 @@ msgstr "მოდულიდან '{}' ერთდროულად მე�
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "ჩართულია სხვა ნაკადი მოდულისთვის: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -3709,7 +3713,7 @@ msgstr "ასეთი პროფილი არ არსებობს: {
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "{}-სთვის მითითებული პროფილი დაყენებული არაა"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
@@ -3890,7 +3894,7 @@ msgstr ""
 #: dnf/repo.py:347
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
-msgstr ""
+msgstr "მიმდინარეობს უსწრაფესი ანარეკლის დადგენა ( %s ჰოსტი)... "
 
 #: dnf/repodict.py:58
 #, python-format
@@ -3989,12 +3993,12 @@ msgstr ""
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "არასწორი ძირითადი ვერსია \"{major}\". მოველოდი რიცხვს."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "არასწორი დამხმარე ვერსია \"{minor}\". მოველოდი რიცხვს."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
@@ -4011,7 +4015,7 @@ msgstr ""
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "{id}\"-ის მოულოდნელი ტიპი. მოველოდი {exp}."
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
@@ -4065,7 +4069,7 @@ msgstr ""
 #: dnf/transaction_sr.py:377
 #, python-format
 msgid "Group id '%s' is not available."
-msgstr ""
+msgstr "ჯგუფის id '%s' ხელმისაწვდომი არაა."
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
@@ -4076,7 +4080,7 @@ msgstr ""
 #: dnf/transaction_sr.py:431
 #, python-format
 msgid "Group id '%s' is not installed."
-msgstr ""
+msgstr "ჯგუფის id '%s' დაყენებული არაა."
 
 #: dnf/transaction_sr.py:442
 #, python-format
@@ -4130,7 +4134,7 @@ msgstr "პრობლემა"
 
 #: dnf/util.py:470
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "ტრანზაქციის ჩანაწერი ვერ ვიპოვე გასაღებისთვის: {}"
 
 #: dnf/util.py:480
 msgid "TransactionSWDBItem not found for key: {}"
