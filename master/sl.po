@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-14 01:48+0000\n"
-"PO-Revision-Date: 2023-09-15 18:46+0000\n"
+"PO-Revision-Date: 2023-09-16 12:57+0000\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.0.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -57,17 +57,17 @@ msgstr "Posodobitve na voljo na '%s'."
 #: dnf/automatic/emitter.py:117
 #, python-format
 msgid "Failed to send an email via '%s': %s"
-msgstr ""
+msgstr "E-pošte ni bilo mogoče poslati prek '%s': %s"
 
 #: dnf/automatic/emitter.py:147
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
-msgstr ""
+msgstr "Izvedba ukaza '%s' ni uspela: vrnjeno %d"
 
 #: dnf/automatic/main.py:165
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr "Neznana konfiguracijska vrednost:  %s=%s v %s; %s"
+msgstr "Neznana konfiguracijska vrednost: %s=%s v %s; %s"
 
 #: dnf/automatic/main.py:169 dnf/conf/config.py:158
 #, python-format
@@ -89,8 +89,10 @@ msgstr "Zagon dnf - samodejni."
 #: dnf/automatic/main.py:322
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Spi za {} sekundo"
+msgstr[1] "Spi za {} sekundi"
+msgstr[2] "Spi za {} sekunde"
+msgstr[3] "Spi za {} sekund"
 
 #: dnf/automatic/main.py:329
 msgid "System is off-line."
@@ -117,18 +119,21 @@ msgstr "Nalaganje skladišča '{}' ni uspelo"
 #: dnf/base.py:334
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Predpomnjenje časovnika metapodatkov je onemogočeno pri izvajanju na merjeni "
+"povezavi."
 
 #: dnf/base.py:339
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
+"Predpomnjenje časovnika metapodatkov je onemogočeno, ko deluje na baterijo."
 
 #: dnf/base.py:344
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Predpomnjenje časovnika metapodatkov je onemogočeno."
 
 #: dnf/base.py:349
 msgid "Metadata cache refreshed recently."
-msgstr ""
+msgstr "Predpomnilnik metapodatkov je bil nedavno osvežen."
 
 #: dnf/base.py:355 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
@@ -137,54 +142,56 @@ msgstr "Ni omogočenih skladišč v \"{}\"."
 #: dnf/base.py:362
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: ne bo nikoli potekel in ne bo osvežen."
 
 #: dnf/base.py:364
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: je potekel in bo osvežen."
 
 #. expires within the checking period:
 #: dnf/base.py:368
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: metapodatki bodo potekli po %d sekundah in bodo zdaj osveženi"
 
 #: dnf/base.py:372
 #, python-format
 msgid "%s: will expire after %d seconds."
-msgstr ""
+msgstr "%s: bo potekel po %d sekundah."
 
 #. performs the md sync
 #: dnf/base.py:378
 msgid "Metadata cache created."
-msgstr ""
+msgstr "Predpomnilnik metapodatkov ustvarjen."
 
 #: dnf/base.py:411 dnf/base.py:478
 #, python-format
 msgid "%s: using metadata from %s."
-msgstr ""
+msgstr "%s: uporaba metapodatkov iz %s."
 
 #: dnf/base.py:423 dnf/base.py:491
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "Prezrtje repozitorijev: %s"
 
 #: dnf/base.py:426
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr ""
+msgstr "Zadnje preverjanje veljavnosti metapodatkov: pred %s na %s."
 
 #: dnf/base.py:519
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
+"Preneseni paketi so bili shranjeni v predpomnilniku do naslednje uspešne "
+"transakcije."
 
 #: dnf/base.py:521
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
-msgstr ""
+msgstr "Predpomnjene pakete lahko odstranite tako, da izvedete '%s'."
 
 #: dnf/base.py:653
 #, python-format
@@ -194,11 +201,11 @@ msgstr ""
 #: dnf/base.py:711
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr ""
+msgstr "Ni bilo mogoče dodati datoteke skupin za repozitorij: %s - %s"
 
 #: dnf/base.py:973
 msgid "Running transaction check"
-msgstr ""
+msgstr "Izvaja se preverjanje transakcije"
 
 #: dnf/base.py:981
 msgid "Error: transaction check vs depsolve:"
@@ -206,69 +213,72 @@ msgstr ""
 
 #: dnf/base.py:987
 msgid "Transaction check succeeded."
-msgstr ""
+msgstr "Preverjanje transakcije je uspelo."
 
 #: dnf/base.py:990
 msgid "Running transaction test"
-msgstr ""
+msgstr "Izvajanje preizkusa transakcije"
 
 #: dnf/base.py:1000 dnf/base.py:1157
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:1001
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Napaka pri preizkusu transakcije:"
 
 #: dnf/base.py:1012
 msgid "Transaction test succeeded."
-msgstr ""
+msgstr "Preizkus transakcije je uspel."
 
 #: dnf/base.py:1036
 msgid "Running transaction"
-msgstr ""
+msgstr "Transakcija v teku"
 
 #: dnf/base.py:1076
 msgid "Disk Requirements:"
-msgstr ""
+msgstr "Zahteve za disk:"
 
 #: dnf/base.py:1079
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "V datotečnem sistemu {1} potrebujete vsaj {0} MB več prostora."
+msgstr[1] "V datotečnem sistemu {1} potrebujete vsaj {0} MB več prostora."
+msgstr[2] "V datotečnem sistemu {1} potrebujete vsaj {0} MB več prostora."
+msgstr[3] "V datotečnem sistemu {1} potrebujete vsaj {0} MB več prostora."
 
 #: dnf/base.py:1086
 msgid "Error Summary"
-msgstr ""
+msgstr "Povzetek napak"
 
 #: dnf/base.py:1112
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB spremenjen zunaj {prog}."
 
 #: dnf/base.py:1158 dnf/base.py:1166
 msgid "Could not run transaction."
-msgstr ""
+msgstr "Transakcije ni bilo mogoče izvesti."
 
 #: dnf/base.py:1161
 msgid "Transaction couldn't start:"
-msgstr ""
+msgstr "Transakcije ni bilo mogoče začeti:"
 
 #: dnf/base.py:1175
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr ""
+msgstr "Transakcijske datoteke %s ni bilo mogoče odstraniti"
 
 #: dnf/base.py:1257
 msgid "Some packages were not downloaded. Retrying."
-msgstr ""
+msgstr "Nekateri paketi niso bili preneseni. Ponovni poskus."
 
 #: dnf/base.py:1287
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
+"Delta RPM je zmanjšala %.1f MB posodobitev na %.1f MB (%.1f%% prihranjeno)"
 
 #: dnf/base.py:1291
 #, python-format
@@ -279,69 +289,70 @@ msgstr ""
 #: dnf/base.py:1333
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
+"Lokalnih paketov ni mogoče dodati, ker transakcijsko opravilo že obstaja"
 
 #: dnf/base.py:1347
 msgid "Could not open: {}"
-msgstr ""
+msgstr "Ni bilo mogoče odpreti: {}"
 
 #: dnf/base.py:1385
 #, python-format
 msgid "Public key for %s is not installed"
-msgstr ""
+msgstr "Javni ključ za %s ni nameščen"
 
 #: dnf/base.py:1389
 #, python-format
 msgid "Problem opening package %s"
-msgstr ""
+msgstr "Težava pri odpiranju paketa %s"
 
 #: dnf/base.py:1397
 #, python-format
 msgid "Public key for %s is not trusted"
-msgstr ""
+msgstr "Javni ključ za %s ni zaupanja vreden"
 
 #: dnf/base.py:1401
 #, python-format
 msgid "Package %s is not signed"
-msgstr ""
+msgstr "Paket %s ni podpisan"
 
 #: dnf/base.py:1431
 #, python-format
 msgid "Cannot remove %s"
-msgstr ""
+msgstr "%s ni mogoče odstraniti"
 
 #: dnf/base.py:1435
 #, python-format
 msgid "%s removed"
-msgstr ""
+msgstr "%s odstranjen"
 
 #: dnf/base.py:1719
 msgid "No match for group package \"{}\""
-msgstr ""
+msgstr "Ni ujemanja za grupni paket \"{}\""
 
 #: dnf/base.py:1801
 #, python-format
 msgid "Adding packages from group '%s': %s"
-msgstr ""
+msgstr "Dodajanje paketov iz grupe '%s': %s"
 
 #: dnf/base.py:1824 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
-msgstr ""
+msgstr "Ni kaj početi."
 
 #: dnf/base.py:1842
 msgid "No groups marked for removal."
-msgstr ""
+msgstr "Nobena grupa ni označena za odstranitev."
 
 #: dnf/base.py:1876
 msgid "No group marked for upgrade."
-msgstr ""
+msgstr "Nobena skupina ni označena za posodobitev."
 
 #: dnf/base.py:2090
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr ""
+msgstr "Paket %s ni nameščen, ni ga mogoče podgraditi."
 
 #: dnf/base.py:2092 dnf/base.py:2111 dnf/base.py:2124 dnf/base.py:2155
 #: dnf/base.py:2225 dnf/base.py:2233 dnf/base.py:2367 dnf/cli/cli.py:417
@@ -352,77 +363,77 @@ msgstr ""
 #: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
-msgstr ""
+msgstr "Ni ujemanja za argument: %s"
 
 #: dnf/base.py:2099
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Paket %s nižje različice je že nameščen, ni ga mogoče podgraditi."
 
 #: dnf/base.py:2122
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr ""
+msgstr "Paket %s ni nameščen, ni ga mogoče znova namestiti."
 
 #: dnf/base.py:2137
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
-msgstr ""
+msgstr "Datoteka %s je izvorni paket in je ni mogoče posodobiti, prezrta."
 
 #: dnf/base.py:2152
 #, python-format
 msgid "Package %s not installed, cannot update it."
-msgstr ""
+msgstr "Paket %s ni nameščen, ni ga mogoče posodobiti."
 
 #: dnf/base.py:2162
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
-msgstr ""
+msgstr "Ista ali novejša različica %s je že nameščena, ni je mogoče posodobiti."
 
 #: dnf/base.py:2222 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
-msgstr ""
+msgstr "Paket %s je na voljo, vendar ni nameščen."
 
 #: dnf/base.py:2228
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr ""
+msgstr "Paket %s je na voljo, vendar nameščen za drugo arhitekturo."
 
 #: dnf/base.py:2253
 #, python-format
 msgid "No package %s installed."
-msgstr ""
+msgstr "Ni nameščenega nobenega paketa %s."
 
 #: dnf/base.py:2271 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Neveljavna oblika: %s"
 
 #: dnf/base.py:2286 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
-msgstr ""
+msgstr "Ni paketov označenih za odstranitev."
 
 #: dnf/base.py:2374 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr ""
+msgstr "Paketi za argument %s so na voljo, vendar niso nameščeni."
 
 #: dnf/base.py:2379
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Paket %s najnižje različice je že nameščen, ni ga mogoče podgraditi."
 
 #: dnf/base.py:2479
 msgid "No security updates needed, but {} update available"
-msgstr ""
+msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
 #: dnf/base.py:2481
 msgid "No security updates needed, but {} updates available"
-msgstr ""
+msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
 #: dnf/base.py:2485
 msgid "No security updates needed for \"{}\", but {} update available"
