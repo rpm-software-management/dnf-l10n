@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-17 01:39+0000\n"
-"PO-Revision-Date: 2023-09-15 18:46+0000\n"
+"PO-Revision-Date: 2023-09-23 17:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ka/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -602,6 +602,12 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"მოდულის ნაკადების პირდაპირი გადართვა შეუძლებელია, თუ ეს კონფიგურაციის "
+"პარამეტრის, module_stream_switch, არაა ჩართული.\n"
+"რეკომენდებულია, წაშალოთ მოდული შემცველობა და მისი მნიშვნელობები საწყისზე "
+"დააბრუნოთ, ბრძანების, '{prog} module reset <მოდულის_სახლი>' გამოყენებით. მას "
+"შემდეგ, რაც მოდულის მნიშვნელობებს საწყისზე დააბრუნებთ, შეგიძლიათ, სხვა "
+"ნაკადი ჩართოთ."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -691,6 +697,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"დამთხვევები აღმოჩენილი არაა. თუ ეძებთ ფაილს, სცადეთ, სრული ბილიკი, ან "
+"დასაწყისში ვაილდკარდის პრეფიქსი (\"*/\") მიუთითოთ."
 
 #: dnf/cli/cli.py:673 dnf/cli/commands/shell.py:237
 #, python-format
@@ -738,18 +746,25 @@ msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir ან --downloaddir პარამეტრი --downloadonly, download ან system-"
+"upgrade ბრძანებასთან ერთად უნდა გამოიყენოთ."
 
 #: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled, --disable და --set-disabled პარამეტრები config-"
+"manager ბრძანებასთან ერთად უნდა გამოიყენოთ."
 
 #: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
+"გაფრთხილება: GPG ხელმოწერის ნაძალადევად დაყენება, როგორც ამას აქტიური RPM-ის "
+"უსაფრთხოების პოლიტიკა მოითხოვს. (იმის შესახებ, როგორ მოიცილოთ ეს "
+"შეტყობინება, dnf.conf(5)-ში იხილეთ 'gpgcheck')"
 
 #: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
@@ -760,6 +775,7 @@ msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
+"რელიზის ვერსიის დადგენა შეუძლებელია (მისათითებლად გამოიყენეთ '--releasever')"
 
 #: dnf/cli/cli.py:1018 dnf/cli/commands/repoquery.py:482
 msgid "argument {}: not allowed with argument {}"
@@ -815,6 +831,19 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"თქვენ ჩართეთ პაკეტების GPG გასაღებებით შემოწმება. ეს კარგი რამაა. მაგრამ, \n"
+"თქვენ GPG-ის არცერთი საჯარო გასაღები დაყენებული არ გაქვთ. საჭიროა, "
+"გადმოწეროთ \n"
+"გასაღებები პაკეტებისთვის, რომლებიც გადამოწმებაც გნებავთ და დააყენოთ ისინი.\n"
+"ამისი გაკეთება შეგიძლიათ ბრძანებით:\n"
+"        rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"ან შეგიძლიათ გასაღებამდე ბმული რეპოზიტორიის აღწერის ფაილის\n"
+"'gpgkey' პარამეტრს მიუთითოთ და {prog}\n"
+"მას თვითონ დააყენებს.\n"
+"\n"
+"მეტი ინფორმაციისთვის დაუკავშირდით პაკეტის ან დისტრიბუტივის მომწოდებელს."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
@@ -934,7 +963,7 @@ msgstr "პაკეტების განახლებები ნაპ�
 
 #: dnf/cli/commands/__init__.py:721
 msgid "run commands on top of all packages in given repository"
-msgstr ""
+msgstr "მითითებულ საქაღალდეში ყველა პაკეტზე ბრძანებების გაშვება"
 
 #: dnf/cli/commands/__init__.py:760
 msgid "REPOID"
@@ -1050,6 +1079,7 @@ msgstr "დამთხვევის გარეშე: %s"
 msgid ""
 "remove all unneeded packages that were originally installed as dependencies"
 msgstr ""
+"თავის დროზე დამოკიდებულების სახით დაყენებული ყველა არასაჭირო პაკეტის წაშლა"
 
 #: dnf/cli/commands/autoremove.py:46 dnf/cli/commands/remove.py:59
 msgid "Package to remove"
@@ -1093,7 +1123,7 @@ msgstr "{} ამოღებულია {}-ის მიერ"
 
 #: dnf/cli/commands/check.py:138
 msgid "{} provides {} but it cannot be found"
-msgstr ""
+msgstr "{} წარმოადგენს {}-ს, მაგრამ ვერ ვიპოვე"
 
 #: dnf/cli/commands/clean.py:68
 #, python-format
@@ -1125,17 +1155,19 @@ msgstr[0] "წაშლილია %d ფაილი"
 #: dnf/cli/commands/clean.py:119 dnf/lock.py:139
 #, python-format
 msgid "Waiting for process with pid %d to finish."
-msgstr ""
+msgstr "ველოდები პროცესის, PID-ით %d, დასრულებას."
 
 #: dnf/cli/commands/deplist.py:32
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
 msgstr ""
+"[მოძველებულია. გამოიყენეთ repoquery --deplist] პაკეტის დამოკიდებულებებისა და "
+"ამ დამოკიდებულებების მომწოდებელი პაკეტების სია"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr ""
+msgstr "დაყენებული პაკეტების სინქრონიზაცია უახლეს ხელმისაწვდომ ვერსიებამდე"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -1225,7 +1257,7 @@ msgstr "ქვებრძანებების არასწორი ჯ�
 
 #: dnf/cli/commands/group.py:399
 msgid "Unable to find a mandatory group package."
-msgstr ""
+msgstr "აუცილებელი ჯგუფის პაკეტი ვერ ვიპოვე."
 
 #: dnf/cli/commands/history.py:48
 msgid "display, or use, the transaction history"
@@ -1233,31 +1265,39 @@ msgstr "ტრანზაქციის ისტორიის ჩვენ�
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr ""
+msgstr "ბრძანებისთვის store, ფაილის ბილიკი, სადაც ტრანზაქციის შენახვა მოხდება"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
+"ბრძანებისთვის reply, ტრანზაქციაში მყოფი პაკეტების დაყენებულებთან შედარება არ "
+"მოხდება"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
+"ბრძანებისთვის reply, ტრანზაქციაში ჩამატებული დამატებითი პაკეტები არ "
+"შემოწმდება"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
+"ბრძანებისთვის reply, გამოტოვებული იქნება პაკეტები, რომლებიც ხელმიუწვდომელია, "
+"ან რომლის დამოკიდებულებებიც ხელმისაწვდომი არაა"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
 msgstr ""
+"აღმოჩენილია ერთზე მეტი ტრანზაქციის ID.\n"
+"'{}'-ს ერთი ტრანზაქციის ID ან პაკეტის სახელი სჭირდება."
 
 #: dnf/cli/commands/history.py:101
 msgid "No transaction file name given."
@@ -1265,7 +1305,7 @@ msgstr "ტრანზაქციის ფაილის სახელი 
 
 #: dnf/cli/commands/history.py:103
 msgid "More than one argument given as transaction file name."
-msgstr ""
+msgstr "ტრანზაქციის ფაილის სახელის მაგიერ მითითებულია ერთზე მეტი არგუმენტი."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1274,7 +1314,7 @@ msgstr "ტრანზაქციის ID ან პაკეტი მით
 #: dnf/cli/commands/history.py:142
 #, python-format
 msgid "You don't have access to the history DB: %s"
-msgstr ""
+msgstr "არ გაქვთ წვდომა ისტორიის ბაზასთან: %s"
 
 #: dnf/cli/commands/history.py:151
 #, python-format
@@ -1282,6 +1322,8 @@ msgid ""
 "Cannot undo transaction %s, doing so would result in an inconsistent package "
 "database."
 msgstr ""
+"ტრანზაქციის %s გაუქმება შეუძლებელია. ამის გაკეთებით პაკეტების ბაზა "
+"არამდგრადი გახდებოდა."
 
 #: dnf/cli/commands/history.py:156
 #, python-format
@@ -1289,6 +1331,8 @@ msgid ""
 "Cannot rollback transaction %s, doing so would result in an inconsistent "
 "package database."
 msgstr ""
+"ტრანზაქციის %s დაბრუნება შეუძლებელია. ამისი გაკეთება პაკეტების ბაზის "
+"არასაიმედოობას გამოიწვევდა."
 
 #: dnf/cli/commands/history.py:175
 msgid "No transaction ID given"
@@ -1322,16 +1366,21 @@ msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
 msgstr ""
+"არასწორი ტრანზაქციის ID-ის დიაპაზონის აღწერა '{}'.\n"
+"გამოიყენეთ '<ტრანზაქციის-id>..<ტრანზაქციის-id>'."
 
 #: dnf/cli/commands/history.py:294
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
+"'{}'-ის ტრანზაქციის ID-ში გადაყვანა შეუძლებელია.\n"
+"გამოიყენეთ 'ნომერი>', 'last', 'last-<ნომერი>'."
 
 #: dnf/cli/commands/history.py:323
 msgid "No transaction which manipulates package '{}' was found."
 msgstr ""
+"ტრანზაქცია, რომელიც პაკეტის, '{}', მანიპულირებას ახდენს, აღმოჩენილი არაა."
 
 #: dnf/cli/commands/history.py:368
 msgid "{} exists, overwrite?"
@@ -1351,11 +1400,11 @@ msgstr "ტრანზაქციის შენახვის შეცდ�
 
 #: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
-msgstr ""
+msgstr "გაფრთხილება. ტრანზაქციის გაშვებისას აღმოჩენილია შემდეგი პრობლემები:"
 
 #: dnf/cli/commands/install.py:47
 msgid "install a package or packages on your system"
-msgstr ""
+msgstr "პაკეტის ან პაკეტების დაყენება თქვენს სისტემაზე"
 
 #: dnf/cli/commands/install.py:53
 msgid "Package to install"
@@ -1368,12 +1417,12 @@ msgstr "დამთხვევის გარეშე"
 #: dnf/cli/commands/install.py:131
 #, python-format
 msgid "Not a valid rpm file path: %s"
-msgstr ""
+msgstr "არასწორი rpm ფაილის ბილიკი: %s"
 
 #: dnf/cli/commands/install.py:166
 #, python-brace-format
 msgid "There are following alternatives for \"{0}\": {1}"
-msgstr ""
+msgstr "\"{0}\"-თვის ხელმისაწვდომია შემდეგი ალტერნატივები: {1}"
 
 #: dnf/cli/commands/makecache.py:37
 msgid "generate the metadata cache"
@@ -1385,7 +1434,7 @@ msgstr "მიმდინარეობს მეტამონაცემ�
 
 #: dnf/cli/commands/mark.py:39
 msgid "mark or unmark installed packages as installed by user."
-msgstr ""
+msgstr "პაკეტების მომხმარებლის მიერ დაყენებულად მონიშვნა და მოხსნა."
 
 #: dnf/cli/commands/mark.py:44
 msgid ""
@@ -1393,6 +1442,9 @@ msgid ""
 "remove: unmark as installed by user\n"
 "group: mark as installed by group"
 msgstr ""
+"install: მონიშვნა, როგორც მომხმარებლის მიერ დაყენებული\n"
+"remove: მომხმარებლის მიერ დაყენებულობის ალმის მოხსნა\n"
+"group: მონიშვნა, როგორც ჯგუფის მიერ დაყენებული"
 
 #: dnf/cli/commands/mark.py:52
 #, python-format
@@ -1424,10 +1476,12 @@ msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
 msgstr ""
+"გამოიყენება მხოლოდ მოდულის სახელი, ნაკადი, არქიტექტურა ან პროფილი. დანარჩენი "
+"ინფორმაცია არგუმენტში '{}' გამოტოვებული იქნება"
 
 #: dnf/cli/commands/module.py:80
 msgid "list all module streams, profiles and states"
-msgstr ""
+msgstr "ყველა მოდულის ნაკადის, პროფილებისა და მდგომარეობების სია"
 
 #: dnf/cli/commands/module.py:108 dnf/cli/commands/module.py:131
 msgid "No matching Modules to list"
@@ -1443,7 +1497,7 @@ msgstr "მოდულის ნაკადის ჩართვა"
 
 #: dnf/cli/commands/module.py:160
 msgid "disable a module with all its streams"
-msgstr ""
+msgstr "მოდულის გამორთვა ყველა მისი ნაკადით"
 
 #: dnf/cli/commands/module.py:184
 msgid "reset a module"
@@ -1463,11 +1517,11 @@ msgstr "დაყენებული მოდულის პროფილ�
 
 #: dnf/cli/commands/module.py:267
 msgid "Package {} belongs to multiple modules, skipping"
-msgstr ""
+msgstr "პაკეტი {} ერთზე მეტ მოდულს მიეკუთვნება. გამოტოვება"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
-msgstr ""
+msgstr "მოდულის ნაკადის გადართვა და rpm პაკეტების distrosync"
 
 #: dnf/cli/commands/module.py:302
 msgid "locate a module the modular packages belong to"
@@ -1519,7 +1573,7 @@ msgstr "თავიდან დასაყენებელი პაკე�
 
 #: dnf/cli/commands/remove.py:46
 msgid "remove a package or packages from your system"
-msgstr ""
+msgstr "პაკეტის ან პაკეტების წაშლა თქვენი სისტემიდან"
 
 #: dnf/cli/commands/remove.py:53
 msgid "remove duplicated packages"
@@ -1535,7 +1589,7 @@ msgstr "წაშლისთვის დუბლირებული პა�
 
 #: dnf/cli/commands/remove.py:127
 msgid "No old installonly packages found for removal."
-msgstr ""
+msgstr "წასაშლელად ძველი installonly პაკეტები აღმოჩენილი არაა."
 
 #: dnf/cli/commands/repolist.py:38 dnf/cli/commands/updateinfo.py:47
 #: dnf/cli/commands/updateinfo.py:318 dnf/cli/commands/updateinfo.py:364
@@ -1695,6 +1749,8 @@ msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr ""
+"ყველა პაკეტის გამოთხოვა (შემოკლებული ვარიანტი ბრძანებისთვის repoquery '*' ან "
+"უბრალოდ repoquery, არგუმენტის გარეშე)"
 
 #: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
@@ -1717,6 +1773,8 @@ msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
 msgstr ""
+"აჩვენებს შედეგებს, რომლებიც ითხოვენ, გირჩევენ, ანაცვლებენ, აფართოებენ ან "
+"რეკომენდაციებს აძლევენ პაკეტებს და ფაილებს REQ"
 
 #: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
@@ -1728,7 +1786,7 @@ msgstr "მხოლოდ იმ შედეგების ჩვენებ
 
 #: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
-msgstr ""
+msgstr "აჩვენებს შედეგებს, რომლებიც თხოვენ პაკეტის მომწოდებელსა და ფაილებს REQ"
 
 #: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
@@ -1749,20 +1807,27 @@ msgstr "მხოლოდ იმ შედეგების ჩვენებ
 #: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr ""
+"არა პირდაპირი დამოკიდებულებების (ფაილებისა და მომწოდებლების) შემოწმება. "
+"ნაგულისხმევია"
 
 #: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
 msgstr ""
+"დამოკიდებულებების შემოწმება ზუსტად ისე, როგორც მითითებულია. საპირისპიროა "
+"პარამეტრის --alldeps"
 
 #: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
+"გამოიყენება --whatrequires, --requres და --resolve-სთან ერთად. პაკეტების "
+"რეკურსიული გამოთხოვა."
 
 #: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
 msgstr ""
+"ყველა დამოკიდებულების და მათი მომწოდებელი პაკეტების ჩამონათვალის ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:171
 msgid "resolve capabilities to originating package(s)"
@@ -1781,10 +1846,12 @@ msgid ""
 "show N latest packages for a given name.arch (or latest but N if N is "
 "negative)"
 msgstr ""
+"მითითებული name.arch-ს შესაბამისი N უახლესი პაკეტის ჩვენება (ან უახლესი, "
+"მაგრამ N, თუ N უარყოფითია)"
 
 #: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
-msgstr ""
+msgstr "ასევე ჩამოთვლილი იქნება არააქტიური მოდულის ნაკადის პაკეტებიც"
 
 #: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
@@ -1792,7 +1859,7 @@ msgstr "პაკეტის შესახებ დეტალური ი
 
 #: dnf/cli/commands/repoquery.py:188
 msgid "show list of files in the package"
-msgstr ""
+msgstr "პაკეტში არსებული ფაილების სიის ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:191
 msgid "show package source RPM name"
@@ -1808,58 +1875,70 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"პაკეტების სიის ჩვენების ფორმატი: \"%%{name}%%{version}...\". ჭდეების სრული "
+"სიის სანახავად გამოიყენეთ --querytags"
 
 #: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
-msgstr ""
+msgstr "--queryformat-თან ერთად გამოსაყენებლად ხელმისაწვდომი ჭდეების ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:205
 msgid ""
 "use name-epoch:version-release.architecture format for displaying found "
 "packages (default)"
 msgstr ""
+"ნაპოვნი პაკეტების გამოსაჩენად name-epoch:version-release.architecture "
+"ფორმატის გამოყენება (ნაგულიხმევი)"
 
 #: dnf/cli/commands/repoquery.py:208
 msgid ""
 "use name-version-release format for displaying found packages (rpm query "
 "default)"
 msgstr ""
+"აღმოჩენილი პაკეტების საჩვენებლად სახელი-ვერსია-რელიზი ფორმატის გამოყენება "
+"(rpm-ის მოთხოვნის ნაგულისხმევი)"
 
 #: dnf/cli/commands/repoquery.py:214
 msgid ""
 "use epoch:name-version-release.architecture format for displaying found "
 "packages"
 msgstr ""
+"ნაპოვნი პაკეტების საჩვენებლად გამოიყენეთ ფორმატი epoc:name-version-release."
+"architecture"
 
 #: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
-msgstr ""
+msgstr "ჩვენება, რომელ comps ჯგუფშია მონიშნული პაკეტები"
 
 #: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
-msgstr ""
+msgstr "მოთხოვნის შეზღუდვა დაყენებულ დუბლირებულ პაკეტებზე"
 
 #: dnf/cli/commands/repoquery.py:228
 msgid "limit the query to installed installonly packages"
-msgstr ""
+msgstr "მოთხოვნის შეზღუდვა დაყენებულ installonly პაკეტებზე"
 
 #: dnf/cli/commands/repoquery.py:231
 msgid "limit the query to installed packages with unsatisfied dependencies"
 msgstr ""
+"მოთხოვნის შეზღუდვა დაუკმაყოფილებელი დამოკიდებულებების მქონე დაყენებულ "
+"პაკეტებზე"
 
 #: dnf/cli/commands/repoquery.py:233
 msgid "show a location from where packages can be downloaded"
-msgstr ""
+msgstr "მდებარეობის ჩვენება, საიდანაც პაკეტების გადმოწერა შეგიძლიათ"
 
 #: dnf/cli/commands/repoquery.py:236
 msgid "Display capabilities that the package conflicts with."
-msgstr ""
+msgstr "იმ შესაძლებლობების ჩვენება, რომლებთანაც პაკეტი კონფლიქტშია."
 
 #: dnf/cli/commands/repoquery.py:237
 msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
 msgstr ""
+"იმ შესაძლებლობების ჩვენება, რომელსაც პაკეტი ეყრდნობა, ან რომელსაც "
+"გააფართოებს, რეკომენდაციას გაუწევს, მიგანიშნებთ ან ჩაანაცვლებს."
 
 #: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
@@ -1884,6 +1963,10 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"თუ პაკეტი დაყენებული არაა, შესაძლებლობების გამოტანა, რომლებზეც ის "
+"დამოკიდებულია %%pre და %%post მინისკრიპტების გასაშვებად. თუ პაკეტი "
+"დაყენებულია, იმ შესაძლებლობების გამოტანა, რომლებზეც ის დამოკიდებულია %%pre, "
+"%%post, %%preun და %%postun მინისკრიპტებს გასაშვებად."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
@@ -1905,22 +1988,28 @@ msgstr "მხოლოდ დაყენებული პაკეტებ�
 msgid ""
 "Display only packages that are not present in any of available repositories."
 msgstr ""
+"მხოლოდ იმ პაკეტების ჩვენება, რომლებიც არც ერთ ხელმისაწვდომ რეპოზიტორიაში "
+"არაა ხელმისაწვდომი."
 
 #: dnf/cli/commands/repoquery.py:258
 msgid ""
 "Display only packages that provide an upgrade for some already installed "
 "package."
 msgstr ""
+"მხოლოდ იმ პაკეტების გამოტანა, რომლებიც რომელიმე უკვე დაყენებულ პაკეტს "
+"ანახლებს."
 
 #: dnf/cli/commands/repoquery.py:259
 #, python-brace-format
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
+"მხოლოდ იმ პაკეტებს გამოტანა, რომლებიც \"{prog} autoremove\" ბრძანებით "
+"შეგიძლიათ, წაშალოთ."
 
 #: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
-msgstr ""
+msgstr "მხოლოდ მომხმარებლის მიერ დაყენებული პაკეტების გამოტანა."
 
 #: dnf/cli/commands/repoquery.py:273
 msgid "Display only recently edited packages"
@@ -1936,6 +2025,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
+"პარამეტრი '--resolve' უნდა გამოიყენოთ ერთ-ერთი, '--conflicts', '--depends', '"
+"--enhances', '--provides', '--recommends', '--requires', '--requires-pre', '"
+"--suggests' ან '--supplements' პარამეტრებთან ერთად"
 
 #: dnf/cli/commands/repoquery.py:308
 msgid ""
@@ -1943,10 +2035,13 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"პარამეტრი '--recursive' უნდა გამოიყენოთ '--whatrequires <REQ>'-თან ერთად (ან "
+"'--alldeps', მაგრამ, არა '--exactdeps'-თან ერთად), ან '--requires <REQ> "
+"--resolve'-სთან ერთად"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
-msgstr ""
+msgstr "არგუმენტს {} --whatrequires ან --whatdepends პარამეტრი ესაჭიროება"
 
 #. TRANSLATORS: This is the date format for a changelog
 #. in dnf repoquery. You are encouraged to change it
@@ -1974,6 +2069,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
+"სწორი პარამეტრი მითითებული არაა\n"
+"გამოყენება: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|-"
+"-recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]"
+"\n"
+"\n"
+"აღწერა:\n"
+"   მითითებული პაკეტევისთვის პაკეტების ხის გამოტანა."
 
 #. TRANSLATORS: This is the default time format for dnf repoquery.
 #. TRANSLATORS: This is the time format for dnf history list.
@@ -1987,7 +2089,7 @@ msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
-msgstr ""
+msgstr "პაკეტის დეტალების ძებნა მითითებული სტრიქონისთვის"
 
 #: dnf/cli/commands/search.py:51
 msgid "search also package description and URL"
@@ -2074,6 +2176,11 @@ msgid ""
 "    If no value is given it prints the current value.\n"
 "    If value is given it sets that value."
 msgstr ""
+"{} arg [value]\n"
+"  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
+"        repo_id.gpgcheck, repo_id.exclude\n"
+"        თუ მნიშვნელობა მითითებული არაა, გამოიტანს მიმდინარე მნიშვნელობას.\n"
+"        თუ მნიშვნელობა მითითებულია, დააყენებს მას."
 
 #: dnf/cli/commands/shell.py:181
 msgid ""
@@ -2090,6 +2197,11 @@ msgid ""
 "  enable: enable repositories. option = repository id\n"
 "  disable: disable repositories. option = repository id"
 msgstr ""
+"{} arg [option]\n"
+"  list: რეპოზიტორიებისა და მათი სტატუსის გამოტანა. პარამეტრი = [all | id | "
+"glob]\n"
+"  enable: რეპოზიტორიების ჩართვა. პარამეტრი = repository id\n"
+"  disable: რეპოზიტორიების გამორთვა. პარამეტრი = repository id"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
@@ -2106,6 +2218,10 @@ msgid ""
 "  reset: reset (zero-out) the transaction\n"
 "  run: run the transaction"
 msgstr ""
+"{} arg\n"
+"  list: ტრანზაქციის შემცველობის გამოტანა\n"
+"  reset: ტრანზაქციის განულება\n"
+"  run: ტრანზაქციის გაშვება"
 
 #: dnf/cli/commands/shell.py:201
 msgid ""
@@ -2135,6 +2251,15 @@ msgid ""
 "run                      resolve and run the transaction set\n"
 "exit (or quit)           exit the shell"
 msgstr ""
+"გარსის სპეციფიკური პარამეტრები:\n"
+"\n"
+"config                   კონფიგურაციის პარამეტრების დაყენება\n"
+"help                     დახმარების გამოტანა\n"
+"repository (ან repo)     რეპოზიტორიების ჩართვა, გამორთვა ან სიის გამოტანა\n"
+"resolvedep               ტრანზაქციის სეტის ამოხსნა\n"
+"transaction (ან ts)      ტრანზაქციის სეტის სია, განულება ან გაშვება\n"
+"run                      ტრანზაქციის სეტი ამოხსნა და გაშვება\n"
+"exit (ან quit)           გარსიდან გასვლა"
 
 #: dnf/cli/commands/shell.py:262
 #, python-format
@@ -2153,6 +2278,7 @@ msgstr "გარსიდან გასვლა"
 #, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
 msgstr ""
+"ერთი სპეციფიციკაციის წასაშლელად და დასაყენებლად ინტერაქტიული {prog} გაუშვით"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2201,20 +2327,23 @@ msgstr "პაკეტების რეკომენდაციები�
 #: dnf/cli/commands/updateinfo.py:77
 msgid "advisories about newer versions of installed packages (default)"
 msgstr ""
+"რეკომენდაციები დაყენებული პაკეტების ახალი ვერსიების შესახებ (ნაგულისხმევი)"
 
 #: dnf/cli/commands/updateinfo.py:80
 msgid "advisories about equal and older versions of installed packages"
-msgstr ""
+msgstr "რჩევები დაყენებული პაკეტების ტოლი ან უფრო ძველი ვერსიების შესახებ"
 
 #: dnf/cli/commands/updateinfo.py:83
 msgid ""
 "advisories about newer versions of those installed packages for which a "
 "newer version is available"
 msgstr ""
+"რჩევები დაყენებული იმ დაყენებული პაკეტების ახალი ვერსიების შესახებ, "
+"რომლებისთვისაც ახალი ვერსიაა ხელმისაწვდომი"
 
 #: dnf/cli/commands/updateinfo.py:87
 msgid "advisories about any versions of installed packages"
-msgstr ""
+msgstr "რეკომენდაციები დაყენებული პაკეტების ნებისმიერი ვერსიის შესახებ"
 
 #: dnf/cli/commands/updateinfo.py:92
 msgid "show summary of advisories (default)"
@@ -2351,7 +2480,7 @@ msgstr "ჭეშმარიტი"
 
 #: dnf/cli/commands/upgrade.py:40
 msgid "upgrade a package or packages on your system"
-msgstr ""
+msgstr "პაკეტის ან პაკეტების ვერსიის აწევა თქვენს სისტემაში"
 
 #: dnf/cli/commands/upgrade.py:44
 msgid "Package to upgrade"
@@ -2362,6 +2491,8 @@ msgid ""
 "upgrade, but only 'newest' package match which fixes a problem that affects "
 "your system"
 msgstr ""
+"გაუჯობესება, მაგრამ, მხოლოდ 'უახლესი' პაკეტი ემთხვევა, რომელიც ასწორებს "
+"პრობლემას, რომელიც თქვენს სისტემას ეხება"
 
 #: dnf/cli/main.py:88
 msgid "Terminated."
@@ -2370,10 +2501,13 @@ msgstr "შეწყდა."
 #: dnf/cli/main.py:116
 msgid "No read/execute access in current directory, moving to /"
 msgstr ""
+"მიმდინარე საქაღალდიდან წაკითხვა/გაშვების წვდომა არ გაგაჩნიათ. /-ზე გადატანა"
 
 #: dnf/cli/main.py:135
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
+"კონფლიქტური პაკეტების ჩასანაცვლებლად, სცადეთ, ბრძანების სტრიქონს '{}' "
+"მიამატოთ"
 
 #: dnf/cli/main.py:139
 msgid "try to add '{}' to skip uninstallable packages"
@@ -2386,10 +2520,11 @@ msgstr " ან '{}', წაშლადი პაკეტების გა�
 #: dnf/cli/main.py:147
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
+"მხოლოდ არა-საუკეთესო პაკეტ-კანდიდატების განსახილველად სცადეთ, '{}' დაამატოთ"
 
 #: dnf/cli/main.py:150
 msgid " or '{}' to use not only best candidate packages"
-msgstr ""
+msgstr " ან '{}' რომ მხოლოდ საუკეთესო ვარიანტების გამოყენება არ მოხდეს"
 
 #: dnf/cli/main.py:167
 msgid "Dependencies resolved."
@@ -2456,7 +2591,7 @@ msgstr "დამატებ(ებ)ის გამორთვა სახ�
 
 #: dnf/cli/option_parser.py:200
 msgid "override the value of $releasever in config and repo files"
-msgstr ""
+msgstr "$releasever-ის მნიშვნელობის გადაფარვა კონფიგურაციასა და რეპოს ფაილში"
 
 #: dnf/cli/option_parser.py:204
 msgid "set arbitrary config and repo options"
@@ -2473,19 +2608,19 @@ msgstr "ბრძანების დახმარების ჩვენ�
 
 #: dnf/cli/option_parser.py:214
 msgid "allow erasing of installed packages to resolve dependencies"
-msgstr ""
+msgstr "დამოკიდებულებების ამოსახსნელად დაყენებული პაკეტების წაშლის ნების დართვა"
 
 #: dnf/cli/option_parser.py:218
 msgid "try the best available package versions in transactions."
-msgstr ""
+msgstr "ტრანზაქციებში საუკეთესო ხელმისაწვდომი პაკეტის ვერსიების გამოყენება."
 
 #: dnf/cli/option_parser.py:220
 msgid "do not limit the transaction to the best candidate"
-msgstr ""
+msgstr "ტრანზაქცია საუკეთესო კანდიდატზე შეზღუდული არ იქნება"
 
 #: dnf/cli/option_parser.py:223
 msgid "run entirely from system cache, don't update cache"
-msgstr ""
+msgstr "სრულად სისტემის კეშიდან გაშვება. კეში არ განახლდება"
 
 #: dnf/cli/option_parser.py:227
 msgid "maximum command wait time"
@@ -2501,7 +2636,7 @@ msgstr "დეტალური ამოხსნის შედეგებ�
 
 #: dnf/cli/option_parser.py:237
 msgid "show duplicates, in repos, in list/search commands"
-msgstr ""
+msgstr "დუბლიკატების ჩვენება რეპოებში და ჩამოთვლის/ძებნის ბრძანებებში"
 
 #: dnf/cli/option_parser.py:240
 msgid "error output level"
@@ -2513,6 +2648,9 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
+"ჩართავს {prog}-ის მოძველებულ დამუშავების ლოგიკას გაუმჯობესებისა და "
+"შესაძლებლობების გამოტანისთვის, რომლებსაც პაკეტი მოძველებულად მონიშნავს info, "
+"list და repoquery-სთვის"
 
 #: dnf/cli/option_parser.py:248
 msgid "debugging output level for rpm"
@@ -2532,6 +2670,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"დროებით ჩართავს რეპოზიტორიას dnf-ის მიმდინარე ბრძანებისთვის. იღებს ID-ს, "
+"მძიმით-გამოყოფილ ID-ებს სიას ან ID-ების ნაკრებს. ეს პარამეტრი ერთზე მეტჯერაც "
+"შეგიძლიათ, მიუთითოთ."
 
 #: dnf/cli/option_parser.py:265
 msgid ""
@@ -2540,20 +2681,26 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"აქტიური რეპოზიტორიები დროებით გაითიშება dnf-ის მიმდინარე შესრულებისას. იღებს "
+"ID-ს, ID-ების მძიმით-გამოყოფილ სიას ან ID-ების ნაკრებს. ეს პარამეტრი, "
+"შეგიძლიათ, ერთზე მეტჯერაც მიუთითოთ, მაგრამ გამორიცხავს '--repo'-ის "
+"გამოყენებას."
 
 #: dnf/cli/option_parser.py:272
 msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
 msgstr ""
+"ID-ით ან ნაკრებით გადაცემული რეპოზიტორიების ჩართვა. შეგიძლიათ, ერთზე "
+"მეტჯერაც მიუთითოთ"
 
 #: dnf/cli/option_parser.py:277
 msgid "enable repos with config-manager command (automatically saves)"
-msgstr ""
+msgstr "რეპოების ჩართვა ბრძანებით config-manager (ავტომატურად ინახავს)"
 
 #: dnf/cli/option_parser.py:281
 msgid "disable repos with config-manager command (automatically saves)"
-msgstr ""
+msgstr "რეპოების გათიშვა ბრძანებით config-manager (ინახავს ავტომატურად)"
 
 #: dnf/cli/option_parser.py:285
 msgid "exclude packages by name or glob"
@@ -2568,14 +2715,18 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
+"ჭდე ან ბილიკი დამატებით რეპოზიტორიამდე (იგივე, რაც ბილიკი baseurl-ში). "
+"შეგიძლიათ, ერთზე მეტჯერაც მიუთითოთ."
 
 #: dnf/cli/option_parser.py:299
 msgid "disable removal of dependencies that are no longer used"
-msgstr ""
+msgstr "დამოკიდებულებების, რომლებიც უკვე აღარ გამოიყენებიან, წაშლის გამორთვა"
 
 #: dnf/cli/option_parser.py:302
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr ""
+"gpg ხელმოწერების გადამოწმების გამორთვა (თუ RPM-ის პოლიტიკა ამის საშუალებას "
+"იძლევა)"
 
 #: dnf/cli/option_parser.py:304
 msgid "control whether color is used"
@@ -2583,7 +2734,7 @@ msgstr "ფერების გამოყენების ჩართვ�
 
 #: dnf/cli/option_parser.py:307
 msgid "set metadata as expired before running the command"
-msgstr ""
+msgstr "ბრძანების შესრულებამდე მეტამონაცემების ვადაამოწურულად მონიშვნა"
 
 #: dnf/cli/option_parser.py:310
 msgid "resolve to IPv4 addresses only"
@@ -2623,19 +2774,22 @@ msgstr "განახლებებში უსაფრთხოები�
 
 #: dnf/cli/option_parser.py:337
 msgid "Include packages needed to fix the given advisory, in updates"
-msgstr ""
+msgstr "განახლებებში მითითებული რჩევის გასწორებისთვის საჭირო პაკეტების ჩასმა"
 
 #: dnf/cli/option_parser.py:341
 msgid "Include packages needed to fix the given BZ, in updates"
-msgstr ""
+msgstr "განახლებებში მითითებული BZ-ის გასწორებისთვის საჭირო განახლებების ჩასმა"
 
 #: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr ""
+"განახლებებში ჩაისმება პაკეტები, რომელიც მითითებული CVE-ის გასასწორებლადაა "
+"საჭირო"
 
 #: dnf/cli/option_parser.py:349
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr ""
+"განახლებებში იგივე სიმძიმის მქონე უსაფრთხოების შესაბამისი პაკეტების ჩათვლა"
 
 #: dnf/cli/option_parser.py:355
 msgid "Force the use of an architecture"
@@ -2930,11 +3084,11 @@ msgstr "გათავისუფლებული ადგილი: %s"
 
 #: dnf/cli/output.py:983
 msgid "Marking packages as installed by the group:"
-msgstr ""
+msgstr "დანიშვნა, რომ პაკეტი დაყენებულია შემდეგი ჯგუფის მიერ:"
 
 #: dnf/cli/output.py:990
 msgid "Marking packages as removed by the group:"
-msgstr ""
+msgstr "პაკეტების წასაშლელად მონიშვნა ჯგუფის მიერ:"
 
 #: dnf/cli/output.py:1000
 msgid "Group"
@@ -3051,6 +3205,8 @@ msgid ""
 "Skipping packages with conflicts:\n"
 "(add '%s' to command line to force their upgrade)"
 msgstr ""
+"კონფლიქტური პაკეტების გამოტოვება:\n"
+"(მათი გაუმჯობესებისთვის ბრძანების სტრიქონს '%s' მიამატეთ)"
 
 #: dnf/cli/output.py:1203
 #, python-format
@@ -3396,7 +3552,7 @@ msgstr "უცნობი"
 #: dnf/cli/utils.py:117
 #, python-format
 msgid "Unable to find information about the locking process (PID %d)"
-msgstr ""
+msgstr "მბლოკავი პროცესის (PID %d) შესახებ ინფორმაცის მოპოვება შეუძლებელია"
 
 #: dnf/cli/utils.py:121
 #, python-format
@@ -3421,17 +3577,17 @@ msgstr "    მდგომარეობა: %s"
 #: dnf/comps.py:196 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr ""
+msgstr "მოდული ან ჯგუფი '%s' დაყენებული არაა."
 
 #: dnf/comps.py:198 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr ""
+msgstr "მოდული ან ჯგუფი '%s' ხელმისაწვდომი არაა."
 
 #: dnf/comps.py:200
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr ""
+msgstr "მოდული ან ჯგუფი '%s' არ არსებობს."
 
 #: dnf/comps.py:599
 #, python-format
@@ -3482,6 +3638,8 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"კონფიგურაციის ფაილის ბმულის \"{}\" გადმოწერა შეუძლებელია:\n"
+"   {}"
 
 #: dnf/conf/config.py:374 dnf/conf/config.py:410
 #, python-format
@@ -3491,12 +3649,12 @@ msgstr "უცნობი კონფიგურაციის პარა�
 #: dnf/conf/config.py:391
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
-msgstr ""
+msgstr "შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s', მნიშვნელობა '%s': %s"
 
 #: dnf/conf/config.py:399
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
-msgstr ""
+msgstr "მთავარ კონფიგურაციას %s ატრიბუტი არ გააჩნია. setopt-მდე"
 
 #: dnf/conf/config.py:446 dnf/conf/config.py:464
 msgid "Incorrect or unknown \"{}\": {}"
@@ -3506,11 +3664,12 @@ msgstr "არასწორი ან უცნობი \"{}\": {}"
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
 msgstr ""
+"შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s.%s', მნიშვნელობა '%s': %s"
 
 #: dnf/conf/config.py:523
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr ""
+msgstr "რეპოზიტორიას %s ატრიბუტი %s არ გააჩნია. setopt-მდე"
 
 #: dnf/conf/read.py:60
 #, python-format
@@ -3536,10 +3695,13 @@ msgstr "რეპოზიტორია '{}': შეცდომა კონ�
 #: dnf/conf/read.py:93
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
+"რეპოზიტორიას '{}' ({}) კონფიგურაციაში სახელი მითითებული არ აქვს. გამოვიყენებ "
+"ID-ს."
 
 #: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
+"რეპოზიტორიას '{}' კონფიგურაციაში სახელი აკლია, ასე რომ ID-ს გამოვიყენებ."
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
@@ -3548,7 +3710,7 @@ msgstr "ფაილის \"{}\" დამუშავების შეცდ
 #: dnf/conf/substitutions.py:66
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "ფაილიდან '{0}' ცვლადის დამუშავების შეცდომა: {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3562,7 +3724,7 @@ msgstr "რეპო %s: შემოტანილია გასაღებ
 
 #: dnf/crypto.py:103
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "გადამოწმებულია DNSSEC ხელმოწერის მქონე DNS ჩანაწერით."
 
 #: dnf/crypto.py:105
 msgid "NOT verified using DNS record."
@@ -3571,7 +3733,7 @@ msgstr "DNS ჩანაწერით არ გადამოწმებუ
 #: dnf/crypto.py:135
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "მიმდინარეობს დაუშიფრავი რეპოზიტორიის გასაღების მიღება %s-სთვის %s-დან"
 
 #: dnf/db/group.py:308
 msgid ""
@@ -3588,17 +3750,19 @@ msgstr "RPM-ის გამონაკლისი: %s"
 
 #: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
-msgstr ""
+msgstr "მოდულური პაკეტისთვის მოდულური მეტამონაცემები ხელმისაწვდომი არაა"
 
 #: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
-msgstr ""
+msgstr "არ დავაყენებ კოდის rpm პაკეტს (%s)."
 
 #: dnf/dnssec.py:171
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
+"კონფიგურაციის პარამეტრს 'gpgkey_dns_verification' მოდული python3-unbound ({})"
+" სჭირდება"
 
 #: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
@@ -3618,7 +3782,7 @@ msgstr "DNSSEC-ის გაფართოება: "
 
 #: dnf/dnssec.py:287
 msgid "Testing already imported keys for their validity."
-msgstr ""
+msgstr "უკვე შემოტანილი გასაღებების სისწორის გადამოწმება."
 
 #: dnf/drpm.py:62 dnf/repo.py:268
 #, python-format
@@ -3674,6 +3838,9 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"აღმოჩენილია ბლოკის არასწორი ფაილი: %s.\n"
+"დარწმუნდით, რომ dnf/yum-ის სხვა პროცესი გაშვებული არაა და ბლოკის ფაილი ხელით "
+"წაშალეთ, ან გაუშვით systemd-tmpfiles --remove dnf.conf."
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3685,7 +3852,7 @@ msgstr "საჩვენებელი არაფერია."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr ""
+msgstr "ვაყენებ '{}'-ის უფრო ახალ ვერსიას, ვიდრე მითითებულია. მიზეზი: {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3693,7 +3860,7 @@ msgstr "ჩართული მოდულები: {}."
 
 #: dnf/module/__init__.py:30
 msgid "No profile specified for '{}', please specify profile."
-msgstr ""
+msgstr "'{}'-სთვის პროფილი მითითებული არაა. მიუთითეთ პროფილი."
 
 #: dnf/module/exceptions.py:27
 msgid "No such module: {}"
@@ -3725,11 +3892,11 @@ msgstr "{}-სთვის მითითებული პროფილი 
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
-msgstr ""
+msgstr "'{}'-სთვის ნაკადი მითითებული არაა. მიუთითეთ ნაკადი"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
-msgstr ""
+msgstr "პროფილი {} არ არსებობს. პროფილები ხელმისაწვდომი არაა"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
@@ -3764,25 +3931,31 @@ msgstr "გამოუყენებელი პროფილის იგ�
 #: dnf/module/module_base.py:86
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
-msgstr ""
+msgstr "ყველა დამთხვევა არგუმენტისთვის '{0} მოდულში '{1}:{2}' აქტიური არაა"
 
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
+"მიმდინარეობს მოდულის '{0}' დაყენება უსაფრთხო რეპოზიტორიიდან {1} დაშვებული "
+"არაა"
 
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
+"შეუძლებელია შესაბამისი პროფილის პოვნა არგუმენტისთვის {}. '{}:{}'-სთვის "
+"ხელმისაწვდომი პროფილებია: {}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr ""
+msgstr "პროფილი არგუმენტისთვის {} არ ემთხვევა"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
+"მოდულისთვის {} ნაგულიხმევი პროფილები აღმოჩენილი არაა: {}. ხელმისაწვდომი "
+"პროფილები: {}"
 
 #: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
@@ -3790,25 +3963,25 @@ msgstr "მოდულის ({}) პროფილი არ არსებ�
 
 #: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
-msgstr ""
+msgstr "ნაგულისხმევი პროფილი {} მიუწვდომელია მოდულში {}: {}"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "შეცდომებისგან-დაცული რეპოზიტორიიდან მოდულის დაყენება დაშვებული არაა"
 
 #: dnf/module/module_base.py:196
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
+msgstr "აქტიური დამთხვევების გარეშე არგუმენტისთვის '{0}' მოდულში '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr ""
+msgstr "დაყენებული პროფილი '{0}' ხელმიუწვდომელია მოდულში '{1}' ნაკადი '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "პაკეტის სახელისთვის '{}' პაკეტი distrosync-თვის ხელმისაწვდომი არაა"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3820,15 +3993,15 @@ msgstr "არგუმენტის ({}) ამოხსნის შეც�
 #: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "მოდულის '{0}' გაუმჯობესება უსაფრთხო რეპოზიტორიიდან {1} დაშვებული არაა"
 
 #: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
-msgstr ""
+msgstr "პროფილი არგუმენტში {} არ ემთხვევა"
 
 #: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "შეცდომებისგან-დაცული რეპოზიტორიიდან მოდულის განახლება დაშვებული არაა"
 
 #: dnf/module/module_base.py:422
 #, python-brace-format
@@ -3836,6 +4009,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"არგუმენტი '{argument}' ემთხვევა {stream_count} ნაკადს ('{streams}') "
+"მოდულიდან '{module}', მაგრამ მოდულები ნაგულისხმევად ჩართული არაა"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -3857,12 +4032,12 @@ msgstr "ფაილი %s ცარიელია"
 #: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "შევარდა ვადაამოწურული რეპოების კეშის ჩატვირთვა: %s"
 
 #: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "ვადაგასული რეპოების კეშის დამახსოვრება ჩავარდა: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
@@ -3889,16 +4064,16 @@ msgstr "დამატების \"%s\" ჩატვირთვა ჩავ
 
 #: dnf/plugin.py:248
 msgid "No matches found for the following enable plugin patterns: {}"
-msgstr ""
+msgstr "დამთხვევა აღმოჩენილი არაა შემდეგი ჩართული დამატების ნიმუშებისთვის: {}"
 
 #: dnf/plugin.py:252
 msgid "No matches found for the following disable plugin patterns: {}"
-msgstr ""
+msgstr "დამთხვევა აღმოჩენილი არაა შემდეგი გამორთული დამატების ნიმუშისთვის: {}"
 
 #: dnf/repo.py:85
 #, python-format
 msgid "no matching payload factory for %s"
-msgstr ""
+msgstr "%s-ის შემცველობის დამმუშავებელი აღმოჩენილი არაა"
 
 #. pinging mirrors, this might take a while
 #: dnf/repo.py:347
@@ -3920,14 +4095,17 @@ msgstr "დამატებულია %s რეპოზიტორია %
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
 msgstr ""
+"ხელმოწერების გადასამოწმებლად rpmkey-ის (ბილიკი: %s) გამშვები ფაილი იქნება "
+"გამოყენებული"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"ხელმოწერების გადასამოწმებლად საჭირო გამშვები ფაილი rpmkeys აღმოჩენილი არაა."
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "ფუნქციას OpenDB() rpm-ის ბაზის გახსნა არ შეუძლია."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
@@ -3942,6 +4120,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change გათიშულია. ეს პარამეტრი downgrade და distro-sync "
+"ბრძანებებისთვის ამჟამად მხარდაჭერილი არაა"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -3995,10 +4175,12 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"აღმოჩენილია შემდეგი პრობლემები ტრაზაქციის გამეორებისას ფაილიდან \"{filename}"
+"\":"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
+msgstr "ტრანზაქციის შესრულებისას აღმოჩენილია შემდეგი პრობლემები:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
@@ -4016,11 +4198,15 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"არათავსებადი ძირითადი ვერსია \"{major}\". მხარდაჭერილი ძირითადი ვერსიაა \""
+"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"მითითებულია TransactionReplay-ის ურთიერთგამომრიცხავი პარამეტრები: filename, "
+"data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4035,13 +4221,15 @@ msgstr "ნაკლული გასაღები \"{key}\"."
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "RPM-ში ობიეტქის გასაღები \"{key}\" აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"მოულოდნელი მნიშვნელობა პაკეტის მიზეზისთვის \"{reason}\" rpm nevra-სთვის \""
+"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
@@ -4056,7 +4244,7 @@ msgstr "RPM nevra \"{nevra}\" ვერ ვიპოვე."
 #: dnf/transaction_sr.py:336
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr ""
+msgstr "პაკეტი \"{na}\" უკვე დაყენებულია ქმედებისთვის \"{action}\"."
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
@@ -4064,17 +4252,21 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"პაკეტი nevra \"{nevra}\" ხელმისაწვდომი არაა რეპოზიტორიებში ქმედებისთვის \""
+"{action}\"."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "პაკეტი nevra \"{nevra}\" ქმედებისთვის \"{action}\" დაყენებული არაა."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"მოულოდნელი მნიშვნელობა პაკეტის მნიშვნელობისთვის \"{action}\" rpm nevra-სთვის "
+"\"{nevra}\"."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4084,7 +4276,7 @@ msgstr "ჯგუფის id '%s' ხელმისაწვდომი ა�
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "ობიექტის გასაღები \"{key}\" groups.packages-ში აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4103,21 +4295,26 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"არასწორი მნიშვნელობა \"{group_type}\" environments.groups.group_type-სთვის. "
+"მხარდაჭერილია მხოლოდ \"mandatory\" (აუცილებელი), ან \"optional\""
+"(არასავალდებულო)."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "ობიექტის გასაღები \"{key}\" environments.groups-ში აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:566
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"მოულოდნელი მნიშვნელობა ჯგუფის ქმედებისთვის \"{action}\" ჯგუფისთვის \"{group}"
+"\"."
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "ჯგუფში ობიექტის გასაღები \"{key}\" აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:599
 #, python-brace-format
@@ -4125,11 +4322,13 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"მოულოდნელი მნიშვნელობა გარემოს ქმედებისთვის \"{action}\"გარემოსთვის \"{env}\""
+"."
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "გარემოში ობიექტის გასაღები '{key}' აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:643
 #, python-brace-format
@@ -4137,6 +4336,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"პაკეტი nevra \"{nevra}\", რომელიც ტრანზაქციის ფაილში აღმოჩენილი არაა, "
+"შეთრეულია ტრანზაქციაში."
 
 #: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
