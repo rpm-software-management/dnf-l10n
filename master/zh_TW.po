@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-09-17 01:39+0000\n"
-"PO-Revision-Date: 2023-08-14 14:21+0000\n"
+"PO-Revision-Date: 2023-09-23 17:36+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -71,12 +71,12 @@ msgstr "無法執行「%s」命令：已回傳 %d"
 #: dnf/automatic/main.py:165
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
-msgstr "未知的設定值：%s = %s 於 %s；%s"
+msgstr "未知的組態值：%s=%s 於 %s；%s"
 
 #: dnf/automatic/main.py:169 dnf/conf/config.py:158
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
-msgstr "未知的設定選項：%s = %s 於 %s"
+msgstr "未知的組態選項：%s = %s 於 %s"
 
 #: dnf/automatic/main.py:243 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
@@ -448,7 +448,7 @@ msgstr "失敗的軟體包為：%s"
 #: dnf/base.py:2517
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr "GPG 金鑰已經設定為：%s"
+msgstr "GPG 金鑰已調配設定為：%s"
 
 #: dnf/base.py:2529
 #, python-format
@@ -484,7 +484,7 @@ msgid ""
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
 "列出的「%s」軟體庫 GPG 金鑰已經安裝，但這些金鑰對這個軟體包都不正確。\n"
-"檢查這個軟體庫的不正確金鑰之網址設定。"
+"請檢查這個軟體庫有正確調配金鑰網址設定。"
 
 #: dnf/base.py:2621
 msgid "Import of key(s) didn't help, wrong key(s)?"
@@ -552,7 +552,7 @@ msgstr "無法讀取「%s」檔案：%s"
 #: dnf/cli/cli.py:810 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
-msgstr "設定檔錯誤：%s"
+msgstr "組態設定錯誤：%s"
 
 #: dnf/cli/aliases.py:191
 msgid "Aliases contain infinite recursion"
@@ -1158,7 +1158,7 @@ msgstr "顯示或使用群組資訊"
 
 #: dnf/cli/commands/group.py:72
 msgid "No group data available for configured repositories."
-msgstr "設定的軟體庫沒有可用的群組資料。"
+msgstr "組態設定的軟體庫沒有可用的群組資料。"
 
 #: dnf/cli/commands/group.py:126
 #, python-format
@@ -1463,7 +1463,7 @@ msgstr "重設模組"
 
 #: dnf/cli/commands/module.py:205
 msgid "install a module profile including its packages"
-msgstr "安裝包含其軟體的模組設定檔"
+msgstr "安裝包含其軟體包的模組設定檔"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
@@ -1571,7 +1571,7 @@ msgstr "%s 秒（上次：%s）"
 
 #: dnf/cli/commands/repolist.py:76
 msgid "display the configured software repositories"
-msgstr "顯示已設定的軟體庫"
+msgstr "顯示已組態設定的軟體庫"
 
 #: dnf/cli/commands/repolist.py:83
 msgid "show all repos"
@@ -2182,7 +2182,7 @@ msgid ""
 msgstr ""
 "Shell 專用引數：\n"
 "\n"
-"config                   設定配置選項\n"
+"config                   設定組態選項\n"
 "help                     顯示說明\n"
 "repository (or repo)     啟用、停用、列出軟體庫\n"
 "resolvedep               解析處理事項設定\n"
@@ -2473,7 +2473,7 @@ msgstr "{prog} 一般選項"
 
 #: dnf/cli/option_parser.py:175
 msgid "config file location"
-msgstr "設定檔位置"
+msgstr "組態檔位置"
 
 #: dnf/cli/option_parser.py:178
 msgid "quiet operation"
@@ -2510,11 +2510,11 @@ msgstr "透過名稱停用插件"
 
 #: dnf/cli/option_parser.py:200
 msgid "override the value of $releasever in config and repo files"
-msgstr "在設定檔與 repo 檔案覆蓋 $releasever 的值"
+msgstr "覆蓋在組態檔與 repo 檔案中 $releasever 的值"
 
 #: dnf/cli/option_parser.py:204
 msgid "set arbitrary config and repo options"
-msgstr "設定隨意設定檔與軟體庫設定"
+msgstr "設定隨意組態與軟體庫選項"
 
 #: dnf/cli/option_parser.py:207
 msgid "resolve depsolve problems by skipping packages"
@@ -3492,17 +3492,15 @@ msgid "Module or Group '%s' does not exist."
 msgstr "沒有「%s」模組或群組。"
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "尚未安裝「%s」環境。"
+msgstr "「%s」環境 ID 不存在。"
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
 #: dnf/transaction_sr.py:507
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "尚未安裝「%s」環境。"
+msgstr "「%s」環境 ID 未安裝。"
 
 #: dnf/comps.py:639
 #, python-format
@@ -3515,10 +3513,9 @@ msgid "Environment '%s' is not available."
 msgstr "無法使用「%s」環境。"
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Group_id「%s」不存在。"
+msgstr "「%s」群組 ID 不存在。"
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3526,14 +3523,13 @@ msgid "Error parsing '%s': %s"
 msgstr "無法解析「%s」：%s"
 
 #: dnf/conf/config.py:151
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "未知的設定值：%s = %s 於 %s；%s"
+msgstr "無效的組態值：%s=%s 於 %s；%s"
 
 #: dnf/conf/config.py:194
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "無法將「{}」設定為「{}」：{}"
 
 #: dnf/conf/config.py:244
 msgid "Could not set cachedir: {}"
@@ -3544,13 +3540,13 @@ msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
-"無法下載「{}」設定檔 URL：\n"
+"無法下載「{}」組態檔 URL：\n"
 "  {}"
 
 #: dnf/conf/config.py:374 dnf/conf/config.py:410
 #, python-format
 msgid "Unknown configuration option: %s = %s"
-msgstr "無效的設定選項：%s = %s"
+msgstr "無效的組態選項：%s = %s"
 
 #: dnf/conf/config.py:391
 #, python-format
@@ -3560,7 +3556,7 @@ msgstr "以「%s」鍵，「%s」值解析 --setopt 時發生錯誤：%s"
 #: dnf/conf/config.py:399
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
-msgstr "主組態未在 setopt 之前設定 %s 屬性"
+msgstr "主組態未在 setopt 之前設定 %s 特性"
 
 #: dnf/conf/config.py:446 dnf/conf/config.py:464
 msgid "Incorrect or unknown \"{}\": {}"
@@ -3574,7 +3570,7 @@ msgstr "以「%s.%s」鍵，「%s」值解析 --setopt 時發生錯誤：%s"
 #: dnf/conf/config.py:523
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr "%s 軟體庫未在 setopt 之前設定 %s 屬性"
+msgstr "%s 軟體庫未在 setopt 之前設定 %s 特性"
 
 #: dnf/conf/read.py:60
 #, python-format
@@ -3599,11 +3595,11 @@ msgstr "「{}」軟體庫：解析組態時發生錯誤：{}"
 
 #: dnf/conf/read.py:93
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
-msgstr "設定檔中缺少「{}」({}) 軟體庫的名稱，使用 ID。"
+msgstr "組態檔中缺少「{}」({}) 軟體庫的名稱，改使用 ID。"
 
 #: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
-msgstr "設定檔中缺少「{}」軟體庫的名稱，使用 ID。"
+msgstr "組態檔中缺少「{}」軟體庫的名稱，改使用 ID。"
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
@@ -3612,7 +3608,7 @@ msgstr "解析「{}」檔案失敗：{}"
 #: dnf/conf/substitutions.py:66
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "從「{0}」檔案解析變數時發生錯誤：{1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3626,11 +3622,11 @@ msgstr "%s 軟體庫：已匯入 0x%s 金鑰。"
 
 #: dnf/crypto.py:103
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "使用以 DNSSEC 簽章的 DNS 紀錄核驗。"
 
 #: dnf/crypto.py:105
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "並未以 DNS 紀錄核驗。"
 
 #: dnf/crypto.py:135
 #, python-format
@@ -3646,7 +3642,7 @@ msgstr "沒有「{}」模組化軟體包可用的模組化中介資料，無法�
 #: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "遇到 rpm 例外：%s"
 
 #: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
@@ -3761,10 +3757,8 @@ msgid "No profile specified for '{}', please specify profile."
 msgstr "沒有為 {} 指定的設定檔，請指定設定檔。"
 
 #: dnf/module/exceptions.py:27
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No such module: {}"
-msgstr "沒有 {}:{} 模組的設定檔"
+msgstr "沒有這個模組：{}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
@@ -3784,27 +3778,23 @@ msgstr "此模組有啟用不同流道：{}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "沒有這個設定檔：{}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "指定的設定檔並未為 {} 安裝"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
 msgstr "沒有為「{}」指定的流道，請指定流道"
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "沒有可用的軟體庫"
+msgstr "沒有這個設定檔：{}。沒有可用的設定檔"
 
 #: dnf/module/exceptions.py:88
-#, fuzzy
-#| msgid "No profiles for module {}:{}"
 msgid "No profile to remove for '{}'"
-msgstr "沒有 {}:{} 模組的設定檔"
+msgstr "沒有可為「{}」移除的設定檔"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3998,7 +3988,7 @@ msgstr ""
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "openDB() 函式無法開啟 rpm 資料庫。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
