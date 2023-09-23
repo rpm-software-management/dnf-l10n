@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-17 01:39+0000\n"
+"POT-Creation-Date: 2023-09-23 01:34+0000\n"
 "PO-Revision-Date: 2023-09-23 17:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
@@ -318,37 +318,37 @@ msgstr "%s-ის წაშლის შეცდომა"
 msgid "%s removed"
 msgstr "%s წაიშალა"
 
-#: dnf/base.py:1719
+#: dnf/base.py:1728
 msgid "No match for group package \"{}\""
 msgstr "ჯგუფურ პაკეტს \"{}\" არაფერი ემთხვევა"
 
-#: dnf/base.py:1801
+#: dnf/base.py:1810
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "დაემატება პაკეტები ჯგუფიდან '%s': %s"
 
-#: dnf/base.py:1824 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
+#: dnf/base.py:1833 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:437
 #: dnf/cli/commands/__init__.py:494 dnf/cli/commands/__init__.py:587
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/install.py:80
 #: dnf/cli/commands/install.py:103 dnf/cli/commands/install.py:110
 msgid "Nothing to do."
 msgstr "გასაკეთებელი არაფერია."
 
-#: dnf/base.py:1842
+#: dnf/base.py:1851
 msgid "No groups marked for removal."
 msgstr "არცერთი ჯგუფი წასაშლელად მონიშნული არაა."
 
-#: dnf/base.py:1876
+#: dnf/base.py:1885
 msgid "No group marked for upgrade."
 msgstr "არცერთი ჯგუფი არაა მონიშნული განსაახლებლად."
 
-#: dnf/base.py:2090
+#: dnf/base.py:2103
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "პაკეტი %s დაყენებული არაა. ვერსიის ჩამოწევა შეუძლებელია."
 
-#: dnf/base.py:2092 dnf/base.py:2111 dnf/base.py:2124 dnf/base.py:2155
-#: dnf/base.py:2225 dnf/base.py:2233 dnf/base.py:2367 dnf/cli/cli.py:417
+#: dnf/base.py:2105 dnf/base.py:2124 dnf/base.py:2137 dnf/base.py:2168
+#: dnf/base.py:2238 dnf/base.py:2246 dnf/base.py:2380 dnf/cli/cli.py:417
 #: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
 #: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
 #: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
@@ -358,133 +358,133 @@ msgstr "პაკეტი %s დაყენებული არაა. ვ�
 msgid "No match for argument: %s"
 msgstr "არგუმენტს არაფერი ემთხვევა: %s"
 
-#: dnf/base.py:2099
+#: dnf/base.py:2112
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "პაკეტი %s უკვე მითითებულზე უფრო ძველია. ვერსიის ჩამოწევა შეუძლებელია."
 
-#: dnf/base.py:2122
+#: dnf/base.py:2135
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "პაკეტი %s დაყენებული არაა. თავიდან დაყენება შეუძლებელია."
 
-#: dnf/base.py:2137
+#: dnf/base.py:2150
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "ფაილი %s კოდის პაკეტია და ის ვერ განახლდება. გამოტოვება."
 
-#: dnf/base.py:2152
+#: dnf/base.py:2165
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "პაკეტი %s დაყენებული არაა. მისი განახლება შეუძლებელია."
 
-#: dnf/base.py:2162
+#: dnf/base.py:2175
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "პაკეტი %s უფრო ახალი ან იგივე ვერსიისაა. მისი განახლება შეუძლებელია."
 
-#: dnf/base.py:2222 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2235 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "პაკეტი %s ხელმისაწვდომია, მაგრამ არა დაყენებული."
 
-#: dnf/base.py:2228
+#: dnf/base.py:2241
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "პაკეტი %s ხელმისაწვდომია, მაგრამ დაყენებულია სხვა არქიტექტურისთვის."
 
-#: dnf/base.py:2253
+#: dnf/base.py:2266
 #, python-format
 msgid "No package %s installed."
 msgstr "პაკეტი %s დაყენებული არაა."
 
-#: dnf/base.py:2271 dnf/cli/commands/install.py:136
+#: dnf/base.py:2284 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "არასწორი ფორმა: %s"
 
-#: dnf/base.py:2286 dnf/cli/commands/__init__.py:676
+#: dnf/base.py:2299 dnf/cli/commands/__init__.py:676
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "არცერთი პაკეტი არაა წასაშლელად მონიშნული."
 
-#: dnf/base.py:2374 dnf/cli/cli.py:428
+#: dnf/base.py:2387 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "პაკეტები არგუმენტისთვის %s ხელმისაწვდომია, მაგრამ არა დაყენებული."
 
-#: dnf/base.py:2379
+#: dnf/base.py:2392
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "პაკეტი %s უკვე უფრო დაბალი ვერსიისაა. ვერსიის დაწევა შეუძლებელია."
 
-#: dnf/base.py:2479
+#: dnf/base.py:2492
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "უსაფრთხოების განახლებები საჭირო არა, მაგრამ ხელმისაწვდომია {} განახლება"
 
-#: dnf/base.py:2481
+#: dnf/base.py:2494
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} განახლება"
 
-#: dnf/base.py:2485
+#: dnf/base.py:2498
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "\"{}\"-სთვის უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} "
 "განახლება"
 
-#: dnf/base.py:2487
+#: dnf/base.py:2500
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "\"{}\"-სთვის უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} "
 "განახლება"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2508
+#: dnf/base.py:2521
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "შეცდომა გასაღების მიღებისას ბრძანების სტრიქონის პაკეტისთვის: %s"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2529
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". შეცდომიანი პაკეტია: %s"
 
-#: dnf/base.py:2517
+#: dnf/base.py:2530
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG გასაღებები მორგებულია, როგორც: %s"
 
-#: dnf/base.py:2529
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG გასაღები %s-თან (0x%s) უკვე დაყენებულია"
 
-#: dnf/base.py:2565
+#: dnf/base.py:2578
 msgid "The key has been approved."
 msgstr "გასაღები მიღებულია."
 
-#: dnf/base.py:2568
+#: dnf/base.py:2581
 msgid "The key has been rejected."
 msgstr "გასაღები უარყოფილია."
 
-#: dnf/base.py:2601
+#: dnf/base.py:2614
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "გასაღების შემოტანა ვერ მოხერხდა (კოდი %d)"
 
-#: dnf/base.py:2603
+#: dnf/base.py:2616
 msgid "Key imported successfully"
 msgstr "გასაღები წარმატებით იქნა შემოტანილი"
 
-#: dnf/base.py:2607
+#: dnf/base.py:2620
 msgid "Didn't install any keys"
 msgstr "არცერთი გასაღები არ დამიყენებია"
 
-#: dnf/base.py:2610
+#: dnf/base.py:2623
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -495,29 +495,29 @@ msgstr ""
 "პაკეტისთვის.\n"
 "შეამოწმეთ რეპოზიტორიის ბმულები."
 
-#: dnf/base.py:2621
+#: dnf/base.py:2634
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "გასაღების შემოტანამ არ უშველა. გასაღებები სწორია?"
 
-#: dnf/base.py:2674
+#: dnf/base.py:2687
 msgid "  * Maybe you meant: {}"
 msgstr "  * შეიძლება იგულისხმეთ: {}"
 
-#: dnf/base.py:2706
+#: dnf/base.py:2719
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "პაკეტს \"{}\" ლოკალური რეპოზიტორიიდან \"{}\" არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2722
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "ზოგიერთ პაკეტს ლოკალური რეპოზიტორიიდან არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2712
+#: dnf/base.py:2725
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "პაკეტს \"{}\" რეპოზიტორიიდან \"{}\" არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2715
+#: dnf/base.py:2728
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -525,23 +525,23 @@ msgstr ""
 "ზოგიერთ პაკეტს არასწორი კეში გააჩნია, მაგრამ \"--cacheonly\" პარამეტრის გამო "
 "მათი გადმოწერა შეუძლებელია"
 
-#: dnf/base.py:2733 dnf/base.py:2753
+#: dnf/base.py:2746 dnf/base.py:2766
 msgid "No match for argument"
 msgstr "არგუმენტს არაფერი ემთხვევა"
 
-#: dnf/base.py:2741 dnf/base.py:2761
+#: dnf/base.py:2754 dnf/base.py:2774
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "ყველა დამთხვევა გაფილტრულია გამორიცხვის ფილტრის მიერ"
 
-#: dnf/base.py:2743
+#: dnf/base.py:2756
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "ყველა დამთხვევა გაფილტრულია მოდულური ფილტრის მიერ"
 
-#: dnf/base.py:2759
+#: dnf/base.py:2772
 msgid "All matches were installed from a different repository for argument"
 msgstr "ყველა დამთხვევა დაყენებულია არგუმენტის სხვადასხვა რეპოზიტორიებიდან"
 
-#: dnf/base.py:2820
+#: dnf/base.py:2833
 #, python-format
 msgid "Package %s is already installed."
 msgstr "პაკეტი %s უკვე დაყენებულია."
@@ -2025,9 +2025,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
-"პარამეტრი '--resolve' უნდა გამოიყენოთ ერთ-ერთი, '--conflicts', '--depends', '"
-"--enhances', '--provides', '--recommends', '--requires', '--requires-pre', '"
-"--suggests' ან '--supplements' პარამეტრებთან ერთად"
+"პარამეტრი '--resolve' უნდა გამოიყენოთ ერთ-ერთი, '--conflicts', '--depends', "
+"'--enhances', '--provides', '--recommends', '--requires', '--requires-pre', "
+"'--suggests' ან '--supplements' პარამეტრებთან ერთად"
 
 #: dnf/cli/commands/repoquery.py:308
 msgid ""
@@ -2036,8 +2036,8 @@ msgid ""
 "resolve'"
 msgstr ""
 "პარამეტრი '--recursive' უნდა გამოიყენოთ '--whatrequires <REQ>'-თან ერთად (ან "
-"'--alldeps', მაგრამ, არა '--exactdeps'-თან ერთად), ან '--requires <REQ> "
-"--resolve'-სთან ერთად"
+"'--alldeps', მაგრამ, არა '--exactdeps'-თან ერთად), ან '--requires <REQ> --"
+"resolve'-სთან ერთად"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2070,9 +2070,9 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "სწორი პარამეტრი მითითებული არაა\n"
-"გამოყენება: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|-"
-"-recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]"
-"\n"
+"გამოყენება: {prog} repoquery [--conflicts|--enhances|--obsoletes|--"
+"provides|--recommends|--requires|--suggest|--supplements|--whatrequires] "
+"[key] [--tree]\n"
 "\n"
 "აღწერა:\n"
 "   მითითებული პაკეტევისთვის პაკეტების ხის გამოტანა."
@@ -2608,7 +2608,8 @@ msgstr "ბრძანების დახმარების ჩვენ�
 
 #: dnf/cli/option_parser.py:214
 msgid "allow erasing of installed packages to resolve dependencies"
-msgstr "დამოკიდებულებების ამოსახსნელად დაყენებული პაკეტების წაშლის ნების დართვა"
+msgstr ""
+"დამოკიდებულებების ამოსახსნელად დაყენებული პაკეტების წაშლის ნების დართვა"
 
 #: dnf/cli/option_parser.py:218
 msgid "try the best available package versions in transactions."
@@ -3649,7 +3650,8 @@ msgstr "უცნობი კონფიგურაციის პარა�
 #: dnf/conf/config.py:391
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
-msgstr "შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s', მნიშვნელობა '%s': %s"
+msgstr ""
+"შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s', მნიშვნელობა '%s': %s"
 
 #: dnf/conf/config.py:399
 #, python-format
@@ -3761,8 +3763,8 @@ msgstr "არ დავაყენებ კოდის rpm პაკეტ�
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"კონფიგურაციის პარამეტრს 'gpgkey_dns_verification' მოდული python3-unbound ({})"
-" სჭირდება"
+"კონფიგურაციის პარამეტრს 'gpgkey_dns_verification' მოდული python3-unbound "
+"({}) სჭირდება"
 
 #: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
@@ -4175,8 +4177,8 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
-"აღმოჩენილია შემდეგი პრობლემები ტრაზაქციის გამეორებისას ფაილიდან \"{filename}"
-"\":"
+"აღმოჩენილია შემდეგი პრობლემები ტრაზაქციის გამეორებისას ფაილიდან "
+"\"{filename}\":"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
@@ -4198,8 +4200,8 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
-"არათავსებადი ძირითადი ვერსია \"{major}\". მხარდაჭერილი ძირითადი ვერსიაა \""
-"{major_supp}\"."
+"არათავსებადი ძირითადი ვერსია \"{major}\". მხარდაჭერილი ძირითადი ვერსიაა "
+"\"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
@@ -4228,8 +4230,8 @@ msgstr "RPM-ში ობიეტქის გასაღები \"{key}\" �
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
-"მოულოდნელი მნიშვნელობა პაკეტის მიზეზისთვის \"{reason}\" rpm nevra-სთვის \""
-"{nevra}\"."
+"მოულოდნელი მნიშვნელობა პაკეტის მიზეზისთვის \"{reason}\" rpm nevra-სთვის "
+"\"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
@@ -4252,8 +4254,8 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
-"პაკეტი nevra \"{nevra}\" ხელმისაწვდომი არაა რეპოზიტორიებში ქმედებისთვის \""
-"{action}\"."
+"პაკეტი nevra \"{nevra}\" ხელმისაწვდომი არაა რეპოზიტორიებში ქმედებისთვის "
+"\"{action}\"."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
@@ -4296,8 +4298,8 @@ msgid ""
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 "არასწორი მნიშვნელობა \"{group_type}\" environments.groups.group_type-სთვის. "
-"მხარდაჭერილია მხოლოდ \"mandatory\" (აუცილებელი), ან \"optional\""
-"(არასავალდებულო)."
+"მხარდაჭერილია მხოლოდ \"mandatory\" (აუცილებელი), ან "
+"\"optional\"(არასავალდებულო)."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
@@ -4308,8 +4310,8 @@ msgstr "ობიექტის გასაღები \"{key}\" environments
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
-"მოულოდნელი მნიშვნელობა ჯგუფის ქმედებისთვის \"{action}\" ჯგუფისთვის \"{group}"
-"\"."
+"მოულოდნელი მნიშვნელობა ჯგუფის ქმედებისთვის \"{action}\" ჯგუფისთვის "
+"\"{group}\"."
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
@@ -4322,8 +4324,8 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
-"მოულოდნელი მნიშვნელობა გარემოს ქმედებისთვის \"{action}\"გარემოსთვის \"{env}\""
-"."
+"მოულოდნელი მნიშვნელობა გარემოს ქმედებისთვის \"{action}\"გარემოსთვის "
+"\"{env}\"."
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
