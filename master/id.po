@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-09-15 01:35+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
@@ -360,12 +360,13 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "Paket %s tidak terpasang, tidak bisa menuruntingkatkan itu."
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "Tidak ada yang cocok untuk argumen: %s"
@@ -409,11 +410,6 @@ msgstr "Paket %s tersedia, tapi tidak terpasang."
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paket %s tersedia, tapi terpasang untuk arsitektur lain."
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "Tidak ada paket %s yang terpasang."
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -3694,7 +3690,7 @@ msgstr "Repositori '{}' kurang nama dalam konfigurasi, menggunakan id."
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Penguraian berkas \"{}\" gagal: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr ""
@@ -4324,6 +4320,10 @@ msgstr "Gagal"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<unset>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "Tidak ada paket %s yang terpasang."
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "Argumen setopt memiliki beberapa nilai: %s"

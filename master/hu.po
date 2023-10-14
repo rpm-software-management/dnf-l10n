@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-06-22 09:20+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -370,12 +370,13 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "Nem található egyezés a következő argumentumra: %s"
@@ -419,11 +420,6 @@ msgstr "A(z) %s csomag elérhető, de nincs telepítve."
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "A(z) %s csomag elérhető, de más architektúrához van telepítve."
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "Nincs telepítve a(z) %s csomag."
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -3752,7 +3748,7 @@ msgstr ""
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "A(z) „{}” fájl feldolgozása sikertelen: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr "Hiba a(z) „{0}” fájlban található változó feldolgozásakor: {1}"
@@ -4412,6 +4408,10 @@ msgstr "Sikertelen"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<üres név>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "Nincs telepítve a(z) %s csomag."
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "A setopt argumentumnak több értéke is van: %s"

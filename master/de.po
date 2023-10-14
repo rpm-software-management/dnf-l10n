@@ -48,11 +48,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-10-14 21:36+0000\n"
 "Last-Translator: Christian Goeschel Ndjomouo <cndjomouo@icloud.com>\n"
-"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/de/>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -401,12 +401,13 @@ msgstr ""
 "Version installiert werden."
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "Kein Treffer für Argument: %s"
@@ -453,11 +454,6 @@ msgstr "Paket %s ist verfügbar aber nicht installiert."
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paket %s verfügbar, aber für eine andere Architektur installiert."
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "Kein Paket %s installiert."
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -2163,8 +2159,8 @@ msgid ""
 msgstr ""
 "Keine gültige Optionsangabe\n"
 "Anwendung: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]"
-"\n"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
+"tree]\n"
 "\n"
 "Beschreibung:\n"
 "  Ausgabe eines Baumdiagramms der angegeben Anwendundspakete."
@@ -3808,7 +3804,7 @@ msgstr "Paketquelle »{}« fehlt Name in Konfiguration, Kennung wird verwendet."
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Auswerten der Datei »{}» ist fehlgeschlagen: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr ""
@@ -4453,6 +4449,10 @@ msgstr "Fehlgeschlagen"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<Name-nicht-festgelegt>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "Kein Paket %s installiert."
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "Das Setopt-Argument hat mehrere Werte: %s"

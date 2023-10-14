@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-08-09 16:28+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -345,12 +345,13 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 하향설치 할 수 없습니다."
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "인수가 일치하지 않습니다: %s"
@@ -390,11 +391,6 @@ msgstr "%s 꾸러미는 사용할 수는 있지만 설치되어 있지 않습니
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "%s 꾸러미는 사용 가능하지만 다른 구조용으로 설치되어 있습니다."
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "%s 꾸러미는 설치되어 있지 않습니다."
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -3657,7 +3653,7 @@ msgstr "저장소 '{}'는 id를 사용하는 구성에 이름이 누락되어 �
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "\"{}\" 파일을 구문 분석하지 못했습니다: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr "파일에서 변수 구문 분석 할 때에 오류 '{0}': {1}"
@@ -4303,6 +4299,10 @@ msgstr "실패함"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<name-unset>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "%s 꾸러미는 설치되어 있지 않습니다."
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "Setopt 인수는 여러 값을 갖습니다. %s"

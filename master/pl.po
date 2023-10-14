@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-04-01 09:13+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -370,12 +370,13 @@ msgstr ""
 "Pakiet %s nie jest zainstalowany, nie można zainstalować poprzedniej wersji."
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "Brak wyników dla parametru: %s"
@@ -422,11 +423,6 @@ msgstr "Pakiet %s jest dostępny, ale nie jest zainstalowany."
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "Pakiet %s jest dostępny, ale jest zainstalowany dla innej architektury."
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "Nie zainstalowano pakietu %s."
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -3758,7 +3754,7 @@ msgstr ""
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Przetworzenie pliku „{}” się nie powiodło: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr "Błąd podczas przetwarzania zmiennej z pliku „{0}”: {1}"
@@ -4429,6 +4425,10 @@ msgstr "Niepowodzenie"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<nie ustawiono nazwy>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "Nie zainstalowano pakietu %s."
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "Parametr setopt ma wiele wartości: %s"

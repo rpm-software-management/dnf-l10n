@@ -31,7 +31,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-07 01:36+0000\n"
+"POT-Creation-Date: 2023-10-14 01:35+0000\n"
 "PO-Revision-Date: 2023-08-30 15:21+0000\n"
 "Last-Translator: Ps St <psyst@users.noreply.translate.fedoraproject.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
@@ -377,12 +377,13 @@ msgstr ""
 "パッケージ %s はインストールされていないので、ダウングレードできません。"
 
 #: dnf/base.py:2099 dnf/base.py:2118 dnf/base.py:2131 dnf/base.py:2162
-#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2374 dnf/cli/cli.py:417
-#: dnf/cli/commands/__init__.py:420 dnf/cli/commands/__init__.py:477
-#: dnf/cli/commands/__init__.py:581 dnf/cli/commands/__init__.py:628
-#: dnf/cli/commands/__init__.py:706 dnf/cli/commands/install.py:147
-#: dnf/cli/commands/reinstall.py:70 dnf/cli/commands/reinstall.py:84
-#: dnf/cli/commands/upgrade.py:105 dnf/cli/commands/upgrade.py:116
+#: dnf/base.py:2232 dnf/base.py:2240 dnf/base.py:2260 dnf/base.py:2374
+#: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:420
+#: dnf/cli/commands/__init__.py:477 dnf/cli/commands/__init__.py:581
+#: dnf/cli/commands/__init__.py:628 dnf/cli/commands/__init__.py:706
+#: dnf/cli/commands/install.py:147 dnf/cli/commands/reinstall.py:70
+#: dnf/cli/commands/reinstall.py:84 dnf/cli/commands/upgrade.py:105
+#: dnf/cli/commands/upgrade.py:116
 #, python-format
 msgid "No match for argument: %s"
 msgstr "一致した引数がありません: %s"
@@ -429,11 +430,6 @@ msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "パッケージ %s は利用可能ですが、他のアーキテクチャー用にインストールされてい"
 "ます。"
-
-#: dnf/base.py:2260
-#, python-format
-msgid "No package %s installed."
-msgstr "パッケージ %s はインストールされていません。"
 
 #: dnf/base.py:2278 dnf/cli/commands/install.py:136
 #: dnf/cli/commands/remove.py:133
@@ -3731,7 +3727,7 @@ msgstr "レポジトリ '{}' idを使用した設定内に見つかりません�
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "ファイル \"{}\" の解析に失敗しました: {}"
 
-#: dnf/conf/substitutions.py:66
+#: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
 msgstr "ファイル '{0}' の変数解析エラー: {1}"
@@ -4401,6 +4397,10 @@ msgstr "失敗しました"
 #: dnf/util.py:633
 msgid "<name-unset>"
 msgstr "<name-unset>"
+
+#, python-format
+#~ msgid "No package %s installed."
+#~ msgstr "パッケージ %s はインストールされていません。"
 
 #~ msgid "Setopt argument has multiple values: %s"
 #~ msgstr "Setopt 引数には複数の値があります: %s"
