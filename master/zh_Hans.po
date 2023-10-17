@@ -4,13 +4,14 @@
 # 文一 <chuxuec@outlook.com>, 2022.
 # Jingge Chen <mariocanfly@hotmail.com>, 2022.
 # Yang Yulin <yylteam@icloud.com>, 2022.
+# Charles Lee <lchopn@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-14 01:35+0000\n"
-"PO-Revision-Date: 2022-12-03 13:19+0000\n"
-"Last-Translator: Yang Yulin <yylteam@icloud.com>\n"
+"PO-Revision-Date: 2023-10-19 03:35+0000\n"
+"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -409,7 +410,7 @@ msgstr "针对于参数 %s 的软件包可用， 但是目前没有安装。"
 #: dnf/base.py:2386
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr "软件包 %s 的最低版本已经安装，无法再进行降级。"
+msgstr "已经安装软件包 %s 的最低版本，无法再进行降级。"
 
 #: dnf/base.py:2486
 msgid "No security updates needed, but {} update available"
@@ -1473,10 +1474,8 @@ msgid "switch a module to a stream and distrosync rpm packages"
 msgstr "切换一个模块到某个流并且对 rpm 软件包进行 distrosync"
 
 #: dnf/cli/commands/module.py:302
-#, fuzzy
-#| msgid "remove all modular packages"
 msgid "locate a module the modular packages belong to"
-msgstr "移除所有模块包"
+msgstr "定位模块软件包所属的模块"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
@@ -1979,7 +1978,7 @@ msgstr "参数 {} 需要 --whatrequires 或 --whatdepends 选项"
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:344
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%Y %b %d %a"
 
 #: dnf/cli/commands/repoquery.py:355
 msgid "Package {} contains no files"
@@ -2012,7 +2011,7 @@ msgstr ""
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
