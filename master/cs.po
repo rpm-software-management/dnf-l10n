@@ -36,8 +36,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-10-19 01:38+0000\n"
-"PO-Revision-Date: 2023-11-05 01:47+0000\n"
-"Last-Translator: Daniel Rusek <mail@asciiwolf.com>\n"
+"PO-Revision-Date: 2023-11-10 13:40+0000\n"
+"Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/cs/>\n"
 "Language: cs\n"
@@ -868,7 +868,7 @@ msgstr ""
 "\n"
 "\n"
 "Případně můžete zadat url adresu klíče, který chcete použít.\n"
-"pro úložiště v možnosti 'gpgkey' v sekci úložiště a {prog}\n"
+"pro repozitář v možnosti 'gpgkey' v sekci repozitáře a {prog}\n"
 "nainstaluje za vás.\n"
 "\n"
 "Další informace získáte u své distribuce nebo poskytovatele balíčků."
@@ -2664,6 +2664,8 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
+"zastarávajícímu balíčku pro příkazy info, list and repoquery, povoluje "
+"zastaralou logiku zpracování {prog} pro možnosti upgradu nebo zobrazení"
 
 #: dnf/cli/option_parser.py:248
 msgid "debugging output level for rpm"
@@ -3223,7 +3225,7 @@ msgstr ""
 #: dnf/cli/output.py:1203
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
-msgstr "Přeskakují se balíčky s porušenými závislostmi%s"
+msgstr "Přeskakují se balíčky s porušenými závislostmi %s"
 
 #: dnf/cli/output.py:1207
 msgid " or part of a group"
@@ -3434,7 +3436,7 @@ msgstr "Selhalo:"
 
 #: dnf/cli/output.py:1769 dnf/cli/output.py:1771
 msgid "Releasever     :"
-msgstr ""
+msgstr "Verze vydání     :"
 
 #: dnf/cli/output.py:1776 dnf/cli/output.py:1778
 msgid "Command Line   :"
@@ -3713,7 +3715,7 @@ msgstr "V konfiguraci chybí název úložiště '{}' ({}), používá se id."
 
 #: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
-msgstr "V konfiguraci chybí název úložiště '{}' ({}), používá se id."
+msgstr "V konfiguraci chybí název repozitáře '{}' ({}), používá se id."
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
@@ -3722,7 +3724,7 @@ msgstr "Rozbor souboru \"{}\" se nezdařil: {}"
 #: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "Chyba při parsování proměnné ze souboru '{0}': {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3736,16 +3738,16 @@ msgstr "repo %s: importovaný klíč 0x%s."
 
 #: dnf/crypto.py:103
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Ověřeno užitím DNS záznamu s DNSSEC signaturou."
 
 #: dnf/crypto.py:105
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "Neověřeno užitím DNS záznamu."
 
 #: dnf/crypto.py:135
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "získávání klíče repozitáře pro %s nešifrovaného z %s"
 
 #: dnf/db/group.py:308
 msgid ""
@@ -3762,7 +3764,7 @@ msgstr "Došlo k rpm výjimce: %s"
 
 #: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
-msgstr ""
+msgstr "Pro modulární balíček nejsou k dispozici žádná modulární metadata"
 
 #: dnf/db/group.py:395
 #, python-format
@@ -3773,26 +3775,27 @@ msgstr "Nenainstaluje zdrojový rpm balíček (%s)."
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
+"Konfigurační volba 'gpgkey_dns_verification' požaduje python3-unbound ({})"
 
 #: dnf/dnssec.py:243
 msgid "DNSSEC extension: Key for user "
-msgstr ""
+msgstr "DNSSEC rozšíření: Klíč pro uživatele "
 
 #: dnf/dnssec.py:245
 msgid "is valid."
-msgstr ""
+msgstr "je platný."
 
 #: dnf/dnssec.py:247
 msgid "has unknown status."
-msgstr ""
+msgstr "má neznámý stav."
 
 #: dnf/dnssec.py:255
 msgid "DNSSEC extension: "
-msgstr ""
+msgstr "DNSSEC rozšíření: "
 
 #: dnf/dnssec.py:287
 msgid "Testing already imported keys for their validity."
-msgstr ""
+msgstr "Testování platnosti již importovaných klíčů."
 
 #: dnf/drpm.py:62 dnf/repo.py:268
 #, python-format
@@ -3813,11 +3816,11 @@ msgstr "hotovo"
 
 #: dnf/exceptions.py:113
 msgid "Problems in request:"
-msgstr ""
+msgstr "Problémy v požadavku:"
 
 #: dnf/exceptions.py:115
 msgid "missing packages: "
-msgstr ""
+msgstr "chybějící balíčky: "
 
 #: dnf/exceptions.py:117
 msgid "broken packages: "
@@ -3825,7 +3828,7 @@ msgstr "poškozené balíčky: "
 
 #: dnf/exceptions.py:119
 msgid "missing groups or modules: "
-msgstr ""
+msgstr "chybějící skupiny nebo moduly: "
 
 #: dnf/exceptions.py:121
 msgid "broken groups or modules: "
@@ -3852,6 +3855,9 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Byl nalezen poškozený soubor zámku: %s.\n"
+"Ujistěte se, že není spuštěn žádný jiný proces dnf/yum, a ručně odstraňte "
+"soubor zámku nebo spusťte systemd-tmpfiles --remove dnf.conf."
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
@@ -3875,15 +3881,15 @@ msgstr "Profil pro '{}' neurčen, prosíme, zadejte profil."
 
 #: dnf/module/exceptions.py:27
 msgid "No such module: {}"
-msgstr ""
+msgstr "Žádný takový modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Žádný takový stream: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr "Žádné povolený stream pro modul: {}"
+msgstr "Žádný povolený stream pro modul: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
@@ -3891,15 +3897,15 @@ msgstr "Nelze povolit více streamů z modulu '{}' současně"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Pro modul povolen jiný stream: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
-msgstr ""
+msgstr "Žádný takový profil: {}"
 
 #: dnf/module/exceptions.py:64
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "Zadaný profil pro {} není nainstalován"
 
 #: dnf/module/exceptions.py:70
 msgid "No stream specified for '{}', please specify stream"
@@ -3911,7 +3917,7 @@ msgstr "Žádný profil: {}. Nejsou k dispozici žádné profily"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
-msgstr ""
+msgstr "Žádný profil k odstranění pro '{}'"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -3919,6 +3925,9 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 msgstr ""
+"\n"
+"\n"
+"Typ: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 
 #: dnf/module/module_base.py:36
 msgid ""
@@ -3926,11 +3935,14 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 msgstr ""
+"\n"
+"\n"
+"Typ: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 
 #: dnf/module/module_base.py:56 dnf/module/module_base.py:556
 #: dnf/module/module_base.py:615 dnf/module/module_base.py:684
 msgid "Ignoring unnecessary profile: '{}/{}'"
-msgstr ""
+msgstr "Ignorování nepotřebného profilu: '{}/{}'"
 
 #: dnf/module/module_base.py:86
 #, python-brace-format
@@ -3940,46 +3952,46 @@ msgstr "Žádná shoda pro argument '{0}' v modulu '{1}:{2}' není aktivní"
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
 #, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "Instalace modulu '{0}' z Fail-Safe repozitáře {1} není povolena"
 
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
-msgstr ""
+msgstr "Nelze přiřadit profil pro argument {}. Dostupné profily pro '{}:{}': {}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr ""
+msgstr "Nelze přiřadit profil pro argument {}"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr ""
+msgstr "Žádné defaultní profily pro modul {}:{}. Dostupné profily: {}"
 
 #: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "Žádné profily pro modul {}:{}"
 
 #: dnf/module/module_base.py:131
 msgid "Default profile {} not available in module {}:{}"
-msgstr ""
+msgstr "Defaultní profil {} není dostupný v modulu {}:{}"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Instalace modulu z Fail-Safe repozitáře není povolena"
 
 #: dnf/module/module_base.py:196
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
+msgstr "Žádné aktivní shody pro argument '{0}' v modulu '{1}:{2}'"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
-msgstr ""
+msgstr "Nainstalovaný profil '{0}' není dostupný ve streamu '{2}' modulu '{1}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Žádné dostupné balíčky pro název balíčku '{}' pro distrosync"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3991,15 +4003,15 @@ msgstr "Nelze vyřešit argument {}"
 #: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "Upgrade modulu '{0}' z Fail-Safe repozitáře {1} není povolen"
 
 #: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
-msgstr ""
+msgstr "Nelze přiřadit profil k argumentu {}"
 
 #: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Aktualizace modulu z Fail-Safe repozitáře není povolena"
 
 #: dnf/module/module_base.py:422
 #, python-brace-format
@@ -4014,10 +4026,12 @@ msgstr ""
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
+"Je vyžadován pouze název modulu. Ignorování nepotřebných informací v "
+"argumentu: '{}'"
 
 #: dnf/module/module_base.py:844
 msgid "No match for package {}"
-msgstr ""
+msgstr "Žádná shoda pro balíček {}"
 
 #. empty file is invalid json format
 #: dnf/persistor.py:53
@@ -4028,20 +4042,20 @@ msgstr "%s je prázdný soubor"
 #: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Nepodařilo se načíst mezipaměť repozitáře s vypršenou platností: %s"
 
 #: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Nepodařilo se uložit mezipaměť repozitáře s vypršenou platností: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
-msgstr ""
+msgstr "Nepodařilo se uložit poslední čas mezipaměti."
 
 #: dnf/persistor.py:112
 msgid "Failed determining last makecache time."
-msgstr ""
+msgstr "Nepodařilo se určit čas posledního vytvoření mezipaměti."
 
 #: dnf/plugin.py:63
 #, python-format
@@ -4056,15 +4070,15 @@ msgstr "Načtené pluginy: %s"
 #: dnf/plugin.py:216
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
-msgstr ""
+msgstr "Nepodařilo se načíst plugin \"%s\": %s"
 
 #: dnf/plugin.py:248
 msgid "No matches found for the following enable plugin patterns: {}"
-msgstr ""
+msgstr "Nebyly nalezeny žádné shody pro následující povolené vzory pluginů: {}"
 
 #: dnf/plugin.py:252
 msgid "No matches found for the following disable plugin patterns: {}"
-msgstr ""
+msgstr "Nebyly nalezeny žádné shody pro následující zakázané vzory pluginů: {}"
 
 #: dnf/repo.py:85
 #, python-format
@@ -4075,7 +4089,7 @@ msgstr "Žádná odpovídající payload factory pro %s"
 #: dnf/repo.py:347
 #, python-format
 msgid "determining the fastest mirror (%s hosts).. "
-msgstr ""
+msgstr "určení nejrychlejšího zrcadla (%s hostitelů).. "
 
 #: dnf/repodict.py:58
 #, python-format
@@ -4090,19 +4104,19 @@ msgstr "Přidán repozitář %s z %s"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "Použití rpmkeys spustitelných na %s k ověření signatur"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "Nelze najít spustitelné rpmkeys pro ověření signatur."
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "Funkce openDB() nemůže otevřít databázi rpm."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "Funkce dbCookie() nevrátila cookie databáze rpm."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
@@ -4168,6 +4182,8 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"Při přehrávání transakce ze souboru \"{filename}\" došlo k následujícím "
+"problémům:"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
@@ -4176,12 +4192,12 @@ msgstr "Během transakce došlo k následujícím chybám:"
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Neplatné hlavní číslo verze \"{major}\", očekává se číslo."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Neplatné vedlejší číslo verze \"{minor}\", očekává se číslo."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
@@ -4189,11 +4205,13 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Nekompatibilní hlavní číslo verze \"{major}\", podporované hlavní číslo "
+"verze je \"{major_supp}\"."
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "Byly zadány konfliktní argumenty TransactionReplay: filename, data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
