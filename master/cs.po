@@ -35,11 +35,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-19 01:38+0000\n"
+"POT-Creation-Date: 2023-11-10 01:45+0000\n"
 "PO-Revision-Date: 2023-11-10 13:40+0000\n"
 "Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
-"dnf-master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
+"master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2058,8 +2058,8 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"Volba '--recursive' musí být použita s '--whatrequires <REQ>' (volitelně s '"
-"--alldeps', ale ne s '--exactdeps'), nebo s '--requires <REQ> --resolve'"
+"Volba '--recursive' musí být použita s '--whatrequires <REQ>' (volitelně s "
+"'--alldeps', ale ne s '--exactdeps'), nebo s '--requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2092,21 +2092,12 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Nebyl uveden žádný platný přepínač\n"
-"použití: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--re"
-"commends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]\n"
+"použití: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
+"recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--"
+"tree]\n"
 "\n"
 "popis:\n"
 "  Pro dané balíčky zobrazuje strom balíčků."
-
-#. TRANSLATORS: This is the time format for dnf history list.
-#. You can change it but do it with caution because the output
-#. must be no longer than 16 characters. Format specifiers:
-#. %Y - year number (4 digits), %m - month (00-12), %d - day
-#. number (01-31), %H - hour (00-23), %M - minute (00-59).
-#. TRANSLATORS: This is the default time format for dnf repoquery.
-#: dnf/cli/commands/repoquery.py:725 dnf/cli/output.py:1556
-msgid "%Y-%m-%d %H:%M"
-msgstr "%d-%m-%Y %H:%M"
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -3333,6 +3324,15 @@ msgstr "Akce"
 msgid "Altered"
 msgstr "Pozměněno"
 
+#. TRANSLATORS: This is the time format for dnf history list.
+#. You can change it but do it with caution because the output
+#. must be no longer than 16 characters. Format specifiers:
+#. %Y - year number (4 digits), %m - month (00-12), %d - day
+#. number (01-31), %H - hour (00-23), %M - minute (00-59).
+#: dnf/cli/output.py:1556
+msgid "%Y-%m-%d %H:%M"
+msgstr "%d-%m-%Y %H:%M"
+
 #: dnf/cli/output.py:1584
 msgid "No transactions"
 msgstr "Žádné transakce"
@@ -3957,7 +3957,8 @@ msgstr "Instalace modulu '{0}' z Fail-Safe repozitáře {1} není povolena"
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
-msgstr "Nelze přiřadit profil pro argument {}. Dostupné profily pro '{}:{}': {}"
+msgstr ""
+"Nelze přiřadit profil pro argument {}. Dostupné profily pro '{}:{}': {}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
