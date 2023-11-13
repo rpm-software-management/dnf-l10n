@@ -36,10 +36,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-10 01:45+0000\n"
-"PO-Revision-Date: 2023-11-10 13:40+0000\n"
+"PO-Revision-Date: 2023-11-13 12:13+0000\n"
 "Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -4157,7 +4157,7 @@ msgstr "Reinstalace"
 #. TODO: 'Removing'?
 #: dnf/transaction.py:90
 msgid "Erasing"
-msgstr "Mazání"
+msgstr "K odstranění"
 
 #. TRANSLATORS: This is for a single package currently being upgraded.
 #: dnf/transaction.py:92
@@ -4217,33 +4217,34 @@ msgstr "Byly zadány konfliktní argumenty TransactionReplay: filename, data"
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Neočekávaný typ \"{id}\", očekává se {exp}."
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Chybějící klíč \"{key}\"."
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Chybějící klíč \"{key}\" objektu v rpm."
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Neočekávaná hodnota důvodu \"{reason}\" balíčku pro rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Nelze parsovat NEVRA pro balíček \"{nevra}\"."
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Nelze najít rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4256,17 +4257,19 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Balíček nevra \"{nevra}\" není dostupný v repozitářích pro akci \"{action}\"."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Balíček nevra \"{nevra}\" není nainstalován pro akci \"{action}\"."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Neočekáváná hodnota akce \"{action}\" balíčku pro rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4276,7 +4279,7 @@ msgstr "Group id '%s' není dostupný."
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Chybějící klíč \"{key}\" objektu v groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4295,33 +4298,36 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Neplatná hodnota \"{group_type}\" pro environments.groups.group_type, "
+"podporovány jsou pouze \"povinné\" nebo \"volitelné\"."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Chybějící klíč \"{key}\" objektu v environments.groups."
 
 #: dnf/transaction_sr.py:566
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Neočekávaná hodnota skupinové akce \"{action}\" pro skupinu \"{group}\"."
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Ve skupině chybí klíč \"{key}\" objektu."
 
 #: dnf/transaction_sr.py:599
 #, python-brace-format
 msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
-msgstr ""
+msgstr "Neočekávaná akce \"{action}\" prostředí \"{env}\"."
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Chybějící klíč \"{key}\" objektu v prostředí."
 
 #: dnf/transaction_sr.py:643
 #, python-brace-format
@@ -4329,6 +4335,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"Balíček nevra \"{nevra}\", který nebyl uveden v souboru trasakce, byl do ní "
+"natažen."
 
 #: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
