@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 01:42+0000\n"
+"POT-Creation-Date: 2023-11-21 01:45+0000\n"
 "PO-Revision-Date: 2023-09-17 14:36+0000\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
@@ -39,27 +39,37 @@ msgstr "Naslednje nadgradnje so na voljo na '%s':"
 msgid "The following updates were downloaded on '%s':"
 msgstr "Naslednje nadgradnje so bile prenesene na '%s':"
 
-#: dnf/automatic/emitter.py:83
+#: dnf/automatic/emitter.py:36
+#, python-format
+msgid "An error has occured on: '%s'"
+msgstr ""
+
+#: dnf/automatic/emitter.py:93
+#, python-format
+msgid "An error has occured on '%s'."
+msgstr ""
+
+#: dnf/automatic/emitter.py:95
 #, python-format
 msgid "Updates applied on '%s'."
 msgstr "Nadgradnje uveljavljene na '%s'."
 
-#: dnf/automatic/emitter.py:85
+#: dnf/automatic/emitter.py:97
 #, python-format
 msgid "Updates downloaded on '%s'."
 msgstr "Nadgradnje prenesene na '%s'."
 
-#: dnf/automatic/emitter.py:87
+#: dnf/automatic/emitter.py:99
 #, python-format
 msgid "Updates available on '%s'."
 msgstr "Nadgradnje na voljo na '%s'."
 
-#: dnf/automatic/emitter.py:117
+#: dnf/automatic/emitter.py:130
 #, python-format
 msgid "Failed to send an email via '%s': %s"
 msgstr "E-pošte ni bilo mogoče poslati prek '%s': %s"
 
-#: dnf/automatic/emitter.py:147
+#: dnf/automatic/emitter.py:160
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Izvedba ukaza '%s' ni uspela: vrnjeno %d"
@@ -74,19 +84,19 @@ msgstr "Neznana konfiguracijska vrednost: %s=%s v %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Neznana konfiguracijska možnost: %s = %s v %s"
 
-#: dnf/automatic/main.py:243 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:244 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "Preverjanje GPG NEUSPELO"
 
-#: dnf/automatic/main.py:288
+#: dnf/automatic/main.py:289
 msgid "Waiting for internet connection..."
 msgstr "Čakanje na internetno povezavo..."
 
-#: dnf/automatic/main.py:318
+#: dnf/automatic/main.py:320
 msgid "Started dnf-automatic."
 msgstr "Zagon dnf - samodejni."
 
-#: dnf/automatic/main.py:322
+#: dnf/automatic/main.py:324
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Spi za {} sekundo"
@@ -94,16 +104,16 @@ msgstr[1] "Spi za {} sekundi"
 msgstr[2] "Spi za {} sekunde"
 msgstr[3] "Spi za {} sekund"
 
-#: dnf/automatic/main.py:329
+#: dnf/automatic/main.py:331
 msgid "System is off-line."
 msgstr "Sistem je nepovezan."
 
-#: dnf/automatic/main.py:360 dnf/cli/cli.py:264
+#: dnf/automatic/main.py:362 dnf/cli/cli.py:264
 msgid "Transaction failed"
 msgstr "Transakcija ni uspela"
 
-#: dnf/automatic/main.py:372 dnf/cli/main.py:59 dnf/cli/main.py:80
-#: dnf/cli/main.py:83
+#: dnf/automatic/main.py:373 dnf/automatic/main.py:375 dnf/cli/main.py:59
+#: dnf/cli/main.py:80 dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
 msgstr "Napaka: %s"
@@ -3736,23 +3746,29 @@ msgstr ""
 "Konfiguracijska možnost 'gpgkey_dns_verification' zahteva python3-unbound "
 "({})"
 
-#: dnf/dnssec.py:243
+#: dnf/dnssec.py:247
 msgid "DNSSEC extension: Key for user "
 msgstr "Razširitev DNSSEC: Ključ za uporabnika "
 
-#: dnf/dnssec.py:245
+#: dnf/dnssec.py:249
 msgid "is valid."
 msgstr "je veljavno."
 
-#: dnf/dnssec.py:247
+#: dnf/dnssec.py:251
 msgid "has unknown status."
 msgstr "ima neznano stanje."
 
-#: dnf/dnssec.py:255
+#: dnf/dnssec.py:259
 msgid "DNSSEC extension: "
 msgstr "Razširitev DNSSEC: "
 
-#: dnf/dnssec.py:287
+#: dnf/dnssec.py:286
+msgid ""
+"Exempting key package {} from a validation because it's not bound to any e-"
+"mail address"
+msgstr ""
+
+#: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
 msgstr "Preizkušanje veljavnosti že uvoženih ključev."
 

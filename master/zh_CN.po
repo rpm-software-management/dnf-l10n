@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 01:42+0000\n"
+"POT-Creation-Date: 2023-11-21 01:45+0000\n"
 "PO-Revision-Date: 2023-10-19 03:35+0000\n"
 "Last-Translator: Zephyr Lykos <fedora@mochaa.ws>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -69,27 +69,37 @@ msgstr "下列位于 '%s' 的更新可用:"
 msgid "The following updates were downloaded on '%s':"
 msgstr "下列位于 '%s' 的更新已下载:"
 
-#: dnf/automatic/emitter.py:83
+#: dnf/automatic/emitter.py:36
+#, python-format
+msgid "An error has occured on: '%s'"
+msgstr ""
+
+#: dnf/automatic/emitter.py:93
+#, python-format
+msgid "An error has occured on '%s'."
+msgstr ""
+
+#: dnf/automatic/emitter.py:95
 #, python-format
 msgid "Updates applied on '%s'."
 msgstr "位于 '%s' 的更新已应用。"
 
-#: dnf/automatic/emitter.py:85
+#: dnf/automatic/emitter.py:97
 #, python-format
 msgid "Updates downloaded on '%s'."
 msgstr "位于 '%s' 的更新已下载。"
 
-#: dnf/automatic/emitter.py:87
+#: dnf/automatic/emitter.py:99
 #, python-format
 msgid "Updates available on '%s'."
 msgstr "位于 '%s' 的更新已可用。"
 
-#: dnf/automatic/emitter.py:117
+#: dnf/automatic/emitter.py:130
 #, python-format
 msgid "Failed to send an email via '%s': %s"
 msgstr "使用 '%s' 发送邮件失败: %s"
 
-#: dnf/automatic/emitter.py:147
+#: dnf/automatic/emitter.py:160
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
 msgstr "无法执行命令 '%s' ：返回 %d"
@@ -104,33 +114,33 @@ msgstr "未知配置值： %s=%s 在 %s 中; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "未知配置选项：%s = %s 在 %s 中"
 
-#: dnf/automatic/main.py:243 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:244 dnf/cli/cli.py:305
 msgid "GPG check FAILED"
 msgstr "GPG 检查失败"
 
-#: dnf/automatic/main.py:288
+#: dnf/automatic/main.py:289
 msgid "Waiting for internet connection..."
 msgstr "正在等待互联网连接…"
 
-#: dnf/automatic/main.py:318
+#: dnf/automatic/main.py:320
 msgid "Started dnf-automatic."
 msgstr "启动的 dnf-automatic。"
 
-#: dnf/automatic/main.py:322
+#: dnf/automatic/main.py:324
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "休眠 {} 秒"
 
-#: dnf/automatic/main.py:329
+#: dnf/automatic/main.py:331
 msgid "System is off-line."
 msgstr "系统离线。"
 
-#: dnf/automatic/main.py:360 dnf/cli/cli.py:264
+#: dnf/automatic/main.py:362 dnf/cli/cli.py:264
 msgid "Transaction failed"
 msgstr "事务失败"
 
-#: dnf/automatic/main.py:372 dnf/cli/main.py:59 dnf/cli/main.py:80
-#: dnf/cli/main.py:83
+#: dnf/automatic/main.py:373 dnf/automatic/main.py:375 dnf/cli/main.py:59
+#: dnf/cli/main.py:80 dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
 msgstr "错误：%s"
@@ -3685,23 +3695,29 @@ msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr "配置文件选项 'gpgkey_dns_verification' 要求 python3-unbound ({})"
 
-#: dnf/dnssec.py:243
+#: dnf/dnssec.py:247
 msgid "DNSSEC extension: Key for user "
 msgstr "DNSSEC 扩展 : 用户的密钥 "
 
-#: dnf/dnssec.py:245
+#: dnf/dnssec.py:249
 msgid "is valid."
 msgstr "有效。"
 
-#: dnf/dnssec.py:247
+#: dnf/dnssec.py:251
 msgid "has unknown status."
 msgstr "具有未知的状态。"
 
-#: dnf/dnssec.py:255
+#: dnf/dnssec.py:259
 msgid "DNSSEC extension: "
 msgstr "DNSSEC 扩展 : "
 
-#: dnf/dnssec.py:287
+#: dnf/dnssec.py:286
+msgid ""
+"Exempting key package {} from a validation because it's not bound to any e-"
+"mail address"
+msgstr ""
+
+#: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
 msgstr "测试已导入的密钥以检查有效性。"
 
