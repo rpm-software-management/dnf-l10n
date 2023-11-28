@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-11-26 01:45+0000\n"
-"PO-Revision-Date: 2023-09-25 17:35+0000\n"
+"PO-Revision-Date: 2023-11-29 17:38+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.2.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -46,12 +46,12 @@ msgstr "下列更新已下載於「%s」："
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "遭遇錯誤於：「%s」"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "遭遇錯誤於「%s」。"
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -3636,7 +3636,7 @@ msgstr "並未以 DNS 紀錄核驗。"
 #: dnf/crypto.py:135
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "從 %s 擷取的軟體庫金鑰未加密"
 
 #: dnf/db/group.py:308
 msgid ""
@@ -3683,7 +3683,7 @@ msgstr "DNSSEC 擴充： "
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
-msgstr ""
+msgstr "從有效驗證中免除金鑰軟體包 {}，因為它並未綁定任何電子郵件位址"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -3868,10 +3868,9 @@ msgid "Installing module from Fail-Safe repository is not allowed"
 msgstr "不允許從防故障軟體庫安裝模組"
 
 #: dnf/module/module_base.py:196
-#, fuzzy, python-brace-format
-#| msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
+#, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr "所有「{1}:{2}」模組中的「{0}」引數符合項目皆未作用中"
+msgstr "所有「{1}:{2}」模組中的「{0}」引數未有作用中的符合項目"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
@@ -3880,7 +3879,7 @@ msgstr "安裝的「{0}」設定檔在「{1}」模組「{2}」流道中無法使
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "distrosync 中對於軟體包名稱「{}」沒有可用的軟體包"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -3929,12 +3928,12 @@ msgstr "%s 為空白檔案"
 #: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "無法載入過期的軟體庫快取：%s"
 
 #: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "無法儲存過期的軟體庫快取：%s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
@@ -3991,11 +3990,11 @@ msgstr "已從 %s 增加 %s 軟體庫"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "使用 %s 位置的 rpmkeys 執行檔來核驗簽章"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "找不到 rpmkeys 執行檔來核驗簽章。"
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
@@ -4003,7 +4002,7 @@ msgstr "openDB() 函式無法開啟 rpm 資料庫。"
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "dbCookie() 函式沒有傳回 rpm 資料庫的 cookie。"
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
@@ -4013,7 +4012,7 @@ msgstr "測試處理事項時發生錯誤。"
 msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
-msgstr ""
+msgstr "allow_vendor_change 已停用。此選項目前不支援 downgrade 與 distro-sync 命令"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4066,50 +4065,48 @@ msgstr "正在準備"
 msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
-msgstr ""
+msgstr "根據「{filename}」檔案重新執行處理事項時遭遇下列問題："
 
 #: dnf/transaction_sr.py:68
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "The following problems occurred while running a transaction:"
-msgstr "在處理事項時發生錯誤。"
+msgstr "執行處理事項時遭遇下列問題："
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "無效的主版號「{major}」，預期是數字。"
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "無效的次版號「{minor}」，預期是數字。"
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
 msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
-msgstr ""
+msgstr "不相容的主版號「{major}」，支援的主版號為「{major_supp}」。"
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr ""
+msgstr "指定的 TransactionReplay 引數發生衝突：filename, data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "未預期「{id}」類型，預期的是 {exp}。"
 
 #: dnf/transaction_sr.py:271
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "遺失「{key}」鍵。"
 
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "RPM 中缺失物件鍵「{key}」。"
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
@@ -4128,10 +4125,9 @@ msgid "Cannot find rpm nevra \"{nevra}\"."
 msgstr ""
 
 #: dnf/transaction_sr.py:336
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "已安裝 %s 軟體包。"
+msgstr "「{na}」軟體包已經由「{action}」動作安裝。"
 
 #: dnf/transaction_sr.py:345
 #, python-brace-format
@@ -4152,10 +4148,9 @@ msgid ""
 msgstr ""
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "無法使用「%s」模組或群組。"
+msgstr "沒有「%s」群組 ID 可用。"
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
@@ -4164,16 +4159,14 @@ msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "未安裝「%s」模組或群組。"
+msgstr "未安裝「%s」群組 ID。"
 
 #: dnf/transaction_sr.py:442
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not available."
+#, python-format
 msgid "Environment id '%s' is not available."
-msgstr "無法使用「%s」環境。"
+msgstr "沒有「%s」環境 ID 可用。"
 
 #: dnf/transaction_sr.py:466
 #, python-brace-format
