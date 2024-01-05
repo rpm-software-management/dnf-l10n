@@ -12,13 +12,14 @@
 # Anonymous <noreply@weblate.org>, 2020.
 # Aditya Rahman <adityarahman032@gmail.com>, 2021.
 # eko ikhyar <ikhyar.com@gmail.com>, 2021.
+# Arif Budiman <arifpedia@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-03 01:41+0000\n"
-"PO-Revision-Date: 2023-09-15 01:35+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"PO-Revision-Date: 2024-01-06 13:36+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/id/>\n"
 "Language: id\n"
@@ -26,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.1\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -51,12 +52,12 @@ msgstr "Pembaruan berikut diunduh pada '%s':"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "Terjadi kesalahan pada: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "Terjadi kesalahan pada '%s'."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -1611,7 +1612,7 @@ msgstr "hapus paket duplikat"
 
 #: dnf/cli/commands/remove.py:58
 msgid "remove installonly packages over the limit"
-msgstr ""
+msgstr "hapus paket installonly yang melebihi batas"
 
 #: dnf/cli/commands/remove.py:95
 msgid "No duplicated packages found for removal."
@@ -2666,6 +2667,9 @@ msgid ""
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
 msgstr ""
+"Mengaktifkan repositori sementara untuk tujuan perintah dnf saat ini. "
+"Menerima id, daftar id yang dipisahkan dengan koma, atau kumpulan id. Opsi "
+"ini dapat diberikan beberapa kali."
 
 #: dnf/cli/option_parser.py:265
 msgid ""
@@ -2674,6 +2678,10 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"Menonaktifkan sementara repositori aktif untuk tujuan perintah dnf saat ini. "
+"Menerima sebuah id, daftar id yang dipisahkan dengan koma, atau kumpulan id. "
+"Opsi ini dapat diberikan beberapa kali, tetapi tidak dapat digantikan dengan "
+"`--repo`."
 
 #: dnf/cli/option_parser.py:272
 msgid ""
@@ -2706,6 +2714,8 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
+"label dan jalur ke repositori tambahan yang akan digunakan (jalur yang sama "
+"seperti di baseurl), dapat ditentukan beberapa kali."
 
 #: dnf/cli/option_parser.py:299
 msgid "disable removal of dependencies that are no longer used"
@@ -2751,6 +2761,7 @@ msgstr "Sertakan paket yang relevan dengan perbaikan bug, dalam pembaruan"
 #: dnf/cli/option_parser.py:327
 msgid "Include enhancement relevant packages, in updates"
 msgstr ""
+"Menyertakan paket-paket yang terkait dengan penyempurnaan, dalam pembaruan"
 
 #: dnf/cli/option_parser.py:330
 msgid "Include newpackage relevant packages, in updates"
@@ -2775,10 +2786,14 @@ msgstr ""
 #: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr ""
+"Sertakan paket yang diperlukan untuk memperbaiki CVE yang diberikan, dalam "
+"pembaruan"
 
 #: dnf/cli/option_parser.py:349
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr ""
+"Menyertakan paket keamanan yang terkait dengan tingkat keparahan, dalam "
+"pembaruan"
 
 #: dnf/cli/option_parser.py:355
 msgid "Force the use of an architecture"
