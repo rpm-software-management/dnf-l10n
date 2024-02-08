@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-08 01:34+0000\n"
-"PO-Revision-Date: 2024-02-04 11:49+0000\n"
+"PO-Revision-Date: 2024-02-09 19:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ka/>\n"
@@ -884,7 +884,7 @@ msgstr "მხოლოდ განახლებების ჩვენე�
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:756
 msgid "show only autoremove packages"
-msgstr "მხოლოდ თვითწაშლადი პაკეტების ჩვენება"
+msgstr "მხოლოდ 'autoremove' პაკეტების ჩვენება"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:759
 msgid "show only recently changed packages"
@@ -1278,15 +1278,15 @@ msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
-"ბრძანებისთვის reply, ტრანზაქციაში მყოფი პაკეტების დაყენებულებთან შედარება არ "
-"მოხდება"
+"ბრძანებისთვის replay, ტრანზაქციაში მყოფი პაკეტების დაყენებულებთან შედარება "
+"არ მოხდება"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
-"ბრძანებისთვის reply, ტრანზაქციაში ჩამატებული დამატებითი პაკეტები არ "
+"ბრძანებისთვის replay, ტრანზაქციაში ჩამატებული დამატებითი პაკეტები არ "
 "შემოწმდება"
 
 #: dnf/cli/commands/history.py:74
@@ -1294,8 +1294,8 @@ msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
-"ბრძანებისთვის reply, გამოტოვებული იქნება პაკეტები, რომლებიც ხელმიუწვდომელია, "
-"ან რომლის დამოკიდებულებებიც ხელმისაწვდომი არაა"
+"ბრძანებისთვის replay, გამოტოვებული იქნება პაკეტები, რომლებიც "
+"ხელმიუწვდომელია, ან რომლის დამოკიდებულებებიც ხელმისაწვდომი არაა"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1827,7 +1827,7 @@ msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
-"გამოიყენება --whatrequires, --requres და --resolve-სთან ერთად. პაკეტების "
+"გამოიყენება --whatrequires, --requires და --resolve -სთან ერთად. პაკეტების "
 "რეკურსიული გამოთხოვა."
 
 #: dnf/cli/commands/repoquery.py:169
@@ -1886,7 +1886,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
-msgstr "--queryformat-თან ერთად გამოსაყენებლად ხელმისაწვდომი ჭდეების ჩვენება"
+msgstr "--queryformat -თან ერთად გამოსაყენებლად ხელმისაწვდომი ჭდეების ჩვენება"
 
 #: dnf/cli/commands/repoquery.py:205
 msgid ""
@@ -3665,7 +3665,7 @@ msgstr "უცნობი კონფიგურაციის პარა�
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
 msgstr ""
-"შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s', მნიშვნელობა '%s': %s"
+"შეცდომა --setopt -ის დამუშავებისას პარამეტრით '%s', მნიშვნელობა '%s': %s"
 
 #: dnf/conf/config.py:399
 #, python-format
@@ -3680,7 +3680,7 @@ msgstr "არასწორი ან უცნობი \"{}\": {}"
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
 msgstr ""
-"შეცდომა --setopt-ის დამუშავებისას პარამეტრით '%s.%s', მნიშვნელობა '%s': %s"
+"შეცდომა --setopt -ის დამუშავებისას პარამეტრით '%s.%s', მნიშვნელობა '%s': %s"
 
 #: dnf/conf/config.py:523
 #, python-format
@@ -3694,7 +3694,7 @@ msgstr "გაფრთხილება: %s-ის ჩატვირთვი
 
 #: dnf/conf/read.py:72
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr "რეპოს არასწორი id: {}, ბაიტი = {} {}"
+msgstr "რეპოს არასწორი id: {} ({}), ბაიტი = {} {}"
 
 #: dnf/conf/read.py:76
 msgid "Bad id for repo: {}, byte = {} {}"
@@ -3762,7 +3762,7 @@ msgstr ""
 #: dnf/db/group.py:359
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr "RPM-ის გამონაკლისი: %s"
+msgstr "'rpm'-ის გამონაკლისი: %s"
 
 #: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
@@ -4065,11 +4065,11 @@ msgstr "ვადაგასული რეპოების კეშის 
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
-msgstr "Makecache ბრძანების ბოლო გაშვების დროის შენახვა შეუძლებელია."
+msgstr "'makecache' ბრძანების ბოლო გაშვების დროის შენახვა შეუძლებელია."
 
 #: dnf/persistor.py:112
 msgid "Failed determining last makecache time."
-msgstr "Makecache ბრძანების ბოლო გაშვების დროის მოძებნა შეუძლებელია."
+msgstr "'makecache' ბრძანების ბოლო გაშვების დროის მოძებნა შეუძლებელია."
 
 #: dnf/plugin.py:63
 #, python-format
@@ -4119,7 +4119,7 @@ msgstr "დამატებულია %s რეპოზიტორია %
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
 msgstr ""
-"ხელმოწერების გადასამოწმებლად rpmkey-ის (ბილიკი: %s) გამშვები ფაილი იქნება "
+"ხელმოწერების გადასამოწმებლად rpmkeys -ის (ბილიკი: %s) გამშვები ფაილი იქნება "
 "გამოყენებული"
 
 #: dnf/rpm/miscutils.py:66
@@ -4129,7 +4129,7 @@ msgstr ""
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr "ფუნქციას OpenDB() rpm-ის ბაზის გახსნა არ შეუძლია."
+msgstr "ფუნქციას openDB() rpm-ის ბაზის გახსნა არ შეუძლია."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
@@ -4245,7 +4245,7 @@ msgstr "ნაკლული გასაღები \"{key}\"."
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr "RPM-ში ობიეტქის გასაღები \"{key}\" აღმოჩენილი არაა."
+msgstr "'rpm'-ში ობიექტის გასაღები \"{key}\" აღმოჩენილი არაა."
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
@@ -4263,7 +4263,7 @@ msgstr "პაკეტისთვის \"{nevra}\" NEVRA-ის დამუ�
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr "RPM nevra \"{nevra}\" ვერ ვიპოვე."
+msgstr "'rpm' nevra \"{nevra}\" ვერ ვიპოვე."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4369,7 +4369,7 @@ msgstr "პრობლემა"
 
 #: dnf/util.py:470
 msgid "TransactionItem not found for key: {}"
-msgstr "ტრანზაქციის ჩანაწერი ვერ ვიპოვე გასაღებისთვის: {}"
+msgstr "TransactionItem -ის ჩანაწერი ვერ ვიპოვე გასაღებისთვის: {}"
 
 #: dnf/util.py:480
 msgid "TransactionSWDBItem not found for key: {}"
