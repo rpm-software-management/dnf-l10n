@@ -36,7 +36,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-08 01:34+0000\n"
-"PO-Revision-Date: 2024-02-08 16:06+0000\n"
+"PO-Revision-Date: 2024-02-09 19:36+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
@@ -820,7 +820,7 @@ msgid ""
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
 "Aviso: Aplicando a verificação de assinatura GPG globalmente, de acordo com "
-"a política de segurança RPM ativa ( veja 'gpgcheck' no dnf.conf (5) para "
+"a política de segurança RPM ativa ( veja 'gpgcheck' no dnf.conf(5) para "
 "saber como termina esta mensagem)"
 
 #: dnf/cli/cli.py:924
@@ -2021,8 +2021,8 @@ msgid ""
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
 "Se o pacote não estiver instalado, exibir os recursos dos quais depende para "
-"executar %% pré e %% post scriptlets. Se o pacote estiver instalado, os "
-"recursos de exibição dependem de %% pré, %% post, %% pré-un e %% postun."
+"executar scriptlets %%pre e %%post. Se o pacote estiver instalado, os "
+"recursos de exibição dependem de %%pre, %%post, %%preun e %%postun."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
@@ -2095,7 +2095,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
-msgstr "argumento {} requer --whaquerquires ou --whatdependencia opção"
+msgstr "argumento {} requer a opção --whatrequires ou --whatdepends"
 
 #. TRANSLATORS: This is the date format for a changelog
 #. in dnf repoquery. You are encouraged to change it
@@ -3526,42 +3526,42 @@ msgstr "Reinstalar"
 #: dnf/cli/output.py:1898
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
-msgstr "---> Pacote %s.%s %s será instalado"
+msgstr "---> O pacote %s.%s %s será instalado"
 
 #: dnf/cli/output.py:1900
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
-msgstr "O pacote %s.%s %s será uma atualização"
+msgstr "---> O pacote %s.%s %s será uma atualização"
 
 #: dnf/cli/output.py:1902
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
-msgstr "O pacote %s.%s %s será apagado"
+msgstr "---> O pacote %s.%s %s será apagado"
 
 #: dnf/cli/output.py:1904
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
-msgstr "---> Pacote %s.%s %s será reinstalado"
+msgstr "---> O pacote %s.%s %s será reinstalado"
 
 #: dnf/cli/output.py:1906
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
-msgstr "---> Pacote %s.%s %s será desatualizado"
+msgstr "---> O pacote %s.%s %s terá a versão regredida"
 
 #: dnf/cli/output.py:1908
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
-msgstr "O pacote %s.%s %s ficará obsoleto"
+msgstr "---> O pacote %s.%s %s vai tornar obsoleto"
 
 #: dnf/cli/output.py:1910
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
-msgstr "O pacote %s.%s %s será atualizado"
+msgstr "---> O pacote %s.%s %s será atualizado"
 
 #: dnf/cli/output.py:1912
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
-msgstr "Pacote %s.%s %s ficará obsoleto"
+msgstr "---> O pacote %s.%s %s será tornado obsoleto"
 
 #: dnf/cli/output.py:1921
 msgid "--> Starting dependency resolution"
@@ -4111,11 +4111,11 @@ msgstr "Falha ao armazenar cache de repositórios expirados: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
-msgstr "Falha ao armazenar o último tempo de cache."
+msgstr "Falha ao armazenar o último tempo de makecache."
 
 #: dnf/persistor.py:112
 msgid "Failed determining last makecache time."
-msgstr "Falha ao determinar o último tempo de maquette."
+msgstr "Falha ao determinar o último tempo de makecache."
 
 #: dnf/plugin.py:63
 #, python-format
@@ -4366,8 +4366,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
-"Valor inválido \"{group_type}\" de environment.groups.group_type, apenas "
-"\"obrigatório\" ou \"opcional\" é suportado."
+"Valor inválido \"{group_type}\" de environments.groups.group_type, apenas "
+"\"mandatory\" ou \"optional\" é suportado."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
