@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-02-09 01:34+0000\n"
-"PO-Revision-Date: 2024-02-07 14:36+0000\n"
+"PO-Revision-Date: 2024-02-13 03:36+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -714,7 +714,7 @@ msgstr ""
 #: dnf/cli/cli.py:751
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "명령을 찾을 수 없습니다: %s . %s --help를 사용하십시오"
+msgstr "그런 명령이 없습니다: %s . %s --help 를 사용하세요"
 
 #: dnf/cli/cli.py:754
 #, python-format, python-brace-format
@@ -737,24 +737,24 @@ msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
-"--destdir 또는 --downloaddir은 --downloadonly 또는 download 또는 system-"
-"upgrade 명령과 함께 사용해야합니다."
+"--destdir 또는 --downloaddir 는 --downloadonly 또는 download 또는 system-"
+"upgrade 명령과 함께 사용해야 합니다."
 
 #: dnf/cli/cli.py:822
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
-"--enable, --set-enabled 및 --disable, --set-disabled는 config-manager 명령과 "
-"함께 사용해야합니다."
+"--enable, --set-enabled 및 --disable, --set-disabled 는 config-manager "
+"명령과 함께 사용해야 합니다."
 
 #: dnf/cli/cli.py:904
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
-"경고: 활성화된 RPM 보안 정책에 따라 GPG 서명 검사를 전체적으로 시행합니다 "
-"(이 메시지를 제거하는 방법은 dnf.conf (5)의 'gpgcheck' 참조)"
+"경고: 활성화된 RPM 보안 정책에 따라 GPG 서명 검사를 전체적으로 시행합니다 ("
+"이 메시지를 제거하는 방법은 dnf.conf(5)의 'gpgcheck' 참조)"
 
 #: dnf/cli/cli.py:924
 msgid "Config file \"{}\" does not exist"
@@ -867,7 +867,7 @@ msgstr "향상 꾸러미만 표시"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:756
 msgid "show only autoremove packages"
-msgstr "자동제거 꾸러미만 표시"
+msgstr "autoremove 꾸러미만 표시"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:759
 msgid "show only recently changed packages"
@@ -1253,28 +1253,27 @@ msgstr "연결 내역 표시 또는 사용"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr "저장 명령을 위해, 트랜젝션을 저장할 파일 경로"
+msgstr "store 명령을 위해, 연결할 store 파일 경로"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
-msgstr ""
-"재생명령을 위하여, 연결에 그것들과 일치하는 설치된 꾸러미를 확인하지 마세요"
+msgstr "replay 명령을 위해, 연결에서 이들과 일치하는지 설치된 꾸러미를 확인하지 "
+"마세요"
 
 #: dnf/cli/commands/history.py:71
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
-msgstr "응답 명령을 위하여, 연결에 추가 된 꾸러미를 확인하지 마세요"
+msgstr "replay 명령을 위해, 연결에 참여한 추가 꾸러미를 확인하지 마세요"
 
 #: dnf/cli/commands/history.py:74
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
-msgstr ""
-"지연 명령을 위하여, 사용 할 수 없는 또는 찾을 수 없는 의존성을 갖는 목록 건"
-"너 뛰기"
+msgstr "replay 명령을 위하여, 사용 할 수 없는 또는 찾을 수 없는 의존성을 갖는 목록 "
+"건너 뛰기"
 
 #: dnf/cli/commands/history.py:94
 msgid ""
@@ -1793,15 +1792,14 @@ msgstr "비 명시적 종속성 (파일 및 공급자) 확인. 기본 옵션"
 
 #: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
-msgstr "지정된대로 종속성을 확인. --alldeps와 반대됩니다"
+msgstr "--alldeps 와 반대로 제공된 대로 정확하게 의존성을 확인합니다"
 
 #: dnf/cli/commands/repoquery.py:167
 msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
-msgstr ""
-"--whatrequires, --requires --resolve와 함계 사용하여 꾸러미를 재귀적으로 쿼리"
-"합니다."
+msgstr "--whatrequires, 및 --requires --resolve 함께 사용되었으면, 꾸러미를 "
+"재귀적으로 질의합니다."
 
 #: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
@@ -1858,7 +1856,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
-msgstr "--queryformat과 함께 사용할 수 있는 태그를 표시합니다"
+msgstr "--queryformat 과 함께 사용 할 수 있는 꼬리표를 표시합니다"
 
 #: dnf/cli/commands/repoquery.py:205
 msgid ""
@@ -1939,9 +1937,9 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
-"만약 꾸러미가 설치되지 않은 경우에는, %%pre 및 %%post 구현 실행을 위해 의존하"
-"는 기능이 표시됩니다. 만약 꾸러미가 설치된 경우에는, %%pre, %%post, %%preun "
-"및 %%postun에 의존하지 않는 기능이 표시됩니다."
+"만약 꾸러미가 설치되지 않은 경우에는, %%pre 및 %%post 구현 실행을 위해 "
+"의존하는 기능이 표시됩니다. 만약 꾸러미가 설치된 경우에는, %%pre, %%post, "
+"%%preun 및 %%postun 에 의존하지 않는 기능이 표시됩니다."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
@@ -2004,9 +2002,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"옵션 '--reative'를 '--whatrequires <REQ>' (선택 옵션으로 '--exactdeps' 대신 "
-"'--alldeps'와 함께 사용), 또는 '--requires <REQ> --resolve'와 함께 사용해야 "
-"합니다"
+"옵션 '--recursive' 는 '--whatrequires <REQ>' (선택 옵션으로 '--exactdeps' "
+"대신 '--alldeps'와 함께 사용), 또는 '--requires <REQ> --resolve' 와 함께 "
+"사용해야 합니다"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2158,8 +2156,8 @@ msgid ""
 msgstr ""
 "{} arg [option] \n"
 "  list: 저장소 및 상태를 나열합니다. option = [all | id | glob] \n"
-"  enable : 저장소를 활성화합니다. option = repository id \n"
-"  disable : 저장소를 비활성화합니다. option = repository id"
+"  enable: 저장소를 활성화합니다. option = repository id \n"
+"  disable: 저장소를 비활성화합니다. option = repository id"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
@@ -2177,8 +2175,8 @@ msgid ""
 "  run: run the transaction"
 msgstr ""
 "{} arg\n"
-"  list : 연결 내용을 나열합니다\n"
-"  reset : 연결을 재설정합니다 (zero-out)\n"
+"  list: 연결 내용을 나열합니다\n"
+"  reset: 연결을 재설정합니다 (zero-out)\n"
 "  run: 연결을 실행합니다"
 
 #: dnf/cli/commands/shell.py:201
@@ -3718,7 +3716,7 @@ msgstr "모듈 꾸러미에 사용 가능한 모듈 메타 자료가 없습니�
 #: dnf/db/group.py:395
 #, python-format
 msgid "Will not install a source rpm package (%s)."
-msgstr "원천 RPM 꾸러미를 설치하지 않습니다 (%s)."
+msgstr "원천 rpm 꾸러미를 설치하지 않습니다 (%s)."
 
 #: dnf/dnssec.py:171
 msgid ""
@@ -4057,7 +4055,7 @@ msgstr "%s에서 %s 저장소를 추가했습니다"
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr "%s에 실행 할 수 있는 rpmkey를 사용하여 서명을 확인합니다"
+msgstr "%s에 실행 할 수 있는 rpmkeys 를 사용하여 서명을 확인합니다"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
@@ -4080,7 +4078,7 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
-"허용_공급업체_변화는 사용 할 수 없습니다. 이 선택은 현재 다운드레이드와 "
+"allow_vendor_change 는 사용 할 수 없습니다. 이 선택은 현재 downgrade 및 "
 "distro-sync 명령을 지원하지 않습니다"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
@@ -4161,7 +4159,7 @@ msgstr ""
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
-msgstr "연결 지연 인수의 충돌은 명시됩니다: 파일이름, 자료"
+msgstr "TransactionReplay 인수 충돌은 명시됩니다: 파일이름, 자료"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4229,7 +4227,7 @@ msgstr "Group_id '%s'는 사용 할 수 없습니다."
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr "group.packages에 있는 객체 키 \"{key}\" 누락."
+msgstr "groups.packages 의 객체 키 \"{key}\" 누락."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4248,13 +4246,13 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
-"잘못된 environments.groups.group_type의 값 \"{group_type}\", \"필 수\" 또는 "
-"\"선택\"만 지원합니다."
+"잘못된 environments.groups.group_type의 값 \"{group_type}\", \"mandatory\" "
+"또는 \"optional\" 만 지원합니다."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr "환경 그룹에서 누락된 객체 키 \"{key}\"."
+msgstr "environments.groups 에서 누락된 객체 키 \"{key}\"."
 
 #: dnf/transaction_sr.py:566
 #, python-brace-format
