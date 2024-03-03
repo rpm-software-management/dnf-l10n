@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-27 01:34+0000\n"
+"POT-Creation-Date: 2024-03-03 01:37+0000\n"
 "PO-Revision-Date: 2024-02-04 11:49+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -208,93 +208,93 @@ msgstr "De hämtade paketen sparas i cachen till nästa lyckade transaktion."
 msgid "You can remove cached packages by executing '%s'."
 msgstr "Du kan ta bort cache:ade paket genom att köra ”%s”."
 
-#: dnf/base.py:655
+#: dnf/base.py:656
 #, python-format
 msgid "Invalid tsflag in config file: %s"
 msgstr "Ogiltig tsflag i konfigurationsfil: %s"
 
-#: dnf/base.py:713
+#: dnf/base.py:714
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "Kunde inte lägga till gruppfil för förrådet: %s - %s"
 
-#: dnf/base.py:975
+#: dnf/base.py:976
 msgid "Running transaction check"
 msgstr "Kör transaktionskontroll"
 
-#: dnf/base.py:983
+#: dnf/base.py:984
 msgid "Error: transaction check vs depsolve:"
 msgstr "Fel: transaktionskontroll mot depsolve:"
 
-#: dnf/base.py:989
+#: dnf/base.py:990
 msgid "Transaction check succeeded."
 msgstr "Transaktionskontrollen lyckades."
 
-#: dnf/base.py:992
+#: dnf/base.py:993
 msgid "Running transaction test"
 msgstr "Kör transaktionstest"
 
-#: dnf/base.py:1002 dnf/base.py:1153
+#: dnf/base.py:1003 dnf/base.py:1154
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:1003
+#: dnf/base.py:1004
 msgid "Transaction test error:"
 msgstr "Transaktionstestfel:"
 
-#: dnf/base.py:1014
+#: dnf/base.py:1015
 msgid "Transaction test succeeded."
 msgstr "Transaktionstesten lyckades."
 
-#: dnf/base.py:1035
+#: dnf/base.py:1036
 msgid "Running transaction"
 msgstr "Kör transaktionen"
 
-#: dnf/base.py:1072
+#: dnf/base.py:1073
 msgid "Disk Requirements:"
 msgstr "Diskbehov:"
 
-#: dnf/base.py:1075
+#: dnf/base.py:1076
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
 msgstr[0] "Åtminstone {0} MB mer utrymme behövs på filsystemet {1}."
 msgstr[1] "Åtminstone {0} MB mer utrymme behövs på filsystemet {1}."
 
-#: dnf/base.py:1082
+#: dnf/base.py:1083
 msgid "Error Summary"
 msgstr "Felsammanfattning"
 
-#: dnf/base.py:1108
+#: dnf/base.py:1109
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB ändrad utanför {prog}."
 
-#: dnf/base.py:1154 dnf/base.py:1162
+#: dnf/base.py:1155 dnf/base.py:1163
 msgid "Could not run transaction."
 msgstr "Kunde inte köra transaktionen."
 
-#: dnf/base.py:1157
+#: dnf/base.py:1158
 msgid "Transaction couldn't start:"
 msgstr "Transaktionen kunde inte starta:"
 
-#: dnf/base.py:1171
+#: dnf/base.py:1172
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Kunde inte ta bort transaktionsfilen %s"
 
-#: dnf/base.py:1253
+#: dnf/base.py:1254
 msgid "Some packages were not downloaded. Retrying."
 msgstr "Några paket hämtades inte. Försöker igen."
 
-#: dnf/base.py:1283
+#: dnf/base.py:1284
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
 "Delta-RPM:er reducerade %.1f MB med uppdateringar till %.1f MB (%.1f %% "
 "sparat)"
 
-#: dnf/base.py:1287
+#: dnf/base.py:1288
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
@@ -302,76 +302,76 @@ msgstr ""
 "Misslyckade delta-RPM:er ökade %.1f MB med uppdateringar till %.1f MB (%.1f "
 "%% bortslösat)"
 
-#: dnf/base.py:1329
+#: dnf/base.py:1330
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "Kan inte lägga till lokala paket eftersom ett transaktionsjobb redan finns"
 
-#: dnf/base.py:1343
+#: dnf/base.py:1344
 msgid "Could not open: {}"
 msgstr "Kunde inte öppna: {}"
 
-#: dnf/base.py:1381
+#: dnf/base.py:1382
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "Den publika nyckeln för %s är inte installerad"
 
-#: dnf/base.py:1385
+#: dnf/base.py:1386
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Problem att öppna paketet %s"
 
-#: dnf/base.py:1393
+#: dnf/base.py:1394
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "Den publika nyckeln för %s är inte betrodd"
 
-#: dnf/base.py:1397
+#: dnf/base.py:1398
 #, python-format
 msgid "Package %s is not signed"
 msgstr "Paketet %s är inte signerat"
 
-#: dnf/base.py:1427
+#: dnf/base.py:1428
 #, python-format
 msgid "Cannot remove %s"
 msgstr "Det går inte att ta bort %s"
 
-#: dnf/base.py:1431
+#: dnf/base.py:1432
 #, python-format
 msgid "%s removed"
 msgstr "%s borttaget"
 
-#: dnf/base.py:1724
+#: dnf/base.py:1725
 msgid "No match for group package \"{}\""
 msgstr "Ingen matchning för gruppaket ”{}”"
 
-#: dnf/base.py:1806
+#: dnf/base.py:1807
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Lägger till paket från gruppen ”%s”: %s"
 
-#: dnf/base.py:1829 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1830 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
 msgid "Nothing to do."
 msgstr "Inget att göra."
 
-#: dnf/base.py:1847
+#: dnf/base.py:1848
 msgid "No groups marked for removal."
 msgstr "Inga grupper markerade att tas bort."
 
-#: dnf/base.py:1881
+#: dnf/base.py:1882
 msgid "No group marked for upgrade."
 msgstr "Ingen grupp markerad att uppgraderas."
 
-#: dnf/base.py:2099
+#: dnf/base.py:2100
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Paketet %s är inte installerat, kan inte nedgradera det."
 
-#: dnf/base.py:2101 dnf/base.py:2120 dnf/base.py:2133 dnf/base.py:2164
-#: dnf/base.py:2234 dnf/base.py:2242 dnf/base.py:2262 dnf/base.py:2376
+#: dnf/base.py:2102 dnf/base.py:2121 dnf/base.py:2134 dnf/base.py:2165
+#: dnf/base.py:2235 dnf/base.py:2243 dnf/base.py:2263 dnf/base.py:2380
 #: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -382,29 +382,29 @@ msgstr "Paketet %s är inte installerat, kan inte nedgradera det."
 msgid "No match for argument: %s"
 msgstr "Ingen matchning för argumentet: %s"
 
-#: dnf/base.py:2108
+#: dnf/base.py:2109
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "Paketet %s med en lägre version är redan installerat, kan inte nedgradera "
 "det."
 
-#: dnf/base.py:2131
+#: dnf/base.py:2132
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Paketet %s är inte installerat, kan inte ominstallera det."
 
-#: dnf/base.py:2146
+#: dnf/base.py:2147
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "Filen %s är ett källpaket och kan inte uppdateras, ignorerar."
 
-#: dnf/base.py:2161
+#: dnf/base.py:2162
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Paketet %s är inte installerat, kan inte uppdatera det."
 
-#: dnf/base.py:2171
+#: dnf/base.py:2172
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -412,103 +412,103 @@ msgstr ""
 "Samma eller en högre version av %s är redan installerad, det går inte att "
 "uppdatera den."
 
-#: dnf/base.py:2231 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2232 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Paketet %s är tillgängligt, men inte installerat."
 
-#: dnf/base.py:2237
+#: dnf/base.py:2238
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paketet %s är tillgängligt, men installerat för en annan arkitektur."
 
-#: dnf/base.py:2280 dnf/cli/commands/install.py:141
+#: dnf/base.py:2281 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Inte en giltig form: %s"
 
-#: dnf/base.py:2295 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2296 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Inga paket markerade att tas bort."
 
-#: dnf/base.py:2383 dnf/cli/cli.py:428
+#: dnf/base.py:2387 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Paket för argumentet %s tillgängliga, men inte installerade."
 
-#: dnf/base.py:2388
+#: dnf/base.py:2392
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Paketet %s med lägsta version är redan installerat, kan inte nedgradera det."
 
-#: dnf/base.py:2488
+#: dnf/base.py:2492
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs, men {} uppdatering finns tillgänglig"
 
-#: dnf/base.py:2490
+#: dnf/base.py:2494
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs, men {} uppdateringar finns tillgängliga"
 
-#: dnf/base.py:2494
+#: dnf/base.py:2498
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs för ”{}”, men {} uppdatering finns "
 "tillgänglig"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2500
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Inga säkerhetsuppdateringar behövs för ”{}”, men {} uppdateringar finns "
 "tillgängliga"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2517
+#: dnf/base.py:2521
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Kan inte hämta en nyckel för ett kommandoradspaket: %s"
 
-#: dnf/base.py:2525
+#: dnf/base.py:2529
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Paketet som misslyckas är: %s"
 
-#: dnf/base.py:2526
+#: dnf/base.py:2530
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-nycklar är konfigurerade som: %s"
 
-#: dnf/base.py:2538
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-nyckel vid %s (0x%s) är redan installerad"
 
-#: dnf/base.py:2574
+#: dnf/base.py:2578
 msgid "The key has been approved."
 msgstr "Nyckeln har godkänts."
 
-#: dnf/base.py:2577
+#: dnf/base.py:2581
 msgid "The key has been rejected."
 msgstr "Nyckeln har avvisats."
 
-#: dnf/base.py:2610
+#: dnf/base.py:2614
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Nyckelimport misslyckades (kod %d)"
 
-#: dnf/base.py:2612
+#: dnf/base.py:2616
 msgid "Key imported successfully"
 msgstr "Nyckelimport lyckades"
 
-#: dnf/base.py:2616
+#: dnf/base.py:2620
 msgid "Didn't install any keys"
 msgstr "Installerade inte några nycklar"
 
-#: dnf/base.py:2619
+#: dnf/base.py:2623
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -519,28 +519,28 @@ msgstr ""
 "inte korrekta för detta paket.\n"
 "Kontrollera att de rätta nyckel-URL:erna är konfigurerade för detta förråd."
 
-#: dnf/base.py:2630
+#: dnf/base.py:2634
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import av nycklar hjälpte inte, fel nycklar?"
 
-#: dnf/base.py:2683
+#: dnf/base.py:2687
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kanske du menade: {}"
 
-#: dnf/base.py:2715
+#: dnf/base.py:2719
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketet ”{}” från det lokala förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2718
+#: dnf/base.py:2722
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Några paket från ett lokalt förråd har felaktig kontrollsumma"
 
-#: dnf/base.py:2721
+#: dnf/base.py:2725
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paketet ”{}” från förrådet ”{}” har en felaktig kontrollsumma"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2728
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -548,23 +548,23 @@ msgstr ""
 "Några paket har en ogiltig cache, men kan inte hämtas på grund av flaggan ”--"
 "cacheonly”"
 
-#: dnf/base.py:2742 dnf/base.py:2762
+#: dnf/base.py:2746 dnf/base.py:2766
 msgid "No match for argument"
 msgstr "Ingen matching för argumentet"
 
-#: dnf/base.py:2750 dnf/base.py:2770
+#: dnf/base.py:2754 dnf/base.py:2774
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Alla matchningar filtrerades ut av uteslutsfilter för argumentet"
 
-#: dnf/base.py:2752
+#: dnf/base.py:2756
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alla matchningar filtrerades ut av modulfilter för argumentet"
 
-#: dnf/base.py:2768
+#: dnf/base.py:2772
 msgid "All matches were installed from a different repository for argument"
 msgstr "Alla matchningar installerades från ett annat förråd för argumentet"
 
-#: dnf/base.py:2829
+#: dnf/base.py:2833
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketet %s är redan installerat."
