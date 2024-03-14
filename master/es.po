@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-03 01:37+0000\n"
+"POT-Creation-Date: 2024-03-14 01:36+0000\n"
 "PO-Revision-Date: 2022-05-02 18:18+0000\n"
 "Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -241,43 +241,43 @@ msgstr "tsflag no válido en el archivo de configuración: %s"
 msgid "Failed to add groups file for repository: %s - %s"
 msgstr "No se pudo añadir el archivo de grupos desde el repositorio: %s - %s"
 
-#: dnf/base.py:976
+#: dnf/base.py:978
 msgid "Running transaction check"
 msgstr "Ejecutando verificación de operación"
 
-#: dnf/base.py:984
+#: dnf/base.py:986
 msgid "Error: transaction check vs depsolve:"
 msgstr "Error: verificación de operación vs depsolve:"
 
-#: dnf/base.py:990
+#: dnf/base.py:992
 msgid "Transaction check succeeded."
 msgstr "Verificación de operación exitosa."
 
-#: dnf/base.py:993
+#: dnf/base.py:995
 msgid "Running transaction test"
 msgstr "Ejecutando prueba de operaciones"
 
-#: dnf/base.py:1003 dnf/base.py:1154
+#: dnf/base.py:1005 dnf/base.py:1156
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
-#: dnf/base.py:1004
+#: dnf/base.py:1006
 msgid "Transaction test error:"
 msgstr "Error de prueba de transacción:"
 
-#: dnf/base.py:1015
+#: dnf/base.py:1017
 msgid "Transaction test succeeded."
 msgstr "Prueba de operación exitosa."
 
-#: dnf/base.py:1036
+#: dnf/base.py:1038
 msgid "Running transaction"
 msgstr "Ejecutando operación"
 
-#: dnf/base.py:1073
+#: dnf/base.py:1075
 msgid "Disk Requirements:"
 msgstr "Requerimientos de disco:"
 
-#: dnf/base.py:1076
+#: dnf/base.py:1078
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
@@ -286,39 +286,39 @@ msgstr[0] ""
 msgstr[1] ""
 "Se necesita al menos {0}MB de mas espacio en los sistemas de archivos {1}."
 
-#: dnf/base.py:1083
+#: dnf/base.py:1085
 msgid "Error Summary"
 msgstr "Resumen de errores"
 
-#: dnf/base.py:1109
+#: dnf/base.py:1111
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
 msgstr "RPMDB modificado fuera de {prog}."
 
-#: dnf/base.py:1155 dnf/base.py:1163
+#: dnf/base.py:1157 dnf/base.py:1165
 msgid "Could not run transaction."
 msgstr "No se pudo ejecutar la transacción."
 
-#: dnf/base.py:1158
+#: dnf/base.py:1160
 msgid "Transaction couldn't start:"
 msgstr "La transacción no pudo iniciarse:"
 
-#: dnf/base.py:1172
+#: dnf/base.py:1174
 #, python-format
 msgid "Failed to remove transaction file %s"
 msgstr "Falló al eliminar archivo de transacción %s"
 
-#: dnf/base.py:1254
+#: dnf/base.py:1256
 msgid "Some packages were not downloaded. Retrying."
 msgstr "No se descargaron algunos paquetes. Se volverá a intentar."
 
-#: dnf/base.py:1284
+#: dnf/base.py:1286
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
 "Delta RPMs redujo %.1f MB de actualizaciones a %.1f MB (%.1f%% de ahorro)"
 
-#: dnf/base.py:1288
+#: dnf/base.py:1290
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
@@ -326,77 +326,77 @@ msgstr ""
 "Los errores en Delta RPMs incrementaron %.1f MB de actualizaciones a %.1f MB "
 "(%.1f%% desperdiciado)"
 
-#: dnf/base.py:1330
+#: dnf/base.py:1332
 msgid "Cannot add local packages, because transaction job already exists"
 msgstr ""
 "No se pueden añadir paquetes locales, porque el trabajo de trransacción "
 "todavía existe"
 
-#: dnf/base.py:1344
+#: dnf/base.py:1346
 msgid "Could not open: {}"
 msgstr "No se pudo abrir: {}"
 
-#: dnf/base.py:1382
+#: dnf/base.py:1384
 #, python-format
 msgid "Public key for %s is not installed"
 msgstr "No se ha instalado la llave pública de %s"
 
-#: dnf/base.py:1386
+#: dnf/base.py:1388
 #, python-format
 msgid "Problem opening package %s"
 msgstr "Problemas abriendo el paquete %s"
 
-#: dnf/base.py:1394
+#: dnf/base.py:1396
 #, python-format
 msgid "Public key for %s is not trusted"
 msgstr "La llave pública de %s no es confiable"
 
-#: dnf/base.py:1398
+#: dnf/base.py:1400
 #, python-format
 msgid "Package %s is not signed"
 msgstr "El paquete %s no está firmado"
 
-#: dnf/base.py:1428
+#: dnf/base.py:1430
 #, python-format
 msgid "Cannot remove %s"
 msgstr "No es posible eliminar %s"
 
-#: dnf/base.py:1432
+#: dnf/base.py:1434
 #, python-format
 msgid "%s removed"
 msgstr "%s eliminado"
 
-#: dnf/base.py:1725
+#: dnf/base.py:1727
 msgid "No match for group package \"{}\""
 msgstr "No hay coincidencia para el grupo \"{}\""
 
-#: dnf/base.py:1807
+#: dnf/base.py:1809
 #, python-format
 msgid "Adding packages from group '%s': %s"
 msgstr "Añadiendo paquetes del grupo '%s': %s"
 
-#: dnf/base.py:1830 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1832 dnf/cli/cli.py:221 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
 msgid "Nothing to do."
 msgstr "Nada por hacer."
 
-#: dnf/base.py:1848
+#: dnf/base.py:1850
 msgid "No groups marked for removal."
 msgstr "No hay grupos marcados para eliminar."
 
-#: dnf/base.py:1882
+#: dnf/base.py:1884
 msgid "No group marked for upgrade."
 msgstr "No hay grupos marcados para actualizar."
 
-#: dnf/base.py:2100
+#: dnf/base.py:2102
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "El paquete %s no está instalado, no se puede revertir."
 
-#: dnf/base.py:2102 dnf/base.py:2121 dnf/base.py:2134 dnf/base.py:2165
-#: dnf/base.py:2235 dnf/base.py:2243 dnf/base.py:2263 dnf/base.py:2380
+#: dnf/base.py:2104 dnf/base.py:2123 dnf/base.py:2136 dnf/base.py:2167
+#: dnf/base.py:2237 dnf/base.py:2245 dnf/base.py:2265 dnf/base.py:2382
 #: dnf/cli/cli.py:417 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -407,136 +407,136 @@ msgstr "El paquete %s no está instalado, no se puede revertir."
 msgid "No match for argument: %s"
 msgstr "No hay coincidencias para el argumento: %s"
 
-#: dnf/base.py:2109
+#: dnf/base.py:2111
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "Ya hay instalada una versión anterior del paquete %s, no se puede revertir."
 
-#: dnf/base.py:2132
+#: dnf/base.py:2134
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "El paquete %s n está instalado, no puede reinstalarse."
 
-#: dnf/base.py:2147
+#: dnf/base.py:2149
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 "El archivo %s es un paquete de fuentes y no se puede actualizar, por lo que "
 "se descarta."
 
-#: dnf/base.py:2162
+#: dnf/base.py:2164
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "El paquete %s no está instalado, no puede actualizarse."
 
-#: dnf/base.py:2172
+#: dnf/base.py:2174
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 "La misma o superior versión de %s ya está instalada, no puede actualizarlo."
 
-#: dnf/base.py:2232 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2234 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "El paquete %s está disponible, pero no instalado."
 
-#: dnf/base.py:2238
+#: dnf/base.py:2240
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "El paquete %s está disponible, pero instalado para otra arquitectura."
 
-#: dnf/base.py:2281 dnf/cli/commands/install.py:141
+#: dnf/base.py:2283 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Formato incorrecto: %s"
 
-#: dnf/base.py:2296 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2298 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "No se han seleccionado paquetes para eliminar."
 
-#: dnf/base.py:2387 dnf/cli/cli.py:428
+#: dnf/base.py:2389 dnf/cli/cli.py:428
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Hay paquetes para %s, pero no instalados."
 
-#: dnf/base.py:2392
+#: dnf/base.py:2394
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Ya está instalada la versión más baja del paquete %s, no se puede revertir."
 
-#: dnf/base.py:2492
+#: dnf/base.py:2494
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "No es necesaria ninguna actualización de seguridad, pero hay {} "
 "actualización disponible"
 
-#: dnf/base.py:2494
+#: dnf/base.py:2496
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "No es necesaria ninguna actualización de seguridad, pero hay {} "
 "actualizaciones disponibles"
 
-#: dnf/base.py:2498
+#: dnf/base.py:2500
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "No es necesaria ninguna actualización de seguridad para \"{}\", pero hay {} "
 "actualización disponible"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2502
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "No es necesaria ninguna actualización de seguridad para \"{}\", pero hay {} "
 "actualizaciones disponibles"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2521
+#: dnf/base.py:2523
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 "No se puede recuperar una clave para un paquete de línea de comando: %s"
 
-#: dnf/base.py:2529
+#: dnf/base.py:2531
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". El paquete que falla es: %s"
 
-#: dnf/base.py:2530
+#: dnf/base.py:2532
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Llaves GPG configuradas como: %s"
 
-#: dnf/base.py:2542
+#: dnf/base.py:2544
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "La llave GPG de %s (0x%s) ya se encuentra instalada"
 
-#: dnf/base.py:2578
+#: dnf/base.py:2580
 msgid "The key has been approved."
 msgstr "Se ha aprobado la clave."
 
-#: dnf/base.py:2581
+#: dnf/base.py:2583
 msgid "The key has been rejected."
 msgstr "Se ha rechazado la clave."
 
-#: dnf/base.py:2614
+#: dnf/base.py:2616
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "La importación de la llave falló (código %d)"
 
-#: dnf/base.py:2616
+#: dnf/base.py:2618
 msgid "Key imported successfully"
 msgstr "La llave ha sido importada exitosamente"
 
-#: dnf/base.py:2620
+#: dnf/base.py:2622
 msgid "Didn't install any keys"
 msgstr "No se instaló ninguna llave"
 
-#: dnf/base.py:2623
+#: dnf/base.py:2625
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -548,32 +548,32 @@ msgstr ""
 "Verifique que las URLs de la llave para este repositorio estén correctamente "
 "configuradas."
 
-#: dnf/base.py:2634
+#: dnf/base.py:2636
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "La importación de la(s) llave(s) no funcionó, ¿llave(s) equivocada(s)?"
 
-#: dnf/base.py:2687
+#: dnf/base.py:2689
 msgid "  * Maybe you meant: {}"
 msgstr "  * Tal vez quiso decir: {}"
 
-#: dnf/base.py:2719
+#: dnf/base.py:2721
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquete \"{}\" del repositorio local \"{}\" no tiene una suma de "
 "verificación correcta"
 
-#: dnf/base.py:2722
+#: dnf/base.py:2724
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Algunos paquetes del repositorio local no pasan el control de integridad"
 
-#: dnf/base.py:2725
+#: dnf/base.py:2727
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquete \"{}\" del repositorio \"{}\" no tiene una suma de verificación "
 "correcta"
 
-#: dnf/base.py:2728
+#: dnf/base.py:2730
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -581,28 +581,28 @@ msgstr ""
 "Algunos paquetes no están correctos en la caché, pero no se pueden descargar "
 "debido al uso de la opción \"--cacheonly\""
 
-#: dnf/base.py:2746 dnf/base.py:2766
+#: dnf/base.py:2748 dnf/base.py:2768
 msgid "No match for argument"
 msgstr "No hay coincidencias para el argumento"
 
-#: dnf/base.py:2754 dnf/base.py:2774
+#: dnf/base.py:2756 dnf/base.py:2776
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Todas las coincidencias se filtraron excluyendo el argumento de filtrado"
 
-#: dnf/base.py:2756
+#: dnf/base.py:2758
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "Todas las coincidencia se filtraron mediante un filtrado modular del "
 "argumento"
 
-#: dnf/base.py:2772
+#: dnf/base.py:2774
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Todas las coincidencias fueron instaladas desde un repositorio diferente del "
 "argumento"
 
-#: dnf/base.py:2833
+#: dnf/base.py:2835
 #, python-format
 msgid "Package %s is already installed."
 msgstr "El paquete %s ya está instalado."
