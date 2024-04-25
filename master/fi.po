@@ -11,7 +11,7 @@
 # Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata, 2020, 2022.
 # Jari Korva <jpkorva@iki.fi>, 2019. #zanata, 2020.
 # Ricky Tigg <ricky.tigg@gmail.com>, 2020, 2021, 2022, 2023.
-# Jan Kuparinen <copper_fin@hotmail.com>, 2020, 2021, 2022, 2023.
+# Jan Kuparinen <copper_fin@hotmail.com>, 2020, 2021, 2022, 2023, 2024.
 # Robin Lahtinen <robin.lahtinen@gmail.com>, 2021.
 # Ville-Pekka Vainio <vpvainio@iki.fi>, 2023.
 msgid ""
@@ -19,16 +19,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-20 01:37+0000\n"
-"PO-Revision-Date: 2023-08-03 19:21+0000\n"
+"PO-Revision-Date: 2024-04-26 19:36+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -53,12 +53,12 @@ msgstr "Seuraavat päivitykset ladattiin järjestelmään ”%s”:"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "Virhe paikassa: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "Virhe paikassa '%s'."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -835,7 +835,7 @@ msgstr "Sisällytykset (include) ohjelmistolähteessä "
 #: dnf/cli/commands/__init__.py:38
 #, python-format
 msgid "To diagnose the problem, try running: '%s'."
-msgstr "Voit diagnosoida ongelman suorittamalla: ”%s”."
+msgstr "Voit diagnosoida ongelman suorittamalla: '%s'."
 
 #: dnf/cli/commands/__init__.py:40
 #, python-format
@@ -2546,14 +2546,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " tai ”{}” käyttääksesi muitakin kuin parhaita ehdokaspaketteja"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr "yritä lisätä ”{}” käyttääksesi muitakin kuin parhaita ehdokaspaketteja"
+msgstr "yritä lisätä \"{}\" ladataksesi lisää tiedostolistan metatietoja"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " tai '{}' ladataksesi lisää tiedostolistojen metatietoja"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -3829,6 +3827,8 @@ msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"Vapautetaan avainpaketti {} vahvistuksesta, koska se ei ole sidottu "
+"mihinkään sähköpostiosoitteeseen"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -3925,7 +3925,7 @@ msgstr "Virtaa {} ei ole olemassa"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
-msgstr "Ei käytössä olevaa virtaa moduulille: {}"
+msgstr "Ei Käytössä olevaa striimiä moduulille: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
@@ -3934,7 +3934,7 @@ msgstr ""
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr "Eri virta otettu käyttöön moduulille: {}"
+msgstr "Toinen virta otettu käyttöön moduulille: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
