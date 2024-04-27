@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-26 01:38+0000\n"
-"PO-Revision-Date: 2024-02-27 18:36+0000\n"
+"PO-Revision-Date: 2024-04-27 09:19+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -53,14 +53,12 @@ msgstr "Для «%s» отримано такі оновлення:"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
-"Стався найсмердючіший випадок. Не користуйтеся цим пакетним лайноменеджером."
-"%s"
+msgstr "Сталася помилка тут: «%s»"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr "Ти, гімно нероздушене! Матері твоїй ковінька!%s"
+msgstr "Сталася помилка у «%s»."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -660,6 +658,11 @@ msgid ""
 "*** made with dnf will be lost with the next ostree-based update.\n"
 "*** If you do not want to lose these changes, use 'rpm-ostree'.\n"
 msgstr ""
+"\n"
+"*** Керування цією системою здійснюється за допомогою ostree.\n"
+"*** Зміни, які внесено dnf, буде втрачено у результатні наступного.\n"
+"*** оновлення за допомогою ostree. Якщо ви хочете їх зберегти, користуйтеся "
+"rpm-ostree.\n"
 
 #: dnf/cli/cli.py:224 dnf/cli/cli.py:228
 msgid "Operation aborted."
@@ -3840,11 +3843,13 @@ msgstr "Розширення DNSSEC: "
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
-msgstr "Матері твоїй хиря, мудило клятий{}"
+msgstr ""
+"Усуваємо з перевірки ключовий пакунок {}, оскільки його не пов'язано із "
+"жодною адресою електронної пошти"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
-msgstr "Тестуємо вже імпортовані ключа на коректність."
+msgstr "Тестуємо вже імпортовані ключі на коректність."
 
 #: dnf/drpm.py:62 dnf/repo.py:268
 #, python-format
