@@ -1,13 +1,13 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2023.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2023, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-05-12 01:46+0000\n"
-"PO-Revision-Date: 2023-09-17 14:36+0000\n"
+"PO-Revision-Date: 2024-06-02 00:55+0000\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -42,12 +42,12 @@ msgstr "Naslednje nadgradnje so bile prenesene na '%s':"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "Pojavila se je napaka na: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "Pojavila se je napaka na '%s'."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -470,7 +470,7 @@ msgstr "Ni mogoče pridobiti ključa za paket ukazne vrstice: %s"
 #: dnf/base.py:2531
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ". Problematičen paket je: %s"
+msgstr ". Izpadel paket je: %s"
 
 #: dnf/base.py:2532
 #, python-format
@@ -2081,7 +2081,10 @@ msgid ""
 msgstr ""
 "Ni podanega veljavnega stikala\n"
 "usage: {prog} repoquery [--konflikti|--izboljšuje|--zastarelo|--zagotavlja|--"
-"priporoča|--zahteva|--predlaga|--dopolnjuje|--kar zahteva]"
+"priporoča|--zahteva|--predlaga|--dopolnjuje|--kar zahteva] [key] [--tree]\n"
+"\n"
+"opis:\n"
+"   Za dane pakete izpiši drevo paketov."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2128,18 +2131,18 @@ msgstr " & "
 #: dnf/cli/commands/search.py:80
 #, python-format
 msgid "%s Exactly Matched: %%s"
-msgstr ""
+msgstr "%s Natančna ujemanja: %%s"
 
 #. TRANSLATORS: %s  - translated package attributes,
 #. %%s - found keys (in listed attributes)
 #: dnf/cli/commands/search.py:84
 #, python-format
 msgid "%s Matched: %%s"
-msgstr "%s Ujemajoč: %%s"
+msgstr "%s Ujemajoče: %%s"
 
 #: dnf/cli/commands/search.py:134
 msgid "No matches found."
-msgstr "Ni najdenih zadetkov."
+msgstr "Ni najdenih ujemanj."
 
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
@@ -2173,10 +2176,10 @@ msgid ""
 "    If value is given it sets that value."
 msgstr ""
 "{} arg [vrednost]\n"
-" arg: debuglevel, errorlevel, obsoletes, gpgcheck, acceptyes, exclude,\n"
-" repo_id.gpgcheck, repo_id.exclude\n"
-" Če vrednost ni podana, natisne trenutno vrednost.\n"
-" Če vrednost"
+"  arg: debuglevel, errorlevel, obsoletes, gpgcheck, acceptyes, exclude,\n"
+"         repo_id.gpgcheck, repo_id.exclude\n"
+"    Če vrednost ni podana, natisne trenutno vrednost.\n"
+"    Če vrednost je podana, nastavi to vrednost."
 
 #: dnf/cli/commands/shell.py:181
 msgid ""
@@ -2194,7 +2197,9 @@ msgid ""
 "  disable: disable repositories. option = repository id"
 msgstr ""
 "{} arg [možnost]\n"
-" seznam: navaja repozitorije in njihov status."
+" list: navaja repozitorije in njihov status. možnost = [all | id | glob]\n"
+" enable: omogoči repozitorije, možnost = repository id\n"
+" disable: onemogoči repozitorije, možnost = repository id"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
@@ -2222,7 +2227,7 @@ msgid ""
 "    run the transaction"
 msgstr ""
 "{}\n"
-" zaženi transakcijo"
+"    zaženi transakcijo"
 
 #: dnf/cli/commands/shell.py:205
 msgid ""
@@ -2230,7 +2235,7 @@ msgid ""
 "    exit the shell"
 msgstr ""
 "{}\n"
-" zapustite lupino"
+"    zapustite shell"
 
 #: dnf/cli/commands/shell.py:210
 msgid ""
@@ -2244,13 +2249,16 @@ msgid ""
 "run                      resolve and run the transaction set\n"
 "exit (or quit)           exit the shell"
 msgstr ""
-"Argumenti, specifični za lupino:\n"
+"Argumenti, specifični za shell\n"
 "\n"
 "config nastavi konfiguracijske možnosti\n"
-"pomoč pri tiskanju pomoči\n"
-"repozitorij (ali repo) omogoči, onemogoči ali naštej repozitorije\n"
-"rešitev razreši nabor transakcij\n"
-"seznam transakcij (ali ts), ponastavi ali zaženi nabor transakcij\\"
+"help natisni pomoč\n"
+"repozitory (ali repo) omogoči, onemogoči ali naštej repozitorije\n"
+"resolvedep rešitev razreši nabor transakcij\n"
+"transaction (ali ts)  seznam transakcij, ponastavi ali zaženi nabor "
+"transakcij\n"
+"run razreši ali poženi nabor transakcij\n"
+"exit (ali quit)  zapusti shell"
 
 #: dnf/cli/commands/shell.py:262
 #, python-format
@@ -2467,7 +2475,7 @@ msgstr "false"
 
 #: dnf/cli/commands/updateinfo.py:385
 msgid "true"
-msgstr "res"
+msgstr "true"
 
 #: dnf/cli/commands/upgrade.py:41
 msgid "upgrade a package or packages on your system"
@@ -2517,16 +2525,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " ali '{}' za uporabo ne samo najboljših kandidatnih paketov"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr ""
-"poskusite dodati '{}', če želite uporabiti ne samo najboljše kandidatne "
-"pakete"
+msgstr "poskusite dodati '{}', da naložite dodatne sezname datotek metapodatkov"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " ali '{}' da bi naložili dodatne sezname datotek metapodatkov"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2564,7 +2568,7 @@ msgstr "tiho delovanje"
 
 #: dnf/cli/option_parser.py:180
 msgid "verbose operation"
-msgstr "podrobna operacija"
+msgstr "podrobno opisana operacija"
 
 #: dnf/cli/option_parser.py:182
 #, python-brace-format
@@ -2946,7 +2950,7 @@ msgstr "št"
 
 #: dnf/cli/output.py:655
 msgid "Is this ok [y/N]: "
-msgstr "Je to v redu [da/ne]: "
+msgstr "Je to v redu [y/N]: "
 
 #: dnf/cli/output.py:659
 msgid "Is this ok [Y/n]: "
