@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 01:46+0000\n"
+"POT-Creation-Date: 2024-06-01 01:48+0000\n"
 "PO-Revision-Date: 2023-03-22 21:20+0000\n"
 "Last-Translator: Aurimas Černius <aurisc4@gmail.com>\n"
 "Language-Team: Lithuanian <https://translate.fedoraproject.org/projects/dnf/"
@@ -359,13 +359,13 @@ msgstr "Jokia grupė nepažymėta šalinimui."
 msgid "No group marked for upgrade."
 msgstr "Jokia grupė nepažymėta naujovinimui."
 
-#: dnf/base.py:2102
+#: dnf/base.py:2107
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Paketas %s neįdiegtas, negalima jo pažeminti."
 
-#: dnf/base.py:2104 dnf/base.py:2123 dnf/base.py:2136 dnf/base.py:2167
-#: dnf/base.py:2237 dnf/base.py:2245 dnf/base.py:2265 dnf/base.py:2382
+#: dnf/base.py:2109 dnf/base.py:2128 dnf/base.py:2141 dnf/base.py:2172
+#: dnf/base.py:2242 dnf/base.py:2250 dnf/base.py:2270 dnf/base.py:2392
 #: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -376,122 +376,122 @@ msgstr "Paketas %s neįdiegtas, negalima jo pažeminti."
 msgid "No match for argument: %s"
 msgstr "Nėra atitikmens argumentui: %s"
 
-#: dnf/base.py:2111
+#: dnf/base.py:2116
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "Žemesnės versijos paketas %s jau įdiegtas, negalima jo pažeminti."
 
-#: dnf/base.py:2134
+#: dnf/base.py:2139
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Paketas „%s“ neįdiegtas, negalima įdiegti iš naujo."
 
-#: dnf/base.py:2149
+#: dnf/base.py:2154
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "Failas „%s“ yra kodo paketas ir negali būti atnaujintas. Ignoruojama."
 
-#: dnf/base.py:2164
+#: dnf/base.py:2169
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Paketas „%s“ neįdiegtas, negalima atnaujinti."
 
-#: dnf/base.py:2174
+#: dnf/base.py:2179
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "Ta pati arba naujesnė „%s“ versija jau įdiegta, negalima atnaujinti."
 
-#: dnf/base.py:2234 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2239 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Paketas „%s“ pasiekiamas, bet neįdiegtas."
 
-#: dnf/base.py:2240
+#: dnf/base.py:2245
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paketas „%s“ pasiekiamas, bet įdiegtas kitai architektūrai."
 
-#: dnf/base.py:2283 dnf/cli/commands/install.py:141
+#: dnf/base.py:2288 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Netinkama forma: %s"
 
-#: dnf/base.py:2298 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2303 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Nėra paketų, pažymėtų pašalinimui."
 
-#: dnf/base.py:2389 dnf/cli/cli.py:437
+#: dnf/base.py:2399 dnf/cli/cli.py:437
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Paketai argumentui „%s“ yra pasiekiami, bet neįrašyti."
 
-#: dnf/base.py:2394
+#: dnf/base.py:2404
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Žemiausios versijos paketas %s jau įdiegtas, negalima jo pažeminti."
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 msgid "No security updates needed, but {} update available"
 msgstr "Nėra reikalingų saugumo naujinimų, tačiau {} naujinys yra pasiekiamas"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "No security updates needed, but {} updates available"
 msgstr "Nėra saugumo atnaujinimų, bet prieinama {} atnaujinimų"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "Nėra saugumo atnaujinimų „{}“, bet prieinama {} atnaujinimų"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2512
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "Nėra saugumo atnaujinimų „{}“, bet prieinama {} atnaujinimų"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2523
+#: dnf/base.py:2533
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Nepavyksta gauti rakto komandų eilutės paketui: %s"
 
-#: dnf/base.py:2531
+#: dnf/base.py:2541
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Nepavykęs paketas yra: %s"
 
-#: dnf/base.py:2532
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG raktai sukonfigūruoti kaip: %s"
 
-#: dnf/base.py:2544
+#: dnf/base.py:2554
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG raktas iš %s (0x%s) jau įdiegtas"
 
-#: dnf/base.py:2580
+#: dnf/base.py:2590
 msgid "The key has been approved."
 msgstr "Raktas buvo patvirtintas."
 
-#: dnf/base.py:2583
+#: dnf/base.py:2593
 msgid "The key has been rejected."
 msgstr "Raktas buvo atmestas."
 
-#: dnf/base.py:2616
+#: dnf/base.py:2626
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Rakto importas neapvyko (kodas %d)"
 
-#: dnf/base.py:2618
+#: dnf/base.py:2628
 msgid "Key imported successfully"
 msgstr "Raktas sėkmingai importuotas"
 
-#: dnf/base.py:2622
+#: dnf/base.py:2632
 msgid "Didn't install any keys"
 msgstr "Neįdiegta jokių raktų"
 
-#: dnf/base.py:2625
+#: dnf/base.py:2635
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -502,29 +502,29 @@ msgstr ""
 "šiam paketui.\n"
 "Patikrinkite, ar teisingi URL yra nustatyti šiai saugyklai."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Rakto(-ų) importas nepadėjo, neteisingas(-i) raktas(-ai)?"
 
-#: dnf/base.py:2689
+#: dnf/base.py:2699
 msgid "  * Maybe you meant: {}"
 msgstr "  * Galbūt norėjote: {}"
 
-#: dnf/base.py:2721
+#: dnf/base.py:2731
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketas „{}“ iš vietinės talpyklos „{}“ turi neteisingą kontrolinę sumą"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2734
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Kai kurie paketai iš vietinės talpyklos turi neteisingą kontrolinę sumą"
 
-#: dnf/base.py:2727
+#: dnf/base.py:2737
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paketas „{}“ iš talpyklos „{}“ turi neteisingą kontrolinę sumą"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2740
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -532,23 +532,23 @@ msgstr ""
 "Kai kurie paketai turi netinkamą podėlį, bet negali būti atsisiųsti dėl "
 "parametro „--cacheonly“"
 
-#: dnf/base.py:2748 dnf/base.py:2768
+#: dnf/base.py:2758 dnf/base.py:2778
 msgid "No match for argument"
 msgstr "Nėra atitikmens argumentui"
 
-#: dnf/base.py:2756 dnf/base.py:2776
+#: dnf/base.py:2766 dnf/base.py:2786
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Visi atitikmenys buvo nufiltruoti išimties filtro argumentui"
 
-#: dnf/base.py:2758
+#: dnf/base.py:2768
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Visi atitikmenys buvo nufiltruoti modulinio filtravimo argumentui"
 
-#: dnf/base.py:2774
+#: dnf/base.py:2784
 msgid "All matches were installed from a different repository for argument"
 msgstr "Visi atitikmenys buvo įdiegti iš kitos saugyklos argumentui"
 
-#: dnf/base.py:2835
+#: dnf/base.py:2845
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paketas „%s“ jau įdiegtas."
@@ -792,7 +792,7 @@ msgstr ""
 "Nepavyko aptikti leidimo versijos (naudokite „--releasever“ leidimo versijai "
 "nurodyti)"
 
-#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "argumentas {}: neleidžiama su argumentu {}"
 
@@ -2004,7 +2004,7 @@ msgstr ""
 msgid "Package {} contains no files"
 msgstr ""
 
-#: dnf/cli/commands/repoquery.py:575
+#: dnf/cli/commands/repoquery.py:576
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"

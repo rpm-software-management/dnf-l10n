@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 01:46+0000\n"
+"POT-Creation-Date: 2024-06-01 01:48+0000\n"
 "PO-Revision-Date: 2023-11-13 12:13+0000\n"
 "Last-Translator: Sapphire RainSlide <RainSlide@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -349,13 +349,13 @@ msgstr "没有软件包组需要被移除."
 msgid "No group marked for upgrade."
 msgstr "没有软件包组需要被升级."
 
-#: dnf/base.py:2102
+#: dnf/base.py:2107
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "不能对未安装的包(%s)进行降级."
 
-#: dnf/base.py:2104 dnf/base.py:2123 dnf/base.py:2136 dnf/base.py:2167
-#: dnf/base.py:2237 dnf/base.py:2245 dnf/base.py:2265 dnf/base.py:2382
+#: dnf/base.py:2109 dnf/base.py:2128 dnf/base.py:2141 dnf/base.py:2172
+#: dnf/base.py:2242 dnf/base.py:2250 dnf/base.py:2270 dnf/base.py:2392
 #: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -366,122 +366,122 @@ msgstr "不能对未安装的包(%s)进行降级."
 msgid "No match for argument: %s"
 msgstr "没能匹配参数: %s"
 
-#: dnf/base.py:2111
+#: dnf/base.py:2116
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "软件包 %s 更低的版本已经安装,降级工作无法安装."
 
-#: dnf/base.py:2134
+#: dnf/base.py:2139
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "不能对没有安装的软件 %s 进行重装."
 
-#: dnf/base.py:2149
+#: dnf/base.py:2154
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "%s 为源代码包,无法进行升级,已经忽略."
 
-#: dnf/base.py:2164
+#: dnf/base.py:2169
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "不能对没有安装的软件 %s 进行更新."
 
-#: dnf/base.py:2174
+#: dnf/base.py:2179
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr "已经安装了软件包%s的相同或更高版本，无法更新。"
 
-#: dnf/base.py:2234 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2239 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "软件包 %s 可用，但没有被安装。"
 
-#: dnf/base.py:2240
+#: dnf/base.py:2245
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "软件包 %s 可用，当是为其它架构安装。"
 
-#: dnf/base.py:2283 dnf/cli/commands/install.py:141
+#: dnf/base.py:2288 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "无效: %s"
 
-#: dnf/base.py:2298 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2303 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "没有软件包需要移除。"
 
-#: dnf/base.py:2389 dnf/cli/cli.py:437
+#: dnf/base.py:2399 dnf/cli/cli.py:437
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "针对于参数 %s 的软件包可用， 但是目前没有安装。"
 
-#: dnf/base.py:2394
+#: dnf/base.py:2404
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "已经安装软件包 %s 的最低版本，无法再进行降级。"
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 msgid "No security updates needed, but {} update available"
 msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "No security updates needed, but {} updates available"
 msgstr "没有必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2512
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "没有针对于\"{}\" 所必须的安全更新， 但是 {} 的更新可用"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2523
+#: dnf/base.py:2533
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "无法获取来自命令行的软件包的密钥：%s"
 
-#: dnf/base.py:2531
+#: dnf/base.py:2541
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". 失败的软件包是：%s"
 
-#: dnf/base.py:2532
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG密钥配置为：%s"
 
-#: dnf/base.py:2544
+#: dnf/base.py:2554
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "%s 的 GPG 公钥(0x%s)已安装"
 
-#: dnf/base.py:2580
+#: dnf/base.py:2590
 msgid "The key has been approved."
 msgstr "密钥已被确认。"
 
-#: dnf/base.py:2583
+#: dnf/base.py:2593
 msgid "The key has been rejected."
 msgstr "密钥已被拒绝。"
 
-#: dnf/base.py:2616
+#: dnf/base.py:2626
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "导入公钥失败(代码 %d)"
 
-#: dnf/base.py:2618
+#: dnf/base.py:2628
 msgid "Key imported successfully"
 msgstr "导入公钥成功"
 
-#: dnf/base.py:2622
+#: dnf/base.py:2632
 msgid "Didn't install any keys"
 msgstr "没有安装任何公钥"
 
-#: dnf/base.py:2625
+#: dnf/base.py:2635
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -491,49 +491,49 @@ msgstr ""
 "仓库 \"%s\" 的 GPG 公钥已安装，但是不适用于此软件包。\n"
 "请检查此仓库的公钥 URL 是否配置正确。"
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "导入的密钥没有公钥，错误的公钥？"
 
-#: dnf/base.py:2689
+#: dnf/base.py:2699
 msgid "  * Maybe you meant: {}"
 msgstr "  * 可能您的意思是：{}"
 
-#: dnf/base.py:2721
+#: dnf/base.py:2731
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "软件包 \"{}\"（来自于本地仓库 \"{}\"）的 checksum 不正确"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2734
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "本地仓库的一些软件包校验值(checksum)不正确，无法确定软件包完整"
 
-#: dnf/base.py:2727
+#: dnf/base.py:2737
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "软件包 \"{}\"（来自仓库 \"{}\"）的 checksum 不正确"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2740
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr "以下软件包有无效缓存，因为使用了 \"--cacheonly\" 选项不能下载"
 
-#: dnf/base.py:2748 dnf/base.py:2768
+#: dnf/base.py:2758 dnf/base.py:2778
 msgid "No match for argument"
 msgstr "未找到匹配的参数"
 
-#: dnf/base.py:2756 dnf/base.py:2776
+#: dnf/base.py:2766 dnf/base.py:2786
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "由于您的搜索参数，所有相关结果都已被滤掉"
 
-#: dnf/base.py:2758
+#: dnf/base.py:2768
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "所有的匹配结果均已经被参数的模块化过滤条件筛除"
 
-#: dnf/base.py:2774
+#: dnf/base.py:2784
 msgid "All matches were installed from a different repository for argument"
 msgstr "已从另一个仓库安装了参数的所有匹配"
 
-#: dnf/base.py:2835
+#: dnf/base.py:2845
 #, python-format
 msgid "Package %s is already installed."
 msgstr "软件包 %s 已安装。"
@@ -764,7 +764,7 @@ msgid ""
 "version)"
 msgstr "无法找到发布版本（可用 '--releasever' 指定版本）"
 
-#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "参数 {}：不允许与参数 {} 一起使用"
 
@@ -2003,7 +2003,7 @@ msgstr "%Y %b %d %a"
 msgid "Package {} contains no files"
 msgstr "软件包 {} 不包含文件"
 
-#: dnf/cli/commands/repoquery.py:575
+#: dnf/cli/commands/repoquery.py:576
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"

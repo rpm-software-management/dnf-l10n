@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 01:46+0000\n"
+"POT-Creation-Date: 2024-06-01 01:48+0000\n"
 "PO-Revision-Date: 2023-11-23 09:01+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -357,13 +357,13 @@ msgstr "Geen pakketten voor verwijdering aangemerkt."
 msgid "No group marked for upgrade."
 msgstr "Geen pakketten voor upgrade aangemerkt."
 
-#: dnf/base.py:2102
+#: dnf/base.py:2107
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet downgraden."
 
-#: dnf/base.py:2104 dnf/base.py:2123 dnf/base.py:2136 dnf/base.py:2167
-#: dnf/base.py:2237 dnf/base.py:2245 dnf/base.py:2265 dnf/base.py:2382
+#: dnf/base.py:2109 dnf/base.py:2128 dnf/base.py:2141 dnf/base.py:2172
+#: dnf/base.py:2242 dnf/base.py:2250 dnf/base.py:2270 dnf/base.py:2392
 #: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -374,30 +374,30 @@ msgstr "Pakket %s is niet geïnstalleerd, kan het niet downgraden."
 msgid "No match for argument: %s"
 msgstr "Geen match voor argument: %s"
 
-#: dnf/base.py:2111
+#: dnf/base.py:2116
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr ""
 "Pakket %s met lagere versie is al geïnstalleerd, kan het niet downgraden."
 
-#: dnf/base.py:2134
+#: dnf/base.py:2139
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet herinstalleren."
 
-#: dnf/base.py:2149
+#: dnf/base.py:2154
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr ""
 "Bestand %s is een broncode-pakket en kan niet worden geupdate, wordt "
 "genegeerd."
 
-#: dnf/base.py:2164
+#: dnf/base.py:2169
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Pakket %s is niet geïnstalleerd, kan het niet updaten."
 
-#: dnf/base.py:2174
+#: dnf/base.py:2179
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
@@ -405,100 +405,100 @@ msgstr ""
 "Dezelfde of een nieuwere versie van %s is al geïnstalleerd, kan het niet "
 "bijwerken."
 
-#: dnf/base.py:2234 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2239 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Pakket %s is beschikbaar, maar niet geïnstalleerd."
 
-#: dnf/base.py:2240
+#: dnf/base.py:2245
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr ""
 "Pakket %s is beschikbaar, maar geïnstalleerd voor een andere architectuur."
 
-#: dnf/base.py:2283 dnf/cli/commands/install.py:141
+#: dnf/base.py:2288 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Geen geldig formulier: %s"
 
-#: dnf/base.py:2298 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2303 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Geen pakketten aangemerkt om te verwijderen."
 
-#: dnf/base.py:2389 dnf/cli/cli.py:437
+#: dnf/base.py:2399 dnf/cli/cli.py:437
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Pakketten voor argument %s beschikbaar, maar niet geïnstalleerd."
 
-#: dnf/base.py:2394
+#: dnf/base.py:2404
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "Pakket %s met laagste versie is al geïnstalleerd, kan het niet downgraden."
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 msgid "No security updates needed, but {} update available"
 msgstr "Geen beveiligingsupdates nodig, maar update {} is beschikbaar"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "No security updates needed, but {} updates available"
 msgstr "Geen beveiligingsupdates nodig, maar updates {} zijn beschikbaar"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Geen beveiligingsupdates nodig voor\"{}\", maar update {} is beschikbaar"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2512
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Geen beveiligingsupdates nodig voor\"{}\", maar updates {} zijn beschikbaar"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2523
+#: dnf/base.py:2533
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Kan geen sleutel ophalen voor een commandoregelpakket: %s"
 
-#: dnf/base.py:2531
+#: dnf/base.py:2541
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Pakket dat mislukt is: %s"
 
-#: dnf/base.py:2532
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-sleutels zijn geconfigureerd als: %s"
 
-#: dnf/base.py:2544
+#: dnf/base.py:2554
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-sleutel op %s (0x%s) is al geïnstalleerd"
 
-#: dnf/base.py:2580
+#: dnf/base.py:2590
 msgid "The key has been approved."
 msgstr "De sleutel is goedgekeurd."
 
-#: dnf/base.py:2583
+#: dnf/base.py:2593
 msgid "The key has been rejected."
 msgstr "De sleutel is verworpen."
 
-#: dnf/base.py:2616
+#: dnf/base.py:2626
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Importeren sleutel mislukt (code %d)"
 
-#: dnf/base.py:2618
+#: dnf/base.py:2628
 msgid "Key imported successfully"
 msgstr "Sleutel met succes geïmporteerd"
 
-#: dnf/base.py:2622
+#: dnf/base.py:2632
 msgid "Didn't install any keys"
 msgstr "Er werden geen sleutels geïnstalleerd"
 
-#: dnf/base.py:2625
+#: dnf/base.py:2635
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -509,28 +509,28 @@ msgstr ""
 "niet correct voor dit pakket.\n"
 "Controleer of de juiste sleutel-URLs voor deze repository zijn opgegeven."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Importen van sleutel(s) hielp niet; verkeerde sleutel(s)?"
 
-#: dnf/base.py:2689
+#: dnf/base.py:2699
 msgid "  * Maybe you meant: {}"
 msgstr "  * Misschien bedoel  je: {}"
 
-#: dnf/base.py:2721
+#: dnf/base.py:2731
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van lokale repository \"{}\" heeft een onjuiste checksum"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2734
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Sommige paketten van de lokale repository hebbenb een onjuiste checksum"
 
-#: dnf/base.py:2727
+#: dnf/base.py:2737
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van repository \"{}\" heeft een onjuiste checksum"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2740
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -538,26 +538,26 @@ msgstr ""
 "Sommige pakketten hebben een ongeldige cache, maar kunnen door de \"--"
 "cacheonly\" optie niet gedownload worden"
 
-#: dnf/base.py:2748 dnf/base.py:2768
+#: dnf/base.py:2758 dnf/base.py:2778
 msgid "No match for argument"
 msgstr "Er is geen match voor argument"
 
-#: dnf/base.py:2756 dnf/base.py:2776
+#: dnf/base.py:2766 dnf/base.py:2786
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Alle matches werden uitgefilterd door het uitsluiten van filteren voor "
 "argument"
 
-#: dnf/base.py:2758
+#: dnf/base.py:2768
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alle matches werden uitgefilterd door modulair filteren voor argument"
 
-#: dnf/base.py:2774
+#: dnf/base.py:2784
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Alle matches werden geïnstalleerd van een andere repository voor argument"
 
-#: dnf/base.py:2835
+#: dnf/base.py:2845
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Pakket %s is al geïnstalleerd."
@@ -807,7 +807,7 @@ msgstr ""
 "Kan releaseversie niet detecteren (gebruik '--releasever' om vrijgaveversie "
 "te specificeren)"
 
-#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: niet toegestaan met argument {}"
 
@@ -2094,7 +2094,7 @@ msgstr "%a %d %b %Y"
 msgid "Package {} contains no files"
 msgstr "Pakket {} bevat geen bestanden"
 
-#: dnf/cli/commands/repoquery.py:575
+#: dnf/cli/commands/repoquery.py:576
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-12 01:46+0000\n"
+"POT-Creation-Date: 2024-06-01 01:48+0000\n"
 "PO-Revision-Date: 2024-06-02 00:55+0000\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
@@ -367,13 +367,13 @@ msgstr "Nobena grupa ni označena za odstranitev."
 msgid "No group marked for upgrade."
 msgstr "Nobena skupina ni označena za posodobitev."
 
-#: dnf/base.py:2102
+#: dnf/base.py:2107
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
 msgstr "Paket %s ni nameščen, ni ga mogoče podgraditi."
 
-#: dnf/base.py:2104 dnf/base.py:2123 dnf/base.py:2136 dnf/base.py:2167
-#: dnf/base.py:2237 dnf/base.py:2245 dnf/base.py:2265 dnf/base.py:2382
+#: dnf/base.py:2109 dnf/base.py:2128 dnf/base.py:2141 dnf/base.py:2172
+#: dnf/base.py:2242 dnf/base.py:2250 dnf/base.py:2270 dnf/base.py:2392
 #: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
@@ -384,126 +384,126 @@ msgstr "Paket %s ni nameščen, ni ga mogoče podgraditi."
 msgid "No match for argument: %s"
 msgstr "Ni ujemanja za argument: %s"
 
-#: dnf/base.py:2111
+#: dnf/base.py:2116
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
 msgstr "Paket %s nižje različice je že nameščen, ni ga mogoče podgraditi."
 
-#: dnf/base.py:2134
+#: dnf/base.py:2139
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
 msgstr "Paket %s ni nameščen, ni ga mogoče znova namestiti."
 
-#: dnf/base.py:2149
+#: dnf/base.py:2154
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
 msgstr "Datoteka %s je izvorni paket in je ni mogoče posodobiti, prezrta."
 
-#: dnf/base.py:2164
+#: dnf/base.py:2169
 #, python-format
 msgid "Package %s not installed, cannot update it."
 msgstr "Paket %s ni nameščen, ni ga mogoče posodobiti."
 
-#: dnf/base.py:2174
+#: dnf/base.py:2179
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
 "Ista ali novejša različica %s je že nameščena, ni je mogoče posodobiti."
 
-#: dnf/base.py:2234 dnf/cli/commands/reinstall.py:81
+#: dnf/base.py:2239 dnf/cli/commands/reinstall.py:81
 #, python-format
 msgid "Package %s available, but not installed."
 msgstr "Paket %s je na voljo, vendar ni nameščen."
 
-#: dnf/base.py:2240
+#: dnf/base.py:2245
 #, python-format
 msgid "Package %s available, but installed for different architecture."
 msgstr "Paket %s je na voljo, vendar nameščen za drugo arhitekturo."
 
-#: dnf/base.py:2283 dnf/cli/commands/install.py:141
+#: dnf/base.py:2288 dnf/cli/commands/install.py:141
 #: dnf/cli/commands/remove.py:133
 #, python-format
 msgid "Not a valid form: %s"
 msgstr "Neveljavna oblika: %s"
 
-#: dnf/base.py:2298 dnf/cli/commands/__init__.py:679
+#: dnf/base.py:2303 dnf/cli/commands/__init__.py:679
 #: dnf/cli/commands/remove.py:162
 msgid "No packages marked for removal."
 msgstr "Ni paketov označenih za odstranitev."
 
-#: dnf/base.py:2389 dnf/cli/cli.py:437
+#: dnf/base.py:2399 dnf/cli/cli.py:437
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Paketi za argument %s so na voljo, vendar niso nameščeni."
 
-#: dnf/base.py:2394
+#: dnf/base.py:2404
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Paket %s najnižje različice je že nameščen, ni ga mogoče podgraditi."
 
-#: dnf/base.py:2494
+#: dnf/base.py:2504
 msgid "No security updates needed, but {} update available"
 msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
-#: dnf/base.py:2496
+#: dnf/base.py:2506
 msgid "No security updates needed, but {} updates available"
 msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
-#: dnf/base.py:2500
+#: dnf/base.py:2510
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Za \"{}\" niso potrebne varnostne posodobitve, na voljo pa je posodobitev {}"
 
-#: dnf/base.py:2502
+#: dnf/base.py:2512
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Varnostne posodobitve niso potrebne za \"{}\", vendar so na voljo {} "
 "posodobitev"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2523
+#: dnf/base.py:2533
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Ni mogoče pridobiti ključa za paket ukazne vrstice: %s"
 
-#: dnf/base.py:2531
+#: dnf/base.py:2541
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Izpadel paket je: %s"
 
-#: dnf/base.py:2532
+#: dnf/base.py:2542
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Ključi GPG so konfigurirani kot: %s"
 
-#: dnf/base.py:2544
+#: dnf/base.py:2554
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "Ključ GPG na %s (0x%s) je že nameščen"
 
-#: dnf/base.py:2580
+#: dnf/base.py:2590
 msgid "The key has been approved."
 msgstr "Ključ je bil odobren."
 
-#: dnf/base.py:2583
+#: dnf/base.py:2593
 msgid "The key has been rejected."
 msgstr "Ključ je bil zavrnjen."
 
-#: dnf/base.py:2616
+#: dnf/base.py:2626
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Uvoz ključa ni uspel (koda %d)"
 
-#: dnf/base.py:2618
+#: dnf/base.py:2628
 msgid "Key imported successfully"
 msgstr "Ključ je bil uspešno uvožen"
 
-#: dnf/base.py:2622
+#: dnf/base.py:2632
 msgid "Didn't install any keys"
 msgstr "Nisem namestil nobenega ključa"
 
-#: dnf/base.py:2625
+#: dnf/base.py:2635
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -514,28 +514,28 @@ msgstr ""
 "pravilni za ta paket.\n"
 "Preverite, ali so pravilni URL-ji ključev konfigurirani za to repozitorij."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2646
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Uvoz ključev ni pomagal, napačen ključ(-i)?"
 
-#: dnf/base.py:2689
+#: dnf/base.py:2699
 msgid "  * Maybe you meant: {}"
 msgstr "  * Mogoče ste mislili: {}"
 
-#: dnf/base.py:2721
+#: dnf/base.py:2731
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" iz lokalnega skladišča \"{}\" ima napačno kontrolno vsoto"
 
-#: dnf/base.py:2724
+#: dnf/base.py:2734
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Nekateri paketi iz lokalnega repozitorija imajo napačno kontrolno vsoto"
 
-#: dnf/base.py:2727
+#: dnf/base.py:2737
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" iz repozitorija \"{}\" ima napačno kontrolno vsoto"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2740
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -543,24 +543,24 @@ msgstr ""
 "Nekateri paketi imajo neveljaven predpomnilnik, vendar jih ni mogoče "
 "prenesti zaradi možnosti \"--cacheonly\""
 
-#: dnf/base.py:2748 dnf/base.py:2768
+#: dnf/base.py:2758 dnf/base.py:2778
 msgid "No match for argument"
 msgstr "Ni primerka za argument"
 
-#: dnf/base.py:2756 dnf/base.py:2776
+#: dnf/base.py:2766 dnf/base.py:2786
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Vsa ujemanja so bila izločena s filtriranjem izključitve za argument"
 
-#: dnf/base.py:2758
+#: dnf/base.py:2768
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "Vsa ujemanja so bila izfiltrirana z modularnim filtriranjem za argument"
 
-#: dnf/base.py:2774
+#: dnf/base.py:2784
 msgid "All matches were installed from a different repository for argument"
 msgstr "Vsa ujemanja so bila nameščena iz drugega repozitorija za argument"
 
-#: dnf/base.py:2835
+#: dnf/base.py:2845
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paket %s je že nameščen."
@@ -800,7 +800,7 @@ msgstr ""
 "Različice izdaje ni mogoče zaznati (uporabite '--releasever', da določite "
 "različico izdaje)"
 
-#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: ni dovoljeno z argumentom {}"
 
@@ -2068,7 +2068,7 @@ msgstr "%a %b %d %Y"
 msgid "Package {} contains no files"
 msgstr "Paket {} ne vsebuje datotek"
 
-#: dnf/cli/commands/repoquery.py:575
+#: dnf/cli/commands/repoquery.py:576
 #, python-brace-format
 msgid ""
 "No valid switch specified\n"
@@ -2526,7 +2526,8 @@ msgstr " ali '{}' za uporabo ne samo najboljših kandidatnih paketov"
 
 #: dnf/cli/main.py:154
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr "poskusite dodati '{}', da naložite dodatne sezname datotek metapodatkov"
+msgstr ""
+"poskusite dodati '{}', da naložite dodatne sezname datotek metapodatkov"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
