@@ -45,21 +45,23 @@
 # Wilko Meyer <w@wmeyer.eu>, 2022.
 # Christian Goeschel Ndjomouo <cndjomouo@icloud.com>, 2023.
 # Bernhard Bloxberg <njg87w434@mailbox.org>, 2024.
+# Henning <boredsquirrel@users.noreply.translate.fedoraproject.org>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-17 01:49+0000\n"
-"PO-Revision-Date: 2024-03-14 17:36+0000\n"
-"Last-Translator: Bernhard Bloxberg <njg87w434@mailbox.org>\n"
-"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/de/>\n"
+"PO-Revision-Date: 2024-07-26 15:38+0000\n"
+"Last-Translator: Henning <boredsquirrel@users.noreply.translate.fedoraproject"
+".org>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -713,6 +715,10 @@ msgid ""
 "*** made with dnf will be lost with the next ostree-based update.\n"
 "*** If you do not want to lose these changes, use 'rpm-ostree'.\n"
 msgstr ""
+"\n"
+"*** Dieses System wird mit ostree verwaltet.  Änderungen am System,\n"
+"*** die mit dnf gemacht wurden, gehen beim nächsten ostree Update verloren\n"
+"*** Zum Behalten dieser Änderungen verwenden Sie 'rpm-ostree'.\n"
 
 #: dnf/cli/cli.py:224 dnf/cli/cli.py:228
 msgid "Operation aborted."
@@ -2629,15 +2635,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " oder '{}', um nicht nur die Pakete der besten Kandidaten zu verwenden"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
 "versuchen Sie, '{}' hinzuzufügen, um zusätzliche Dateilisten-Metadaten zu "
 "laden"
 
 #: dnf/cli/main.py:157
-#, fuzzy
 msgid " or '{}' to load additional filelists metadata"
 msgstr " oder '{}' um zusätzliche Dateinlisten-Metadaten zu laden"
 
@@ -3281,12 +3284,10 @@ msgid "Disabling module profiles"
 msgstr "Modulprofile werden deaktiviert"
 
 #: dnf/cli/output.py:1107
-#, fuzzy
 msgid "Enabling module streams"
 msgstr "Modul-Streams aktivieren"
 
 #: dnf/cli/output.py:1115
-#, fuzzy
 msgid "Switching module streams"
 msgstr "Modul-Streams wechseln"
 
@@ -3455,7 +3456,7 @@ msgstr "Keine Transaktionen"
 
 #: dnf/cli/output.py:1585 dnf/cli/output.py:1601
 msgid "Failed history info"
-msgstr ""
+msgstr "Verlaufsinformationen fehlgeschlagen"
 
 #: dnf/cli/output.py:1600
 msgid "No transaction ID, or package, given"
@@ -3785,7 +3786,7 @@ msgstr "Unbekannte Konfigurationsoption: %s = %s"
 #: dnf/conf/config.py:391
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
-msgstr ""
+msgstr "Fehler beim Parsen von --setopt mit dem Schlüssel '%s', Wert '%s': %s"
 
 #: dnf/conf/config.py:399
 #, python-format
@@ -3799,7 +3800,7 @@ msgstr "Fehlerhaft oder unbekannt »{}«: {}"
 #: dnf/conf/config.py:520
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
-msgstr ""
+msgstr "Fehler beim Parsen von --setopt mit Schlüssel '%s.%s', Wert '%s': %s"
 
 #: dnf/conf/config.py:523
 #, python-format
@@ -3841,9 +3842,9 @@ msgid "Parsing file \"{}\" failed: {}"
 msgstr "Auswerten der Datei »{}» ist fehlgeschlagen: {}"
 
 #: dnf/conf/substitutions.py:97
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "Fehler beim Parsen einer Variable aus der Datei '{0}': {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3913,10 +3914,13 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC-Erweiterung: "
 
 #: dnf/dnssec.py:286
+#, fuzzy
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"Schlüsselpaket {} von Überprüfung ausgenommen, weil es nicht an eine e-Mail "
+"Adresse gekoppelt ist"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -4009,7 +4013,7 @@ msgstr "Kein solches Modul: {}"
 
 #: dnf/module/exceptions.py:33
 msgid "No such stream: {}"
-msgstr ""
+msgstr "Kein solcher Stream: {}"
 
 #: dnf/module/exceptions.py:39
 msgid "No enabled stream for module: {}"
@@ -4017,11 +4021,11 @@ msgstr "Kein aktivierter Stream für das Modul: {}"
 
 #: dnf/module/exceptions.py:46
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "Kann nicht mehrere Streams von Modul '{}' zur selben Zeit aktivieren"
 
 #: dnf/module/exceptions.py:52
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Anderer Stream aktiviert für das Modul: {}"
 
 #: dnf/module/exceptions.py:58
 msgid "No such profile: {}"
@@ -4076,18 +4080,22 @@ msgstr ""
 "aktiv"
 
 #: dnf/module/module_base.py:94 dnf/module/module_base.py:204
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
+"Die Installation des Moduls '{0}' aus der Sicherungs-Paketquelle {1} ist "
+"nicht erlaubt"
 
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
+"Kann Profil für Argument {} nicht zuweisen. Verfügbare Profile für '{}:{}': "
+"{}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
-msgstr ""
+msgstr "Kann Profil für Argument {} nicht zuweisen"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
@@ -4102,8 +4110,9 @@ msgid "Default profile {} not available in module {}:{}"
 msgstr "Standardprofil {} nicht verfügbar in Modul {}:{}"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
+#, fuzzy
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Installation des Moduls aus Sicherheits-Paketquelle nicht erlaubt"
 
 #: dnf/module/module_base.py:196
 #, python-brace-format
@@ -4112,13 +4121,14 @@ msgstr ""
 "Keine aktiven Übereinstimmungen für das Argument »{0}« im Modul »{1}:{2}«"
 
 #: dnf/module/module_base.py:228
-#, python-brace-format
+#, fuzzy, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr ""
+"Installiertes Profil '{0}' ist im Modul '{1}', Stream '{2}' nicht enthalten"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Keine Pakete zum distrosync verfügbar für Paket '{}'"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
@@ -4131,6 +4141,8 @@ msgstr "Argument kann nicht aufgelöst werden {}"
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr ""
+"Aktualisieren des Moduls '{0}' aus der Sicherheits-Paketquelle {1} nicht "
+"gestattet"
 
 #: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
@@ -4138,7 +4150,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Aktualisieren des Moduls aus Sicherheits-Paketquelle nicht erlaubt"
 
 #: dnf/module/module_base.py:422
 #, python-brace-format
@@ -4167,12 +4179,12 @@ msgstr "%s ist eine leere Datei"
 #: dnf/persistor.py:90
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "Laden des abgelaufenen Paketquellen-Caches fehlgeschlagen: %s"
 
 #: dnf/persistor.py:98
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "Speichern des abgelaufenen Paketquellen-Caches fehlgeschlagen: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
@@ -4195,15 +4207,19 @@ msgstr "Geladene Plugins: %s"
 #: dnf/plugin.py:217
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
-msgstr ""
+msgstr "Laden des Plugins \"%s\" fehlgeschlagen: %s"
 
 #: dnf/plugin.py:249
+#, fuzzy
 msgid "No matches found for the following enable plugin patterns: {}"
-msgstr ""
+msgstr "Keine Übereinstimmung für die folgenden Plugin-Muster gefunden: {}"
 
 #: dnf/plugin.py:253
+#, fuzzy
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
+"Keine Übereinstimmung für die folgenden deaktivierten Plugin-Muster gefunden:"
+" {}"
 
 #: dnf/repo.py:85
 #, python-format
