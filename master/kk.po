@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 01:49+0000\n"
+"POT-Creation-Date: 2024-07-26 01:49+0000\n"
 "PO-Revision-Date: 2020-07-06 03:27+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
 "Language-Team: Kazakh <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -82,7 +82,7 @@ msgstr ""
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr ""
 
-#: dnf/automatic/main.py:244 dnf/cli/cli.py:314
+#: dnf/automatic/main.py:244 dnf/cli/cli.py:313
 msgid "GPG check FAILED"
 msgstr ""
 
@@ -103,7 +103,7 @@ msgstr[0] ""
 msgid "System is off-line."
 msgstr ""
 
-#: dnf/automatic/main.py:362 dnf/cli/cli.py:273
+#: dnf/automatic/main.py:362 dnf/cli/cli.py:272
 msgid "Transaction failed"
 msgstr ""
 
@@ -333,7 +333,7 @@ msgstr ""
 msgid "Adding packages from group '%s': %s"
 msgstr ""
 
-#: dnf/base.py:1835 dnf/cli/cli.py:230 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1835 dnf/cli/cli.py:229 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
@@ -355,7 +355,7 @@ msgstr ""
 
 #: dnf/base.py:2112 dnf/base.py:2131 dnf/base.py:2144 dnf/base.py:2175
 #: dnf/base.py:2245 dnf/base.py:2253 dnf/base.py:2273 dnf/base.py:2395
-#: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
+#: dnf/cli/cli.py:425 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
 #: dnf/cli/commands/install.py:152 dnf/cli/commands/reinstall.py:70
@@ -412,7 +412,7 @@ msgstr ""
 msgid "No packages marked for removal."
 msgstr ""
 
-#: dnf/base.py:2402 dnf/cli/cli.py:437
+#: dnf/base.py:2402 dnf/cli/cli.py:436
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
@@ -550,8 +550,8 @@ msgstr ""
 msgid "Cannot read file \"%s\": %s"
 msgstr ""
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:815
-#: dnf/cli/cli.py:819 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:814
+#: dnf/cli/cli.py:818 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr ""
@@ -607,169 +607,168 @@ msgstr ""
 #: dnf/cli/cli.py:218
 msgid ""
 "\n"
-"*** This system is managed with ostree.  Changes to the system\n"
-"*** made with dnf will be lost with the next ostree-based update.\n"
-"*** If you do not want to lose these changes, use 'rpm-ostree'.\n"
+"*** Error: system is configured to be read-only; for more\n"
+"*** information run `bootc --help`.\n"
 msgstr ""
 
-#: dnf/cli/cli.py:224 dnf/cli/cli.py:228
+#: dnf/cli/cli.py:223 dnf/cli/cli.py:227
 msgid "Operation aborted."
 msgstr "Әрекет үзілді."
 
-#: dnf/cli/cli.py:235
+#: dnf/cli/cli.py:234
 msgid "Downloading Packages:"
 msgstr "Дестелер жүктеліп алынуда:"
 
-#: dnf/cli/cli.py:241
+#: dnf/cli/cli.py:240
 msgid "Error downloading packages:"
 msgstr ""
 
-#: dnf/cli/cli.py:296
+#: dnf/cli/cli.py:295
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
 msgstr ""
 
-#: dnf/cli/cli.py:346
+#: dnf/cli/cli.py:345
 msgid "Changelogs for {}"
 msgstr ""
 
-#: dnf/cli/cli.py:379 dnf/cli/cli.py:520 dnf/cli/cli.py:526
+#: dnf/cli/cli.py:378 dnf/cli/cli.py:519 dnf/cli/cli.py:525
 msgid "Obsoleting Packages"
 msgstr "Дестелерді ескірту"
 
-#: dnf/cli/cli.py:408
+#: dnf/cli/cli.py:407
 msgid "No packages marked for distribution synchronization."
 msgstr "Дистрибутивті синхрондау үшін дестелер белгіленбеген."
 
-#: dnf/cli/cli.py:434 dnf/cli/commands/group.py:396
+#: dnf/cli/cli.py:433 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
 msgstr ""
 
-#: dnf/cli/cli.py:443
+#: dnf/cli/cli.py:442
 msgid "No packages marked for downgrade."
 msgstr ""
 
-#: dnf/cli/cli.py:494
+#: dnf/cli/cli.py:493
 msgid "Installed Packages"
 msgstr "Орнатылған дестелер"
 
-#: dnf/cli/cli.py:502
+#: dnf/cli/cli.py:501
 msgid "Available Packages"
 msgstr "Қолжетерлік дестелер"
 
-#: dnf/cli/cli.py:506
+#: dnf/cli/cli.py:505
 msgid "Autoremove Packages"
 msgstr "Автоөшіру дестелері"
 
-#: dnf/cli/cli.py:508
+#: dnf/cli/cli.py:507
 msgid "Extra Packages"
 msgstr "Қосымша дестелер"
 
-#: dnf/cli/cli.py:512
+#: dnf/cli/cli.py:511
 msgid "Available Upgrades"
 msgstr ""
 
-#: dnf/cli/cli.py:528
+#: dnf/cli/cli.py:527
 msgid "Recently Added Packages"
 msgstr "Жақында қосылған дестелер"
 
-#: dnf/cli/cli.py:532
+#: dnf/cli/cli.py:531
 msgid "No matching Packages to list"
 msgstr ""
 
-#: dnf/cli/cli.py:613
+#: dnf/cli/cli.py:612
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
 
-#: dnf/cli/cli.py:682 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:681 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Белгісіз репозиторий: '%s'"
 
-#: dnf/cli/cli.py:696
+#: dnf/cli/cli.py:695
 #, python-format
 msgid "No repository match: %s"
 msgstr ""
 
-#: dnf/cli/cli.py:730
+#: dnf/cli/cli.py:729
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
 
-#: dnf/cli/cli.py:760
+#: dnf/cli/cli.py:759
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Ондай команда жоқ: %s. %s --help қолданыңыз"
 
-#: dnf/cli/cli.py:763
+#: dnf/cli/cli.py:762
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
 
-#: dnf/cli/cli.py:767
+#: dnf/cli/cli.py:766
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
 
-#: dnf/cli/cli.py:825
+#: dnf/cli/cli.py:824
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
 
-#: dnf/cli/cli.py:831
+#: dnf/cli/cli.py:830
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
 
-#: dnf/cli/cli.py:913
+#: dnf/cli/cli.py:912
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
 
-#: dnf/cli/cli.py:933
+#: dnf/cli/cli.py:932
 msgid "Config file \"{}\" does not exist"
 msgstr ""
 
-#: dnf/cli/cli.py:953
+#: dnf/cli/cli.py:952
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
 
-#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
+#: dnf/cli/cli.py:1026 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr ""
 
-#: dnf/cli/cli.py:1034
+#: dnf/cli/cli.py:1033
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr ""
 
-#: dnf/cli/cli.py:1054
+#: dnf/cli/cli.py:1053
 msgid "Excludes in dnf.conf: "
 msgstr ""
 
-#: dnf/cli/cli.py:1057
+#: dnf/cli/cli.py:1056
 msgid "Includes in dnf.conf: "
 msgstr ""
 
-#: dnf/cli/cli.py:1060
+#: dnf/cli/cli.py:1059
 msgid "Excludes in repo "
 msgstr ""
 
-#: dnf/cli/cli.py:1063
+#: dnf/cli/cli.py:1062
 msgid "Includes in repo "
 msgstr ""
 
@@ -2308,7 +2307,7 @@ msgid "Files"
 msgstr "Файлдар"
 
 #: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1658
-#: dnf/cli/output.py:1660 dnf/util.py:617
+#: dnf/cli/output.py:1660 dnf/util.py:615
 msgid "Installed"
 msgstr "Орнатылған"
 
@@ -3159,11 +3158,11 @@ msgstr ""
 msgid "Erased"
 msgstr "Өшірілді"
 
-#: dnf/cli/output.py:1659 dnf/cli/output.py:1826 dnf/util.py:616
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1826 dnf/util.py:614
 msgid "Downgraded"
 msgstr "Нұсқасы төмендетілді"
 
-#: dnf/cli/output.py:1659 dnf/cli/output.py:1828 dnf/util.py:615
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1828 dnf/util.py:613
 msgid "Upgraded"
 msgstr "Жаңартылды"
 
@@ -4115,40 +4114,40 @@ msgid ""
 "pulled into the transaction."
 msgstr ""
 
-#: dnf/util.py:419 dnf/util.py:421
+#: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
 msgstr "Мәселе"
 
-#: dnf/util.py:472
+#: dnf/util.py:470
 msgid "TransactionItem not found for key: {}"
 msgstr ""
 
-#: dnf/util.py:482
+#: dnf/util.py:480
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr ""
 
-#: dnf/util.py:485
+#: dnf/util.py:483
 msgid "Errors occurred during transaction."
 msgstr ""
 
-#: dnf/util.py:621
+#: dnf/util.py:619
 msgid "Reinstalled"
 msgstr "Қайта орнатылған"
 
-#: dnf/util.py:622
+#: dnf/util.py:620
 msgid "Skipped"
 msgstr ""
 
-#: dnf/util.py:623
+#: dnf/util.py:621
 msgid "Removed"
 msgstr "Өшірілген"
 
-#: dnf/util.py:626
+#: dnf/util.py:624
 msgid "Failed"
 msgstr "Сәтсіз"
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
-#: dnf/util.py:635
+#: dnf/util.py:633
 msgid "<name-unset>"
 msgstr ""
 
