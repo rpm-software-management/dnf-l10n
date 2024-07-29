@@ -25,15 +25,16 @@
 # Sundeep Anand <suanand@redhat.com>, 2021.
 # Transtats <suanand@redhat.com>, 2022, 2023.
 # Yuto Nishiwaki <nishiwakiyuto.per@gmail.com>, 2022.
-# middlingphys <middlingphys@users.noreply.translate.fedoraproject.org>, 2023.
+# middlingphys <middlingphys@users.noreply.translate.fedoraproject.org>, 2023, 2024.
 # Ps St <psyst@users.noreply.translate.fedoraproject.org>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-27 01:47+0000\n"
-"PO-Revision-Date: 2023-08-30 15:21+0000\n"
-"Last-Translator: Ps St <psyst@users.noreply.translate.fedoraproject.org>\n"
+"PO-Revision-Date: 2024-07-30 01:38+0000\n"
+"Last-Translator: middlingphys <middlingphys@users.noreply.translate."
+"fedoraproject.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ja/>\n"
 "Language: ja\n"
@@ -41,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -66,12 +67,12 @@ msgstr "'%s' に以下の更新がダウンロードされました:"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "エラーが以下で発生しました: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "'%s' でエラーが発生しました。"
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -671,6 +672,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** エラー: システムは読み込み専用に設定されています。\n"
+"*** 詳細情報を得るには `bootc --help` を実行してください。\n"
 
 #: dnf/cli/cli.py:223 dnf/cli/cli.py:227
 msgid "Operation aborted."
@@ -2094,7 +2098,7 @@ msgstr ""
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:347
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%a %b %d %Y"
 
 #: dnf/cli/commands/repoquery.py:358
 msgid "Package {} contains no files"
@@ -2564,15 +2568,12 @@ msgstr ""
 " または、'{}' を追加して、最適候補のパッケージのみを使用しないでください"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr ""
-"最適候補のパッケージのみを使用しないためには、'{}' を追加してみてください"
+msgstr "追加のファイルリストメタデータを読み込むには、'{}' を追加してみてください"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " または、'{}' を追加して、追加のファイルリストメタデータを読み込んでください"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -3364,7 +3365,7 @@ msgstr "変更されました"
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/output.py:1584
 msgid "No transactions"
@@ -3830,7 +3831,7 @@ msgstr "DNSSEC 拡張: "
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
-msgstr ""
+msgstr "鍵パッケージ {} はメールアドレスに紐付けられていないため、検証から除外します"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
