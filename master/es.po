@@ -31,21 +31,22 @@
 # Daniel Hernandez <hernandez101900daniel@gmail.com>, 2022.
 # Dennis Tobar <DENNIS.TOBAR@gmail.com>, 2022.
 # Alejandro Alcaide <alex@blueselene.com>, 2022.
+# claire mateus <clairebeep5@gmail.com>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-29 01:52+0000\n"
-"PO-Revision-Date: 2022-05-02 18:18+0000\n"
-"Last-Translator: Alejandro Alcaide <alex@blueselene.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/es/>\n"
+"PO-Revision-Date: 2024-08-01 08:41+0000\n"
+"Last-Translator: claire mateus <clairebeep5@gmail.com>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -70,12 +71,12 @@ msgstr "Las siguientes actualizaciones fueron descargadas en '%s':"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "Se ha producido un error en: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr ""
+msgstr "Ha ocurrido un error en '%s'."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -690,6 +691,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** Error: el sistema está configurado para ser de sólo lectura; para más\n"
+"*** información ejecute `bootc --help`.\n"
 
 #: dnf/cli/cli.py:223 dnf/cli/cli.py:227
 msgid "Operation aborted."
@@ -1610,10 +1614,8 @@ msgstr ""
 "distribución"
 
 #: dnf/cli/commands/module.py:302
-#, fuzzy
-#| msgid "remove all modular packages"
 msgid "locate a module the modular packages belong to"
-msgstr "quitar todos los paquetes modulares"
+msgstr "localizar un módulo al que pertenezcan los paquetes modulares"
 
 #: dnf/cli/commands/module.py:317
 msgid "list packages belonging to a module"
@@ -2198,7 +2200,7 @@ msgstr "la opción {} necesita --whatrequires o --whatdepends"
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:347
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%a %b %d %Y"
 
 #: dnf/cli/commands/repoquery.py:358
 msgid "Package {} contains no files"
@@ -2662,11 +2664,9 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " o '{}' para no tener en cuenta sólo los mejores candidatos"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
-"pruebe a añadir '{}' para no tener en cuenta sólo los mejores candidatos"
+"pruebe a añadir '{}' para cargar metadatos de listas de archivos adicionales"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
@@ -2816,11 +2816,6 @@ msgid "automatically answer no for all questions"
 msgstr "responder \"no\" a todas las preguntas"
 
 #: dnf/cli/option_parser.py:258
-#, fuzzy
-#| msgid ""
-#| "Temporarily enable repositories for the purposeof the current dnf "
-#| "command. Accepts an id, acomma-separated list of ids, or a glob of ids."
-#| "This option can be specified multiple times."
 msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
@@ -2831,12 +2826,6 @@ msgstr ""
 "ids. Esta opción se puede especificar múltiples veces."
 
 #: dnf/cli/option_parser.py:265
-#, fuzzy
-#| msgid ""
-#| "Temporarily disable active repositories for thepurpose of the current dnf "
-#| "command. Accepts an id,a comma-separated list of ids, or a glob of ids."
-#| "This option can be specified multiple times, butis mutually exclusive "
-#| "with `--repo`."
 msgid ""
 "Temporarily disable active repositories for the purpose of the current dnf "
 "command. Accepts an id, a comma-separated list of ids, or a glob of ids. "
@@ -3884,7 +3873,7 @@ msgstr "Análisis de archivo \"{}\" fallado: {}"
 #: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "Error al analizar una variable del archivo '{0}': {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3959,6 +3948,8 @@ msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"Eximir el paquete de claves {} de una validación porque no está vinculado a "
+"ninguna dirección de correo electrónico"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -4424,6 +4415,7 @@ msgstr "Falta la clave del objeto \"{key}\" de un rpm."
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado del paquete reason \"{reason}\" para rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
@@ -4433,7 +4425,7 @@ msgstr "No se ha podido analizar NEVRA para el paquete \"{nevra}\"."
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "No se puede encontrar rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4446,28 +4438,32 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"El paquete nevra \"{nevra}\" no está disponible en los repositorios para la "
+"acción \"{action}\"."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
+"El paquete nevra \"{nevra}\" no está instalado para la acción \"{action}\"."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperado de la acción del paquete \"{action}\" para el rpm nevra \""
+"{nevra}\"."
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Module or Group '%s' is not available."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "El módulo o grupo '%s' no está disponible."
+msgstr "ID de grupo '%s' no está disponible."
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Falta la clave del objeto \"{key}\" en groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4486,21 +4482,25 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Valor inválido \"{group_type}\" en environments.groups.group_type, solo "
+"\"mandatory\" o \"optional\" son compatibles."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Falta el objeto clave \"{key}\" en environments.groups."
 
 #: dnf/transaction_sr.py:566
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Valor inesperado de la acción del grupo \"{action}\" para el grupo \"{group}"
+"\"."
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Falta la clave del objeto \"{key}\" de un rpm."
 
 #: dnf/transaction_sr.py:599
 #, python-brace-format
@@ -4508,11 +4508,12 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Valor inesperado de la acción del entorno {action} para el entorno {env}."
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Falta la clave del objeto \"{key}\" de un rpm."
 
 #: dnf/transaction_sr.py:643
 #, python-brace-format
@@ -4520,6 +4521,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"El paquete nevra {nevra}, que no está presente en el archivo de la "
+"transacción, fue incluido en la transacción."
 
 #: dnf/util.py:417 dnf/util.py:419
 msgid "Problem"
