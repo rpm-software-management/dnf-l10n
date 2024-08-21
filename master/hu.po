@@ -14,15 +14,15 @@
 # Meskó Balázs <meskobalazs@gmail.com>, 2019. #zanata
 # Dankaházi (ifj.) István <dankahazi.istvan@gmail.com>, 2020, 2021.
 # Bendegúz Gyönki <gyonkibendeguz@gmail.com>, 2020.
-# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021, 2022, 2023.
+# Balázs Meskó <meskobalazs@mailbox.org>, 2020, 2021, 2022, 2023, 2024.
 # Hoppár Zoltán <hopparz@gmail.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 01:50+0000\n"
-"PO-Revision-Date: 2023-11-25 18:54+0000\n"
-"Last-Translator: Hoppár Zoltán <hopparz@gmail.com>\n"
+"PO-Revision-Date: 2024-08-22 19:38+0000\n"
+"Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/hu/>\n"
 "Language: hu\n"
@@ -30,7 +30,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.2.1\n"
+"X-Generator: Weblate 5.7\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -627,8 +627,8 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
-"A művelet azt eredményezné, hogy „{0}” modul „{1}” forrása a(z) „{2}” "
-"forrásra váltson"
+"A művelet azt eredményezné, hogy a(z) „{0}” modul „{1}” forrása a(z) „{2}” "
+"forrásra vált"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -665,6 +665,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** Hiba: a rendszer írásvédettként van beállítva, további\n"
+"*** információkért futtassa a `bootc --help` parancsot.\n"
 
 #: dnf/cli/cli.py:223 dnf/cli/cli.py:227
 msgid "Operation aborted."
@@ -2571,16 +2574,13 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " vagy „{}”, hogy ne csak a legjobb csomagjelölteket használja"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
-"adja hozzá a(z) „{}” kapcsolót, hogy ne csak a legjobb csomagjelölteket "
-"használja"
+"adja hozzá a(z) „{}” kapcsolót a további fájllista-metaadatok betöltéséhez"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " vagy „{}” a további fájllista-metaadatok betöltéséhez"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -3855,6 +3855,8 @@ msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"A(z) {} kulcscsomag kihagyása az ellenőrzésből, mert egyetlen e-mail-címhez "
+"sem kötődik"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
