@@ -37,7 +37,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-22 01:53+0000\n"
+"POT-Creation-Date: 2024-08-24 01:49+0000\n"
 "PO-Revision-Date: 2024-08-05 19:26+0000\n"
 "Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -114,7 +114,7 @@ msgstr "Valeur de configuration inconnue : %s=%s dans %s ; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Option de configuration inconnue : %s=%s dans %s"
 
-#: dnf/automatic/main.py:244 dnf/cli/cli.py:313
+#: dnf/automatic/main.py:244 dnf/cli/cli.py:314
 msgid "GPG check FAILED"
 msgstr "La vérification GPG a ÉCHOUÉ"
 
@@ -136,7 +136,7 @@ msgstr[1] "Mise en sommeil pendant {} secondes"
 msgid "System is off-line."
 msgstr "Le système est hors-ligne."
 
-#: dnf/automatic/main.py:362 dnf/cli/cli.py:272
+#: dnf/automatic/main.py:362 dnf/cli/cli.py:273
 msgid "Transaction failed"
 msgstr "La transaction a échoué"
 
@@ -384,7 +384,7 @@ msgstr "Aucune correspondance pour le paquet du groupe « {} »"
 msgid "Adding packages from group '%s': %s"
 msgstr "Ajout de paquets en provenance du groupe « %s » : %s"
 
-#: dnf/base.py:1835 dnf/cli/cli.py:229 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1835 dnf/cli/cli.py:230 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
@@ -406,7 +406,7 @@ msgstr "Le paquet %s n’est pas installé, impossible de le rétrograder."
 
 #: dnf/base.py:2112 dnf/base.py:2131 dnf/base.py:2144 dnf/base.py:2175
 #: dnf/base.py:2245 dnf/base.py:2253 dnf/base.py:2273 dnf/base.py:2395
-#: dnf/cli/cli.py:425 dnf/cli/commands/__init__.py:423
+#: dnf/cli/cli.py:426 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
 #: dnf/cli/commands/install.py:152 dnf/cli/commands/reinstall.py:70
@@ -469,7 +469,7 @@ msgstr "Format invalide : %s"
 msgid "No packages marked for removal."
 msgstr "Aucun paquet marqué pour suppression."
 
-#: dnf/base.py:2402 dnf/cli/cli.py:436
+#: dnf/base.py:2402 dnf/cli/cli.py:437
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Les paquets pour le paramètre %s sont disponibles mais pas installés."
@@ -632,8 +632,8 @@ msgstr "La lecture du fichier « %s » a échoué : %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Impossible de lire le fichier « %s » : %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:814
-#: dnf/cli/cli.py:818 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:815
+#: dnf/cli/cli.py:819 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Erreur de configuration : %s"
@@ -697,7 +697,7 @@ msgstr ""
 "{prog} ne téléchargera que les paquets, installera les clefs GPG et "
 "vérifiera la transaction."
 
-#: dnf/cli/cli.py:218
+#: dnf/cli/cli.py:219
 msgid ""
 "\n"
 "*** Error: system is configured to be read-only; for more\n"
@@ -707,19 +707,19 @@ msgstr ""
 "*** Erreur : le système est en lecture seule ; pour plus\n"
 "*** d'informations, exécutez`bootc --help`.\n"
 
-#: dnf/cli/cli.py:223 dnf/cli/cli.py:227
+#: dnf/cli/cli.py:224 dnf/cli/cli.py:228
 msgid "Operation aborted."
 msgstr "Opération avortée."
 
-#: dnf/cli/cli.py:234
+#: dnf/cli/cli.py:235
 msgid "Downloading Packages:"
 msgstr "Téléchargement des paquets :"
 
-#: dnf/cli/cli.py:240
+#: dnf/cli/cli.py:241
 msgid "Error downloading packages:"
 msgstr "Erreur de téléchargement des paquets :"
 
-#: dnf/cli/cli.py:295
+#: dnf/cli/cli.py:296
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -728,56 +728,56 @@ msgstr ""
 "surveillance.\n"
 "Utilisez l’option « -y » pour passer outre."
 
-#: dnf/cli/cli.py:345
+#: dnf/cli/cli.py:346
 msgid "Changelogs for {}"
 msgstr "Changements pour {}"
 
-#: dnf/cli/cli.py:378 dnf/cli/cli.py:519 dnf/cli/cli.py:525
+#: dnf/cli/cli.py:379 dnf/cli/cli.py:520 dnf/cli/cli.py:526
 msgid "Obsoleting Packages"
 msgstr "Passage de paquets en obsolètes"
 
-#: dnf/cli/cli.py:407
+#: dnf/cli/cli.py:408
 msgid "No packages marked for distribution synchronization."
 msgstr "Aucun paquet marqué pour la synchronisation de la distribution."
 
-#: dnf/cli/cli.py:433 dnf/cli/commands/group.py:396
+#: dnf/cli/cli.py:434 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
 msgstr "Aucun paquet %s n’est disponible."
 
-#: dnf/cli/cli.py:442
+#: dnf/cli/cli.py:443
 msgid "No packages marked for downgrade."
 msgstr "Aucun paquet n’a été marqué pour passer à une version antérieure."
 
-#: dnf/cli/cli.py:493
+#: dnf/cli/cli.py:494
 msgid "Installed Packages"
 msgstr "Paquets installés"
 
-#: dnf/cli/cli.py:501
+#: dnf/cli/cli.py:502
 msgid "Available Packages"
 msgstr "Paquets disponibles"
 
-#: dnf/cli/cli.py:505
+#: dnf/cli/cli.py:506
 msgid "Autoremove Packages"
 msgstr "Supprime des paquets automatiquement"
 
-#: dnf/cli/cli.py:507
+#: dnf/cli/cli.py:508
 msgid "Extra Packages"
 msgstr "Paquets supplémentaires"
 
-#: dnf/cli/cli.py:511
+#: dnf/cli/cli.py:512
 msgid "Available Upgrades"
 msgstr "Mises à jour disponibles"
 
-#: dnf/cli/cli.py:527
+#: dnf/cli/cli.py:528
 msgid "Recently Added Packages"
 msgstr "Paquets récemment ajoutés"
 
-#: dnf/cli/cli.py:531
+#: dnf/cli/cli.py:532
 msgid "No matching Packages to list"
 msgstr "Aucun paquet correspondant à lister"
 
-#: dnf/cli/cli.py:612
+#: dnf/cli/cli.py:613
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -786,17 +786,17 @@ msgstr ""
 "spécifier le chemin d'accès complet ou d'utiliser un préfixe joker (\"*/\") "
 "au début."
 
-#: dnf/cli/cli.py:681 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:682 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Dépôt inconnu : « %s »"
 
-#: dnf/cli/cli.py:695
+#: dnf/cli/cli.py:696
 #, python-format
 msgid "No repository match: %s"
 msgstr "Aucun dépôt ne correspond à %s"
 
-#: dnf/cli/cli.py:729
+#: dnf/cli/cli.py:730
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -804,12 +804,12 @@ msgstr ""
 "Cette commande doit être exécutée avec les privilèges superutilisateur (en "
 "tant que l'utilisateur root sur la plupart des systèmes)."
 
-#: dnf/cli/cli.py:759
+#: dnf/cli/cli.py:760
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Aucune commande telle que : %s. Veuillez utiliser %s --help"
 
-#: dnf/cli/cli.py:762
+#: dnf/cli/cli.py:763
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -818,7 +818,7 @@ msgstr ""
 "Cela est peut-être une commande d’un module supplémentaire de {PROG}, "
 "essayez : « {prog} install 'dnf-command(%s)' »"
 
-#: dnf/cli/cli.py:766
+#: dnf/cli/cli.py:767
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -827,7 +827,7 @@ msgstr ""
 "Cela est peut-être une commande d’un module supplémentaire de {prog}, mais "
 "le chargement de modules supplémentaires est actuellement désactivé."
 
-#: dnf/cli/cli.py:824
+#: dnf/cli/cli.py:825
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -835,7 +835,7 @@ msgstr ""
 "--destdir ou --downloaddir doit être utilisé avec la commande --downloadonly "
 "ou download ou system-upgrade command."
 
-#: dnf/cli/cli.py:830
+#: dnf/cli/cli.py:831
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -843,7 +843,7 @@ msgstr ""
 "--enable, --set-enabled et --disable, --set-disabled doit être utilisé avec "
 "la commande config-manager."
 
-#: dnf/cli/cli.py:912
+#: dnf/cli/cli.py:913
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -852,11 +852,11 @@ msgstr ""
 "politique de sécurité RPM active (voir « gpgcheck » dans dnf.conf(5) pour "
 "savoir comment interpréter ce message)"
 
-#: dnf/cli/cli.py:932
+#: dnf/cli/cli.py:933
 msgid "Config file \"{}\" does not exist"
 msgstr "Le fichier de configuration \"{}\" n’existe pas"
 
-#: dnf/cli/cli.py:952
+#: dnf/cli/cli.py:953
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -864,28 +864,28 @@ msgstr ""
 "Impossible de détecter le numéro de version (utilisez « --releasever » pour "
 "spécifier une version)"
 
-#: dnf/cli/cli.py:1026 dnf/cli/commands/repoquery.py:486
+#: dnf/cli/cli.py:1027 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "paramètre {} : non autorisé avec le paramètre {}"
 
-#: dnf/cli/cli.py:1033
+#: dnf/cli/cli.py:1034
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Commande « %s » déjà définie"
 
-#: dnf/cli/cli.py:1053
+#: dnf/cli/cli.py:1054
 msgid "Excludes in dnf.conf: "
 msgstr "Exclut dans dnf.conf : "
 
-#: dnf/cli/cli.py:1056
+#: dnf/cli/cli.py:1057
 msgid "Includes in dnf.conf: "
 msgstr "Inclut dans dnf.conf : "
 
-#: dnf/cli/cli.py:1059
+#: dnf/cli/cli.py:1060
 msgid "Excludes in repo "
 msgstr "Exclut dans dépôt "
 
-#: dnf/cli/cli.py:1062
+#: dnf/cli/cli.py:1063
 msgid "Includes in repo "
 msgstr "Inclut dans dépôt "
 
