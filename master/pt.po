@@ -14,13 +14,14 @@
 # Tarcisio Oliveira <wyrquill@gmail.com>, 2022, 2023.
 # Pedro Farinha <pedrofarinha@protonmail.com>, 2023.
 # Ian Meyer <ianscuba1465@gmail.com>, 2023.
+# Hugo Costa <hugo.a.costa@outlook.pt>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-24 01:49+0000\n"
-"PO-Revision-Date: 2023-05-29 09:20+0000\n"
-"Last-Translator: Ian Meyer <ianscuba1465@gmail.com>\n"
+"PO-Revision-Date: 2024-09-08 20:38+0000\n"
+"Last-Translator: Hugo Costa <hugo.a.costa@outlook.pt>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/pt/>\n"
 "Language: pt\n"
@@ -28,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -296,14 +297,15 @@ msgstr "Alguns pacotes não foram transferidos. A tentar novamente."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPMs reduzidos de %.1f MB de atualizações para %.1f MB (%d.1%% poupado)"
+"Delta RPMs reduzidos de %.1f MB de atualizações para %.1f MB (%.1f%% "
+"poupados)"
 
 #: dnf/base.py:1290
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Delta RPMs falhados aumentaram %.1f MB de atualizações para %.1f MB (%d.1%% "
+"Delta RPMs falhados aumentaram %.1f MB de atualizações para %.1f MB (%.1f%% "
 "desperdiçados)"
 
 #: dnf/base.py:1335
@@ -483,7 +485,7 @@ msgstr "Incapaz de recuperar uma chave para um pacote de linha de comando: %s"
 #: dnf/base.py:2544
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ". Pacote com falha é: %s"
+msgstr ". Pacote em falha é: %s"
 
 #: dnf/base.py:2545
 #, python-format
@@ -1167,12 +1169,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "Á espera que processo com pid %d acabe."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Indique as dependências do pacote e que pacotes as fornecem"
+msgstr ""
+"[obsoleto, use repoquery --deplist] Lista as dependências do pacote e que "
+"pacotes as fornecem"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1301,16 +1303,12 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/history.py:101
-#, fuzzy
-#| msgid "No transaction ID given"
 msgid "No transaction file name given."
-msgstr "Não foi fornecido ID de transação"
+msgstr "Não foi fornecido um nome de ficheiro de transação."
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Falha ao remover o ficheiro de transação %s"
+msgstr "Mais do que um argumento foi dado como ficheiro de transação."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -1391,16 +1389,12 @@ msgid "Not overwriting {}, exiting."
 msgstr ""
 
 #: dnf/cli/commands/history.py:378
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "A transação falhou"
+msgstr "A transação foi guardada para {}."
 
 #: dnf/cli/commands/history.py:381
-#, fuzzy
-#| msgid "Running transaction"
 msgid "Error storing transaction: {}"
-msgstr "A executar a transação"
+msgstr "Erro ao guardar a transação: {}"
 
 #: dnf/cli/commands/history.py:397
 msgid "Warning, the following problems occurred while running a transaction:"
@@ -1827,7 +1821,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:173
 msgid "show recursive tree for package(s)"
-msgstr "mostrar árvore recursiva para o(s)  pacote(s)"
+msgstr "mostrar árvore recursiva para o(s) pacote(s)"
 
 #: dnf/cli/commands/repoquery.py:175
 msgid "operate on corresponding source RPM"
@@ -2721,10 +2715,9 @@ msgid "List of Plugin Commands:"
 msgstr ""
 
 #: dnf/cli/option_parser.py:415
-#, fuzzy, python-format
-#| msgid "No match for argument: %s"
+#, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr "Nenhuma correspondência para o argumento: %s"
+msgstr "Não é possível codificar o argumento '%s': %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -2946,11 +2939,11 @@ msgstr "Ficheiro    : %s"
 #: dnf/cli/output.py:848
 #, python-format
 msgid "Repo        : %s"
-msgstr "Repo        : %s"
+msgstr "Repositório        : %s"
 
 #: dnf/cli/output.py:857
 msgid "Description : "
-msgstr "Descrição   : "
+msgstr "Descrição : "
 
 #: dnf/cli/output.py:861
 #, python-format
@@ -3545,10 +3538,9 @@ msgid "Environment '%s' is not available."
 msgstr ""
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "O group_id '%s' não existe"
+msgstr "O id de grupo '%s' não existe."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -4164,10 +4156,9 @@ msgid ""
 msgstr ""
 
 #: dnf/transaction_sr.py:377
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' is not available."
-msgstr "O group_id '%s' não existe"
+msgstr "O id de grupo '%s' não está disponível."
 
 #: dnf/transaction_sr.py:398
 #, python-brace-format
