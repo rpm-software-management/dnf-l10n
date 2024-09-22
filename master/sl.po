@@ -2,13 +2,14 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Matjaž Jeran <matjaz.jeran@amis.net>, 2023, 2024.
+# Martin Srebotnjak <miles@filmsi.net>, 2024.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-08 02:06+0000\n"
-"PO-Revision-Date: 2024-06-02 00:55+0000\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2024-09-22 10:36+0000\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
 "Language: sl\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -624,7 +625,8 @@ msgstr ""
 "Ni mogoče preklopiti omogočenih tokov modula, razen če je izrecno omogočeno "
 "prek konfiguracijske možnosti module_stream_switch.\n"
 "Priporočamo, da raje odstranite vso nameščeno vsebino iz modula in "
-"ponastavite modul z uporabo '{prog} module reset <module_name>'"
+"ponastavite modul z uporabo ukaza '{prog} module reset <module_name>'. Po "
+"ponastavitvi modula lahko namestite drug tok."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
@@ -3842,8 +3844,10 @@ msgstr[1] ""
 #: dnf/exceptions.py:131 dnf/module/module_base.py:857
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Težava z odvisnostjo modulov:"
+msgstr[1] "Težava z odvisnostjo modula:"
+msgstr[2] "Težava z odvisnostjo modulov:"
+msgstr[3] "Težava z odvisnostjo modulov:"
 
 #: dnf/lock.py:100
 #, python-format
