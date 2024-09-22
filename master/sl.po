@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-22 02:11+0000\n"
-"PO-Revision-Date: 2024-09-22 10:36+0000\n"
+"PO-Revision-Date: 2024-09-22 12:54+0000\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
@@ -647,6 +647,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** Napaka: sistem je nastavljen samo za branje; za več\n"
+"*** informacij zaženite ukaz `bootc --help`.\n"
 
 #: dnf/cli/cli.py:224 dnf/cli/cli.py:228
 msgid "Operation aborted."
@@ -1675,73 +1678,73 @@ msgstr "Repo-ime: "
 
 #: dnf/cli/commands/repolist.py:166
 msgid "Repo-status        : "
-msgstr "Repo-stanje: "
+msgstr "Repo-stanje         : "
 
 #: dnf/cli/commands/repolist.py:169
 msgid "Repo-revision      : "
-msgstr "Ponovna revizija: "
+msgstr "Repo-revizija    : "
 
 #: dnf/cli/commands/repolist.py:173
 msgid "Repo-tags          : "
-msgstr "Repo-oznake : "
+msgstr "Repo-značke     : "
 
 #: dnf/cli/commands/repolist.py:180
 msgid "Repo-distro-tags      : "
-msgstr "Repo-distro-tags : "
+msgstr "Repo-distro-značke     : "
 
 #: dnf/cli/commands/repolist.py:192
 msgid "Repo-updated       : "
-msgstr "Repo posodobljeno: "
+msgstr "Repo-posodobljeno     : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr "Repo-pkgs: "
+msgstr "Repo-paketi.                : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Repo-paketi-na-voljo: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
-msgstr "Repo-velikost: "
+msgstr "Repo-velikost.          : "
 
 #: dnf/cli/commands/repolist.py:199
 msgid "Repo-metalink      : "
-msgstr "Repo-metalink : "
+msgstr "Repo-metapovezava   : "
 
 #: dnf/cli/commands/repolist.py:204
 msgid "  Updated          : "
-msgstr "  Posodobljeno: "
+msgstr "  Posodobljeno.       : "
 
 #: dnf/cli/commands/repolist.py:206
 msgid "Repo-mirrors       : "
-msgstr "Repo-ogledala: "
+msgstr "Repo-zrcalni.        : "
 
 #: dnf/cli/commands/repolist.py:210 dnf/cli/commands/repolist.py:216
 msgid "Repo-baseurl       : "
-msgstr "Repo-baseurl: "
+msgstr "Repo-osnovni-url. : "
 
 #: dnf/cli/commands/repolist.py:219
 msgid "Repo-expire        : "
-msgstr "Repo potek: "
+msgstr "Repo-potek.         : "
 
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr "Repo-izključitev: "
+msgstr "Repo-izključi           : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr "Repo-include : "
+msgstr "Repo-vključeni       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
 msgid "Repo-excluded      : "
-msgstr "Repo-izključeno: "
+msgstr "Repo-izključeni     : "
 
 #: dnf/cli/commands/repolist.py:236
 msgid "Repo-filename      : "
-msgstr "Repo-ime datoteke: "
+msgstr "Repo-ime-datoteke  : "
 
 #. Work out the first (id) and last (enabled/disabled/count),
 #. then chop the middle (name)...
@@ -2080,12 +2083,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
-"Ni podanega veljavnega stikala\n"
-"usage: {prog} repoquery [--konflikti|--izboljšuje|--zastarelo|--zagotavlja|--"
-"priporoča|--zahteva|--predlaga|--dopolnjuje|--kar zahteva] [key] [--tree]\n"
+"Veljavno stikalo ni podano\n"
+"raba: {prog} repoquery [----conflicts|----enhances|----obsoletes|----provides"
+"|----recommends|----requires|----suggest|----supplements|----whatrequires] "
+"[ključ] [--tree]\n"
 "\n"
 "opis:\n"
-"   Za dane pakete izpiši drevo paketov."
+"   Za dane pakete izpiše drevo paketov."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2148,7 +2152,7 @@ msgstr "Ni najdenih ujemanj."
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr ""
+msgstr "zaženi interaktivno lupino {prog}"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
