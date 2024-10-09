@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-09-24 02:07+0000\n"
-"PO-Revision-Date: 2024-04-16 08:36+0000\n"
+"PO-Revision-Date: 2024-10-10 17:38+0000\n"
 "Last-Translator: paddis paddis <turtle@turtle.garden>\n"
 "Language-Team: Norwegian Bokmål <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/nb_NO/>\n"
@@ -19,12 +19,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: dnf/automatic/emitter.py:32
-#, fuzzy, python-format
+#, python-format
 msgid "The following updates have been applied on '%s':"
-msgstr "Følgende oppdateringer er lagt inn på '%s':"
+msgstr "De følgende oppdateringene har blitt tatt i bruk på «%s»:"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -34,37 +34,37 @@ msgstr "Oppdateringer fullført på %s"
 #: dnf/automatic/emitter.py:34
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Følgende oppdateringer er tilgjengelige på '%s':"
+msgstr "De følgende oppdateringene er tilgjengelige på «%s»:"
 
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Følgende oppdateringer ble lastet ned på '%s':"
+msgstr "De følgende oppdateringene har blitt lastet ned på «%s»:"
 
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr "Det har oppstått en feil på: '%s'"
+msgstr "Det har oppstått en feil på: «%s»"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr "Det har oppståt en feil på: '%s'."
+msgstr "Det har oppstått en feil på: «%s»."
 
 #: dnf/automatic/emitter.py:95
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr "Oppdateringer er gjennomført på '%s'."
+msgstr "Oppdateringer tatt i bruk på «%s»."
 
 #: dnf/automatic/emitter.py:97
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Oppdateringer lastet ned på '%s'."
+msgstr "Oppdateringer lastet ned på «%s»."
 
 #: dnf/automatic/emitter.py:99
 #, python-format
 msgid "Updates available on '%s'."
-msgstr "Oppdateringer er tilgjengelige på '%s'."
+msgstr "Oppdateringer tilgjengelige på «%s»."
 
 #: dnf/automatic/emitter.py:130
 #, python-format
@@ -110,7 +110,7 @@ msgstr "Systemet er frakoblet."
 
 #: dnf/automatic/main.py:362 dnf/cli/cli.py:273
 msgid "Transaction failed"
-msgstr "Transaksjonen mislyktes"
+msgstr "Transaksjon mislyktes"
 
 #: dnf/automatic/main.py:373 dnf/automatic/main.py:375 dnf/cli/main.py:59
 #: dnf/cli/main.py:80 dnf/cli/main.py:83
@@ -123,9 +123,8 @@ msgid "loading repo '{}' failure: {}"
 msgstr "Mislyktes i å laste inn repo '{}': {}"
 
 #: dnf/base.py:153
-#, fuzzy
 msgid "Loading repository '{}' has failed"
-msgstr "Mislyktes i å laste inn repository '{}'"
+msgstr "Mislyktes i å laste inn arkiv «{}»"
 
 #: dnf/base.py:335
 msgid "Metadata timer caching disabled when running on metered connection."
@@ -499,10 +498,9 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
-"GPG-nøkkelen for pakkeoversikten %s er allerede lagt inn, men\n"
-"nøkkelen passer ikke til den aktuelle pakka fra samme oversikt.\n"
-"Sjekk at korrekt URL (gpgkey opsjonen) er oppgitt for denne\n"
-"pakkeoversikten."
+"GPG-nøkkelen for arkivet %s er allerede lagt inn, men nøkkelen passer ikke "
+"til den aktuelle pakken.\n"
+"Sørg for at de riktige nøkkel-URLene er oppgitt for dette arkivet."
 
 #: dnf/base.py:2649
 msgid "Import of key(s) didn't help, wrong key(s)?"
@@ -1266,10 +1264,8 @@ msgid "No transaction file name given."
 msgstr ""
 
 #: dnf/cli/commands/history.py:103
-#, fuzzy
-#| msgid "Failed to remove transaction file %s"
 msgid "More than one argument given as transaction file name."
-msgstr "Kunne ikke fjerne transaksjonsfil %s"
+msgstr "Mer enn et argument gitt som transaskjonsfilnavn."
 
 #: dnf/cli/commands/history.py:122 dnf/cli/commands/history.py:130
 msgid "No transaction ID or package name given."
@@ -2739,7 +2735,7 @@ msgstr ""
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:493
 msgid "Packager"
-msgstr ""
+msgstr "Pakker"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:495
@@ -2795,7 +2791,7 @@ msgstr "nei"
 
 #: dnf/cli/output.py:655
 msgid "Is this ok [y/N]: "
-msgstr "Er dette ok [j/N]: "
+msgstr "Er dette OK [j/N]: "
 
 #: dnf/cli/output.py:659
 msgid "Is this ok [Y/n]: "
@@ -2809,7 +2805,7 @@ msgstr ""
 #: dnf/cli/output.py:743
 #, python-format
 msgid " Group-Id: %s"
-msgstr " GruppeId:%s"
+msgstr " Gruppe-ID: %s"
 
 #: dnf/cli/output.py:745 dnf/cli/output.py:784
 #, python-format
@@ -2900,12 +2896,12 @@ msgstr "Kunne ikke finne ut størrelse på det som skal hentes ned"
 #: dnf/cli/output.py:946
 #, python-format
 msgid "Total size: %s"
-msgstr "Totale størrelse: %s"
+msgstr "Total størrelse: %s"
 
 #: dnf/cli/output.py:949
 #, python-format
 msgid "Total download size: %s"
-msgstr "Totale størrelse på pakker som hentes: %s"
+msgstr "Total nedlastingsstørrelse: %s"
 
 #: dnf/cli/output.py:952
 #, python-format
@@ -2949,27 +2945,27 @@ msgstr ""
 #: dnf/cli/output.py:1051
 msgctxt "summary"
 msgid "Installing"
-msgstr ""
+msgstr "Installerer"
 
 #. TRANSLATORS: This is for a list of packages to be upgraded.
 #: dnf/cli/output.py:1053
 msgctxt "summary"
 msgid "Upgrading"
-msgstr ""
+msgstr "Oppgraderer"
 
 #. TRANSLATORS: This is for a list of packages to be reinstalled.
 #: dnf/cli/output.py:1055
 msgctxt "summary"
 msgid "Reinstalling"
-msgstr ""
+msgstr "Installerer på nytt"
 
 #: dnf/cli/output.py:1057
 msgid "Installing dependencies"
-msgstr ""
+msgstr "Installerer avhengigheter"
 
 #: dnf/cli/output.py:1058
 msgid "Installing weak dependencies"
-msgstr ""
+msgstr "Installerer svake avhengigheter"
 
 #. TRANSLATORS: This is for a list of packages to be removed.
 #: dnf/cli/output.py:1060
@@ -2978,65 +2974,65 @@ msgstr "Fjerner"
 
 #: dnf/cli/output.py:1061
 msgid "Removing dependent packages"
-msgstr ""
+msgstr "Fjerner avhengige pakker"
 
 #: dnf/cli/output.py:1062
 msgid "Removing unused dependencies"
-msgstr ""
+msgstr "Fjerner ubrukte avhengigheter"
 
 #. TRANSLATORS: This is for a list of packages to be downgraded.
 #: dnf/cli/output.py:1064
 msgctxt "summary"
 msgid "Downgrading"
-msgstr ""
+msgstr "Nedgraderer"
 
 #: dnf/cli/output.py:1089
 msgid "Installing module profiles"
-msgstr ""
+msgstr "Installerer modulprofiler"
 
 #: dnf/cli/output.py:1098
 msgid "Disabling module profiles"
-msgstr ""
+msgstr "Slår av modulprofiler"
 
 #: dnf/cli/output.py:1107
 msgid "Enabling module streams"
-msgstr ""
+msgstr "Slår på modulstrømmer"
 
 #: dnf/cli/output.py:1115
 msgid "Switching module streams"
-msgstr ""
+msgstr "Bytter modulstrømmer"
 
 #: dnf/cli/output.py:1123
 msgid "Disabling modules"
-msgstr ""
+msgstr "Slår av moduler"
 
 #: dnf/cli/output.py:1131
 msgid "Resetting modules"
-msgstr ""
+msgstr "Tilbakestiller moduler"
 
 #: dnf/cli/output.py:1142
 msgid "Installing Environment Groups"
-msgstr ""
+msgstr "Installerer miljøgrupper"
 
 #: dnf/cli/output.py:1149
 msgid "Upgrading Environment Groups"
-msgstr ""
+msgstr "Oppgraderer miljøgrupper"
 
 #: dnf/cli/output.py:1156
 msgid "Removing Environment Groups"
-msgstr ""
+msgstr "Fjerner miljøgrupper"
 
 #: dnf/cli/output.py:1163
 msgid "Installing Groups"
-msgstr ""
+msgstr "Installerer grupper"
 
 #: dnf/cli/output.py:1170
 msgid "Upgrading Groups"
-msgstr ""
+msgstr "Oppgraderer grupper"
 
 #: dnf/cli/output.py:1177
 msgid "Removing Groups"
-msgstr ""
+msgstr "Fjerner grupper"
 
 #: dnf/cli/output.py:1193
 #, python-format
@@ -3061,17 +3057,17 @@ msgstr ""
 #: dnf/cli/output.py:1232
 msgctxt "short"
 msgid "Package"
-msgstr ""
+msgstr "Pakke"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
 #: dnf/cli/output.py:1234
 msgctxt "long"
 msgid "Package"
-msgstr ""
+msgstr "Pakke"
 
 #: dnf/cli/output.py:1283
 msgid "replacing"
-msgstr ""
+msgstr "erstatter"
 
 #: dnf/cli/output.py:1290
 #, python-format
@@ -3087,33 +3083,35 @@ msgstr ""
 #. TODO: remove
 #: dnf/cli/output.py:1295 dnf/cli/output.py:1818 dnf/cli/output.py:1819
 msgid "Install"
-msgstr ""
+msgstr "Installer"
 
 #: dnf/cli/output.py:1299 dnf/cli/output.py:1827
 msgid "Upgrade"
-msgstr ""
+msgstr "Oppgrader"
 
 #: dnf/cli/output.py:1300
 msgid "Remove"
-msgstr ""
+msgstr "Fjern"
 
 #: dnf/cli/output.py:1302 dnf/cli/output.py:1825
 msgid "Downgrade"
-msgstr ""
+msgstr "Nedgrader"
 
 #: dnf/cli/output.py:1303
 msgid "Skip"
-msgstr ""
+msgstr "Hopp over"
 
 #: dnf/cli/output.py:1312 dnf/cli/output.py:1328
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
+msgstr[0] "Pakke"
+msgstr[1] "Pakker"
 
 #: dnf/cli/output.py:1330
 msgid "Dependent package"
 msgid_plural "Dependent packages"
-msgstr[0] ""
+msgstr[0] "Avhengig pakke"
+msgstr[1] "Avhengige pakker"
 
 #: dnf/cli/output.py:1438
 msgid "Total"
@@ -3125,24 +3123,24 @@ msgstr ""
 
 #: dnf/cli/output.py:1467
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: dnf/cli/output.py:1517
 msgid "Command line"
-msgstr ""
+msgstr "Kommandolinje"
 
 #. TRANSLATORS: user names who executed transaction in history command output
 #: dnf/cli/output.py:1530
 msgid "User name"
-msgstr ""
+msgstr "Brukernavn"
 
 #: dnf/cli/output.py:1532
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: dnf/cli/output.py:1534
 msgid "Date and time"
-msgstr ""
+msgstr "Dato og tid"
 
 #: dnf/cli/output.py:1535
 msgid "Action(s)"
@@ -3150,7 +3148,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1536
 msgid "Altered"
-msgstr ""
+msgstr "Endret"
 
 #. TRANSLATORS: This is the time format for dnf history list.
 #. You can change it but do it with caution because the output
@@ -3159,11 +3157,11 @@ msgstr ""
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/output.py:1584
 msgid "No transactions"
-msgstr ""
+msgstr "Ingen transaksjoner"
 
 #: dnf/cli/output.py:1585 dnf/cli/output.py:1601
 msgid "Failed history info"
@@ -3439,10 +3437,9 @@ msgstr "Advarsel: Gruppe %s eksisterer ikke."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
 #: dnf/transaction_sr.py:507
-#, fuzzy, python-format
-#| msgid "Public key for %s is not installed"
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Offentlig nøkkel for %s er ikke lagt inn"
+msgstr "Miljø-ID «%s» er ikke installert."
 
 #: dnf/comps.py:639
 #, python-format
@@ -4084,10 +4081,9 @@ msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
-#, fuzzy, python-format
-#| msgid "Public key for %s is not installed"
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Offentlig nøkkel for %s er ikke lagt inn"
+msgstr "Gruppe-ID «%s» er ikke installert."
 
 #: dnf/transaction_sr.py:442
 #, python-format
