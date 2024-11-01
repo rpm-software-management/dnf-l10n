@@ -38,7 +38,7 @@
 # Fabian Affolter <mail@fabian-affolter.ch>, 2020.
 # David Schwörer <david08741@gmail.com>, 2021.
 # CoconutNut <patrick.vollandt@mein-gym.de>, 2021.
-# Ettore Atalan <atalanttore@googlemail.com>, 2021, 2022, 2023.
+# Ettore Atalan <atalanttore@googlemail.com>, 2021, 2022, 2023, 2024.
 # Philipp Trulson <philipp@trulson.de>, 2022.
 # Flo H <emailtoflorian@gmail.com>, 2022.
 # Joachim Philipp <joachim.philipp@gmail.com>, 2022, 2023.
@@ -51,17 +51,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-10-31 02:09+0000\n"
-"PO-Revision-Date: 2024-07-26 15:38+0000\n"
-"Last-Translator: Henning <boredsquirrel@users.noreply.translate."
-"fedoraproject.org>\n"
-"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/de/>\n"
+"PO-Revision-Date: 2024-11-01 20:12+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -3837,9 +3836,9 @@ msgid "Parsing file \"{}\" failed: {}"
 msgstr "Auswerten der Datei »{}» ist fehlgeschlagen: {}"
 
 #: dnf/conf/substitutions.py:97
-#, fuzzy, python-brace-format
+#, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr "Fehler beim Parsen einer Variable aus der Datei '{0}': {1}"
+msgstr "Fehler beim Auswerten einer Variablen aus der Datei '{0}': {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3909,13 +3908,12 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC-Erweiterung: "
 
 #: dnf/dnssec.py:286
-#, fuzzy
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
-"Schlüsselpaket {} von Überprüfung ausgenommen, weil es nicht an eine e-Mail "
-"Adresse gekoppelt ist"
+"Schlüsselpaket {} von einer Validierung ausgenommen, da es nicht an eine E"
+"-Mail-Adresse gebunden ist"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -4248,11 +4246,11 @@ msgstr ""
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "Die Funktion openDB() kann keine rpm-Datenbank öffnen."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "Die Funktion dbCookie() gab kein Cookie der rpm-Datenbank zurück."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
@@ -4263,6 +4261,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change ist deaktiviert. Diese Option wird derzeit nicht für die "
+"Befehle downgrade und distro-sync unterstützt"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4347,6 +4347,8 @@ msgstr ""
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Es wurden widersprüchliche TransactionReplay-Argumente angegeben: Dateiname, "
+"Daten"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4372,7 +4374,7 @@ msgstr ""
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "NEVRA für Paket „{nevra}“ kann nicht ausgewertet werden."
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
@@ -4394,13 +4396,13 @@ msgstr ""
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Paket nevra „{nevra}“ für Aktion „{action}“ nicht installiert."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Unerwarteter Wert der Paketaktion „{action}“ für rpm nevra „{nevra}“."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4410,7 +4412,7 @@ msgstr "Gruppenkennung »%s« ist nicht verfügbar."
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Fehlender Objektschlüssel „{key}“ in groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4429,6 +4431,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Ungültiger Wert „{group_type}“ von environments.groups.group_type, nur "
+"„mandatory“ oder „optional“ werden unterstützt."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
