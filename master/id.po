@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-01-03 02:06+0000\n"
-"PO-Revision-Date: 2025-01-03 14:36+0000\n"
+"PO-Revision-Date: 2025-01-04 21:16+0000\n"
 "Last-Translator: Andika Triwidada <andika@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/id/>\n"
@@ -104,7 +104,7 @@ msgstr "Menunggu koneksi internet..."
 
 #: dnf/automatic/main.py:332
 msgid "Started dnf-automatic."
-msgstr "Memulai dnf-otomatis."
+msgstr "Memulai dnf-automatic."
 
 #: dnf/automatic/main.py:336
 msgid "Sleep for {} second"
@@ -653,6 +653,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** Galat: sistem dikonfigurasi agar hanya baca; untuk\n"
+"*** informasi lebih lanjut jalankan `bootc --help`.\n"
 
 #: dnf/cli/cli.py:225 dnf/cli/cli.py:229
 msgid "Operation aborted."
@@ -914,7 +917,7 @@ msgstr "tunjukkan hanya paket pembaruan"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:756
 msgid "show only autoremove packages"
-msgstr "tunjukkan hanya paket yang dihapus otomatis"
+msgstr "tunjukkan hanya paket autoremove"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:759
 msgid "show only recently changed packages"
@@ -1302,14 +1305,14 @@ msgstr "tampilkan, atau gunakan, riwayat transaksi"
 
 #: dnf/cli/commands/history.py:66
 msgid "For the store command, file path to store the transaction to"
-msgstr "Untuk perintah menyimpan, path berkas tempat menyimpan transaksi"
+msgstr "Untuk perintah store, path berkas tempat menyimpan transaksi"
 
 #: dnf/cli/commands/history.py:68
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
-"Untuk perintah main ulang, jangan periksa paket terpasang yang cocok dengan "
+"Untuk perintah replay, jangan periksa paket terpasang yang cocok dengan "
 "mereka yang ada dalam transaksi"
 
 #: dnf/cli/commands/history.py:71
@@ -1317,7 +1320,7 @@ msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
-"Untuk perintah main ulang, jangan periksa paket ekstra yang ditarik ke dalam "
+"Untuk perintah replay, jangan periksa paket ekstra yang ditarik ke dalam "
 "transaksi"
 
 #: dnf/cli/commands/history.py:74
@@ -1325,7 +1328,7 @@ msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
-"Untuk perintah main ulang, lewati paket yang tidak tersedia atau kekurangan "
+"Untuk perintah replay, lewati paket yang tidak tersedia atau kekurangan "
 "dependensi"
 
 #: dnf/cli/commands/history.py:94
@@ -1969,10 +1972,12 @@ msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
 msgstr ""
+"Tampilkan kapabilitas yang paket dapat bergantung, meningkatkan, "
+"merekomendasikan, menyarankan, dan melengkapi."
 
 #: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang paket dapat tingkatkan."
 
 #: dnf/cli/commands/repoquery.py:240
 msgid "Display capabilities provided by the package."
@@ -1980,11 +1985,11 @@ msgstr "Tampilkan kapabilitas yang disediakan oleh paket."
 
 #: dnf/cli/commands/repoquery.py:241
 msgid "Display capabilities that the package recommends."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang direkomendasikan oleh paket."
 
 #: dnf/cli/commands/repoquery.py:242
 msgid "Display capabilities that the package depends on."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang paket tersebut bergantung padanya."
 
 #: dnf/cli/commands/repoquery.py:243
 #, python-format
@@ -1993,14 +1998,18 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"Bila paket tidak dipasang, tampilkan kapabilitas yang paket tersebut "
+"bergantung padanya untuk menjalankan scriptlet %%pre dan %%post. Bila paket "
+"terpasang, tampilkan kapabilitas yang itu bergantung untuk %%pre, %%post, "
+"%%preun, dan %%postun."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang disarankan oleh paket."
 
 #: dnf/cli/commands/repoquery.py:247
 msgid "Display capabilities that the package can supplement."
-msgstr ""
+msgstr "Tampilkan kapabilitas yang paket tersebut dapat melengkapinya."
 
 #: dnf/cli/commands/repoquery.py:253
 msgid "Display only available packages."
@@ -2076,7 +2085,7 @@ msgstr "argumen {} membutuhkan opsi --whatrequires atau --whatdepends"
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:347
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%a %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:358
 msgid "Package {} contains no files"
@@ -2093,6 +2102,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
+"Tidak ada switch valid yang dinyatakan\n"
+"cara pakai: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|-"
+"-recommends|--requires|--suggest|--supplements|--whatrequires] [key] [--tree]"
+"\n"
+"\n"
+"deskripsi:\n"
+"  Untuk paket yang diberikan cetak suatu pohon paket."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2302,7 +2318,7 @@ msgstr "bugfix"
 
 #: dnf/cli/commands/updateinfo.py:45
 msgid "enhancement"
-msgstr ""
+msgstr "peningkatan"
 
 #: dnf/cli/commands/updateinfo.py:46
 msgid "security"
@@ -2310,23 +2326,23 @@ msgstr "keamanan"
 
 #: dnf/cli/commands/updateinfo.py:48
 msgid "newpackage"
-msgstr ""
+msgstr "paketbaru"
 
 #: dnf/cli/commands/updateinfo.py:50
 msgid "Critical/Sec."
-msgstr ""
+msgstr "Kritis/Kam."
 
 #: dnf/cli/commands/updateinfo.py:51
 msgid "Important/Sec."
-msgstr ""
+msgstr "Penting/Kam."
 
 #: dnf/cli/commands/updateinfo.py:52
 msgid "Moderate/Sec."
-msgstr ""
+msgstr "Sedang/Kam."
 
 #: dnf/cli/commands/updateinfo.py:53
 msgid "Low/Sec."
-msgstr ""
+msgstr "Rendah/Kam."
 
 #: dnf/cli/commands/updateinfo.py:63
 msgid "display advisories about packages"
@@ -2423,19 +2439,19 @@ msgstr "Catatan Keamanan Tak Dikenal"
 
 #: dnf/cli/commands/updateinfo.py:293
 msgid "Bugfix notice(s)"
-msgstr ""
+msgstr "Catatan perbaikan bug"
 
 #: dnf/cli/commands/updateinfo.py:294
 msgid "Enhancement notice(s)"
-msgstr ""
+msgstr "Catatan peningkatan"
 
 #: dnf/cli/commands/updateinfo.py:295
 msgid "other notice(s)"
-msgstr ""
+msgstr "catatan lain"
 
 #: dnf/cli/commands/updateinfo.py:316
 msgid "Unknown/Sec."
-msgstr ""
+msgstr "Tak Diketahui/Kam."
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Bugs"
@@ -2532,14 +2548,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " atau '{}' untuk memakai bukan hanya paket kandidat terbaik"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr "coba tambahkan '{}' untuk memakai bukan hanya paket kandidat terbaik"
+msgstr "coba tambahkan '{}' untuk memuat metadata daftar berkas tambahan"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " atau '{}' untuk memuat metadata daftar berkas tambahan"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2840,7 +2854,7 @@ msgstr "Nama"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
 msgid "Epoch"
-msgstr ""
+msgstr "Epos"
 
 #. Translators: This is the short version of 'Version'. You can
 #. use the full (unabbreviated) term 'Version' if you think that
@@ -3068,7 +3082,7 @@ msgstr "Lisensi     : %s"
 #: dnf/cli/output.py:871
 #, python-format
 msgid "Provide    : %s"
-msgstr ""
+msgstr "Menyediakan : %s"
 
 #: dnf/cli/output.py:891
 #, python-format
@@ -3226,11 +3240,13 @@ msgid ""
 "Skipping packages with conflicts:\n"
 "(add '%s' to command line to force their upgrade)"
 msgstr ""
+"Melewati paket dengan konflik:\n"
+"(tambahkan '%s' ke baris perintah untuk memaksa peningkatan mereka)"
 
 #: dnf/cli/output.py:1203
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
-msgstr ""
+msgstr "Melewati paket dengan kebergantungan yang rusak%s"
 
 #: dnf/cli/output.py:1207
 msgid " or part of a group"
@@ -3341,7 +3357,7 @@ msgstr "Diubah"
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/output.py:1584
 msgid "No transactions"
@@ -3734,7 +3750,7 @@ msgstr "Penguraian berkas \"{}\" gagal: {}"
 #: dnf/conf/substitutions.py:97
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "Galat saat mengurai suatu variabel dari berkas '{0}': {1}"
 
 #: dnf/crypto.py:66
 #, python-format
@@ -3764,6 +3780,8 @@ msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
 msgstr ""
+"Tidak ada metadata modular yang tersedia bagi paket modular '{}', itu tidak "
+"bisa dipasang pada sistem"
 
 #: dnf/db/group.py:359
 #, python-format
@@ -3772,7 +3790,7 @@ msgstr "Terjadi eksepsi rpm: %s"
 
 #: dnf/db/group.py:361
 msgid "No available modular metadata for modular package"
-msgstr ""
+msgstr "Tidak ada metadata modular yang tersedia bagi paket modular"
 
 #: dnf/db/group.py:395
 #, python-format
