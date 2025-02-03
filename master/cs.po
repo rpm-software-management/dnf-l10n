@@ -31,21 +31,22 @@
 # Pavel Borecki <pavel.borecki@gmail.com>, 2023.
 # Jan Kalabza <jan.kalabza@gmail.com>, 2023.
 # Petr Ptacek <petr106@atlas.cz>, 2023, 2024.
+# Jonáš Loskot <fedoraproject.org@alius.cz>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-01 02:07+0000\n"
-"PO-Revision-Date: 2024-02-07 14:36+0000\n"
-"Last-Translator: Petr Ptacek <petr106@atlas.cz>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"PO-Revision-Date: 2025-02-04 03:16+0000\n"
+"Last-Translator: Jonáš Loskot <fedoraproject.org@alius.cz>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.3.1\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -668,6 +669,9 @@ msgid ""
 "*** Error: system is configured to be read-only; for more\n"
 "*** information run `bootc --help`.\n"
 msgstr ""
+"\n"
+"*** Chyba: systém je nakonfigurován pouze pro čtení; pro více\n"
+"*** informací spusťte `bootc --help`.\n"
 
 #: dnf/cli/cli.py:225 dnf/cli/cli.py:229
 msgid "Operation aborted."
@@ -695,6 +699,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Pro vyřešení problému zksute přidat „--enableplugin=expired-pgp-keys“. "
+"Poznámka: tento zásuvný modul nemusí být ve výchozím nastavení nainstalován, "
+"protože je součástí balíčku „dnf-plugins-core“."
 
 #: dnf/cli/cli.py:355
 msgid "Changelogs for {}"
@@ -3747,7 +3754,7 @@ msgstr "V konfiguraci chybí název úložiště '{}' ({}), používá se id."
 
 #: dnf/conf/read.py:96
 msgid "Repository '{}' is missing name in configuration, using id."
-msgstr "V konfiguraci chybí název repozitáře '{}' ({}), používá se id."
+msgstr "V konfiguraci chybí název repozitáře „{}“, používá se id."
 
 #: dnf/conf/read.py:113
 msgid "Parsing file \"{}\" failed: {}"
