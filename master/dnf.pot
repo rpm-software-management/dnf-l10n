@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-06 02:05+0000\n"
+"POT-Creation-Date: 2025-02-07 02:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,7 +83,7 @@ msgstr ""
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr ""
 
-#: dnf/automatic/main.py:254 dnf/cli/cli.py:323
+#: dnf/automatic/main.py:254 dnf/cli/cli.py:351
 msgid "GPG check FAILED"
 msgstr ""
 
@@ -105,7 +105,7 @@ msgstr[1] ""
 msgid "System is off-line."
 msgstr ""
 
-#: dnf/automatic/main.py:373 dnf/cli/cli.py:274
+#: dnf/automatic/main.py:373 dnf/cli/cli.py:302
 msgid "Transaction failed"
 msgstr ""
 
@@ -332,7 +332,7 @@ msgstr ""
 msgid "Adding packages from group '%s': %s"
 msgstr ""
 
-#: dnf/base.py:1835 dnf/cli/cli.py:231 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1835 dnf/cli/cli.py:259 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
@@ -354,7 +354,7 @@ msgstr ""
 
 #: dnf/base.py:2112 dnf/base.py:2131 dnf/base.py:2144 dnf/base.py:2175
 #: dnf/base.py:2245 dnf/base.py:2253 dnf/base.py:2273 dnf/base.py:2395
-#: dnf/cli/cli.py:435 dnf/cli/commands/__init__.py:423
+#: dnf/cli/cli.py:463 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
 #: dnf/cli/commands/install.py:152 dnf/cli/commands/reinstall.py:70
@@ -411,7 +411,7 @@ msgstr ""
 msgid "No packages marked for removal."
 msgstr ""
 
-#: dnf/base.py:2402 dnf/cli/cli.py:446
+#: dnf/base.py:2402 dnf/cli/cli.py:474
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
@@ -549,8 +549,8 @@ msgstr ""
 msgid "Cannot read file \"%s\": %s"
 msgstr ""
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:824
-#: dnf/cli/cli.py:828 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:852
+#: dnf/cli/cli.py:856 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr ""
@@ -596,185 +596,202 @@ msgstr ""
 msgid "{prog} will only download packages for the transaction."
 msgstr ""
 
-#: dnf/cli/cli.py:215
+#: dnf/cli/cli.py:216
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
 
-#: dnf/cli/cli.py:220
-msgid ""
-"\n"
-"*** Error: system is configured to be read-only; for more\n"
-"*** information run `bootc --help`.\n"
+#: dnf/cli/cli.py:228
+msgid "Persistent transactions aren't supported on bootc systems."
 msgstr ""
 
-#: dnf/cli/cli.py:225 dnf/cli/cli.py:229
+#: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
 msgstr ""
 
 #: dnf/cli/cli.py:236
+msgid ""
+"This bootc system is configured to be read-only. Pass --transient to perform "
+"this transaction in a transient overlay which will reset when the system "
+"reboots."
+msgstr ""
+
+#. Only tell the user about the transient overlay if
+#. it's not already in place
+#: dnf/cli/cli.py:244
+msgid ""
+"A transient overlay will be created on /usr that will be discarded on "
+"reboot. Keep in mind that changes to /etc and /var will still persist, and "
+"packages commonly modify these directories."
+msgstr ""
+
+#: dnf/cli/cli.py:250
+msgid "Transient transactions are only supported on bootc systems."
+msgstr ""
+
+#: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
 msgstr ""
 
-#: dnf/cli/cli.py:242
+#: dnf/cli/cli.py:270
 msgid "Error downloading packages:"
 msgstr ""
 
-#: dnf/cli/cli.py:298
+#: dnf/cli/cli.py:326
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
 msgstr ""
 
-#: dnf/cli/cli.py:319
+#: dnf/cli/cli.py:347
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
 
-#: dnf/cli/cli.py:355
+#: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
 msgstr ""
 
-#: dnf/cli/cli.py:388 dnf/cli/cli.py:529 dnf/cli/cli.py:535
+#: dnf/cli/cli.py:416 dnf/cli/cli.py:557 dnf/cli/cli.py:563
 msgid "Obsoleting Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:417
+#: dnf/cli/cli.py:445
 msgid "No packages marked for distribution synchronization."
 msgstr ""
 
-#: dnf/cli/cli.py:443 dnf/cli/commands/group.py:396
+#: dnf/cli/cli.py:471 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
 msgstr ""
 
-#: dnf/cli/cli.py:452
+#: dnf/cli/cli.py:480
 msgid "No packages marked for downgrade."
 msgstr ""
 
-#: dnf/cli/cli.py:503
+#: dnf/cli/cli.py:531
 msgid "Installed Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:511
+#: dnf/cli/cli.py:539
 msgid "Available Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:515
+#: dnf/cli/cli.py:543
 msgid "Autoremove Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:517
+#: dnf/cli/cli.py:545
 msgid "Extra Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:521
+#: dnf/cli/cli.py:549
 msgid "Available Upgrades"
 msgstr ""
 
-#: dnf/cli/cli.py:537
+#: dnf/cli/cli.py:565
 msgid "Recently Added Packages"
 msgstr ""
 
-#: dnf/cli/cli.py:541
+#: dnf/cli/cli.py:569
 msgid "No matching Packages to list"
 msgstr ""
 
-#: dnf/cli/cli.py:622
+#: dnf/cli/cli.py:650
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
 
-#: dnf/cli/cli.py:691 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:719 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr ""
 
-#: dnf/cli/cli.py:705
+#: dnf/cli/cli.py:733
 #, python-format
 msgid "No repository match: %s"
 msgstr ""
 
-#: dnf/cli/cli.py:739
+#: dnf/cli/cli.py:767
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
 
-#: dnf/cli/cli.py:769
+#: dnf/cli/cli.py:797
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr ""
 
-#: dnf/cli/cli.py:772
+#: dnf/cli/cli.py:800
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
 
-#: dnf/cli/cli.py:776
+#: dnf/cli/cli.py:804
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
 
-#: dnf/cli/cli.py:834
+#: dnf/cli/cli.py:862
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
 
-#: dnf/cli/cli.py:840
+#: dnf/cli/cli.py:868
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
 
-#: dnf/cli/cli.py:922
+#: dnf/cli/cli.py:950
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
 
-#: dnf/cli/cli.py:942
+#: dnf/cli/cli.py:970
 msgid "Config file \"{}\" does not exist"
 msgstr ""
 
-#: dnf/cli/cli.py:962
+#: dnf/cli/cli.py:990
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
 
-#: dnf/cli/cli.py:1036 dnf/cli/commands/repoquery.py:486
+#: dnf/cli/cli.py:1064 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr ""
 
-#: dnf/cli/cli.py:1043
+#: dnf/cli/cli.py:1071
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr ""
 
-#: dnf/cli/cli.py:1063
+#: dnf/cli/cli.py:1091
 msgid "Excludes in dnf.conf: "
 msgstr ""
 
-#: dnf/cli/cli.py:1066
+#: dnf/cli/cli.py:1094
 msgid "Includes in dnf.conf: "
 msgstr ""
 
-#: dnf/cli/cli.py:1069
+#: dnf/cli/cli.py:1097
 msgid "Excludes in repo "
 msgstr ""
 
-#: dnf/cli/cli.py:1072
+#: dnf/cli/cli.py:1100
 msgid "Includes in repo "
 msgstr ""
 
@@ -2310,7 +2327,7 @@ msgid "Files"
 msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:359 dnf/cli/output.py:1658
-#: dnf/cli/output.py:1660 dnf/util.py:615
+#: dnf/cli/output.py:1660 dnf/util.py:617
 msgid "Installed"
 msgstr ""
 
@@ -2581,55 +2598,59 @@ msgstr ""
 msgid "only download packages"
 msgstr ""
 
-#: dnf/cli/option_parser.py:321
-msgid "add a comment to transaction"
+#: dnf/cli/option_parser.py:322
+msgid "Use a transient overlay which will reset on reboot"
 msgstr ""
 
 #: dnf/cli/option_parser.py:324
-msgid "Include bugfix relevant packages, in updates"
+msgid "add a comment to transaction"
 msgstr ""
 
 #: dnf/cli/option_parser.py:327
-msgid "Include enhancement relevant packages, in updates"
+msgid "Include bugfix relevant packages, in updates"
 msgstr ""
 
 #: dnf/cli/option_parser.py:330
-msgid "Include newpackage relevant packages, in updates"
+msgid "Include enhancement relevant packages, in updates"
 msgstr ""
 
 #: dnf/cli/option_parser.py:333
+msgid "Include newpackage relevant packages, in updates"
+msgstr ""
+
+#: dnf/cli/option_parser.py:336
 msgid "Include security relevant packages, in updates"
 msgstr ""
 
-#: dnf/cli/option_parser.py:337
+#: dnf/cli/option_parser.py:340
 msgid "Include packages needed to fix the given advisory, in updates"
 msgstr ""
 
-#: dnf/cli/option_parser.py:341
+#: dnf/cli/option_parser.py:344
 msgid "Include packages needed to fix the given BZ, in updates"
 msgstr ""
 
-#: dnf/cli/option_parser.py:344
+#: dnf/cli/option_parser.py:347
 msgid "Include packages needed to fix the given CVE, in updates"
 msgstr ""
 
-#: dnf/cli/option_parser.py:349
+#: dnf/cli/option_parser.py:352
 msgid "Include security relevant packages matching the severity, in updates"
 msgstr ""
 
-#: dnf/cli/option_parser.py:355
+#: dnf/cli/option_parser.py:358
 msgid "Force the use of an architecture"
 msgstr ""
 
-#: dnf/cli/option_parser.py:377
+#: dnf/cli/option_parser.py:380
 msgid "List of Main Commands:"
 msgstr ""
 
-#: dnf/cli/option_parser.py:378
+#: dnf/cli/option_parser.py:381
 msgid "List of Plugin Commands:"
 msgstr ""
 
-#: dnf/cli/option_parser.py:415
+#: dnf/cli/option_parser.py:418
 #, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr ""
@@ -3163,11 +3184,11 @@ msgstr ""
 msgid "Erased"
 msgstr ""
 
-#: dnf/cli/output.py:1659 dnf/cli/output.py:1826 dnf/util.py:614
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1826 dnf/util.py:616
 msgid "Downgraded"
 msgstr ""
 
-#: dnf/cli/output.py:1659 dnf/cli/output.py:1828 dnf/util.py:613
+#: dnf/cli/output.py:1659 dnf/cli/output.py:1828 dnf/util.py:615
 msgid "Upgraded"
 msgstr ""
 
@@ -4119,39 +4140,68 @@ msgid ""
 "pulled into the transaction."
 msgstr ""
 
-#: dnf/util.py:417 dnf/util.py:419
+#: dnf/util.py:419 dnf/util.py:421
 msgid "Problem"
 msgstr ""
 
-#: dnf/util.py:470
+#: dnf/util.py:472
 msgid "TransactionItem not found for key: {}"
 msgstr ""
 
-#: dnf/util.py:480
+#: dnf/util.py:482
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr ""
 
-#: dnf/util.py:483
+#: dnf/util.py:485
 msgid "Errors occurred during transaction."
 msgstr ""
 
-#: dnf/util.py:619
+#: dnf/util.py:621
 msgid "Reinstalled"
 msgstr ""
 
-#: dnf/util.py:620
+#: dnf/util.py:622
 msgid "Skipped"
 msgstr ""
 
-#: dnf/util.py:621
+#: dnf/util.py:623
 msgid "Removed"
 msgstr ""
 
-#: dnf/util.py:624
+#: dnf/util.py:626
 msgid "Failed"
 msgstr ""
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
-#: dnf/util.py:633
+#: dnf/util.py:635
 msgid "<name-unset>"
+msgstr ""
+
+#: dnf/util.py:652
+msgid "Not running on a bootc system."
+msgstr ""
+
+#: dnf/util.py:705
+#, python-format
+msgid "%s: command not found."
+msgstr ""
+
+#: dnf/util.py:707
+#, python-format
+msgid "Failed to mount %s as read/write: %s"
+msgstr ""
+
+#: dnf/util.py:716
+#, python-format
+msgid "%s: command not found. Is this a bootc system?"
+msgstr ""
+
+#: dnf/util.py:718
+#, python-format
+msgid "Failed to unlock system: %s"
+msgstr ""
+
+#: dnf/util.py:732
+#, python-format
+msgid "Unhandled bootc unlocked state: %s"
 msgstr ""
