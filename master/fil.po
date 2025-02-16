@@ -1,39 +1,40 @@
 # Alvin Abuke <abuke.ac@gmail.com>, 2018. #zanata
+# Iver Son <ivercoder@proton.me>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-05 02:04+0000\n"
-"PO-Revision-Date: 2018-04-14 04:03+0000\n"
-"Last-Translator: Alvin Abuke <abuke.ac@gmail.com>\n"
-"Language-Team: Filipino\n"
+"PO-Revision-Date: 2025-02-16 09:38+0000\n"
+"Last-Translator: Iver Son <ivercoder@proton.me>\n"
+"Language-Team: Filipino <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fil/>\n"
 "Language: fil\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1\n"
-"X-Generator: Zanata 4.6.2\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates have been applied on '%s':"
-msgstr "Ang sumusunod ng mga updates ay nagawa na sa '%s':"
+msgstr "Nailapat ang mga sumusunod na update sa '%s':"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Updates na nai-apply sa '%s'."
+msgstr "Nakumpleto ang mga update sa %s"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
 msgid "The following updates are available on '%s':"
-msgstr "Ang sumusunod na mga updates ay available na sa '%s':"
+msgstr "Available ang mga sumusunod na update sa '%s':"
 
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Ang sumusunod na mga updates ay downloaded sa '%s':"
+msgstr "Na-download sa '%s' ang mga sumusunod na update:"
 
 #: dnf/automatic/emitter.py:36
 #, python-format
@@ -48,27 +49,27 @@ msgstr ""
 #: dnf/automatic/emitter.py:95
 #, python-format
 msgid "Updates applied on '%s'."
-msgstr "Updates na nai-apply sa '%s'."
+msgstr "Nailapat ang mga update sa '%s'."
 
 #: dnf/automatic/emitter.py:97
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Updates na na-download sa '%s'."
+msgstr "Na-download ang mga update sa '%s'."
 
 #: dnf/automatic/emitter.py:99
 #, python-format
 msgid "Updates available on '%s'."
-msgstr "Updates na magagamit sa '%s'."
+msgstr "Available ang mga update sa '%s'."
 
 #: dnf/automatic/emitter.py:130
 #, python-format
 msgid "Failed to send an email via '%s': %s"
-msgstr "Bigo na maipdala ang email sa pamamagitan ng '%s': %s"
+msgstr "Nagkaproblema sa pag-send ng email sa pamamagitan ng '%s': %s"
 
 #: dnf/automatic/emitter.py:160
 #, python-format
 msgid "Failed to execute command '%s': returned %d"
-msgstr "Bigo na ma-execute ang command '%s': ibinalik ang %d"
+msgstr "Nagkaproblema sa pag-execute ng command '%s': tumugon ng %d"
 
 #: dnf/automatic/main.py:175
 #, python-format
@@ -110,7 +111,7 @@ msgstr ""
 #: dnf/cli/main.py:80 dnf/cli/main.py:83
 #, python-format
 msgid "Error: %s"
-msgstr "Kamalian : %s"
+msgstr "Error: %s"
 
 #: dnf/base.py:151 dnf/base.py:486 dnf/base.py:488
 msgid "loading repo '{}' failure: {}"
@@ -179,25 +180,27 @@ msgstr ""
 #: dnf/base.py:427
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr "Huling pag-tsek ng metadata expiration : %s ago pa sa %s."
+msgstr "Huling pag-check ng expiration ng metadata: %s ang nakalipas sa %s."
 
 #: dnf/base.py:521
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
-"Ang downloaded na packages ay naka-save na sa cache hanggang sa susunod na "
-"successful na transaction."
+"Na-save ang mga na-download na package hanggang sa susunod na tagumpay na "
+"transaksyon."
 
 #: dnf/base.py:523
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
-msgstr "Maaaring  ma remove ang cached packages sa pag-execute ng '%s'."
+msgstr ""
+"Matatanggal mo ang mga naka-cache na package sa pamamagitan ng pag-execute "
+"ng '%s'."
 
 #: dnf/base.py:656
 #, python-format
 msgid "Invalid tsflag in config file: %s"
-msgstr "Di wastong tsflag sa config file: %s"
+msgstr "'Di-wastong tsflag sa config file: %s"
 
 #: dnf/base.py:714
 #, python-format
@@ -273,23 +276,19 @@ msgid "Some packages were not downloaded. Retrying."
 msgstr ""
 
 #: dnf/base.py:1286
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Ang Failed Delta RPMs ay tumaas %.1f MB na updates sa %.1f MB (%d.1%% na "
-"sayang)"
+"Pinababa ng mga delta RPM ang %.1f MB na update sa %.1f MB (nakatipid ng "
+"%.1f%%)"
 
 #: dnf/base.py:1290
-#, fuzzy, python-format
-#| msgid ""
-#| "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%d.1%% wasted)"
+#, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Ang Failed Delta RPMs ay tumaas %.1f MB na updates sa %.1f MB (%d.1%% na "
-"sayang)"
+"Pinataas ng pumalpak na mga delta RPM ang %.1f MB na update sa %.1f MB ("
+"nakaaksaya ng %.1f%%)"
 
 #: dnf/base.py:1335
 msgid "Cannot add local packages, because transaction job already exists"
@@ -297,22 +296,22 @@ msgstr ""
 
 #: dnf/base.py:1349
 msgid "Could not open: {}"
-msgstr "Hindi Mabukasan: {}"
+msgstr "Hindi mabuksan: {}"
 
 #: dnf/base.py:1387
 #, python-format
 msgid "Public key for %s is not installed"
-msgstr "Public key sa %s ay hindi naka-install"
+msgstr "Hindi naka-install ang public key para sa %s"
 
 #: dnf/base.py:1391
 #, python-format
 msgid "Problem opening package %s"
-msgstr "Problema sa pagbukas ng package na %s"
+msgstr "Nagkaproblema sa pagbubukas ng package na %s"
 
 #: dnf/base.py:1399
 #, python-format
 msgid "Public key for %s is not trusted"
-msgstr "Public key para sa %s ay hindi mapag-kakatiwalaan"
+msgstr "Hindi pinagkakatiwalaan ang public key para sa %s"
 
 #: dnf/base.py:1403
 #, python-format
@@ -504,22 +503,24 @@ msgstr ""
 #: dnf/base.py:2734
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
+"May maling checksum ang package na \"{}\" mula sa lokal na repositoryong "
+"\"{}\""
 
 #: dnf/base.py:2737
 msgid "Some packages from local repository have incorrect checksum"
-msgstr "May mga packages sa local na repository na may maling checksum"
+msgstr "May maling checksum ang ilang package mula sa lokal na repositoryo"
 
 #: dnf/base.py:2740
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr "Ang Package \"{}\" sa repository na \"{}\" ay may maling checksum"
+msgstr "May maling checksum ang package na \"{}\" mula sa repositoryong \"{}\""
 
 #: dnf/base.py:2743
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
-"May mga packages na may invalid cache, ngunit hindi ma-download dahil sa \"--"
-"cacheonly\" na opsyon"
+"May 'di-wastong cache ang ilang package, pero hindi ma-download dahil sa "
+"opsyong \"--cacheonly\""
 
 #: dnf/base.py:2761 dnf/base.py:2781
 msgid "No match for argument"
@@ -658,7 +659,7 @@ msgstr ""
 #: dnf/cli/cli.py:443 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
-msgstr "Walang package %s na magagamit."
+msgstr "Walang available na package na %s."
 
 #: dnf/cli/cli.py:452
 msgid "No packages marked for downgrade."
@@ -882,7 +883,7 @@ msgstr ""
 
 #: dnf/cli/commands/__init__.py:250 dnf/cli/commands/search.py:159
 msgid "Searching Packages: "
-msgstr "Hinahanap ang Packages: "
+msgstr "Hinahanap ang mga Package: "
 
 #: dnf/cli/commands/__init__.py:259
 msgid "check for available package upgrades"
@@ -895,7 +896,7 @@ msgstr ""
 #: dnf/cli/commands/__init__.py:359 dnf/cli/commands/__init__.py:412
 #: dnf/cli/commands/__init__.py:468
 msgid "No package available."
-msgstr ""
+msgstr "Walang available na package."
 
 #: dnf/cli/commands/__init__.py:374
 msgid "No packages marked for install."
@@ -1048,12 +1049,12 @@ msgstr ""
 msgid ""
 "remove all unneeded packages that were originally installed as dependencies"
 msgstr ""
-"alisin ang lahat ng  hindi na kailangan na packages na orihinal na naka-"
-"install bilang dependencies"
+"tanggalin lahat ng mga hindi na kailangang package na dating in-install "
+"bilang dependency"
 
 #: dnf/cli/commands/autoremove.py:46 dnf/cli/commands/remove.py:59
 msgid "Package to remove"
-msgstr "Package na aalisin"
+msgstr "Aalising package"
 
 #: dnf/cli/commands/check.py:34
 msgid "check for problems in the packagedb"
@@ -1102,11 +1103,11 @@ msgstr ""
 
 #: dnf/cli/commands/clean.py:87
 msgid "remove cached data"
-msgstr "alisin ang cached data"
+msgstr "alisin ang naka-cache na data"
 
 #: dnf/cli/commands/clean.py:93
 msgid "Metadata type to clean"
-msgstr "Metadata type na lilinisin"
+msgstr "Uri ng metadatang lilinisin"
 
 #: dnf/cli/commands/clean.py:105
 msgid "Cleaning data:  "
@@ -1114,19 +1115,19 @@ msgstr "Nililinis ang data:  "
 
 #: dnf/cli/commands/clean.py:111
 msgid "Cache was expired"
-msgstr "Cache ay nag-expire na"
+msgstr "Nag-expire na ang cache"
 
 #: dnf/cli/commands/clean.py:115
 #, python-format
 msgid "%d file removed"
 msgid_plural "%d files removed"
-msgstr[0] "%d file na natanggal"
-msgstr[1] "%d file na natanggal"
+msgstr[0] "tinanggal ang %d file"
+msgstr[1] "tinanggal ang %d file"
 
 #: dnf/cli/commands/clean.py:119 dnf/lock.py:139
 #, python-format
 msgid "Waiting for process with pid %d to finish."
-msgstr "Nag-hihintay sa proseso na may pid %d na matapos."
+msgstr "Hinihintay matapos ang prosesong may pid na %d."
 
 #: dnf/cli/commands/deplist.py:32
 msgid ""
@@ -1137,12 +1138,12 @@ msgstr ""
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
 msgstr ""
-"i-synchronize ang naka-install na mga packages sa pinakabagong magagamit na "
-"mga bersyon"
+"i-synchronize ang mga naka-install na package sa pinakabagong available na "
+"bersyon"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
-msgstr "Package na i-synchronize"
+msgstr "Isi-synchronize na package"
 
 #: dnf/cli/commands/downgrade.py:34
 msgid "Downgrade a package"
@@ -1154,44 +1155,46 @@ msgstr ""
 
 #: dnf/cli/commands/group.py:46
 msgid "display, or use, the groups information"
-msgstr "ipakita, o gamitin, ang grupo ng impormasyon"
+msgstr "ipakita, o gamitin, ang impormasyon tungkol sa mga group"
 
 #: dnf/cli/commands/group.py:72
 msgid "No group data available for configured repositories."
-msgstr "Walang grupo ng data na magagamit para sa configured na repositories."
+msgstr ""
+"Walang available na data tungkol sa mga group para sa mga naka-configure na "
+"repositoryo."
 
 #: dnf/cli/commands/group.py:126
 #, python-format
 msgid "Warning: Group %s does not exist."
-msgstr "Babala: Grupo %s ay hindi nag-exist."
+msgstr "Babala: Walang group na %s."
 
 #: dnf/cli/commands/group.py:167
 msgid "Warning: No groups match:"
-msgstr "Babala: Walang mga groups na tugma:"
+msgstr "Babala: Walang tumutugmang group sa:"
 
 #: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
-msgstr "Magagamit na Environment Groups:"
+msgstr "Available na mga Group para sa Environment:"
 
 #: dnf/cli/commands/group.py:198
 msgid "Installed Environment Groups:"
-msgstr "Na-install na Environment Groups:"
+msgstr "Mga Naka-install na Group para sa Environment:"
 
 #: dnf/cli/commands/group.py:205 dnf/cli/commands/group.py:291
 msgid "Installed Groups:"
-msgstr "Na-install na Groups:"
+msgstr "Mga Naka-install na Group:"
 
 #: dnf/cli/commands/group.py:212 dnf/cli/commands/group.py:298
 msgid "Installed Language Groups:"
-msgstr "Na-install na Grupo ng Wika :"
+msgstr "Mga Naka-install na Group para sa Wika:"
 
 #: dnf/cli/commands/group.py:222 dnf/cli/commands/group.py:305
 msgid "Available Groups:"
-msgstr "Magagamit na Grupo:"
+msgstr "Available na mga Group:"
 
 #: dnf/cli/commands/group.py:229 dnf/cli/commands/group.py:312
 msgid "Available Language Groups:"
-msgstr "Magagamit an Grupo ng Wika:"
+msgstr "Available na mga Group para sa Wika:"
 
 #: dnf/cli/commands/group.py:319
 msgid "include optional packages from group"
@@ -1583,15 +1586,15 @@ msgstr ""
 
 #: dnf/cli/commands/repolist.py:125
 msgid "No repositories available"
-msgstr "Walang repositories na magagamit."
+msgstr "Walang available na repositoryo"
 
 #: dnf/cli/commands/repolist.py:143 dnf/cli/commands/repolist.py:144
 msgid "enabled"
-msgstr "enabled"
+msgstr "naka-enable"
 
 #: dnf/cli/commands/repolist.py:151 dnf/cli/commands/repolist.py:152
 msgid "disabled"
-msgstr "disabled"
+msgstr "naka-disable"
 
 #: dnf/cli/commands/repolist.py:162
 msgid "Repo-id            : "
@@ -1675,7 +1678,7 @@ msgstr ""
 #. then chop the middle (name)...
 #: dnf/cli/commands/repolist.py:246 dnf/cli/commands/repolist.py:273
 msgid "repo id"
-msgstr "repo id"
+msgstr "id ng repo"
 
 #: dnf/cli/commands/repolist.py:259 dnf/cli/commands/repolist.py:260
 #: dnf/cli/commands/repolist.py:281
@@ -1998,7 +2001,7 @@ msgstr ""
 #: dnf/cli/commands/search.py:61 dnf/cli/output.py:460
 msgctxt "long"
 msgid "Name"
-msgstr ""
+msgstr "Pangalan"
 
 #: dnf/cli/commands/search.py:62 dnf/cli/output.py:513
 msgctxt "long"
@@ -2008,7 +2011,7 @@ msgstr ""
 #: dnf/cli/commands/search.py:63 dnf/cli/output.py:523
 msgctxt "long"
 msgid "Description"
-msgstr ""
+msgstr "Paglalarawan"
 
 #: dnf/cli/commands/search.py:64 dnf/cli/output.py:516
 msgid "URL"
@@ -2136,7 +2139,7 @@ msgstr ""
 
 #: dnf/cli/commands/shell.py:284 dnf/cli/main.py:194
 msgid "Complete!"
-msgstr ""
+msgstr "Kumpleto na!"
 
 #: dnf/cli/commands/shell.py:294
 msgid "Leaving Shell"
@@ -2157,7 +2160,7 @@ msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:44
 msgid "bugfix"
-msgstr "bugfix"
+msgstr "pagsasaayos ng bug"
 
 #: dnf/cli/commands/updateinfo.py:45
 msgid "enhancement"
@@ -2169,23 +2172,23 @@ msgstr "seguridad"
 
 #: dnf/cli/commands/updateinfo.py:48
 msgid "newpackage"
-msgstr "newpackage"
+msgstr "bagongpackage"
 
 #: dnf/cli/commands/updateinfo.py:50
 msgid "Critical/Sec."
-msgstr "Critical/Sec."
+msgstr "Kritikal/Seg."
 
 #: dnf/cli/commands/updateinfo.py:51
 msgid "Important/Sec."
-msgstr "Important/Sec."
+msgstr "Mahalaga/Seg."
 
 #: dnf/cli/commands/updateinfo.py:52
 msgid "Moderate/Sec."
-msgstr "Moderate/Sec."
+msgstr "Katamtaman/Seg."
 
 #: dnf/cli/commands/updateinfo.py:53
 msgid "Low/Sec."
-msgstr "Low/Sec."
+msgstr "Mababa/Seg."
 
 #: dnf/cli/commands/updateinfo.py:63
 msgid "display advisories about packages"
@@ -2255,7 +2258,7 @@ msgstr "Mga paunawa ng Bagong Package"
 
 #: dnf/cli/commands/updateinfo.py:282
 msgid "Security notice(s)"
-msgstr "Security notice(s)"
+msgstr "(Mga) abiso sa seguridad"
 
 #: dnf/cli/commands/updateinfo.py:283
 msgid "Critical Security notice(s)"
@@ -2279,7 +2282,7 @@ msgstr "Hindi kilalang Seguridad na mga paunawa"
 
 #: dnf/cli/commands/updateinfo.py:293
 msgid "Bugfix notice(s)"
-msgstr "Bugfix notice(s)"
+msgstr "(Mga) abiso sa pagsasaayos ng bug"
 
 #: dnf/cli/commands/updateinfo.py:294
 msgid "Enhancement notice(s)"
@@ -2291,11 +2294,11 @@ msgstr "iba pang mga paunawa"
 
 #: dnf/cli/commands/updateinfo.py:316
 msgid "Unknown/Sec."
-msgstr "Unknown/Sec."
+msgstr "Hindi alam/Seg."
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Bugs"
-msgstr "Bugs"
+msgstr "Mga bug"
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Type"
@@ -2311,7 +2314,7 @@ msgstr "Na-update"
 
 #: dnf/cli/commands/updateinfo.py:358
 msgid "CVEs"
-msgstr "CVEs"
+msgstr "Mga CVE"
 
 #: dnf/cli/commands/updateinfo.py:358
 msgid "Description"
@@ -2660,7 +2663,7 @@ msgstr ""
 #: dnf/cli/output.py:459
 msgctxt "short"
 msgid "Name"
-msgstr ""
+msgstr "Pangalan"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:465
@@ -2674,13 +2677,13 @@ msgstr ""
 #: dnf/cli/output.py:466 dnf/cli/output.py:1247
 msgctxt "short"
 msgid "Version"
-msgstr ""
+msgstr "Bersyon"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:467 dnf/cli/output.py:1249
 msgctxt "long"
 msgid "Version"
-msgstr ""
+msgstr "Bersyon"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:470
@@ -2782,7 +2785,7 @@ msgstr ""
 #: dnf/cli/output.py:522
 msgctxt "short"
 msgid "Description"
-msgstr ""
+msgstr "Paglalarawan"
 
 #: dnf/cli/output.py:650
 msgid "y"
@@ -2995,7 +2998,7 @@ msgstr ""
 #: dnf/cli/output.py:1064
 msgctxt "summary"
 msgid "Downgrading"
-msgstr ""
+msgstr "Ida-downgrade"
 
 #: dnf/cli/output.py:1089
 msgid "Installing module profiles"
@@ -3023,7 +3026,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1142
 msgid "Installing Environment Groups"
-msgstr ""
+msgstr "Ini-install ang mga Group para sa Environment"
 
 #: dnf/cli/output.py:1149
 msgid "Upgrading Environment Groups"
@@ -3138,7 +3141,7 @@ msgstr ""
 #. TRANSLATORS: user names who executed transaction in history command output
 #: dnf/cli/output.py:1530
 msgid "User name"
-msgstr ""
+msgstr "User name"
 
 #: dnf/cli/output.py:1532
 msgid "ID"
@@ -3292,7 +3295,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1811
 msgid "Errors:"
-msgstr ""
+msgstr "Mga error:"
 
 #: dnf/cli/output.py:1820
 msgid "Dep-Install"
@@ -3393,7 +3396,7 @@ msgstr ""
 
 #: dnf/cli/utils.py:104
 msgid "Unknown"
-msgstr ""
+msgstr "Hindi alam"
 
 #: dnf/cli/utils.py:117
 #, python-format
@@ -3436,17 +3439,15 @@ msgid "Module or Group '%s' does not exist."
 msgstr ""
 
 #: dnf/comps.py:599
-#, fuzzy, python-format
-#| msgid "Warning: Group %s does not exist."
+#, python-format
 msgid "Environment id '%s' does not exist."
-msgstr "Babala: Grupo %s ay hindi nag-exist."
+msgstr "Walang environment id na '%s'."
 
 #: dnf/comps.py:622 dnf/transaction_sr.py:487 dnf/transaction_sr.py:497
 #: dnf/transaction_sr.py:507
-#, fuzzy, python-format
-#| msgid "Package %s is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
-msgstr "Package %s ay hind naka-install."
+msgstr "Hindi naka-install ang environment id na '%s'."
 
 #: dnf/comps.py:639
 #, python-format
@@ -3459,10 +3460,9 @@ msgid "Environment '%s' is not available."
 msgstr ""
 
 #: dnf/comps.py:673
-#, fuzzy, python-format
-#| msgid "Warning: Group %s does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
-msgstr "Babala: Grupo %s ay hindi nag-exist."
+msgstr "Walang group id na '%s'."
 
 #: dnf/conf/config.py:136
 #, python-format
@@ -3737,10 +3737,8 @@ msgid "No stream specified for '{}', please specify stream"
 msgstr ""
 
 #: dnf/module/exceptions.py:82
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
-msgstr "Walang repositories na magagamit."
+msgstr "Walang ganitong profile: {}. Walang available na profile"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
@@ -3949,7 +3947,7 @@ msgstr ""
 #: dnf/transaction.py:80
 msgctxt "currently"
 msgid "Downgrading"
-msgstr ""
+msgstr "Ida-downgrade"
 
 #: dnf/transaction.py:81 dnf/transaction.py:88 dnf/transaction.py:93
 #: dnf/transaction.py:95
@@ -3989,7 +3987,7 @@ msgstr ""
 
 #: dnf/transaction.py:99
 msgid "Preparing"
-msgstr ""
+msgstr "Naghahanda"
 
 #: dnf/transaction_sr.py:66
 #, python-brace-format
@@ -4090,10 +4088,9 @@ msgstr ""
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
-#, fuzzy, python-format
-#| msgid "Package %s is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
-msgstr "Package %s ay hind naka-install."
+msgstr "Hindi naka-install ang group id na '%s'."
 
 #: dnf/transaction_sr.py:442
 #, python-format
@@ -4159,7 +4156,7 @@ msgstr ""
 
 #: dnf/util.py:619
 msgid "Reinstalled"
-msgstr ""
+msgstr "Na-reinstall"
 
 #: dnf/util.py:620
 msgid "Skipped"
@@ -4171,7 +4168,7 @@ msgstr ""
 
 #: dnf/util.py:624
 msgid "Failed"
-msgstr ""
+msgstr "Nabigo"
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
 #: dnf/util.py:633
