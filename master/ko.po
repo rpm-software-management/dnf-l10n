@@ -9,10 +9,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-16 02:11+0000\n"
-"PO-Revision-Date: 2025-01-11 07:08+0000\n"
+"PO-Revision-Date: 2025-02-18 04:38+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -617,7 +617,7 @@ msgstr "{prog}는 꾸러미만 내려받기 하고, gpg 키를 설치하며 연�
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "지속적인 연결은 bootc 시스템에서 지원되지 않습니다."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -629,6 +629,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"bootc 시스템은 읽기-전용이 되도록 구성되었습니다. --transient 를 전달하여 "
+"시스템이 재시작 될 때에 재지정되도록 일시적인 씌우기로 해당 연결을 "
+"수행합니다."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -638,10 +641,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"일시적인 씌우기는 재시작에서 삭제되고 /usr에서 생성됩니다. /etc 및 /var로의 "
+"변경 사항은 여전히 지속된다는 점을 명심하고, 꾸러미는 일반적으로 이들 "
+"디렉토리에서 수정합니다."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "일시적인 연결은 bootc 시스템에서만 지원됩니다."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -2589,16 +2595,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "설정 파일과 저장소 파일의 $releasever 값을 재정의합니다"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "설정 파일과 저장소 파일의 $releasever 값을 재정의합니다"
+msgstr "설정 파일과 저장소 파일의 $releasever_major 값을 재정의합니다"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "설정 파일과 저장소 파일의 $releasever 값을 재정의합니다"
+msgstr "설정 파일과 저장소 파일의 $releasever_minor 값을 재정의합니다"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2755,7 +2757,7 @@ msgstr "꾸러미만 내려받기"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "재시작에서 재설정하는 일시적인 씌우기를 사용합니다"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4376,32 +4378,32 @@ msgstr "<name-unset>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "bootc 시스템에서 동작하지 않습니다."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: 명령을 찾을 수 없습니다."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "읽기/쓰기 하도록 %s를 적재하는 데 실패함: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: 명령을 찾을 수 없습니다. 이게 bootc 시스템인가요?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "시스템 잠금 해제에 실패함: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "처리되지 않은 bootc 잠금 해제된 상태: %s"
 
 #~ msgid ""
 #~ "\n"
