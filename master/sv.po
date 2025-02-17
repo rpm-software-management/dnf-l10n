@@ -18,10 +18,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-16 02:11+0000\n"
-"PO-Revision-Date: 2025-01-13 06:49+0000\n"
+"PO-Revision-Date: 2025-02-18 04:38+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
-"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/sv/>\n"
+"Language-Team: Swedish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/sv/>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -649,7 +649,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Persistenta transaktioner stöds inte på bootc-system."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -661,6 +661,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Detta bootc system är konfigurerat för att vara skrivskyddat. Passera --"
+"transient för att utföra denna transaktion i en övergående överlagring som "
+"återställs när systemet startar om."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -670,10 +673,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"En övergående överlagring kommer att skapas på /usr som kommer att kasseras "
+"vid omstart. Tänk på att ändringar av /etc och /var fortfarande kvarstår, "
+"och paket modifierar ofta dessa kataloger."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Transienta transaktioner stöds endast på bootc-system."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -2640,16 +2646,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "åsidosätt värdet på $releasever i config- och repo-filer"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "åsidosätt värdet på $releasever i config- och repo-filer"
+msgstr "åsidosätt värdet på $releasever i _major i konfiguration och repo-filer"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "åsidosätt värdet på $releasever i config- och repo-filer"
+msgstr "åsidosätt värdet på $releasever _minor i konfigurations och repo-filer"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2808,7 +2810,7 @@ msgstr "hämta endast paket"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Använd en övergående överlagring som återställs vid omstart"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4446,32 +4448,32 @@ msgstr "<namnet ej satt>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Körs inte på ett bootc-system."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: kommandot hittades inte."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Misslyckades med att montera %s som läs/skriv: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: kommandot hittades inte. Är detta ett bootc-system?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Misslyckades med att låsa upp system: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Ohanterat bootc upplåst tillstånd: %s"
 
 #~ msgid ""
 #~ "\n"
