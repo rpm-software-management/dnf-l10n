@@ -16,17 +16,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-18 02:05+0000\n"
-"PO-Revision-Date: 2025-01-11 13:39+0000\n"
+"PO-Revision-Date: 2025-02-22 08:40+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
-"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/pl/>\n"
+"Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -666,7 +666,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Trwałe transakcje nie są obsługiwane w systemach bootc."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -678,6 +678,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Ten system bootc jest skonfigurowany w trybie tylko do odczytu. Należy "
+"przekazać opcję --transient, ab wykonać tę transakcję w przejściowej "
+"nakładce, która zostanie przywrócona po ponownym uruchomieniu systemu."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -687,10 +690,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Przejściowa nakładka zostanie utworzona w katalogu /usr, która zostanie "
+"odrzucona po ponownym uruchomieniu. Proszę pamiętać, że zmiany w katalogach /"
+"etc i /var pozostaną, a pakiety typowo modyfikują te katalogi."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Przejściowe transakcje są obsługiwane tylko w systemach bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -2672,18 +2678,16 @@ msgstr ""
 "zastępuje wartość zmiennej $releasever w konfiguracji i plikach repozytoriów"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
 msgstr ""
-"zastępuje wartość zmiennej $releasever w konfiguracji i plikach repozytoriów"
+"zastępuje wartość zmiennej $releasever_major w konfiguracji i plikach "
+"repozytoriów"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
 msgstr ""
-"zastępuje wartość zmiennej $releasever w konfiguracji i plikach repozytoriów"
+"zastępuje wartość zmiennej $releasever_minor w konfiguracji i plikach "
+"repozytoriów"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2848,6 +2852,8 @@ msgstr "tylko pobiera pakiety"
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
 msgstr ""
+"używa przejściowej nakładki, która zostanie przywrócona po ponownym "
+"uruchomieniu"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4505,32 +4511,33 @@ msgstr "<nie ustawiono nazwy>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "To nie jest system bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: nie odnaleziono polecenia."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
 msgstr ""
+"Zamontowanie katalogu %s w trybie do odczytu i zapisu się nie powiodło: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: nie odnaleziono polecenia. Czy to jest system bootc?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Odblokowanie systemu się nie powiodło: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Nieobsłużony stan odblokowania bootc: %s"
 
 #~ msgid ""
 #~ "\n"
