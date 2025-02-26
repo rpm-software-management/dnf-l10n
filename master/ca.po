@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-22 02:03+0000\n"
-"PO-Revision-Date: 2025-02-16 09:38+0000\n"
+"PO-Revision-Date: 2025-02-26 11:24+0000\n"
 "Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
-"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ca/>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -614,7 +614,7 @@ msgstr "Els àlies contenen recursivitat infinita"
 #: dnf/cli/aliases.py:209
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, amb arguments originals."
 
 #: dnf/cli/cli.py:137
 #, python-format
@@ -632,6 +632,7 @@ msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
 msgstr ""
+"L'operació donaria lloc al canvi del flux del mòdul '{0}' '{1}' al flux '{2}'"
 
 #: dnf/cli/cli.py:173
 #, python-brace-format
@@ -642,11 +643,16 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"No és possible canviar els fluxos habilitats d'un mòdul tret que s'habilitin "
+"explícitament mitjançant l'opció de configuració module_stream_switch.\n"
+"Es recomana suprimir tot el contingut instal·lat del mòdul i restablir el "
+"mòdul mitjançant l'ordre '{prog} module reset <module_name>'. Després de "
+"restablir el mòdul, podeu instal·lar l'altre flux."
 
 #: dnf/cli/cli.py:212
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} només baixarà paquets per a la transacció."
 
 #: dnf/cli/cli.py:216
 #, python-brace-format
@@ -654,10 +660,12 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} només baixarà paquets, instal·larà claus gpg i comprovarà la "
+"transacció."
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Les transaccions persistents no s'admeten als sistemes bootc."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -669,6 +677,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Aquest sistema bootc està configurat per ser només de lectura. Passeu --"
+"transient per fer aquesta transacció en una superposició transitòria que es "
+"reiniciarà quan es reiniciï el sistema."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -678,10 +689,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Es crearà una superposició transitòria a /usr que es descartarà en "
+"reiniciar. Tingueu en compte que els canvis a /etc i /var encara "
+"persistiran, i els paquets solen modificar aquests directoris."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Les transaccions transitòries només són compatibles amb sistemes bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -705,10 +719,13 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Intenteu afegir '--enableplugin=expired-pgp-keys' per resoldre el problema. "
+"Nota: és possible que aquest connector no estigui instal·lat per defecte, ja "
+"que forma part del paquet dnf-plugins-core."
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "Registres de canvis per a {}"
 
 #: dnf/cli/cli.py:416 dnf/cli/cli.py:557 dnf/cli/cli.py:563
 msgid "Obsoleting Packages"
@@ -725,7 +742,7 @@ msgstr "No hi ha cap paquet %s disponible."
 
 #: dnf/cli/cli.py:480
 msgid "No packages marked for downgrade."
-msgstr ""
+msgstr "No s'ha marcat cap paquet per a degradar."
 
 #: dnf/cli/cli.py:531
 msgid "Installed Packages"
@@ -760,6 +777,8 @@ msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"No s'han trobat coincidències. Si cerqueu un fitxer, proveu d'especificar el "
+"camí complet o d'usar un prefix comodí (\"*/\") al principi."
 
 #: dnf/cli/cli.py:719 dnf/cli/commands/shell.py:237
 #, python-format
@@ -776,6 +795,8 @@ msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Aquesta ordre s'ha d'executar amb privilegis de superusuari (amb l'usuari "
+"root a la majoria de sistemes)."
 
 #: dnf/cli/cli.py:797
 #, python-format
@@ -788,6 +809,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Podria ser una ordre del connector {PROG}, proveu: "
+"\"{prog} instal·la 'dnf-command(%s)'\""
 
 #: dnf/cli/cli.py:804
 #, python-brace-format
@@ -1067,63 +1090,63 @@ msgstr ""
 
 #: dnf/cli/commands/alias.py:73
 msgid "Aliases are now disabled"
-msgstr ""
+msgstr "Els àlies ara estan desactivats"
 
 #: dnf/cli/commands/alias.py:90 dnf/cli/commands/alias.py:93
 #, python-format
 msgid "Invalid alias key: %s"
-msgstr ""
+msgstr "Clau d'àlies no vàlida: %s"
 
 #: dnf/cli/commands/alias.py:96
 #, python-format
 msgid "Alias argument has no value: %s"
-msgstr ""
+msgstr "L'argument d'àlies no té valor: %s"
 
 #: dnf/cli/commands/alias.py:130
 #, python-format
 msgid "Aliases added: %s"
-msgstr ""
+msgstr "Àlies afegits: %s"
 
 #: dnf/cli/commands/alias.py:144
 #, python-format
 msgid "Alias not found: %s"
-msgstr ""
+msgstr "Àlies no trobat: %s"
 
 #: dnf/cli/commands/alias.py:147
 #, python-format
 msgid "Aliases deleted: %s"
-msgstr ""
+msgstr "Àlies suprimits: %s"
 
 #: dnf/cli/commands/alias.py:155
 #, python-format
 msgid "%s, alias %s=\"%s\""
-msgstr ""
+msgstr "%s, àlies %s=\"%s\""
 
 #: dnf/cli/commands/alias.py:157
 #, python-format
 msgid "Alias %s='%s'"
-msgstr ""
+msgstr "Àlies %s=%s"
 
 #: dnf/cli/commands/alias.py:161
 msgid "Aliases resolving is disabled."
-msgstr ""
+msgstr "La resolució d'àlies està desactivada."
 
 #: dnf/cli/commands/alias.py:166
 msgid "No aliases specified."
-msgstr ""
+msgstr "No s'ha especificat cap àlies."
 
 #: dnf/cli/commands/alias.py:173
 msgid "No alias specified."
-msgstr ""
+msgstr "No s'ha especificat cap àlies."
 
 #: dnf/cli/commands/alias.py:179
 msgid "No aliases defined."
-msgstr ""
+msgstr "No s'ha definit cap àlies."
 
 #: dnf/cli/commands/alias.py:186
 #, python-format
 msgid "No match for alias: %s"
-msgstr ""
+msgstr "No coincideix amb l'àlies: %s"
 
 #: dnf/cli/commands/autoremove.py:41
 msgid ""
@@ -1162,11 +1185,11 @@ msgstr "mostra els problemes de proporciona"
 
 #: dnf/cli/commands/check.py:98
 msgid "{} has missing requires of {}"
-msgstr ""
+msgstr "A {} falten els requisits de {}"
 
 #: dnf/cli/commands/check.py:118
 msgid "{} is a duplicate with {}"
-msgstr ""
+msgstr "{} està duplicat amb {}"
 
 #: dnf/cli/commands/check.py:129
 msgid "{} is obsoleted by {}"
@@ -1179,7 +1202,7 @@ msgstr "{} proporciona {} però no s'ha pogut trobar"
 #: dnf/cli/commands/clean.py:68
 #, python-format
 msgid "Removing file %s"
-msgstr ""
+msgstr "Se suprimeix el fitxer %s"
 
 #: dnf/cli/commands/clean.py:87
 msgid "remove cached data"
@@ -1210,12 +1233,12 @@ msgid "Waiting for process with pid %d to finish."
 msgstr "S'està esperant que acabi el procés amb el pid %d."
 
 #: dnf/cli/commands/deplist.py:32
-#, fuzzy
-#| msgid "List package's dependencies and what packages provide them"
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
-msgstr "Llista les dependències dels paquets i quins paquets les proporcionen"
+msgstr ""
+"[obsolet, useu repoquery --deplist] Llista les dependències del paquet i "
+"quins paquets les proporcionen"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
@@ -1292,7 +1315,7 @@ msgstr "mostra únicament els grups disponibles"
 
 #: dnf/cli/commands/group.py:328
 msgid "show also ID of groups"
-msgstr ""
+msgstr "mostra també l'identificador dels grups"
 
 #: dnf/cli/commands/group.py:330
 msgid "available subcommands: {} (default), {}"
