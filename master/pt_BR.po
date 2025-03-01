@@ -22,7 +22,7 @@
 # Daniel Lara Souza <daniellarasouza@yahoo.com.br>, 2020.
 # José Lemos Neto <lemosjosex@protonmail.com>, 2020.
 # Fábio Rodrigues Ribeiro <farribeiro@gmail.com>, 2020, 2021, 2024.
-# Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021, 2024.
+# Rafael Fontenelle <rafaelff@gnome.org>, 2020, 2021, 2024, 2025.
 # Gustavo Costa <gusta@null.net>, 2020.
 # Henrique Roberto Gattermann Mittelstaedt <henrique.roberto97@gmail.com>, 2020.
 # Gustavo Costa <xfgusta@gmail.com>, 2021, 2022.
@@ -36,8 +36,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-02-28 02:09+0000\n"
-"PO-Revision-Date: 2024-12-03 14:38+0000\n"
-"Last-Translator: Fábio Rodrigues Ribeiro <farribeiro@gmail.com>\n"
+"PO-Revision-Date: 2025-03-02 00:38+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -45,7 +45,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.10.2\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -681,7 +681,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Não há suporte para transações persistentes em sistemas bootc."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -693,6 +693,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Este sistema bootc está configurado para ser somente leitura. Passe --"
+"transient para executar esta transação em uma sobreposição transitória que "
+"será redefinida quando o sistema for reinicializado."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -702,10 +705,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Uma sobreposição transitória será criada em /usr que será descartada na "
+"reinicialização. Tenha em mente que as alterações em /etc e /var ainda "
+"persistirão, e os pacotes comumente modificam esses diretórios."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Transações transitórias são suportadas somente em sistemas bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -730,6 +736,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Tente adicionar '--enableplugin=expired-pgp-keys' para resolver o problema. "
+"Nota: Este plugin pode não ser instalado por padrão, pois faz parte do "
+"pacote 'dnf-plugins-core'."
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2673,16 +2682,14 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "sobrescreve o valor de $releasever em arquivos de configuração e repo"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "sobrescreve o valor de $releasever em arquivos de configuração e repo"
+msgstr ""
+"sobrescreve o valor de $releasever_major em arquivos de configuração e repo"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "sobrescreve o valor de $releasever em arquivos de configuração e repo"
+msgstr ""
+"sobrescreve o valor de $releasever_minor em arquivos de configuração e repo"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2843,7 +2850,7 @@ msgstr "baixa somente pacotes"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "usa uma sobreposição transiente que será redefinida na reinicialização"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4493,32 +4500,32 @@ msgstr "<nome indefinido>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Não está sendo executado em um sistema bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: comando não encontrado."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Falha ao montar %s como leitura/escrita: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: comando não encontrado. Este é um sistema bootc?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Falha ao debloquear o sistema: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Estado destravado de bootc não tratado: %s"
 
 #~ msgid ""
 #~ "\n"
