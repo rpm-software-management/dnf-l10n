@@ -17,16 +17,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-20 02:13+0000\n"
-"PO-Revision-Date: 2025-03-04 10:41+0000\n"
+"PO-Revision-Date: 2025-03-20 21:27+0000\n"
 "Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
-"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ca/>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1459,6 +1459,8 @@ msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
 msgstr ""
+"No es pot convertir \"{}\" a l'identificador de transacció.\n"
+"Useu '<número>', 'últim', 'últim-<número>'."
 
 #: dnf/cli/commands/history.py:323
 msgid "No transaction which manipulates package '{}' was found."
@@ -1466,17 +1468,15 @@ msgstr "No s'ha trobat cap transacció que manipuli el paquet '{}'."
 
 #: dnf/cli/commands/history.py:368
 msgid "{} exists, overwrite?"
-msgstr ""
+msgstr "{} existeix, se sobreescriu?"
 
 #: dnf/cli/commands/history.py:371
 msgid "Not overwriting {}, exiting."
-msgstr ""
+msgstr "No se sobreescriu {}, se surt."
 
 #: dnf/cli/commands/history.py:378
-#, fuzzy
-#| msgid "Transaction failed"
 msgid "Transaction saved to {}."
-msgstr "Ha fallat la transacció"
+msgstr "La transacció s'ha desat a {}."
 
 #: dnf/cli/commands/history.py:381
 msgid "Error storing transaction: {}"
@@ -1598,15 +1598,15 @@ msgstr "instal·la un perfil de mòdul i tots els seus paquets"
 
 #: dnf/cli/commands/module.py:226
 msgid "update packages associated with an active stream"
-msgstr ""
+msgstr "actualitza paquets associats a un flux actiu"
 
 #: dnf/cli/commands/module.py:243
 msgid "remove installed module profiles and their packages"
-msgstr ""
+msgstr "suprimeix els perfils de mòduls instal·lats i els seus paquets"
 
 #: dnf/cli/commands/module.py:267
 msgid "Package {} belongs to multiple modules, skipping"
-msgstr ""
+msgstr "El paquet {} pertany a diversos mòduls, s'omet"
 
 #: dnf/cli/commands/module.py:280
 msgid "switch a module to a stream and distrosync rpm packages"
@@ -1670,7 +1670,7 @@ msgstr "suprimeix els paquets duplicats"
 
 #: dnf/cli/commands/remove.py:58
 msgid "remove installonly packages over the limit"
-msgstr ""
+msgstr "suprimeix els paquets només d'instal·lació que superin el límit"
 
 #: dnf/cli/commands/remove.py:95
 msgid "No duplicated packages found for removal."
@@ -1678,7 +1678,7 @@ msgstr "No s'ha trobat cap paquet duplicat per treure."
 
 #: dnf/cli/commands/remove.py:127
 msgid "No old installonly packages found for removal."
-msgstr ""
+msgstr "No s'han trobat paquets antics només d'instal·lació per suprimir-los."
 
 #: dnf/cli/commands/repolist.py:38 dnf/cli/commands/updateinfo.py:47
 #: dnf/cli/commands/updateinfo.py:318 dnf/cli/commands/updateinfo.py:364
@@ -1718,7 +1718,7 @@ msgstr "mostra els dipòsits inhabilitats"
 
 #: dnf/cli/commands/repolist.py:93
 msgid "Repository specification"
-msgstr ""
+msgstr "Especificació del repositori"
 
 #: dnf/cli/commands/repolist.py:125
 msgid "No repositories available"
@@ -1734,7 +1734,7 @@ msgstr "inhabilitat"
 
 #: dnf/cli/commands/repolist.py:162
 msgid "Repo-id            : "
-msgstr ""
+msgstr "Identificador del dipòsit           : "
 
 #: dnf/cli/commands/repolist.py:163
 msgid "Repo-name          : "
@@ -1838,6 +1838,8 @@ msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr ""
+"Consulta tots els paquets (abreviatura de repoquery '*' o repoquery sense "
+"argument)"
 
 #: dnf/cli/commands/repoquery.py:127
 msgid "Query all versions of packages (default)"
@@ -1860,6 +1862,8 @@ msgid ""
 "shows results that requires, suggests, supplements, enhances, or recommends "
 "package provides and files REQ"
 msgstr ""
+"mostra resultats que requereixen, suggereixen, complementen, milloren o "
+"recomanen paquets que proporcionin REQ i fitxers REQ"
 
 #: dnf/cli/commands/repoquery.py:142
 msgid "show only results that obsolete REQ"
@@ -1871,7 +1875,7 @@ msgstr "mostra únicament els resultats que proporcionin el REQ"
 
 #: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
-msgstr ""
+msgstr "mostra resultats que requereixen paquets proporcionin REQ i fitxers REQ"
 
 #: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
@@ -1892,6 +1896,7 @@ msgstr "mostra únicament els resultats que suplementin el REQ"
 #: dnf/cli/commands/repoquery.py:163
 msgid "check non-explicit dependencies (files and Provides); default"
 msgstr ""
+"comprova les dependències no explícites (fitxers i provisions); per defecte"
 
 #: dnf/cli/commands/repoquery.py:165
 msgid "check dependencies exactly as given, opposite of --alldeps"
@@ -1903,6 +1908,8 @@ msgid ""
 "used with --whatrequires, and --requires --resolve, query packages "
 "recursively."
 msgstr ""
+"s'usa amb --whatrequires i --requires --resolve, consulta els paquets de "
+"forma recursiva."
 
 #: dnf/cli/commands/repoquery.py:169
 msgid "show a list of all dependencies and what packages provide them"
@@ -1930,7 +1937,7 @@ msgstr ""
 
 #: dnf/cli/commands/repoquery.py:180
 msgid "list also packages of inactive module streams"
-msgstr ""
+msgstr "llista també paquets de fluxos de mòduls inactius"
 
 #: dnf/cli/commands/repoquery.py:185
 msgid "show detailed information about the package"
@@ -1954,6 +1961,8 @@ msgid ""
 "display format for listing packages: \"%%{name} %%{version} ...\", use --"
 "querytags to view full tag list"
 msgstr ""
+"format de visualització per a llistar paquets: \"%%{name} %%{version} ...\", "
+"useu --querytags per veure la llista completa d'etiquetes"
 
 #: dnf/cli/commands/repoquery.py:201
 msgid "show available tags to use with --queryformat"
@@ -2014,6 +2023,8 @@ msgid ""
 "Display capabilities that the package can depend on, enhance, recommend, "
 "suggest, and supplement."
 msgstr ""
+"Mostra les capacitats de les quals el paquet pot dependre, millorar, "
+"recomanar, suggerir i complementar."
 
 #: dnf/cli/commands/repoquery.py:239
 msgid "Display capabilities that the package can enhance."
@@ -2038,6 +2049,10 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
+"Si el paquet no està instal·lat, visualitzeu les capacitats de les quals "
+"depèn per executar els scriptlets %%pre i %%post. Si el paquet està instal·"
+"lat, les capacitats de visualització depenen de %%pre, %%post, %%preun i "
+"%%postun."
 
 #: dnf/cli/commands/repoquery.py:246
 msgid "Display capabilities that the package suggests."
@@ -2075,6 +2090,8 @@ msgstr ""
 msgid ""
 "Display only packages that can be removed by \"{prog} autoremove\" command."
 msgstr ""
+"Mostra només els paquets que es poden suprimir mitjançant l'ordre "
+"\"{prog} autoremove\"."
 
 #: dnf/cli/commands/repoquery.py:261
 msgid "Display only packages that were installed by user."
@@ -2094,6 +2111,10 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
+"L'opció \"--resolve\" s'ha d'usar juntament amb una de les opcions "
+"\"--conflicts\", \"--depends\", \"--enhances\", \"--provides\", "
+"\"--recommends\", \"--requires\", \"--requires-pre\", \"--suggers\" o "
+"\"--supplements\"."
 
 #: dnf/cli/commands/repoquery.py:308
 msgid ""
@@ -2101,6 +2122,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
+"L'opció '--recursive' s'ha d'usar amb '--whatrequires <REQ>' (opcionalment "
+"amb '--alldeps', però no amb '--exactdeps'), o amb '--requires <REQ> "
+"--resolve'"
 
 #: dnf/cli/commands/repoquery.py:315
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2115,7 +2139,7 @@ msgstr "l'argument {} requereix l'opció --whatrequires o --whatdepends"
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:347
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%a %d %b de %Y"
 
 #: dnf/cli/commands/repoquery.py:358
 msgid "Package {} contains no files"
@@ -2132,6 +2156,13 @@ msgid ""
 "description:\n"
 "  For the given packages print a tree of the packages."
 msgstr ""
+"No s'ha especificat cap canvi vàlid\n"
+"ús: {prog} repoquery "
+"[--conflicts|--millora|--obsolet|--ofereix|--recomana|--requires|--suggest|--supplements|--whatrequires]"
+" [clau] [--tree]\n"
+"\n"
+"descripció:\n"
+"  Per als paquets donats, imprimeix un arbre dels paquets."
 
 #: dnf/cli/commands/search.py:46
 msgid "search package details for the given string"
@@ -2143,26 +2174,26 @@ msgstr "cerca també a la descripció i a l'URL del paquet"
 
 #: dnf/cli/commands/search.py:52
 msgid "KEYWORD"
-msgstr ""
+msgstr "TECLAT"
 
 #: dnf/cli/commands/search.py:55
 msgid "Keyword to search for"
-msgstr ""
+msgstr "Paraula clau per cercar"
 
 #: dnf/cli/commands/search.py:61 dnf/cli/output.py:460
 msgctxt "long"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #: dnf/cli/commands/search.py:62 dnf/cli/output.py:513
 msgctxt "long"
 msgid "Summary"
-msgstr ""
+msgstr "Resum"
 
 #: dnf/cli/commands/search.py:63 dnf/cli/output.py:523
 msgctxt "long"
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: dnf/cli/commands/search.py:64 dnf/cli/output.py:516
 msgid "URL"
@@ -2171,7 +2202,7 @@ msgstr "URL"
 #. TRANSLATORS: separator used between package attributes (eg. Name & Summary & URL)
 #: dnf/cli/commands/search.py:76
 msgid " & "
-msgstr ""
+msgstr " i "
 
 #. TRANSLATORS: %s  - translated package attributes,
 #. %%s - found keys (in listed attributes)
@@ -2194,7 +2225,7 @@ msgstr "No s'ha trobat cap coincidència."
 #: dnf/cli/commands/shell.py:47
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr ""
+msgstr "executa un intèrpret d'ordres interactiu {prog}"
 
 #: dnf/cli/commands/shell.py:68
 msgid "SCRIPT"
@@ -2203,7 +2234,7 @@ msgstr "SCRIPT"
 #: dnf/cli/commands/shell.py:69
 #, python-brace-format
 msgid "Script to run in {prog} shell"
-msgstr ""
+msgstr "Script per executar-se a l'intèrpret d'ordres {prog}"
 
 #: dnf/cli/commands/shell.py:142
 msgid "Unsupported key value."
@@ -2222,6 +2253,11 @@ msgid ""
 "    If no value is given it prints the current value.\n"
 "    If value is given it sets that value."
 msgstr ""
+"{} arg [valor]\n"
+"  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
+"        repo_id.gpgcheck, repo_id.exclude\n"
+"    Si no es dona cap valor, imprimeix el valor actual.\n"
+"    Si es dona un valor, s'estableix aquest valor."
 
 #: dnf/cli/commands/shell.py:181
 msgid ""
@@ -2238,12 +2274,18 @@ msgid ""
 "  enable: enable repositories. option = repository id\n"
 "  disable: disable repositories. option = repository id"
 msgstr ""
+"{} arg [opció]\n"
+"  list: llista els repositoris i el seu estat. opció = [tots | id | glob]\n"
+"  enable: activa els repositoris. opció = identificador del dipòsit\n"
+"  disable: desactiva els repositoris. opció = identificador del dipòsit"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
 "{}\n"
 "    resolve the transaction set"
 msgstr ""
+"{}\n"
+"    resol el conjunt de transaccions"
 
 #: dnf/cli/commands/shell.py:195
 msgid ""
@@ -2252,6 +2294,10 @@ msgid ""
 "  reset: reset (zero-out) the transaction\n"
 "  run: run the transaction"
 msgstr ""
+"{} arg\n"
+"  list: llista el contingut de la transacció\n"
+"  reset: restableix (a zero) la transacció\n"
+"  run: executa la transacció"
 
 #: dnf/cli/commands/shell.py:201
 msgid ""
@@ -2308,6 +2354,7 @@ msgstr "Abandonament del Shell"
 #, python-brace-format
 msgid "run an interactive {prog} mod for remove and install one spec"
 msgstr ""
+"executa un mod interactiu {prog} per suprimir i instal·lar una especificació"
 
 #: dnf/cli/commands/swap.py:40
 msgid "The specs that will be removed"
@@ -2387,11 +2434,11 @@ msgstr "mostra la informació dels avisos"
 
 #: dnf/cli/commands/updateinfo.py:101
 msgid "show only advisories with CVE reference"
-msgstr ""
+msgstr "mostra només avisos amb referència CVE"
 
 #: dnf/cli/commands/updateinfo.py:104
 msgid "show only advisories with bugzilla reference"
-msgstr ""
+msgstr "mostra només avisos amb referència de bugzilla"
 
 #: dnf/cli/commands/updateinfo.py:168
 msgid "installed"
@@ -2533,30 +2580,33 @@ msgstr "Sense accés de lectura/execució al directori actual, es mou a /"
 #: dnf/cli/main.py:135
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
+"proveu d'afegir \"{}\" a la línia d'ordres per substituir paquets conflictius"
 
 #: dnf/cli/main.py:139
 msgid "try to add '{}' to skip uninstallable packages"
-msgstr ""
+msgstr "proveu d'afegir \"{}\" per ometre paquets no instal·lables"
 
 #: dnf/cli/main.py:142
 msgid " or '{}' to skip uninstallable packages"
-msgstr ""
+msgstr " o '{}' per ometre paquets no instal·lables"
 
 #: dnf/cli/main.py:147
 msgid "try to add '{}' to use not only best candidate packages"
-msgstr ""
+msgstr "proveu d'afegir \"{}\" per usar no només els millors paquets candidats"
 
 #: dnf/cli/main.py:150
 msgid " or '{}' to use not only best candidate packages"
-msgstr ""
+msgstr " o '{}' per usar no només els millors paquets candidats"
 
 #: dnf/cli/main.py:154
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
+"proveu d'afegir \"{}\" per carregar metadades addicionals de llistes de "
+"fitxers"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " o \"{}\" per carregar metadades addicionals de llistes de fitxers"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2575,14 +2625,14 @@ msgstr "format dolent: %s"
 #: dnf/cli/option_parser.py:115
 #, python-format
 msgid "Setopt argument has no value: %s"
-msgstr ""
+msgstr "L'argument Setopt no té valor: %s"
 
 #. All defaults need to be a None, so we can always tell whether the user
 #. has set something or whether we are getting a default.
 #: dnf/cli/option_parser.py:171
 #, python-brace-format
 msgid "General {prog} options"
-msgstr ""
+msgstr "Opcions generals de {prog}"
 
 #: dnf/cli/option_parser.py:175
 msgid "config file location"
@@ -2599,7 +2649,7 @@ msgstr "operació descriptiva"
 #: dnf/cli/option_parser.py:182
 #, python-brace-format
 msgid "show {prog} version and exit"
-msgstr ""
+msgstr "mostra la versió de {prog} i surt"
 
 #: dnf/cli/option_parser.py:184
 msgid "set install root"
@@ -2626,16 +2676,16 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "anul·la el valor de $releasever dels fitxers «config» i «repo»"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "anul·la el valor de $releasever dels fitxers «config» i «repo»"
+msgstr ""
+"sobreescriu el valor de $releasever_major als fitxers de configuració i de "
+"repositori"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "anul·la el valor de $releasever dels fitxers «config» i «repo»"
+msgstr ""
+"sobreescriu el valor de $releasever_minor als fitxers de configuració i de "
+"repositori"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2662,7 +2712,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:226
 msgid "do not limit the transaction to the best candidate"
-msgstr ""
+msgstr "no limitis la transacció al millor candidat"
 
 #: dnf/cli/option_parser.py:229
 msgid "run entirely from system cache, don't update cache"
