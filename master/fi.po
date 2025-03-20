@@ -19,16 +19,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-09 01:48+0000\n"
-"PO-Revision-Date: 2025-01-10 17:01+0000\n"
+"PO-Revision-Date: 2025-03-20 13:44+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -129,7 +129,7 @@ msgstr "Virhe: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
 msgid "loading repo '{}' failure: {}"
-msgstr "Ohjelmistolähteen ”{}” latauksen epäonnistuminen: {}"
+msgstr "Tietovaraston ”{}” latauksen epäonnistuminen: {}"
 
 #: dnf/base.py:153
 msgid "Loading repository '{}' has failed"
@@ -157,9 +157,7 @@ msgstr "Metatietojen välimuisti päivitettiin äskettäin."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:91
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
-"Asetustiedostojen hakemistossa ”{}” ei ole käytössä olevia "
-"ohjelmistolähteitä."
+msgstr "\"{}\":ssa ei ole käyttöön otettuja tietovarastoja."
 
 #: dnf/base.py:369
 #, python-format
@@ -195,7 +193,7 @@ msgstr "%s: käytetään metatietoja ajalta %s."
 #: dnf/base.py:430 dnf/base.py:499
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr "Ohitetaan ohjelmistolähteet: %s"
+msgstr "Ohitetaan tietovarastot: %s"
 
 #: dnf/base.py:433
 #, python-format
@@ -223,7 +221,7 @@ msgstr "Virheellinen tsflag asetustiedostossa: %s"
 #: dnf/base.py:720
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr "Ryhmätiedoston lisääminen ohjelmistolähteelle epäonnistui: %s - %s"
+msgstr "Ryhmätiedoston lisääminen tietovarastolle epäonnistui: %s - %s"
 
 #: dnf/base.py:984
 msgid "Running transaction check"
@@ -518,9 +516,9 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
-"Ohjelmistolähteelle ”%s” luetellut GPG-avaimet on jo asennettu, mutta ne "
-"eivät vastaa tätä pakettia.\n"
-"Tarkista, että tälle ohjelmistolähteelle on asetettu oikeat avainten URL:t."
+"Tietovarastolle ”%s” luetellut GPG-avaimet on jo asennettu, mutta ne eivät "
+"vastaa tätä pakettia.\n"
+"Tarkista, että tälle tietovarastonlle on asetettu oikeat avainten URL:t."
 
 #: dnf/base.py:2655
 msgid "Import of key(s) didn't help, wrong key(s)?"
@@ -533,18 +531,15 @@ msgstr "  * Kenties tarkoitit: {}"
 #: dnf/base.py:2740
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
-"Paketilla ”{}”, joka on asennettu paikallisesta ohjelmistolähteestä ”{}”, on "
-"virheellinen tarkistussumma"
+"Paketilla ”{}” paikallisesta tietovarastosta ”{}” on väärä tarkistussumma"
 
 #: dnf/base.py:2743
 msgid "Some packages from local repository have incorrect checksum"
-msgstr ""
-"Joillakin paikallisen ohjelmistolähteen paketeilla on virheellinen "
-"tarkistussumma"
+msgstr "Joillakin paikallisen tietovaraston paketeilla on väärä tarkistussumma"
 
 #: dnf/base.py:2746
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr "Paketilla ”{}” ohjelmistolähteestä ”{}” on virheellinen tarkistussumma"
+msgstr "Paketilla ”{}” tietovarastosta ”{}” on väärä tarkistussumma"
 
 #: dnf/base.py:2749
 msgid ""
@@ -654,7 +649,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Pysyviä tapahtumia ei tueta bootc-järjestelmissä."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -666,6 +661,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Tämä bootc-järjestelmä on määritetty vain luku -käyttöiseksi. Välitä "
+"`--transient` suorittaaksesi tämän tapahtuman ohimenevässä ylikerroksessa, "
+"joka nollautuu, kun järjestelmä käynnistetään uudelleen."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -675,10 +673,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"/usr:iin luodaan ohimenevä ylikerros, joka hylätään uudelleenkäynnistyksen "
+"yhteydessä. Muista, että muutokset tiedostoihin /etc ja /var pysyvät "
+"edelleen voimassa ja paketit yleensä muokkaavat näitä hakemistoja."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Ohimeneviä tapahtumia tuetaan vain bootc-järjestelmissä."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -702,6 +703,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Yritä lisätä '--enableplugin=expired-pgp-keys' ongelman ratkaisemiseksi. "
+"Huomautus: Tätä liitännäistä ei ehkä ole asennettu oletusarvoisesti, koska "
+"se on osa dnf-plugins-core-pakettia."
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2654,18 +2658,14 @@ msgstr ""
 "ylikirjoita $releasever-muuttujan arvo asetus- ja ohjelmistolähdetiedostoissa"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
 msgstr ""
-"ylikirjoita $releasever-muuttujan arvo asetus- ja ohjelmistolähdetiedostoissa"
+"ylikirjoita $releasever_majorin arvo asetuksen ja tietovaraston tiedostoissa"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
 msgstr ""
-"ylikirjoita $releasever-muuttujan arvo asetus- ja ohjelmistolähdetiedostoissa"
+"ylikirjoita $releasever_minorin arvo asetuksen ja tietovaraston tiedostoissa"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2834,6 +2834,8 @@ msgstr "lataa vain paketit"
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
 msgstr ""
+"Käytä ohimenevää ylikerrosta, joka nollautuu uudelleenkäynnistyksen "
+"yhteydessä"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4478,32 +4480,32 @@ msgstr "<nimi-ei-määritelty>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Ei käynnissä bootc-järjestelmässä."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: komentoa ei löydy."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "%s:n liittäminen luku-/kirjoituksena epäonnistui: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: komentoa ei löydy. Onko tämä bootc-järjestelmä?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Järjestelmän lukituksen avaaminen epäonnistui: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Käsittelemätön bootcin lukitsematon tila: %s"
 
 #~ msgid ""
 #~ "\n"
