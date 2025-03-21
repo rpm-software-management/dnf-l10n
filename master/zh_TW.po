@@ -8,13 +8,14 @@
 # Yi-Jyun Pan <pan93412@gmail.com>, 2020.
 # Anonymous <noreply@weblate.org>, 2020.
 # Chen Yang Wang <young20050727@gmail.com>, 2025.
+# hsu zangmen <chzang55@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-20 02:13+0000\n"
-"PO-Revision-Date: 2025-02-01 05:28+0000\n"
-"Last-Translator: Chen Yang Wang <young20050727@gmail.com>\n"
+"PO-Revision-Date: 2025-03-21 04:28+0000\n"
+"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -22,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -615,7 +616,7 @@ msgstr "{prog} 只會下載軟體包、匯入 GPG 金鑰並檢查處理事項。
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "bootc 系統不支援持久性事務。"
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -626,7 +627,8 @@ msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
-msgstr ""
+msgstr "此 bootc 系統組態設定為唯讀。 使用 --transient "
+"在暫存覆疊中執行此處理事項，當系統重新開機時，此覆疊會重設。"
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -635,11 +637,12 @@ msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
-msgstr ""
+msgstr "將會在 /usr 上建立暫時覆蓋，並在重新開機時丟棄。 請記住，對 /etc 和 /var "
+"的變更仍會持續，而且套件通常會修改這些目錄。"
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "僅 bootc 系統支援暫存處理事項。"
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -663,6 +666,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"嘗試加入 '--enableplugin=expired-pgp-keys' 來解決問題。 "
+"注意：這個外掛程式可能不會在預設情況下安裝，因為它是 'dnf-plugins-core' "
+"套件的一部分。"
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2474,14 +2480,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " 或是「{}」不只使用最佳候選的軟體包"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr "請試試加上「{}」以不只使用最佳候選的軟體包"
+msgstr "嘗試新增 '{}' 以載入額外的檔案清單的中介資料"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " 或 '{}' 載入額外的檔案清單的中介資料"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2551,16 +2555,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "覆蓋在組態檔與 repo 檔案中 $releasever 的值"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "覆蓋在組態檔與 repo 檔案中 $releasever 的值"
+msgstr "在組態設定檔和軟體庫檔案中覆寫 $releasever_major 的值"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "覆蓋在組態檔與 repo 檔案中 $releasever 的值"
+msgstr "覆蓋在組態設定檔與軟體庫檔案中 $releasever 的值"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2636,7 +2636,8 @@ msgid ""
 "Temporarily enable repositories for the purpose of the current dnf command. "
 "Accepts an id, a comma-separated list of ids, or a glob of ids. This option "
 "can be specified multiple times."
-msgstr ""
+msgstr "為目前的 dnf 指令暫時啟用軟體庫。 接受一個 id、一個以逗號分隔的 id 清單，"
+"或一組 id。 此選項可指定多次。"
 
 #: dnf/cli/option_parser.py:271
 msgid ""
@@ -2645,6 +2646,9 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
+"為了目前 dnf 指令的目的，暫時停用作用中的套件庫。 接受一個 id、"
+"一個以逗號分隔的 id 清單，或一個 glob 的 id。 這個選項可以指定多次，但與 "
+"`--repo` 相互排斥。"
 
 #: dnf/cli/option_parser.py:278
 msgid ""
@@ -2709,7 +2713,7 @@ msgstr "只下載軟體包"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "使用瞬間覆蓋，會在重新開機時重設"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4171,7 +4175,7 @@ msgstr "RPM 中缺失物件鍵「{key}」。"
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "對於 rpm nevra \"{nevra}\"，套件原因 \"{reason}\" 的非預期值。"
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
