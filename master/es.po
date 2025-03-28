@@ -38,10 +38,10 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-24 02:18+0000\n"
-"PO-Revision-Date: 2025-03-24 05:04+0000\n"
+"PO-Revision-Date: 2025-03-29 21:53+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
-"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/es/>\n"
+"Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -318,14 +318,15 @@ msgstr "No se descargaron algunos paquetes. Se volverá a intentar."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPMs redujo %.1f MB de actualizaciones a %.1f MB (%.1f%% de ahorro)"
+"Los RPM Delta redujeron %.1f MB de actualizaciones a %.1f MB (%.1f%% de "
+"ahorro)"
 
 #: dnf/base.py:1296
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
-"Los errores en Delta RPMs incrementaron %.1f MB de actualizaciones a %.1f MB "
+"Los RPM Delta incorrectos incrementaron %.1f MB de actualizaciones a %.1f MB "
 "(%.1f%% desperdiciado)"
 
 #: dnf/base.py:1341
@@ -688,7 +689,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Las transacciones persistentes no están admitidas en sistemas bootc."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -700,6 +701,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Este sistema bootc está configurado para estar de solo-lectura. Apruebe --"
+"transient para realizar esta transacción interna a una sobrecarga transiente "
+"la cual restablecerá cuando el sistema rearranque."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -709,10 +713,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Será creada una sobrecarga efímera en /usr que será descartada al "
+"rearrancar. Tenga en cuenta que cambios en /etc y /var se mantendrán, y los "
+"paquetes usualmente modifican estas carpetas."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Transacciones efímeras solo se admiten en sistemas de bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -737,6 +744,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Intente añadir '--enableplugin=expired-pgp-keys' para resolver el problema. "
+"Nota: este complemento tal vez no esté instalado por defecto, como es parte "
+"del paquete 'dnf-plugins-core'."
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2692,7 +2702,7 @@ msgstr ""
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " o '{}' para cargar metadatos de listado de archivo adicional"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2763,18 +2773,16 @@ msgstr ""
 "anular el valor de $releasever de archivos de configuración y repositorio"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
 msgstr ""
-"anular el valor de $releasever de archivos de configuración y repositorio"
+"anular el valor de $releasever_major de archivos de configuración y "
+"repositorio"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
 msgstr ""
-"anular el valor de $releasever de archivos de configuración y repositorio"
+"anular el valor de $releasever_minor de archivos de configuración y "
+"repositorio"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2944,7 +2952,7 @@ msgstr "Solo descargar los paquetes"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Utilice una sobrecarga transitoria la cual restablecerá al rearrancar"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -3517,7 +3525,7 @@ msgstr "Modificado"
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1556
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%d/%m/%Y %H:%M"
 
 #: dnf/cli/output.py:1584
 msgid "No transactions"
@@ -4603,32 +4611,32 @@ msgstr "<nombre-no definido>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "No ejecutar en un sistema bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: instrucción no encontrada."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Ha fallado al montar %s como lectura/escritura: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: instrucción no encontrada. ¿Es esto un sistema de arranque?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Ha fallado al desbloquear sistema: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Estado de desbloqueo de bootc no manipulado: %s"
 
 #~ msgid ""
 #~ "\n"
