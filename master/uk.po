@@ -18,7 +18,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-01 02:44+0000\n"
-"PO-Revision-Date: 2025-01-11 07:15+0000\n"
+"PO-Revision-Date: 2025-04-03 00:14+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/uk/>\n"
@@ -28,7 +28,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -653,7 +653,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Для систем bootc не реалізовано сталих транзакцій."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -665,6 +665,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Цю систему bootc налаштовано на режим лише читання. Передайте --transient "
+"для виконання цієї дії у тимчасовій накладці, яку буде скинуто при "
+"перезавантаженні системи."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -674,10 +677,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"У /usr буде створено тимчасову накладку, яку буде відкинуто при "
+"перезавантаженні. Зауважте, що зміни у /etc і /var лишатимуться, а пакунки, "
+"зазвичай, не вносять змін до цих каталогів."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Підтримку тимчасових дій пердебачено лише для систем bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -2658,16 +2664,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "перевизначити значення $releasever у файлах налаштувань і сховищ"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "перевизначити значення $releasever у файлах налаштувань і сховищ"
+msgstr "перевизначити значення $releasever_major у файлах налаштувань і сховищ"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "перевизначити значення $releasever у файлах налаштувань і сховищ"
+msgstr "перевизначити значення $releasever_minor у файлах налаштувань і сховищ"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2831,7 +2833,7 @@ msgstr "лише отримати пакунки"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Використати тимчасову накладку, яку буде відкинуто при перезавантаженні"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4473,32 +4475,32 @@ msgstr "<назву-не-встановлено>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Не запускається у системі bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: команду не знайдено."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Не вдалося змонтувати %s для читання-запису: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: команду не знайдено. Це система bootc?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Не вдалося розблокувати систему: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Непридатний до обробки стан розблокування bootc: %s"
 
 #~ msgid ""
 #~ "\n"
