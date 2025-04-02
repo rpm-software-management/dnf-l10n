@@ -33,13 +33,14 @@
 # Yang Yulin <yylteam@icloud.com>, 2022, 2023.
 # Jingge Chen <mariocanfly@hotmail.com>, 2022, 2023.
 # Zephyr Lykos <fedora@mochaa.ws>, 2023.
+# z z <3397542367@qq.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-01 02:44+0000\n"
-"PO-Revision-Date: 2023-12-05 07:43+0000\n"
-"Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
+"PO-Revision-Date: 2025-04-03 00:14+0000\n"
+"Last-Translator: z z <3397542367@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -47,7 +48,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.2.1\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -639,7 +640,7 @@ msgstr "{prog}将仅会下载软件包，导入gpg密钥并检查事务。"
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "bootc 系统不支持持久事务。"
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -650,7 +651,8 @@ msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
-msgstr ""
+msgstr "此 bootc 系统配置为只读。传递 --transient "
+"以在临时覆盖中执行此事务，该覆盖将在系统重新启动时重置。"
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -660,10 +662,12 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"将在 /usr 上创建一个临时覆盖，该覆盖将在重新启动时被丢弃。请记住，对 /etc 和 "
+"/var 的更改仍将保留，并且软件包通常会修改这些目录。"
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "瞬态事务仅受 bootc 系统支持。"
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -687,6 +691,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"尝试添加“--enableplugin=expired-pgp-"
+"keys”来解决问题。注意：此插件可能不会默认安装，因为它是“dnf-plugins-"
+"core”包的一部分。"
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2501,14 +2508,12 @@ msgid " or '{}' to use not only best candidate packages"
 msgstr " 或 '{}' 来不只使用软件包的最佳候选"
 
 #: dnf/cli/main.py:154
-#, fuzzy
-#| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
-msgstr "尝试添加 '{}' 来不只使用软件包的最佳候选"
+msgstr "尝试添加“{}”以加载其他文件列表元数据"
 
 #: dnf/cli/main.py:157
 msgid " or '{}' to load additional filelists metadata"
-msgstr ""
+msgstr " 或 '{}' 加载其他文件列表元数据"
 
 #: dnf/cli/main.py:174
 msgid "Dependencies resolved."
@@ -2578,16 +2583,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "覆盖在配置文件和仓库文件中 $releasever 的值"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "覆盖在配置文件和仓库文件中 $releasever 的值"
+msgstr "覆盖配置和 repo 文件中 $releasever_major 的值"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "覆盖在配置文件和仓库文件中 $releasever 的值"
+msgstr "覆盖配置和 repo 文件中 $releasever_minor 的值"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2740,7 +2741,7 @@ msgstr "仅下载软件包"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "使用临时覆盖，重启后将重置"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4340,32 +4341,32 @@ msgstr "<name-unset>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "未在 bootc 系统上运行。"
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s：未找到命令。"
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "无法将 %s 挂载为读/写：%s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s：未找到命令。这是 bootc 系统吗？"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "解锁系统失败：%s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "未处理的 bootc 解锁状态：%s"
 
 #, python-format
 #~ msgid "No package %s installed."
