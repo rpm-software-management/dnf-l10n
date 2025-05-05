@@ -1,9 +1,9 @@
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2015. #zanata, 2020, 2023.
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2016. #zanata, 2020, 2023.
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2017. #zanata, 2020, 2023.
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2018. #zanata, 2020, 2023.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2015. #zanata, 2020, 2023, 2025.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2016. #zanata, 2020, 2023, 2025.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2017. #zanata, 2020, 2023, 2025.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2018. #zanata, 2020, 2023, 2025.
 # Peter Pan <pan93412@gmail.com>, 2018. #zanata
-# Cheng-Chia Tseng <pswo10680@gmail.com>, 2019. #zanata, 2020, 2023.
+# Cheng-Chia Tseng <pswo10680@gmail.com>, 2019. #zanata, 2020, 2023, 2025.
 # Ting-Wei Lan <lantw44@gmail.com>, 2019. #zanata
 # Yi-Jyun Pan <pan93412@gmail.com>, 2020.
 # Anonymous <noreply@weblate.org>, 2020.
@@ -14,8 +14,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-04 02:30+0000\n"
-"PO-Revision-Date: 2025-04-06 15:31+0000\n"
-"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
+"PO-Revision-Date: 2025-05-05 13:20+0000\n"
+"Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -491,7 +491,7 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
-"為 \"%s\" 套件庫列出的 GPG 金鑰已經安裝，\n"
+"為「%s」軟體庫列出的 GPG 金鑰已經安裝，\n"
 "但對此軟體包而言並金鑰不正確。 請檢查是否已為此軟體庫設定正確的金鑰 URL。"
 
 #: dnf/base.py:2655
@@ -638,9 +638,8 @@ msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
-msgstr ""
-"將會在 /usr 上建立暫時覆蓋，並在重新開機時丟棄。 請記住，對 /etc 和 /var 的變"
-"更仍會持續，而且套件通常會修改這些目錄。"
+msgstr "將會在 /usr 上建立暫時覆蓋，並在重新開機時丟棄。 請記住，對 /etc 和 /var "
+"的變更仍會持續，而且軟體包通常會修改這些目錄。"
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
@@ -668,8 +667,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
-"嘗試加入 '--enableplugin=expired-pgp-keys' 來解決問題。 注意：這個外掛程式可"
-"能不會在預設情況下安裝，因為它是 'dnf-plugins-core' 套件的一部分。"
+"嘗試加入 '--enableplugin=expired-pgp-keys' 來解決問題。 "
+"注意：這個外掛程式可能不會在預設情況下安裝，因為它是 'dnf-plugins-core' "
+"軟體包的一部分。"
 
 #: dnf/cli/cli.py:383
 msgid "Changelogs for {}"
@@ -2648,9 +2648,9 @@ msgid ""
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
 msgstr ""
-"為了目前 dnf 指令的目的，暫時停用作用中的套件庫。 接受一個 id、一個以逗號分隔"
-"的 id 清單，或一個 glob 的 id。 這個選項可以指定多次，但與 `--repo` 相互排"
-"斥。"
+"為了目前 dnf 指令的目的，暫時停用作用中的軟體庫。 接受一個 id、"
+"一個以逗號分隔的 id 清單，或一個 glob 的 id。 這個選項可以指定多次，但與 "
+"`--repo` 相互排斥。"
 
 #: dnf/cli/option_parser.py:278
 msgid ""
@@ -4177,7 +4177,7 @@ msgstr "RPM 中缺失物件鍵「{key}」。"
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
-msgstr "對於 rpm nevra \"{nevra}\"，套件原因 \"{reason}\" 的非預期值。"
+msgstr "對於 rpm nevra \"{nevra}\" 軟體包原因 \"{reason}\" 的非預期值。"
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
