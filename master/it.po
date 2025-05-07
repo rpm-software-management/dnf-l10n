@@ -32,16 +32,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-06 02:21+0000\n"
-"PO-Revision-Date: 2025-04-25 11:00+0000\n"
+"PO-Revision-Date: 2025-05-07 20:14+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
-"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/it/>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11\n"
+"X-Generator: Weblate 5.11.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -123,8 +123,8 @@ msgstr "Iniziato dnf-automatic."
 #: dnf/automatic/main.py:336
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] "Attendi per %s secondo"
-msgstr[1] "Attendi per %s secondi"
+msgstr[0] "Attendi per {} secondo"
+msgstr[1] "Attendi per {} secondi"
 
 #: dnf/automatic/main.py:343
 msgid "System is off-line."
@@ -262,7 +262,7 @@ msgstr "Errore test di transazione:"
 
 #: dnf/base.py:1023
 msgid "Transaction test succeeded."
-msgstr "Test di transazione eseguito con successo"
+msgstr "Test di transazione eseguito con successo."
 
 #: dnf/base.py:1044
 msgid "Running transaction"
@@ -309,8 +309,8 @@ msgstr "Alcuni pacchetti non sono stati scaricati. Nuovo tentativo in corso."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"I delta RPM hanno ridotto %.1f MB di aggiornamenti a %.1f MB (%d.1%% "
-"risparmiato)"
+"Gli RPM Delta hanno ridotto gli aggiornamenti di %.1f MB a %.1f MB (risparmi "
+"%.1f%%)"
 
 #: dnf/base.py:1296
 #, python-format
@@ -902,7 +902,7 @@ msgstr "Incluso nel repo "
 #: dnf/cli/commands/__init__.py:38
 #, python-format
 msgid "To diagnose the problem, try running: '%s'."
-msgstr "Per diagnosticare il problema, provare ad eseguire: '%s'"
+msgstr "Per diagnosticare il problema, provare ad eseguire: '%s'."
 
 #: dnf/cli/commands/__init__.py:40
 #, python-format
@@ -979,7 +979,7 @@ msgstr "mostra solo i pacchetti di aggiornamento"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:756
 msgid "show only autoremove packages"
-msgstr "mostra solo i pacchetti in rimozione automatica"
+msgstr "mostra solo i pacchetti autoremove"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:759
 msgid "show only recently changed packages"
@@ -1060,7 +1060,7 @@ msgstr "Nessun pacchetto contrassegnato per la reinstallazione."
 
 #: dnf/cli/commands/__init__.py:714 dnf/cli/commands/upgrade.py:89
 msgid "No packages marked for upgrade."
-msgstr "Nessun pacchetto marcato per l'aggiornamento"
+msgstr "Nessun pacchetto contrassegnato per l'aggiornamento."
 
 #: dnf/cli/commands/__init__.py:724
 msgid "run commands on top of all packages in given repository"
@@ -2176,12 +2176,11 @@ msgid ""
 "  For the given packages print a tree of the packages."
 msgstr ""
 "Nessuna opzione valida specificata\n"
+"Utilizzo: {prog} repoquery "
+"[--conflicts|--enhances|--obsoletes|--provides|--recommends|--requires|--suggest|--supplements|--whatrequires]"
+" [chiave] [--tree]\n"
 "\n"
-"Utilizzo: {prog} repoquery [--conflicts|--enhances|--obsoletes|--provides|--"
-"recommends|--requires|--suggest|--supplements|--whatrequires] [chiave] [--"
-"tree]\n"
-"\n"
-"Descrizione:\n"
+"Descrizione\n"
 "  Per i pacchetti specificati, stampa un albero dei pacchetti."
 
 #: dnf/cli/commands/search.py:46
@@ -2518,11 +2517,11 @@ msgstr "Note di risoluzione dei bug"
 
 #: dnf/cli/commands/updateinfo.py:294
 msgid "Enhancement notice(s)"
-msgstr "Note relative a miglioramenti:"
+msgstr "Note relative a miglioramenti"
 
 #: dnf/cli/commands/updateinfo.py:295
 msgid "other notice(s)"
-msgstr "Altre note:"
+msgstr "Altre note"
 
 #: dnf/cli/commands/updateinfo.py:316
 msgid "Unknown/Sec."
@@ -2737,7 +2736,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:224
 msgid "try the best available package versions in transactions."
-msgstr "prova le migliori versioni disponibili dei pacchetti nelle operazioni"
+msgstr "prova le migliori versioni disponibili dei pacchetti nelle operazioni."
 
 #: dnf/cli/option_parser.py:226
 msgid "do not limit the transaction to the best candidate"
