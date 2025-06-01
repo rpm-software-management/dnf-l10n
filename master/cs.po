@@ -33,21 +33,23 @@
 # Petr Ptacek <petr106@atlas.cz>, 2023, 2024.
 # Jonáš Loskot <fedoraproject.org@alius.cz>, 2025.
 # 1 1 <catelixor@proton.me>, 2025.
+# Jonáš Loskot <alius@users.noreply.translate.fedoraproject.org>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-24 02:18+0000\n"
-"PO-Revision-Date: 2025-05-24 03:09+0000\n"
-"Last-Translator: 1 1 <catelixor@proton.me>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/cs/>\n"
+"PO-Revision-Date: 2025-06-01 21:59+0000\n"
+"Last-Translator: Jonáš Loskot "
+"<alius@users.noreply.translate.fedoraproject.org>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 5.11.3\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -666,7 +668,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Trvalé transakce nejsou podporovány na systémech bootc."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:254
 msgid "Operation aborted."
@@ -678,6 +680,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Tento systém bootc je nastaven jako pouze pro čtení. Přidjete parametr --"
+"transient pro provedené této operace v dočasné vrstvě, která se při restartu "
+"systému resetuje."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -687,10 +692,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"V adresáři /usr bude vytvořena dočasná vrstva, která bude po restartu "
+"smazána. Mějte na paměti, že změny v adresářích /etc a /var zůstanou "
+"zachovány a balíčky často upravují právě tyto adresáře."
 
 #: dnf/cli/cli.py:250
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Dočasné transakce jsou podporovány pouze na systémech bootc."
 
 #: dnf/cli/cli.py:264
 msgid "Downloading Packages:"
@@ -2820,7 +2828,7 @@ msgstr "Balíčky jen stáhnout"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Použít dočasnou vrstvu, která se po restartu resetuje"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -4453,32 +4461,32 @@ msgstr "<name-unset>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Neběží na systému bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: příkaz nenalezen."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Nepodařilo se připojit %s ke čtení/zápisu: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: příkaz nenalezen. Nacházíte se na systému bootc?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Nepodařilo se odemknout systém: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Neznámý stav odemčeného bootc: %s"
 
 #~ msgid ""
 #~ "\n"
