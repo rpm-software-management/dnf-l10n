@@ -6,21 +6,22 @@
 # Serdar Sağlam <teknomobil@msn.com>, 2019. #zanata
 # Oğuz Ersen <oguzersen@protonmail.com>, 2020, 2021, 2022.
 # Oğuz Ersen <oguz@ersen.moe>, 2022, 2023, 2024, 2025.
+# Emir SARI <emir_sari@icloud.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 02:30+0000\n"
-"PO-Revision-Date: 2025-01-11 07:08+0000\n"
-"Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/tr/>\n"
+"PO-Revision-Date: 2025-06-03 00:33+0000\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1);\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -632,7 +633,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:228
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Kalıcı işlemler, bootc systemlerinde desteklenmiyor."
 
 #: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:257
 msgid "Operation aborted."
@@ -644,6 +645,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"bootc sistemi, saltokunur olarak yapılandırılmıştır. Bu işlemi, geçici bir "
+"kaplamayla gerçekleştirmek için --transient bayrağını geçirin. Bu, sistem "
+"yeniden başlatıldığında sıfırlanır."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -653,10 +657,13 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Yeniden başlatma sonrası atılacak geçici bir kaplama, /usr üzerinde "
+"oluşturulacaktır. /etc ve /var üzerindeki değişikliklerin kalıcı olacağını "
+"ve paketlerin bu dizinleri sık sık değiştirdiğini unutmayın."
 
 #: dnf/cli/cli.py:251
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Geçici işlemler, yalnızca bootc sistemlerde desteklenir."
 
 #: dnf/cli/cli.py:267
 msgid "Downloading Packages:"
@@ -2627,18 +2634,16 @@ msgstr ""
 "yapılandırmadaki ve depo dosyalarındaki $releasever değerinin üstüne yaz"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
 msgstr ""
-"yapılandırmadaki ve depo dosyalarındaki $releasever değerinin üstüne yaz"
+"yapılandırmadaki ve depo dosyalarındaki $releasever_major değerinin üstüne "
+"yaz"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
 msgstr ""
-"yapılandırmadaki ve depo dosyalarındaki $releasever değerinin üstüne yaz"
+"yapılandırmadaki ve depo dosyalarındaki $releasever_minor değerinin üstüne "
+"yaz"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2800,7 +2805,7 @@ msgstr "yalnızca paketleri indir"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Yeniden başlatma sonrası sıfırlanacak geçici bir kaplama kullan"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -3491,7 +3496,7 @@ msgstr "Komut Satırı:"
 
 #: dnf/cli/output.py:1787
 msgid "Persistence    :"
-msgstr ""
+msgstr "Kalıcılık      :"
 
 #: dnf/cli/output.py:1797 dnf/cli/output.py:1799
 msgid "Comment        :"
@@ -4435,32 +4440,32 @@ msgstr "<ad-ayarlanmadı>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Bir bootc sistem üzerinde çalışmıyor."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: Komut bulunamadı."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "%s, yazılır/okunur olarak bağlanamadı: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: Komut bulunamadı. Bu bir bootc sistem mi?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Sistem kilidi açılamadı: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "İşlenmemiş bootc kilit açık durumu: %s"
 
 #~ msgid ""
 #~ "\n"
