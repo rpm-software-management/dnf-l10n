@@ -40,16 +40,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-19 02:28+0000\n"
-"PO-Revision-Date: 2025-06-02 09:08+0000\n"
+"PO-Revision-Date: 2025-06-20 09:33+0000\n"
 "Last-Translator: Léane GRASSER <leane.grasser@proton.me>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -89,7 +89,7 @@ msgstr "Mises à jour appliquées sur « %s »."
 #: dnf/automatic/emitter.py:97
 #, python-format
 msgid "Updates downloaded on '%s'."
-msgstr "Mises à jour téléchargées à « %s »."
+msgstr "Mises à jour téléchargées sur « %s »."
 
 #: dnf/automatic/emitter.py:99
 #, python-format
@@ -738,12 +738,18 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Cette opération modifierait les chemins suivants, introduisant possiblement "
+"des incohérences lors de l'abandon de l'overlay transitoire sur /usr. Pour "
+"plus d'informations, consultez la documentation de l'option de configuration "
+"usr_drift_protected_paths."
 
 #: dnf/cli/cli.py:266
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Opération abandonnée. Passez --setopt=usr_drift_protected_paths= pour "
+"désactiver cette vérification et continuer quand même."
 
 #: dnf/cli/cli.py:271
 msgid "Transient transactions are only supported on bootc systems."
@@ -1017,7 +1023,7 @@ msgstr "affiche uniquement les paquets à mettre à jour"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:756
 msgid "show only autoremove packages"
-msgstr "affiche uniquement les paquets à suppression automatique"
+msgstr "afficher uniquement les paquets pour la commande autoremove"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:759
 msgid "show only recently changed packages"
@@ -1564,7 +1570,7 @@ msgstr "Impossible de trouver une correspondance"
 #: dnf/cli/commands/install.py:136
 #, python-format
 msgid "Not a valid rpm file path: %s"
-msgstr "Chemin du fichier RPM invalide : %s"
+msgstr "Chemin d'accès à un fichier RPM invalide : %s"
 
 #: dnf/cli/commands/install.py:171
 #, python-brace-format
@@ -2335,9 +2341,9 @@ msgid ""
 "  disable: disable repositories. option = repository id"
 msgstr ""
 "{} arg [option]\n"
-"  list : liste les dépôts et leur état. option = [all | id | glob]\n"
-"  enable : active les dépôts. option =  id du dépôt\n"
-"  disable : désactive les dépôts. option = id du dépôt"
+"  list : liste les dépôts et leur état. option = [all | id | glob]\n"
+"  enable : activer des dépôts. option = id du dépôt\n"
+"  disable : désactiver des dépôts. option = id du dépôt"
 
 #: dnf/cli/commands/shell.py:191
 msgid ""
@@ -2356,8 +2362,8 @@ msgid ""
 msgstr ""
 "{} arg\n"
 "  list : liste les contenus de la transaction\n"
-"  reset : réinitialise (remet à zéro) la transaction\n"
-"  run : exécute la transaction"
+"  reset : réinitialiser (remettre à zéro) la transaction\n"
+"  run : exécuter la transaction"
 
 #: dnf/cli/commands/shell.py:201
 msgid ""
@@ -3559,7 +3565,7 @@ msgstr "Temps de début    :"
 
 #: dnf/cli/output.py:1717 dnf/cli/output.py:1719
 msgid "Begin rpmdb    :"
-msgstr "Début de RPMDB    :"
+msgstr "Début de RPMDB :"
 
 #: dnf/cli/output.py:1725
 #, python-format
@@ -3587,7 +3593,7 @@ msgstr "Temps de fin :"
 
 #: dnf/cli/output.py:1735 dnf/cli/output.py:1737
 msgid "End rpmdb      :"
-msgstr "Fin de RPMDB :"
+msgstr "Fin de RPMDB   :"
 
 #: dnf/cli/output.py:1744 dnf/cli/output.py:1746
 msgid "User           :"
