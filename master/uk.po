@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-18 02:27+0000\n"
+"POT-Creation-Date: 2025-06-19 02:28+0000\n"
 "PO-Revision-Date: 2025-04-03 00:14+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -95,7 +95,7 @@ msgstr "Невідоме значення налаштувань: %s=%s у %s; %
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Невідомий параметр налаштувань: %s = %s у %s"
 
-#: dnf/automatic/main.py:254 dnf/cli/cli.py:354
+#: dnf/automatic/main.py:254 dnf/cli/cli.py:374
 msgid "GPG check FAILED"
 msgstr "ПОМИЛКА під час перевірки GPG"
 
@@ -118,7 +118,7 @@ msgstr[2] "Призупинити обробку на {} секунд"
 msgid "System is off-line."
 msgstr "Система перебуває поза мережею."
 
-#: dnf/automatic/main.py:373 dnf/cli/cli.py:305
+#: dnf/automatic/main.py:373 dnf/cli/cli.py:325
 msgid "Transaction failed"
 msgstr "Не вдалося виконати операцію"
 
@@ -354,7 +354,7 @@ msgstr "Немає відповідника для пакунка групи «{
 msgid "Adding packages from group '%s': %s"
 msgstr "Додаємо пакунки з групи «%s»: %s"
 
-#: dnf/base.py:1843 dnf/cli/cli.py:262 dnf/cli/commands/__init__.py:440
+#: dnf/base.py:1843 dnf/cli/cli.py:282 dnf/cli/commands/__init__.py:440
 #: dnf/cli/commands/__init__.py:497 dnf/cli/commands/__init__.py:590
 #: dnf/cli/commands/__init__.py:639 dnf/cli/commands/install.py:85
 #: dnf/cli/commands/install.py:108 dnf/cli/commands/install.py:115
@@ -376,7 +376,7 @@ msgstr "Пакунок %s не встановлено, отже не можна 
 
 #: dnf/base.py:2120 dnf/base.py:2139 dnf/base.py:2152 dnf/base.py:2183
 #: dnf/base.py:2253 dnf/base.py:2261 dnf/base.py:2281 dnf/base.py:2403
-#: dnf/cli/cli.py:466 dnf/cli/commands/__init__.py:423
+#: dnf/cli/cli.py:486 dnf/cli/commands/__init__.py:423
 #: dnf/cli/commands/__init__.py:480 dnf/cli/commands/__init__.py:584
 #: dnf/cli/commands/__init__.py:631 dnf/cli/commands/__init__.py:709
 #: dnf/cli/commands/install.py:152 dnf/cli/commands/reinstall.py:70
@@ -438,7 +438,7 @@ msgstr "Некоректна форма: %s"
 msgid "No packages marked for removal."
 msgstr "Для вилучення не позначено жодного пакунка."
 
-#: dnf/base.py:2410 dnf/cli/cli.py:477
+#: dnf/base.py:2410 dnf/cli/cli.py:497
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Доступні пакунки для аргумента %s, але їх не встановлено."
@@ -577,7 +577,7 @@ msgstr "Пакунок %s вже встановлено."
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
 msgstr "Неочікуване значення змінної середовища: DNF_DISABLE_ALIASES=%s"
 
-#: dnf/cli/aliases.py:105 dnf/conf/config.py:518
+#: dnf/cli/aliases.py:105 dnf/conf/config.py:524
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
 msgstr "Помилка під час спроби обробити файл «%s»: %s"
@@ -587,8 +587,8 @@ msgstr "Помилка під час спроби обробити файл «%s
 msgid "Cannot read file \"%s\": %s"
 msgstr "Не вдалося прочитати файл «%s»: %s"
 
-#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:855
-#: dnf/cli/cli.py:859 dnf/cli/commands/alias.py:108
+#: dnf/cli/aliases.py:115 dnf/cli/aliases.py:129 dnf/cli/cli.py:875
+#: dnf/cli/cli.py:879 dnf/cli/commands/alias.py:108
 #, python-format
 msgid "Config error: %s"
 msgstr "Помилка налаштування: %s"
@@ -602,17 +602,17 @@ msgstr "Альтернативні назви містять замкнену р
 msgid "%s, using original arguments."
 msgstr "%s, використовуємо початкові аргументи."
 
-#: dnf/cli/cli.py:137
+#: dnf/cli/cli.py:139
 #, python-format
 msgid "  Installed: %s-%s at %s"
 msgstr "  Встановлено: %s-%s у %s"
 
-#: dnf/cli/cli.py:139
+#: dnf/cli/cli.py:141
 #, python-format
 msgid "  Built    : %s at %s"
 msgstr "  Зібрано    : %s о %s"
 
-#: dnf/cli/cli.py:147
+#: dnf/cli/cli.py:149
 #, python-brace-format
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
@@ -621,7 +621,7 @@ msgstr ""
 "Результатом цієї дії буде перемикання потоку модуля «{0}» «{1}» на потік "
 "«{2}»"
 
-#: dnf/cli/cli.py:173
+#: dnf/cli/cli.py:175
 #, python-brace-format
 msgid ""
 "It is not possible to switch enabled streams of a module unless explicitly "
@@ -637,12 +637,12 @@ msgstr ""
 "Після відновлення початкових налаштувань модуля ви зможете встановити інший "
 "потік."
 
-#: dnf/cli/cli.py:212
+#: dnf/cli/cli.py:214
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
 msgstr "{prog} лише отримає пакунки для виконання операції."
 
-#: dnf/cli/cli.py:216
+#: dnf/cli/cli.py:218
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
@@ -651,15 +651,15 @@ msgstr ""
 "{prog} лише отримає пакунки, встановить ключі GPG і перевірить можливість "
 "виконання операції."
 
-#: dnf/cli/cli.py:228
+#: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
 msgstr "Для систем bootc не реалізовано сталих транзакцій."
 
-#: dnf/cli/cli.py:229 dnf/cli/cli.py:239 dnf/cli/cli.py:257
+#: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:277
 msgid "Operation aborted."
 msgstr "Виконання дії перервано."
 
-#: dnf/cli/cli.py:236
+#: dnf/cli/cli.py:238
 msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
@@ -671,7 +671,7 @@ msgstr ""
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
-#: dnf/cli/cli.py:244
+#: dnf/cli/cli.py:246
 msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
@@ -681,19 +681,32 @@ msgstr ""
 "перезавантаженні. Зауважте, що зміни у /etc і /var лишатимуться, а пакунки, "
 "зазвичай, не вносять змін до цих каталогів."
 
-#: dnf/cli/cli.py:251
+#: dnf/cli/cli.py:259
+msgid ""
+"This operation would modify the following paths, possibly introducing "
+"inconsistencies when the transient overlay on /usr is discarded. See the "
+"usr_drift_protected_paths configuration option for more information."
+msgstr ""
+
+#: dnf/cli/cli.py:266
+msgid ""
+"Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
+"check and proceed anyway."
+msgstr ""
+
+#: dnf/cli/cli.py:271
 msgid "Transient transactions are only supported on bootc systems."
 msgstr "Підтримку тимчасових дій пердебачено лише для систем bootc."
 
-#: dnf/cli/cli.py:267
+#: dnf/cli/cli.py:287
 msgid "Downloading Packages:"
 msgstr "Отримання пакунків:"
 
-#: dnf/cli/cli.py:273
+#: dnf/cli/cli.py:293
 msgid "Error downloading packages:"
 msgstr "Помилка під час спроби отримати пакунки:"
 
-#: dnf/cli/cli.py:329
+#: dnf/cli/cli.py:349
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -701,7 +714,7 @@ msgstr ""
 "Автоматичне імпортування ключів під час некерованого запуску заборонено.\n"
 "Скасувати заборону можна параметром «-y»."
 
-#: dnf/cli/cli.py:350
+#: dnf/cli/cli.py:370
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
@@ -711,57 +724,57 @@ msgstr ""
 "Зауваження: цей додаток може бути типово не встановлено як частину пакунка "
 "«dnf-plugins-core»."
 
-#: dnf/cli/cli.py:386
+#: dnf/cli/cli.py:406
 msgid "Changelogs for {}"
 msgstr "Журнали змін для {}"
 
-#: dnf/cli/cli.py:419 dnf/cli/cli.py:560 dnf/cli/cli.py:566
+#: dnf/cli/cli.py:439 dnf/cli/cli.py:580 dnf/cli/cli.py:586
 msgid "Obsoleting Packages"
 msgstr "Застарілих пакунків"
 
-#: dnf/cli/cli.py:448
+#: dnf/cli/cli.py:468
 msgid "No packages marked for distribution synchronization."
 msgstr ""
 "Для виконання синхронізації дистрибутивів не позначено жодного пакунка."
 
-#: dnf/cli/cli.py:474 dnf/cli/commands/group.py:396
+#: dnf/cli/cli.py:494 dnf/cli/commands/group.py:396
 #, python-format
 msgid "No package %s available."
 msgstr "Немає доступного пакунка %s."
 
-#: dnf/cli/cli.py:483
+#: dnf/cli/cli.py:503
 msgid "No packages marked for downgrade."
 msgstr "Немає пакунків, позначених для зниження версії."
 
-#: dnf/cli/cli.py:534
+#: dnf/cli/cli.py:554
 msgid "Installed Packages"
 msgstr "Встановлені пакунки"
 
-#: dnf/cli/cli.py:542
+#: dnf/cli/cli.py:562
 msgid "Available Packages"
 msgstr "Доступних пакунків"
 
-#: dnf/cli/cli.py:546
+#: dnf/cli/cli.py:566
 msgid "Autoremove Packages"
 msgstr "Автоматичне вилучення пакунків"
 
-#: dnf/cli/cli.py:548
+#: dnf/cli/cli.py:568
 msgid "Extra Packages"
 msgstr "Зайвих пакунків"
 
-#: dnf/cli/cli.py:552
+#: dnf/cli/cli.py:572
 msgid "Available Upgrades"
 msgstr "Доступні оновлення"
 
-#: dnf/cli/cli.py:568
+#: dnf/cli/cli.py:588
 msgid "Recently Added Packages"
 msgstr "Останні додані пакунки"
 
-#: dnf/cli/cli.py:572
+#: dnf/cli/cli.py:592
 msgid "No matching Packages to list"
 msgstr "У списку не виявлено відповідних пакунків"
 
-#: dnf/cli/cli.py:653
+#: dnf/cli/cli.py:673
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -770,17 +783,17 @@ msgstr ""
 "нього повністю або скористайтеся префіксом-замінником («*/») на початку "
 "запиту."
 
-#: dnf/cli/cli.py:722 dnf/cli/commands/shell.py:237
+#: dnf/cli/cli.py:742 dnf/cli/commands/shell.py:237
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Невідоме сховище: «%s»"
 
-#: dnf/cli/cli.py:736
+#: dnf/cli/cli.py:756
 #, python-format
 msgid "No repository match: %s"
 msgstr "Немає сховища, яке б відповідало цьому: %s"
 
-#: dnf/cli/cli.py:770
+#: dnf/cli/cli.py:790
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -788,12 +801,12 @@ msgstr ""
 "Цю команду слід віддавати від імені суперкористувача (у більшості систем, "
 "від імені root)."
 
-#: dnf/cli/cli.py:800
+#: dnf/cli/cli.py:820
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Команди %s не виявлено. Будь ласка, скористайтеся командою %s --help"
 
-#: dnf/cli/cli.py:803
+#: dnf/cli/cli.py:823
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -802,7 +815,7 @@ msgstr ""
 "Це могла бути команда додатка {PROG}, спробуйте таку команду: \"{prog} "
 "install 'dnf-command(%s)'\""
 
-#: dnf/cli/cli.py:807
+#: dnf/cli/cli.py:827
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -811,7 +824,7 @@ msgstr ""
 "Це могла бути команда додатка {prog}, але зараз завантаження додатків "
 "вимкнено."
 
-#: dnf/cli/cli.py:865
+#: dnf/cli/cli.py:885
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -819,7 +832,7 @@ msgstr ""
 "Разом із --downloadonly або командами download і system-upgrade слід "
 "використовувати --destdir або --downloaddir."
 
-#: dnf/cli/cli.py:871
+#: dnf/cli/cli.py:891
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -827,7 +840,7 @@ msgstr ""
 "--enable, --set-enabled і --disable, --set-disabled слід поєднувати із "
 "командою config-manager."
 
-#: dnf/cli/cli.py:953
+#: dnf/cli/cli.py:973
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -836,11 +849,11 @@ msgstr ""
 "активних правил безпеки RPM (див. gpgcheck у dnf.conf(5), щоб дізнатися про "
 "те, як позбутися таких повідомлень)"
 
-#: dnf/cli/cli.py:974
+#: dnf/cli/cli.py:994
 msgid "Config file \"{}\" does not exist"
 msgstr "Файла налаштувань «{}» не існує"
 
-#: dnf/cli/cli.py:1006
+#: dnf/cli/cli.py:1026
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -848,28 +861,28 @@ msgstr ""
 "Не вдалося виявити версію випуску (скористайтеся «--releasever», щоб вказати "
 "версію випуску)"
 
-#: dnf/cli/cli.py:1080 dnf/cli/commands/repoquery.py:486
+#: dnf/cli/cli.py:1100 dnf/cli/commands/repoquery.py:486
 msgid "argument {}: not allowed with argument {}"
 msgstr "аргумент {}: не можна використовувати разом із аргументом {}"
 
-#: dnf/cli/cli.py:1087
+#: dnf/cli/cli.py:1107
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Команду «%s» вже визначено"
 
-#: dnf/cli/cli.py:1107
+#: dnf/cli/cli.py:1127
 msgid "Excludes in dnf.conf: "
 msgstr "Виключення у dnf.conf: "
 
-#: dnf/cli/cli.py:1110
+#: dnf/cli/cli.py:1130
 msgid "Includes in dnf.conf: "
 msgstr "Включення у dnf.conf: "
 
-#: dnf/cli/cli.py:1113
+#: dnf/cli/cli.py:1133
 msgid "Excludes in repo "
 msgstr "Виключення у сховищі "
 
-#: dnf/cli/cli.py:1116
+#: dnf/cli/cli.py:1136
 msgid "Includes in repo "
 msgstr "Включення у сховищі "
 
@@ -3760,16 +3773,16 @@ msgstr "Помилка під час обробки --setopt з ключем «%
 msgid "Main config did not have a %s attr. before setopt"
 msgstr "У основних налаштуваннях не виявлено атрибута %s перед setopt"
 
-#: dnf/conf/config.py:488 dnf/conf/config.py:506
+#: dnf/conf/config.py:494 dnf/conf/config.py:512
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Помилковий або невідомий «{}»: {}"
 
-#: dnf/conf/config.py:562
+#: dnf/conf/config.py:568
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
 msgstr "Помилка під час обробки --setopt з ключем «%s.%s», значення «%s»: %s"
 
-#: dnf/conf/config.py:565
+#: dnf/conf/config.py:571
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
 msgstr "У сховищі %s не вказано атрибут %s перед setopt"
