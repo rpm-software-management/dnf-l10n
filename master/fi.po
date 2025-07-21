@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-03-20 13:44+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -1613,8 +1613,10 @@ msgid "list packages belonging to a module"
 msgstr "luettele moduuliin kuuluvat paketit"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Ole vuorovaikutuksessa moduulien kanssa."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1640,7 +1642,13 @@ msgstr "poista kaikki modulaariset paketit"
 msgid "Module specification"
 msgstr "Moduulin määrittely"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: liian vähän argumentteja"
 
@@ -4523,6 +4531,9 @@ msgstr "Järjestelmän lukituksen avaaminen epäonnistui: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "Käsittelemätön bootcin lukitsematon tila: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Ole vuorovaikutuksessa moduulien kanssa."
 
 #~ msgid ""
 #~ "\n"

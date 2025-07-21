@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-06-20 12:22+0000\n"
 "Last-Translator: Jonáš Loskot <alius@users.noreply.translate.fedoraproject."
 "org>\n"
@@ -1636,8 +1636,10 @@ msgid "list packages belonging to a module"
 msgstr "seznam balíčků patřících do modulu"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Interakce s Moduly."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1663,7 +1665,13 @@ msgstr "odstranění všech modulárních balíků"
 msgid "Module specification"
 msgstr "Specifikace modulu"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: příliš mnoho argumentů"
 
@@ -4510,6 +4518,9 @@ msgstr "Nepodařilo se odemknout systém: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "Neznámý stav odemčeného bootc: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Interakce s Moduly."
 
 #~ msgid ""
 #~ "\n"

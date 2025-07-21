@@ -40,7 +40,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-06-30 08:22+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -1674,8 +1674,10 @@ msgid "list packages belonging to a module"
 msgstr "lista de paquetes pertenecientes a un módulo"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Interactuar con los módulos."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1701,7 +1703,13 @@ msgstr "quitar todos los paquetes modulares"
 msgid "Module specification"
 msgstr "Especificación del módulo"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: demasiado pocos argumentos"
 
@@ -4661,6 +4669,9 @@ msgstr "Ha fallado al desbloquear sistema: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "Estado de desbloqueo de bootc no manipulado: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Interactuar con los módulos."
 
 #~ msgid ""
 #~ "\n"

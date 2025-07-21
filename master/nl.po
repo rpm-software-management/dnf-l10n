@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-06-11 11:19+0000\n"
 "Last-Translator: \"Richard E. van der Luit\" <fedoraproject@veneax.nl>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -1607,8 +1607,10 @@ msgid "list packages belonging to a module"
 msgstr "toon pakketten die toebehoren aan een module"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Communiceer met modules."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1634,7 +1636,13 @@ msgstr "verwijder alle modulaire pakketten"
 msgid "Module specification"
 msgstr "Modulespecificatie"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: te weinig argumenten"
 
@@ -4523,6 +4531,9 @@ msgstr ""
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr ""
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Communiceer met modules."
 
 #, python-format
 #~ msgid "No package %s installed."

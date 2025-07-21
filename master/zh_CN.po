@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-04-03 00:14+0000\n"
 "Last-Translator: z z <3397542367@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -1571,8 +1571,10 @@ msgid "list packages belonging to a module"
 msgstr "列出属于一个模块的软件包"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "与模块交互。"
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1598,7 +1600,13 @@ msgstr "移除所有模块包"
 msgid "Module specification"
 msgstr "模块规格"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: 参数太少"
 
@@ -4384,6 +4392,9 @@ msgstr "解锁系统失败：%s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "未处理的 bootc 解锁状态：%s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "与模块交互。"
 
 #, python-format
 #~ msgid "No package %s installed."

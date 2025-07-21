@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-04-03 00:14+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -1625,8 +1625,10 @@ msgid "list packages belonging to a module"
 msgstr "вивести список пакунків, які належать модулю"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Взаємодія із модулями."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1652,7 +1654,13 @@ msgstr "вилучити лише модульні пакунки"
 msgid "Module specification"
 msgstr "Специфікація модуля"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: замало аргументів"
 
@@ -4519,6 +4527,9 @@ msgstr "Не вдалося розблокувати систему: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "Непридатний до обробки стан розблокування bootc: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Взаємодія із модулями."
 
 #~ msgid ""
 #~ "\n"

@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-06-23 10:34+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -1575,8 +1575,10 @@ msgid "list packages belonging to a module"
 msgstr "모듈에 속하는 꾸러미를 나열하십시오"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "모듈과 상호 작용합니다."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1602,7 +1604,13 @@ msgstr "모든 모듈 꾸러미 삭제"
 msgid "Module specification"
 msgstr "모듈 사양"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: 인수가 부족합니다"
 
@@ -4426,6 +4434,9 @@ msgstr "시스템 잠금 해제에 실패함: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "처리되지 않은 bootc 잠금 해제된 상태: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "모듈과 상호 작용합니다."
 
 #~ msgid ""
 #~ "\n"

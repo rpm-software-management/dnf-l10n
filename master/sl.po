@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-15 02:48+0000\n"
+"POT-Creation-Date: 2025-07-21 02:54+0000\n"
 "PO-Revision-Date: 2025-06-20 00:29+0000\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
@@ -1594,8 +1594,10 @@ msgid "list packages belonging to a module"
 msgstr "seznam paketov, ki pripadajo modulu"
 
 #: dnf/cli/commands/module.py:352
-msgid "Interact with Modules."
-msgstr "Interakcija z moduli."
+msgid ""
+"Interact with Modules. WARNING: modularity is deprecated, and functionality "
+"will be removed in a future release of DNF5."
+msgstr ""
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1621,7 +1623,13 @@ msgstr "odstrani vse modularne pakete"
 msgid "Module specification"
 msgstr "Specifikacija modula"
 
-#: dnf/cli/commands/module.py:411
+#: dnf/cli/commands/module.py:392
+msgid ""
+"WARNING: modularity is deprecated, and functionality will be removed in a "
+"future release of DNF5."
+msgstr ""
+
+#: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: premalo argumentov"
 
@@ -4465,6 +4473,9 @@ msgstr "Sistema ni možno odkleniti: %s"
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
 msgstr "Neobravnavano nezaklenjeno stanje bootc: %s"
+
+#~ msgid "Interact with Modules."
+#~ msgstr "Interakcija z moduli."
 
 #~ msgid ""
 #~ "\n"
