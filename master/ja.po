@@ -32,9 +32,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-07-21 02:54+0000\n"
-"PO-Revision-Date: 2025-03-06 11:04+0000\n"
-"Last-Translator: middlingphys <middlingphys@users.noreply.translate."
-"fedoraproject.org>\n"
+"PO-Revision-Date: 2025-07-22 04:52+0000\n"
+"Last-Translator: middlingphys "
+"<middlingphys@users.noreply.translate.fedoraproject.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/ja/>\n"
 "Language: ja\n"
@@ -42,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -668,7 +668,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "永続的トランザクションはbootcシステムではサポートされていません。"
 
 #: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:277
 msgid "Operation aborted."
@@ -680,6 +680,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"bootcシステムは読み取り専用に設定されています。--transient "
+"を渡すとシステム再起動時にリセットされる一時的オーバーレイ上でこのトランザク"
+"ションを実行します。"
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -689,6 +692,9 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"再起動時に破棄される一時的オーバーレイが /usr に作成されます。/etc や /var "
+"への変更は依然として永続的な物であり、通常これらのディレクトリがパッケージに"
+"よって変更されることを留意してください。"
 
 #: dnf/cli/cli.py:259
 msgid ""
@@ -696,16 +702,20 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"この操作により次のパスが変更される可能性があり、/usr "
+"の一時的オーバーレイが破棄されるときに一貫性が失われる可能性があります。"
+"詳細は usr_drift_protected_paths 設定オプションを参照してください。"
 
 #: dnf/cli/cli.py:266
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
-msgstr ""
+msgstr "操作中断。チェックを無効にして進むには --setopt=usr_drift_protected_paths= "
+"を渡してください。"
 
 #: dnf/cli/cli.py:271
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "一時的トランザクションはbootcシステムでのみサポートされています。"
 
 #: dnf/cli/cli.py:287
 msgid "Downloading Packages:"
@@ -1628,7 +1638,8 @@ msgstr "モジュールに属するパッケージをリスト"
 msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
-msgstr ""
+msgstr "モジュールの操作。警告: "
+"モジュールは非推奨で、将来のDNF5のリリースで機能が削除されます。"
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1658,7 +1669,7 @@ msgstr "モジュールspec"
 msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
-msgstr ""
+msgstr "警告: モジュールは非推奨で、将来のDNF5のリリースで機能が削除されます。"
 
 #: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
@@ -2690,16 +2701,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "設定ファイルと repo ファイルの $releasever の値をオーバーライドします"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "設定ファイルと repo ファイルの $releasever の値をオーバーライドします"
+msgstr "設定ファイルと repo ファイルの $releasever_major の値をオーバーライドします"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "設定ファイルと repo ファイルの $releasever の値をオーバーライドします"
+msgstr "設定ファイルと repo ファイルの $releasever_minor の値をオーバーライドします"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2859,7 +2866,7 @@ msgstr "パッケージのみをダウンロードします"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "再起動時にリセットされる一時的オーバーレイを使います"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -3541,7 +3548,7 @@ msgstr "コマンドライン      :"
 
 #: dnf/cli/output.py:1787
 msgid "Persistence    :"
-msgstr ""
+msgstr "永続的         :"
 
 #: dnf/cli/output.py:1797 dnf/cli/output.py:1799
 msgid "Comment        :"
@@ -4522,12 +4529,12 @@ msgstr "%s: コマンドが見つかりません。これは bootc システム�
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "システムのアンロックに失敗しました: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "未対応のbootcアンロック状態: %s"
 
 #~ msgid "Interact with Modules."
 #~ msgstr "モジュールと対話します。"
