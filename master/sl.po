@@ -1,15 +1,15 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Matjaž Jeran <matjaz.jeran@amis.net>, 2023, 2024.
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2023, 2024, 2025.
 # Martin Srebotnjak <miles@filmsi.net>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-09 02:13+0000\n"
-"PO-Revision-Date: 2025-08-11 00:04+0000\n"
-"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
+"PO-Revision-Date: 2025-09-10 02:09+0000\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
 "Language: sl\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.13.2\n"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -95,7 +95,7 @@ msgstr "Čakanje na internetno povezavo..."
 
 #: dnf/automatic/main.py:332
 msgid "Started dnf-automatic."
-msgstr "Zagon dnf - samodejni."
+msgstr "Zagnan dnf-automatic."
 
 #: dnf/automatic/main.py:336
 msgid "Sleep for {} second"
@@ -667,6 +667,9 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Ustvarjena bo prehodna prekrivna datoteka na /usr, ki bo ob ponovnem zagonu "
+"zavržena. Upoštevajte, da bodo spremembe v /etc in /var še vedno vztrajale, "
+"paketi pa običajno spreminjajo te imenike."
 
 #: dnf/cli/cli.py:259
 msgid ""
@@ -674,16 +677,21 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Ta operacija bi spremenila naslednje poti, kar bi lahko povzročilo "
+"neskladnosti, ko bi bil začasni prekrivni sloj na /usr zavržen. Za več "
+"informacij glejte možnost konfiguracije usr_drift_protected_paths."
 
 #: dnf/cli/cli.py:266
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Operacija prekinjena. Prenesite --setopt=usr_drift_protected_paths= za "
+"onemogočanje tega preverjanja in nadaljevanje kljub temu."
 
 #: dnf/cli/cli.py:271
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Začasne transakcije so podprte samo v sistemih bootc."
 
 #: dnf/cli/cli.py:287
 msgid "Downloading Packages:"
@@ -787,7 +795,7 @@ msgstr ""
 #: dnf/cli/cli.py:820
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr "Ni takega ukaza: %s."
+msgstr "Ni takega ukaza: %s. Prosim uporabite %s --help"
 
 #: dnf/cli/cli.py:823
 #, python-format, python-brace-format
@@ -1542,7 +1550,9 @@ msgstr "Paket %s ni nameščen."
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
-msgstr "Uporabljeno je samo ime modula, tok, arhitektura ali profil."
+msgstr ""
+"Uporablja se samo ime modula, tok, arhitektura ali profil. Nepotrebne "
+"informacije v argumentu so prezrte: '{}'"
 
 #: dnf/cli/commands/module.py:80
 msgid "list all module streams, profiles and states"
@@ -1601,6 +1611,8 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
+"Interakcija z Modules. OPOZORILO: modularnost je zastarela in funkcionalnost "
+"bo odstranjena v prihodnji izdaji DNF5."
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1631,6 +1643,8 @@ msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
 msgstr ""
+"OPOZORILO: modularnost je zastarela in funkcionalnost bo odstranjena v "
+"prihodnji izdaji DNF5."
 
 #: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
@@ -2816,6 +2830,7 @@ msgstr "samo prenos paketov"
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
 msgstr ""
+"Uporaba začasne prekrivne plasti, ki se bo ponastavila ob ponovnem zagonu"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -3735,7 +3750,7 @@ msgstr "Napaka pri razčlenjevanju --setopt s ključem '%s', vrednost '%s': %s"
 #: dnf/conf/config.py:399
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
-msgstr "Glavna konfiguracija ni imela atributa %s."
+msgstr "Glavna konfiguracija ni imela atributa %s pred setopt"
 
 #: dnf/conf/config.py:494 dnf/conf/config.py:512
 msgid "Incorrect or unknown \"{}\": {}"
@@ -3750,7 +3765,7 @@ msgstr ""
 #: dnf/conf/config.py:571
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr "Repo %s ni imel atributa %s."
+msgstr "Repo %s ni imel atributa %s pred setopt"
 
 #: dnf/conf/read.py:60
 #, python-format
@@ -3943,7 +3958,7 @@ msgstr "Nič za pokazati."
 
 #: dnf/module/__init__.py:28
 msgid "Installing newer version of '{}' than specified. Reason: {}"
-msgstr "Nameščanje novejše različice '{}' od navedene."
+msgstr "Nameščanje novejše različice '{}' od navedene. Razlog: {}"
 
 #: dnf/module/__init__.py:29
 msgid "Enabled modules: {}."
@@ -3987,7 +4002,7 @@ msgstr "Za '{}' ni določen noben tok, prosimo določite tok"
 
 #: dnf/module/exceptions.py:82
 msgid "No such profile: {}. No profiles available"
-msgstr "Ni takega profila: {}."
+msgstr "Ni takega profila: {}. Profilov ni na voljo"
 
 #: dnf/module/exceptions.py:88
 msgid "No profile to remove for '{}'"
@@ -4031,7 +4046,9 @@ msgstr "Namestitev modula '{0}' iz varnega repozitorija {1} ni dovoljena"
 #: dnf/module/module_base.py:104 dnf/module/module_base.py:214
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
-msgstr "Ni mogoče najti profila za argument {}."
+msgstr ""
+"Ni mogoče najti ustreznega profila za argument {}. Razpoložljivi profili za "
+"'{}:{}': {}"
 
 #: dnf/module/module_base.py:108 dnf/module/module_base.py:218
 msgid "Unable to match profile for argument {}"
@@ -4039,7 +4056,7 @@ msgstr "Ni mogoče najti profila za argument {}"
 
 #: dnf/module/module_base.py:120
 msgid "No default profiles for module {}:{}. Available profiles: {}"
-msgstr "Ni privzetih profilov za modul {}:{}."
+msgstr "Ni privzetih profilov za modul {}:{}. Razpoložljivi profili: {}"
 
 #: dnf/module/module_base.py:124
 msgid "No profiles for module {}:{}"
@@ -4099,7 +4116,9 @@ msgstr ""
 #: dnf/module/module_base.py:509
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
-msgstr "Potrebno je samo ime modula."
+msgstr ""
+"Zahtevano je samo ime modula. Nepotrebnih informacij v argumentu ne "
+"upoštevamo: '{}'"
 
 #: dnf/module/module_base.py:844
 msgid "No match for package {}"
@@ -4199,7 +4218,9 @@ msgstr "Med testno transakcijo je prišlo do napak."
 msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
-msgstr "allow_vendor_change je onemogočen."
+msgstr ""
+"allow_vendor_change je onemogočen. Ta možnost trenutno ni podprta za ukaza "
+"downgrade in distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4460,7 +4481,7 @@ msgstr "%s: ukaza ni možno najti."
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Neuspel priklop %s za branje/pisanje: %s"
 
 #: dnf/util.py:716
 #, python-format
