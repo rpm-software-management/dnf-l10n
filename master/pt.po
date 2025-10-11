@@ -20,7 +20,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-11 02:07+0000\n"
-"PO-Revision-Date: 2025-05-02 16:27+0000\n"
+"PO-Revision-Date: 2025-10-12 02:16+0000\n"
 "Last-Translator: Hugo Costa <hugo.a.costa@outlook.pt>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/pt/>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 5.11.1\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -642,6 +642,13 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"Não é possível alternar entre as streams ativas de um módulo, a menos que "
+"tal seja explicitamente permitido através da opção de configuração "
+"module_stream_switch.\n"
+"Recomenda-se, em alternativa, a remoção de todo o conteúdo instalado do "
+"módulo e a reposição do mesmo utilizando o comando {prog} module reset "
+"<module_name>.Após a reposição do módulo, será então possível instalar outra "
+"stream."
 
 #: dnf/cli/cli.py:214
 #, python-brace-format
@@ -654,6 +661,8 @@ msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
 msgstr ""
+"{prog} irá apenas transferir os pacotes, instalar as chaves GPG e verificar "
+"a transação."
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
