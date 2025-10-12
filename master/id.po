@@ -12,14 +12,14 @@
 # Anonymous <noreply@weblate.org>, 2020.
 # Aditya Rahman <adityarahman032@gmail.com>, 2021.
 # eko ikhyar <ikhyar.com@gmail.com>, 2021.
-# Arif Budiman <arifpedia@gmail.com>, 2024.
+# Arif Budiman <arifpedia@gmail.com>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-12 02:16+0000\n"
-"PO-Revision-Date: 2025-01-31 06:28+0000\n"
-"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"PO-Revision-Date: 2025-10-13 02:20+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/id/>\n"
 "Language: id\n"
@@ -27,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -649,11 +649,11 @@ msgstr ""
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Transaksi persisten tidak didukung pada sistem bootc."
 
 #: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:277
 msgid "Operation aborted."
-msgstr "Operasi digugrkan."
+msgstr "Operasi dibatalkan."
 
 #: dnf/cli/cli.py:238
 msgid ""
@@ -661,6 +661,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Sistem bootc ini dikonfigurasi sebagai read-only. Gunakan opsi --transient "
+"untuk menjalankan transaksi ini dalam overlay sementara yang akan direset "
+"saat sistem reboot."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -670,6 +673,9 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Sebuah lapisan sementara akan dibuat di /usr dan akan dihapus saat reboot. "
+"Perlu diingat bahwa perubahan pada /etc dan /var tetap akan bertahan, dan "
+"paket-paket umumnya memodifikasi direktori-direktori ini."
 
 #: dnf/cli/cli.py:259
 msgid ""
@@ -677,16 +683,21 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Operasi ini akan mengubah jalur-jalur berikut, yang berpotensi menyebabkan "
+"ketidakkonsistenan saat overlay sementara di /usr dihapus. Lihat opsi "
+"konfigurasi usr_drift_protected_paths untuk informasi lebih lanjut."
 
 #: dnf/cli/cli.py:266
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Operasi dibatalkan. Gunakan opsi --setopt=usr_drift_protected_paths= untuk "
+"menonaktifkan pemeriksaan ini dan melanjutkan meskipun demikian."
 
 #: dnf/cli/cli.py:271
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Transaksi sementara hanya didukung pada sistem bootc."
 
 #: dnf/cli/cli.py:287
 msgid "Downloading Packages:"
@@ -1614,6 +1625,8 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
+"Berinteraksi dengan Modul. PERINGATAN: Kemampuan modularitas telah dihapus, "
+"dan fungsionalitasnya akan dihapus dalam rilis mendatang dari DNF5."
 
 #: dnf/cli/commands/module.py:365
 msgid "show only enabled modules"
@@ -1644,6 +1657,8 @@ msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
 msgstr ""
+"PERINGATAN: Modularitas telah dihapus, dan fungsionalitasnya akan dihapus "
+"dalam rilis mendatang dari DNF5."
 
 #: dnf/cli/commands/module.py:412
 msgid "{} {} {}: too few arguments"
@@ -1759,11 +1774,11 @@ msgstr "Repo-diperbarui    : "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-pkgs          : "
-msgstr ""
+msgstr "Repo-paket          : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-available-pkgs: "
-msgstr ""
+msgstr "Paket yang tersedia untuk repo: "
 
 #: dnf/cli/commands/repolist.py:196
 msgid "Repo-size          : "
@@ -1792,11 +1807,11 @@ msgstr "Kedaluwarsa-repo    : "
 #. TRANSLATORS: Packages that are excluded - their names like (dnf systemd)
 #: dnf/cli/commands/repolist.py:223
 msgid "Repo-exclude       : "
-msgstr ""
+msgstr "Repo-exclude       : "
 
 #: dnf/cli/commands/repolist.py:227
 msgid "Repo-include       : "
-msgstr ""
+msgstr "Repo-include       : "
 
 #. TRANSLATORS: Number of packages that where excluded (5)
 #: dnf/cli/commands/repolist.py:232
@@ -1872,7 +1887,7 @@ msgstr "hanya tampilkan hasil yang menyediakan REQ"
 
 #: dnf/cli/commands/repoquery.py:148
 msgid "shows results that requires package provides and files REQ"
-msgstr ""
+msgstr "menampilkan hasil yang memerlukan paket dan berkas REQ"
 
 #: dnf/cli/commands/repoquery.py:151
 msgid "show only results that recommend REQ"
@@ -1880,7 +1895,7 @@ msgstr "hanya tampilkan hasil yang merekomendasikan REQ"
 
 #: dnf/cli/commands/repoquery.py:154
 msgid "show only results that enhance REQ"
-msgstr ""
+msgstr "tampilkan hanya hasil yang meningkatkan REQ"
 
 #: dnf/cli/commands/repoquery.py:157
 msgid "show only results that suggest REQ"
@@ -1992,6 +2007,7 @@ msgstr ""
 #: dnf/cli/commands/repoquery.py:217
 msgid "Display in which comps groups are presented selected packages"
 msgstr ""
+"Tampilan di mana kelompok komposisi ditampilkan dalam paket yang dipilih"
 
 #: dnf/cli/commands/repoquery.py:221
 msgid "limit the query to installed duplicate packages"
@@ -2526,11 +2542,11 @@ msgstr "Keterangan"
 
 #: dnf/cli/commands/updateinfo.py:358
 msgid "Rights"
-msgstr ""
+msgstr "Hak"
 
 #: dnf/cli/commands/updateinfo.py:358
 msgid "Severity"
-msgstr ""
+msgstr "Keparahan"
 
 #: dnf/cli/commands/updateinfo.py:359
 msgid "Files"
@@ -2670,16 +2686,12 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "menimpa nilai $releasever dalam berkas konfigurasi dan repo"
 
 #: dnf/cli/option_parser.py:203
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "menimpa nilai $releasever dalam berkas konfigurasi dan repo"
+msgstr "mengganti nilai $releasever_major di berkas konfigurasi dan repositori"
 
 #: dnf/cli/option_parser.py:206
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "menimpa nilai $releasever dalam berkas konfigurasi dan repo"
+msgstr "mengganti nilai $releasever_minor di berkas konfigurasi dan repositori"
 
 #: dnf/cli/option_parser.py:210
 msgid "set arbitrary config and repo options"
@@ -2738,6 +2750,9 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
+"mengaktifkan logika pemrosesan {prog} yang sudah tidak digunakan lagi untuk "
+"meningkatkan atau menampilkan kemampuan yang sudah tidak digunakan lagi oleh "
+"paket untuk info, list, dan repoquery"
 
 #: dnf/cli/option_parser.py:254
 msgid "debugging output level for rpm"
@@ -2842,7 +2857,7 @@ msgstr "hanya unduh paket"
 
 #: dnf/cli/option_parser.py:328
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Gunakan overlay sementara yang akan diatur ulang saat reboot"
 
 #: dnf/cli/option_parser.py:330
 msgid "add a comment to transaction"
@@ -3533,7 +3548,7 @@ msgstr "Baris Perintah :"
 
 #: dnf/cli/output.py:1787
 msgid "Persistence    :"
-msgstr ""
+msgstr "Ketekunan    :"
 
 #: dnf/cli/output.py:1797 dnf/cli/output.py:1799
 msgid "Comment        :"
@@ -3654,7 +3669,7 @@ msgstr "Zombie"
 
 #: dnf/cli/utils.py:103
 msgid "Traced/Stopped"
-msgstr ""
+msgstr "Dilacak/Dihentikan"
 
 #: dnf/cli/utils.py:104
 msgid "Unknown"
@@ -3891,6 +3906,8 @@ msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"Mengecualikan paket kunci {} dari validasi karena tidak terikat dengan "
+"alamat email mana pun"
 
 #: dnf/dnssec.py:309
 msgid "Testing already imported keys for their validity."
@@ -3936,7 +3953,7 @@ msgstr "grup atau modul yang rusak: "
 #: dnf/exceptions.py:130
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
-msgstr[0] ""
+msgstr[0] "Masalah ketergantungan modular dengan Defaults:"
 
 #: dnf/exceptions.py:135 dnf/module/module_base.py:857
 msgid "Modular dependency problem:"
@@ -3950,10 +3967,14 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Berkas kunci yang rusak ditemukan: %s.\n"
+"Pastikan tidak ada proses dnf/yum lain yang berjalan, lalu hapus berkas "
+"kunci secara manual atau jalankan perintah systemd-tmpfiles --remove "
+"dnf.conf."
 
 #: dnf/module/__init__.py:26
 msgid "Enabling different stream for '{}'."
-msgstr ""
+msgstr "Mengaktifkan aliran yang berbeda untuk ‘{}’."
 
 #: dnf/module/__init__.py:27
 msgid "Nothing to show."
@@ -4072,12 +4093,12 @@ msgstr "Profil baku {} tidak tersedia dalam modul {}:{}"
 
 #: dnf/module/module_base.py:144 dnf/module/module_base.py:247
 msgid "Installing module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Memasang modul dari repositori Fail-Safe tidak diperbolehkan"
 
 #: dnf/module/module_base.py:196
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
-msgstr ""
+msgstr "Tidak ada pertandingan aktif untuk argumen ‘{0}’ di modul ‘{1}:{2}’"
 
 #: dnf/module/module_base.py:228
 #, python-brace-format
@@ -4086,27 +4107,27 @@ msgstr "Profil terpasang '{0}' tidak tersedia di modul '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:267
 msgid "No packages available to distrosync for package name '{}'"
-msgstr ""
+msgstr "Tidak ada paket yang tersedia untuk distrosync dengan nama paket ‘{}’"
 
 #: dnf/module/module_base.py:310 dnf/module/module_base.py:461
 #: dnf/module/module_base.py:486 dnf/module/module_base.py:505
 #: dnf/module/module_base.py:552 dnf/module/module_base.py:611
 #: dnf/module/module_base.py:680 dnf/module/module_base.py:843
 msgid "Unable to resolve argument {}"
-msgstr ""
+msgstr "Tidak dapat menyelesaikan argumen {}"
 
 #: dnf/module/module_base.py:321
 #, python-brace-format
 msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
-msgstr ""
+msgstr "Peningkatan modul ‘{0}’ dari repositori Fail-Safe {1} tidak diizinkan"
 
 #: dnf/module/module_base.py:340 dnf/module/module_base.py:368
 msgid "Unable to match profile in argument {}"
-msgstr ""
+msgstr "Tidak dapat mencocokkan profil dalam argumen {}"
 
 #: dnf/module/module_base.py:348
 msgid "Upgrading module from Fail-Safe repository is not allowed"
-msgstr ""
+msgstr "Peningkatan modul dari repositori Fail-Safe tidak diperbolehkan"
 
 #: dnf/module/module_base.py:422
 #, python-brace-format
@@ -4114,6 +4135,8 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"Argumen ‘{argument}’ cocok dengan {stream_count} aliran (‘{streams}’) dari "
+"modul ‘{module}’, tetapi tidak ada aliran yang diaktifkan atau default"
 
 #: dnf/module/module_base.py:509
 msgid ""
@@ -4124,7 +4147,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:844
 msgid "No match for package {}"
-msgstr ""
+msgstr "Tidak ada yang cocok dengan paket {}"
 
 #. empty file is invalid json format
 #: dnf/persistor.py:53
@@ -4144,11 +4167,11 @@ msgstr "Gagal menyimpan singgahan repo kedaluwarsa: %s"
 
 #: dnf/persistor.py:105
 msgid "Failed storing last makecache time."
-msgstr ""
+msgstr "Gagal menyimpan waktu pembuatan cache terakhir."
 
 #: dnf/persistor.py:112
 msgid "Failed determining last makecache time."
-msgstr ""
+msgstr "Gagal menentukan waktu pembuatan cache terakhir."
 
 #: dnf/plugin.py:64
 #, python-format
@@ -4168,15 +4191,17 @@ msgstr "Gagal memuat plugin \"%s\": %s"
 #: dnf/plugin.py:249
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
+"Tidak ditemukan kesesuaian untuk pola plugin yang diaktifkan berikut: {}"
 
 #: dnf/plugin.py:253
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
+"Tidak ditemukan kecocokan untuk pola plugin yang dinonaktifkan berikut: {}"
 
 #: dnf/repo.py:85
 #, python-format
 msgid "no matching payload factory for %s"
-msgstr ""
+msgstr "tidak ada pabrik payload yang cocok untuk %s"
 
 #. pinging mirrors, this might take a while
 #: dnf/repo.py:347
@@ -4192,24 +4217,26 @@ msgstr "memfungsikan repositori %s"
 #: dnf/repodict.py:94
 #, python-format
 msgid "Added %s repo from %s"
-msgstr ""
+msgstr "Menambahkan repositori %s dari %s"
 
 #: dnf/rpm/miscutils.py:32
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "Menggunakan program rpmkeys di %s untuk memverifikasi tanda tangan"
 
 #: dnf/rpm/miscutils.py:66
 msgid "Cannot find rpmkeys executable to verify signatures."
 msgstr ""
+"Tidak dapat menemukan berkas executable rpmkeys untuk memverifikasi tanda "
+"tangan."
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "Fungsi openDB() tidak dapat membuka basis data RPM."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "Fungsi dbCookie() tidak mengembalikan cookie dari basis data RPM."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
@@ -4220,6 +4247,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allow_vendor_change dinonaktifkan. Opsi ini saat ini tidak didukung untuk "
+"perintah downgrade dan distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:80
@@ -4273,20 +4302,21 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"Masalah berikut terjadi saat memutar ulang transaksi dari file “{filename}”:"
 
 #: dnf/transaction_sr.py:68
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
+msgstr "Masalah berikut terjadi saat menjalankan transaksi:"
 
 #: dnf/transaction_sr.py:89
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Versi utama yang tidak valid “{major}”, nomor yang diharapkan."
 
 #: dnf/transaction_sr.py:97
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Versi minor yang tidak valid “{minor}”, nomor yang diharapkan."
 
 #: dnf/transaction_sr.py:103
 #, python-brace-format
@@ -4294,11 +4324,14 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"Versi utama yang tidak kompatibel “{major}”, versi utama yang didukung "
+"adalah “{major_supp}”."
 
 #: dnf/transaction_sr.py:224
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"Argumen Replay Transaksi yang Bertentangan telah ditentukan: nama file, data"
 
 #: dnf/transaction_sr.py:265
 #, python-brace-format
@@ -4313,23 +4346,24 @@ msgstr "Kurang kunci \"{key}\"."
 #: dnf/transaction_sr.py:285
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Kunci objek “{key}” hilang dalam paket RPM."
 
 #: dnf/transaction_sr.py:289
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Nilai tak terduga dari alasan paket “{reason}” untuk rpm nevra “{nevra}”."
 
 #: dnf/transaction_sr.py:297
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "Tidak dapat memproses NEVRA untuk paket “{nevra}”."
 
 #: dnf/transaction_sr.py:321
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "Tidak dapat menemukan paket RPM nevra “{nevra}”."
 
 #: dnf/transaction_sr.py:336
 #, python-brace-format
@@ -4342,17 +4376,19 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action "
 "\"{action}\"."
 msgstr ""
+"Paket nevra “{nevra}” tidak tersedia di repositori untuk tindakan “{action}”."
 
 #: dnf/transaction_sr.py:356
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
-msgstr ""
+msgstr "Paket nevra “{nevra}” tidak terpasang untuk tindakan “{action}”."
 
 #: dnf/transaction_sr.py:370
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Nilai tak terduga dari tindakan paket “{action}” untuk paket RPM “{nevra}”."
 
 #: dnf/transaction_sr.py:377
 #, python-format
@@ -4362,7 +4398,7 @@ msgstr "Id grup '%s' tidak tersedia."
 #: dnf/transaction_sr.py:398
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Kunci objek “{key}” tidak ditemukan dalam groups.packages."
 
 #: dnf/transaction_sr.py:411 dnf/transaction_sr.py:421
 #: dnf/transaction_sr.py:431
@@ -4381,21 +4417,23 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"Nilai tidak valid “{group_type}” untuk environments.groups.group_type, hanya "
+"‘mandatory’ atau “optional” yang didukung."
 
 #: dnf/transaction_sr.py:474
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Kunci objek “{key}” tidak ditemukan di environments.groups."
 
 #: dnf/transaction_sr.py:566
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
-msgstr ""
+msgstr "Nilai tak terduga dari tindakan grup “{action}” untuk grup “{group}”."
 
 #: dnf/transaction_sr.py:571
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Kunci objek “{key}” hilang dalam grup."
 
 #: dnf/transaction_sr.py:599
 #, python-brace-format
@@ -4403,11 +4441,13 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment "
 "\"{env}\"."
 msgstr ""
+"Nilai tak terduga dari tindakan lingkungan “{action}” untuk lingkungan "
+"“{env}”."
 
 #: dnf/transaction_sr.py:604
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Kunci objek “{key}” tidak ditemukan dalam lingkungan."
 
 #: dnf/transaction_sr.py:643
 #, python-brace-format
@@ -4415,6 +4455,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"Paket nevra “{nevra}”, yang tidak terdapat dalam berkas transaksi, telah "
+"dimasukkan ke dalam transaksi."
 
 #: dnf/util.py:419 dnf/util.py:421
 msgid "Problem"
@@ -4422,11 +4464,11 @@ msgstr "Masalah"
 
 #: dnf/util.py:472
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "Item Transaksi tidak ditemukan untuk kunci: {}"
 
 #: dnf/util.py:482
 msgid "TransactionSWDBItem not found for key: {}"
-msgstr ""
+msgstr "Transaksi SWDBItem tidak ditemukan untuk kunci: {}"
 
 #: dnf/util.py:485
 msgid "Errors occurred during transaction."
@@ -4455,32 +4497,32 @@ msgstr "<unset>"
 
 #: dnf/util.py:652
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Tidak berjalan pada sistem bootc."
 
 #: dnf/util.py:705
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: perintah tidak ditemukan."
 
 #: dnf/util.py:707
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Gagal me-mount %s sebagai baca/tulis: %s"
 
 #: dnf/util.py:716
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: perintah tidak ditemukan. Apakah ini sistem bootc?"
 
 #: dnf/util.py:718
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Gagal membuka kunci sistem: %s"
 
 #: dnf/util.py:732
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Keadaan bootc yang tidak terkelola dan tidak terkunci: %s"
 
 #~ msgid "Interact with Modules."
 #~ msgstr "Berinteraksi dengan Modul."
