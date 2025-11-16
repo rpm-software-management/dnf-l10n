@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-16 02:27+0000\n"
-"PO-Revision-Date: 2025-09-10 02:09+0000\n"
+"PO-Revision-Date: 2025-11-16 14:13+0000\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
 "n%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 5.13.2\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -1164,7 +1164,7 @@ msgstr "preveri težave v packagedb"
 
 #: dnf/cli/commands/check.py:39
 msgid "show all problems; default"
-msgstr "prikaži vse težave;"
+msgstr "prikaži vse težave; privzeto"
 
 #: dnf/cli/commands/check.py:42
 msgid "show dependency problems"
@@ -1895,7 +1895,7 @@ msgstr "prikaži samo rezultate, ki dopolnjujejo REQ"
 
 #: dnf/cli/commands/repoquery.py:162
 msgid "check non-explicit dependencies (files and Provides); default"
-msgstr "preveri neizrecne odvisnosti (datoteke in ponudbe);"
+msgstr "preveri neizrecne odvisnosti (datoteke in ponudbe); privzeto"
 
 #: dnf/cli/commands/repoquery.py:164
 msgid "check dependencies exactly as given, opposite of --alldeps"
@@ -2045,8 +2045,9 @@ msgid ""
 "running %%pre and %%post scriptlets. If the package is installed display "
 "capabilities that is depends for %%pre, %%post, %%preun and %%postun."
 msgstr ""
-"Če paket ni nameščen, prikaže zmožnosti prikaza, od katerih je odvisen za "
-"izvajanje %%pre in %%post skriptov."
+"Če paket ni nameščen, prikaže zmožnosti, od katerih je odvisen za izvajanje "
+"skriptletov %%pre in %%post. Če je paket nameščen, prikaže zmožnosti, od "
+"katerih je odvisen za %%pre, %%post, %%preun in %%postun."
 
 #: dnf/cli/commands/repoquery.py:245
 msgid "Display capabilities that the package suggests."
@@ -2104,8 +2105,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
-"Možnost '--resolve' je treba uporabiti skupaj z enim od '--conflicts', '--"
-"depends', '--enhances', '--provides', '--recommends', '--"
+"Možnost '--resolve' je treba uporabiti skupaj z enim od možnosti' --"
+"conflicts', '--depends', '--enhances', '--provides', '--recommends', '--"
+"requires', '--requires-pre', '--suggests' ali '--supplements'"
 
 #: dnf/cli/commands/repoquery.py:307
 msgid ""
@@ -2113,8 +2115,9 @@ msgid ""
 "with '--alldeps', but not with '--exactdeps'), or with '--requires <REQ> --"
 "resolve'"
 msgstr ""
-"Možnost '--recursive' je treba uporabiti z '--whatrequires <REQ>' (izbirno z "
-"'--alldeps', vendar ne z '--exactdeps') ali z '--requires <REQ> -"
+"Možnost '--recursive' je treba uporabiti z '--whatrequires <REQ>' "
+"(izbirno z '--alldeps', vendar ne z '--exactdeps') ali z '--requires <REQ> "
+"--resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
 msgid "argument {} requires --whatrequires or --whatdepends option"
@@ -2733,9 +2736,9 @@ msgid ""
 "enables {prog}'s obsoletes processing logic for upgrade or display "
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
-"omogoča logiko obdelave zastarelih elementov {prog} za nadgradnjo ali "
-"zmožnosti prikaza, ki jih paket zastari za informacije, seznam in ponovno "
-"poizvedbo"
+"omogoča logiko obdelave zastarelih elementov programa {prog} za nadgradnjo "
+"ali prikaz zmogljivosti, ki jih paket zastara za informacije, sezname in "
+"ponovne poizvedbe"
 
 #: dnf/cli/option_parser.py:253
 msgid "debugging output level for rpm"
@@ -2762,7 +2765,10 @@ msgid ""
 "command. Accepts an id, a comma-separated list of ids, or a glob of ids. "
 "This option can be specified multiple times, but is mutually exclusive with "
 "`--repo`."
-msgstr "Začasno onemogoči aktivne repozitorije za namen trenutnega ukaza dnf."
+msgstr ""
+"Začasno onemogoči aktivne repozitorije za namene trenutnega ukaza dnf. "
+"Sprejema ID, seznam ID-jev, ločen z vejicami, ali glob ID-jev. To možnost je "
+"mogoče določiti večkrat, vendar se medsebojno izključuje z `--repo`."
 
 #: dnf/cli/option_parser.py:277
 msgid ""
@@ -3194,7 +3200,7 @@ msgstr "Namestitev"
 #: dnf/cli/output.py:1052
 msgctxt "summary"
 msgid "Upgrading"
-msgstr "Nadgradnja"
+msgstr "Nadgrajevanje"
 
 #. TRANSLATORS: This is for a list of packages to be reinstalled.
 #: dnf/cli/output.py:1054
@@ -3720,7 +3726,7 @@ msgstr "Napaka pri razčlenjevanju '%s': %s"
 #: dnf/conf/config.py:150
 #, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr "Neveljavna konfiguracijska vrednost: %s=%s v %s;"
+msgstr "Neveljavna konfiguracijska vrednost: %s=%s v %s; %s"
 
 #: dnf/conf/config.py:193
 msgid "Cannot set \"{}\" to \"{}\": {}"
@@ -4255,7 +4261,7 @@ msgstr "Brisanje"
 #: dnf/transaction.py:91
 msgctxt "currently"
 msgid "Upgrading"
-msgstr "Nadgradnja"
+msgstr "Nadgrajevanje"
 
 #: dnf/transaction.py:95
 msgid "Verifying"
@@ -4392,7 +4398,7 @@ msgid ""
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
 "Neveljavna vrednost \"{group_type}\" za environments.groups.group_type, "
-"podprt je samo \"obvezno\" ali \"izbirno\"."
+"podprt je samo \"mandatory\" ali \"optional\"."
 
 #: dnf/transaction_sr.py:473
 #, python-brace-format
