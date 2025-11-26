@@ -18,16 +18,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-11-26 02:23+0000\n"
-"PO-Revision-Date: 2025-06-14 12:07+0000\n"
-"Last-Translator: Joan Aymà <joan@ayma.cat>\n"
-"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/dnf-"
-"master/ca/>\n"
+"PO-Revision-Date: 2025-11-26 10:08+0000\n"
+"Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
+"Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/"
+"dnf-master/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.14.3\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -700,12 +700,17 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Aquesta operació modificaria els següents camins, possiblement introduint "
+"incoherències quan es descarta la superposició transitòria a /usr. Vegeu "
+"l'opció de configuració usrdriftprotectedpaths per a més informació."
 
 #: dnf/cli/cli.py:265
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"S'ha interromput l'operació. Passeu --setopt.usrdriftprotectedpaths. per a "
+"desactivar aquesta comprovació i continuar de totes maneres."
 
 #: dnf/cli/cli.py:270
 msgid "Transient transactions are only supported on bootc systems."
@@ -1639,6 +1644,8 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
+"Interactua amb els mòduls. AVÍS: la modularitat és obsoleta, i la "
+"funcionalitat s'eliminarà en un futur llançament de DNF5."
 
 #: dnf/cli/commands/module.py:364
 msgid "show only enabled modules"
@@ -1669,6 +1676,8 @@ msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
 msgstr ""
+"AVÍS: la modularitat és obsoleta, i la funcionalitat s'eliminarà en un futur "
+"llançament de DNF5."
 
 #: dnf/cli/commands/module.py:411
 msgid "{} {} {}: too few arguments"
@@ -2810,14 +2819,18 @@ msgid ""
 "enable just specific repositories by an id or a glob, can be specified "
 "multiple times"
 msgstr ""
+"habilita només repositoris específics per un ID o un glob, es pot "
+"especificar diverses vegades"
 
 #: dnf/cli/option_parser.py:282
 msgid "enable repos with config-manager command (automatically saves)"
 msgstr ""
+"habilita els repositoris amb l'ordre config-manager (desa automàticament)"
 
 #: dnf/cli/option_parser.py:286
 msgid "disable repos with config-manager command (automatically saves)"
 msgstr ""
+"inhabilita els repositoris amb l'ordre config-manager (desa automàticament)"
 
 #: dnf/cli/option_parser.py:290
 msgid "exclude packages by name or glob"
@@ -2832,6 +2845,8 @@ msgid ""
 "label and path to an additional repository to use (same path as in a "
 "baseurl), can be specified multiple times."
 msgstr ""
+"etiqueta i camí a un repositori addicional a utilitzar "
+"(el mateix camí que en un URL base), es pot especificar diverses vegades."
 
 #: dnf/cli/option_parser.py:304
 msgid "disable removal of dependencies that are no longer used"
@@ -2840,6 +2855,7 @@ msgstr "inhabilita l'eliminació de les dependències que ja no es necessiten"
 #: dnf/cli/option_parser.py:307
 msgid "disable gpg signature checking (if RPM policy allows)"
 msgstr ""
+"inhabilita la comprovació de signatura gpg (si la política RPM ho permet)"
 
 #: dnf/cli/option_parser.py:309
 msgid "control whether color is used"
@@ -2867,7 +2883,7 @@ msgstr "baixa només els paquets"
 
 #: dnf/cli/option_parser.py:327
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Usa una superposició transitòria que es restablirà en reiniciar"
 
 #: dnf/cli/option_parser.py:329
 msgid "add a comment to transaction"
@@ -2927,8 +2943,7 @@ msgid "List of Plugin Commands:"
 msgstr "Llistat d'ordres dels connectors:"
 
 #: dnf/cli/option_parser.py:423
-#, fuzzy, python-format
-#| msgid "No match for argument: %s"
+#, python-format
 msgid "Cannot encode argument '%s': %s"
 msgstr "No hi ha cap coincidència per a l'argument: %s"
 
@@ -2938,7 +2953,7 @@ msgstr "No hi ha cap coincidència per a l'argument: %s"
 #: dnf/cli/output.py:458
 msgctxt "short"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:464
@@ -2952,13 +2967,13 @@ msgstr "Època"
 #: dnf/cli/output.py:465 dnf/cli/output.py:1246
 msgctxt "short"
 msgid "Version"
-msgstr ""
+msgstr "Versió"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:466 dnf/cli/output.py:1248
 msgctxt "long"
 msgid "Version"
-msgstr ""
+msgstr "Versió"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:469
@@ -2970,20 +2985,20 @@ msgstr "Llançament"
 #: dnf/cli/output.py:470 dnf/cli/output.py:1237
 msgctxt "short"
 msgid "Arch"
-msgstr ""
+msgstr "Arc"
 
 #. Translators: This is the full word 'Architecture', used when
 #. we have enough space.
 #: dnf/cli/output.py:471 dnf/cli/output.py:1240
 msgctxt "long"
 msgid "Architecture"
-msgstr ""
+msgstr "Arquitectura"
 
 #. Translators: This is the full (unabbreviated) term 'Size'.
 #: dnf/cli/output.py:473 dnf/cli/output.py:1263
 msgctxt "long"
 msgid "Size"
-msgstr ""
+msgstr "Mida"
 
 #. Translators: This is the short version of 'Size'. It should
 #. not be longer than 5 characters. If the term 'Size' in your
@@ -2992,7 +3007,7 @@ msgstr ""
 #: dnf/cli/output.py:473 dnf/cli/output.py:1261
 msgctxt "short"
 msgid "Size"
-msgstr ""
+msgstr "Mida"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:477
@@ -3004,14 +3019,14 @@ msgstr "Origen"
 #: dnf/cli/output.py:478 dnf/cli/output.py:1252
 msgctxt "short"
 msgid "Repo"
-msgstr ""
+msgstr "Repo"
 
 #. Translators: This is the full word 'Repository', used when
 #. we have enough space.
 #: dnf/cli/output.py:479 dnf/cli/output.py:1255
 msgctxt "long"
 msgid "Repository"
-msgstr ""
+msgstr "Repositori"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:486
@@ -3047,7 +3062,7 @@ msgstr "Instal·lat per"
 #: dnf/cli/output.py:511
 msgctxt "short"
 msgid "Summary"
-msgstr ""
+msgstr "Resum"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:517
@@ -3060,7 +3075,7 @@ msgstr "Llicència"
 #: dnf/cli/output.py:521
 msgctxt "short"
 msgid "Description"
-msgstr ""
+msgstr "Descripció"
 
 #: dnf/cli/output.py:649
 msgid "y"
@@ -3281,23 +3296,23 @@ msgstr "S'instal·len els perfils de mòduls"
 
 #: dnf/cli/output.py:1097
 msgid "Disabling module profiles"
-msgstr ""
+msgstr "S'estan desactivant els perfils dels mòduls"
 
 #: dnf/cli/output.py:1106
 msgid "Enabling module streams"
-msgstr ""
+msgstr "Habilitant els fluxos de mòduls"
 
 #: dnf/cli/output.py:1114
 msgid "Switching module streams"
-msgstr ""
+msgstr "Commutació de fluxos de mòduls"
 
 #: dnf/cli/output.py:1122
 msgid "Disabling modules"
-msgstr ""
+msgstr "S'estan desactivant els mòduls"
 
 #: dnf/cli/output.py:1130
 msgid "Resetting modules"
-msgstr ""
+msgstr "S'estan reiniciant els mòduls"
 
 #: dnf/cli/output.py:1141
 msgid "Installing Environment Groups"
@@ -3309,7 +3324,7 @@ msgstr "S'actualitzen els grups d'entorn"
 
 #: dnf/cli/output.py:1155
 msgid "Removing Environment Groups"
-msgstr ""
+msgstr "Eliminant grups d'entorn"
 
 #: dnf/cli/output.py:1162
 msgid "Installing Groups"
@@ -3321,7 +3336,7 @@ msgstr "S'actualitzen els grups"
 
 #: dnf/cli/output.py:1176
 msgid "Removing Groups"
-msgstr ""
+msgstr "Eliminant grups"
 
 #: dnf/cli/output.py:1192
 #, python-format
@@ -3348,13 +3363,13 @@ msgstr " o part d'un grup"
 #: dnf/cli/output.py:1231
 msgctxt "short"
 msgid "Package"
-msgstr ""
+msgstr "Paquet"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
 #: dnf/cli/output.py:1233
 msgctxt "long"
 msgid "Package"
-msgstr ""
+msgstr "Paquet"
 
 #: dnf/cli/output.py:1282
 msgid "replacing"
@@ -3448,7 +3463,7 @@ msgstr "Alterats"
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1555
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/output.py:1583
 msgid "No transactions"
@@ -3456,7 +3471,7 @@ msgstr "Sense transaccions"
 
 #: dnf/cli/output.py:1584 dnf/cli/output.py:1600
 msgid "Failed history info"
-msgstr ""
+msgstr "No s'ha pogut obtenir la informació de l'historial"
 
 #: dnf/cli/output.py:1599
 msgid "No transaction ID, or package, given"
@@ -3553,7 +3568,7 @@ msgstr "Error:"
 
 #: dnf/cli/output.py:1768 dnf/cli/output.py:1770
 msgid "Releasever     :"
-msgstr ""
+msgstr "Llançador:"
 
 #: dnf/cli/output.py:1775 dnf/cli/output.py:1777
 msgid "Command Line   :"
@@ -3716,28 +3731,26 @@ msgstr "    Estat: %s"
 #: dnf/comps.py:195 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr ""
+msgstr "El mòdul o el grup '%s' no està instal·lat."
 
 #: dnf/comps.py:197 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr ""
+msgstr "El mòdul o el grup «%s» no estan disponibles."
 
 #: dnf/comps.py:199
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr ""
+msgstr "El mòdul o el grup '%s' no existeix."
 
 #: dnf/comps.py:598
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' does not exist."
 msgstr "L'entorn «%s» no està instal·lat."
 
 #: dnf/comps.py:621 dnf/transaction_sr.py:486 dnf/transaction_sr.py:496
 #: dnf/transaction_sr.py:506
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not installed."
 msgstr "L'entorn «%s» no està instal·lat."
 
@@ -3749,11 +3762,10 @@ msgstr "L'entorn «%s» no està instal·lat."
 #: dnf/comps.py:640
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "L'entorn «%s» no està disponible."
 
 #: dnf/comps.py:672
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' does not exist."
 msgstr "Group_id «%s» no existeix."
 
@@ -3765,24 +3777,25 @@ msgstr ""
 "«%s»: %s"
 
 #: dnf/conf/config.py:150
-#, fuzzy, python-format
-#| msgid "Unknown configuration value: %s=%s in %s; %s"
+#, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Valor de configuració desconegut: %s = %s a %s; %s"
 
 #: dnf/conf/config.py:193
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "No es pot establir \"{}\" a \"{}\": {}"
 
 #: dnf/conf/config.py:243
 msgid "Could not set cachedir: {}"
-msgstr ""
+msgstr "No s'ha pogut establir el directori de memòria cau: {}"
 
 #: dnf/conf/config.py:293
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
 msgstr ""
+"No s'ha pogut baixar l'URL del fitxer de configuració «{}»:\n"
+"  {}"
 
 #: dnf/conf/config.py:373 dnf/conf/config.py:409
 #, python-format
@@ -3793,11 +3806,12 @@ msgstr "Opció de configuració desconeguda: %s = %s"
 #, python-format
 msgid "Error parsing --setopt with key '%s', value '%s': %s"
 msgstr ""
+"S'ha produït un error en analitzar --setopt amb la clau «%s», valor «%s»: %s"
 
 #: dnf/conf/config.py:398
 #, python-format
 msgid "Main config did not have a %s attr. before setopt"
-msgstr ""
+msgstr "La configuració principal no té un attr %s. abans de setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
 msgid "Incorrect or unknown \"{}\": {}"
@@ -3807,11 +3821,13 @@ msgstr "Incorrecte o desconegut \"{}\": {}"
 #, python-format
 msgid "Error parsing --setopt with key '%s.%s', value '%s': %s"
 msgstr ""
+"S'ha produït un error en analitzar --setopt amb la clau «%s.%s», el valor "
+"«%s»: %s"
 
 #: dnf/conf/config.py:570
 #, python-format
 msgid "Repo %s did not have a %s attr. before setopt"
-msgstr ""
+msgstr "El dipòsit %s no té un attr %s. abans de setopt"
 
 #: dnf/conf/read.py:59
 #, python-format
@@ -3820,36 +3836,40 @@ msgstr "Advertència: error en carregar «%s» i s'ignora."
 
 #: dnf/conf/read.py:71
 msgid "Bad id for repo: {} ({}), byte = {} {}"
-msgstr ""
+msgstr "ID incorrecte per al dipòsit: {} ({}), byte ), {} {}"
 
 #: dnf/conf/read.py:75
 msgid "Bad id for repo: {}, byte = {} {}"
-msgstr ""
+msgstr "ID incorrecte per al dipòsit: {}, byte , {} {}"
 
 #: dnf/conf/read.py:83
 msgid "Repository '{}' ({}): Error parsing config: {}"
-msgstr ""
+msgstr "Repositori '{}' ({}): Error en analitzar la configuració: {}"
 
 #: dnf/conf/read.py:86
 msgid "Repository '{}': Error parsing config: {}"
-msgstr ""
+msgstr "Repositori '{}': S'ha produït un error en analitzar la configuració: {}"
 
 #: dnf/conf/read.py:92
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
+"Al repositori «{}» ({}) li manca el nom a la configuració, utilitzant "
+"l'identificador."
 
 #: dnf/conf/read.py:95
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
+"Al repositori «{}» li manca el nom a la configuració, utilitzant "
+"l'identificador."
 
 #: dnf/conf/read.py:112
 msgid "Parsing file \"{}\" failed: {}"
-msgstr ""
+msgstr "Ha fallat l'anàlisi del fitxer \"{}\": {}"
 
 #: dnf/conf/substitutions.py:85
 #, python-brace-format
 msgid "Error when parsing a variable from file '{0}': {1}"
-msgstr ""
+msgstr "S'ha produït un error en analitzar una variable del fitxer '{0}': {1}"
 
 #: dnf/crypto.py:65
 #, python-format
@@ -3863,31 +3883,33 @@ msgstr "dipòsit %s: s'ha importat la clau 0x%s."
 
 #: dnf/crypto.py:102
 msgid "Verified using DNS record with DNSSEC signature."
-msgstr ""
+msgstr "Verificat utilitzant el registre DNS amb signatura DNSSEC."
 
 #: dnf/crypto.py:104
 msgid "NOT verified using DNS record."
-msgstr ""
+msgstr "NO S'HA VERIFICAT USANT el registre DNS."
 
 #: dnf/crypto.py:134
 #, python-format
 msgid "retrieving repo key for %s unencrypted from %s"
-msgstr ""
+msgstr "s'està recuperant la clau de dipòsit per a %s sense encriptar des de %s"
 
 #: dnf/db/group.py:307
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
 msgstr ""
+"No hi ha metadades modulars disponibles per al paquet modular '{}', no es "
+"pot instal·lar al sistema"
 
 #: dnf/db/group.py:358
 #, python-format
 msgid "An rpm exception occurred: %s"
-msgstr ""
+msgstr "S'ha produït una excepció rpm: %s"
 
 #: dnf/db/group.py:360
 msgid "No available modular metadata for modular package"
-msgstr ""
+msgstr "No hi ha metadades modulars disponibles per al paquet modular"
 
 #: dnf/db/group.py:394
 #, python-format
@@ -3898,6 +3920,8 @@ msgstr "No instal·larà un paquet rpm de les fonts (%s)."
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
+"L'opció de configuració «gpgkeydnsverification» requereix «python3-unbound» "
+"({})"
 
 #: dnf/dnssec.py:246
 msgid "DNSSEC extension: Key for user "
@@ -3905,7 +3929,7 @@ msgstr "extensió DNSSEC: clau per a l'usuari "
 
 #: dnf/dnssec.py:248
 msgid "is valid."
-msgstr ""
+msgstr "és vàlid."
 
 #: dnf/dnssec.py:250
 msgid "has unknown status."
@@ -3920,10 +3944,12 @@ msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
 msgstr ""
+"S'està eliminant el paquet de claus {} d'una validació perquè no està "
+"vinculat a cap adreça de correu electrònic"
 
 #: dnf/dnssec.py:308
 msgid "Testing already imported keys for their validity."
-msgstr ""
+msgstr "S'estan provant les claus ja importades per a la seva validesa."
 
 #: dnf/drpm.py:61 dnf/repo.py:267
 #, python-format
@@ -3965,12 +3991,14 @@ msgstr "mòduls o grups trencats: "
 #: dnf/exceptions.py:129
 msgid "Modular dependency problem with Defaults:"
 msgid_plural "Modular dependency problems with Defaults:"
-msgstr[0] ""
+msgstr[0] "Problema de dependència modular amb els valors predeterminats:"
+msgstr[1] "Problemes de dependència modulars amb els valors predeterminats:"
 
 #: dnf/exceptions.py:134 dnf/module/module_base.py:856
 msgid "Modular dependency problem:"
 msgid_plural "Modular dependency problems:"
-msgstr[0] ""
+msgstr[0] "Problema de dependència modular:"
+msgstr[1] "Problemes de dependència modular:"
 
 #: dnf/lock.py:99
 #, python-format
@@ -3979,10 +4007,14 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"S'ha trobat un fitxer de bloqueig mal format: %s.\n"
+"Assegureu-vos que no s'estigui executant cap altre procés dnf/yum i suprimiu "
+"manualment el fitxer de bloqueig o executeu systemd-tmpfiles --remove "
+"dnf.conf."
 
 #: dnf/module/__init__.py:25
 msgid "Enabling different stream for '{}'."
-msgstr ""
+msgstr "S'està activant un flux diferent per a «{}»."
 
 #: dnf/module/__init__.py:26
 msgid "Nothing to show."
@@ -3999,50 +4031,48 @@ msgstr "Mòduls habilitats: {}."
 #: dnf/module/__init__.py:29
 msgid "No profile specified for '{}', please specify profile."
 msgstr ""
+"No s'ha especificat cap perfil per a «{}», si us plau especifiqueu el perfil."
 
 #: dnf/module/exceptions.py:26
 msgid "No such module: {}"
-msgstr ""
+msgstr "No existeix el mòdul: {}"
 
 #: dnf/module/exceptions.py:32
 msgid "No such stream: {}"
-msgstr ""
+msgstr "No existeix aquest flux: {}"
 
 #: dnf/module/exceptions.py:38
-#, fuzzy
-#| msgid "Enabled modules: {}."
 msgid "No enabled stream for module: {}"
 msgstr "Mòduls habilitats: {}."
 
 #: dnf/module/exceptions.py:45
 msgid "Cannot enable more streams from module '{}' at the same time"
-msgstr ""
+msgstr "No es poden habilitar més fluxos del mòdul '{}' al mateix temps"
 
 #: dnf/module/exceptions.py:51
 msgid "Different stream enabled for module: {}"
-msgstr ""
+msgstr "Diferent flux habilitat per al mòdul: {}"
 
 #: dnf/module/exceptions.py:57
 msgid "No such profile: {}"
-msgstr ""
+msgstr "No existeix aquest perfil: {}"
 
 #: dnf/module/exceptions.py:63
 msgid "Specified profile not installed for {}"
-msgstr ""
+msgstr "El perfil especificat no està instal·lat per a {}"
 
 #: dnf/module/exceptions.py:69
 msgid "No stream specified for '{}', please specify stream"
 msgstr ""
+"No s'ha especificat cap flux per a «{}», si us plau especifiqueu el flux"
 
 #: dnf/module/exceptions.py:81
-#, fuzzy
-#| msgid "No repositories available"
 msgid "No such profile: {}. No profiles available"
 msgstr "No hi ha disponible cap dipòsit"
 
 #: dnf/module/exceptions.py:87
 msgid "No profile to remove for '{}'"
-msgstr ""
+msgstr "No hi ha cap perfil a eliminar per a «{}»"
 
 #: dnf/module/module_base.py:34
 msgid ""
@@ -4050,6 +4080,9 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 msgstr ""
+"\n"
+"\n"
+"Consell: [d]efault, [e]nabled, [x]disabled, [i]nstalled"
 
 #: dnf/module/module_base.py:35
 msgid ""
@@ -4057,16 +4090,21 @@ msgid ""
 "\n"
 "Hint: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 msgstr ""
+"\n"
+"\n"
+"Consell: [d]efault, [e]nabled, [x]disabled, [i]nstalled, [a]ctive"
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
 msgid "Ignoring unnecessary profile: '{}/{}'"
-msgstr ""
+msgstr "S'ignora el perfil innecessari: «{}/{}»"
 
 #: dnf/module/module_base.py:85
 #, python-brace-format
 msgid "All matches for argument '{0}' in module '{1}:{2}' are not active"
 msgstr ""
+"Totes les coincidències per a l'argument «{0}» al mòdul «{1}:{2}» no estan "
+"actives"
 
 #: dnf/module/module_base.py:93 dnf/module/module_base.py:203
 #, python-brace-format
@@ -4078,22 +4116,25 @@ msgstr ""
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
+"No s'ha pogut fer coincidir el perfil de l'argument {}. Perfils disponibles "
+"per a «{}:{}»: {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
 msgid "Unable to match profile for argument {}"
-msgstr ""
+msgstr "No s'ha pogut fer coincidir el perfil de l'argument {}"
 
 #: dnf/module/module_base.py:119
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
+"No hi ha perfils predeterminats per al mòdul {}:{}. Perfils disponibles: {}"
 
 #: dnf/module/module_base.py:123
 msgid "No profiles for module {}:{}"
-msgstr ""
+msgstr "No hi ha perfils per al mòdul {}:{}"
 
 #: dnf/module/module_base.py:130
 msgid "Default profile {} not available in module {}:{}"
-msgstr ""
+msgstr "El perfil predeterminat {} no està disponible al mòdul {}:{}"
 
 #: dnf/module/module_base.py:143 dnf/module/module_base.py:246
 msgid "Installing module from Fail-Safe repository is not allowed"
@@ -4103,15 +4144,18 @@ msgstr "No es permet la instal·lació del mòdul des del repositori Fail-Safe"
 #, python-brace-format
 msgid "No active matches for argument '{0}' in module '{1}:{2}'"
 msgstr ""
+"No hi ha coincidències actives per a l'argument '{0}' al mòdul '{1}:{2}'"
 
 #: dnf/module/module_base.py:227
 #, python-brace-format
 msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr ""
+"El perfil instal·lat '{0}' no està disponible al mòdul '{1}' del flux '{2}'"
 
 #: dnf/module/module_base.py:266
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
+"No hi ha paquets disponibles per a la distribució per al nom del paquet '{}'"
 
 #: dnf/module/module_base.py:309 dnf/module/module_base.py:460
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
@@ -4129,7 +4173,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
 msgid "Unable to match profile in argument {}"
-msgstr ""
+msgstr "No es pot coincidir amb el perfil a l'argument {}"
 
 #: dnf/module/module_base.py:347
 msgid "Upgrading module from Fail-Safe repository is not allowed"
@@ -4141,11 +4185,15 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
+"L'argument '{argument}' coincideix amb {streamcount} fluxos ('{streams}') "
+"del mòdul '{module}', però cap dels fluxos està habilitat o predeterminat"
 
 #: dnf/module/module_base.py:508
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
+"Només es requereix el nom del mòdul. S'ignora la informació no necessària a "
+"l'argument: «{}»"
 
 #: dnf/module/module_base.py:843
 msgid "No match for package {}"
@@ -4160,12 +4208,12 @@ msgstr "%s és un fitxer buit"
 #: dnf/persistor.py:89
 #, python-format
 msgid "Failed to load expired repos cache: %s"
-msgstr ""
+msgstr "No s'ha pogut carregar la memòria cau de repositoris caducada: %s"
 
 #: dnf/persistor.py:97
 #, python-format
 msgid "Failed to store expired repos cache: %s"
-msgstr ""
+msgstr "No s'ha pogut emmagatzemar la memòria cau de repositoris caducada: %s"
 
 #: dnf/persistor.py:104
 msgid "Failed storing last makecache time."
@@ -4178,7 +4226,7 @@ msgstr "No s'ha pogut determinar l'hora de l'últim makecache."
 #: dnf/plugin.py:63
 #, python-format
 msgid "Parsing file failed: %s"
-msgstr ""
+msgstr "Ha fallat l'anàlisi del fitxer: %s"
 
 #: dnf/plugin.py:144
 #, python-format
@@ -4188,20 +4236,24 @@ msgstr "Connectors carregats: %s"
 #: dnf/plugin.py:216
 #, python-format
 msgid "Failed loading plugin \"%s\": %s"
-msgstr ""
+msgstr "No s'ha pogut carregar el connector «%s»: %s"
 
 #: dnf/plugin.py:248
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
+"No s'han trobat coincidències per als següents patrons d'habilitació de "
+"connectors: {}"
 
 #: dnf/plugin.py:252
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
+"No s'han trobat coincidències per als següents patrons de desactivació de "
+"connectors: {}"
 
 #: dnf/repo.py:84
 #, python-format
 msgid "no matching payload factory for %s"
-msgstr ""
+msgstr "no hi ha cap fàbrica de càrrega útil corresponent per a %s"
 
 #. pinging mirrors, this might take a while
 #: dnf/repo.py:346
@@ -4222,29 +4274,31 @@ msgstr "Es va afegir el dipòsit %s de %s"
 #: dnf/rpm/miscutils.py:31
 #, python-format
 msgid "Using rpmkeys executable at %s to verify signatures"
-msgstr ""
+msgstr "Utilitzant l'executable rpmkeys a %s per verificar signatures"
 
 #: dnf/rpm/miscutils.py:65
 msgid "Cannot find rpmkeys executable to verify signatures."
-msgstr ""
+msgstr "No s'ha pogut trobar l'executable rpmkeys per a verificar signatures."
 
 #: dnf/rpm/transaction.py:70
 msgid "The openDB() function cannot open rpm database."
-msgstr ""
+msgstr "La funció openDB() no pot obrir la base de dades rpm."
 
 #: dnf/rpm/transaction.py:75
 msgid "The dbCookie() function did not return cookie of rpm database."
-msgstr ""
+msgstr "La funció dbCookie() no retorna la galeta de la base de dades rpm."
 
 #: dnf/rpm/transaction.py:135
 msgid "Errors occurred during test transaction."
-msgstr ""
+msgstr "S'han produït errors durant l'operació de prova."
 
 #: dnf/sack.py:46
 msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
+"allowvendorchange està desactivat. Aquesta opció actualment no està admesa "
+"per a les ordres de requalificació i sincronització"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:79
@@ -4298,22 +4352,22 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"S'han produït els següents problemes en reproduir la transacció des del "
+"fitxer \"{filename}\":"
 
 #: dnf/transaction_sr.py:67
-#, fuzzy
-#| msgid "Errors occurred during transaction."
 msgid "The following problems occurred while running a transaction:"
 msgstr "S'han produït errors durant la transacció."
 
 #: dnf/transaction_sr.py:88
 #, python-brace-format
 msgid "Invalid major version \"{major}\", number expected."
-msgstr ""
+msgstr "Versió major no vàlida \"{major}\", s'esperava un nombre."
 
 #: dnf/transaction_sr.py:96
 #, python-brace-format
 msgid "Invalid minor version \"{minor}\", number expected."
-msgstr ""
+msgstr "Versió menor no vàlida \"{minor}\", s'esperava un número."
 
 #: dnf/transaction_sr.py:102
 #, python-brace-format
@@ -4321,46 +4375,51 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
+"La versió major no és compatible \"{major}\", la versió major suportada és "
+"\"{majorsupp}\"."
 
 #: dnf/transaction_sr.py:223
 msgid ""
 "Conflicting TransactionReplay arguments have been specified: filename, data"
 msgstr ""
+"S'han especificat arguments conflictius de TransactionReplay: nom de fitxer, "
+"dades"
 
 #: dnf/transaction_sr.py:264
 #, python-brace-format
 msgid "Unexpected type of \"{id}\", {exp} expected."
-msgstr ""
+msgstr "Tipus inesperat de «{id}», s'esperava {exp}."
 
 #: dnf/transaction_sr.py:270
 #, python-brace-format
 msgid "Missing key \"{key}\"."
-msgstr ""
+msgstr "Falta la clau \"{key}\"."
 
 #: dnf/transaction_sr.py:284
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an rpm."
-msgstr ""
+msgstr "Falta la clau de l'objecte \"{key}\" en un rpm."
 
 #: dnf/transaction_sr.py:288
 #, python-brace-format
 msgid ""
 "Unexpected value of package reason \"{reason}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperat del motiu del paquet \"{reason}\" per a rpm nevra \"{nevra}\""
+"."
 
 #: dnf/transaction_sr.py:296
 #, python-brace-format
 msgid "Cannot parse NEVRA for package \"{nevra}\"."
-msgstr ""
+msgstr "No es pot analitzar NEVRA per al paquet «{nevra}»."
 
 #: dnf/transaction_sr.py:320
 #, python-brace-format
 msgid "Cannot find rpm nevra \"{nevra}\"."
-msgstr ""
+msgstr "No es pot trobar rpm nevra \"{nevra}\"."
 
 #: dnf/transaction_sr.py:335
-#, fuzzy, python-brace-format
-#| msgid "Package %s is already installed."
+#, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
 msgstr "El paquet %s ja està instal·lat."
 
@@ -4370,39 +4429,41 @@ msgid ""
 "Package nevra \"{nevra}\" not available in repositories for action \"{action}"
 "\"."
 msgstr ""
+"El paquet nevra \"{nevra}\" no està disponible als repositoris per a l'acció "
+"\"{action}\"."
 
 #: dnf/transaction_sr.py:355
 #, python-brace-format
 msgid "Package nevra \"{nevra}\" not installed for action \"{action}\"."
 msgstr ""
+"El paquet nevra \"{nevra}\" no està instal·lat per a l'acció \"{action}\"."
 
 #: dnf/transaction_sr.py:369
 #, python-brace-format
 msgid ""
 "Unexpected value of package action \"{action}\" for rpm nevra \"{nevra}\"."
 msgstr ""
+"Valor inesperat de l'acció del paquet \"{action}\" per a rpm nevra "
+"\"{nevra}\"."
 
 #: dnf/transaction_sr.py:376
-#, fuzzy, python-format
-#| msgid "Group_id '%s' does not exist."
+#, python-format
 msgid "Group id '%s' is not available."
 msgstr "Group_id «%s» no existeix."
 
 #: dnf/transaction_sr.py:397
 #, python-brace-format
 msgid "Missing object key \"{key}\" in groups.packages."
-msgstr ""
+msgstr "Falta la clau de l'objecte \"{key}\" a groups.packages."
 
 #: dnf/transaction_sr.py:410 dnf/transaction_sr.py:420
 #: dnf/transaction_sr.py:430
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Group id '%s' is not installed."
 msgstr "L'entorn «%s» no està instal·lat."
 
 #: dnf/transaction_sr.py:441
-#, fuzzy, python-format
-#| msgid "Environment '%s' is not installed."
+#, python-format
 msgid "Environment id '%s' is not available."
 msgstr "L'entorn «%s» no està instal·lat."
 
@@ -4412,21 +4473,24 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
+"El valor \"{grouptype}\" d'entorns.groups.grouptype no és vàlid, només "
+"s'admet \"mandatori\" o \"opcional\"."
 
 #: dnf/transaction_sr.py:473
 #, python-brace-format
 msgid "Missing object key \"{key}\" in environments.groups."
-msgstr ""
+msgstr "Falta la clau de l'objecte \"{key}\" a environments.groups."
 
 #: dnf/transaction_sr.py:565
 #, python-brace-format
 msgid "Unexpected value of group action \"{action}\" for group \"{group}\"."
 msgstr ""
+"Valor inesperat de l'acció de grup \"{action}\" per al grup \"{group}\"."
 
 #: dnf/transaction_sr.py:570
 #, python-brace-format
 msgid "Missing object key \"{key}\" in a group."
-msgstr ""
+msgstr "Falta la clau de l'objecte \"{key}\" en un grup."
 
 #: dnf/transaction_sr.py:598
 #, python-brace-format
@@ -4434,11 +4498,12 @@ msgid ""
 "Unexpected value of environment action \"{action}\" for environment \"{env}"
 "\"."
 msgstr ""
+"Valor inesperat de l'acció d'entorn \"{action}\" per a l'entorn \"{env}\"."
 
 #: dnf/transaction_sr.py:603
 #, python-brace-format
 msgid "Missing object key \"{key}\" in an environment."
-msgstr ""
+msgstr "Falta la clau de l'objecte \"{key}\" en un entorn."
 
 #: dnf/transaction_sr.py:642
 #, python-brace-format
@@ -4446,6 +4511,8 @@ msgid ""
 "Package nevra \"{nevra}\", which is not present in the transaction file, was "
 "pulled into the transaction."
 msgstr ""
+"El paquet nevra \"{nevra}\", que no està present al fitxer de transacció, "
+"s'ha introduït a la transacció."
 
 #: dnf/util.py:418 dnf/util.py:420
 msgid "Problem"
@@ -4453,11 +4520,11 @@ msgstr "Problema"
 
 #: dnf/util.py:471
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "No s'ha trobat l'element de transacció per a la clau: {}"
 
 #: dnf/util.py:481
 msgid "TransactionSWDBItem not found for key: {}"
-msgstr ""
+msgstr "No s'ha trobat TransactionSWDBItem per a la clau: {}"
 
 #: dnf/util.py:484
 msgid "Errors occurred during transaction."
@@ -4469,7 +4536,7 @@ msgstr "Reinstal·lat"
 
 #: dnf/util.py:621
 msgid "Skipped"
-msgstr ""
+msgstr "Omet"
 
 #: dnf/util.py:622
 msgid "Removed"
@@ -4481,39 +4548,37 @@ msgstr "Fallat"
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
 #: dnf/util.py:634
-#, fuzzy
-#| msgid "<unset>"
 msgid "<name-unset>"
 msgstr "<no establert>"
 
 #: dnf/util.py:651
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "No s'està executant en un sistema d'arrencada."
 
 #: dnf/util.py:704
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: ordre no trobada."
 
 #: dnf/util.py:706
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "No s'ha pogut muntar %s com a lectura/escriptura: %s"
 
 #: dnf/util.py:715
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: ordre no trobada. És un sistema d'arrencada?"
 
 #: dnf/util.py:717
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "No s'ha pogut desbloquejar el sistema: %s"
 
 #: dnf/util.py:731
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Estat desbloquejat del bootc no gestionat: %s"
 
 #~ msgid "Interact with Modules."
 #~ msgstr "Interactua amb els mòduls."
