@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-03 02:25+0000\n"
+"POT-Creation-Date: 2025-12-04 02:26+0000\n"
 "PO-Revision-Date: 2025-10-01 20:35+0000\n"
 "Last-Translator: SEUNGHYUN KIM <moonudev@gmail.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -87,7 +87,7 @@ msgstr "알 수없는 설정: %s=%s in %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "알 수없는 옵션 : %s = %s in %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:373
+#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG 확인 실패"
 
@@ -108,7 +108,7 @@ msgstr[0] "{} 초 동안 절전합니다"
 msgid "System is off-line."
 msgstr "네트웍 끊김."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:324
+#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "연결 실패"
 
@@ -336,7 +336,7 @@ msgstr "그룹 꾸러미 \"{}\"에 일치하는 항목이 없습니다"
 msgid "Adding packages from group '%s': %s"
 msgstr "'%s' 그룹에서 꾸러미 추가: %s"
 
-#: dnf/base.py:1842 dnf/cli/cli.py:281 dnf/cli/commands/__init__.py:439
+#: dnf/base.py:1842 dnf/cli/cli.py:283 dnf/cli/commands/__init__.py:439
 #: dnf/cli/commands/__init__.py:496 dnf/cli/commands/__init__.py:589
 #: dnf/cli/commands/__init__.py:638 dnf/cli/commands/install.py:84
 #: dnf/cli/commands/install.py:107 dnf/cli/commands/install.py:114
@@ -358,7 +358,7 @@ msgstr "%s 꾸러미가 설치되어 있지 않기 때문에 하향설치 할 �
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
 #: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
-#: dnf/cli/cli.py:485 dnf/cli/commands/__init__.py:422
+#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
 #: dnf/cli/commands/install.py:151 dnf/cli/commands/reinstall.py:69
@@ -415,7 +415,7 @@ msgstr "잘못된 형식: %s"
 msgid "No packages marked for removal."
 msgstr "제거 대상 꾸러미가 없습니다."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:496
+#: dnf/base.py:2409 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "%s 인수에 대한 꾸러미를 사용할 수 있지만 설치되어 있지 않습니다."
@@ -558,8 +558,8 @@ msgstr "\"%s\" 파일의 구문 분석에 실패했습니다 : %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "\"%s\" 파일을 읽을 수 없습니다: %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:874
-#: dnf/cli/cli.py:878 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
+#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "설정 오류: %s"
@@ -617,15 +617,15 @@ msgid ""
 "transaction."
 msgstr "{prog}는 꾸러미만 내려받기 하고, gpg 키를 설치하며 연결을 확인합니다."
 
-#: dnf/cli/cli.py:229
+#: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
 msgstr "지속적인 연결은 bootc 시스템에서 지원되지 않습니다."
 
-#: dnf/cli/cli.py:230 dnf/cli/cli.py:240 dnf/cli/cli.py:276
+#: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:278
 msgid "Operation aborted."
 msgstr "작업이 중지됩니다."
 
-#: dnf/cli/cli.py:237
+#: dnf/cli/cli.py:238
 msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
@@ -636,7 +636,7 @@ msgstr ""
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
-#: dnf/cli/cli.py:245
+#: dnf/cli/cli.py:246
 msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
@@ -646,7 +646,7 @@ msgstr ""
 "변경 사항은 여전히 지속된다는 점을 명심하고, 꾸러미는 일반적으로 이들 디렉토"
 "리에서 수정합니다."
 
-#: dnf/cli/cli.py:258
+#: dnf/cli/cli.py:260
 msgid ""
 "This operation would modify the following paths, possibly introducing "
 "inconsistencies when the transient overlay on /usr is discarded. See the "
@@ -656,7 +656,7 @@ msgstr ""
 "불일치가 나타 날 수 있습니다. 더 많은 정보를 위해 usr_drift_protected_paths "
 "구성 옵션을 참고하세요."
 
-#: dnf/cli/cli.py:265
+#: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
@@ -664,19 +664,19 @@ msgstr ""
 "동작이 중지되었습니다. --setopt=usr_drift_protected_paths= 를 통해 이와 같은 "
 "확인을 비활성하고 계속 진행하세요."
 
-#: dnf/cli/cli.py:270
+#: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
 msgstr "일시적인 연결은 bootc 시스템에서만 지원됩니다."
 
-#: dnf/cli/cli.py:286
+#: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
 msgstr "꾸러미 내려받기 중:"
 
-#: dnf/cli/cli.py:292
+#: dnf/cli/cli.py:294
 msgid "Error downloading packages:"
 msgstr "꾸러미 내려받기 중 오류 발생:"
 
-#: dnf/cli/cli.py:348
+#: dnf/cli/cli.py:350
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -684,7 +684,7 @@ msgstr ""
 "키를 자동으로 가져 오는 것을 거부합니다.\n"
 "동작을 무시하려면 \"-y\"를 사용하십시오."
 
-#: dnf/cli/cli.py:369
+#: dnf/cli/cli.py:371
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
@@ -694,57 +694,57 @@ msgstr ""
 "러그인은 'dnf-plugin-core' 꾸러미의 일부분으로 기본값에 의해 설치되지 않았습"
 "니다."
 
-#: dnf/cli/cli.py:405
+#: dnf/cli/cli.py:407
 msgid "Changelogs for {}"
 msgstr "{}의 변경 사항"
 
-#: dnf/cli/cli.py:438 dnf/cli/cli.py:579 dnf/cli/cli.py:585
+#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
 msgid "Obsoleting Packages"
 msgstr "더 이상 사용되지 않는 꾸러미"
 
-#: dnf/cli/cli.py:467
+#: dnf/cli/cli.py:469
 msgid "No packages marked for distribution synchronization."
 msgstr "배포 동기화가 필요한 꾸러미가 없습니다."
 
-#: dnf/cli/cli.py:493 dnf/cli/commands/group.py:395
+#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:395
 #, python-format
 msgid "No package %s available."
 msgstr "가용한 꾸러미 %s가 없습니다."
 
-#: dnf/cli/cli.py:502
+#: dnf/cli/cli.py:504
 msgid "No packages marked for downgrade."
 msgstr "하향설치 대상으로 표시된 꾸러미가 없습니다."
 
-#: dnf/cli/cli.py:553
+#: dnf/cli/cli.py:555
 msgid "Installed Packages"
 msgstr "설치된 꾸러미"
 
-#: dnf/cli/cli.py:561
+#: dnf/cli/cli.py:563
 msgid "Available Packages"
 msgstr "사용 가능한 꾸러미"
 
-#: dnf/cli/cli.py:565
+#: dnf/cli/cli.py:567
 msgid "Autoremove Packages"
 msgstr "꾸러미 자동제거"
 
 # ctx::sourcefile::Systems Navigation Menu
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:569
 msgid "Extra Packages"
 msgstr "추가 꾸러미"
 
-#: dnf/cli/cli.py:571
+#: dnf/cli/cli.py:573
 msgid "Available Upgrades"
 msgstr "사용 가능한 최신화"
 
-#: dnf/cli/cli.py:587
+#: dnf/cli/cli.py:589
 msgid "Recently Added Packages"
 msgstr "최근에 추가 된 꾸러미"
 
-#: dnf/cli/cli.py:591
+#: dnf/cli/cli.py:593
 msgid "No matching Packages to list"
 msgstr "목록과 일치하는 꾸러미가 없습니다"
 
-#: dnf/cli/cli.py:672
+#: dnf/cli/cli.py:674
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -752,17 +752,17 @@ msgstr ""
 "일치되는 점을 찾지 못했습니다. 만약 파일을 위해 검색하고자 한다면, 전체 경로"
 "를 지정 하거나 시작에서 와일드카드 접두사 (\"*/\")를 사용하여 시도하세요."
 
-#: dnf/cli/cli.py:741 dnf/cli/commands/shell.py:236
+#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:236
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "알 수 없는 저장소: '%s'"
 
-#: dnf/cli/cli.py:755
+#: dnf/cli/cli.py:757
 #, python-format
 msgid "No repository match: %s"
 msgstr "일치하는 저장소가 없습니다 : %s"
 
-#: dnf/cli/cli.py:789
+#: dnf/cli/cli.py:791
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -770,19 +770,19 @@ msgstr ""
 "이 명령은 슈퍼유저 권한으로 실행해야합니다 (대부분의 시스템에서 root 사용자"
 "로 실행)."
 
-#: dnf/cli/cli.py:819
+#: dnf/cli/cli.py:821
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "그런 명령이 없습니다: %s . %s --help 를 사용하세요"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:824
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr "{PROG} 플러그인 명령일 수 있습니다: \"{prog} 'dnf-command(%s)'\""
 
-#: dnf/cli/cli.py:826
+#: dnf/cli/cli.py:828
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -791,7 +791,7 @@ msgstr ""
 "{prog} 플러그인 명령일 수 있지만, 플러그인의 적재는 현재 비활성화되어 있습니"
 "다."
 
-#: dnf/cli/cli.py:884
+#: dnf/cli/cli.py:886
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -799,7 +799,7 @@ msgstr ""
 "--destdir 또는 --downloaddir 는 --downloadonly 또는 download 또는 system-"
 "upgrade 명령과 함께 사용해야 합니다."
 
-#: dnf/cli/cli.py:890
+#: dnf/cli/cli.py:892
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -807,7 +807,7 @@ msgstr ""
 "--enable, --set-enabled 및 --disable, --set-disabled 는 config-manager 명령"
 "과 함께 사용해야 합니다."
 
-#: dnf/cli/cli.py:972
+#: dnf/cli/cli.py:974
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -815,11 +815,11 @@ msgstr ""
 "경고: 활성화된 RPM 보안 정책에 따라 GPG 서명 검사를 전체적으로 시행합니다 "
 "(이 메시지를 제거하는 방법은 dnf.conf(5)의 'gpgcheck' 참조)"
 
-#: dnf/cli/cli.py:993
+#: dnf/cli/cli.py:995
 msgid "Config file \"{}\" does not exist"
 msgstr "설정 파일 \"{}\" 이 존재하지 않습니다"
 
-#: dnf/cli/cli.py:1029
+#: dnf/cli/cli.py:1031
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -827,28 +827,28 @@ msgstr ""
 "출시 버전을 찾을 수 없습니다 ('--releasever'를 사용하여 출시 버전을 지정하십"
 "시오)"
 
-#: dnf/cli/cli.py:1103 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
 msgid "argument {}: not allowed with argument {}"
 msgstr "인수 {}: 인수 {}를 허용하지 않음"
 
-#: dnf/cli/cli.py:1110
+#: dnf/cli/cli.py:1112
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "명령 \"%s\"가 이미 정의되었습니다"
 
-#: dnf/cli/cli.py:1130
+#: dnf/cli/cli.py:1132
 msgid "Excludes in dnf.conf: "
 msgstr "dnf.conf에서 제외: "
 
-#: dnf/cli/cli.py:1133
+#: dnf/cli/cli.py:1135
 msgid "Includes in dnf.conf: "
 msgstr "dnf.conf에 포함:. "
 
-#: dnf/cli/cli.py:1136
+#: dnf/cli/cli.py:1138
 msgid "Excludes in repo "
 msgstr "저장소에서 제외 "
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1141
 msgid "Includes in repo "
 msgstr "저장소에 포함 "
 

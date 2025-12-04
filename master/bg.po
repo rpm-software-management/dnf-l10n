@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-03 02:25+0000\n"
+"POT-Creation-Date: 2025-12-04 02:26+0000\n"
 "PO-Revision-Date: 2022-01-26 22:16+0000\n"
 "Last-Translator: Valentin Laskov <v_laskov@mail.bg>\n"
 "Language-Team: Bulgarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -85,7 +85,7 @@ msgstr "Непозната конфигурираща стойност: %s=%s в
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Непозната конфигурираща опция: %s = %s в %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:373
+#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG проверката се ПРОВАЛИ"
 
@@ -107,7 +107,7 @@ msgstr[1] "Изчакване %s секунди"
 msgid "System is off-line."
 msgstr "Системата е офлайн."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:324
+#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "Транзакцията се провали"
 
@@ -342,7 +342,7 @@ msgstr "Няма съвпадение за групов пакет \"{}\""
 msgid "Adding packages from group '%s': %s"
 msgstr "Добавяне на пакети от група '%s': %s"
 
-#: dnf/base.py:1842 dnf/cli/cli.py:281 dnf/cli/commands/__init__.py:439
+#: dnf/base.py:1842 dnf/cli/cli.py:283 dnf/cli/commands/__init__.py:439
 #: dnf/cli/commands/__init__.py:496 dnf/cli/commands/__init__.py:589
 #: dnf/cli/commands/__init__.py:638 dnf/cli/commands/install.py:84
 #: dnf/cli/commands/install.py:107 dnf/cli/commands/install.py:114
@@ -364,7 +364,7 @@ msgstr "Пакетът %s не е инсталиран, невъзможно в�
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
 #: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
-#: dnf/cli/cli.py:485 dnf/cli/commands/__init__.py:422
+#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
 #: dnf/cli/commands/install.py:151 dnf/cli/commands/reinstall.py:69
@@ -425,7 +425,7 @@ msgstr "Невалидна форма: %s"
 msgid "No packages marked for removal."
 msgstr "Няма маркирани за премахване пакети."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:496
+#: dnf/base.py:2409 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Пакети за аргумента %s са налични, но не са инсталирани."
@@ -576,8 +576,8 @@ msgstr "Разборът на файла \"%s\" се провали: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Не мога да прочета файла \"%s\": %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:874
-#: dnf/cli/cli.py:878 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
+#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "Грешка в конфигурирането: %s"
@@ -632,15 +632,15 @@ msgstr ""
 "{prog} само ще свали пакети, ще инсталира gpg ключове и ще провери "
 "транзакцията."
 
-#: dnf/cli/cli.py:229
+#: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
 msgstr ""
 
-#: dnf/cli/cli.py:230 dnf/cli/cli.py:240 dnf/cli/cli.py:276
+#: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:278
 msgid "Operation aborted."
 msgstr "Операцията е прекратена."
 
-#: dnf/cli/cli.py:237
+#: dnf/cli/cli.py:238
 msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
@@ -649,39 +649,39 @@ msgstr ""
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
-#: dnf/cli/cli.py:245
+#: dnf/cli/cli.py:246
 msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
 
-#: dnf/cli/cli.py:258
+#: dnf/cli/cli.py:260
 msgid ""
 "This operation would modify the following paths, possibly introducing "
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
 
-#: dnf/cli/cli.py:265
+#: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
 
-#: dnf/cli/cli.py:270
+#: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
 msgstr ""
 
-#: dnf/cli/cli.py:286
+#: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
 msgstr "Сваляне на пакети:"
 
-#: dnf/cli/cli.py:292
+#: dnf/cli/cli.py:294
 msgid "Error downloading packages:"
 msgstr "Грешка при сваляне на пакети:"
 
-#: dnf/cli/cli.py:348
+#: dnf/cli/cli.py:350
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -689,79 +689,79 @@ msgstr ""
 "При работа без надзор ключове не се импортират автоматично.\n"
 "Задайте \"-y\" за отмяна."
 
-#: dnf/cli/cli.py:369
+#: dnf/cli/cli.py:371
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
 
-#: dnf/cli/cli.py:405
+#: dnf/cli/cli.py:407
 msgid "Changelogs for {}"
 msgstr ""
 
-#: dnf/cli/cli.py:438 dnf/cli/cli.py:579 dnf/cli/cli.py:585
+#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
 msgid "Obsoleting Packages"
 msgstr "Излизащи от употреба пакети"
 
-#: dnf/cli/cli.py:467
+#: dnf/cli/cli.py:469
 msgid "No packages marked for distribution synchronization."
 msgstr "Няма пакети, маркирани за синхронизация на дистрибуцията."
 
-#: dnf/cli/cli.py:493 dnf/cli/commands/group.py:395
+#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:395
 #, python-format
 msgid "No package %s available."
 msgstr "Няма наличен пакет %s ."
 
-#: dnf/cli/cli.py:502
+#: dnf/cli/cli.py:504
 msgid "No packages marked for downgrade."
 msgstr "Няма пакети, маркирани за сваляне към по-ниска версия."
 
-#: dnf/cli/cli.py:553
+#: dnf/cli/cli.py:555
 msgid "Installed Packages"
 msgstr "Инсталирани пакети"
 
-#: dnf/cli/cli.py:561
+#: dnf/cli/cli.py:563
 msgid "Available Packages"
 msgstr "Налични пакети"
 
-#: dnf/cli/cli.py:565
+#: dnf/cli/cli.py:567
 msgid "Autoremove Packages"
 msgstr "Автоматично премахвани пакети"
 
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:569
 msgid "Extra Packages"
 msgstr "Допълнителни пакети"
 
-#: dnf/cli/cli.py:571
+#: dnf/cli/cli.py:573
 msgid "Available Upgrades"
 msgstr "Налични Обновления"
 
-#: dnf/cli/cli.py:587
+#: dnf/cli/cli.py:589
 msgid "Recently Added Packages"
 msgstr "Добавени скоро пакети"
 
-#: dnf/cli/cli.py:591
+#: dnf/cli/cli.py:593
 msgid "No matching Packages to list"
 msgstr "Няма съвпадащи пакети за показване"
 
-#: dnf/cli/cli.py:672
+#: dnf/cli/cli.py:674
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
 
-#: dnf/cli/cli.py:741 dnf/cli/commands/shell.py:236
+#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:236
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Непознато хранилище: '%s'"
 
-#: dnf/cli/cli.py:755
+#: dnf/cli/cli.py:757
 #, python-format
 msgid "No repository match: %s"
 msgstr "Няма съвпадащо хранилище: %s"
 
-#: dnf/cli/cli.py:789
+#: dnf/cli/cli.py:791
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -769,12 +769,12 @@ msgstr ""
 "Тази команда трябва да бъде стартирана с права на суперпотребител (в "
 "повечето системи като потребител root)."
 
-#: dnf/cli/cli.py:819
+#: dnf/cli/cli.py:821
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Няма такава команда: %s. Моля, ползвайте %s --help"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:824
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -783,7 +783,7 @@ msgstr ""
 "Може да е команда {PROG} към плъгин, пробвайте: \"{prog} install 'dnf-"
 "command(%s)'\""
 
-#: dnf/cli/cli.py:826
+#: dnf/cli/cli.py:828
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -792,7 +792,7 @@ msgstr ""
 "Може да е команда {prog} към плъгин, но зареждането на плъгини в момента е "
 "забранено."
 
-#: dnf/cli/cli.py:884
+#: dnf/cli/cli.py:886
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -800,7 +800,7 @@ msgstr ""
 "--destdir или --downloaddir трябва да се използват с --downloadonly, или "
 "download, или system-upgrade команда."
 
-#: dnf/cli/cli.py:890
+#: dnf/cli/cli.py:892
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -808,17 +808,17 @@ msgstr ""
 "--enable, --set-enabled и --disable, --set-disabled трябва да се използват с "
 "команда config-manager."
 
-#: dnf/cli/cli.py:972
+#: dnf/cli/cli.py:974
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
 
-#: dnf/cli/cli.py:993
+#: dnf/cli/cli.py:995
 msgid "Config file \"{}\" does not exist"
 msgstr "Конфигурационният файл \"{}\" не съществува"
 
-#: dnf/cli/cli.py:1029
+#: dnf/cli/cli.py:1031
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -826,28 +826,28 @@ msgstr ""
 "Не може да се открие версията на изданието (използвайте '--releasever', за "
 "да я уточните)"
 
-#: dnf/cli/cli.py:1103 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
 msgid "argument {}: not allowed with argument {}"
 msgstr "аргумент {}: не е позволен заедно с аргумент {}"
 
-#: dnf/cli/cli.py:1110
+#: dnf/cli/cli.py:1112
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Командата \"%s\" е вече дефинирана"
 
-#: dnf/cli/cli.py:1130
+#: dnf/cli/cli.py:1132
 msgid "Excludes in dnf.conf: "
 msgstr "Изключени в dnf.conf: "
 
-#: dnf/cli/cli.py:1133
+#: dnf/cli/cli.py:1135
 msgid "Includes in dnf.conf: "
 msgstr "Включени в dnf.conf: "
 
-#: dnf/cli/cli.py:1136
+#: dnf/cli/cli.py:1138
 msgid "Excludes in repo "
 msgstr "Изключени в хранилишето "
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1141
 msgid "Includes in repo "
 msgstr "Включени в хранилището "
 

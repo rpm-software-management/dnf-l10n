@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-03 02:25+0000\n"
+"POT-Creation-Date: 2025-12-04 02:26+0000\n"
 "PO-Revision-Date: 2025-12-01 02:58+0000\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -90,7 +90,7 @@ msgstr "Bilinmeyen yapılandırma değeri: %s=%s, %s içinde; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Bilinmeyen yapılandırma seçeneği: %s = %s, %s içinde"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:373
+#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG denetimi BAŞARISIZ"
 
@@ -112,7 +112,7 @@ msgstr[1] "{} saniye uykuda bekle"
 msgid "System is off-line."
 msgstr "Sistem çevrim dışı."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:324
+#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "İşlem başarısız"
 
@@ -347,7 +347,7 @@ msgstr "\"{}\" grup paketi için eşleşme yok"
 msgid "Adding packages from group '%s': %s"
 msgstr "'%s' grubundan paketler ekle: %s"
 
-#: dnf/base.py:1842 dnf/cli/cli.py:281 dnf/cli/commands/__init__.py:439
+#: dnf/base.py:1842 dnf/cli/cli.py:283 dnf/cli/commands/__init__.py:439
 #: dnf/cli/commands/__init__.py:496 dnf/cli/commands/__init__.py:589
 #: dnf/cli/commands/__init__.py:638 dnf/cli/commands/install.py:84
 #: dnf/cli/commands/install.py:107 dnf/cli/commands/install.py:114
@@ -369,7 +369,7 @@ msgstr "%s paketi kurulu değil, sürümü düşürülemiyor."
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
 #: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
-#: dnf/cli/cli.py:485 dnf/cli/commands/__init__.py:422
+#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
 #: dnf/cli/commands/install.py:151 dnf/cli/commands/reinstall.py:69
@@ -426,7 +426,7 @@ msgstr "Geçerli bir biçim değil: %s"
 msgid "No packages marked for removal."
 msgstr "Kaldırılması için işaretlenen paket yok."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:496
+#: dnf/base.py:2409 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "%s argümanı için kullanılabilir paketler var, ama kurulu değil."
@@ -569,8 +569,8 @@ msgstr "\"%s\" dosyası ayrıştırılamadı: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "\"%s\" dosyası okunamıyor: %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:874
-#: dnf/cli/cli.py:878 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
+#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "Yapılandırma hatası: %s"
@@ -633,15 +633,15 @@ msgstr ""
 "{prog}, yalnızca paketleri indirecek, gpg anahtarlarını kuracak ve işlemi "
 "denetleyecek."
 
-#: dnf/cli/cli.py:229
+#: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
 msgstr "Kalıcı işlemler, bootc systemlerinde desteklenmiyor."
 
-#: dnf/cli/cli.py:230 dnf/cli/cli.py:240 dnf/cli/cli.py:276
+#: dnf/cli/cli.py:231 dnf/cli/cli.py:241 dnf/cli/cli.py:278
 msgid "Operation aborted."
 msgstr "İşlem iptal edildi."
 
-#: dnf/cli/cli.py:237
+#: dnf/cli/cli.py:238
 msgid ""
 "This bootc system is configured to be read-only. Pass --transient to perform "
 "this transaction in a transient overlay which will reset when the system "
@@ -653,7 +653,7 @@ msgstr ""
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
-#: dnf/cli/cli.py:245
+#: dnf/cli/cli.py:246
 msgid ""
 "A transient overlay will be created on /usr that will be discarded on "
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
@@ -663,7 +663,7 @@ msgstr ""
 "oluşturulacaktır. /etc ve /var üzerindeki değişikliklerin kalıcı olacağını "
 "ve paketlerin bu dizinleri sık sık değiştirdiğini unutmayın."
 
-#: dnf/cli/cli.py:258
+#: dnf/cli/cli.py:260
 msgid ""
 "This operation would modify the following paths, possibly introducing "
 "inconsistencies when the transient overlay on /usr is discarded. See the "
@@ -673,7 +673,7 @@ msgstr ""
 "bindirme atıldığında tutarsızlıklara neden olacak. Daha fazla bilgi için "
 "usr_drift_protected_paths düzenleme seçeneğine bakın."
 
-#: dnf/cli/cli.py:265
+#: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
@@ -681,19 +681,19 @@ msgstr ""
 "Operasyon iptal edildi. Bu kontrolü geçmek ve yine de devam etmek için --"
 "setopt=usr_drift_protected_paths= 'i geçin."
 
-#: dnf/cli/cli.py:270
+#: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
 msgstr "Geçici işlemler, yalnızca bootc sistemlerde desteklenir."
 
-#: dnf/cli/cli.py:286
+#: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
 msgstr "Paketler İndiriliyor:"
 
-#: dnf/cli/cli.py:292
+#: dnf/cli/cli.py:294
 msgid "Error downloading packages:"
 msgstr "Paketler indirilirken hata oluştu:"
 
-#: dnf/cli/cli.py:348
+#: dnf/cli/cli.py:350
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -701,7 +701,7 @@ msgstr ""
 "Gözetimsiz çalışırken anahtarları otomatik olarak içe aktarma reddediliyor.\n"
 "Geçersiz kılmak için \"-y\" kullanın."
 
-#: dnf/cli/cli.py:369
+#: dnf/cli/cli.py:371
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
@@ -711,56 +711,56 @@ msgstr ""
 "Bu eklenti 'dnf-plugins-core' paketinin bir parçası olduğu için öntanımlı "
 "olarak kurulu olmayabilir."
 
-#: dnf/cli/cli.py:405
+#: dnf/cli/cli.py:407
 msgid "Changelogs for {}"
 msgstr "{} için değişiklik günlükleri"
 
-#: dnf/cli/cli.py:438 dnf/cli/cli.py:579 dnf/cli/cli.py:585
+#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
 msgid "Obsoleting Packages"
 msgstr "Kullanım Dışı Bırakan Paketler"
 
-#: dnf/cli/cli.py:467
+#: dnf/cli/cli.py:469
 msgid "No packages marked for distribution synchronization."
 msgstr "Dağıtım eşzamanlaması için işaretlenmiş paket yok."
 
-#: dnf/cli/cli.py:493 dnf/cli/commands/group.py:395
+#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:395
 #, python-format
 msgid "No package %s available."
 msgstr "%s paketi kullanılabilir değil."
 
-#: dnf/cli/cli.py:502
+#: dnf/cli/cli.py:504
 msgid "No packages marked for downgrade."
 msgstr "Sürümü düşürülmek için işaretlenmiş paket yok."
 
-#: dnf/cli/cli.py:553
+#: dnf/cli/cli.py:555
 msgid "Installed Packages"
 msgstr "Kurulu Paketler"
 
-#: dnf/cli/cli.py:561
+#: dnf/cli/cli.py:563
 msgid "Available Packages"
 msgstr "Kullanılabilir Paketler"
 
-#: dnf/cli/cli.py:565
+#: dnf/cli/cli.py:567
 msgid "Autoremove Packages"
 msgstr "Otomatik Kaldırılacak Paketler"
 
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:569
 msgid "Extra Packages"
 msgstr "Ek Paketler"
 
-#: dnf/cli/cli.py:571
+#: dnf/cli/cli.py:573
 msgid "Available Upgrades"
 msgstr "Kullanılabilir Yükseltmeler"
 
-#: dnf/cli/cli.py:587
+#: dnf/cli/cli.py:589
 msgid "Recently Added Packages"
 msgstr "Yakın Zamanda Eklenen Paketler"
 
-#: dnf/cli/cli.py:591
+#: dnf/cli/cli.py:593
 msgid "No matching Packages to list"
 msgstr "Listelenecek eşleşen paket yok"
 
-#: dnf/cli/cli.py:672
+#: dnf/cli/cli.py:674
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -768,17 +768,17 @@ msgstr ""
 "Hiçbir sonuç bulunamadı. Bir dosya arıyorsanız, tam yolu belirtmeyi veya "
 "başlangıçta bir joker karakter (\"*/\") kullanmayı deneyin."
 
-#: dnf/cli/cli.py:741 dnf/cli/commands/shell.py:236
+#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:236
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Bilinmeyen depo: '%s'"
 
-#: dnf/cli/cli.py:755
+#: dnf/cli/cli.py:757
 #, python-format
 msgid "No repository match: %s"
 msgstr "Depo eşleşmesi yok: %s"
 
-#: dnf/cli/cli.py:789
+#: dnf/cli/cli.py:791
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -786,12 +786,12 @@ msgstr ""
 "Bu komutun süper kullanıcı yetkileriyle (çoğu sistemdeki root kullanıcısı "
 "ile) çalıştırılması gerekmektedir."
 
-#: dnf/cli/cli.py:819
+#: dnf/cli/cli.py:821
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Böyle bir komut yok: %s. Lütfen yardım için %s --help kullanın"
 
-#: dnf/cli/cli.py:822
+#: dnf/cli/cli.py:824
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -800,7 +800,7 @@ msgstr ""
 "Bu bir {PROG} eklenti komutu olabilir, şunu deneyin: \"{prog} install 'dnf-"
 "command(%s)'\""
 
-#: dnf/cli/cli.py:826
+#: dnf/cli/cli.py:828
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -809,7 +809,7 @@ msgstr ""
 "Bu bir {prog} eklenti komutu olabilir, ancak eklentilerin yüklenmesi şu anda "
 "devre dışı."
 
-#: dnf/cli/cli.py:884
+#: dnf/cli/cli.py:886
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -817,7 +817,7 @@ msgstr ""
 "--destdir veya --downloaddir, --downloadonly veya download ya da system-"
 "upgrade komutuyla birlikte kullanılmalıdır."
 
-#: dnf/cli/cli.py:890
+#: dnf/cli/cli.py:892
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -825,7 +825,7 @@ msgstr ""
 "--enable, --set-enabled ve --disable, --set-disabled; config-manager "
 "komutuyla birlikte kullanılmalıdır."
 
-#: dnf/cli/cli.py:972
+#: dnf/cli/cli.py:974
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -834,11 +834,11 @@ msgstr ""
 "uygulanıyor (bu iletinin nasıl kaldırılacağı hakkında dnf.conf(5) içindeki "
 "'gpgcheck' bölümüne bakın)"
 
-#: dnf/cli/cli.py:993
+#: dnf/cli/cli.py:995
 msgid "Config file \"{}\" does not exist"
 msgstr "\"{}\" diye bir yapılandırma dosyası yok"
 
-#: dnf/cli/cli.py:1029
+#: dnf/cli/cli.py:1031
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -846,28 +846,28 @@ msgstr ""
 "Dağıtım sürümü algılanamadı (dağıtım sürümü belirtmek için '--releasever' "
 "kullanın)"
 
-#: dnf/cli/cli.py:1103 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
 msgid "argument {}: not allowed with argument {}"
 msgstr "{} argümanı: {} argümanıyla birlikte izin verilmiyor"
 
-#: dnf/cli/cli.py:1110
+#: dnf/cli/cli.py:1112
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "\"%s\" komutu zaten tanımlandı"
 
-#: dnf/cli/cli.py:1130
+#: dnf/cli/cli.py:1132
 msgid "Excludes in dnf.conf: "
 msgstr "dnf.conf dosyasında hariç tutulanlar: "
 
-#: dnf/cli/cli.py:1133
+#: dnf/cli/cli.py:1135
 msgid "Includes in dnf.conf: "
 msgstr "dnf.conf dosyasında dahil edilenler: "
 
-#: dnf/cli/cli.py:1136
+#: dnf/cli/cli.py:1138
 msgid "Excludes in repo "
 msgstr "Depo için hariç tutulanlar "
 
-#: dnf/cli/cli.py:1139
+#: dnf/cli/cli.py:1141
 msgid "Includes in repo "
 msgstr "Depo için dahil edilenler "
 
