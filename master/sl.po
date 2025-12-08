@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-08 02:27+0000\n"
-"PO-Revision-Date: 2025-11-16 14:13+0000\n"
-"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"PO-Revision-Date: 2025-12-09 02:26+0000\n"
+"Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/sl/>\n"
 "Language: sl\n"
@@ -292,9 +292,8 @@ msgstr "Nekateri paketi niso bili preneseni. Ponovni poskus."
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
-"Delta RPM-ji so zmanjšali %.1f MB posodobitev na %.1f MB (%.1f%% "
-"prihranjeno)Delta RPM je zmanjšala %.1f MB posodobitev na %.1f MB (%.1f%% "
-"prihranjeno)"
+"Delta RPM-ji so zmanjšali %.1f MB posodobitev na %.1f MB "
+"(prihranjeno %.1f %%)"
 
 #: dnf/base.py:1297
 #, python-format
@@ -951,7 +950,7 @@ msgstr "prikaži samo pakete nadgradenj"
 
 #: dnf/cli/commands/__init__.py:185 dnf/cli/commands/__init__.py:755
 msgid "show only autoremove packages"
-msgstr "prikaži samo pakete za samodejno odstranjevanje"
+msgstr "prikaži samo pakete autoremove za samodejno odstranjevanje"
 
 #: dnf/cli/commands/__init__.py:188 dnf/cli/commands/__init__.py:758
 msgid "show only recently changed packages"
@@ -1342,31 +1341,31 @@ msgstr "prikaži ali uporabi zgodovino transakcij"
 
 #: dnf/cli/commands/history.py:65
 msgid "For the store command, file path to store the transaction to"
-msgstr "Za ukaz za shranjevanje, pot do datoteke za shranjevanje transakcije"
+msgstr "Za ukaz za shranjevanje: pot do datoteke za shranjevanje transakcije"
 
 #: dnf/cli/commands/history.py:67
 msgid ""
 "For the replay command, don't check for installed packages matching those in "
 "transaction"
 msgstr ""
-"Za ukaz za ponovno predvajanje ne preverjajte nameščenih paketov, ki se "
-"ujemajo s tistimi v transakciji"
+"Za ukaz za ponovno predvajanje (replay) ne preverjaj nameščenih paketov, ki "
+"se ujemajo s tistimi v transakciji"
 
 #: dnf/cli/commands/history.py:70
 msgid ""
 "For the replay command, don't check for extra packages pulled into the "
 "transaction"
 msgstr ""
-"Za ukaz za ponovno predvajanje ne preverjajte dodatnih paketov, potegnjenih "
-"v transakcijo"
+"Za ukaz za ponovno predvajanje (replay) ne preverjaj dodatnih paketov, "
+"potegnjenih v transakcijo"
 
 #: dnf/cli/commands/history.py:73
 msgid ""
 "For the replay command, skip packages that are not available or have missing "
 "dependencies"
 msgstr ""
-"Za ukaz za ponovno predvajanje preskoči pakete, ki niso na voljo ali imajo "
-"manjkajoče odvisnosti"
+"Za ukaz za ponovno predvajanje (replay) preskoči pakete, ki niso na voljo "
+"ali imajo manjkajoče odvisnosti"
 
 #: dnf/cli/commands/history.py:93
 msgid ""
@@ -1813,7 +1812,7 @@ msgstr "Repo-ime-datoteke  : "
 #. then chop the middle (name)...
 #: dnf/cli/commands/repolist.py:245 dnf/cli/commands/repolist.py:272
 msgid "repo id"
-msgstr "repo id"
+msgstr "id skladišča"
 
 #: dnf/cli/commands/repolist.py:258 dnf/cli/commands/repolist.py:259
 #: dnf/cli/commands/repolist.py:280
@@ -1837,8 +1836,8 @@ msgid ""
 "Query all packages (shorthand for repoquery '*' or repoquery without "
 "argument)"
 msgstr ""
-"Poizvedi po vseh paketih (okrajšava za ponovno poizvedbo '*' ali ponovno "
-"poizvedbo brez argumenta)"
+"Poizvedi po vseh paketih (okrajšava za ponovno poizvedbo repoquery '*' ali "
+"ponovno poizvedbo repoquery brez argumenta)"
 
 #: dnf/cli/commands/repoquery.py:126
 msgid "Query all versions of packages (default)"
@@ -2246,8 +2245,8 @@ msgid ""
 "    If value is given it sets that value."
 msgstr ""
 "{} arg [vrednost]\n"
-"  arg: debuglevel, errorlevel, obsoletes, gpgcheck, acceptyes, exclude,\n"
-"         repo_id.gpgcheck, repo_id.exclude\n"
+"   arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
+"        repo_id.gpgcheck, repo_id.exclude\n"
 "    Če vrednost ni podana, natisne trenutno vrednost.\n"
 "    Če vrednost je podana, nastavi to vrednost."
 
@@ -2736,8 +2735,8 @@ msgid ""
 "capabilities that the package obsoletes for info, list and repoquery"
 msgstr ""
 "omogoča logiko obdelave zastarelih elementov programa {prog} za nadgradnjo "
-"ali prikaz zmogljivosti, ki jih paket zastara za informacije, sezname in "
-"ponovne poizvedbe"
+"ali prikaz zmogljivosti, ki jih paket zastara za informacije (info), sezname "
+"(list) in ponovne poizvedbe (repoquery)"
 
 #: dnf/cli/option_parser.py:253
 msgid "debugging output level for rpm"
@@ -2963,7 +2962,7 @@ msgstr "Vir"
 #: dnf/cli/output.py:478 dnf/cli/output.py:1252
 msgctxt "short"
 msgid "Repo"
-msgstr "Repo"
+msgstr "Skladišče"
 
 #. Translators: This is the full word 'Repository', used when
 #. we have enough space.
@@ -4148,11 +4147,11 @@ msgstr "Shranjevanje potečenega predpomnilnika skladišč ni uspelo: %s"
 
 #: dnf/persistor.py:104
 msgid "Failed storing last makecache time."
-msgstr "Shranjevanje zadnjega časa predpomnilnika ni uspelo."
+msgstr "Shranjevanje zadnjega časa izdelave predpomnilnika makecache ni uspelo."
 
 #: dnf/persistor.py:111
 msgid "Failed determining last makecache time."
-msgstr "Določanje časa zadnjega predpomnilnika ni uspelo."
+msgstr "Določanje časa zadnje izdelave predpomnilnika makecache ni uspelo."
 
 #: dnf/plugin.py:63
 #, python-format
