@@ -13,13 +13,14 @@
 # josep constantí <iceberg.jcm@gmail.com>, 2024.
 # David Medina <dmedinacpnl@gmail.com>, 2025.
 # Joan Aymà <joan@ayma.cat>, 2025.
+# naly zzwd <xeanhort007@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-12-25 02:32+0000\n"
-"PO-Revision-Date: 2025-11-26 10:08+0000\n"
-"Last-Translator: David Medina <dmedinacpnl@gmail.com>\n"
+"PO-Revision-Date: 2025-12-25 15:53+0000\n"
+"Last-Translator: naly zzwd <xeanhort007@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/dnf-"
 "master/ca/>\n"
 "Language: ca\n"
@@ -27,7 +28,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -298,7 +299,7 @@ msgstr "No s'han pogut trobar alguns paquets i es torna a intentar."
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
 "Les deltes dels RPM han reduït %.1f MB d'actualitzacions a %.1f MB (s'ha "
-"estalviat un %d.1%%)"
+"estalviat un %.1f%%)"
 
 #: dnf/base.py:1297
 #, python-format
@@ -306,7 +307,7 @@ msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
 "Han fallat les deltes dels RPM, que han incrementat %.1f MB "
-"d'actualitzacions a %.1f MB (s'ha malbaratat un %d.1%%)"
+"d'actualitzacions a %.1f MB (s'ha malbaratat un %.1f%%)"
 
 #: dnf/base.py:1342
 msgid "Cannot add local packages, because transaction job already exists"
@@ -979,7 +980,7 @@ msgstr "mostra únicament l'actualització de les versions dels paquets"
 
 #: dnf/cli/commands/__init__.py:185 dnf/cli/commands/__init__.py:755
 msgid "show only autoremove packages"
-msgstr "mostra únicament l'eliminació automàtica dels paquets"
+msgstr "mostra únicament els paquets autoremove"
 
 #: dnf/cli/commands/__init__.py:188 dnf/cli/commands/__init__.py:758
 msgid "show only recently changed packages"
@@ -2143,10 +2144,9 @@ msgid ""
 "depends', '--enhances', '--provides', '--recommends', '--requires', '--"
 "requires-pre', '--suggests' or '--supplements' options"
 msgstr ""
-"L'opció \"--resolve\" s'ha d'usar juntament amb una de les opcions \"--"
-"conflicts\", \"--depends\", \"--enhances\", \"--provides\", \"--"
-"recommends\", \"--requires\", \"--requires-pre\", \"--suggers\" o \"--"
-"supplements\"."
+"L'opció '--resolve' s'ha d'usar juntament amb una de les opcions '--"
+"conflicts', '--depends', '--enhances', '--provides', '--recommends', '--"
+"requires', '--requires-pre', '--suggests' o '--supplements'"
 
 #: dnf/cli/commands/repoquery.py:307
 msgid ""
@@ -2359,6 +2359,7 @@ msgid ""
 "exit (or quit)           exit the shell"
 msgstr ""
 "Arguments específics del shell:\n"
+"\n"
 "config                   estableix les opcions de configuració\n"
 "help                     imprimeix l'ajuda\n"
 "repository (o repo)      habilita, inhabilita o llista els dipòsits\n"
@@ -2945,7 +2946,7 @@ msgstr "Llistat d'ordres dels connectors:"
 #: dnf/cli/option_parser.py:423
 #, python-format
 msgid "Cannot encode argument '%s': %s"
-msgstr "No hi ha cap coincidència per a l'argument: %s"
+msgstr "No es pot codificar l'argument '%s': %s"
 
 #. Translators: This is abbreviated 'Name'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -3316,7 +3317,7 @@ msgstr "S'estan reiniciant els mòduls"
 
 #: dnf/cli/output.py:1141
 msgid "Installing Environment Groups"
-msgstr "S'instal·len els grups d'entorn"
+msgstr "Instal·lant els Grups d'Entorn"
 
 #: dnf/cli/output.py:1148
 msgid "Upgrading Environment Groups"
@@ -3875,12 +3876,12 @@ msgstr "S'ha produït un error en analitzar una variable del fitxer '{0}': {1}"
 #: dnf/crypto.py:65
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr "dipòsit %s: 0x%s ja s'ha importat"
+msgstr "dipòsit %s: 0x%s ja importat"
 
 #: dnf/crypto.py:73
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "dipòsit %s: s'ha importat la clau 0x%s."
+msgstr "dipòsit %s: clau importada 0x%s."
 
 #: dnf/crypto.py:102
 msgid "Verified using DNS record with DNSSEC signature."
@@ -3922,8 +3923,8 @@ msgstr "No instal·larà un paquet rpm de les fonts (%s)."
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
-"L'opció de configuració «gpgkeydnsverification» requereix «python3-unbound» "
-"({})"
+"L'opció de configuració 'gpgkey_dns_verification' requereix python3-unbound ("
+"{})"
 
 #: dnf/dnssec.py:246
 msgid "DNSSEC extension: Key for user "
@@ -4045,7 +4046,7 @@ msgstr "No existeix aquest flux: {}"
 
 #: dnf/module/exceptions.py:38
 msgid "No enabled stream for module: {}"
-msgstr "Mòduls habilitats: {}."
+msgstr "No hi ha cap flux habilitat per al mòdul: {}"
 
 #: dnf/module/exceptions.py:45
 msgid "Cannot enable more streams from module '{}' at the same time"
@@ -4070,7 +4071,7 @@ msgstr ""
 
 #: dnf/module/exceptions.py:81
 msgid "No such profile: {}. No profiles available"
-msgstr "No hi ha disponible cap dipòsit"
+msgstr "No hi ha cap perfil d'aquest tipus: {}. No hi ha perfils disponibles"
 
 #: dnf/module/exceptions.py:87
 msgid "No profile to remove for '{}'"
@@ -4187,7 +4188,7 @@ msgid ""
 "Argument '{argument}' matches {stream_count} streams ('{streams}') of module "
 "'{module}', but none of the streams are enabled or default"
 msgstr ""
-"L'argument '{argument}' coincideix amb {streamcount} fluxos ('{streams}') "
+"L'argument '{argument}' coincideix amb {stream_count} fluxos ('{streams}') "
 "del mòdul '{module}', però cap dels fluxos està habilitat o predeterminat"
 
 #: dnf/module/module_base.py:508
@@ -4299,8 +4300,8 @@ msgid ""
 "allow_vendor_change is disabled. This option is currently not supported for "
 "downgrade and distro-sync commands"
 msgstr ""
-"allowvendorchange està desactivat. Aquesta opció actualment no està admesa "
-"per a les ordres de requalificació i sincronització"
+"allow_vendor_change està desactivat. Aquesta opció actualment no està admesa "
+"per a les ordres downgrade i distro-sync"
 
 #. TRANSLATORS: This is for a single package currently being downgraded.
 #: dnf/transaction.py:79
@@ -4359,7 +4360,7 @@ msgstr ""
 
 #: dnf/transaction_sr.py:67
 msgid "The following problems occurred while running a transaction:"
-msgstr "S'han produït errors durant la transacció."
+msgstr "S'han produït errors durant la transacció:"
 
 #: dnf/transaction_sr.py:88
 #, python-brace-format
@@ -4377,8 +4378,8 @@ msgid ""
 "Incompatible major version \"{major}\", supported major version is "
 "\"{major_supp}\"."
 msgstr ""
-"La versió major no és compatible \"{major}\", la versió major suportada és "
-"\"{majorsupp}\"."
+"La versió major no és compatible \"{major}\", la versió major suportada és \""
+"{major_supp}\"."
 
 #: dnf/transaction_sr.py:223
 msgid ""
@@ -4423,7 +4424,7 @@ msgstr "No es pot trobar rpm nevra \"{nevra}\"."
 #: dnf/transaction_sr.py:335
 #, python-brace-format
 msgid "Package \"{na}\" is already installed for action \"{action}\"."
-msgstr "El paquet %s ja està instal·lat."
+msgstr "El paquet \"{na}\" ja està instal·lat per a l'acció \"{action}\"."
 
 #: dnf/transaction_sr.py:344
 #, python-brace-format
@@ -4475,8 +4476,8 @@ msgid ""
 "Invalid value \"{group_type}\" of environments.groups.group_type, only "
 "\"mandatory\" or \"optional\" is supported."
 msgstr ""
-"El valor \"{grouptype}\" d'entorns.groups.grouptype no és vàlid, només "
-"s'admet \"mandatori\" o \"opcional\"."
+"El valor \"{group_type}\" d' environments.groups.group_type no és vàlid, "
+"només s'admet \"mandatory\" o \"optional\"."
 
 #: dnf/transaction_sr.py:473
 #, python-brace-format
@@ -4522,7 +4523,7 @@ msgstr "Problema"
 
 #: dnf/util.py:471
 msgid "TransactionItem not found for key: {}"
-msgstr "No s'ha trobat l'element de transacció per a la clau: {}"
+msgstr "No s'ha trobat el TransactionItem per a la clau: {}"
 
 #: dnf/util.py:481
 msgid "TransactionSWDBItem not found for key: {}"
@@ -4538,7 +4539,7 @@ msgstr "Reinstal·lat"
 
 #: dnf/util.py:621
 msgid "Skipped"
-msgstr "Omet"
+msgstr "Omès"
 
 #: dnf/util.py:622
 msgid "Removed"
