@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 03:13+0000\n"
+"POT-Creation-Date: 2026-01-30 03:15+0000\n"
 "PO-Revision-Date: 2026-01-23 02:36+0000\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: Slovenian <https://translate.fedoraproject.org/projects/dnf/"
@@ -374,7 +374,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "Paket %s ni nameščen, ni ga mogoče podgraditi."
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
-#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
+#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2416
 #: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
@@ -433,78 +433,86 @@ msgstr "Neveljavna oblika: %s"
 msgid "No packages marked for removal."
 msgstr "Ni paketov označenih za odstranitev."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:498
+#: dnf/base.py:2323
+#, python-format
+msgid ""
+"Unneeded protected package: %s (and its dependencies) cannot be removed, "
+"either mark it as user-installed or change protected_packages configuration "
+"option."
+msgstr ""
+
+#: dnf/base.py:2423 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Paketi za argument %s so na voljo, vendar niso nameščeni."
 
-#: dnf/base.py:2414
+#: dnf/base.py:2428
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Paket %s najnižje različice je že nameščen, ni ga mogoče podgraditi."
 
-#: dnf/base.py:2514
+#: dnf/base.py:2528
 msgid "No security updates needed, but {} update available"
 msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2530
 msgid "No security updates needed, but {} updates available"
 msgstr "Varnostne posodobitve niso potrebne, na voljo pa je {} posodobitev"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2534
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Za \"{}\" niso potrebne varnostne posodobitve, na voljo pa je posodobitev {}"
 
-#: dnf/base.py:2522
+#: dnf/base.py:2536
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Varnostne posodobitve niso potrebne za \"{}\", vendar so na voljo {} "
 "posodobitev"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2543
+#: dnf/base.py:2557
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Ni mogoče pridobiti ključa za paket ukazne vrstice: %s"
 
-#: dnf/base.py:2551
+#: dnf/base.py:2565
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Izpadel paket je: %s"
 
-#: dnf/base.py:2552
+#: dnf/base.py:2566
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Ključi GPG so konfigurirani kot: %s"
 
-#: dnf/base.py:2564
+#: dnf/base.py:2578
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "Ključ GPG na %s (0x%s) je že nameščen"
 
-#: dnf/base.py:2600
+#: dnf/base.py:2614
 msgid "The key has been approved."
 msgstr "Ključ je bil odobren."
 
-#: dnf/base.py:2603
+#: dnf/base.py:2617
 msgid "The key has been rejected."
 msgstr "Ključ je bil zavrnjen."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2650
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Uvoz ključa ni uspel (koda %d)"
 
-#: dnf/base.py:2638
+#: dnf/base.py:2652
 msgid "Key imported successfully"
 msgstr "Ključ je bil uspešno uvožen"
 
-#: dnf/base.py:2642
+#: dnf/base.py:2656
 msgid "Didn't install any keys"
 msgstr "Nisem namestil nobenega ključa"
 
-#: dnf/base.py:2645
+#: dnf/base.py:2659
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -515,28 +523,28 @@ msgstr ""
 "pravilni za ta paket.\n"
 "Preverite, ali so pravilni URL-ji ključev prilagojeni za to skladišče."
 
-#: dnf/base.py:2656
+#: dnf/base.py:2670
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Uvoz ključev ni pomagal, napačen ključ(-i)?"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2723
 msgid "  * Maybe you meant: {}"
 msgstr "  * Mogoče ste mislili: {}"
 
-#: dnf/base.py:2741
+#: dnf/base.py:2755
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" iz lokalnega skladišča \"{}\" ima napačno kontrolno vsoto"
 
-#: dnf/base.py:2744
+#: dnf/base.py:2758
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "Nekateri paketi iz lokalnega repozitorija imajo napačno kontrolno vsoto"
 
-#: dnf/base.py:2747
+#: dnf/base.py:2761
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" iz repozitorija \"{}\" ima napačno kontrolno vsoto"
 
-#: dnf/base.py:2750
+#: dnf/base.py:2764
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -544,24 +552,24 @@ msgstr ""
 "Nekateri paketi imajo neveljaven predpomnilnik, vendar jih ni mogoče "
 "prenesti zaradi možnosti \"--cacheonly\""
 
-#: dnf/base.py:2768 dnf/base.py:2788
+#: dnf/base.py:2782 dnf/base.py:2802
 msgid "No match for argument"
 msgstr "Ni primerka za argument"
 
-#: dnf/base.py:2776 dnf/base.py:2796
+#: dnf/base.py:2790 dnf/base.py:2810
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Vsa ujemanja so bila izločena s filtriranjem izključitve za argument"
 
-#: dnf/base.py:2778
+#: dnf/base.py:2792
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 "Vsa ujemanja so bila izfiltrirana z modularnim filtriranjem za argument"
 
-#: dnf/base.py:2794
+#: dnf/base.py:2808
 msgid "All matches were installed from a different repository for argument"
 msgstr "Vsa ujemanja so bila nameščena iz drugega repozitorija za argument"
 
-#: dnf/base.py:2855
+#: dnf/base.py:2869
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Paket %s je že nameščen."

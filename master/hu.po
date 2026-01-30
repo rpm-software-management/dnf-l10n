@@ -20,7 +20,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 03:13+0000\n"
+"POT-Creation-Date: 2026-01-30 03:15+0000\n"
 "PO-Revision-Date: 2024-08-22 19:38+0000\n"
 "Last-Translator: Balázs Meskó <meskobalazs@mailbox.org>\n"
 "Language-Team: Hungarian <https://translate.fedoraproject.org/projects/dnf/"
@@ -381,7 +381,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "A(z) %s csomag nincs telepítve, nem lehet visszaállítani."
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
-#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
+#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2416
 #: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
@@ -443,81 +443,89 @@ msgstr "Nem érvényes űrlap: %s"
 msgid "No packages marked for removal."
 msgstr "Nincsenek eltávolításra kijelölt csomagok."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:498
+#: dnf/base.py:2323
+#, python-format
+msgid ""
+"Unneeded protected package: %s (and its dependencies) cannot be removed, "
+"either mark it as user-installed or change protected_packages configuration "
+"option."
+msgstr ""
+
+#: dnf/base.py:2423 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "A(z) %s argumentumhoz érhetőek el csomagok, de nincsenek telepítve."
 
-#: dnf/base.py:2414
+#: dnf/base.py:2428
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr ""
 "A legalacsonyabb verziójú %s csomag már telepítve van, nem lehet "
 "visszaállítani."
 
-#: dnf/base.py:2514
+#: dnf/base.py:2528
 msgid "No security updates needed, but {} update available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2530
 msgid "No security updates needed, but {} updates available"
 msgstr "Nincsenek szükséges biztonsági frissítések, de {} frissítés elérhető"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2534
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
-#: dnf/base.py:2522
+#: dnf/base.py:2536
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nincsenek szükséges biztonsági frissítések ehhez: „{}”, de {} frissítés "
 "elérhető"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2543
+#: dnf/base.py:2557
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Nem sikerült lekérdezni a kulcsot egy parancssori csomaghoz: %s"
 
-#: dnf/base.py:2551
+#: dnf/base.py:2565
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". A hibás csomag: %s"
 
-#: dnf/base.py:2552
+#: dnf/base.py:2566
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "A GPG kulcsok beállítva mint: %s"
 
-#: dnf/base.py:2564
+#: dnf/base.py:2578
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "A következő GPG kulcs már telepítve van: %s (0x%s)"
 
-#: dnf/base.py:2600
+#: dnf/base.py:2614
 msgid "The key has been approved."
 msgstr "A kulcs jóváhagyásra került."
 
-#: dnf/base.py:2603
+#: dnf/base.py:2617
 msgid "The key has been rejected."
 msgstr "A kulcs elutasításra került."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2650
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "A kulcs importálása meghiúsult (hibakód %d)"
 
-#: dnf/base.py:2638
+#: dnf/base.py:2652
 msgid "Key imported successfully"
 msgstr "A kulcs importálása sikeres"
 
-#: dnf/base.py:2642
+#: dnf/base.py:2656
 msgid "Didn't install any keys"
 msgstr "Nem lett telepítve egyetlen kulcs sem"
 
-#: dnf/base.py:2645
+#: dnf/base.py:2659
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -529,30 +537,30 @@ msgstr ""
 "Kérjük, ellenőrizze, hogy az URL címek helyesen vannak-e megadva ehhez a "
 "tárolóhoz."
 
-#: dnf/base.py:2656
+#: dnf/base.py:2670
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "A kulcs(ok) importálása nem segített, rossz kulcs(ok)?"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2723
 msgid "  * Maybe you meant: {}"
 msgstr "  * Talán erre gondolt: {}"
 
-#: dnf/base.py:2741
+#: dnf/base.py:2755
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "A \"{}\" csomag a \"{}\" helyi adattárból hibás ellenőrző összeggel "
 "rendelkezik"
 
-#: dnf/base.py:2744
+#: dnf/base.py:2758
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Néhány csomagnak hibás az ellenőrzőösszege a helyi tárolóban"
 
-#: dnf/base.py:2747
+#: dnf/base.py:2761
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "A \"{}\" csomag a \"{}\" tárolóból hibás ellenőrző összeggel rendelkezik"
 
-#: dnf/base.py:2750
+#: dnf/base.py:2764
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -560,23 +568,23 @@ msgstr ""
 "Néhány csomag gyorsítótára érvénytelen, de nem tölthető le a „--cacheonly” "
 "kapcsoló miatt"
 
-#: dnf/base.py:2768 dnf/base.py:2788
+#: dnf/base.py:2782 dnf/base.py:2802
 msgid "No match for argument"
 msgstr "Nincs találat"
 
-#: dnf/base.py:2776 dnf/base.py:2796
+#: dnf/base.py:2790 dnf/base.py:2810
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Az összes találat ki lett szűrve kizáró szűréssel"
 
-#: dnf/base.py:2778
+#: dnf/base.py:2792
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Az összes találat ki lett szűrve moduláris szűréssel"
 
-#: dnf/base.py:2794
+#: dnf/base.py:2808
 msgid "All matches were installed from a different repository for argument"
 msgstr "Az összes találat egy másik tárolóból lett telepítve"
 
-#: dnf/base.py:2855
+#: dnf/base.py:2869
 #, python-format
 msgid "Package %s is already installed."
 msgstr "A(z) %s csomag már telepítve van."

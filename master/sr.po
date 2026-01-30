@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 03:13+0000\n"
+"POT-Creation-Date: 2026-01-30 03:15+0000\n"
 "PO-Revision-Date: 2021-03-28 06:01+0000\n"
 "Last-Translator: Марко Костић (Marko Kostić) <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -367,7 +367,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "Пакет %s није инсталиран, не могу га деградирати."
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
-#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
+#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2416
 #: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
@@ -427,75 +427,83 @@ msgstr "Неисправан формат: %s"
 msgid "No packages marked for removal."
 msgstr "Нема пакета означених за уклањање."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:498
+#: dnf/base.py:2323
+#, python-format
+msgid ""
+"Unneeded protected package: %s (and its dependencies) cannot be removed, "
+"either mark it as user-installed or change protected_packages configuration "
+"option."
+msgstr ""
+
+#: dnf/base.py:2423 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr ""
 
-#: dnf/base.py:2414
+#: dnf/base.py:2428
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Пакет %s најнижег издања је већ инсталиран, не могу га деградирати."
 
-#: dnf/base.py:2514
+#: dnf/base.py:2528
 msgid "No security updates needed, but {} update available"
 msgstr "Безбедносне исправке нису потребне али је {} исправка доступна"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2530
 msgid "No security updates needed, but {} updates available"
 msgstr "Безбедносне исправке нису потребне али је {} исправки доступно"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2534
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "Безбедносне исправке за „{}“ нису потребне али је {} исправка доступна"
 
-#: dnf/base.py:2522
+#: dnf/base.py:2536
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "Безбедносне исправке за „{}“ нису потребне али је {} исправки доступно"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2543
+#: dnf/base.py:2557
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr ""
 
-#: dnf/base.py:2551
+#: dnf/base.py:2565
 #, python-format
 msgid ". Failing package is: %s"
 msgstr "Неуспешан пакет је: %s"
 
-#: dnf/base.py:2552
+#: dnf/base.py:2566
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG кључеви су подешени као: %s"
 
-#: dnf/base.py:2564
+#: dnf/base.py:2578
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG кључ на %s (0x%s) је већ инсталиран"
 
-#: dnf/base.py:2600
+#: dnf/base.py:2614
 msgid "The key has been approved."
 msgstr "Кључ је одобрен."
 
-#: dnf/base.py:2603
+#: dnf/base.py:2617
 msgid "The key has been rejected."
 msgstr "Кључ је одбијен."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2650
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Није успео увоз кључа (код %d)"
 
-#: dnf/base.py:2638
+#: dnf/base.py:2652
 msgid "Key imported successfully"
 msgstr "Кључ је успешно увезен"
 
-#: dnf/base.py:2642
+#: dnf/base.py:2656
 msgid "Didn't install any keys"
 msgstr "Ниједан кључ није инсталиран"
 
-#: dnf/base.py:2645
+#: dnf/base.py:2659
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -506,28 +514,28 @@ msgstr ""
 "одговарајући за овај пакет.\n"
 "Проверите да ли су подешени одговарајући УРЛ-ови кључева за ову ризницу."
 
-#: dnf/base.py:2656
+#: dnf/base.py:2670
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 "Увоз кључа (или кључева) није помогао, погрешан кључ (погрешни кључеви)?"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2723
 msgid "  * Maybe you meant: {}"
 msgstr "  * Можда сте хтели: {}"
 
-#: dnf/base.py:2741
+#: dnf/base.py:2755
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Контролна сума пакета „{}“ из локалне ризнице „{}“ је неисправна"
 
-#: dnf/base.py:2744
+#: dnf/base.py:2758
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Контролне суме неких пакета из локалне ризнице су неисправне"
 
-#: dnf/base.py:2747
+#: dnf/base.py:2761
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Контролна сума пакета „{}“ из ризнице „{}“ је неисправна"
 
-#: dnf/base.py:2750
+#: dnf/base.py:2764
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -535,23 +543,23 @@ msgstr ""
 "Неки пакети садрже неисправан кеш али се не могу преузети због опције „--"
 "cacheonly“"
 
-#: dnf/base.py:2768 dnf/base.py:2788
+#: dnf/base.py:2782 dnf/base.py:2802
 msgid "No match for argument"
 msgstr ""
 
-#: dnf/base.py:2776 dnf/base.py:2796
+#: dnf/base.py:2790 dnf/base.py:2810
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2778
+#: dnf/base.py:2792
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr ""
 
-#: dnf/base.py:2794
+#: dnf/base.py:2808
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 
-#: dnf/base.py:2855
+#: dnf/base.py:2869
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Пакет %s је већ инсталиран."

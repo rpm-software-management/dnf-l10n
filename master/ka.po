@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-01-29 03:13+0000\n"
+"POT-Creation-Date: 2026-01-30 03:15+0000\n"
 "PO-Revision-Date: 2025-12-20 23:16+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/dnf/"
@@ -358,7 +358,7 @@ msgid "Package %s not installed, cannot downgrade it."
 msgstr "პაკეტი %s დაყენებული არაა. ვერსიის ჩამოწევა შეუძლებელია."
 
 #: dnf/base.py:2119 dnf/base.py:2138 dnf/base.py:2151 dnf/base.py:2182
-#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2402
+#: dnf/base.py:2252 dnf/base.py:2260 dnf/base.py:2280 dnf/base.py:2416
 #: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:422
 #: dnf/cli/commands/__init__.py:479 dnf/cli/commands/__init__.py:583
 #: dnf/cli/commands/__init__.py:630 dnf/cli/commands/__init__.py:708
@@ -416,81 +416,89 @@ msgstr "არასწორი ფორმა: %s"
 msgid "No packages marked for removal."
 msgstr "არცერთი პაკეტი არაა წასაშლელად მონიშნული."
 
-#: dnf/base.py:2409 dnf/cli/cli.py:498
+#: dnf/base.py:2323
+#, python-format
+msgid ""
+"Unneeded protected package: %s (and its dependencies) cannot be removed, "
+"either mark it as user-installed or change protected_packages configuration "
+"option."
+msgstr ""
+
+#: dnf/base.py:2423 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "პაკეტები არგუმენტისთვის %s ხელმისაწვდომია, მაგრამ არა დაყენებული."
 
-#: dnf/base.py:2414
+#: dnf/base.py:2428
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "პაკეტი %s უკვე უფრო დაბალი ვერსიისაა. ვერსიის დაწევა შეუძლებელია."
 
-#: dnf/base.py:2514
+#: dnf/base.py:2528
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "უსაფრთხოების განახლებები საჭირო არა, მაგრამ ხელმისაწვდომია {} განახლება"
 
-#: dnf/base.py:2516
+#: dnf/base.py:2530
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} განახლება"
 
-#: dnf/base.py:2520
+#: dnf/base.py:2534
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "\"{}\"-სთვის უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} "
 "განახლება"
 
-#: dnf/base.py:2522
+#: dnf/base.py:2536
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "\"{}\"-სთვის უსაფრთხოების განახლებები საჭირო არაა, მაგრამ ხელმისაწვდომია {} "
 "განახლება"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2543
+#: dnf/base.py:2557
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "შეცდომა გასაღების მიღებისას ბრძანების სტრიქონის პაკეტისთვის: %s"
 
-#: dnf/base.py:2551
+#: dnf/base.py:2565
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". შეცდომიანი პაკეტია: %s"
 
-#: dnf/base.py:2552
+#: dnf/base.py:2566
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG გასაღებები მორგებულია, როგორც: %s"
 
-#: dnf/base.py:2564
+#: dnf/base.py:2578
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG გასაღები %s-თან (0x%s) უკვე დაყენებულია"
 
-#: dnf/base.py:2600
+#: dnf/base.py:2614
 msgid "The key has been approved."
 msgstr "გასაღები მიღებულია."
 
-#: dnf/base.py:2603
+#: dnf/base.py:2617
 msgid "The key has been rejected."
 msgstr "გასაღები უარყოფილია."
 
-#: dnf/base.py:2636
+#: dnf/base.py:2650
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "გასაღების შემოტანა ვერ მოხერხდა (კოდი %d)"
 
-#: dnf/base.py:2638
+#: dnf/base.py:2652
 msgid "Key imported successfully"
 msgstr "გასაღები წარმატებით იქნა შემოტანილი"
 
-#: dnf/base.py:2642
+#: dnf/base.py:2656
 msgid "Didn't install any keys"
 msgstr "არცერთი გასაღები არ დამიყენებია"
 
-#: dnf/base.py:2645
+#: dnf/base.py:2659
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -501,29 +509,29 @@ msgstr ""
 "პაკეტისთვის.\n"
 "შეამოწმეთ რეპოზიტორიის ბმულები."
 
-#: dnf/base.py:2656
+#: dnf/base.py:2670
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "გასაღების შემოტანამ არ უშველა. გასაღებები სწორია?"
 
-#: dnf/base.py:2709
+#: dnf/base.py:2723
 msgid "  * Maybe you meant: {}"
 msgstr "  * შეიძლება იგულისხმეთ: {}"
 
-#: dnf/base.py:2741
+#: dnf/base.py:2755
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "პაკეტს \"{}\" ლოკალური რეპოზიტორიიდან \"{}\" არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2744
+#: dnf/base.py:2758
 msgid "Some packages from local repository have incorrect checksum"
 msgstr ""
 "ზოგიერთ პაკეტს ლოკალური რეპოზიტორიიდან არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2747
+#: dnf/base.py:2761
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "პაკეტს \"{}\" რეპოზიტორიიდან \"{}\" არასწორი საკონტროლო ჯამი გააჩნია"
 
-#: dnf/base.py:2750
+#: dnf/base.py:2764
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -531,23 +539,23 @@ msgstr ""
 "ზოგიერთ პაკეტს არასწორი კეში გააჩნია, მაგრამ \"--cacheonly\" პარამეტრის გამო "
 "მათი გადმოწერა შეუძლებელია"
 
-#: dnf/base.py:2768 dnf/base.py:2788
+#: dnf/base.py:2782 dnf/base.py:2802
 msgid "No match for argument"
 msgstr "არგუმენტს არაფერი ემთხვევა"
 
-#: dnf/base.py:2776 dnf/base.py:2796
+#: dnf/base.py:2790 dnf/base.py:2810
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "ყველა დამთხვევა გაფილტრულია გამორიცხვის ფილტრის მიერ"
 
-#: dnf/base.py:2778
+#: dnf/base.py:2792
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "ყველა დამთხვევა გაფილტრულია მოდულური ფილტრის მიერ"
 
-#: dnf/base.py:2794
+#: dnf/base.py:2808
 msgid "All matches were installed from a different repository for argument"
 msgstr "ყველა დამთხვევა დაყენებულია არგუმენტის სხვადასხვა რეპოზიტორიებიდან"
 
-#: dnf/base.py:2855
+#: dnf/base.py:2869
 #, python-format
 msgid "Package %s is already installed."
 msgstr "პაკეტი %s უკვე დაყენებულია."
