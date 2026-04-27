@@ -9,11 +9,11 @@
 # Misha Shnurapet <shnurapet AT fedoraproject.org>, 2011
 # Misha Shnurapet <shnurapet@fedoraproject.org>, 2011
 # Jan Silhan <jsilhan@redhat.com>, 2015. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020, 2021, 2022, 2024.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2016. #zanata, 2020, 2021, 2022, 2024, 2026.
 # Igor Gnatenko <i.gnatenko.brain@gmail.com>, 2017. #zanata
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020, 2021, 2022, 2024.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021, 2022, 2024.
-# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021, 2022, 2024.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2017. #zanata, 2020, 2021, 2022, 2024, 2026.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2018. #zanata, 2020, 2021, 2022, 2024, 2026.
+# Igor Gorbounov <igor.gorbounov@gmail.com>, 2019. #zanata, 2020, 2021, 2022, 2024, 2026.
 # Vitaliy Bukatkin <vitaliy.bukatkin@gmail.com>, 2020.
 # Alexey Rubtsov <rushills@gmail.com>, 2021, 2022.
 # V I <xasertop@gmail.com>, 2022.
@@ -24,7 +24,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-27 04:21+0000\n"
-"PO-Revision-Date: 2024-08-20 19:38+0000\n"
+"PO-Revision-Date: 2026-04-28 04:24+0000\n"
 "Last-Translator: Igor Gorbounov <igor.gorbounov@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/dnf/dnf-"
 "master/ru/>\n"
@@ -34,7 +34,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.7\n"
+"X-Generator: Weblate 5.17\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -447,6 +447,9 @@ msgid ""
 "either mark it as user-installed or change protected_packages configuration "
 "option."
 msgstr ""
+"Ненужный защищенный пакет: %s (и его зависимости) нельзя удалить – либо "
+"пометьте его как установленный пользователем, либо измените параметр "
+"конфигурации protected_packages."
 
 #: dnf/base.py:2425 dnf/cli/cli.py:498
 #, python-format
@@ -658,7 +661,7 @@ msgstr ""
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Постоянные транзакции не поддерживаются на системах bootc ."
 
 #: dnf/cli/cli.py:231 dnf/cli/cli.py:242 dnf/cli/cli.py:278
 msgid "Operation aborted."
@@ -670,6 +673,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Эта система bootc настроена на режим только для чтения. Передайте параметр --"
+"transient для выполнения этой транзакции во временном оверлее, который "
+"сбросится при перезагрузке системы."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -679,6 +685,9 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"В каталоге /usr будет создано временное наложение, которое будет удалено "
+"после перезагрузки. Имейте в виду, что изменения в каталогах /etc и /var "
+"сохранятся, и пакеты обычно изменяют эти каталоги."
 
 #: dnf/cli/cli.py:260
 msgid ""
@@ -686,16 +695,21 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Эта операция изменит следующие пути, что может привести к несоответствиям "
+"при удалении временного наложения на /usr. Дополнительную информацию см. в "
+"параметре конфигурации usr_drift_protected_paths."
 
 #: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Операция прервана. Передайте параметр --setopt=usr_drift_protected_paths=, "
+"чтобы отключить эту проверку и продолжить в любом случае."
 
 #: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Промежуточные транзакции поддерживаются только на системах bootc."
 
 #: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
@@ -719,6 +733,9 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Попробуйте добавить «--enableplugin=expired-pgp-keys», чтобы решить "
+"проблему. Примечание: этот плагин может не устанавливаться по умолчанию, так "
+"как он является частью пакета «dnf-plugins-core»."
 
 #: dnf/cli/cli.py:407
 msgid "Changelogs for {}"
@@ -1616,6 +1633,8 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
+"Взаимодействие с модулями. ВНИМАНИЕ: деление на модули устарело, и эта "
+"функция будет удалена в будущей версии DNF5."
 
 #: dnf/cli/commands/module.py:364
 msgid "show only enabled modules"
@@ -1646,6 +1665,8 @@ msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
 msgstr ""
+"ВНИМАНИЕ: деление на модули устарело, и эта функциональность будет удалена в "
+"будущей версии DNF5."
 
 #: dnf/cli/commands/module.py:411
 msgid "{} {} {}: too few arguments"
@@ -2675,16 +2696,14 @@ msgid "override the value of $releasever in config and repo files"
 msgstr "заместить значение $releasever в файлах конфигурации и репозиториев"
 
 #: dnf/cli/option_parser.py:202
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_major in config and repo files"
-msgstr "заместить значение $releasever в файлах конфигурации и репозиториев"
+msgstr ""
+"заместить значение $releasever_major в файлах конфигурации и репозиториев"
 
 #: dnf/cli/option_parser.py:205
-#, fuzzy
-#| msgid "override the value of $releasever in config and repo files"
 msgid "override the value of $releasever_minor in config and repo files"
-msgstr "заместить значение $releasever в файлах конфигурации и репозиториев"
+msgstr ""
+"заместить значение $releasever_minor в файлах конфигурации и репозиториев"
 
 #: dnf/cli/option_parser.py:209
 msgid "set arbitrary config and repo options"
@@ -2846,7 +2865,7 @@ msgstr "только загрузить пакеты"
 
 #: dnf/cli/option_parser.py:327
 msgid "Use a transient overlay which will reset on reboot"
-msgstr ""
+msgstr "Используйте временное наложение, которое сбросится при перезагрузке"
 
 #: dnf/cli/option_parser.py:329
 msgid "add a comment to transaction"
@@ -3539,7 +3558,7 @@ msgstr "Команда   :"
 
 #: dnf/cli/output.py:1786
 msgid "Persistence    :"
-msgstr ""
+msgstr "Продолжительность    :"
 
 #: dnf/cli/output.py:1796 dnf/cli/output.py:1798
 msgid "Comment        :"
@@ -4495,32 +4514,32 @@ msgstr "<name-unset>"
 
 #: dnf/util.py:651
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Не работает на системе bootc."
 
 #: dnf/util.py:704
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: команда не найдена."
 
 #: dnf/util.py:706
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Не удалось смонтировать %s в режиме чтения/записи: %s"
 
 #: dnf/util.py:715
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: команда не найдена. Это система bootc?"
 
 #: dnf/util.py:717
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Не удалось разблокировать систему: %s"
 
 #: dnf/util.py:731
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Необработанное состояние разблокировки bootc: %s"
 
 #~ msgid "Interact with Modules."
 #~ msgstr "Взаимодействие с Modules."
