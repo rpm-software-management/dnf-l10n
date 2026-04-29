@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-04-17 03:56+0000\n"
 "Last-Translator: \"Марко Костић (Marko Kostić)\" <marko.m.kostic@gmail.com>\n"
 "Language-Team: Serbian <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -105,6 +105,7 @@ msgid "Started dnf-automatic."
 msgstr "Покренут је dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Пауза од {} секунде"
@@ -126,10 +127,12 @@ msgid "Error: %s"
 msgstr "Грешка: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "неуспех при учитавању ризнице „{}“: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Учитавање ризнице „{}“ није успело"
 
@@ -151,6 +154,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Кеш метаподатака недавно освежен."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Нема омогућених ризница у „{}“."
 
@@ -233,6 +237,7 @@ msgid "Running transaction test"
 msgstr "Извршавам пробни пренос"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "РПМ: {}"
 
@@ -305,6 +310,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Не могу да додам локалне пакете, јер посао преноса већ постоји"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Не могу да отворим: {}"
 
@@ -339,6 +345,7 @@ msgid "%s removed"
 msgstr "%s је уклоњен"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Нема подударања за групу пакета „{}“"
 
@@ -450,18 +457,22 @@ msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Пакет %s најнижег издања је већ инсталиран, не могу га деградирати."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Безбедносне исправке нису потребне али је {} исправка доступна"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "Безбедносне исправке нису потребне али је {} исправки доступно"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "Безбедносне исправке за „{}“ нису потребне али је {} исправка доступна"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "Безбедносне исправке за „{}“ нису потребне али је {} исправки доступно"
 
@@ -524,10 +535,12 @@ msgstr ""
 "Увоз кључа (или кључева) није помогао, погрешан кључ (погрешни кључеви)?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Можда сте хтели: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Контролна сума пакета „{}“ из локалне ризнице „{}“ је неисправна"
 
@@ -536,6 +549,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Контролне суме неких пакета из локалне ризнице су неисправне"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Контролна сума пакета „{}“ из ризнице „{}“ је неисправна"
 
@@ -722,6 +736,7 @@ msgstr ""
 "подешавањима, јер је део пакета „dnf-plugins-core“."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Дневници промена за {}"
 
@@ -845,6 +860,7 @@ msgstr ""
 "утишате ову поруку)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Датотека подешавања „{}“ не постоји"
 
@@ -856,6 +872,7 @@ msgstr ""
 "Не могу да откријем издање (користите „--releasever“ да наведете издање)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "аргумент {}: није дозвољен са аргументом {}"
 
@@ -1185,18 +1202,22 @@ msgid "show problems with provides"
 msgstr "прикажи проблеме са пруженим пакетима"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} недостају захтеви од {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} је дупликат са {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} је застарео у односу на {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} пружа {} али се не може наћи"
 
@@ -1320,6 +1341,7 @@ msgid "show also ID of groups"
 msgstr "прикажи и ИД група"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "доступне поднаредбе: {} (подразумевано), {}"
 
@@ -1367,6 +1389,7 @@ msgstr ""
 "зависности"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1437,6 +1460,7 @@ msgid "No packages to list"
 msgstr "Нема пакета за листање"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1445,6 +1469,7 @@ msgstr ""
 "Користите „<id-transakcije>..<id-transakcije>“."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1453,22 +1478,27 @@ msgstr ""
 "Користите „<broj>“, „last“, „last-<broj>“."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Није пронађен ниједан пренос који управља пакетом „{}“."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} постоји, да препишем?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Не преписујем {}, излазим."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Пренос сачуван у путањи {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Грешка при смештању преноса: {}"
 
@@ -1548,6 +1578,7 @@ msgid "Package %s is not installed."
 msgstr "Пакет %s није инсталиран."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1592,6 +1623,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "уклони инсталиране профиле модула и њихове пакете"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Пакет {} припада већем броју модула, прескачем"
 
@@ -1648,6 +1680,7 @@ msgstr ""
 "будућем издању ДНФ5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: премало аргумената"
 
@@ -1825,6 +1858,7 @@ msgid "repo name"
 msgstr "назив ризнице"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Укупно пакета: {}"
 
@@ -2119,6 +2153,7 @@ msgstr ""
 "„--alldeps“, али не са „--exactdeps“), или са „--requires <REQ> --resolve“"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "аргумент {} захтева опцију --whatrequires или --whatdepends"
 
@@ -2134,6 +2169,7 @@ msgid "%a %b %d %Y"
 msgstr "%a, %d. %b %Y."
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Пакет {} не садржи датотеке"
 
@@ -2238,6 +2274,7 @@ msgid "Could not find repository: %s"
 msgstr "Не могу да пронађем ризницу: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2252,6 +2289,7 @@ msgstr ""
 "    Ако је вредност дата, поставља ту вредност."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2260,6 +2298,7 @@ msgstr ""
 "    испиши помоћ"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2272,6 +2311,7 @@ msgstr ""
 "  disable: онемогући ризнице. option = id ризнице"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2280,6 +2320,7 @@ msgstr ""
 "    разреши скуп преноса"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2292,6 +2333,7 @@ msgstr ""
 "  run: покрени пренос"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2300,6 +2342,7 @@ msgstr ""
 "    покрени пренос"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2571,36 +2614,43 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "Нема права уписа/извршавања у тренутном директоријуму, премештам у /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "пробајте да додате „{}“ у линију наредби како бисте заменили сукобљене пакете"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr ""
 "пробајте да додате „{}“ како бисте прескочили пакете који се не могу "
 "инсталирати"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " или „{}“ како бисте прескочили пакете који се не могу инсталирати"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
 "пробајте да додате „{}“ како бисте користили не само најбоље кандидате пакета"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " или „{}“ како бисте користили не само најбоље кандидате пакета"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
 "пробајте да додате „{}“ како бисте учитали додатне метаподатке спискова "
 "датотека"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " или „{}“ како бисте учитали додатне метаподатке спискова датотека"
 
@@ -3729,14 +3779,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Неисправна вредност подешавања: %s=%s у %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Не могу да поставим „{}“ на „{}“: {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Нисам могао да подесим директоријум са кешом: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3760,6 +3813,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Главно подешавање није имало особину %s пре подешавања опција"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Неисправно или непознато „{}“: {}"
 
@@ -3779,30 +3833,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Упозорење: неуспешно учитавање '%s', прескачем."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Лош ИД за ризницу: {} ({}), бајт = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Лош ИД за ризницу: {}, бајт = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Ризница „{}“ ({}): Грешка при обради подешавања: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Ризница „{}“: Грешка при обради подешавања: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "Ризници „{}“ ({}) недостаје назив у подешавањима, користим ИД."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "Ризници „{}“ недостаје назив у подешавањима, користим ИД."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Обрада датотеке „{}“ није успела: {}"
 
@@ -3835,6 +3896,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "преузимам кључ ризнице за %s нешифровано са %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3857,6 +3919,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Неће инсталирати изворни rpm пакет (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3879,6 +3942,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC проширење: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3953,6 +4017,7 @@ msgstr ""
 "датотеку закључавања или покрените „systemd-tmpfiles --remove dnf.conf“."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Омогућавам другачији ток за „{}“."
 
@@ -3961,54 +4026,67 @@ msgid "Nothing to show."
 msgstr "Ништа за приказ."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Инсталирам новије издање за „{}“ од наведеног. Разлог: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Омогућени модули: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Није наведен профил за „{}“, наведите профил."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Нема таквог модула: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Нема таквог тока: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Нема омогућеног тока за модул: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Није могуће омогућити више токова из модула „{}“ у исто време"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Другачији ток је омогућен за модул: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Нема таквог профила: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Наведени профил није инсталиран за {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Није наведен ток за „{}“, наведите ток"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Нема таквог профила: {}. Нема доступних профила"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Нема профила за уклањање за „{}“"
 
@@ -4035,6 +4113,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Занемарујем непотребан профил: „{}/{}“"
 
@@ -4050,24 +4129,29 @@ msgstr ""
 "Инсталирање модула „{0}“ из безбедне (Fail-Safe) ризнице {1} није дозвољено"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
 "Не могу да поклопим профил за аргумент {}. Доступни профили за „{}:{}“: {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Не могу да поклопим профил за аргумент {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Нема подразумеваних профила за модул {}:{}. Доступни профили: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Нема профила за модул {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Подразумевани профил {} није доступан у модулу {}:{}"
 
@@ -4086,6 +4170,7 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Инсталирани профил „{0}“ није доступан у току „{2}“ модула „{1}“"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Нема доступних пакета за „distrosync“ за назив пакета „{}“"
 
@@ -4093,6 +4178,7 @@ msgstr "Нема доступних пакета за „distrosync“ за на
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Не могу да разрешим аргумент {}"
 
@@ -4102,6 +4188,7 @@ msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Надоградња модула „{0}“ из безбедне ризнице {1} није дозвољена"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Не могу да поклопим профил у аргументу {}"
 
@@ -4119,6 +4206,7 @@ msgstr ""
 "„{module}“, али ниједан од токова није омогућен или подразумеван"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4126,6 +4214,7 @@ msgstr ""
 "„{}“"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Нема поклапања за пакет {}"
 
@@ -4169,10 +4258,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Нисам успео да учитам прикључак „%s“: %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Нису пронађена поклапања за следеће мустре омогућених прикључака: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr "Нису пронађена поклапања за следеће мустре онемогућених прикључака: {}"
 
@@ -4434,10 +4525,12 @@ msgid "Problem"
 msgstr "Проблем"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "TransactionItem није пронађен за кључ: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "TransactionSWDBItem није пронађен за кључ: {}"
 

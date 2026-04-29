@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-02-09 03:34+0000\n"
 "Last-Translator: Oğuz Ersen <oguz@ersen.moe>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -103,6 +103,7 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic başlatıldı."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "{} saniye uykuda bekle"
@@ -123,10 +124,12 @@ msgid "Error: %s"
 msgstr "Hata: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "'{}' depo yükleme hatası: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "'{}' deposu yüklenemedi"
 
@@ -150,6 +153,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Üst veri önbelleği yakın zamanda yenilendi."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "\"{}\" içinde etkin depo yok."
 
@@ -233,6 +237,7 @@ msgid "Running transaction test"
 msgstr "İşlem sınama çalıştırılıyor"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -305,6 +310,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "İşlem görevi zaten var olduğundan yerel paketler eklenemiyor"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Açılamıyor: {}"
 
@@ -339,6 +345,7 @@ msgid "%s removed"
 msgstr "%s kaldırıldı"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "\"{}\" grup paketi için eşleşme yok"
 
@@ -448,18 +455,22 @@ msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "%s paketinin zaten en düşük sürümü kurulu, sürümü düşürülemiyor."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "Güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "\"{}\" için güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "\"{}\" için güvenlik güncellemelerine gerek yok, ama {} güncelleme var"
 
@@ -521,10 +532,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Anahtar(lar)ın içe aktarılması yardımcı olmadı, yanlış anahtar(lar)?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Belki bunu demek istedin: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" yerel deposundan) yanlış"
 
@@ -533,6 +546,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Yerel paket deposundaki bazı paketlerin sağlama değeri hatalı"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "\"{}\" paketinin sağlama toplamı (\"{}\" deposundan) yanlış"
 
@@ -723,6 +737,7 @@ msgstr ""
 "olarak kurulu olmayabilir."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "{} için değişiklik günlükleri"
 
@@ -846,6 +861,7 @@ msgstr ""
 "'gpgcheck' bölümüne bakın)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "\"{}\" diye bir yapılandırma dosyası yok"
 
@@ -858,6 +874,7 @@ msgstr ""
 "kullanın)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "{} argümanı: {} argümanıyla birlikte izin verilmiyor"
 
@@ -1191,18 +1208,22 @@ msgid "show problems with provides"
 msgstr "sağlanan paketlerle ilgili sorunları göster"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} için gerekli olan {} eksik"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} ile {} yinelenen"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{}, {} tarafından kullanım dışı bırakıldı"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{}, {} sağlıyor ama bulunamıyor"
 
@@ -1325,6 +1346,7 @@ msgid "show also ID of groups"
 msgstr "grupların kimliğini de göster"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "kullanılabilir alt komutlar: {} (öntanımlı), {}"
 
@@ -1371,6 +1393,7 @@ msgstr ""
 "olan paketleri atla"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1441,6 +1464,7 @@ msgid "No packages to list"
 msgstr "Listelenecek paket yok"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1449,6 +1473,7 @@ msgstr ""
 "'<işlem-kimliği>..<işlem-kimliği>' şeklinde kullanın."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1457,22 +1482,27 @@ msgstr ""
 "'<sayı>', 'last', 'last-<sayı>' şeklinde kullanın."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "'{}' paketini değiştiren bir işlem bulunamadı."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} zaten var, üzerine yazılsın mı?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "{} üzerine yazılmayacak, çıkılıyor."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "İşlem {} dosyasına kaydedildi."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "İşlem kaydedilirken hata oluştu: {}"
 
@@ -1552,6 +1582,7 @@ msgid "Package %s is not installed."
 msgstr "%s paketi kurulu değil."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1596,6 +1627,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "kurulu modül profillerini ve paketlerini kaldır"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "{} paketi birden fazla modüle ait, atlanıyor"
 
@@ -1652,6 +1684,7 @@ msgstr ""
 "bir yayımında kaldırılacaktır."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: yeterli argüman yok"
 
@@ -1829,6 +1862,7 @@ msgid "repo name"
 msgstr "depo ismi"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Toplam paketler: {}"
 
@@ -2127,6 +2161,7 @@ msgstr ""
 "resolve' ile birlikte kullanılmalıdır"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "{} argümanı --whatrequires veya --whatdepends seçeneğini gerektiriyor"
 
@@ -2142,6 +2177,7 @@ msgid "%a %b %d %Y"
 msgstr "%d %b %Y %a"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "{} paketi dosya içermiyor"
 
@@ -2246,6 +2282,7 @@ msgid "Could not find repository: %s"
 msgstr "Depo bulunamadı: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2260,6 +2297,7 @@ msgstr ""
 "    Değer verilirse o değeri ayarlar."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2268,6 +2306,7 @@ msgstr ""
 "    yardım mesajını yazdır"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2280,6 +2319,7 @@ msgstr ""
 "  disable: depoları devre dışı bırak. seçenek = depo kimliği"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2288,6 +2328,7 @@ msgstr ""
 "    işlem kümesini çözümle"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2300,6 +2341,7 @@ msgstr ""
 "  run: işlemi gerçekleştir"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2308,6 +2350,7 @@ msgstr ""
 "    işlemi gerçekleştir"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2579,32 +2622,39 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "Geçerli dizinde okuma/çalıştırma izni yok, /'a taşınıyor"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "çakışan paketleri değiştirmek için komut satırına '{}' eklemeyi deneyin"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "kurulamayan paketleri atlamak için '{}' eklemeyi deneyin"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " veya kurulamayan paketleri atlamak için '{}'"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
 "en iyilerden başka aday paketleri de kullanmak için '{}' eklemeyi deneyin"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " veya en iyilerden başka aday paketleri de kullanmak için '{}'"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr "ek dosya listeleri üst verilerini yüklemek için '{}' eklemeyi deneyin"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " veya ek dosya listeleri üst verilerini yüklemek için '{}'"
 
@@ -3743,14 +3793,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Geçersiz yapılandırma değeri: %s=%s, %s içinde; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "\"{}\", \"{}\" olarak ayarlanamıyor: {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Önbellek dizini ayarlanamadı: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3775,6 +3828,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Ana yapılandırmada setopt'tan önce %s özelliği yok"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Yanlış veya bilinmeyen \"{}\": {}"
 
@@ -3795,30 +3849,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Uyarı: '%s' yüklenemedi, atlanıyor."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Depo için hatalı kimlik: {} ({}), bayt = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Depo için hatalı kimlik: {}, bayt = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Depo '{}' ({}): Yapılandırma ayrıştırma hatası: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Depo '{}': Yapılandırma ayrıştırma hatası: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "Yapılandırmada '{}' ({}) deposunun ismi eksik, kimlik kullanılıyor."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "Yapılandırmada '{}' deposunun ismi eksik, kimlik kullanılıyor."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "\"{}\" dosyası ayrıştırılamadı: {}"
 
@@ -3851,6 +3912,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "%s için depo anahtarı %s adresinden şifrelenmemiş olarak alınıyor"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3873,6 +3935,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Kaynak rpm paketi kurulmayacak (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3896,6 +3959,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC uzantısı: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3968,6 +4032,7 @@ msgstr ""
 "elle kaldırın veya 'systemd-tmpfiles --remove dnf.conf' komutunu çalıştırın."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "'{}' için farklı akış etkinleştiriliyor."
 
@@ -3976,54 +4041,67 @@ msgid "Nothing to show."
 msgstr "Gösterilecek bir şey yok."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "'{}' için belirtilenden daha yeni bir sürüm kuruluyor. Sebep: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Etkin modüller: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "'{}' için profil belirtilmedi, lütfen profil belirtin."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Böyle bir modül yok: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Böyle bir akış yok: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Modül için etkinleştirilmiş akış yok: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Aynı anda '{}' modülünden daha fazla akış etkinleştirilemiyor"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Modül için farklı akış etkinleştirildi: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Böyle bir profil yok: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "{} için belirtilen profil kurulu değil"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "'{}' için akış belirtilmedi, lütfen akış belirtin"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Böyle bir profil yok: {}. Kullanılabilir profil yok"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "'{}' için kaldırılacak profil yok"
 
@@ -4049,6 +4127,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Gereksiz profil yok sayılıyor: '{}/{}'"
 
@@ -4063,6 +4142,7 @@ msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "'{0}' modülünün {1} Fail-Safe deposundan kurulmasına izin verilmiyor"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4070,18 +4150,22 @@ msgstr ""
 "{}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "{} argümanı için eşleşen profil yok"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "{}:{} modülü için öntanımlı profil yok. Kullanılabilir profiller: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "{}:{} modülü için profil yok"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "{} öntanımlı profili, {}:{} modülünde kullanılabilir değil"
 
@@ -4101,6 +4185,7 @@ msgstr ""
 "Kurulu '{0}' profili, '{1}' modülünün '{2}' akışında kullanılabilir değil"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "'{}' paket adı için dağıtıma eşzamanlanacak paket yok"
 
@@ -4108,6 +4193,7 @@ msgstr "'{}' paket adı için dağıtıma eşzamanlanacak paket yok"
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "{} argümanı çözümlenemedi"
 
@@ -4118,6 +4204,7 @@ msgstr ""
 "'{0}' modülünün {1} Fail-Safe deposundan yükseltilmesine izin verilmiyor"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "{} argümanındaki profil için eşleşme bulunamadı"
 
@@ -4135,6 +4222,7 @@ msgstr ""
 "('{streams}') eşleşiyor ancak akışların hiçbiri etkin veya öntanımlı değil"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4142,6 +4230,7 @@ msgstr ""
 "'{}'"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "{} paketi için eşleşme yok"
 
@@ -4185,10 +4274,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "\"%s\" eklentisi yüklenemedi: %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Şu eklenti etkinleştirme kalıpları için eşleşme bulunamadı: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr "Şu eklenti devre dışı bırakma kalıpları için eşleşme bulunamadı: {}"
 
@@ -4449,10 +4540,12 @@ msgid "Problem"
 msgstr "Sorun"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "Anahtar için TransactionItem bulunamadı: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Anahtar için TransactionSWDBItem bulunamadı: {}"
 

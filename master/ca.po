@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-02-03 03:21+0000\n"
 "Last-Translator: naly zzwd <xeanhort007@gmail.com>\n"
 "Language-Team: Catalan <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -108,6 +108,7 @@ msgid "Started dnf-automatic."
 msgstr "S'ha iniciat dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Atura {} segon"
@@ -128,10 +129,12 @@ msgid "Error: %s"
 msgstr "Error: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "carregant repo '{}' error: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Ha fallat la càrrega del dipòsit '{}'"
 
@@ -158,6 +161,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Recentment s'ha refrescat la memòria cau de les metadades."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "No hi ha repositoris habilitats a \"{}\"."
 
@@ -242,6 +246,7 @@ msgid "Running transaction test"
 msgstr "S'executa la prova de la transacció"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -315,6 +320,7 @@ msgstr ""
 "No es poden afegir paquets locals, perquè la tasca de transacció ja existeix."
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "No s'ha pogut obrir: {}"
 
@@ -349,6 +355,7 @@ msgid "%s removed"
 msgstr "S'ha tret %s"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "No hi ha cap coincidència per al grup de paquets \"{}\""
 
@@ -464,24 +471,28 @@ msgstr ""
 "Ja hi ha instal·lada la versió més baixa del paquet %s, no es pot revertir."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "No es requereix cap actualització de seguretat, però hi ha {} actualització "
 "disponible"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "No es requereix cap actualització de seguretat, però hi ha {} "
 "actualitzacions disponibles"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "No es requereix cap actualització de seguretat per «{}», però hi ha {} "
 "actualització disponible"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "No es requereix cap actualització de seguretat per «{}», però hi ha {} "
@@ -545,10 +556,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "La importació de claus no ha ajudat, eren claus incorrectes?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Potser voleu dir: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquet \"{}\" del dipòsit local \"{}\" té una suma de comprovació "
@@ -560,6 +573,7 @@ msgstr ""
 "Alguns paquets del dipòsit local tenen una suma de comprovació incorrecta"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "El paquet \"{}\" del dipòsit \"{}\" té una suma de comprovació incorrecta"
@@ -756,6 +770,7 @@ msgstr ""
 "que forma part del paquet dnf-plugins-core."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Registres de canvis per a {}"
 
@@ -879,6 +894,7 @@ msgstr ""
 "suprimir aquest missatge)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "El fitxer de configuració {} no existeix"
 
@@ -891,6 +907,7 @@ msgstr ""
 "especificar la versió del llançament)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: no està permès amb l'argument {}"
 
@@ -1225,18 +1242,22 @@ msgid "show problems with provides"
 msgstr "mostra els problemes de proporciona"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "A {} falten els requisits de {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} està duplicat amb {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} queda devaluat per {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} proporciona {} però no s'ha pogut trobar"
 
@@ -1359,6 +1380,7 @@ msgid "show also ID of groups"
 msgstr "mostra també l'identificador dels grups"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "subordres disponibles: {} (per defecte), {}"
 
@@ -1408,6 +1430,7 @@ msgstr ""
 "tenen totes les dependències"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1478,6 +1501,7 @@ msgid "No packages to list"
 msgstr "No hi ha paquets per llistar."
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1486,6 +1510,7 @@ msgstr ""
 "Utilitzeu '<transaction-id>..<transaction-id>'."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1494,22 +1519,27 @@ msgstr ""
 "Useu '<número>', 'últim', 'últim-<número>'."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "No s'ha trobat cap transacció que manipuli el paquet '{}'."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} existeix, se sobreescriu?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "No se sobreescriu {}, se surt."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "La transacció s'ha desat a {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Error en desar la transacció: {}"
 
@@ -1592,6 +1622,7 @@ msgid "Package %s is not installed."
 msgstr "El paquet %s no està instal·lat."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1636,6 +1667,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "suprimeix els perfils de mòduls instal·lats i els seus paquets"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "El paquet {} pertany a diversos mòduls, s'omet"
 
@@ -1692,6 +1724,7 @@ msgstr ""
 "llançament de DNF5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: massa pocs arguments"
 
@@ -1869,6 +1902,7 @@ msgid "repo name"
 msgstr "nom del dipòsit"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Total de paquets: {}"
 
@@ -2170,6 +2204,7 @@ msgstr ""
 "resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "l'argument {} requereix l'opció --whatrequires o --whatdepends"
 
@@ -2185,6 +2220,7 @@ msgid "%a %b %d %Y"
 msgstr "%a %d %b de %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "El paquet {} no conté fitxers"
 
@@ -2288,6 +2324,7 @@ msgid "Could not find repository: %s"
 msgstr "No s'ha pogut el dipòsit: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2302,6 +2339,7 @@ msgstr ""
 "    Si es dona un valor, s'estableix aquest valor."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2310,6 +2348,7 @@ msgstr ""
 "    imprimeix l'ajuda"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2322,6 +2361,7 @@ msgstr ""
 "  disable: desactiva els repositoris. opció = identificador del dipòsit"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2330,6 +2370,7 @@ msgstr ""
 "    resol el conjunt de transaccions"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2342,6 +2383,7 @@ msgstr ""
 "  run: executa la transacció"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2350,6 +2392,7 @@ msgstr ""
 "    executa la transacció"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2621,33 +2664,40 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "Sense accés de lectura/execució al directori actual, es mou a /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "proveu d'afegir \"{}\" a la línia d'ordres per substituir paquets conflictius"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "proveu d'afegir \"{}\" per ometre paquets no instal·lables"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " o '{}' per ometre paquets no instal·lables"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr "proveu d'afegir \"{}\" per usar no només els millors paquets candidats"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " o '{}' per usar no només els millors paquets candidats"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
 "proveu d'afegir \"{}\" per carregar metadades addicionals de llistes de "
 "fitxers"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " o \"{}\" per carregar metadades addicionals de llistes de fitxers"
 
@@ -3794,14 +3844,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Valor de configuració desconegut: %s = %s a %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "No es pot establir \"{}\" a \"{}\": {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "No s'ha pogut establir el directori de memòria cau: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3826,6 +3879,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "La configuració principal no té un attr %s. abans de setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Incorrecte o desconegut \"{}\": {}"
 
@@ -3847,35 +3901,42 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Advertència: error en carregar «%s» i s'ignora."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "ID incorrecte per al dipòsit: {} ({}), byte ), {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "ID incorrecte per al dipòsit: {}, byte , {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Repositori '{}' ({}): Error en analitzar la configuració: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr ""
 "Repositori '{}': S'ha produït un error en analitzar la configuració: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
 "Al repositori «{}» ({}) li manca el nom a la configuració, utilitzant "
 "l'identificador."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
 "Al repositori «{}» li manca el nom a la configuració, utilitzant "
 "l'identificador."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Ha fallat l'anàlisi del fitxer \"{}\": {}"
 
@@ -3909,6 +3970,7 @@ msgstr ""
 "s'està recuperant la clau de dipòsit per a %s sense encriptar des de %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3931,6 +3993,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "No instal·larà un paquet rpm de les fonts (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3954,6 +4017,7 @@ msgid "DNSSEC extension: "
 msgstr "Extensió DNSSEC: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -4027,6 +4091,7 @@ msgstr ""
 "dnf.conf."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "S'està activant un flux diferent per a «{}»."
 
@@ -4035,56 +4100,69 @@ msgid "Nothing to show."
 msgstr "Res a mostrar."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "S'instal·la una versió més nova de {} que l'especificada. Motiu: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Mòduls habilitats: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr ""
 "No s'ha especificat cap perfil per a «{}», si us plau especifiqueu el perfil."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "No existeix el mòdul: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "No existeix aquest flux: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "No hi ha cap flux habilitat per al mòdul: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "No es poden habilitar més fluxos del mòdul '{}' al mateix temps"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Diferent flux habilitat per al mòdul: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "No existeix aquest perfil: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "El perfil especificat no està instal·lat per a {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr ""
 "No s'ha especificat cap flux per a «{}», si us plau especifiqueu el flux"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "No hi ha cap perfil d'aquest tipus: {}. No hi ha perfils disponibles"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "No hi ha cap perfil a eliminar per a «{}»"
 
@@ -4110,6 +4188,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "S'ignora el perfil innecessari: «{}/{}»"
 
@@ -4127,6 +4206,7 @@ msgstr ""
 "No es permet la instal·lació del mòdul {0} des del dipòsit de seguretat {1}"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4134,19 +4214,23 @@ msgstr ""
 "per a «{}:{}»: {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "No s'ha pogut fer coincidir el perfil de l'argument {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
 "No hi ha perfils predeterminats per al mòdul {}:{}. Perfils disponibles: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "No hi ha perfils per al mòdul {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "El perfil predeterminat {} no està disponible al mòdul {}:{}"
 
@@ -4167,6 +4251,7 @@ msgstr ""
 "El perfil instal·lat '{0}' no està disponible al mòdul '{1}' del flux '{2}'"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
 "No hi ha paquets disponibles per a la distribució per al nom del paquet '{}'"
@@ -4175,6 +4260,7 @@ msgstr ""
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "No es pot resoldre l'argument {}"
 
@@ -4186,6 +4272,7 @@ msgstr ""
 "{1}"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "No es pot coincidir amb el perfil a l'argument {}"
 
@@ -4203,6 +4290,7 @@ msgstr ""
 "del mòdul '{module}', però cap dels fluxos està habilitat o predeterminat"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4210,6 +4298,7 @@ msgstr ""
 "l'argument: «{}»"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "No hi ha cap coincidència per al paquet {}"
 
@@ -4253,12 +4342,14 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "No s'ha pogut carregar el connector «%s»: %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
 "No s'han trobat coincidències per als següents patrons d'habilitació de "
 "connectors: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "No s'han trobat coincidències per als següents patrons de desactivació de "
@@ -4533,10 +4624,12 @@ msgid "Problem"
 msgstr "Problema"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "No s'ha trobat el TransactionItem per a la clau: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "No s'ha trobat TransactionSWDBItem per a la clau: {}"
 

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-02-26 03:21+0000\n"
 "Last-Translator: Efstathios Iosifidis <eiosifidis@yandex.com>\n"
 "Language-Team: Greek <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -102,6 +102,7 @@ msgid "Started dnf-automatic."
 msgstr "Έγινε εκκίνηση του dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Κοίμηση για {} δευτερόλεπτο"
@@ -122,10 +123,12 @@ msgid "Error: %s"
 msgstr "Σφάλμα:%s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "Αποτυχία φόρτωσης του αποθετηρίου '{}': {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Αποτυχία φόρτωσης του αποθετηρίου '{}'"
 
@@ -150,6 +153,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Η προσωρινή μνήμη μεταδεδομένων ανανεώθηκε πρόσφατα."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Δεν υπάρχουν ενεργοποιημένα αποθετήρια στο \"{}\"."
 
@@ -236,6 +240,7 @@ msgid "Running transaction test"
 msgstr "Εκτέλεση δοκιμής συναλλαγής"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -309,6 +314,7 @@ msgstr ""
 "Αδυναμία προσθήκης τοπικών πακέτων, επειδή υπάρχει ήδη εργασία συναλλαγής"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Αδυναμία ανοίγματος: {}"
 
@@ -343,6 +349,7 @@ msgid "%s removed"
 msgstr "Το %s αφαιρέθηκε"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Δεν βρέθηκε αντιστοιχία για το πακέτο ομάδας \"{}\""
 
@@ -461,22 +468,26 @@ msgstr ""
 "υποβάθμισης."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Δεν απαιτούνται ενημερώσεις ασφαλείας, αλλά {} ενημέρωση είναι διαθέσιμη"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Δεν απαιτούνται ενημερώσεις ασφαλείας, αλλά {} ενημερώσεις είναι διαθέσιμες"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Δεν απαιτούνται ενημερώσεις ασφαλείας για το \"{}\", αλλά {} ενημέρωση είναι "
 "διαθέσιμη"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Δεν απαιτούνται ενημερώσεις ασφαλείας για το \"{}\", αλλά {} ενημερώσεις "
@@ -540,10 +551,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Η εισαγωγή των κλειδιών δεν βοήθησε, μήπως είναι λάθος τα κλειδιά;"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr ""
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Το πακέτο \"{}\" από το τοπικό αποθετήριο \"{}\" έχει εσφαλμένο άθροισμα "
@@ -555,6 +568,7 @@ msgstr ""
 "Ορισμένα πακέτα από το τοπικό αποθετήριο έχουν εσφαλμένο άθροισμα ελέγχου"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr ""
 "Το πακέτο \"{}\" από το αποθετήριο \"{}\" έχει εσφαλμένο άθροισμα ελέγχου"
@@ -753,6 +767,7 @@ msgstr ""
 "από προεπιλογή, καθώς αποτελεί μέρος του πακέτου 'dnf-plugins-core'."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Αρχεία αλλαγών (Changelogs) για {}"
 
@@ -876,6 +891,7 @@ msgstr ""
 "αποσιωπήσετε αυτό το μήνυμα)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Το αρχείο ρυθμίσεων \"{}\" δεν υπάρχει"
 
@@ -888,6 +904,7 @@ msgstr ""
 "να καθορίσετε την έκδοση)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "το όρισμα {}: δεν επιτρέπεται μαζί με το όρισμα {}"
 
@@ -1208,18 +1225,22 @@ msgid "show problems with provides"
 msgstr "εμφάνιση προβλημάτων με τις παροχές (provides)"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "το {} έχει ελλιπείς απαιτήσεις για το {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "το {} είναι διπλότυπο με το {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "το {} έχει καταργηθεί από το {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "το {} παρέχει το {} αλλά αυτό δεν μπορεί να βρεθεί"
 
@@ -1343,6 +1364,7 @@ msgid "show also ID of groups"
 msgstr "εμφάνιση και των ID των ομάδων"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "διαθέσιμες υποεντολές: {} (προεπιλογή), {}"
 
@@ -1393,6 +1415,7 @@ msgstr ""
 "ελλιπείς εξαρτήσεις"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1463,6 +1486,7 @@ msgid "No packages to list"
 msgstr "Δεν υπάρχουν πακέτα για προβολή"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1471,6 +1495,7 @@ msgstr ""
 "Χρησιμοποιήστε '<id-συναλλαγής>..<id-συναλλαγής>'."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1479,22 +1504,27 @@ msgstr ""
 "Χρησιμοποιήστε '<αριθμός>', 'last', 'last-<αριθμός>'."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Δεν βρέθηκε συναλλαγή που να επηρεάζει το πακέτο '{}'."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "Το {} υπάρχει, αντικατάσταση;"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Δεν θα γίνει αντικατάσταση του {}, έξοδος."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Η συναλλαγή αποθηκεύτηκε στο {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Σφάλμα αποθήκευσης συναλλαγής: {}"
 
@@ -1576,6 +1606,7 @@ msgid "Package %s is not installed."
 msgstr "Το πακέτο %s δεν είναι εγκατεστημένο."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1620,6 +1651,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "αφαίρεση εγκατεστημένων προφίλ αρθρωμάτων και των πακέτων τους"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Το πακέτο {} ανήκει σε πολλαπλά αρθρώματα, παράλειψη"
 
@@ -1676,6 +1708,7 @@ msgstr ""
 "αφαιρεθεί σε μελλοντική έκδοση του DNF5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: πολύ λίγα ορίσματα"
 
@@ -1853,6 +1886,7 @@ msgid "repo name"
 msgstr "όνομα αποθετηρίου"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Συνολικά πακέτα: {}"
 
@@ -2151,6 +2185,7 @@ msgstr ""
 "το '--requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "το όρισμα {} απαιτεί την επιλογή --whatrequires ή --whatdepends"
 
@@ -2166,6 +2201,7 @@ msgid "%a %b %d %Y"
 msgstr "%a %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Το πακέτο {} δεν περιέχει αρχεία"
 
@@ -2263,6 +2299,7 @@ msgid "Could not find repository: %s"
 msgstr "Αδυναμία εύρεσης αποθετηρίου: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2272,12 +2309,14 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
 msgstr ""
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2286,12 +2325,14 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
 msgstr ""
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2300,12 +2341,14 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
 msgstr ""
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2570,38 +2613,45 @@ msgstr ""
 "στο /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "δοκιμάστε να προσθέσετε το '{}' στη γραμμή εντολών για να αντικαταστήσετε τα "
 "πακέτα που συγκρούονται"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr ""
 "δοκιμάστε να προσθέσετε το '{}' για να παραλείψετε πακέτα που δεν μπορούν να "
 "εγκατασταθούν"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " ή το '{}' για να παραλείψετε πακέτα που δεν μπορούν να εγκατασταθούν"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
 "δοκιμάστε να προσθέσετε το '{}' για να χρησιμοποιήσετε όχι μόνο τα βέλτιστα "
 "υποψήφια πακέτα"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " ή το '{}' για να χρησιμοποιήσετε όχι μόνο τα βέλτιστα υποψήφια πακέτα"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
 "δοκιμάστε να προσθέσετε το '{}' για να φορτώσετε επιπλέον μεταδεδομένα "
 "λιστών αρχείων (filelists)"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr ""
 " ή το '{}' για να φορτώσετε επιπλέον μεταδεδομένα λιστών αρχείων (filelists)"
@@ -3746,14 +3796,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Μη έγκυρη τιμή ρυθμίσεων: %s=%s στο %s· %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Αδυναμία ορισμού του \"{}\" σε \"{}\": {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Αδυναμία ορισμού του cachedir: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3775,6 +3828,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Οι κύριες ρυθμίσεις δεν είχαν χαρακτηριστικό %s πριν το setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Εσφαλμένο ή άγνωστο \"{}\": {}"
 
@@ -3794,33 +3848,40 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Προειδοποίηση: αποτυχία φόρτωσης του '%s', παράλειψη."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Εσφαλμένο id για το αποθετήριο: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Εσφαλμένο id για το αποθετήριο: {}, byte = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Αποθετήριο '{}' ({}): Σφάλμα ανάλυσης ρυθμίσεων: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Αποθετήριο '{}': Σφάλμα ανάλυσης ρυθμίσεων: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
 "Λείπει το όνομα (name) για το αποθετήριο '{}' ({}) στις ρυθμίσεις, χρήση του "
 "id."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
 "Λείπει το όνομα (name) για το αποθετήριο '{}' στις ρυθμίσεις, χρήση του id."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Η ανάλυση του αρχείου \"{}\" απέτυχε: {}"
 
@@ -3853,6 +3914,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "ανάκτηση κλειδιού αποθετηρίου για το %s χωρίς κρυπτογράφηση από το %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3875,6 +3937,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Δεν θα γίνει εγκατάσταση πακέτου πηγαίου κώδικα rpm (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3897,6 +3960,7 @@ msgid "DNSSEC extension: "
 msgstr "Επέκταση DNSSEC: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3970,6 +4034,7 @@ msgstr ""
 "dnf.conf."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Ενεργοποίηση διαφορετικής ροής (stream) για το '{}'."
 
@@ -3978,56 +4043,69 @@ msgid "Nothing to show."
 msgstr "Τίποτα προς εμφάνιση."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Εγκατάσταση νεότερης έκδοσης του '{}' από την καθορισμένη. Αιτία: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Ενεργοποιημένα αρθρώματα: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Δεν καθορίστηκε προφίλ για το '{}', παρακαλώ καθορίστε προφίλ."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Δεν υπάρχει τέτοιο άρθρωμα: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Δεν υπάρχει τέτοια ροή (stream): {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Δεν υπάρχει ενεργοποιημένη ροή για το άρθρωμα: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
 "Δεν είναι δυνατή η ταυτόχρονη ενεργοποίηση περισσότερων ροών από το άρθρωμα "
 "'{}'"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Έχει ενεργοποιηθεί διαφορετική ροή για το άρθρωμα: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Δεν υπάρχει τέτοιο προφίλ: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Το καθορισμένο προφίλ δεν είναι εγκατεστημένο για το {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Δεν καθορίστηκε ροή για το '{}', παρακαλώ καθορίστε ροή"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Δεν υπάρχει τέτοιο προφίλ: {}. Δεν υπάρχουν διαθέσιμα προφίλ"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Δεν υπάρχει προφίλ προς αφαίρεση για το '{}'"
 
@@ -4055,6 +4133,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Αγνόηση περιττού προφίλ: '{}/{}'"
 
@@ -4073,6 +4152,7 @@ msgstr ""
 "επιτρέπεται"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4080,19 +4160,23 @@ msgstr ""
 "{}': {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Αδυναμία αντιστοίχισης προφίλ για το όρισμα {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
 "Δεν υπάρχουν προεπιλεγμένα προφίλ για το άρθρωμα {}:{}. Διαθέσιμα προφίλ: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Δεν υπάρχουν προφίλ για το άρθρωμα {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Το προεπιλεγμένο προφίλ {} δεν είναι διαθέσιμο στο άρθρωμα {}:{}"
 
@@ -4113,6 +4197,7 @@ msgstr ""
 "Το εγκατεστημένο προφίλ '{0}' δεν είναι διαθέσιμο στο άρθρωμα '{1}' ροή '{2}'"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Δεν υπάρχουν διαθέσιμα πακέτα για distrosync για το όνομα πακέτου '{}'"
 
@@ -4120,6 +4205,7 @@ msgstr "Δεν υπάρχουν διαθέσιμα πακέτα για distrosyn
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Αδυναμία επίλυσης του ορίσματος {}"
 
@@ -4131,6 +4217,7 @@ msgstr ""
 "επιτρέπεται"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Αδυναμία αντιστοίχισης προφίλ στο όρισμα {}"
 
@@ -4149,6 +4236,7 @@ msgstr ""
 "προεπιλεγμένη"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4156,6 +4244,7 @@ msgstr ""
 "όρισμα: '{}'"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Δεν βρέθηκε αντιστοιχία για το πακέτο {}"
 
@@ -4199,11 +4288,13 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Αποτυχία φόρτωσης του πρόσθετου \"%s\": %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
 "Δεν βρέθηκαν αντιστοιχίες για τα ακόλουθα πρότυπα ενεργοποίησης πρόσθετων: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "Δεν βρέθηκαν αντιστοιχίες για τα ακόλουθα πρότυπα απενεργοποίησης πρόσθετων: "
@@ -4484,10 +4575,12 @@ msgid "Problem"
 msgstr "Πρόβλημα"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "Το TransactionItem δεν βρέθηκε για το κλειδί: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Το TransactionSWDBItem δεν βρέθηκε για το κλειδί: {}"
 

@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2025-05-05 13:20+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
@@ -103,6 +103,7 @@ msgid "Started dnf-automatic."
 msgstr "已啟動 dnf-automatic。"
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "睡眠 {} 秒"
@@ -122,10 +123,12 @@ msgid "Error: %s"
 msgstr "錯誤：%s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "載入「{}」軟體庫失敗：{}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "載入「{}」軟體庫時發生錯誤"
 
@@ -146,6 +149,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "中介資料的快取已於最近重新整理。"
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "「{}」中沒有啟用的軟體庫。"
 
@@ -228,6 +232,7 @@ msgid "Running transaction test"
 msgstr "執行處理事項測試"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM：{}"
 
@@ -295,6 +300,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "因為已經有處理事項工作，無法加入本機軟體包"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "無法開啟：{}"
 
@@ -329,6 +335,7 @@ msgid "%s removed"
 msgstr "已移除 %s"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "找不到符合「{}」軟體包群組的項目"
 
@@ -435,18 +442,22 @@ msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "已經安裝最舊版本的軟體包 %s，所以無法降級。"
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "不需要任何的安全性更新，但有 {} 個更新可用"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "不需要任何的安全性更新，但有 {} 個更新可用"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "不需要「{}」的任何安全性更新，但有 {} 個更新可用"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "不需要「{}」的任何安全性更新，但有 {} 個更新可用"
 
@@ -507,10 +518,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "匯入的金鑰沒有作用，可能是因為金鑰是錯誤的？"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * 或許您想要：{}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "「{}」軟體包來自本機「{}」軟體庫有不正確的 checksum"
 
@@ -519,6 +532,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "來自本機軟體庫的部份軟體包有不正確的 checksum"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "「{}」軟體包來自「{}」軟體庫有不正確的 checksum"
 
@@ -693,6 +707,7 @@ msgstr ""
 "能不會在預設情況下安裝，因為它是 'dnf-plugins-core' 軟體包的一部分。"
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "{} 的變更記錄"
 
@@ -810,6 +825,7 @@ msgstr ""
 "dnf.conf(5) 的「gpgcheck」以了解如何隱藏此則訊息）"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "「{}」組態檔不存在"
 
@@ -820,6 +836,7 @@ msgid ""
 msgstr "無法偵測發行版本（使用「--releasever」指定發行版本）"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "引數 {}：不允許與 {} 引數使用"
 
@@ -1148,18 +1165,22 @@ msgid "show problems with provides"
 msgstr "顯示提供的問題"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} 遺失了 {} 的要求"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} 與 {} 重複"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} 已經棄用由 {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} 提供 {} 但找不到"
 
@@ -1280,6 +1301,7 @@ msgid "show also ID of groups"
 msgstr "亦顯示群組 ID"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "可用的子命令：{} (預設)、{}"
 
@@ -1323,6 +1345,7 @@ msgid ""
 msgstr "replay 命令，跳過不可用或依賴關係不齊全的軟體包"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1389,6 +1412,7 @@ msgid "No packages to list"
 msgstr "沒有要列出的軟體包"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1397,6 +1421,7 @@ msgstr ""
 "使用「<transaction-id>..<transaction-id>」。"
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1405,22 +1430,27 @@ msgstr ""
 "請使用 '<數字>'、'last'、'last-<數字>'。"
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "找不到操作「{}」軟體包的處理事項。"
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} 已存在，是否覆蓋？"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "不覆蓋 {}，正離開。"
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "處理事項儲存至 {}。"
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "儲存處理事項時遭遇錯誤：{}"
 
@@ -1498,6 +1528,7 @@ msgid "Package %s is not installed."
 msgstr "%s 軟體包尚未安裝。"
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1540,6 +1571,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "移除安裝的模組設定檔及其軟體包"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "{} 軟體包屬於多個模組，跳過"
 
@@ -1592,6 +1624,7 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}：引數過少"
 
@@ -1769,6 +1802,7 @@ msgid "repo name"
 msgstr "軟體庫名稱"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "軟體包總數：{}"
 
@@ -2044,6 +2078,7 @@ msgstr ""
 "resolve」一同使用"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "{} 引數要求有 --whatrequires 或 --whatdepends 選項"
 
@@ -2059,6 +2094,7 @@ msgid "%a %b %d %Y"
 msgstr "%Y年%b%d日（%a）"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "軟體包 {} 不包含任何檔案"
 
@@ -2163,6 +2199,7 @@ msgid "Could not find repository: %s"
 msgstr "找不到軟體庫：%s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2177,6 +2214,7 @@ msgstr ""
 "    如果有指定值，則設定該值。"
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2185,6 +2223,7 @@ msgstr ""
 "    輸出說明"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2197,6 +2236,7 @@ msgstr ""
 "  disable: 停用軟體庫 option = 軟體庫ID"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2205,6 +2245,7 @@ msgstr ""
 "    解析處理事項集"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2217,6 +2258,7 @@ msgstr ""
 "  run: 執行處理事項"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2225,6 +2267,7 @@ msgstr ""
 "    執行處理事項"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2490,30 +2533,37 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "在目前的目錄沒有讀寫與執行的權限，移動至 /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr "請試試在命令列加上「{}」以取代衝突的軟體包"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "請試試加上「{}」以跳過無法安裝的軟體包"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " 或是「{}」跳過無法安裝的軟體包"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr "請試試加上「{}」以不只使用最佳候選的軟體包"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " 或是「{}」不只使用最佳候選的軟體包"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr "嘗試新增 '{}' 以載入額外的檔案清單的中介資料"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " 或 '{}' 載入額外的檔案清單的中介資料"
 
@@ -3630,14 +3680,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "無效的組態值：%s=%s 於 %s；%s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "無法將「{}」設定為「{}」：{}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "無法設定 cachedir：{}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3661,6 +3714,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "主組態未在 setopt 之前設定 %s 特性"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "錯誤的或者是無效的 \"{}\": {}"
 
@@ -3680,30 +3734,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "警告：「%s」載入失敗，略過。"
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "軟體庫的 ID 無效：{} ({})，位元組 = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "軟體庫的 ID 無效：{}，位元組 = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "「{}」({}) 軟體庫：解析組態時發生錯誤：{}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "「{}」軟體庫：解析組態時發生錯誤：{}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "組態檔中缺少「{}」({}) 軟體庫的名稱，改使用 ID。"
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "組態檔中缺少「{}」軟體庫的名稱，改使用 ID。"
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "解析「{}」檔案失敗：{}"
 
@@ -3736,6 +3797,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "從 %s 擷取的軟體庫金鑰未加密"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3756,6 +3818,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "將不會安裝 RPM 原始檔（%s）。"
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr "「gpgkey_dns_verification」組態選項要求有 python3-unbound ({})"
@@ -3777,6 +3840,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC 擴充： "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3845,6 +3909,7 @@ msgstr ""
 "tmpfiles --remove dnf.conf。"
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "正在啟用「{}」的不同流道。"
 
@@ -3853,54 +3918,67 @@ msgid "Nothing to show."
 msgstr "無可供顯示項目。"
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "將安裝比您指定版本還新的「{}」，原因：{}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "已啟用模組：{}。"
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "沒有為 {} 指定的設定檔，請指定設定檔。"
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "沒有這個模組：{}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "沒有這個流道：{}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "此模組沒有啟用的流道：{}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "無法同時為「{}」模組啟用更多流道"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "此模組有啟用不同流道：{}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "沒有這個設定檔：{}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "指定的設定檔並未為 {} 安裝"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "沒有為「{}」指定的流道，請指定流道"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "沒有這個設定檔：{}。沒有可用的設定檔"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "沒有可為「{}」移除的設定檔"
 
@@ -3926,6 +4004,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "忽略不必要的設定檔：「{}/{}」"
 
@@ -3940,23 +4019,28 @@ msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "不允許從 {1} 防故障軟體庫安裝「{0}」模組"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr "無法符合 {} 引數的設定檔。「{}:{}」可用設定檔：{}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "無法符合 {} 引數的設定檔"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "沒有 {}:{} 模組的預設設定檔。可用設定檔：{}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "沒有 {}:{} 模組的設定檔"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "{} 預設設定檔無法在 {}:{} 模組使用"
 
@@ -3975,6 +4059,7 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "安裝的「{0}」設定檔在「{1}」模組「{2}」流道中無法使用"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "distrosync 中對於軟體包名稱「{}」沒有可用的軟體包"
 
@@ -3982,6 +4067,7 @@ msgstr "distrosync 中對於軟體包名稱「{}」沒有可用的軟體包"
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "無法解析 {} 引數"
 
@@ -3991,6 +4077,7 @@ msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "不允許從 {1} 防故障軟體庫升級「{0}」模組"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "無法在 {} 引數中找到符合的設定檔"
 
@@ -4008,11 +4095,13 @@ msgstr ""
 "相符，但流道皆未啟用或是作為預設"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr "只要求模組名稱。忽略引數中的非必要資訊：「{}」"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "找不到符合的軟體包 {}"
 
@@ -4056,10 +4145,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "無法載入「%s」插件：%s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "找不到下述啟用之插件模式的符合項目：{}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr "找不到下述停用之插件模式的符合項目：{}"
 
@@ -4312,10 +4403,12 @@ msgid "Problem"
 msgstr "問題"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "找不到下述鍵的 TransactionItem：{}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "找不到下述鍵的 TransactionSWDBItem：{}"
 

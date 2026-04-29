@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2025-10-11 02:08+0000\n"
 "Last-Translator: \"Richard E. van der Luit\" <fedoraproject@veneax.nl>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -102,6 +102,7 @@ msgid "Started dnf-automatic."
 msgstr "dnf-automatic is gestart."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Ga voor {} seconde slapen"
@@ -122,10 +123,12 @@ msgid "Error: %s"
 msgstr "Fout: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "het laden van repo '{}' is mislukt: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Het laden van repository '{}' is mislukt"
 
@@ -146,6 +149,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Metadatacache pas nog ververst."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Er zijn geen ingeschakelde repositories in \"{}\"."
 
@@ -230,6 +234,7 @@ msgid "Running transaction test"
 msgstr "Uitvoeren transactietest"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -301,6 +306,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Kan geen lokale pakketten toevoegen omdat transactietaak al bestaat"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Kon niet openen: {}"
 
@@ -335,6 +341,7 @@ msgid "%s removed"
 msgstr "%s verwijderd"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Geen match voor groeppakket \"{}\""
 
@@ -448,19 +455,23 @@ msgstr ""
 "Pakket %s met laagste versie is al geïnstalleerd, kan het niet downgraden."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Geen beveiligingsupdates nodig, maar update {} is beschikbaar"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "Geen beveiligingsupdates nodig, maar updates {} zijn beschikbaar"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Geen beveiligingsupdates nodig voor\"{}\", maar update {} is beschikbaar"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Geen beveiligingsupdates nodig voor\"{}\", maar updates {} zijn beschikbaar"
@@ -523,10 +534,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Importen van sleutel(s) hielp niet; verkeerde sleutel(s)?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Misschien bedoel  je: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van lokale repository \"{}\" heeft een onjuiste checksum"
 
@@ -536,6 +549,7 @@ msgstr ""
 "Sommige paketten van de lokale repository hebbenb een onjuiste checksum"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Pakket \"{}\" van repository \"{}\" heeft een onjuiste checksum"
 
@@ -725,6 +739,7 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Veranderlogs voor {}"
 
@@ -849,6 +864,7 @@ msgstr ""
 "boodschap kunt onderdrukken)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Configuratiebestand \"{}\" bestaat niet"
 
@@ -861,6 +877,7 @@ msgstr ""
 "te specificeren)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: niet toegestaan met argument {}"
 
@@ -1192,18 +1209,22 @@ msgid "show problems with provides"
 msgstr "toon leveringsproblemen"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} mist benodigd {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} is hetzelfde als {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} is vervangen door {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} levert {} maar kan niet worden gevonden"
 
@@ -1327,6 +1348,7 @@ msgid "show also ID of groups"
 msgstr "toon ook ID van groepen"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "beschikbare sub-commandos: {} (default), {}"
 
@@ -1378,6 +1400,7 @@ msgstr ""
 "afhankelijkheden missen"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1448,6 +1471,7 @@ msgid "No packages to list"
 msgstr "Geen pakketten om te laten zien"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1456,6 +1480,7 @@ msgstr ""
 "Gebruik '<transaction-id>..<transaction-id>'."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1464,22 +1489,27 @@ msgstr ""
 "Gebruik '<number>', 'last', 'last-<number>'."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Er werd geen transactie gevonden welke package '{}' bewerkt."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} bestaat, overschrijven?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "{} niet overschrijven, afsluiten."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Transactie opgeslagen naar {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Fout tijdens het opslaan van transactie: {}"
 
@@ -1560,6 +1590,7 @@ msgid "Package %s is not installed."
 msgstr "Pakket '%s' is niet geïnstalleerd."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1604,6 +1635,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "verwijder geïnstalleerde moduleprofielen en hun pakketten"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Pakket {} behoort toe aan meerdere modules, wordt overgeslagen"
 
@@ -1656,6 +1688,7 @@ msgid ""
 msgstr ""
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: te weinig argumenten"
 
@@ -1833,6 +1866,7 @@ msgid "repo name"
 msgstr "repo-naam"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Totaal aantal pakketten: {}"
 
@@ -2137,6 +2171,7 @@ msgstr ""
 "<REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argument {} vereist --whatrequires of --whatdepends optie"
 
@@ -2152,6 +2187,7 @@ msgid "%a %b %d %Y"
 msgstr "%a %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Pakket {} bevat geen bestanden"
 
@@ -2256,6 +2292,7 @@ msgid "Could not find repository: %s"
 msgstr "Kon repository niet vinden: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2270,6 +2307,7 @@ msgstr ""
 "    Als waarde gegeven is dan wordt die ingesteld."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2278,6 +2316,7 @@ msgstr ""
 "    print hulp"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2290,6 +2329,7 @@ msgstr ""
 "  disable: zet repositories uit. optie = repository id"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2298,6 +2338,7 @@ msgstr ""
 "    Los de transactie set op"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2310,6 +2351,7 @@ msgstr ""
 "  run: voer de transactie uit"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2318,6 +2360,7 @@ msgstr ""
 "    voer de transactie uit"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2590,32 +2633,37 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "Geen lezen/uitvoeren-toegang in huidige map, terugvallen op /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "probeer '{}' toe te voegen aan de commandoregel om conflicterende pakketten "
 "te vervangen"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr ""
 "probeer '{}' toe te voegen om niet-installeerbare pakketten over te slaan"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " of '{}' om niet-installeerbare pakketten over te slaan"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
 "probeer '{}' toe te voegen om niet alleen de beste kandidaat pakketten te "
 "gebruiken"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " of '{}' om niet alleen de beste kandidaat pakketten te gebruiken"
 
 #: dnf/cli/main.py:153
-#, fuzzy
+#, fuzzy, python-brace-format
 #| msgid "try to add '{}' to use not only best candidate packages"
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
@@ -2623,6 +2671,7 @@ msgstr ""
 "gebruiken"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr ""
 
@@ -3759,14 +3808,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Ongeldige configuratiewaarde: %s=%s in %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Kan \"{}\" niet instellen naar \"{}\": {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Kan cachemap niet instellen: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3790,6 +3842,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Hoofdconfiguratie heeft geen %s attr. voor setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Niet-correct of onbekend \"{}\": {}"
 
@@ -3809,30 +3862,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Waarschuwing: laden '%s' niet gelukt, wordt overgeslagen."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Slechte id voor repo: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Slechte id voor repo: {}, byte = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Repository '{}' ({}): Fout bij het ontleden van configuratie: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Repository '{}': Fout bij het ontleden van configuratie: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "Repository '{}' ({}) mist naam in configuratie, id wordt gebruikt."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "Repository '{}' mist naam in configuratie, id wordt gebruikt."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Ontleden van bestand \"{}\" mislukte: {}"
 
@@ -3865,6 +3925,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "niet-versleuteld ophalen van repo sleutel voor %s van %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3887,6 +3948,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Zal een bron-rpmpakket (%s) niet installeren."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3909,6 +3971,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC extensie: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3981,6 +4044,7 @@ msgstr ""
 "of start 'systemd-tmpfiles --remove dnf.conf'."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Zet voor '{}' een andere stroom aan."
 
@@ -3989,55 +4053,68 @@ msgid "Nothing to show."
 msgstr "Er is niets te tonen."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr ""
 "Nieuwere versie van '{}' wordt geïnstalleerd dan gespecificeerd. Reden: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Aangezette modules: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Geen profiel gespecificeerd voor '{}', specificeer een profiel."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Geen dergelijke module: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Zo'n stream bestaat niet: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Geen ingeschakelde stream voor module: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Kan niet meer streams van module '{}' tegelijk inschakelen"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Andere stream ingeschakeld voor module: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Geen dergelijk profiel: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Gespecificeerd profiel niet geïnstalleerd voor {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Geen stream gespecificeerd voor '{}', specificeer een stream"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Geen dergelijk profiel: {}. Geen profielen beschikbaar"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Geen profiel te verwijderen voor '{}'"
 
@@ -4063,6 +4140,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Onnodig profiel wordt genegeerd: '{}/{}'"
 
@@ -4079,6 +4157,7 @@ msgstr ""
 "toegestaan"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4086,18 +4165,22 @@ msgstr ""
 "{}': {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Kan profiel niet matchen voor argument {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Geen standaard profielen voor module {}:{}. Beschikbare profielen: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Geen profielen voor module {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Standaard profiel {} niet beschikbaar in module {}:{}"
 
@@ -4118,6 +4201,7 @@ msgstr ""
 "Geïnstalleerd profiel '{0}' is niet beschikbaar in module '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Geen pakketten beschikbaar voor distrosync voor pakketnaam '{}'"
 
@@ -4125,6 +4209,7 @@ msgstr "Geen pakketten beschikbaar voor distrosync voor pakketnaam '{}'"
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Kan argument {} niet oplossen"
 
@@ -4136,6 +4221,7 @@ msgstr ""
 "toegestaan"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Kan profiel in argument {} niet matchen"
 
@@ -4154,6 +4240,7 @@ msgstr ""
 "standaard"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4161,6 +4248,7 @@ msgstr ""
 "genegeerd"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Geen match voor pakket {}"
 
@@ -4204,12 +4292,14 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Fout bij laden plug-in \"%s\": %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
 "Geen overeenkomsten gevonden voor de volgende ingeschakelde plug-in "
 "patronen: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "Geen overeenkomsten gevonden voor de volgende uitgeschakelde plug-in "
@@ -4484,10 +4574,12 @@ msgid "Problem"
 msgstr "Probleem"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "Geen TransactionItem gevonden voor sleutel: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Geen TransactionSWDBItem gevonden voor sleutel: {}"
 

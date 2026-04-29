@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-02-03 03:21+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/dnf/"
@@ -109,6 +109,7 @@ msgid "Started dnf-automatic."
 msgstr "Запущено dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Призупинити обробку на {} секунду"
@@ -130,10 +131,12 @@ msgid "Error: %s"
 msgstr "Помилка: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "помилка під час спроби завантажити сховище «{}»: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Помилка під час спроби завантажити сховище «{}»"
 
@@ -158,6 +161,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Кеш метаданих нещодавно оновлено."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "У «{}» немає увімкнених сховищ."
 
@@ -240,6 +244,7 @@ msgid "Running transaction test"
 msgstr "Виконуємо перевірку операції"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -313,6 +318,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Неможливо додати локальні пакунки, оскільки вже існує завдання"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Не вдалося відкрити: {}"
 
@@ -347,6 +353,7 @@ msgid "%s removed"
 msgstr "%s вилучено"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Немає відповідника для пакунка групи «{}»"
 
@@ -463,18 +470,22 @@ msgstr ""
 "його версію."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Оновлення захисту не потрібні, але доступне {} оновлення"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "Оновлення захисту не потрібні, але доступні {} оновлень"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr "Для «{}» оновлення захисту не потрібні, але доступне {} оновлення"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr "Для «{}» оновлення захисту не потрібні, але доступні {} оновлень"
 
@@ -538,10 +549,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Імпортування ключів не допомогло, помилкові ключі?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Можливо, ви мали на увазі щось таке: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Пакунок «{}» з локального сховища «{}» має помилкову контрольну суму"
 
@@ -550,6 +563,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Деякі пакунки з локального сховища мають помилкові контрольні суми"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Пакунок «{}» зі сховища «{}» має помилкову контрольну суму"
 
@@ -743,6 +757,7 @@ msgstr ""
 "«dnf-plugins-core»."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Журнали змін для {}"
 
@@ -868,6 +883,7 @@ msgstr ""
 "те, як позбутися таких повідомлень)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Файла налаштувань «{}» не існує"
 
@@ -880,6 +896,7 @@ msgstr ""
 "версію випуску)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "аргумент {}: не можна використовувати разом із аргументом {}"
 
@@ -1215,18 +1232,22 @@ msgid "show problems with provides"
 msgstr "показати дані щодо проблем із наданням залежностей"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "У {} пропущено вимоги щодо {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} є дублікатом {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} є застарілим щодо {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} надає {}, але його не вдалося знайти"
 
@@ -1350,6 +1371,7 @@ msgid "show also ID of groups"
 msgstr "показувати також ідентифікатори груп"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "доступні підкоманди: {} (типова), {}"
 
@@ -1400,6 +1422,7 @@ msgstr ""
 "недоступні залежності"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1470,6 +1493,7 @@ msgid "No packages to list"
 msgstr "Немає пакунків для створення списку"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1478,6 +1502,7 @@ msgstr ""
 "Мало бути «<ідентифікатор операції>..<ідентифікатор операції>»."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1486,22 +1511,27 @@ msgstr ""
 "Скористайтеся записом «<число>», «last», «last-<число>»."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Не знайдено операції із пакунком «{}»."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} вже існує, перезаписати?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Не перезаписуємо {}, завершуємо роботу."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Операцію збережено до {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Помилка при збереженні операції: {}"
 
@@ -1581,6 +1611,7 @@ msgid "Package %s is not installed."
 msgstr "Пакунок %s не встановлено."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1625,6 +1656,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "вилучити встановлені профілі модуля і усі їхні пакунки"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Пакунок {} належить до декількох модулів, пропускаємо"
 
@@ -1683,6 +1715,7 @@ msgstr ""
 "буде вилучено у наступному випуску DNF5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: замало аргументів"
 
@@ -1860,6 +1893,7 @@ msgid "repo name"
 msgstr "назва сховища"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Загалом пакунків: {}"
 
@@ -2152,6 +2186,7 @@ msgstr ""
 "resolve»"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "аргумент {} потребує параметра --whatrequires або --whatdepends"
 
@@ -2167,6 +2202,7 @@ msgid "%a %b %d %Y"
 msgstr "%a, %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "У пакунку {} не міститься файлів"
 
@@ -2271,6 +2307,7 @@ msgid "Could not find repository: %s"
 msgstr "Не вдалося знайти сховище: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2286,6 +2323,7 @@ msgstr ""
 "    Якщо значення надано, встановлює це значення."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2294,6 +2332,7 @@ msgstr ""
 "    виводити довідкове повідомлення"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2307,6 +2346,7 @@ msgstr ""
 "  disable: вимкнути сховища. параметр = ідентифікатор сховища"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2315,6 +2355,7 @@ msgstr ""
 "    визначити набір операцій"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2327,6 +2368,7 @@ msgstr ""
 "  run: виконати операцію"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2335,6 +2377,7 @@ msgstr ""
 "    виконати операцію"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2608,34 +2651,41 @@ msgstr ""
 "до /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "(спробуйте додати «{}» до рядка команди для заміни конфліктних пакунків"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr ""
 "спробуйте додати «{}», щоб пропустити непридатні до встановлення пакунки"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " або «{}», щоб пропустити непридатні до встановлення пакунки"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr ""
 "спробуйте додати «{}», щоб було використано лише найкращі варіанти пакунків"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " або «{}», щоб було використано лише найкращі варіанти пакунків"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr ""
 "спробуйте додати «{}», щоб завантажити додаткові метадані списків файлів"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " або «{}», щоб завантажити додаткові метадані списків файлів"
 
@@ -3773,14 +3823,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Некоректне значення налаштувань: %s=%s у %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Не вдалося встановити «{}» у значення «{}»: {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Не вдалося встановити каталог кешування: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3804,6 +3857,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "У основних налаштуваннях не виявлено атрибута %s перед setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Помилковий або невідомий «{}»: {}"
 
@@ -3823,33 +3877,40 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Попередження: не вдалося завантажити «%s», пропускаємо."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Помилковий ідентифікатор сховища: {} ({}), байт = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Помилковий ідентифікатор сховища: {}, байт = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Сховище «{}» ({}): помилка під час спроби обробити налаштування: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Сховище «{}»: помилка під час спроби обробити налаштування: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
 "У налаштуваннях пропущено назву сховища «{}» ({}). Використовуємо "
 "ідентифікатор."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr ""
 "У налаштуваннях пропущено назву сховища «{}». Використовуємо ідентифікатор."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Помилка під час спроби обробити файл «{}»: {}"
 
@@ -3882,6 +3943,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "отримуємо ключ сховища для %s, розшифровано з %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3904,6 +3966,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Не буде встановлено пакунок rpm із початковим кодом (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3927,6 +3990,7 @@ msgid "DNSSEC extension: "
 msgstr "Розширення DNSSEC: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -4002,6 +4066,7 @@ msgstr ""
 "dnf.conf."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Вмикаємо інший потік для «{}»."
 
@@ -4010,54 +4075,67 @@ msgid "Nothing to show."
 msgstr "Нічого показувати."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Встановлюємо новішу версію «{}», ніж було вказано. Причина: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Увімкнені модулі: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Не вказано профілю для «{}». Будь ласка, вкажіть профіль."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Немає такого модуля: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Немає такого потоку: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Немає увімкненого потоку для модуля: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Не можна вмикати додаткові потоки з модуля «{}» одночасно"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Для модуля увімкнено інший потік: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Немає такого профілю: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Вказаний профіль не встановлено для {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Не вказано потоку для «{}». Будь ласка, вкажіть потік"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Немає такого профілю: {}. Немає доступних профілів"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Немає профілю для вилучення для «{}»"
 
@@ -4084,6 +4162,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Ігноруємо непотрібний профіль: «{}/{}»"
 
@@ -4098,6 +4177,7 @@ msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Встановлення модуля «{0}» з безпечного сховища {1} заборонено"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4105,18 +4185,22 @@ msgstr ""
 "для «{}:{}»: {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Не вдалося знайти відповідного профілю для аргументу {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Немає типових профілів для модуля {}:{}. Доступні профілі: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Немає профілів для модуля {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Типовий профіль {} є недоступним у модулі {}:{}"
 
@@ -4135,6 +4219,7 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Встановлений профіль «{0}» є недоступним у модулі «{1}», потік «{2}»"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr ""
 "Немає доступних пакунків для синхронізації із дистрибутивом для назви "
@@ -4144,6 +4229,7 @@ msgstr ""
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Не вдалося обробити аргумент {}"
 
@@ -4153,6 +4239,7 @@ msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Оновлення модуля «{0}» з безпечного сховища {1} заборонено"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Не вдалося знайти відповідник профілю у аргументі {}"
 
@@ -4171,6 +4258,7 @@ msgstr ""
 "типовим"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4178,6 +4266,7 @@ msgstr ""
 "аргументі: «{}»"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Немає відповідника для пакунка {}"
 
@@ -4221,10 +4310,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Не вдалося завантажити додаток «%s»: %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Не знайдено відповідників за такими взірцями для вмикання додатків: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "Не знайдено відповідників за такими взірцями для вимикання додатків: {}"
@@ -4489,10 +4580,12 @@ msgid "Problem"
 msgstr "Проблема"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "Не знайдено TransactionItem для ключа {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Не знайдено TransactionSWDBItem для ключа {}"
 

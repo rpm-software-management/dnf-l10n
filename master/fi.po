@@ -18,7 +18,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2025-09-24 19:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -108,6 +108,7 @@ msgid "Started dnf-automatic."
 msgstr "Käynnistettiin dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Nukutaan {} sekunti"
@@ -128,10 +129,12 @@ msgid "Error: %s"
 msgstr "Virhe: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "Tietovaraston ”{}” latauksen epäonnistuminen: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Ohjelmistolähteen ”{}” lataaminen epäonnistui"
 
@@ -156,6 +159,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Metatietojen välimuisti päivitettiin äskettäin."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "\"{}\":ssa ei ole käyttöön otettuja tietovarastoja."
 
@@ -240,6 +244,7 @@ msgid "Running transaction test"
 msgstr "Suoritetaan transaktiotesti"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -315,6 +320,7 @@ msgstr ""
 "Paikallisia paketteja ei voi lisätä, koska transaktiotyö on jo olemassa"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Avaus ei onnistunut: {}"
 
@@ -349,6 +355,7 @@ msgid "%s removed"
 msgstr "tiedosto %s on poistettu"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Ei vastaavaa ryhmäpaketille \"{}\""
 
@@ -457,19 +464,23 @@ msgid "Package %s of lowest version already installed, cannot downgrade it."
 msgstr "Paketin %s alhaisin versio on jo asennettu, sitä ei voi varhentaa."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Tietoturvapäivityksiä ei tarvita, mutta {} päivitys on saatavilla"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr "Tietoturvapäivityksiä ei tarvita, mutta {} päivitystä on saatavilla"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita paketille ”{}”, mutta {} päivitys saatavilla"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Tietoturvapäivityksiä ei tarvita paketille ”{}”, mutta {} päivitystä on "
@@ -533,10 +544,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Avainten tuonti ei auttanut, ovatko avaimet vääriä?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Kenties tarkoitit: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Paketilla ”{}” paikallisesta tietovarastosta ”{}” on väärä tarkistussumma"
@@ -546,6 +559,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Joillakin paikallisen tietovaraston paketeilla on väärä tarkistussumma"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paketilla ”{}” tietovarastosta ”{}” on väärä tarkistussumma"
 
@@ -734,6 +748,7 @@ msgstr ""
 "se on osa dnf-plugins-core-pakettia."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Muutoslokit paketille {}"
 
@@ -857,6 +872,7 @@ msgstr ""
 "poistaminen kohdasta 'gpgcheck' dnf.conf(5):ssa)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Asetustiedostoa ”{}” ei ole olemassa"
 
@@ -869,6 +885,7 @@ msgstr ""
 "määrittääksesi julkaisuversion)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argumentti {}: ei sallittu argumentin {} kanssa"
 
@@ -1203,18 +1220,22 @@ msgid "show problems with provides"
 msgstr "näytä tarjoajaongelmat (provides)"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "paketilta {} puuttuu riippuvuus {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "Paketti {} on kaksoiskappale paketin {} kanssa"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "Paketin {} vanhentaa paketti {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "Paketti {} tarjoaa {}, mutta sitä ei löydy"
 
@@ -1337,6 +1358,7 @@ msgid "show also ID of groups"
 msgstr "näytä myös ryhmien tunnus"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "saatavilla olevat alikomennot: {} (oletus), {}"
 
@@ -1386,6 +1408,7 @@ msgstr ""
 "joista puuttuu riippuvuuksia"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1456,6 +1479,7 @@ msgid "No packages to list"
 msgstr "Ei lueteltavia paketteja"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1464,6 +1488,7 @@ msgstr ""
 "Käytä <transaktiotunnus> .. <transaktiotunnus>."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1472,22 +1497,27 @@ msgstr ""
 "Käytä ”<numero>”, ”viimeinen”, ”viimeinen-<numero>”."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Pakettia {} käsittelevää transaktiota ei löytynyt."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} on olemassa, korvataanko?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Ei korvata tiedostoa {}, lopetetaan."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Transaktio tallennettu tiedostoon {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Transaktion tallennuksessa tapahtui virhe: {}"
 
@@ -1566,6 +1596,7 @@ msgid "Package %s is not installed."
 msgstr "Pakettia %s ei ole asennettu."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1610,6 +1641,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "poista asennetut moduuliprofiilit ja niiden paketit"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Paketti {} kuuluu useisiin moduuleihin, ohitetaan"
 
@@ -1666,6 +1698,7 @@ msgstr ""
 "tulevassa DNF5-julkaisussa."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: liian vähän argumentteja"
 
@@ -1843,6 +1876,7 @@ msgid "repo name"
 msgstr "ohjelmistolähteen nimi"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Paketteja yhteensä: {}"
 
@@ -2145,6 +2179,7 @@ msgstr ""
 "<REQ> --resolve”"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argumentti {} vaatii valinnan ”--whatrequires” tai ”--whatdepends”"
 
@@ -2160,6 +2195,7 @@ msgid "%a %b %d %Y"
 msgstr "%a %b %d %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Paketti {} ei sisällä tiedostoja"
 
@@ -2264,6 +2300,7 @@ msgid "Could not find repository: %s"
 msgstr "Ohjelmistolähdettä ei löytynyt: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2278,6 +2315,7 @@ msgstr ""
 "    Jos arvo annettiin, asettaa kyseisen arvon."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2286,6 +2324,7 @@ msgstr ""
 "    tulosta ohje"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2299,6 +2338,7 @@ msgstr ""
 "  disable: poista ohjelmistolähteet käytöstä. vaihtoehto = repository id"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2307,6 +2347,7 @@ msgstr ""
 "    ratkaise transaktiojoukko"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2319,6 +2360,7 @@ msgstr ""
 "  run: suorita transaktio"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2327,6 +2369,7 @@ msgstr ""
 "    suorita transaktio"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2600,30 +2643,37 @@ msgstr ""
 "Ei luku-/suoritusoikeuksia nykyisessä hakemistossa, siirrytään hakemistoon /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr "yritä lisätä ”{}” komentoriville korvataksesi ristiriitaiset paketit"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "yritä lisätä ”{}” ohittaaksesi asennuskelvottomat paketit"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " tai ”{}” ohittaaksesi asennuskelvottomat paketit"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr "yritä lisätä ”{}” käyttääksesi muitakin kuin parhaita ehdokaspaketteja"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " tai ”{}” käyttääksesi muitakin kuin parhaita ehdokaspaketteja"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr "yritä lisätä \"{}\" ladataksesi lisää tiedostolistan metatietoja"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " tai '{}' ladataksesi lisää tiedostolistojen metatietoja"
 
@@ -3764,14 +3814,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Virheellinen asetusarvo: %s=%s tiedostossa %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Asetusta ”{}” ei voi asettaa arvoon ”{}”: {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Välimuistihakemiston määritys epäonnistui: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3795,6 +3848,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Pääasetuksella ei ollut %s-ominaisuutta ennen setopt:ia"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Virheellinen tai tuntematon ”{}”: {}"
 
@@ -3814,31 +3868,38 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Varoitus: ei voitu ladata ”%s”, ohitetaan."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Virheellinen tunnus ohjelmistolähteelle: {} ({}), tavu = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Virheellinen tunnus ohjelmistolähteelle: {}, tavu = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Ohjelmistolähde ”{}” ({}): Virhe jäsennettäessä asetuksia: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Ohjelmistolähde ”{}”: virhe jäsennettäessä asetuksia: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr ""
 "Ohjelmistolähteen ”{}” ({}) asetuksista puuttuu nimi, käytetään tunnusta."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "Ohjelmistolähteen ”{}” asetuksista puuttuu nimi, käytetään tunnusta."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Tiedoston ”{}” jäsentäminen epäonnistui: {}"
 
@@ -3872,6 +3933,7 @@ msgstr ""
 "haetaan lähteen %s ohjelmistolähdeavain, joka on purettu osoitteesta %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3894,6 +3956,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Ei asenna lähde-rpm-pakettia (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3917,6 +3980,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC-laajennus: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3990,6 +4054,7 @@ msgstr ""
 "dnf.conf”."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Otetaan eri virta käyttöön moduulille ”{}”."
 
@@ -3998,55 +4063,68 @@ msgid "Nothing to show."
 msgstr "Ei mitään näytettävää."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Asennetaan moduulin ”{}” määritettyä versiota uudempi versio. Syy: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Käytössä olevat moduulit: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Moduulille ”{}” ei ole määritetty profiilia, määritä profiili."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Moduulia {} ei ole olemassa"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Virtaa {} ei ole olemassa"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Ei Käytössä olevaa striimiä moduulille: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
 "Enempää virtoja moduulista ”{}” ei voida ottaa käyttöön samanaikaisesti"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Toinen virta otettu käyttöön moduulille: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Profiilia {} ei löydy"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Määritettyä profiilia ei ole asennettu moduulille {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Moduulille ”{}” ei määritetty virtaa, määritä virta"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Profiilia ei ole olemassa: {}. Profiileja ei ole saatavilla"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Moduulille ”{}” ei ole poistettavaa profiilia"
 
@@ -4073,6 +4151,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Ohitetaan tarpeeton profiili: ”{}/{}”"
 
@@ -4090,6 +4169,7 @@ msgstr ""
 "sallittua"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4097,19 +4177,23 @@ msgstr ""
 "moduulille ”{}:{}”: {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Argumentin {} profiilia ei voida kohdentaa"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr ""
 "Moduulille {}:{} ei ole oletusprofiilia. Käytettävissä olevat profiilit: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Moduulille {}:{} ei ole profiileita"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Moduulissa {}:{} ei ole oletusprofiilia {}"
 
@@ -4130,6 +4214,7 @@ msgstr ""
 "Asennettu profiili ”{0}” ei ole käytettävissä moduulin ”{1}” virrassa ”{2}”"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Ei distrosync-paketteja paketin nimelle ”{}”"
 
@@ -4137,6 +4222,7 @@ msgstr "Ei distrosync-paketteja paketin nimelle ”{}”"
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Argumenttia {} ei voida ratkaista"
 
@@ -4148,6 +4234,7 @@ msgstr ""
 "sallittua"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Argumentin {} profiilia ei voida kohdentaa"
 
@@ -4167,6 +4254,7 @@ msgstr ""
 "oletuksena"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4174,6 +4262,7 @@ msgstr ""
 "”{}”"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Ei vastaavaa paketille {}"
 
@@ -4219,10 +4308,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Liitännäisen ”%s” lataaminen epäonnistui: %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Seuraavia käyttöönotettavien liitännäisten kuvioita ei löytynyt: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "Seuraavia käytöstä poistettavien liitännäisten kuvioita ei löytynyt: {}"
@@ -4488,10 +4579,12 @@ msgid "Problem"
 msgstr "Ongelma"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "TransactionItem:ia ei löydetty avaimelle: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "TransactionSWDBItem:ia ei löydetty avaimelle: {}"
 

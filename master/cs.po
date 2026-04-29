@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2026-04-08 03:43+0000\n"
 "Last-Translator: Jonáš Loskot "
 "<alius@users.noreply.translate.fedoraproject.org>\n"
@@ -130,6 +130,7 @@ msgid "Started dnf-automatic."
 msgstr "Spuštěný dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Pozastaveno na {} sekundu"
@@ -151,10 +152,12 @@ msgid "Error: %s"
 msgstr "Chyba: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "nahrávání repo '{}' selhalo: {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Nahrávání repozitáře '{}' selhalo"
 
@@ -178,6 +181,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Mezipaměť metadat čerstvě obnovena."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Nejsou povoleny repozitáře v \"{}\"."
 
@@ -260,6 +264,7 @@ msgid "Running transaction test"
 msgstr "Probíhá test transakce"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -331,6 +336,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Nedaří se přidat místní balíčky, protože transakční úloha už existuje"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Nelze otevřít: {}"
 
@@ -365,6 +371,7 @@ msgid "%s removed"
 msgstr "%s odstraněn"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Neexistuje shoda pro skupinu balíčků \"{}\""
 
@@ -479,21 +486,25 @@ msgstr ""
 "verzi."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr "Nejsou zapotřebí žádné aktualizace, ale k dispozici je aktualizace {}"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Nejsou zapotřebí žádné aktualizace, ale k dispozici jsou aktualizace {}"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Nejsou zapotřebí žádné aktualizace pro \"{}\", ale k dispozici je "
 "aktualizace {}"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Nejsou zapotřebí žádné aktualizace pro \"{}\", ale k dispozici jsou "
@@ -557,10 +568,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import klíče/ů nepomohl, špatný klíč(e)?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Možná jste měli na mysli: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Balíček \"{}\" z místního repozitáře \"{}\" má nesprávný kontrolní součet"
@@ -570,6 +583,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Některé balíčky z místního repozitáře mají nesprávný kontrolní součet"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Balíček \"{}\" z repozitáře \"{}\" má nesprávný kontrolní součet"
 
@@ -757,6 +771,7 @@ msgstr ""
 "protože je součástí balíčku „dnf-plugins-core“."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Seznamy změn pro {}"
 
@@ -880,6 +895,7 @@ msgstr ""
 "umlčet)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Konfigurační soubor \"{}\" neexistuje"
 
@@ -892,6 +908,7 @@ msgstr ""
 "releasever')"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: není dovoleno s argumentem {}"
 
@@ -1223,18 +1240,22 @@ msgid "show problems with provides"
 msgstr "Zobrazit problémy s poskytovateli balíčků"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} má chybějící požadovanou hodnotu {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} je duplicitní s balíčkem {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} je zastaralý a nahrazen balíčkem {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} poskytuje {} ale nemůže být nalezen"
 
@@ -1359,6 +1380,7 @@ msgid "show also ID of groups"
 msgstr "zobrazit také identifikátory skupin"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "dostupný pod příkaz: {} (default), {}"
 
@@ -1407,6 +1429,7 @@ msgstr ""
 "chybějící závislosti"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1477,6 +1500,7 @@ msgid "No packages to list"
 msgstr "Žádné balíčky k vypsání"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1485,6 +1509,7 @@ msgstr ""
 "Použít '<transaction-id>..<transaction-id>'."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1493,22 +1518,27 @@ msgstr ""
 "Použijte '<number>', 'last', 'last-<number>'."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Nenalezena transakce, která manipuluje s balíčkem '{}'."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} existuje, přepsat?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Není možné přepsat {}, konec."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Transakce uložena do {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Chyba při ukládání transakce: {}"
 
@@ -1587,6 +1617,7 @@ msgid "Package %s is not installed."
 msgstr "Balíček %s není nainstalován."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1631,6 +1662,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "odebrat nainstalované profily modulů a jejich balíčky"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Přeskakuji balík {} náležící více modulům"
 
@@ -1687,6 +1719,7 @@ msgstr ""
 "budoucím vydání DNF5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: příliš mnoho argumentů"
 
@@ -1864,6 +1897,7 @@ msgid "repo name"
 msgstr "Název repozitáře"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Celkově balíčků: {}"
 
@@ -2158,6 +2192,7 @@ msgstr ""
 "'--alldeps', ale ne s '--exactdeps'), nebo s '--requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argument {} požaduje volbu --whatrequires nebo --whatdepends"
 
@@ -2173,6 +2208,7 @@ msgid "%a %b %d %Y"
 msgstr "%d %a %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Balíček {} neobsahuje žádné soubory"
 
@@ -2277,6 +2313,7 @@ msgid "Could not find repository: %s"
 msgstr "Nepodařilo se najít repozitář: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2291,6 +2328,7 @@ msgstr ""
 "    Je-li daná hodnota uvedena, nastaví tuto hodnotu."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2299,6 +2337,7 @@ msgstr ""
 "    zobrazit nápovědu"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2311,6 +2350,7 @@ msgstr ""
 "  disable: zakázat úložiště. volba = repository id"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2319,6 +2359,7 @@ msgstr ""
 "    vyřešit transakční sadu"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2331,6 +2372,7 @@ msgstr ""
 "  run: spustí transakci"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2339,6 +2381,7 @@ msgstr ""
 "    spustit transakci"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2610,31 +2653,38 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "V současném adresáři nelze číst/spouštět, přesouvám do /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "zkuste do příkazového řádku přidat '{}', abyste nahradili konfliktní balíčky"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "zkuste přidat '{}' pro přeskočení odinstalovatelných balíčků"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " nebo '{}' pro přeskočení od-instalovatelných balíčků"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr "zkuste přidat '{}' pro použití nejen nejlepších kandidátských balíků"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " nebo '{}' pro použití nejen nejlepších kandidátských balíčků"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr "zkuste přidat '{}' pro načtení dalších metadat seznamů souborů"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " nebo '{}' pro načtení dalších metadat seznamů souborů"
 
@@ -3766,14 +3816,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Neplatná hodnota konfigurace: %s=%s v %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Nelze nastavit \"{}\" na \"{}\": {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Nepodařilo se nastavit adresář pro cache: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3797,6 +3850,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Hlavní konfigurace neměla %s attr. před setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "Nesprávné nebo neznámé \"{}\": {}"
 
@@ -3816,30 +3870,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Varování: chyba načítání '%s', přeskakuje se."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Nesprávné ID pro repozitář: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Nesprávné ID pro repozitář: {}, byte = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Úložiště '{}' ({}): Chyba při zpracování konfigurace: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Úložiště '{}': Chyba při zpracování konfigurace: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "V konfiguraci chybí název úložiště '{}' ({}), používá se id."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "V konfiguraci chybí název repozitáře „{}“, používá se id."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Rozbor souboru \"{}\" se nezdařil: {}"
 
@@ -3872,6 +3933,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "získávání klíče repozitáře pro %s nešifrovaného z %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3894,6 +3956,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Nenainstaluje zdrojový rpm balíček (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3916,6 +3979,7 @@ msgid "DNSSEC extension: "
 msgstr "DNSSEC rozšíření: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3990,6 +4054,7 @@ msgstr ""
 "soubor zámku nebo spusťte systemd-tmpfiles --remove dnf.conf."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Povolování jiného proudu pro '{}'."
 
@@ -3998,54 +4063,67 @@ msgid "Nothing to show."
 msgstr "Nic k zobrazení."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Instalace novější verze '{}', než která byla zadána. Důvod: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Povolené moduly: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Profil pro '{}' neurčen, prosíme, zadejte profil."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Žádný takový modul: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Žádný takový stream: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Žádný povolený stream pro modul: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr "Nelze povolit více streamů z modulu '{}' současně"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Pro modul: {} povolen jiný stream"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Žádný takový profil: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Zadaný profil pro {} není nainstalován"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Žádný stream pro '{}' neurčen, prosíme, zadejte stream"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Žádný profil: {}. Nejsou k dispozici žádné profily"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Žádný profil k odstranění pro '{}'"
 
@@ -4071,6 +4149,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Ignorování nepotřebného profilu: '{}/{}'"
 
@@ -4085,24 +4164,29 @@ msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Instalace modulu '{0}' z Fail-Safe repozitáře {1} není povolena"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
 "Nelze přiřadit profil pro argument {}. Dostupné profily pro '{}:{}': {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Nelze přiřadit profil pro argument {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Žádné defaultní profily pro modul {}:{}. Dostupné profily: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Žádné profily pro modul {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Defaultní profil {} není dostupný v modulu {}:{}"
 
@@ -4121,6 +4205,7 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Nainstalovaný profil '{0}' není dostupný ve streamu '{2}' modulu '{1}'"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Žádné dostupné balíčky pro název balíčku '{}' pro distrosync"
 
@@ -4128,6 +4213,7 @@ msgstr "Žádné dostupné balíčky pro název balíčku '{}' pro distrosync"
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Nelze vyřešit argument {}"
 
@@ -4137,6 +4223,7 @@ msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Upgrade modulu '{0}' z Fail-Safe repozitáře {1} není povolen"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Nelze přiřadit profil k argumentu {}"
 
@@ -4154,6 +4241,7 @@ msgstr ""
 "'{module}', ale žádný ze streamů není povolen ani není defaultní"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4161,6 +4249,7 @@ msgstr ""
 "argumentu: '{}'"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Žádná shoda pro balíček {}"
 
@@ -4204,10 +4293,12 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Nepodařilo se načíst plugin \"%s\": %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr "Nebyly nalezeny žádné shody pro následující povolené vzory pluginů: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr "Nebyly nalezeny žádné shody pro následující zakázané vzory pluginů: {}"
 
@@ -4473,10 +4564,12 @@ msgid "Problem"
 msgstr "Problém"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "TransactionItem nenalezeno pro klíč: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "TransactionSWDBItem nenalezeno pro klíč: {}"
 

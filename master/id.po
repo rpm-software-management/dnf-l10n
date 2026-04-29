@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-28 04:24+0000\n"
+"POT-Creation-Date: 2026-04-23 17:12+0000\n"
 "PO-Revision-Date: 2025-10-13 02:20+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/dnf/"
@@ -107,6 +107,7 @@ msgid "Started dnf-automatic."
 msgstr "Memulai dnf-automatic."
 
 #: dnf/automatic/main.py:335
+#, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Tidur selama {} detik"
@@ -126,10 +127,12 @@ msgid "Error: %s"
 msgstr "Galat: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
+#, python-brace-format
 msgid "loading repo '{}' failure: {}"
 msgstr "kegagalan memuat repo '{}': {}"
 
 #: dnf/base.py:153
+#, python-brace-format
 msgid "Loading repository '{}' has failed"
 msgstr "Memuat repositori '{}' gagal"
 
@@ -153,6 +156,7 @@ msgid "Metadata cache refreshed recently."
 msgstr "Penyinggahan metadata baru-baru ini disegarkan."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:90
+#, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
 msgstr "Tidak ada repositori yang difungsikan dalam \"{}\"."
 
@@ -238,6 +242,7 @@ msgid "Running transaction test"
 msgstr "Menjalankan uji transaksi"
 
 #: dnf/base.py:1014 dnf/base.py:1166
+#, python-brace-format
 msgid "RPM: {}"
 msgstr "RPM: {}"
 
@@ -308,6 +313,7 @@ msgid "Cannot add local packages, because transaction job already exists"
 msgstr "Tidak bisa menambahkan paket lokal, karena tugas transaksi sudah ada"
 
 #: dnf/base.py:1359
+#, python-brace-format
 msgid "Could not open: {}"
 msgstr "Tidak bisa membuka: {}"
 
@@ -342,6 +348,7 @@ msgid "%s removed"
 msgstr "%s dihapus"
 
 #: dnf/base.py:1739
+#, python-brace-format
 msgid "No match for group package \"{}\""
 msgstr "Tidak ada yang cocok untuk paket grup \"{}\""
 
@@ -454,22 +461,26 @@ msgstr ""
 "menuruntingkatkan itu."
 
 #: dnf/base.py:2530
+#, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr ""
 "Tidak ada pembaruan keamanan yang diperlukan, tapi tersedia {} pembaruan"
 
 #: dnf/base.py:2532
+#, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
 "Tidak ada pembaruan keamanan yang diperlukan, tapi tersedia {} pembaruan"
 
 #: dnf/base.py:2536
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
 "Tidak ada pembaruan keamanan yang diperlukan bagi \"{}\", tapi tersedia {} "
 "pembaruan"
 
 #: dnf/base.py:2538
+#, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
 "Tidak ada pembaruan keamanan yang diperlukan bagi \"{}\", tapi tersedia {} "
@@ -533,10 +544,12 @@ msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Mengimpor kunci tidak membantu, salah kunci?"
 
 #: dnf/base.py:2725
+#, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Mungkin maksud Anda: {}"
 
 #: dnf/base.py:2757
+#, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" dari repositori lokal \"{}\" memiliki checksum salah"
 
@@ -545,6 +558,7 @@ msgid "Some packages from local repository have incorrect checksum"
 msgstr "Beberapa paket dari repositori lokal memiliki checksum salah"
 
 #: dnf/base.py:2763
+#, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Paket \"{}\" dari repositori \"{}\" memiliki checksum salah"
 
@@ -735,6 +749,7 @@ msgstr ""
 "adalah bagian dari paket ''dnf-plugins-core'."
 
 #: dnf/cli/cli.py:407
+#, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Changelog bagi {}"
 
@@ -858,6 +873,7 @@ msgstr ""
 "bagaimana membungkam pesan ini)"
 
 #: dnf/cli/cli.py:995
+#, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Berkas konfig \"{}\" tidak ada"
 
@@ -870,6 +886,7 @@ msgstr ""
 "versi rilis)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argumen {}: tidak diizinkan dengan argumen {}"
 
@@ -1206,18 +1223,22 @@ msgid "show problems with provides"
 msgstr "tampilkan masalah dengan provides"
 
 #: dnf/cli/commands/check.py:97
+#, python-brace-format
 msgid "{} has missing requires of {}"
 msgstr "{} kekurangan require {}"
 
 #: dnf/cli/commands/check.py:117
+#, python-brace-format
 msgid "{} is a duplicate with {}"
 msgstr "{} duplikat dengan {}"
 
 #: dnf/cli/commands/check.py:128
+#, python-brace-format
 msgid "{} is obsoleted by {}"
 msgstr "{} diusangkan oleh {}"
 
 #: dnf/cli/commands/check.py:137
+#, python-brace-format
 msgid "{} provides {} but it cannot be found"
 msgstr "{} menyediakan {} tapi itu tidak bisa ditemukan"
 
@@ -1339,6 +1360,7 @@ msgid "show also ID of groups"
 msgstr "tampilkan juga ID grup"
 
 #: dnf/cli/commands/group.py:329
+#, python-brace-format
 msgid "available subcommands: {} (default), {}"
 msgstr "sub perintah yang tersedia: {} (baku), {}"
 
@@ -1388,6 +1410,7 @@ msgstr ""
 "dependensi"
 
 #: dnf/cli/commands/history.py:93
+#, python-brace-format
 msgid ""
 "Found more than one transaction ID.\n"
 "'{}' requires one transaction ID or package name."
@@ -1458,6 +1481,7 @@ msgid "No packages to list"
 msgstr "Tidak ada paket untuk ditampilkan daftarnya"
 
 #: dnf/cli/commands/history.py:289
+#, python-brace-format
 msgid ""
 "Invalid transaction ID range definition '{}'.\n"
 "Use '<transaction-id>..<transaction-id>'."
@@ -1466,6 +1490,7 @@ msgstr ""
 "Gunakan '<transaction-id>..<transaction-id>'."
 
 #: dnf/cli/commands/history.py:293
+#, python-brace-format
 msgid ""
 "Can't convert '{}' to transaction ID.\n"
 "Use '<number>', 'last', 'last-<number>'."
@@ -1474,22 +1499,27 @@ msgstr ""
 "Gunakan '<number>', 'last', 'last-<number>'."
 
 #: dnf/cli/commands/history.py:322
+#, python-brace-format
 msgid "No transaction which manipulates package '{}' was found."
 msgstr "Tidak ditemukan transaksi yang memanipulasi paket '{}'."
 
 #: dnf/cli/commands/history.py:367
+#, python-brace-format
 msgid "{} exists, overwrite?"
 msgstr "{} sudah ada, timpa?"
 
 #: dnf/cli/commands/history.py:370
+#, python-brace-format
 msgid "Not overwriting {}, exiting."
 msgstr "Tidak menimpa {}, keluar."
 
 #: dnf/cli/commands/history.py:377
+#, python-brace-format
 msgid "Transaction saved to {}."
 msgstr "Transaksi tersimpan ke {}."
 
 #: dnf/cli/commands/history.py:380
+#, python-brace-format
 msgid "Error storing transaction: {}"
 msgstr "Gagal menyimpan transaksi: {}"
 
@@ -1569,6 +1599,7 @@ msgid "Package %s is not installed."
 msgstr "Paket %s tidak terpasang."
 
 #: dnf/cli/commands/module.py:53
+#, python-brace-format
 msgid ""
 "Only module name, stream, architecture or profile is used. Ignoring unneeded "
 "information in argument: '{}'"
@@ -1613,6 +1644,7 @@ msgid "remove installed module profiles and their packages"
 msgstr "menghapus profil modul terpasang dan paket-paket mereka"
 
 #: dnf/cli/commands/module.py:266
+#, python-brace-format
 msgid "Package {} belongs to multiple modules, skipping"
 msgstr "Paket {} milik dari beberapa modul, melewati"
 
@@ -1669,6 +1701,7 @@ msgstr ""
 "dalam rilis mendatang dari DNF5."
 
 #: dnf/cli/commands/module.py:411
+#, python-brace-format
 msgid "{} {} {}: too few arguments"
 msgstr "{} {} {}: argumen terlalu sedikit"
 
@@ -1846,6 +1879,7 @@ msgid "repo name"
 msgstr "nama repo"
 
 #: dnf/cli/commands/repolist.py:290
+#, python-brace-format
 msgid "Total packages: {}"
 msgstr "Paket total: {}"
 
@@ -2144,6 +2178,7 @@ msgstr ""
 "requires <REQ> --resolve'"
 
 #: dnf/cli/commands/repoquery.py:314
+#, python-brace-format
 msgid "argument {} requires --whatrequires or --whatdepends option"
 msgstr "argumen {} membutuhkan opsi --whatrequires atau --whatdepends"
 
@@ -2159,6 +2194,7 @@ msgid "%a %b %d %Y"
 msgstr "%a %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
+#, python-brace-format
 msgid "Package {} contains no files"
 msgstr "Paket {} tidak berisi berkas"
 
@@ -2263,6 +2299,7 @@ msgid "Could not find repository: %s"
 msgstr "Tidak bisa temukan repositori: %s"
 
 #: dnf/cli/commands/shell.py:173
+#, python-brace-format
 msgid ""
 "{} arg [value]\n"
 "  arg: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
@@ -2277,6 +2314,7 @@ msgstr ""
 "    Jika nilai diberikan, menetapkan nilainya."
 
 #: dnf/cli/commands/shell.py:180
+#, python-brace-format
 msgid ""
 "{} [command]\n"
 "    print help"
@@ -2285,6 +2323,7 @@ msgstr ""
 "    mencetak bantuan"
 
 #: dnf/cli/commands/shell.py:184
+#, python-brace-format
 msgid ""
 "{} arg [option]\n"
 "  list: lists repositories and their status. option = [all | id | glob]\n"
@@ -2297,6 +2336,7 @@ msgstr ""
 "  disable: nonaktifkan repositori. opsi = id repositori"
 
 #: dnf/cli/commands/shell.py:190
+#, python-brace-format
 msgid ""
 "{}\n"
 "    resolve the transaction set"
@@ -2305,6 +2345,7 @@ msgstr ""
 "    menguraikan set transaksi"
 
 #: dnf/cli/commands/shell.py:194
+#, python-brace-format
 msgid ""
 "{} arg\n"
 "  list: lists the contents of the transaction\n"
@@ -2317,6 +2358,7 @@ msgstr ""
 "  run: jalankan transaksi"
 
 #: dnf/cli/commands/shell.py:200
+#, python-brace-format
 msgid ""
 "{}\n"
 "    run the transaction"
@@ -2325,6 +2367,7 @@ msgstr ""
 "    menjalankan transaksi"
 
 #: dnf/cli/commands/shell.py:204
+#, python-brace-format
 msgid ""
 "{}\n"
 "    exit the shell"
@@ -2598,31 +2641,38 @@ msgid "No read/execute access in current directory, moving to /"
 msgstr "Tidak ada akses baca/eksekusi di direktori sekarang, pindah ke /"
 
 #: dnf/cli/main.py:134
+#, python-brace-format
 msgid "try to add '{}' to command line to replace conflicting packages"
 msgstr ""
 "coba tambahkan '{}' ke baris perintah untuk menggantikan paket yang konflik"
 
 #: dnf/cli/main.py:138
+#, python-brace-format
 msgid "try to add '{}' to skip uninstallable packages"
 msgstr "coba tambahkan '{}' untuk melewati paket yang tak bisa dipasang"
 
 #: dnf/cli/main.py:141
+#, python-brace-format
 msgid " or '{}' to skip uninstallable packages"
 msgstr " atau '{}' untuk melewati paket yang tak bisa dipasang"
 
 #: dnf/cli/main.py:146
+#, python-brace-format
 msgid "try to add '{}' to use not only best candidate packages"
 msgstr "coba tambahkan '{}' untuk memakai bukan hanya paket kandidat terbaik"
 
 #: dnf/cli/main.py:149
+#, python-brace-format
 msgid " or '{}' to use not only best candidate packages"
 msgstr " atau '{}' untuk memakai bukan hanya paket kandidat terbaik"
 
 #: dnf/cli/main.py:153
+#, python-brace-format
 msgid "try to add '{}' to load additional filelists metadata"
 msgstr "coba tambahkan '{}' untuk memuat metadata daftar berkas tambahan"
 
 #: dnf/cli/main.py:156
+#, python-brace-format
 msgid " or '{}' to load additional filelists metadata"
 msgstr " atau '{}' untuk memuat metadata daftar berkas tambahan"
 
@@ -3760,14 +3810,17 @@ msgid "Invalid configuration value: %s=%s in %s; %s"
 msgstr "Nilai konfigurasi tidak valid: %s=%s di %s; %s"
 
 #: dnf/conf/config.py:193
+#, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
 msgstr "Tak bisa menata \"{}\" ke \"{}\": {}"
 
 #: dnf/conf/config.py:243
+#, python-brace-format
 msgid "Could not set cachedir: {}"
 msgstr "Tidak dapat mengatur cachedir: {}"
 
 #: dnf/conf/config.py:293
+#, python-brace-format
 msgid ""
 "Configuration file URL \"{}\" could not be downloaded:\n"
 "  {}"
@@ -3791,6 +3844,7 @@ msgid "Main config did not have a %s attr. before setopt"
 msgstr "Konfigurasi utama tidak memiliki attr. %s sebelum setopt"
 
 #: dnf/conf/config.py:493 dnf/conf/config.py:511
+#, python-brace-format
 msgid "Incorrect or unknown \"{}\": {}"
 msgstr "\"{}\" yang salah atau tidak dikenal: {}"
 
@@ -3810,30 +3864,37 @@ msgid "Warning: failed loading '%s', skipping."
 msgstr "Peringatan: gagal memuat '%s', lewatkan."
 
 #: dnf/conf/read.py:71
+#, python-brace-format
 msgid "Bad id for repo: {} ({}), byte = {} {}"
 msgstr "Id buruk untuk repo: {} ({}), byte = {} {}"
 
 #: dnf/conf/read.py:75
+#, python-brace-format
 msgid "Bad id for repo: {}, byte = {} {}"
 msgstr "Id buruk untuk repo: {}, byte = {} {}"
 
 #: dnf/conf/read.py:83
+#, python-brace-format
 msgid "Repository '{}' ({}): Error parsing config: {}"
 msgstr "Repositori '{}' ({}): Galat saat mengurai konfigurasi: {}"
 
 #: dnf/conf/read.py:86
+#, python-brace-format
 msgid "Repository '{}': Error parsing config: {}"
 msgstr "Repositori '{}': Galat saat mengurai konfigurasi: {}"
 
 #: dnf/conf/read.py:92
+#, python-brace-format
 msgid "Repository '{}' ({}) is missing name in configuration, using id."
 msgstr "Repositori '{}' ({}) kurang nama dalam konfigurasi, menggunakan id."
 
 #: dnf/conf/read.py:95
+#, python-brace-format
 msgid "Repository '{}' is missing name in configuration, using id."
 msgstr "Repositori '{}' kurang nama dalam konfigurasi, menggunakan id."
 
 #: dnf/conf/read.py:112
+#, python-brace-format
 msgid "Parsing file \"{}\" failed: {}"
 msgstr "Penguraian berkas \"{}\" gagal: {}"
 
@@ -3866,6 +3927,7 @@ msgid "retrieving repo key for %s unencrypted from %s"
 msgstr "mengambil kunci repo untuk %s tidak terenkripsi dari %s"
 
 #: dnf/db/group.py:307
+#, python-brace-format
 msgid ""
 "No available modular metadata for modular package '{}', it cannot be "
 "installed on the system"
@@ -3888,6 +3950,7 @@ msgid "Will not install a source rpm package (%s)."
 msgstr "Tidak akan memasang paket rpm sumber (%s)."
 
 #: dnf/dnssec.py:170
+#, python-brace-format
 msgid ""
 "Configuration option 'gpgkey_dns_verification' requires python3-unbound ({})"
 msgstr ""
@@ -3910,6 +3973,7 @@ msgid "DNSSEC extension: "
 msgstr "Ekstensi DNSSEC: "
 
 #: dnf/dnssec.py:285
+#, python-brace-format
 msgid ""
 "Exempting key package {} from a validation because it's not bound to any e-"
 "mail address"
@@ -3981,6 +4045,7 @@ msgstr ""
 "dnf.conf."
 
 #: dnf/module/__init__.py:25
+#, python-brace-format
 msgid "Enabling different stream for '{}'."
 msgstr "Mengaktifkan aliran yang berbeda untuk ‘{}’."
 
@@ -3989,55 +4054,68 @@ msgid "Nothing to show."
 msgstr "Tidak ada yang bisa ditunjukkan."
 
 #: dnf/module/__init__.py:27
+#, python-brace-format
 msgid "Installing newer version of '{}' than specified. Reason: {}"
 msgstr "Memasang versi '{}' yang lebih baru dari yang ditentukan. Alasan: {}"
 
 #: dnf/module/__init__.py:28
+#, python-brace-format
 msgid "Enabled modules: {}."
 msgstr "Modul yang diaktifkan: {}."
 
 #: dnf/module/__init__.py:29
+#, python-brace-format
 msgid "No profile specified for '{}', please specify profile."
 msgstr "Tidak ada profil yang ditentukan untuk '{}', harap tentukan profil."
 
 #: dnf/module/exceptions.py:26
+#, python-brace-format
 msgid "No such module: {}"
 msgstr "Tidak ada modul seperti itu: {}"
 
 #: dnf/module/exceptions.py:32
+#, python-brace-format
 msgid "No such stream: {}"
 msgstr "Tidak ada stream seperti itu: {}"
 
 #: dnf/module/exceptions.py:38
+#, python-brace-format
 msgid "No enabled stream for module: {}"
 msgstr "Tidak ada stream yang diaktifkan untuk modul: {}"
 
 #: dnf/module/exceptions.py:45
+#, python-brace-format
 msgid "Cannot enable more streams from module '{}' at the same time"
 msgstr ""
 "Tidak dapat mengaktifkan lebih banyak stream dari modul '{}' secara bersamaan"
 
 #: dnf/module/exceptions.py:51
+#, python-brace-format
 msgid "Different stream enabled for module: {}"
 msgstr "Strea, berbeda diaktifkan untuk modul: {}"
 
 #: dnf/module/exceptions.py:57
+#, python-brace-format
 msgid "No such profile: {}"
 msgstr "Tidak ada profil seperti itu: {}"
 
 #: dnf/module/exceptions.py:63
+#, python-brace-format
 msgid "Specified profile not installed for {}"
 msgstr "Profil yang dinyatakan tidak dipasang untuk {}"
 
 #: dnf/module/exceptions.py:69
+#, python-brace-format
 msgid "No stream specified for '{}', please specify stream"
 msgstr "Tidak ada stream yang ditentukan untuk '{}', harap tentukan stream"
 
 #: dnf/module/exceptions.py:81
+#, python-brace-format
 msgid "No such profile: {}. No profiles available"
 msgstr "Profil itu tidak ada: {}. Tidak ada profil yang tersedia"
 
 #: dnf/module/exceptions.py:87
+#, python-brace-format
 msgid "No profile to remove for '{}'"
 msgstr "Tidak ada profil yang akan dihapus untuk '{}'"
 
@@ -4063,6 +4141,7 @@ msgstr ""
 
 #: dnf/module/module_base.py:55 dnf/module/module_base.py:555
 #: dnf/module/module_base.py:614 dnf/module/module_base.py:683
+#, python-brace-format
 msgid "Ignoring unnecessary profile: '{}/{}'"
 msgstr "Mengabaikan profil yang tidak perlu: '{}/{}'"
 
@@ -4077,6 +4156,7 @@ msgid "Installing module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Memasang modul '{0}' dari repositori Fail-Safe {1} tidak diizinkan"
 
 #: dnf/module/module_base.py:103 dnf/module/module_base.py:213
+#, python-brace-format
 msgid ""
 "Unable to match profile for argument {}. Available profiles for '{}:{}': {}"
 msgstr ""
@@ -4084,18 +4164,22 @@ msgstr ""
 "'{}:{}': {}"
 
 #: dnf/module/module_base.py:107 dnf/module/module_base.py:217
+#, python-brace-format
 msgid "Unable to match profile for argument {}"
 msgstr "Tidak dapat mencocokkan profil untuk argumen {}"
 
 #: dnf/module/module_base.py:119
+#, python-brace-format
 msgid "No default profiles for module {}:{}. Available profiles: {}"
 msgstr "Tidak ada profil baku untuk modul {}:{}. Profil yang tersedia: {}"
 
 #: dnf/module/module_base.py:123
+#, python-brace-format
 msgid "No profiles for module {}:{}"
 msgstr "Tidak ada profil untuk modul {}:{}"
 
 #: dnf/module/module_base.py:130
+#, python-brace-format
 msgid "Default profile {} not available in module {}:{}"
 msgstr "Profil baku {} tidak tersedia dalam modul {}:{}"
 
@@ -4114,6 +4198,7 @@ msgid "Installed profile '{0}' is not available in module '{1}' stream '{2}'"
 msgstr "Profil terpasang '{0}' tidak tersedia di modul '{1}' stream '{2}'"
 
 #: dnf/module/module_base.py:266
+#, python-brace-format
 msgid "No packages available to distrosync for package name '{}'"
 msgstr "Tidak ada paket yang tersedia untuk distrosync dengan nama paket ‘{}’"
 
@@ -4121,6 +4206,7 @@ msgstr "Tidak ada paket yang tersedia untuk distrosync dengan nama paket ‘{}�
 #: dnf/module/module_base.py:485 dnf/module/module_base.py:504
 #: dnf/module/module_base.py:551 dnf/module/module_base.py:610
 #: dnf/module/module_base.py:679 dnf/module/module_base.py:842
+#, python-brace-format
 msgid "Unable to resolve argument {}"
 msgstr "Tidak dapat menyelesaikan argumen {}"
 
@@ -4130,6 +4216,7 @@ msgid "Upgrading module '{0}' from Fail-Safe repository {1} is not allowed"
 msgstr "Peningkatan modul ‘{0}’ dari repositori Fail-Safe {1} tidak diizinkan"
 
 #: dnf/module/module_base.py:339 dnf/module/module_base.py:367
+#, python-brace-format
 msgid "Unable to match profile in argument {}"
 msgstr "Tidak dapat mencocokkan profil dalam argumen {}"
 
@@ -4147,6 +4234,7 @@ msgstr ""
 "modul ‘{module}’, tetapi tidak ada aliran yang diaktifkan atau default"
 
 #: dnf/module/module_base.py:508
+#, python-brace-format
 msgid ""
 "Only module name is required. Ignoring unneeded information in argument: '{}'"
 msgstr ""
@@ -4154,6 +4242,7 @@ msgstr ""
 "dalam argumen: '{}'"
 
 #: dnf/module/module_base.py:843
+#, python-brace-format
 msgid "No match for package {}"
 msgstr "Tidak ada yang cocok dengan paket {}"
 
@@ -4197,11 +4286,13 @@ msgid "Failed loading plugin \"%s\": %s"
 msgstr "Gagal memuat plugin \"%s\": %s"
 
 #: dnf/plugin.py:248
+#, python-brace-format
 msgid "No matches found for the following enable plugin patterns: {}"
 msgstr ""
 "Tidak ditemukan kesesuaian untuk pola plugin yang diaktifkan berikut: {}"
 
 #: dnf/plugin.py:252
+#, python-brace-format
 msgid "No matches found for the following disable plugin patterns: {}"
 msgstr ""
 "Tidak ditemukan kecocokan untuk pola plugin yang dinonaktifkan berikut: {}"
@@ -4471,10 +4562,12 @@ msgid "Problem"
 msgstr "Masalah"
 
 #: dnf/util.py:471
+#, python-brace-format
 msgid "TransactionItem not found for key: {}"
 msgstr "Item Transaksi tidak ditemukan untuk kunci: {}"
 
 #: dnf/util.py:481
+#, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
 msgstr "Transaksi SWDBItem tidak ditemukan untuk kunci: {}"
 
