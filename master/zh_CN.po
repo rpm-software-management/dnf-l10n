@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 05:29+0000\n"
+"POT-Creation-Date: 2026-06-02 05:15+0000\n"
 "PO-Revision-Date: 2026-04-02 03:35+0000\n"
 "Last-Translator: 耗子 <haozi@loli.email>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -106,43 +106,53 @@ msgstr "使用 '%s' 发送邮件失败: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "无法执行命令 '%s' ：返回 %d"
 
-#: dnf/automatic/main.py:174
+#: dnf/automatic/main.py:57
+msgid "dbus module is not available, skipping systemd inhibitor lock"
+msgstr ""
+
+#: dnf/automatic/main.py:71
+#, fuzzy, python-format
+#| msgid "Failed to unlock system: %s"
+msgid "Failed to acquire systemd inhibitor lock: %s"
+msgstr "解锁系统失败：%s"
+
+#: dnf/automatic/main.py:205
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "未知配置值： %s=%s 在 %s 中; %s"
 
-#: dnf/automatic/main.py:178 dnf/conf/config.py:157
+#: dnf/automatic/main.py:209 dnf/conf/config.py:157
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "未知配置选项：%s = %s 在 %s 中"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG 检查失败"
 
-#: dnf/automatic/main.py:298
+#: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
 msgstr "正在等待互联网连接…"
 
-#: dnf/automatic/main.py:331
+#: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
 msgstr "启动的 dnf-automatic。"
 
-#: dnf/automatic/main.py:335
+#: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "休眠 {} 秒"
 
-#: dnf/automatic/main.py:342
+#: dnf/automatic/main.py:374
 msgid "System is off-line."
 msgstr "系统离线。"
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
+#: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "事务失败"
 
-#: dnf/automatic/main.py:383 dnf/automatic/main.py:385 dnf/cli/main.py:58
+#: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:58
 #: dnf/cli/main.py:79 dnf/cli/main.py:82
 #, python-format
 msgid "Error: %s"

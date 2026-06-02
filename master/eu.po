@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 05:29+0000\n"
+"POT-Creation-Date: 2026-06-02 05:15+0000\n"
 "PO-Revision-Date: 2023-09-23 17:36+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asier.sarasua@gmail.com>\n"
 "Language-Team: Basque <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -81,44 +81,53 @@ msgstr "'%s' bidez posta elektronikoa bidaltzeak huts egin du: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Huts egin du '%s' komandoaren exekuzioak: %d itzuli da"
 
-#: dnf/automatic/main.py:174
+#: dnf/automatic/main.py:57
+msgid "dbus module is not available, skipping systemd inhibitor lock"
+msgstr ""
+
+#: dnf/automatic/main.py:71
+#, python-format
+msgid "Failed to acquire systemd inhibitor lock: %s"
+msgstr ""
+
+#: dnf/automatic/main.py:205
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Konfigurazio-balio ezezaguna: %s=%s hemen: %s; %s"
 
-#: dnf/automatic/main.py:178 dnf/conf/config.py:157
+#: dnf/automatic/main.py:209 dnf/conf/config.py:157
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Konfigurazio-aukera ezezaguna: %s = %s hemen: %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG egiaztatzeak HUTS EGIN DU"
 
-#: dnf/automatic/main.py:298
+#: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
 msgstr "Internet konexioaren zain..."
 
-#: dnf/automatic/main.py:331
+#: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic abiarazi da."
 
-#: dnf/automatic/main.py:335
+#: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Lo segundo {}ez"
 msgstr[1] "Lo {} segundoz"
 
-#: dnf/automatic/main.py:342
+#: dnf/automatic/main.py:374
 msgid "System is off-line."
 msgstr "Sistema lineaz kanpo dago."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
+#: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "Transakzioak huts egin du"
 
-#: dnf/automatic/main.py:383 dnf/automatic/main.py:385 dnf/cli/main.py:58
+#: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:58
 #: dnf/cli/main.py:79 dnf/cli/main.py:82
 #, python-format
 msgid "Error: %s"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 05:29+0000\n"
+"POT-Creation-Date: 2026-06-02 05:15+0000\n"
 "PO-Revision-Date: 2026-05-06 19:59+0000\n"
 "Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -73,43 +73,53 @@ msgstr "ສົ່ງອີເມວຜ່ານ '%s' ບໍ່ສຳເລັດ
 msgid "Failed to execute command '%s': returned %d"
 msgstr "ປະຕິບັດຄຳສັ່ງ '%s' ບໍ່ສຳເລັດ: ຄ່າສົ່ງກັບແມ່ນ %d"
 
-#: dnf/automatic/main.py:174
+#: dnf/automatic/main.py:57
+msgid "dbus module is not available, skipping systemd inhibitor lock"
+msgstr ""
+
+#: dnf/automatic/main.py:71
+#, fuzzy, python-format
+#| msgid "Failed to unlock system: %s"
+msgid "Failed to acquire systemd inhibitor lock: %s"
+msgstr "ປົດລັອກລະບົບບໍ່ສຳເລັດ: %s"
+
+#: dnf/automatic/main.py:205
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "ບໍ່ຮູ້ຈັກຄ່າການຕັ້ງຄ່າ: %s=%s ໃນ %s; %s"
 
-#: dnf/automatic/main.py:178 dnf/conf/config.py:157
+#: dnf/automatic/main.py:209 dnf/conf/config.py:157
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "ບໍ່ຮູ້ຈັກຕົວເລືອກການຕັ້ງຄ່າ: %s = %s ໃນ %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "ການກວດສອບ GPG ຫຼົ້ມເຫຼວ"
 
-#: dnf/automatic/main.py:298
+#: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
 msgstr "ກຳລັງລໍຖ້າການເຊື່ອມຕໍ່ອິນເຕີເນັດ..."
 
-#: dnf/automatic/main.py:331
+#: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
 msgstr "ເລີ່ມການເຮັດວຽກ dnf-automatic ແລ້ວ."
 
-#: dnf/automatic/main.py:335
+#: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "ພັກຜ່ອນເປັນເວລາ {} ວິນາທີ"
 
-#: dnf/automatic/main.py:342
+#: dnf/automatic/main.py:374
 msgid "System is off-line."
 msgstr "ລະບົບຢູ່ໃນສະຖານະອອຟໄລ."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
+#: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "ທຸລະກຳຫຼົ້ມເຫຼວ"
 
-#: dnf/automatic/main.py:383 dnf/automatic/main.py:385 dnf/cli/main.py:58
+#: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:58
 #: dnf/cli/main.py:79 dnf/cli/main.py:82
 #, python-format
 msgid "Error: %s"

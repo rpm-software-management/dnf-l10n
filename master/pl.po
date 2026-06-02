@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 05:29+0000\n"
+"POT-Creation-Date: 2026-06-02 05:15+0000\n"
 "PO-Revision-Date: 2026-05-10 10:58+0000\n"
 "Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -83,29 +83,39 @@ msgstr "Wysłanie wiadomości e-mail przez „%s” się nie powiodło: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Wykonanie polecenia „%s” się nie powiodło: zwrócono %d"
 
-#: dnf/automatic/main.py:174
+#: dnf/automatic/main.py:57
+msgid "dbus module is not available, skipping systemd inhibitor lock"
+msgstr ""
+
+#: dnf/automatic/main.py:71
+#, fuzzy, python-format
+#| msgid "Failed to unlock system: %s"
+msgid "Failed to acquire systemd inhibitor lock: %s"
+msgstr "Odblokowanie systemu się nie powiodło: %s"
+
+#: dnf/automatic/main.py:205
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Nieznana wartość konfiguracji: %s=%s w %s, %s"
 
-#: dnf/automatic/main.py:178 dnf/conf/config.py:157
+#: dnf/automatic/main.py:209 dnf/conf/config.py:157
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Nieznana opcja konfiguracji: %s = %s w %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "Sprawdzenie GPG się NIE powiodło"
 
-#: dnf/automatic/main.py:298
+#: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
 msgstr "Oczekiwanie na połączenie z Internetem…"
 
-#: dnf/automatic/main.py:331
+#: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
 msgstr "Uruchomiono dnf-automatic."
 
-#: dnf/automatic/main.py:335
+#: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
@@ -113,15 +123,15 @@ msgstr[0] "Usypia na {} sekundę"
 msgstr[1] "Usypia na {} sekundy"
 msgstr[2] "Usypia na {} sekund"
 
-#: dnf/automatic/main.py:342
+#: dnf/automatic/main.py:374
 msgid "System is off-line."
 msgstr "System jest w trybie offline."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
+#: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "Transakcja się nie powiodła"
 
-#: dnf/automatic/main.py:383 dnf/automatic/main.py:385 dnf/cli/main.py:58
+#: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:58
 #: dnf/cli/main.py:79 dnf/cli/main.py:82
 #, python-format
 msgid "Error: %s"

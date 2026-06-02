@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-01 05:29+0000\n"
+"POT-Creation-Date: 2026-06-02 05:15+0000\n"
 "PO-Revision-Date: 2025-10-11 02:08+0000\n"
 "Last-Translator: \"Richard E. van der Luit\" <fedoraproject@veneax.nl>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -79,44 +79,53 @@ msgstr "Verzenden email via '%s' mislukte: %s"
 msgid "Failed to execute command '%s': returned %d"
 msgstr "Het uitvoeren van commando '%s' is mislukt: %d werd teruggemeld"
 
-#: dnf/automatic/main.py:174
+#: dnf/automatic/main.py:57
+msgid "dbus module is not available, skipping systemd inhibitor lock"
+msgstr ""
+
+#: dnf/automatic/main.py:71
+#, python-format
+msgid "Failed to acquire systemd inhibitor lock: %s"
+msgstr ""
+
+#: dnf/automatic/main.py:205
 #, python-format
 msgid "Unknown configuration value: %s=%s in %s; %s"
 msgstr "Onbekende configuratiewaarde: %s=%s in %s; %s"
 
-#: dnf/automatic/main.py:178 dnf/conf/config.py:157
+#: dnf/automatic/main.py:209 dnf/conf/config.py:157
 #, python-format
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Onbekende configuratie-optie: %s = %s in %s"
 
-#: dnf/automatic/main.py:253 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
 msgstr "GPG-check is MISLUKT"
 
-#: dnf/automatic/main.py:298
+#: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
 msgstr "Wachten op internetverbinding..."
 
-#: dnf/automatic/main.py:331
+#: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
 msgstr "dnf-automatic is gestart."
 
-#: dnf/automatic/main.py:335
+#: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
 msgstr[0] "Ga voor {} seconde slapen"
 msgstr[1] "Ga voor {} seconden slapen"
 
-#: dnf/automatic/main.py:342
+#: dnf/automatic/main.py:374
 msgid "System is off-line."
 msgstr "Systeem is offline."
 
-#: dnf/automatic/main.py:372 dnf/cli/cli.py:326
+#: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
 msgstr "De transactie mislukte"
 
-#: dnf/automatic/main.py:383 dnf/automatic/main.py:385 dnf/cli/main.py:58
+#: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:58
 #: dnf/cli/main.py:79 dnf/cli/main.py:82
 #, python-format
 msgid "Error: %s"
