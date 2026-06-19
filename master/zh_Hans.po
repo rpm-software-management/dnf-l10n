@@ -7,13 +7,14 @@
 # Charles Lee <lchopn@gmail.com>, 2023.
 # Sapphire RainSlide <RainSlide@outlook.com>, 2023.
 # 耗子 <haozi@loli.email>, 2026.
+# Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-19 05:37+0000\n"
-"PO-Revision-Date: 2026-04-02 03:35+0000\n"
-"Last-Translator: 耗子 <haozi@loli.email>\n"
+"PO-Revision-Date: 2026-06-20 04:59+0000\n"
+"Last-Translator: Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>\n"
 "Language-Team: Chinese (Simplified Han script) <https://"
 "translate.fedoraproject.org/projects/dnf/dnf-master/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -21,7 +22,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.16.2\n"
+"X-Generator: Weblate 2026.6.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -46,12 +47,12 @@ msgstr "有关 '%s' 的更新已经完成下载:"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr "'%s' 出现错误"
+msgstr ""
 
 #: dnf/automatic/emitter.py:93
 #, python-format
 msgid "An error has occured on '%s'."
-msgstr "%s' 出现错误。"
+msgstr ""
 
 #: dnf/automatic/emitter.py:95
 #, python-format
@@ -438,8 +439,6 @@ msgid ""
 "either mark it as user-installed or change protected_packages configuration "
 "option."
 msgstr ""
-"不需要的受保护软件包：%s（及其依赖项）无法被移除，请将其标记为用户安装或更改 "
-"protected_packages 配置选项。"
 
 #: dnf/base.py:2430 dnf/cli/cli.py:498
 #, python-format
@@ -647,7 +646,7 @@ msgstr "{prog}将仅会下载软件包，导入gpg密钥并检查事务。"
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr "bootc 系统不支持持久事务。"
+msgstr ""
 
 #: dnf/cli/cli.py:231 dnf/cli/cli.py:242 dnf/cli/cli.py:278
 msgid "Operation aborted."
@@ -659,8 +658,6 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
-"此 bootc 系统配置为只读。传递 --transient 以在临时覆盖中执行此事务，该覆盖将"
-"在系统重新启动时重置。"
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -670,8 +667,6 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
-"将在 /usr 上创建一个临时覆盖，该覆盖将在重新启动时被丢弃。请记住，对 /etc "
-"和 /var 的更改仍将保留，并且软件包通常会修改这些目录。"
 
 #: dnf/cli/cli.py:260
 msgid ""
@@ -679,19 +674,16 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
-"此操作将修改以下路径，当 /usr 上的临时覆盖层被丢弃时可能会引入不一致。请参阅 "
-"usr_drift_protected_paths 配置选项以获取更多信息。"
 
 #: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
-"操作已中止。传递 --setopt=usr_drift_protected_paths= 以禁用此检查并继续执行。"
 
 #: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
-msgstr "瞬态事务仅受 bootc 系统支持。"
+msgstr ""
 
 #: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
@@ -715,8 +707,6 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
-"尝试添加“--enableplugin=expired-pgp-keys”来解决问题。注意：此插件可能不会默认"
-"安装，因为它是“dnf-plugins-core”包的一部分。"
 
 #: dnf/cli/cli.py:407
 #, python-brace-format
@@ -956,7 +946,7 @@ msgstr "限制最近被改变的软件包"
 #: dnf/cli/commands/install.py:51 dnf/cli/commands/reinstall.py:43
 #: dnf/cli/commands/remove.py:60 dnf/cli/commands/upgrade.py:46
 msgid "PACKAGE"
-msgstr "软件包"
+msgstr ""
 
 #: dnf/cli/commands/__init__.py:192
 msgid "Package name specification"
@@ -1603,7 +1593,6 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
-"与模块交互。警告：模块化功能已被弃用，该功能将在未来的 DNF5 版本中移除。"
 
 #: dnf/cli/commands/module.py:364
 msgid "show only enabled modules"
@@ -1633,7 +1622,7 @@ msgstr "模块规格"
 msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
-msgstr "警告：模块化功能已被弃用，该功能将在未来的 DNF5 版本中移除。"
+msgstr ""
 
 #: dnf/cli/commands/module.py:411
 #, python-brace-format
@@ -2813,7 +2802,7 @@ msgstr "仅下载软件包"
 
 #: dnf/cli/option_parser.py:327
 msgid "Use a transient overlay which will reset on reboot"
-msgstr "使用临时覆盖，重启后将重置"
+msgstr ""
 
 #: dnf/cli/option_parser.py:329
 msgid "add a comment to transaction"
@@ -3000,7 +2989,7 @@ msgstr "描述"
 
 #: dnf/cli/output.py:649
 msgid "y"
-msgstr "y"
+msgstr ""
 
 #: dnf/cli/output.py:649
 msgid "yes"
@@ -3008,11 +2997,11 @@ msgstr "是"
 
 #: dnf/cli/output.py:650
 msgid "n"
-msgstr "n"
+msgstr ""
 
 #: dnf/cli/output.py:650
 msgid "no"
-msgstr "否"
+msgstr ""
 
 #: dnf/cli/output.py:654
 msgid "Is this ok [y/N]: "
@@ -3495,7 +3484,7 @@ msgstr "命令行   ："
 
 #: dnf/cli/output.py:1786
 msgid "Persistence    :"
-msgstr "持久性   ："
+msgstr ""
 
 #: dnf/cli/output.py:1796 dnf/cli/output.py:1798
 msgid "Comment        :"
@@ -3795,12 +3784,12 @@ msgstr "从文件“{0}”解析变量时出错：{1}"
 #: dnf/crypto.py:65
 #, python-format
 msgid "repo %s: 0x%s already imported"
-msgstr "存储库 %s: 0x%s 已被导入"
+msgstr ""
 
 #: dnf/crypto.py:73
 #, python-format
 msgid "repo %s: imported key 0x%s."
-msgstr "存储库 %s: 已导入密钥 0x%s。"
+msgstr ""
 
 #: dnf/crypto.py:102
 msgid "Verified using DNS record with DNSSEC signature."
@@ -4460,32 +4449,32 @@ msgstr "<名称未设定>"
 
 #: dnf/util.py:651
 msgid "Not running on a bootc system."
-msgstr "未在 bootc 系统上运行。"
+msgstr ""
 
 #: dnf/util.py:704
 #, python-format
 msgid "%s: command not found."
-msgstr "%s：未找到命令。"
+msgstr ""
 
 #: dnf/util.py:706
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr "无法将 %s 挂载为读/写：%s"
+msgstr ""
 
 #: dnf/util.py:715
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr "%s：未找到命令。这是 bootc 系统吗？"
+msgstr ""
 
 #: dnf/util.py:717
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr "解锁系统失败：%s"
+msgstr ""
 
 #: dnf/util.py:731
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr "未处理的 bootc 解锁状态：%s"
+msgstr ""
 
 #~ msgid "Interact with Modules."
 #~ msgstr "与模块交互。"
