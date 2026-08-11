@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-11 02:50+0000\n"
-"PO-Revision-Date: 2026-08-11 04:37+0000\n"
+"PO-Revision-Date: 2026-08-12 03:10+0000\n"
 "Last-Translator: Nguyen Khang Nguyen <nnguyenkhang14@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/vi/>\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: dnf/automatic/emitter.py:32
 #, python-format
 msgid "The following updates have been applied on '%s':"
-msgstr "Các cập nhật sau đây đã được áp dụng với '%s':"
+msgstr "Các cập nhật sau đây đã được áp dụng cho '%s':"
 
 #: dnf/automatic/emitter.py:33
 #, python-format
@@ -38,12 +38,12 @@ msgstr "Các bản cập nhật sau hiện có trên '%s':"
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Các cập nhật sau đây đã được tải về vào '%s':"
+msgstr "Các cập nhật sau đây đã được tải về trên '%s':"
 
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr "Đã xảy ra lỗi tại: '%s'"
+msgstr "Đã xảy ra lỗi trên: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
@@ -77,7 +77,7 @@ msgstr "Thực thi lệnh '%s' thất bại: trả về %d"
 
 #: dnf/automatic/main.py:57
 msgid "dbus module is not available, skipping systemd inhibitor lock"
-msgstr "Mô-đun dbus không khả dụng, bỏ qua khoá chặn của systemd"
+msgstr "Mô-đun dbus không khả dụng, bỏ qua khoá ngăn chặn của systemd"
 
 #: dnf/automatic/main.py:71
 #, python-format
@@ -96,277 +96,283 @@ msgstr "Tuỳ chọn cấu hình không xác định: %s = %s trong %s"
 
 #: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
-msgstr "Kiểm tra khoá GPG THẤT BẠI"
+msgstr "Kiểm tra chữ ký GPG THẤT BẠI"
 
 #: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "Đang chờ kết nối internet..."
 
 #: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
-msgstr ""
+msgstr "Đã chạy dnf-automatic."
 
 #: dnf/automatic/main.py:367
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] ""
+msgstr[0] "Tạm dừng trong {} giây"
 
 #: dnf/automatic/main.py:374
 msgid "System is off-line."
-msgstr ""
+msgstr "Hệ thống đang ngoại tuyến."
 
 #: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
-msgstr ""
+msgstr "Giao dịch thất bại"
 
 #: dnf/automatic/main.py:418 dnf/automatic/main.py:420 dnf/cli/main.py:61
 #: dnf/cli/main.py:82 dnf/cli/main.py:85
 #, python-format
 msgid "Error: %s"
-msgstr ""
+msgstr "Lỗi: %s"
 
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
 #, python-brace-format
 msgid "loading repo '{}' failure: {}"
-msgstr ""
+msgstr "thất bại khi tải kho phần mềm '{}': {}"
 
 #: dnf/base.py:153
 #, python-brace-format
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "Tải kho phần mềm '{}' thất bại"
 
 #: dnf/base.py:341
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Đã tắt bộ nhớ đệm hẹn giờ siêu dữ liệu khi chạy trên kết nối bị giới hạn "
+"dung lượng."
 
 #: dnf/base.py:346
 msgid "Metadata timer caching disabled when running on a battery."
-msgstr ""
+msgstr "Đã tắt bộ nhớ đệm hẹn giờ siêu dữ liệu khi dùng pin."
 
 #: dnf/base.py:351
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Đã tắt bộ nhớ đệm hẹn giờ siêu dữ liệu."
 
 #: dnf/base.py:356
 msgid "Metadata cache refreshed recently."
-msgstr ""
+msgstr "Bộ nhớ đệm siêu dữ liệu đã được làm mới gần đây."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:91
 #, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
+msgstr "Không có kho phần mềm nào được bật trong \"{}\"."
 
 #: dnf/base.py:369
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: sẽ không bao giờ hết hạn và sẽ không được làm mới."
 
 #: dnf/base.py:371
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: đã hết hạn và sẽ được làm mới."
 
 #. expires within the checking period:
 #: dnf/base.py:375
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: siêu dữ liệu sẽ hết hạn sau %d giây và sẽ được làm mới ngay bây giờ"
 
 #: dnf/base.py:379
 #, python-format
 msgid "%s: will expire after %d seconds."
-msgstr ""
+msgstr "%s: sẽ hết hạn sau %d giây."
 
 #. performs the md sync
 #: dnf/base.py:385
 msgid "Metadata cache created."
-msgstr ""
+msgstr "Bộ nhớ đệm siêu dữ liệu đã được tạo."
 
 #: dnf/base.py:418 dnf/base.py:486
 #, python-format
 msgid "%s: using metadata from %s."
-msgstr ""
+msgstr "%s: đang dùng siêu dữ liệu từ %s."
 
 #: dnf/base.py:430 dnf/base.py:499
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "Bỏ qua các kho phần mềm: %s"
 
 #: dnf/base.py:433
 #, python-format
 msgid "Last metadata expiration check: %s ago on %s."
-msgstr ""
+msgstr "Lần kiểm tra hết hạn siêu dữ liệu gần nhất: %s trước trên %s."
 
 #: dnf/base.py:527
 msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
+"Các gói đã tải đã lưu vào bộ nhớ đệm cho tới lần giao dịch thành công tiếp "
+"theo."
 
 #: dnf/base.py:529
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
-msgstr ""
+msgstr "Bạn có thể xoá các gói đã lưu trong bộ nhớ đệm bằng cách thực thi '%s'."
 
 #: dnf/base.py:665
 #, python-format
 msgid "Invalid tsflag in config file: %s"
-msgstr ""
+msgstr "Tùy chọn tsflag không hợp lệ trong tập tin cấu hình: %s"
 
 #: dnf/base.py:723
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr ""
+msgstr "Thất bại khi thêm tập tin nhóm cho kho phần mềm: %s - %s"
 
 #: dnf/base.py:987
 msgid "Running transaction check"
-msgstr ""
+msgstr "Đang chạy kiểm tra giao dịch"
 
 #: dnf/base.py:995
 msgid "Error: transaction check vs depsolve:"
-msgstr ""
+msgstr "Lỗi: kiểm tra giao dịch với giải quyết phụ thuộc:"
 
 #: dnf/base.py:1001
 msgid "Transaction check succeeded."
-msgstr ""
+msgstr "Kiểm tra giao dịch thành công."
 
 #: dnf/base.py:1004
 msgid "Running transaction test"
-msgstr ""
+msgstr "Đang chạy thử nghiệm giao dịch"
 
 #: dnf/base.py:1014 dnf/base.py:1166
 #, python-brace-format
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:1015
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Lỗi thử nghiệm giao dịch:"
 
 #: dnf/base.py:1026
 msgid "Transaction test succeeded."
-msgstr ""
+msgstr "Thử nghiệm giao dịch thành công."
 
 #: dnf/base.py:1047
 msgid "Running transaction"
-msgstr ""
+msgstr "Đang chạy giao dịch"
 
 #: dnf/base.py:1084
 msgid "Disk Requirements:"
-msgstr ""
+msgstr "Yêu cầu về dung lượng đĩa:"
 
 #: dnf/base.py:1087
 #, python-brace-format
 msgid "At least {0}MB more space needed on the {1} filesystem."
 msgid_plural "At least {0}MB more space needed on the {1} filesystem."
-msgstr[0] ""
+msgstr[0] "Cần thêm ít nhất {0}MB dung lượng trống trên hệ thống tập tin {1}."
 
 #: dnf/base.py:1094
 msgid "Error Summary"
-msgstr ""
+msgstr "Tóm tắt lỗi"
 
 #: dnf/base.py:1120
 #, python-brace-format
 msgid "RPMDB altered outside of {prog}."
-msgstr ""
+msgstr "RPMDB đã bị thay đổi bên ngoài {prog}."
 
 #: dnf/base.py:1167 dnf/base.py:1175
 msgid "Could not run transaction."
-msgstr ""
+msgstr "Không thể chạy giao dịch."
 
 #: dnf/base.py:1170
 msgid "Transaction couldn't start:"
-msgstr ""
+msgstr "Giao dịch không thể bắt đầu:"
 
 #: dnf/base.py:1184
 #, python-format
 msgid "Failed to remove transaction file %s"
-msgstr ""
+msgstr "Không thể xoá tập tin giao dịch %s"
 
 #: dnf/base.py:1266
 msgid "Some packages were not downloaded. Retrying."
-msgstr ""
+msgstr "Một số gói đã không được tải về. Đang thử lại."
 
 #: dnf/base.py:1296
 #, python-format
 msgid "Delta RPMs reduced %.1f MB of updates to %.1f MB (%.1f%% saved)"
 msgstr ""
+"Các Delta RPM đã giảm %.1f MB cập nhật xuống còn %.1f MB (tiết kiệm %.1f%%)"
 
 #: dnf/base.py:1300
 #, python-format
 msgid ""
 "Failed Delta RPMs increased %.1f MB of updates to %.1f MB (%.1f%% wasted)"
 msgstr ""
+"Các Delta RPM thất bại đã tăng %.1f MB cập nhật lên %.1f MB (lãng phí %.1f%%)"
 
 #: dnf/base.py:1350
 msgid "Cannot add local packages, because transaction job already exists"
-msgstr ""
+msgstr "Không thể thêm gói cục bộ, vì tác vụ giao dịch đã tồn tại"
 
 #: dnf/base.py:1364
 #, python-brace-format
 msgid "Could not open: {}"
-msgstr ""
+msgstr "Không thể mở: {}"
 
 #: dnf/base.py:1402
 #, python-format
 msgid "Public key for %s is not installed"
-msgstr ""
+msgstr "Khoá công khai cho %s chưa được cài đặt"
 
 #: dnf/base.py:1406
 #, python-format
 msgid "Problem opening package %s"
-msgstr ""
+msgstr "Không thể mở gói %s"
 
 #: dnf/base.py:1413
 #, python-format
 msgid "Public key for %s is not trusted"
-msgstr ""
+msgstr "Khoá công khai cho %s không được tin cậy"
 
 #: dnf/base.py:1417
 #, python-format
 msgid "Package %s is not signed"
-msgstr ""
+msgstr "Gói %s chưa được ký"
 
 #: dnf/base.py:1447
 #, python-format
 msgid "Cannot remove %s"
-msgstr ""
+msgstr "Không thể xoá %s"
 
 #: dnf/base.py:1451
 #, python-format
 msgid "%s removed"
-msgstr ""
+msgstr "Đã xoá %s"
 
 #: dnf/base.py:1744
 #, python-brace-format
 msgid "No match for group package \"{}\""
-msgstr ""
+msgstr "Không tìm thấy nhóm gói nào phù hợp với \"{}\""
 
 #: dnf/base.py:1826
 #, python-format
 msgid "Adding packages from group '%s': %s"
-msgstr ""
+msgstr "Đang thêm các gói từ nhóm '%s': %s"
 
 #: dnf/base.py:1849 dnf/cli/cli.py:283 dnf/cli/commands/__init__.py:442
 #: dnf/cli/commands/__init__.py:500 dnf/cli/commands/__init__.py:594
 #: dnf/cli/commands/__init__.py:644 dnf/cli/commands/install.py:86
 #: dnf/cli/commands/install.py:109 dnf/cli/commands/install.py:116
 msgid "Nothing to do."
-msgstr ""
+msgstr "Không có gì để làm."
 
 #: dnf/base.py:1867
 msgid "No groups marked for removal."
-msgstr ""
+msgstr "Không có nhóm nào được đánh dấu để xoá."
 
 #: dnf/base.py:1901
 msgid "No group marked for upgrade."
-msgstr ""
+msgstr "Không có nhóm nào được đánh dấu để nâng cấp."
 
 #: dnf/base.py:2124
 #, python-format
 msgid "Package %s not installed, cannot downgrade it."
-msgstr ""
+msgstr "Gói %s chưa được cài đặt, không thể hạ cấp nó."
 
 #: dnf/base.py:2126 dnf/base.py:2145 dnf/base.py:2158 dnf/base.py:2189
 #: dnf/base.py:2259 dnf/base.py:2267 dnf/base.py:2287 dnf/base.py:2423
@@ -378,54 +384,55 @@ msgstr ""
 #: dnf/cli/commands/upgrade.py:122
 #, python-format
 msgid "No match for argument: %s"
-msgstr ""
+msgstr "Không tìm thấy đối số phù hợp: %s"
 
 #: dnf/base.py:2133
 #, python-format
 msgid "Package %s of lower version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Phiên bản thấp hơn của gói %s đã được cài đặt, không thể hạ cấp nó."
 
 #: dnf/base.py:2156
 #, python-format
 msgid "Package %s not installed, cannot reinstall it."
-msgstr ""
+msgstr "Gói %s chưa được cài đặt, không thể cài đặt lại nó."
 
 #: dnf/base.py:2171
 #, python-format
 msgid "File %s is a source package and cannot be updated, ignoring."
-msgstr ""
+msgstr "Tập tin %s là một gói mã nguồn và không thể nâng cấp, bỏ qua."
 
 #: dnf/base.py:2186
 #, python-format
 msgid "Package %s not installed, cannot update it."
-msgstr ""
+msgstr "Gói %s chưa được cài đặt, không thể cập nhật nó."
 
 #: dnf/base.py:2196
 #, python-format
 msgid ""
 "The same or higher version of %s is already installed, cannot update it."
 msgstr ""
+"Phiên bản giống hoặc cao hơn của %s đã được cài đặt, không thể cập nhật nó."
 
 #: dnf/base.py:2256 dnf/cli/commands/reinstall.py:82
 #, python-format
 msgid "Package %s available, but not installed."
-msgstr ""
+msgstr "Gói %s đang khả dụng, nhưng chưa được cài đặt."
 
 #: dnf/base.py:2262
 #, python-format
 msgid "Package %s available, but installed for different architecture."
-msgstr ""
+msgstr "Gói %s đang khả dụng, nhưng được cài đặt cho kiến trúc khác."
 
 #: dnf/base.py:2305 dnf/cli/commands/install.py:142
 #: dnf/cli/commands/remove.py:132
 #, python-format
 msgid "Not a valid form: %s"
-msgstr ""
+msgstr "Không phải là biểu mẫu hợp lệ: %s"
 
 #: dnf/base.py:2320 dnf/cli/commands/__init__.py:684
 #: dnf/cli/commands/remove.py:161
 msgid "No packages marked for removal."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để xoá."
 
 #: dnf/base.py:2330
 #, python-format
@@ -434,78 +441,89 @@ msgid ""
 "either mark it as user-installed or change protected_packages configuration "
 "option."
 msgstr ""
+"Gói được bảo vệ không cần thiết: %s (và các phụ thuộc của nó) không thể gỡ "
+"bỏ, hãy đánh dấu nó là người dùng tự cài hoặc thay đổi tuỳ chọn cấu hình "
+"protected_packages."
 
 #: dnf/base.py:2430 dnf/cli/cli.py:498
 #, python-format
 msgid "Packages for argument %s available, but not installed."
-msgstr ""
+msgstr "Gói cho đối số %s đang khả dụng, nhưng chưa được cài đặt."
 
 #: dnf/base.py:2435
 #, python-format
 msgid "Package %s of lowest version already installed, cannot downgrade it."
-msgstr ""
+msgstr "Phiên bản thấp nhất của gói %s đã được cài đặt, không thể hạ cấp nó."
 
 #: dnf/base.py:2535
 #, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr ""
+"Không có bản cập nhật bảo mật nào cần thiết, nhưng đang khả dụng {} bản cập "
+"nhật"
 
 #: dnf/base.py:2537
 #, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
+"Không có bản cập nhật bảo mật nào cần thiết, nhưng đang khả dụng {} bản cập "
+"nhật"
 
 #: dnf/base.py:2541
 #, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
+"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng đang khả dụng "
+"{} bản cập nhật"
 
 #: dnf/base.py:2543
 #, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
+"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng đang khả dụng "
+"{} bản cập nhật"
 
 #. raise an exception, because po.repoid is not in self.repos
 #: dnf/base.py:2564
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
-msgstr ""
+msgstr "Không thể lấy khóa cho gói cài đặt từ dòng lệnh: %s"
 
 #: dnf/base.py:2572
 #, python-format
 msgid ". Failing package is: %s"
-msgstr ""
+msgstr ". Gói bị lỗi là: %s"
 
 #: dnf/base.py:2573
 #, python-format
 msgid "GPG Keys are configured as: %s"
-msgstr ""
+msgstr "Các khoá GPG đã được cấu hình như sau: %s"
 
 #: dnf/base.py:2585
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
-msgstr ""
+msgstr "Khoá GPG tại %s (0x%s) đã được cài đặt"
 
 #: dnf/base.py:2621
 msgid "The key has been approved."
-msgstr ""
+msgstr "Khoá đã được phê duyệt."
 
 #: dnf/base.py:2624
 msgid "The key has been rejected."
-msgstr ""
+msgstr "Khoá đã bị từ chối."
 
 #: dnf/base.py:2657
 #, python-format
 msgid "Key import failed (code %d)"
-msgstr ""
+msgstr "Nhập khoá thất bại (mã lỗi %d)"
 
 #: dnf/base.py:2659
 msgid "Key imported successfully"
-msgstr ""
+msgstr "Nhập khoá thành công"
 
 #: dnf/base.py:2663
 msgid "Didn't install any keys"
-msgstr ""
+msgstr "Chưa cài đặt khoá nào"
 
 #: dnf/base.py:2666
 #, python-format
@@ -514,103 +532,112 @@ msgid ""
 "are not correct for this package.\n"
 "Check that the correct key URLs are configured for this repository."
 msgstr ""
+"Các khoá GPG được liệt kê cho kho phần mềm \"%s\" đã được cài đặt nhưng "
+"chúng không chính xác với gói này.\n"
+"Hãy kiểm tra xem các URL khoá chính xác đã được cấu hình cho kho này."
 
 #: dnf/base.py:2677
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
+"Việc nhập (các) khoá không giải quyết được vấn đề, có lẽ sai (các) khoá "
+"chăng?"
 
 #: dnf/base.py:2730
 #, python-brace-format
 msgid "  * Maybe you meant: {}"
-msgstr ""
+msgstr "  * Có thể ý bạn là: {}"
 
 #: dnf/base.py:2762
 #, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Gói \"{}\" từ kho phần mềm cục bộ \"{}\" có mã kiểm tra không chính xác"
 
 #: dnf/base.py:2765
 msgid "Some packages from local repository have incorrect checksum"
-msgstr ""
+msgstr "Một vài gói từ kho phần mềm cục bộ có mã kiểm tra không chính xác"
 
 #: dnf/base.py:2768
 #, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
-msgstr ""
+msgstr "Gói \"{}\" từ kho phần mềm \"{}\" có mã kiểm tra không chính xác"
 
 #: dnf/base.py:2771
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
 msgstr ""
+"Một số gói có bộ nhớ đệm không hợp lệ, nhưng không thể tải xuống vì tuỳ chọn "
+"\"--cacheonly\""
 
 #: dnf/base.py:2789 dnf/base.py:2809
 msgid "No match for argument"
-msgstr ""
+msgstr "Không tìm thấy đối số phù hợp"
 
 #: dnf/base.py:2797 dnf/base.py:2817
 msgid "All matches were filtered out by exclude filtering for argument"
-msgstr ""
+msgstr "Tất cả các kết quả tìm thấy đã bị loại bỏ do bộ lọc loại trừ cho đối số"
 
 #: dnf/base.py:2799
 msgid "All matches were filtered out by modular filtering for argument"
-msgstr ""
+msgstr "Tất cả các kết quả tìm thấy đã bị loại bỏ do bộ lọc mô-đun cho đối số"
 
 #: dnf/base.py:2815
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
+"Tất cả các kết quả tìm thấy đã được cài đặt từ một kho phần mềm khác cho đối "
+"số"
 
 #: dnf/base.py:2876
 #, python-format
 msgid "Package %s is already installed."
-msgstr ""
+msgstr "Gói %s đã được cài đặt."
 
 #: dnf/cli/aliases.py:95
 #, python-format
 msgid "Unexpected value of environment variable: DNF_DISABLE_ALIASES=%s"
-msgstr ""
+msgstr "Giá trị không mong đợi cho biến môi trường: DNF_DISABLE_ALIASES=%s"
 
 #: dnf/cli/aliases.py:104 dnf/conf/config.py:526
 #, python-format
 msgid "Parsing file \"%s\" failed: %s"
-msgstr ""
+msgstr "Phân tích tập tin \"%s\" thất bại: %s"
 
 #: dnf/cli/aliases.py:107
 #, python-format
 msgid "Cannot read file \"%s\": %s"
-msgstr ""
+msgstr "Không thể đọc tập tin \"%s\": %s"
 
 #: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
 #: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
-msgstr ""
+msgstr "Lỗi cấu hình: %s"
 
 #: dnf/cli/aliases.py:190
 msgid "Aliases contain infinite recursion"
-msgstr ""
+msgstr "Bí danh chứa vòng lặp đệ quy vô tận"
 
 #: dnf/cli/aliases.py:208
 #, python-format
 msgid "%s, using original arguments."
-msgstr ""
+msgstr "%s, sử dụng các đối số ban đầu."
 
 #: dnf/cli/cli.py:138
 #, python-format
 msgid "  Installed: %s-%s at %s"
-msgstr ""
+msgstr "  Đã cài đặt: %s-%s lúc %s"
 
 #: dnf/cli/cli.py:140
 #, python-format
 msgid "  Built    : %s at %s"
-msgstr ""
+msgstr "  Đã biên dịch    : %s lúc %s"
 
 #: dnf/cli/cli.py:148
 #, python-brace-format
 msgid ""
 "The operation would result in switching of module '{0}' stream '{1}' to "
 "stream '{2}'"
-msgstr ""
+msgstr "Thao tác này sẽ làm chuyển stream của mô-đun '{0}' từ '{1}' sang '{2}'"
 
 #: dnf/cli/cli.py:174
 #, python-brace-format
@@ -621,26 +648,31 @@ msgid ""
 "and reset the module using '{prog} module reset <module_name>' command. "
 "After you reset the module, you can install the other stream."
 msgstr ""
+"Không thể chuyển đổi stream đang bật của mô-đun trừ khi được bật rõ ràng "
+"thông qua tùy chọn cấu hình module_stream_switch.\n"
+"Bạn nên xóa toàn bộ nội dung đã cài đặt của mô-đun, sau đó đặt lại mô-đun "
+"bằng lệnh '{prog} module reset <tên_mô-đun>'. Sau khi đặt lại mô-đun, bạn có "
+"thể cài đặt stream khác."
 
 #: dnf/cli/cli.py:213
 #, python-brace-format
 msgid "{prog} will only download packages for the transaction."
-msgstr ""
+msgstr "{prog} sẽ chỉ tải xuống các gói cho phiên giao dịch."
 
 #: dnf/cli/cli.py:217
 #, python-brace-format
 msgid ""
 "{prog} will only download packages, install gpg keys, and check the "
 "transaction."
-msgstr ""
+msgstr "{prog} sẽ chỉ tải xuống gói, cài các khoá gpg, và kiểm tra giao dịch."
 
 #: dnf/cli/cli.py:230
 msgid "Persistent transactions aren't supported on bootc systems."
-msgstr ""
+msgstr "Giao dịch vĩnh viễn không được hỗ trợ trên các hệ thống bootc."
 
 #: dnf/cli/cli.py:231 dnf/cli/cli.py:242 dnf/cli/cli.py:278
 msgid "Operation aborted."
-msgstr ""
+msgstr "Đã huỷ thao tác."
 
 #: dnf/cli/cli.py:239
 msgid ""
@@ -648,6 +680,9 @@ msgid ""
 "this transaction in a transient overlay which will reset when the system "
 "reboots."
 msgstr ""
+"Hệ thống bootc này được cấu hình ở chế độ chỉ đọc. Hãy sử dụng --transient "
+"để thực hiện giao dịch này trong một lớp phủ tạm thời sẽ bị đặt lại khi hệ "
+"thống khởi động lại."
 
 #. Only tell the user about the transient overlay if
 #. it's not already in place
@@ -657,6 +692,9 @@ msgid ""
 "reboot. Keep in mind that changes to /etc and /var will still persist, and "
 "packages commonly modify these directories."
 msgstr ""
+"Một lớp phủ tạm thời sẽ được tạo trên /usr và sẽ bị huỷ bỏ khi khởi động "
+"lại. Cần lưu ý rằng các thay đổi đối với /etc và /var vẫn sẽ được giữ lại, "
+"và các gói phần mềm thường xuyên sửa đổi các thư mục này."
 
 #: dnf/cli/cli.py:260
 msgid ""
@@ -664,30 +702,37 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Thao tác này sẽ sửa đổi các đường dẫn sau, có thể gây ra sự không nhất quán "
+"khi lớp phủ tạm thời trên /usr bị hủy bỏ. Hãy xem tùy chọn cấu hình "
+"usr_drift_protected_paths để biết thêm thông tin."
 
 #: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Đã huỷ thao tác. Hãy sử dụng --setopt=usr_drift_protected_paths= để tắt kiểm "
+"tra này và tiếp tục thực hiện."
 
 #: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
-msgstr ""
+msgstr "Giao dịch tạm thời chỉ được hỗ trợ trên các hệ thống bootc."
 
 #: dnf/cli/cli.py:288
 msgid "Downloading Packages:"
-msgstr ""
+msgstr "Đang tải xuống các gói:"
 
 #: dnf/cli/cli.py:294
 msgid "Error downloading packages:"
-msgstr ""
+msgstr "Lỗi khi tải xuống các gói:"
 
 #: dnf/cli/cli.py:350
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
 msgstr ""
+"Từ chối tự động nhập các khoá khi đang chạy ở chế độ không giám sát.\n"
+"Dùng \"-y\" để ghi đè."
 
 #: dnf/cli/cli.py:371
 msgid ""
@@ -695,83 +740,90 @@ msgid ""
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
+"Hãy thử thêm '--enableplugin=expired-pgp-keys' để giải quyết vấn đề. Lưu ý: "
+"Plugin này có thể không được cài đặt mặc định, vì nó là một phần của gói "
+"'dnf-plugins-core'."
 
 #: dnf/cli/cli.py:407
 #, python-brace-format
 msgid "Changelogs for {}"
-msgstr ""
+msgstr "Nhật ký thay đổi cho {}"
 
 #: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
 msgid "Obsoleting Packages"
-msgstr ""
+msgstr "Các gói lỗi thời"
 
 #: dnf/cli/cli.py:469
 msgid "No packages marked for distribution synchronization."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để đồng bộ hoá bản phân phối."
 
 #: dnf/cli/cli.py:495 dnf/cli/commands/group.py:397
 #, python-format
 msgid "No package %s available."
-msgstr ""
+msgstr "Không có gói %s khả dụng."
 
 #: dnf/cli/cli.py:504
 msgid "No packages marked for downgrade."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để hạ cấp."
 
 #: dnf/cli/cli.py:555
 msgid "Installed Packages"
-msgstr ""
+msgstr "Các gói đã cài đặt"
 
 #: dnf/cli/cli.py:563
 msgid "Available Packages"
-msgstr ""
+msgstr "Các gói đang khả dụng"
 
 #: dnf/cli/cli.py:567
 msgid "Autoremove Packages"
-msgstr ""
+msgstr "Các gói tự động gỡ bỏ"
 
 #: dnf/cli/cli.py:569
 msgid "Extra Packages"
-msgstr ""
+msgstr "Các gói bổ sung"
 
 #: dnf/cli/cli.py:573
 msgid "Available Upgrades"
-msgstr ""
+msgstr "Các nâng cấp đang khả dụng"
 
 #: dnf/cli/cli.py:589
 msgid "Recently Added Packages"
-msgstr ""
+msgstr "Các gói đã thêm gần đây"
 
 #: dnf/cli/cli.py:593
 msgid "No matching Packages to list"
-msgstr ""
+msgstr "Không có gói nào phù hợp để liệt kê"
 
 #: dnf/cli/cli.py:674
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
+"Không tìm thấy kết quả phù hợp. Nếu đang tìm kiếm một tập tin, hãy thử chỉ "
+"định đường dẫn đầy đủ hoặc sử dụng ký tự đại diện (\"*/\") ở đầu."
 
 #: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:238
 #, python-format
 msgid "Unknown repo: '%s'"
-msgstr ""
+msgstr "Kho phần mềm không rõ: '%s'"
 
 #: dnf/cli/cli.py:757
 #, python-format
 msgid "No repository match: %s"
-msgstr ""
+msgstr "Không tìm thấy kho phần mềm nào phù hợp: %s"
 
 #: dnf/cli/cli.py:791
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
 msgstr ""
+"Lệnh này cần được chạy với quyền của người dùng đặc quyền (dưới người dùng "
+"root trên gần như mọi hệ thống)."
 
 #: dnf/cli/cli.py:821
 #, python-format
 msgid "No such command: %s. Please use %s --help"
-msgstr ""
+msgstr "Không có lệnh nào: %s. Vui lòng sử dụng %s --help"
 
 #: dnf/cli/cli.py:824
 #, python-format, python-brace-format
@@ -779,6 +831,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
+"Nó có thể là lệnh plugin của {PROG}, hãy thử: \"{prog} install 'dnf-command"
+"(%s)'\""
 
 #: dnf/cli/cli.py:828
 #, python-brace-format
@@ -786,71 +840,82 @@ msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
 "disabled."
 msgstr ""
+"Nó có thể là lệnh plugin của {prog}, nhưng việc tải các plugin hiện tại đang "
+"bị tắt."
 
 #: dnf/cli/cli.py:886
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
 msgstr ""
+"--destdir hoặc --downloaddir phải được dùng với lệnh --downloadonly hoặc "
+"download hoặc system-upgrade."
 
 #: dnf/cli/cli.py:892
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
 msgstr ""
+"--enable, --set-enabled và --disable, --set-disabled phải được dùng với lệnh "
+"config-manager."
 
 #: dnf/cli/cli.py:974
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
 msgstr ""
+"Cảnh báo: Bắt buộc kiểm tra chữ ký GPG trên toàn hệ thống theo chính sách "
+"bảo mật RPM đang hoạt động (xem 'gpgcheck' trong dnf.conf(5) để biết cách "
+"tắt thông báo này)"
 
 #: dnf/cli/cli.py:995
 #, python-brace-format
 msgid "Config file \"{}\" does not exist"
-msgstr ""
+msgstr "Tập tin cấu hình \"{}\" không tồn tại"
 
 #: dnf/cli/cli.py:1031
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
 msgstr ""
+"Không thể phát hiện phiên bản phát hành (dùng '--releasever' để chỉ định "
+"phiên bản phát hành)"
 
 #: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
 #, python-brace-format
 msgid "argument {}: not allowed with argument {}"
-msgstr ""
+msgstr "đối số {}: không được cho phép với đối số {}"
 
 #: dnf/cli/cli.py:1112
 #, python-format
 msgid "Command \"%s\" already defined"
-msgstr ""
+msgstr "Lệnh \"%s\" đã được định nghĩa"
 
 #: dnf/cli/cli.py:1132
 msgid "Excludes in dnf.conf: "
-msgstr ""
+msgstr "Các mục loại trừ trong dnf.conf: "
 
 #: dnf/cli/cli.py:1135
 msgid "Includes in dnf.conf: "
-msgstr ""
+msgstr "Các mục bao gồm trong dnf.conf: "
 
 #: dnf/cli/cli.py:1138
 msgid "Excludes in repo "
-msgstr ""
+msgstr "Các mục loại trừ trong kho phần mềm "
 
 #: dnf/cli/cli.py:1141
 msgid "Includes in repo "
-msgstr ""
+msgstr "Các mục loại trừ trong kho phần mềm "
 
 #: dnf/cli/commands/__init__.py:38
 #, python-format
 msgid "To diagnose the problem, try running: '%s'."
-msgstr ""
+msgstr "Để chẩn đoán vấn đề, hãy thử chạy: '%s'."
 
 #: dnf/cli/commands/__init__.py:40
 #, python-format
 msgid "You probably have corrupted RPMDB, running '%s' might fix the issue."
-msgstr ""
+msgstr "Bạn có thể đã có RPMDB bị hỏng, chạy '%s' có thể sẽ sửa được vấn đề."
 
 #: dnf/cli/commands/__init__.py:44
 #, python-brace-format
@@ -869,56 +934,71 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
+"Bạn đã bật kiểm tra các gói bằng các khoá GPG. Và đây là một điều tốt.\n"
+"Tuy nhiên, bạn chưa có khoá công khai GPG nào được cài đặt. Bạn cần tải "
+"xuống\n"
+"các khoá cho các gói bạn muốn cài đặt và cài đặt chúng.\n"
+"Bạn có thể làm vậy bằng cách chạy lệnh sau:\n"
+"    rpm --import public.gpg.key\n"
+"\n"
+"\n"
+"Ngoài ra bạn cũng có thể chỉ định url của khoá bạn muốn sử dụng\n"
+"cho một kho phần mềm trong tuỳ chọn 'gpgkey' thuộc phần cấu hình kho phần "
+"mềm và {prog}\n"
+"sẽ cài đặt nó cho bạn.\n"
+"\n"
+"Để biết thêm thông tin vui lòng liên hệ bản phân phối của bạn hoặc nhà cung "
+"cấp gói."
 
 #: dnf/cli/commands/__init__.py:71
 #, python-format
 msgid "Problem repository: %s"
-msgstr ""
+msgstr "Kho phần mềm gặp sự cố: %s"
 
 #: dnf/cli/commands/__init__.py:158
 msgid "display details about a package or group of packages"
-msgstr ""
+msgstr "hiển thị thông tin chi tiết về một gói hoặc một nhóm gói"
 
 #: dnf/cli/commands/__init__.py:168 dnf/cli/commands/__init__.py:744
 msgid "show all packages (default)"
-msgstr ""
+msgstr "hiện tất cả các gói (mặc định)"
 
 #: dnf/cli/commands/__init__.py:171 dnf/cli/commands/__init__.py:747
 #: dnf/cli/commands/module.py:379
 msgid "show only available packages"
-msgstr ""
+msgstr "chỉ hiện các gói đang khả dụng"
 
 #: dnf/cli/commands/__init__.py:174 dnf/cli/commands/__init__.py:750
 msgid "show only installed packages"
-msgstr ""
+msgstr "chỉ hiện các gói đã cài"
 
 #: dnf/cli/commands/__init__.py:177 dnf/cli/commands/__init__.py:753
 msgid "show only extras packages"
-msgstr ""
+msgstr "chỉ hiện các gói bổ sung"
 
 #: dnf/cli/commands/__init__.py:180 dnf/cli/commands/__init__.py:183
 #: dnf/cli/commands/__init__.py:756 dnf/cli/commands/__init__.py:759
 msgid "show only upgrades packages"
-msgstr ""
+msgstr "chỉ hiện các gói được nâng cấp"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:762
 msgid "show only autoremove packages"
-msgstr ""
+msgstr "chỉ hiện các gói tự động gỡ bỏ"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:765
 msgid "show only recently changed packages"
-msgstr ""
+msgstr "chỉ hiện các gói đã thay đổi gần đây"
 
 #: dnf/cli/commands/__init__.py:190 dnf/cli/commands/__init__.py:266
 #: dnf/cli/commands/__init__.py:778 dnf/cli/commands/autoremove.py:47
 #: dnf/cli/commands/install.py:52 dnf/cli/commands/reinstall.py:44
 #: dnf/cli/commands/remove.py:60 dnf/cli/commands/upgrade.py:47
 msgid "PACKAGE"
-msgstr ""
+msgstr "GÓI"
 
 #: dnf/cli/commands/__init__.py:193
 msgid "Package name specification"
-msgstr ""
+msgstr "Đặc tả tên gói"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
@@ -2886,47 +2966,47 @@ msgstr ""
 
 #: dnf/cli/output.py:649
 msgid "y"
-msgstr ""
+msgstr "c"
 
 #: dnf/cli/output.py:649
 msgid "yes"
-msgstr ""
+msgstr "có"
 
 #: dnf/cli/output.py:650
 msgid "n"
-msgstr ""
+msgstr "k"
 
 #: dnf/cli/output.py:650
 msgid "no"
-msgstr ""
+msgstr "không"
 
 #: dnf/cli/output.py:654
 msgid "Is this ok [y/N]: "
-msgstr ""
+msgstr "Thế này có ổn không [c/K]: "
 
 #: dnf/cli/output.py:658
 msgid "Is this ok [Y/n]: "
-msgstr ""
+msgstr "Thế này có ổn không [C/k]: "
 
 #: dnf/cli/output.py:738
 #, python-format
 msgid "Group: %s"
-msgstr ""
+msgstr "Nhóm: %s"
 
 #: dnf/cli/output.py:742
 #, python-format
 msgid " Group-Id: %s"
-msgstr ""
+msgstr " Id nhóm: %s"
 
 #: dnf/cli/output.py:744 dnf/cli/output.py:783
 #, python-format
 msgid " Description: %s"
-msgstr ""
+msgstr " Mô tả: %s"
 
 #: dnf/cli/output.py:746
 #, python-format
 msgid " Language: %s"
-msgstr ""
+msgstr " Ngôn ngữ: %s"
 
 #: dnf/cli/output.py:749
 msgid " Mandatory Packages:"
@@ -3187,32 +3267,35 @@ msgid ""
 "Transaction Summary\n"
 "%s\n"
 msgstr ""
+"\n"
+"Tóm tắt giao dịch\n"
+"%s\n"
 
 #. TODO: remove
 #: dnf/cli/output.py:1294 dnf/cli/output.py:1831 dnf/cli/output.py:1832
 msgid "Install"
-msgstr ""
+msgstr "Cài đặt"
 
 #: dnf/cli/output.py:1298 dnf/cli/output.py:1840
 msgid "Upgrade"
-msgstr ""
+msgstr "Nâng cấp"
 
 #: dnf/cli/output.py:1299
 msgid "Remove"
-msgstr ""
+msgstr "Xoá bỏ"
 
 #: dnf/cli/output.py:1301 dnf/cli/output.py:1838
 msgid "Downgrade"
-msgstr ""
+msgstr "Hạ cấp"
 
 #: dnf/cli/output.py:1302
 msgid "Skip"
-msgstr ""
+msgstr "Bỏ qua"
 
 #: dnf/cli/output.py:1311 dnf/cli/output.py:1327
 msgid "Package"
 msgid_plural "Packages"
-msgstr[0] ""
+msgstr[0] "Gói"
 
 #: dnf/cli/output.py:1329
 msgid "Dependent package"
@@ -3221,7 +3304,7 @@ msgstr[0] ""
 
 #: dnf/cli/output.py:1437
 msgid "Total"
-msgstr ""
+msgstr "Tổng"
 
 #: dnf/cli/output.py:1465
 msgid "<unset>"
