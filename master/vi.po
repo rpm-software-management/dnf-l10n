@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-12 03:10+0000\n"
-"PO-Revision-Date: 2026-08-12 07:31+0000\n"
+"PO-Revision-Date: 2026-08-13 03:13+0000\n"
 "Last-Translator: Nguyen Khang Nguyen <nnguyenkhang14@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/vi/>\n"
@@ -82,7 +82,7 @@ msgstr "Mô-đun dbus không khả dụng, bỏ qua khoá ngăn chặn của sys
 #: dnf/automatic/main.py:71
 #, python-format
 msgid "Failed to acquire systemd inhibitor lock: %s"
-msgstr "Không thể lấy khoá chặn của systemd: %s"
+msgstr "Không thể lấy khoá ngăn chặn của systemd: %s"
 
 #: dnf/automatic/main.py:205
 #, python-format
@@ -461,29 +461,27 @@ msgstr "Phiên bản thấp nhất của gói %s đã được cài đặt, khô
 #, python-brace-format
 msgid "No security updates needed, but {} update available"
 msgstr ""
-"Không có bản cập nhật bảo mật nào cần thiết, nhưng đang khả dụng {} bản cập "
-"nhật"
+"Không có bản cập nhật bảo mật nào cần thiết, nhưng hiện có {} bản cập nhật"
 
 #: dnf/base.py:2537
 #, python-brace-format
 msgid "No security updates needed, but {} updates available"
 msgstr ""
-"Không có bản cập nhật bảo mật nào cần thiết, nhưng đang khả dụng {} bản cập "
-"nhật"
+"Không có bản cập nhật bảo mật nào cần thiết, nhưng hiện có {} bản cập nhật"
 
 #: dnf/base.py:2541
 #, python-brace-format
 msgid "No security updates needed for \"{}\", but {} update available"
 msgstr ""
-"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng đang khả dụng "
-"{} bản cập nhật"
+"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng hiện có {} bản "
+"cập nhật"
 
 #: dnf/base.py:2543
 #, python-brace-format
 msgid "No security updates needed for \"{}\", but {} updates available"
 msgstr ""
-"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng đang khả dụng "
-"{} bản cập nhật"
+"Không có bản cập nhật bảo mật nào cần thiết cho \"{}\", nhưng hiện có {} bản "
+"cập nhật"
 
 #. raise an exception, because po.repoid is not in self.repos
 #: dnf/base.py:2564
@@ -619,7 +617,7 @@ msgstr "Lỗi cấu hình: %s"
 
 #: dnf/cli/aliases.py:190
 msgid "Aliases contain infinite recursion"
-msgstr "Các bí danh chứa đệ quy vô hạn"
+msgstr "Các bí danh chứa đệ quy vô tận"
 
 #: dnf/cli/aliases.py:208
 #, python-format
@@ -788,7 +786,7 @@ msgstr "Các gói bổ sung"
 
 #: dnf/cli/cli.py:573
 msgid "Available Upgrades"
-msgstr "Các nâng cấp đang khả dụng"
+msgstr "Các nâng cấp hiện có"
 
 #: dnf/cli/cli.py:589
 msgid "Recently Added Packages"
@@ -938,7 +936,7 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
-"Bạn đã bật kiểm tra các gói bằng các khoá GPG. Đây là một điều tốt.\n"
+"Bạn đã bật kiểm tra gói bằng các khoá GPG. Đây là một điều tốt.\n"
 "Tuy nhiên, bạn chưa có khoá công khai GPG nào được cài đặt. Bạn cần tải "
 "xuống\n"
 "các khoá cho các gói bạn muốn cài đặt và cài đặt chúng.\n"
@@ -1026,7 +1024,7 @@ msgstr "Đang tìm các gói: "
 
 #: dnf/cli/commands/__init__.py:259
 msgid "check for available package upgrades"
-msgstr "kiểm tra các bản nâng cấp gói đang khả dụng"
+msgstr "kiểm tra các bản nâng cấp gói hiện có"
 
 #: dnf/cli/commands/__init__.py:265
 msgid "show changelogs before update"
@@ -1208,7 +1206,7 @@ msgstr "hiện các vấn đề phụ thuộc"
 
 #: dnf/cli/commands/check.py:45
 msgid "show duplicate problems"
-msgstr "hiện các vấn đề trùng lập"
+msgstr "hiện các vấn đề trùng lặp"
 
 #: dnf/cli/commands/check.py:48
 msgid "show obsoleted packages"
@@ -1280,7 +1278,7 @@ msgstr ""
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr "đồng bộ hoá tất cả các gói đã cài lên phiên bản mới nhất đang khả dụng"
+msgstr "đồng bộ hoá tất cả các gói đã cài lên phiên bản mới nhất hiện có"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
@@ -2157,11 +2155,11 @@ msgstr ""
 
 #: dnf/cli/commands/search.py:51
 msgid "KEYWORD"
-msgstr ""
+msgstr "TỪ-KHOÁ"
 
 #: dnf/cli/commands/search.py:54
 msgid "Keyword to search for"
-msgstr ""
+msgstr "Từ khoá để tìm cho"
 
 #: dnf/cli/commands/search.py:60 dnf/cli/output.py:459
 msgctxt "long"
@@ -2180,12 +2178,12 @@ msgstr ""
 
 #: dnf/cli/commands/search.py:63 dnf/cli/output.py:515
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #. TRANSLATORS: separator used between package attributes (eg. Name & Summary & URL)
 #: dnf/cli/commands/search.py:75
 msgid " & "
-msgstr ""
+msgstr " & "
 
 #. TRANSLATORS: %s  - translated package attributes,
 #. %%s - found keys (in listed attributes)
@@ -2208,25 +2206,25 @@ msgstr ""
 #: dnf/cli/commands/shell.py:48
 #, python-brace-format
 msgid "run an interactive {prog} shell"
-msgstr ""
+msgstr "chạy một shell tương tác {prog}"
 
 #: dnf/cli/commands/shell.py:69
 msgid "SCRIPT"
-msgstr ""
+msgstr "KỊCH-BẢN"
 
 #: dnf/cli/commands/shell.py:70
 #, python-brace-format
 msgid "Script to run in {prog} shell"
-msgstr ""
+msgstr "Kịch bản để chạy trong shell {prog}"
 
 #: dnf/cli/commands/shell.py:143
 msgid "Unsupported key value."
-msgstr ""
+msgstr "Giá trị khoá không được hỗ trợ."
 
 #: dnf/cli/commands/shell.py:159
 #, python-format
 msgid "Could not find repository: %s"
-msgstr ""
+msgstr "Không thể tìm kho phần mềm: %s"
 
 #: dnf/cli/commands/shell.py:175
 #, python-brace-format
@@ -2500,7 +2498,7 @@ msgstr ""
 #: dnf/cli/commands/updateinfo.py:358 dnf/cli/output.py:1657
 #: dnf/cli/output.py:1659 dnf/util.py:616
 msgid "Installed"
-msgstr ""
+msgstr "Đã cài đặt"
 
 #: dnf/cli/commands/updateinfo.py:384
 msgid "false"
@@ -2516,7 +2514,7 @@ msgstr ""
 
 #: dnf/cli/commands/upgrade.py:45
 msgid "Package to upgrade"
-msgstr ""
+msgstr "Gói để nâng cấp"
 
 #: dnf/cli/commands/upgrademinimal.py:30
 msgid ""
@@ -2526,7 +2524,7 @@ msgstr ""
 
 #: dnf/cli/main.py:90
 msgid "Terminated."
-msgstr ""
+msgstr "Đã chấm dứt."
 
 #: dnf/cli/main.py:118
 msgid "No read/execute access in current directory, moving to /"
@@ -2847,7 +2845,7 @@ msgstr ""
 #: dnf/cli/output.py:458
 msgctxt "short"
 msgid "Name"
-msgstr ""
+msgstr "Tên"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:464
@@ -2861,38 +2859,38 @@ msgstr ""
 #: dnf/cli/output.py:465 dnf/cli/output.py:1246
 msgctxt "short"
 msgid "Version"
-msgstr ""
+msgstr "Bản"
 
 #. Translators: This is the full (unabbreviated) term 'Version'.
 #: dnf/cli/output.py:466 dnf/cli/output.py:1248
 msgctxt "long"
 msgid "Version"
-msgstr ""
+msgstr "Phiên bản"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:469
 msgid "Release"
-msgstr ""
+msgstr "Phát hành"
 
 #. Translators: This is abbreviated 'Architecture', used when
 #. we have not enough space to display the full word.
 #: dnf/cli/output.py:470 dnf/cli/output.py:1237
 msgctxt "short"
 msgid "Arch"
-msgstr ""
+msgstr "K.trúc"
 
 #. Translators: This is the full word 'Architecture', used when
 #. we have enough space.
 #: dnf/cli/output.py:471 dnf/cli/output.py:1240
 msgctxt "long"
 msgid "Architecture"
-msgstr ""
+msgstr "Kiến trúc"
 
 #. Translators: This is the full (unabbreviated) term 'Size'.
 #: dnf/cli/output.py:473 dnf/cli/output.py:1263
 msgctxt "long"
 msgid "Size"
-msgstr ""
+msgstr "Kích thước"
 
 #. Translators: This is the short version of 'Size'. It should
 #. not be longer than 5 characters. If the term 'Size' in your
@@ -2901,26 +2899,26 @@ msgstr ""
 #: dnf/cli/output.py:473 dnf/cli/output.py:1261
 msgctxt "short"
 msgid "Size"
-msgstr ""
+msgstr "Cỡ"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:477
 msgid "Source"
-msgstr ""
+msgstr "Nguồn"
 
 #. Translators: This is abbreviated 'Repository', used when
 #. we have not enough space to display the full word.
 #: dnf/cli/output.py:478 dnf/cli/output.py:1252
 msgctxt "short"
 msgid "Repo"
-msgstr ""
+msgstr "Kho"
 
 #. Translators: This is the full word 'Repository', used when
 #. we have enough space.
 #: dnf/cli/output.py:479 dnf/cli/output.py:1255
 msgctxt "long"
 msgid "Repository"
-msgstr ""
+msgstr "Kho phần mềm"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:486
@@ -2943,7 +2941,7 @@ msgstr ""
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:498
 msgid "Install time"
-msgstr "Thời gian cài đặt"
+msgstr "T.gian cài"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:507
@@ -2956,7 +2954,7 @@ msgstr "Cài đặt bởi"
 #: dnf/cli/output.py:511
 msgctxt "short"
 msgid "Summary"
-msgstr ""
+msgstr "Tóm tắt"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:517
@@ -2969,7 +2967,7 @@ msgstr "Giấy phép"
 #: dnf/cli/output.py:521
 msgctxt "short"
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: dnf/cli/output.py:649
 msgid "y"
@@ -3255,17 +3253,17 @@ msgstr ""
 #: dnf/cli/output.py:1231
 msgctxt "short"
 msgid "Package"
-msgstr ""
+msgstr "Gói"
 
 #. Translators: This is the full (unabbreviated) term 'Package'.
 #: dnf/cli/output.py:1233
 msgctxt "long"
 msgid "Package"
-msgstr ""
+msgstr "Gói phần mềm"
 
 #: dnf/cli/output.py:1282
 msgid "replacing"
-msgstr ""
+msgstr "thay thế"
 
 #: dnf/cli/output.py:1289
 #, python-format
@@ -3315,7 +3313,7 @@ msgstr "Tổng"
 
 #: dnf/cli/output.py:1465
 msgid "<unset>"
-msgstr ""
+msgstr "<chưa-đặt>"
 
 #: dnf/cli/output.py:1466
 msgid "System"
@@ -3361,11 +3359,11 @@ msgstr "Không có giao dịch nào"
 
 #: dnf/cli/output.py:1584 dnf/cli/output.py:1600
 msgid "Failed history info"
-msgstr ""
+msgstr "Không thể lấy thông tin lịch sử"
 
 #: dnf/cli/output.py:1599
 msgid "No transaction ID, or package, given"
-msgstr ""
+msgstr "Chưa cung cấp ID giao dịch hoặc gói phần mềm"
 
 #: dnf/cli/output.py:1657
 msgid "Erased"
@@ -3466,23 +3464,23 @@ msgstr "Dòng lệnh   :"
 
 #: dnf/cli/output.py:1786
 msgid "Persistence    :"
-msgstr ""
+msgstr "Độ duy trì    :"
 
 #: dnf/cli/output.py:1796 dnf/cli/output.py:1798
 msgid "Comment        :"
-msgstr ""
+msgstr "Ghi chú        :"
 
 #: dnf/cli/output.py:1802
 msgid "Transaction performed with:"
-msgstr ""
+msgstr "Giao dịch được thực hiện với:"
 
 #: dnf/cli/output.py:1811
 msgid "Packages Altered:"
-msgstr ""
+msgstr "Các gói bị thay đổi:"
 
 #: dnf/cli/output.py:1817
 msgid "Scriptlet output:"
-msgstr ""
+msgstr "Đầu ra kịch bản con:"
 
 #: dnf/cli/output.py:1824
 msgid "Errors:"
@@ -3490,23 +3488,23 @@ msgstr "Các lỗi:"
 
 #: dnf/cli/output.py:1833
 msgid "Dep-Install"
-msgstr ""
+msgstr "Cài đặt phụ thuộc"
 
 #: dnf/cli/output.py:1834
 msgid "Obsoleted"
-msgstr ""
+msgstr "Bị thay thế"
 
 #: dnf/cli/output.py:1835 dnf/transaction.py:83 dnf/transaction.py:84
 msgid "Obsoleting"
-msgstr ""
+msgstr "Thay thế"
 
 #: dnf/cli/output.py:1836
 msgid "Erase"
-msgstr ""
+msgstr "Xoá bỏ"
 
 #: dnf/cli/output.py:1837
 msgid "Reinstall"
-msgstr ""
+msgstr "Cài đặt lại"
 
 #: dnf/cli/output.py:1911
 #, python-format
@@ -3583,11 +3581,11 @@ msgstr "Không thể ngắt"
 
 #: dnf/cli/utils.py:101
 msgid "Zombie"
-msgstr ""
+msgstr "Thây ma"
 
 #: dnf/cli/utils.py:102
 msgid "Traced/Stopped"
-msgstr ""
+msgstr "Bị theo vết/Dừng"
 
 #: dnf/cli/utils.py:103
 msgid "Unknown"
@@ -3611,73 +3609,73 @@ msgstr "    Bộ nhớ : %5s RSS (%5sB VSZ)"
 #: dnf/cli/utils.py:128
 #, python-format
 msgid "    Started: %s - %s ago"
-msgstr ""
+msgstr "    Đã bắt đầu: %s - %s trước"
 
 #: dnf/cli/utils.py:130
 #, python-format
 msgid "    State  : %s"
-msgstr ""
+msgstr "    Trạng thái  : %s"
 
 #: dnf/comps.py:195 dnf/comps.py:692 dnf/comps.py:706
 #, python-format
 msgid "Module or Group '%s' is not installed."
-msgstr ""
+msgstr "Mô-đun hoặc Nhóm '%s' chưa được cài đặt."
 
 #: dnf/comps.py:197 dnf/comps.py:708
 #, python-format
 msgid "Module or Group '%s' is not available."
-msgstr ""
+msgstr "Mô-đun hoặc Nhóm '%s' không khả dụng."
 
 #: dnf/comps.py:199
 #, python-format
 msgid "Module or Group '%s' does not exist."
-msgstr ""
+msgstr "Mô-đun hoặc Nhóm '%s' không tồn tại."
 
 #: dnf/comps.py:598
 #, python-format
 msgid "Environment id '%s' does not exist."
-msgstr ""
+msgstr "Id biến môi trường '%s' không tồn tại."
 
 #: dnf/comps.py:621 dnf/transaction_sr.py:486 dnf/transaction_sr.py:496
 #: dnf/transaction_sr.py:506
 #, python-format
 msgid "Environment id '%s' is not installed."
-msgstr ""
+msgstr "Id biến môi trường '%s' chưa được cài đặt."
 
 #: dnf/comps.py:638
 #, python-format
 msgid "Environment '%s' is not installed."
-msgstr ""
+msgstr "Biến môi trường '%s' chưa được cài đặt."
 
 #: dnf/comps.py:640
 #, python-format
 msgid "Environment '%s' is not available."
-msgstr ""
+msgstr "Biến môi trường '%s' không khả dụng."
 
 #: dnf/comps.py:672
 #, python-format
 msgid "Group id '%s' does not exist."
-msgstr ""
+msgstr "Id nhóm '%s' không tồn tại."
 
 #: dnf/conf/config.py:135
 #, python-format
 msgid "Error parsing '%s': %s"
-msgstr ""
+msgstr "Lỗi khi phân tích '%s': %s"
 
 #: dnf/conf/config.py:150
 #, python-format
 msgid "Invalid configuration value: %s=%s in %s; %s"
-msgstr ""
+msgstr "Giá trị cấu hình không hợp lệ: %s=%s trong %s; %s"
 
 #: dnf/conf/config.py:193
 #, python-brace-format
 msgid "Cannot set \"{}\" to \"{}\": {}"
-msgstr ""
+msgstr "Không thể đặt \"{}\" thành \"{}\": {}"
 
 #: dnf/conf/config.py:243
 #, python-brace-format
 msgid "Could not set cachedir: {}"
-msgstr ""
+msgstr "Không thể thiết lập thư mục đệm: {}"
 
 #: dnf/conf/config.py:293
 #, python-brace-format
@@ -3689,7 +3687,7 @@ msgstr ""
 #: dnf/conf/config.py:376 dnf/conf/config.py:412
 #, python-format
 msgid "Unknown configuration option: %s = %s"
-msgstr ""
+msgstr "Tuỳ chọn cấu hình không rõ: %s = %s"
 
 #: dnf/conf/config.py:393
 #, python-format
@@ -3817,11 +3815,11 @@ msgstr ""
 
 #: dnf/dnssec.py:248
 msgid "is valid."
-msgstr ""
+msgstr "hợp lệ."
 
 #: dnf/dnssec.py:250
 msgid "has unknown status."
-msgstr ""
+msgstr "có trạng thái không rõ."
 
 #: dnf/dnssec.py:258
 msgid "DNSSEC extension: "
@@ -3845,7 +3843,7 @@ msgstr ""
 
 #: dnf/drpm.py:143
 msgid "Delta RPM rebuild failed"
-msgstr ""
+msgstr "Tái tạo Delta RPM thất bại"
 
 #: dnf/drpm.py:145
 msgid "Checksum of the delta-rebuilt RPM failed"
@@ -3853,7 +3851,7 @@ msgstr ""
 
 #: dnf/drpm.py:148
 msgid "done"
-msgstr ""
+msgstr "xong"
 
 #: dnf/exceptions.py:116
 msgid "Problems in request:"
@@ -3861,19 +3859,19 @@ msgstr ""
 
 #: dnf/exceptions.py:118
 msgid "missing packages: "
-msgstr ""
+msgstr "các gói bị thiếu: "
 
 #: dnf/exceptions.py:120
 msgid "broken packages: "
-msgstr ""
+msgstr "các gói bị hỏng: "
 
 #: dnf/exceptions.py:122
 msgid "missing groups or modules: "
-msgstr ""
+msgstr "các nhóm hoặc mô-đun bị thiếu: "
 
 #: dnf/exceptions.py:124
 msgid "broken groups or modules: "
-msgstr ""
+msgstr "các nhóm hoặc mô-đun bị hỏng: "
 
 #: dnf/exceptions.py:129
 msgid "Modular dependency problem with Defaults:"
@@ -3892,6 +3890,9 @@ msgid ""
 "Ensure no other dnf/yum process is running and remove the lock file manually "
 "or run systemd-tmpfiles --remove dnf.conf."
 msgstr ""
+"Tìm thấy tập tin khoá bị lỗi: %s.\n"
+"Hãy đảm bảo rằng không có tiến trình dnf/yum nào khác đang chạy và xoá tệp "
+"khoá thủ công hoặc chạy systemd-tmpfiles --remove dnf.conf."
 
 #: dnf/module/__init__.py:25
 #, python-brace-format
@@ -3900,7 +3901,7 @@ msgstr ""
 
 #: dnf/module/__init__.py:26
 msgid "Nothing to show."
-msgstr ""
+msgstr "Không có gì để hiện."
 
 #: dnf/module/__init__.py:27
 #, python-brace-format
@@ -4183,47 +4184,47 @@ msgstr ""
 #: dnf/transaction.py:79
 msgctxt "currently"
 msgid "Downgrading"
-msgstr ""
+msgstr "Đang hạ cấp"
 
 #: dnf/transaction.py:80 dnf/transaction.py:87 dnf/transaction.py:92
 #: dnf/transaction.py:94
 msgid "Cleanup"
-msgstr ""
+msgstr "Dọn dẹp"
 
 #. TRANSLATORS: This is for a single package currently being installed.
 #: dnf/transaction.py:82
 msgctxt "currently"
 msgid "Installing"
-msgstr ""
+msgstr "Đang cài đặt"
 
 #. TRANSLATORS: This is for a single package currently being reinstalled.
 #: dnf/transaction.py:86
 msgctxt "currently"
 msgid "Reinstalling"
-msgstr ""
+msgstr "Đang cài đặt lại"
 
 #. TODO: 'Removing'?
 #: dnf/transaction.py:89
 msgid "Erasing"
-msgstr ""
+msgstr "Đang gỡ bỏ"
 
 #. TRANSLATORS: This is for a single package currently being upgraded.
 #: dnf/transaction.py:91
 msgctxt "currently"
 msgid "Upgrading"
-msgstr ""
+msgstr "Đang nâng cấp"
 
 #: dnf/transaction.py:95
 msgid "Verifying"
-msgstr ""
+msgstr "Đang xác thực"
 
 #: dnf/transaction.py:96
 msgid "Running scriptlet"
-msgstr ""
+msgstr "Đang chạy kịch bản con"
 
 #: dnf/transaction.py:98
 msgid "Preparing"
-msgstr ""
+msgstr "Đang chuẩn bị"
 
 #: dnf/transaction_sr.py:65
 #, python-brace-format
@@ -4231,10 +4232,12 @@ msgid ""
 "The following problems occurred while replaying the transaction from file "
 "\"{filename}\":"
 msgstr ""
+"Các vấn đề sau đã xảy ra trong khi phát lại giao dịch từ tập tin \"{filename}"
+"\":"
 
 #: dnf/transaction_sr.py:67
 msgid "The following problems occurred while running a transaction:"
-msgstr ""
+msgstr "Các vấn đề sau đã xảy ra trong khi chạy giao dịch:"
 
 #: dnf/transaction_sr.py:88
 #, python-brace-format
@@ -4376,21 +4379,21 @@ msgstr ""
 
 #: dnf/util.py:418 dnf/util.py:420
 msgid "Problem"
-msgstr ""
+msgstr "Vấn đề"
 
 #: dnf/util.py:471
 #, python-brace-format
 msgid "TransactionItem not found for key: {}"
-msgstr ""
+msgstr "Không tìm thấy TransactionItem cho khóa: {}"
 
 #: dnf/util.py:481
 #, python-brace-format
 msgid "TransactionSWDBItem not found for key: {}"
-msgstr ""
+msgstr "Không tìm thấy TransactionSWDBItem cho khóa: {}"
 
 #: dnf/util.py:484
 msgid "Errors occurred during transaction."
-msgstr ""
+msgstr "Đã xảy ra lỗi trong quá trình xử lý giao dịch."
 
 #: dnf/util.py:620
 msgid "Reinstalled"
