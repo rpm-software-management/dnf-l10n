@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-12 03:10+0000\n"
-"PO-Revision-Date: 2026-08-12 03:10+0000\n"
+"PO-Revision-Date: 2026-08-12 07:31+0000\n"
 "Last-Translator: Nguyen Khang Nguyen <nnguyenkhang14@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/vi/>\n"
@@ -38,12 +38,12 @@ msgstr "Các bản cập nhật sau hiện có trên '%s':"
 #: dnf/automatic/emitter.py:35
 #, python-format
 msgid "The following updates were downloaded on '%s':"
-msgstr "Các cập nhật sau đây đã được tải về trên '%s':"
+msgstr "Các cập nhật sau đây đã được tải về cho '%s':"
 
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr "Đã xảy ra lỗi trên: '%s'"
+msgstr "Đã xảy ra lỗi tại: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
@@ -152,7 +152,7 @@ msgstr "Đã tắt bộ nhớ đệm hẹn giờ siêu dữ liệu."
 
 #: dnf/base.py:356
 msgid "Metadata cache refreshed recently."
-msgstr "Bộ nhớ đệm siêu dữ liệu đã được làm mới gần đây."
+msgstr "Đã làm mới bộ nhớ đệm siêu dữ liệu gần đây."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:91
 #, python-brace-format
@@ -206,8 +206,8 @@ msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
-"Các gói đã tải đã lưu vào bộ nhớ đệm cho tới lần giao dịch thành công tiếp "
-"theo."
+"Các gói đã tải về được lưu vào bộ nhớ đệm cho tới lần giao dịch thành công "
+"tiếp theo."
 
 #: dnf/base.py:529
 #, python-format
@@ -619,7 +619,7 @@ msgstr "Lỗi cấu hình: %s"
 
 #: dnf/cli/aliases.py:190
 msgid "Aliases contain infinite recursion"
-msgstr "Bí danh chứa vòng lặp đệ quy vô tận"
+msgstr "Các bí danh chứa đệ quy vô hạn"
 
 #: dnf/cli/aliases.py:208
 #, python-format
@@ -654,9 +654,9 @@ msgid ""
 msgstr ""
 "Không thể chuyển đổi stream đang bật của mô-đun trừ khi được bật rõ ràng "
 "thông qua tùy chọn cấu hình module_stream_switch.\n"
-"Bạn nên xóa toàn bộ nội dung đã cài đặt của mô-đun, sau đó đặt lại mô-đun "
-"bằng lệnh '{prog} module reset <tên_mô-đun>'. Sau khi đặt lại mô-đun, bạn có "
-"thể cài đặt stream khác."
+"Thay vào đó, bạn nên gỡ toàn bộ nội dung đã cài đặt của mô-đun, sau đó đặt "
+"lại mô-đun bằng lệnh '{prog} module reset <tên_mô-đun>'. Sau khi đặt lại mô-"
+"đun, bạn có thể cài đặt stream khác."
 
 #: dnf/cli/cli.py:213
 #, python-brace-format
@@ -751,7 +751,7 @@ msgstr ""
 #: dnf/cli/cli.py:407
 #, python-brace-format
 msgid "Changelogs for {}"
-msgstr "Nhật ký thay đổi cho {}"
+msgstr "Nhật ký thay đổi của {}"
 
 #: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
 msgid "Obsoleting Packages"
@@ -938,7 +938,7 @@ msgid ""
 "\n"
 "For more information contact your distribution or package provider."
 msgstr ""
-"Bạn đã bật kiểm tra các gói bằng các khoá GPG. Và đây là một điều tốt.\n"
+"Bạn đã bật kiểm tra các gói bằng các khoá GPG. Đây là một điều tốt.\n"
 "Tuy nhiên, bạn chưa có khoá công khai GPG nào được cài đặt. Bạn cần tải "
 "xuống\n"
 "các khoá cho các gói bạn muốn cài đặt và cài đặt chúng.\n"
@@ -987,7 +987,7 @@ msgstr "chỉ hiện các gói được nâng cấp"
 
 #: dnf/cli/commands/__init__.py:186 dnf/cli/commands/__init__.py:762
 msgid "show only autoremove packages"
-msgstr "chỉ hiện các gói tự động gỡ bỏ"
+msgstr "chỉ hiện các gói autoremove"
 
 #: dnf/cli/commands/__init__.py:189 dnf/cli/commands/__init__.py:765
 msgid "show only recently changed packages"
@@ -1006,294 +1006,297 @@ msgstr "Đặc tả tên gói"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
-msgstr ""
+msgstr "liệt kê một gói hoặc nhóm của các gói"
 
 #: dnf/cli/commands/__init__.py:235
 msgid "find what package provides the given value"
-msgstr ""
+msgstr "tìm xem gói nào cung cấp giá trị đã cho"
 
 #: dnf/cli/commands/__init__.py:239
 msgid "PROVIDE"
-msgstr ""
+msgstr "CUNG-CẤP"
 
 #: dnf/cli/commands/__init__.py:240
 msgid "Provide specification to search for"
-msgstr ""
+msgstr "Đặc tả tính năng/gói cung cấp cần tìm"
 
 #: dnf/cli/commands/__init__.py:250 dnf/cli/commands/search.py:158
 msgid "Searching Packages: "
-msgstr ""
+msgstr "Đang tìm các gói: "
 
 #: dnf/cli/commands/__init__.py:259
 msgid "check for available package upgrades"
-msgstr ""
+msgstr "kiểm tra các bản nâng cấp gói đang khả dụng"
 
 #: dnf/cli/commands/__init__.py:265
 msgid "show changelogs before update"
-msgstr ""
+msgstr "hiện nhật kí thay đổi trước khi cập nhật"
 
 #: dnf/cli/commands/__init__.py:360 dnf/cli/commands/__init__.py:414
 #: dnf/cli/commands/__init__.py:471
 msgid "No package available."
-msgstr ""
+msgstr "Không có gói nào khả dụng."
 
 #: dnf/cli/commands/__init__.py:375
 msgid "No packages marked for install."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để cài đặt."
 
 #: dnf/cli/commands/__init__.py:412
 msgid "No package installed."
-msgstr ""
+msgstr "Không có gói nào đã được cài đặt."
 
 #: dnf/cli/commands/__init__.py:432 dnf/cli/commands/__init__.py:490
 #: dnf/cli/commands/reinstall.py:92
 #, python-format
 msgid " (from %s)"
-msgstr ""
+msgstr " (từ %s)"
 
 #: dnf/cli/commands/__init__.py:433 dnf/cli/commands/__init__.py:491
 #: dnf/cli/commands/reinstall.py:93 dnf/cli/commands/remove.py:105
 #, python-format
 msgid "Installed package %s%s not available."
-msgstr ""
+msgstr "Gói đã cài đặt %s%s không khả dụng."
 
 #: dnf/cli/commands/__init__.py:468 dnf/cli/commands/__init__.py:578
 #: dnf/cli/commands/__init__.py:622 dnf/cli/commands/__init__.py:669
 msgid "No package installed from the repository."
-msgstr ""
+msgstr "Không có gói nào đã được cài đặt từ kho phần mềm."
 
 #: dnf/cli/commands/__init__.py:531 dnf/cli/commands/reinstall.py:102
 msgid "No packages marked for reinstall."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để cài lại."
 
 #: dnf/cli/commands/__init__.py:720 dnf/cli/commands/upgrade.py:90
 msgid "No packages marked for upgrade."
-msgstr ""
+msgstr "Không có gói nào được đánh dấu để nâng cấp."
 
 #: dnf/cli/commands/__init__.py:730
 msgid "run commands on top of all packages in given repository"
-msgstr ""
+msgstr "chạy các lệnh trên tất cả các gói trong kho phần mềm chỉ định"
 
 #: dnf/cli/commands/__init__.py:769
 msgid "REPOID"
-msgstr ""
+msgstr "ID-KHO"
 
 #: dnf/cli/commands/__init__.py:769
 msgid "Repository ID"
-msgstr ""
+msgstr "ID kho phần mềm"
 
 #: dnf/cli/commands/__init__.py:781 dnf/cli/commands/mark.py:47
 #: dnf/cli/commands/updateinfo.py:107
 msgid "Package specification"
-msgstr ""
+msgstr "Đặc tả gói"
 
 #: dnf/cli/commands/__init__.py:805
 msgid "display a helpful usage message"
-msgstr ""
+msgstr "hiển thị một hướng dẫn sử dụng hữu ích"
 
 #: dnf/cli/commands/__init__.py:809
 msgid "COMMAND"
-msgstr ""
+msgstr "LỆNH"
 
 #: dnf/cli/commands/__init__.py:810
 #, python-brace-format
 msgid "{prog} command to get help for"
-msgstr ""
+msgstr "lệnh {prog} cần xem trợ giúp"
 
 #: dnf/cli/commands/alias.py:39
 msgid "List or create command aliases"
-msgstr ""
+msgstr "Liệt kê hoặc tạo các bí danh lệnh"
 
 #: dnf/cli/commands/alias.py:46
 msgid "enable aliases resolving"
-msgstr ""
+msgstr "bật tính năng phân tích bí danh"
 
 #: dnf/cli/commands/alias.py:49
 msgid "disable aliases resolving"
-msgstr ""
+msgstr "tắt tính năng phân tích bí danh"
 
 #: dnf/cli/commands/alias.py:52
 msgid "action to do with aliases"
-msgstr ""
+msgstr "hành động cần làm với các bí danh"
 
 #: dnf/cli/commands/alias.py:54
 msgid "alias definition"
-msgstr ""
+msgstr "định nghĩa bí danh"
 
 #: dnf/cli/commands/alias.py:69
 msgid "Aliases are now enabled"
-msgstr ""
+msgstr "Các bí danh bây giờ đang bật"
 
 #: dnf/cli/commands/alias.py:72
 msgid "Aliases are now disabled"
-msgstr ""
+msgstr "Các bí danh bây giờ đang tắt"
 
 #: dnf/cli/commands/alias.py:89 dnf/cli/commands/alias.py:92
 #, python-format
 msgid "Invalid alias key: %s"
-msgstr ""
+msgstr "Khoá bí danh không hợp lệ: %s"
 
 #: dnf/cli/commands/alias.py:95
 #, python-format
 msgid "Alias argument has no value: %s"
-msgstr ""
+msgstr "Đối số của bí danh không có giá trị: %s"
 
 #: dnf/cli/commands/alias.py:129
 #, python-format
 msgid "Aliases added: %s"
-msgstr ""
+msgstr "Đã thêm các bí danh: %s"
 
 #: dnf/cli/commands/alias.py:143
 #, python-format
 msgid "Alias not found: %s"
-msgstr ""
+msgstr "Không tìm thấy bí danh: %s"
 
 #: dnf/cli/commands/alias.py:146
 #, python-format
 msgid "Aliases deleted: %s"
-msgstr ""
+msgstr "Đã xoá các bí danh: %s"
 
 #: dnf/cli/commands/alias.py:154
 #, python-format
 msgid "%s, alias %s=\"%s\""
-msgstr ""
+msgstr "%s, bí danh %s=\"%s\""
 
 #: dnf/cli/commands/alias.py:156
 #, python-format
 msgid "Alias %s='%s'"
-msgstr ""
+msgstr "Bí danh %s='%s'"
 
 #: dnf/cli/commands/alias.py:160
 msgid "Aliases resolving is disabled."
-msgstr ""
+msgstr "Đã tắt tính năng phân tích bí danh."
 
 #: dnf/cli/commands/alias.py:165
 msgid "No aliases specified."
-msgstr ""
+msgstr "Không có bí danh nào được chỉ định."
 
 #: dnf/cli/commands/alias.py:172
 msgid "No alias specified."
-msgstr ""
+msgstr "Chưa chỉ định bí danh."
 
 #: dnf/cli/commands/alias.py:178
 msgid "No aliases defined."
-msgstr ""
+msgstr "Không có bí danh nào được định nghĩa."
 
 #: dnf/cli/commands/alias.py:185
 #, python-format
 msgid "No match for alias: %s"
-msgstr ""
+msgstr "Không có bí danh nào phù hợp: %s"
 
 #: dnf/cli/commands/autoremove.py:40
 msgid ""
 "remove all unneeded packages that were originally installed as dependencies"
 msgstr ""
+"gỡ bỏ tất cả các gói không cần thiết vốn được cài đặt dưới dạng phụ thuộc"
 
 #: dnf/cli/commands/autoremove.py:45 dnf/cli/commands/remove.py:58
 msgid "Package to remove"
-msgstr ""
+msgstr "Gói để gỡ bỏ"
 
 #: dnf/cli/commands/check.py:33
 msgid "check for problems in the packagedb"
-msgstr ""
+msgstr "kiểm tra các sự cố trong packagedb"
 
 #: dnf/cli/commands/check.py:39
 msgid "show all problems; default"
-msgstr ""
+msgstr "hiện mọi vấn đề; mặc định"
 
 #: dnf/cli/commands/check.py:42
 msgid "show dependency problems"
-msgstr ""
+msgstr "hiện các vấn đề phụ thuộc"
 
 #: dnf/cli/commands/check.py:45
 msgid "show duplicate problems"
-msgstr ""
+msgstr "hiện các vấn đề trùng lập"
 
 #: dnf/cli/commands/check.py:48
 msgid "show obsoleted packages"
-msgstr ""
+msgstr "hiện các gói lỗi thời"
 
 #: dnf/cli/commands/check.py:51
 msgid "show problems with provides"
-msgstr ""
+msgstr "hiển thị các vấn đề với gói/tính năng cung cấp"
 
 #: dnf/cli/commands/check.py:97
 #, python-brace-format
 msgid "{} has missing requires of {}"
-msgstr ""
+msgstr "{} thiếu phần phụ thuộc yêu cầu {}"
 
 #: dnf/cli/commands/check.py:117
 #, python-brace-format
 msgid "{} is a duplicate with {}"
-msgstr ""
+msgstr "{} trùng lặp với {}"
 
 #: dnf/cli/commands/check.py:128
 #, python-brace-format
 msgid "{} is obsoleted by {}"
-msgstr ""
+msgstr "{} đã bị thay thế bởi {}"
 
 #: dnf/cli/commands/check.py:137
 #, python-brace-format
 msgid "{} provides {} but it cannot be found"
-msgstr ""
+msgstr "{} cung cấp {} nhưng không tìm thấy"
 
 #: dnf/cli/commands/clean.py:68
 #, python-format
 msgid "Removing file %s"
-msgstr ""
+msgstr "Đang xoá tập tin %s"
 
 #: dnf/cli/commands/clean.py:87
 msgid "remove cached data"
-msgstr ""
+msgstr "xoá dữ liệu đã lưu trong bộ nhớ đệm"
 
 #: dnf/cli/commands/clean.py:93
 msgid "Metadata type to clean"
-msgstr ""
+msgstr "Loại siêu dữ liệu để dọn dẹp"
 
 #: dnf/cli/commands/clean.py:108
 msgid "Cleaning data:  "
-msgstr ""
+msgstr "Đang dọn dẹp dữ liệu:  "
 
 #: dnf/cli/commands/clean.py:114
 msgid "Cache was expired"
-msgstr ""
+msgstr "Bộ nhớ đệm đã hết hạn"
 
 #: dnf/cli/commands/clean.py:118
 #, python-format
 msgid "%d file removed"
 msgid_plural "%d files removed"
-msgstr[0] ""
+msgstr[0] "Đã xoá %d tập tin"
 
 #: dnf/cli/commands/clean.py:122 dnf/lock.py:143
 #, python-format
 msgid "Waiting for process with pid %d to finish."
-msgstr ""
+msgstr "Đang chờ tiến trình với pid %d kết thúc."
 
 #: dnf/cli/commands/deplist.py:31
 msgid ""
 "[deprecated, use repoquery --deplist] List package's dependencies and what "
 "packages provide them"
 msgstr ""
+"[không còn được khuyến nghị, dùng repoquery --deplist] Liệt kê phụ thuộc của "
+"các gói và những gói nào cung cấp chúng"
 
 #: dnf/cli/commands/distrosync.py:32
 msgid "synchronize installed packages to the latest available versions"
-msgstr ""
+msgstr "đồng bộ hoá tất cả các gói đã cài lên phiên bản mới nhất đang khả dụng"
 
 #: dnf/cli/commands/distrosync.py:36
 msgid "Package to synchronize"
-msgstr ""
+msgstr "Gói để đồng bộ"
 
 #: dnf/cli/commands/downgrade.py:34
 msgid "Downgrade a package"
-msgstr ""
+msgstr "Hạ cấp một gói"
 
 #: dnf/cli/commands/downgrade.py:38
 msgid "Package to downgrade"
-msgstr ""
+msgstr "Gói để hạ cấp"
 
 #: dnf/cli/commands/group.py:46
 msgid "display, or use, the groups information"
-msgstr ""
+msgstr "hiển thị, hoặc sử dụng, thông tin các nhóm"
 
 #: dnf/cli/commands/group.py:72
 msgid "No group data available for configured repositories."
@@ -2922,7 +2925,7 @@ msgstr ""
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:486
 msgid "From repo"
-msgstr ""
+msgstr "Từ kho"
 
 #. :hawkey does not support changelog information
 #. print(_("Committer   : %s") % ucd(pkg.committer))
@@ -2940,12 +2943,12 @@ msgstr ""
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:498
 msgid "Install time"
-msgstr ""
+msgstr "Thời gian cài đặt"
 
 #. Translators: This message should be no longer than 12 chars.
 #: dnf/cli/output.py:507
 msgid "Installed by"
-msgstr ""
+msgstr "Cài đặt bởi"
 
 #. Translators: This is abbreviated 'Summary'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -2958,7 +2961,7 @@ msgstr ""
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:517
 msgid "License"
-msgstr ""
+msgstr "Giấy phép"
 
 #. Translators: This is abbreviated 'Description'. Should be no longer
 #. than 12 characters. You can use the full version if it is short
@@ -3304,7 +3307,7 @@ msgstr[0] "Gói"
 #: dnf/cli/output.py:1329
 msgid "Dependent package"
 msgid_plural "Dependent packages"
-msgstr[0] ""
+msgstr[0] "Gói phụ thuộc"
 
 #: dnf/cli/output.py:1437
 msgid "Total"
@@ -3316,32 +3319,32 @@ msgstr ""
 
 #: dnf/cli/output.py:1466
 msgid "System"
-msgstr ""
+msgstr "Hệ thống"
 
 #: dnf/cli/output.py:1516
 msgid "Command line"
-msgstr ""
+msgstr "Dòng lệnh"
 
 #. TRANSLATORS: user names who executed transaction in history command output
 #: dnf/cli/output.py:1529
 msgid "User name"
-msgstr ""
+msgstr "Tên người dùng"
 
 #: dnf/cli/output.py:1531
 msgid "ID"
-msgstr ""
+msgstr "ID"
 
 #: dnf/cli/output.py:1533
 msgid "Date and time"
-msgstr ""
+msgstr "Ngày và giờ"
 
 #: dnf/cli/output.py:1534
 msgid "Action(s)"
-msgstr ""
+msgstr "(Các) hành động"
 
 #: dnf/cli/output.py:1535
 msgid "Altered"
-msgstr ""
+msgstr "Đã thay đổi"
 
 #. TRANSLATORS: This is the time format for dnf history list.
 #. You can change it but do it with caution because the output
@@ -3350,11 +3353,11 @@ msgstr ""
 #. number (01-31), %H - hour (00-23), %M - minute (00-59).
 #: dnf/cli/output.py:1555
 msgid "%Y-%m-%d %H:%M"
-msgstr ""
+msgstr "%Y-%m-%d %H:%M"
 
 #: dnf/cli/output.py:1583
 msgid "No transactions"
-msgstr ""
+msgstr "Không có giao dịch nào"
 
 #: dnf/cli/output.py:1584 dnf/cli/output.py:1600
 msgid "Failed history info"
@@ -3366,100 +3369,100 @@ msgstr ""
 
 #: dnf/cli/output.py:1657
 msgid "Erased"
-msgstr ""
+msgstr "Đã xoá"
 
 #: dnf/cli/output.py:1658 dnf/cli/output.py:1839 dnf/util.py:615
 msgid "Downgraded"
-msgstr ""
+msgstr "Đã hạ cấp"
 
 #: dnf/cli/output.py:1658 dnf/cli/output.py:1841 dnf/util.py:614
 msgid "Upgraded"
-msgstr ""
+msgstr "Đã nâng cấp"
 
 #: dnf/cli/output.py:1659
 msgid "Not installed"
-msgstr ""
+msgstr "Chưa cài đặt"
 
 #: dnf/cli/output.py:1660
 msgid "Newer"
-msgstr ""
+msgstr "Mới hơn"
 
 #: dnf/cli/output.py:1660
 msgid "Older"
-msgstr ""
+msgstr "Cũ hơn"
 
 #: dnf/cli/output.py:1708 dnf/cli/output.py:1710
 msgid "Transaction ID :"
-msgstr ""
+msgstr "ID giao dịch:"
 
 #: dnf/cli/output.py:1713
 msgid "Begin time     :"
-msgstr ""
+msgstr "Thời gian bắt đầu     :"
 
 #: dnf/cli/output.py:1716 dnf/cli/output.py:1718
 msgid "Begin rpmdb    :"
-msgstr ""
+msgstr "rpmdb bắt đầu    :"
 
 #: dnf/cli/output.py:1724
 #, python-format
 msgid "(%u seconds)"
-msgstr ""
+msgstr "(%u giây)"
 
 #: dnf/cli/output.py:1726
 #, python-format
 msgid "(%u minutes)"
-msgstr ""
+msgstr "(%u phút)"
 
 #: dnf/cli/output.py:1728
 #, python-format
 msgid "(%u hours)"
-msgstr ""
+msgstr "(%u giờ)"
 
 #: dnf/cli/output.py:1730
 #, python-format
 msgid "(%u days)"
-msgstr ""
+msgstr "(%u ngày)"
 
 #: dnf/cli/output.py:1731
 msgid "End time       :"
-msgstr ""
+msgstr "Thời gian kết thúc       :"
 
 #: dnf/cli/output.py:1734 dnf/cli/output.py:1736
 msgid "End rpmdb      :"
-msgstr ""
+msgstr "rpmdb kết thúc      :"
 
 #: dnf/cli/output.py:1743 dnf/cli/output.py:1745
 msgid "User           :"
-msgstr ""
+msgstr "Người dùng           :"
 
 #: dnf/cli/output.py:1749 dnf/cli/output.py:1756
 msgid "Aborted"
-msgstr ""
+msgstr "Đã huỷ"
 
 #: dnf/cli/output.py:1749 dnf/cli/output.py:1752 dnf/cli/output.py:1754
 #: dnf/cli/output.py:1756 dnf/cli/output.py:1758 dnf/cli/output.py:1760
 msgid "Return-Code    :"
-msgstr ""
+msgstr "Mã-trả-về    :"
 
 #: dnf/cli/output.py:1752 dnf/cli/output.py:1760
 msgid "Success"
-msgstr ""
+msgstr "Thành công"
 
 #: dnf/cli/output.py:1754
 msgid "Failures:"
-msgstr ""
+msgstr "Các lần thất bại:"
 
 #: dnf/cli/output.py:1758
 msgid "Failure:"
-msgstr ""
+msgstr "Thất bại:"
 
 #: dnf/cli/output.py:1768 dnf/cli/output.py:1770
 msgid "Releasever     :"
-msgstr ""
+msgstr "Phiên bản phát hành     :"
 
 #: dnf/cli/output.py:1775 dnf/cli/output.py:1777
 msgid "Command Line   :"
-msgstr ""
+msgstr "Dòng lệnh   :"
 
 #: dnf/cli/output.py:1786
 msgid "Persistence    :"
@@ -3483,7 +3486,7 @@ msgstr ""
 
 #: dnf/cli/output.py:1824
 msgid "Errors:"
-msgstr ""
+msgstr "Các lỗi:"
 
 #: dnf/cli/output.py:1833
 msgid "Dep-Install"
@@ -3508,50 +3511,50 @@ msgstr ""
 #: dnf/cli/output.py:1911
 #, python-format
 msgid "---> Package %s.%s %s will be installed"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ được cài đặt"
 
 #: dnf/cli/output.py:1913
 #, python-format
 msgid "---> Package %s.%s %s will be an upgrade"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ là bản nâng cấp"
 
 #: dnf/cli/output.py:1915
 #, python-format
 msgid "---> Package %s.%s %s will be erased"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ bị xoá"
 
 #: dnf/cli/output.py:1917
 #, python-format
 msgid "---> Package %s.%s %s will be reinstalled"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ được cài đặt lại"
 
 #: dnf/cli/output.py:1919
 #, python-format
 msgid "---> Package %s.%s %s will be a downgrade"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ bị hạ cấp"
 
 #: dnf/cli/output.py:1921
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleting"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ thay thế gói khác"
 
 #: dnf/cli/output.py:1923
 #, python-format
 msgid "---> Package %s.%s %s will be upgraded"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ được nâng cấp"
 
 #: dnf/cli/output.py:1925
 #, python-format
 msgid "---> Package %s.%s %s will be obsoleted"
-msgstr ""
+msgstr "---> Gói %s.%s %s sẽ bị thay thế"
 
 #: dnf/cli/output.py:1934
 msgid "--> Starting dependency resolution"
-msgstr ""
+msgstr "--> Bắt đầu giải quyết phụ thuộc"
 
 #: dnf/cli/output.py:1938
 msgid "--> Finished dependency resolution"
-msgstr ""
+msgstr "--> Hoàn tất giải quyết phụ thuộc"
 
 #: dnf/cli/output.py:1952 dnf/crypto.py:89
 #, python-format
@@ -3561,18 +3564,22 @@ msgid ""
 " Fingerprint: %s\n"
 " From       : %s"
 msgstr ""
+"Đang nhập khoá GPG 0x%s:\n"
+"Id người dùng     : \"%s\"\n"
+"Dấu vân tay: %s\n"
+"Từ       : %s"
 
 #: dnf/cli/utils.py:98
 msgid "Running"
-msgstr ""
+msgstr "Đang chạy"
 
 #: dnf/cli/utils.py:99
 msgid "Sleeping"
-msgstr ""
+msgstr "Đang ngủ"
 
 #: dnf/cli/utils.py:100
 msgid "Uninterruptible"
-msgstr ""
+msgstr "Không thể ngắt"
 
 #: dnf/cli/utils.py:101
 msgid "Zombie"
@@ -3584,22 +3591,22 @@ msgstr ""
 
 #: dnf/cli/utils.py:103
 msgid "Unknown"
-msgstr ""
+msgstr "Không rõ"
 
 #: dnf/cli/utils.py:116
 #, python-format
 msgid "Unable to find information about the locking process (PID %d)"
-msgstr ""
+msgstr "Không thể tìm thông tin về tiến trình đang khoá (PID %d)"
 
 #: dnf/cli/utils.py:120
 #, python-format
 msgid "  The application with PID %d is: %s"
-msgstr ""
+msgstr "  Ứng dụng với PID %d là: %s"
 
 #: dnf/cli/utils.py:123
 #, python-format
 msgid "    Memory : %5s RSS (%5sB VSZ)"
-msgstr ""
+msgstr "    Bộ nhớ : %5s RSS (%5sB VSZ)"
 
 #: dnf/cli/utils.py:128
 #, python-format
@@ -4387,50 +4394,50 @@ msgstr ""
 
 #: dnf/util.py:620
 msgid "Reinstalled"
-msgstr ""
+msgstr "Đã cài đặt lại"
 
 #: dnf/util.py:621
 msgid "Skipped"
-msgstr ""
+msgstr "Đã bỏ qua"
 
 #: dnf/util.py:622
 msgid "Removed"
-msgstr ""
+msgstr "Đã gỡ bỏ"
 
 #: dnf/util.py:625
 msgid "Failed"
-msgstr ""
+msgstr "Đã thất bại"
 
 #. returns <name-unset> for everything that evaluates to False (None, empty..)
 #: dnf/util.py:634
 msgid "<name-unset>"
-msgstr ""
+msgstr "<chưa-đặt-tên>"
 
 #: dnf/util.py:651
 msgid "Not running on a bootc system."
-msgstr ""
+msgstr "Đang không chạy trên một hệ thống bootc."
 
 #: dnf/util.py:704
 #, python-format
 msgid "%s: command not found."
-msgstr ""
+msgstr "%s: không tìm thấy lệnh."
 
 #: dnf/util.py:706
 #, python-format
 msgid "Failed to mount %s as read/write: %s"
-msgstr ""
+msgstr "Không thể gắn %s dưới chế độ đọc/ghi: %s"
 
 #: dnf/util.py:715
 #, python-format
 msgid "%s: command not found. Is this a bootc system?"
-msgstr ""
+msgstr "%s: không tìm thấy lệnh. Liệu đây có phải là một hệ thống bootc?"
 
 #: dnf/util.py:717
 #, python-format
 msgid "Failed to unlock system: %s"
-msgstr ""
+msgstr "Không thể mở khoá hệ thống: %s"
 
 #: dnf/util.py:731
 #, python-format
 msgid "Unhandled bootc unlocked state: %s"
-msgstr ""
+msgstr "Trạng thái mở khóa bootc không được xử lý: %s"
