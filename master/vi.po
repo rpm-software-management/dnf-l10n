@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-08-17 02:08+0000\n"
-"PO-Revision-Date: 2026-08-14 03:11+0000\n"
+"PO-Revision-Date: 2026-08-18 02:04+0000\n"
 "Last-Translator: Nguyen Khang Nguyen <nnguyenkhang14@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/dnf/"
 "dnf-master/vi/>\n"
@@ -833,8 +833,8 @@ msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
 "command(%s)'\""
 msgstr ""
-"Nó có thể là lệnh plugin của {PROG}, hãy thử: \"{prog} install 'dnf-"
-"command(%s)'\""
+"Đây có thể là lệnh của plugin {PROG}, hãy thử: \"{prog} install 'dnf-command"
+"(%s)'\""
 
 #: dnf/cli/cli.py:828
 #, python-brace-format
@@ -917,7 +917,7 @@ msgstr "Để chẩn đoán vấn đề, hãy thử chạy: '%s'."
 #: dnf/cli/commands/__init__.py:40
 #, python-format
 msgid "You probably have corrupted RPMDB, running '%s' might fix the issue."
-msgstr "Bạn có thể đã có RPMDB bị hỏng, chạy '%s' có thể sẽ sửa được vấn đề."
+msgstr "Có thể RPMDB của bạn đã bị hỏng, chạy '%s' có thể sẽ sửa được vấn đề."
 
 #: dnf/cli/commands/__init__.py:44
 #, python-brace-format
@@ -1004,7 +1004,7 @@ msgstr "Đặc tả tên gói"
 
 #: dnf/cli/commands/__init__.py:221
 msgid "list a package or groups of packages"
-msgstr "liệt kê một gói hoặc nhóm của các gói"
+msgstr "liệt kê một gói hoặc một nhóm gói"
 
 #: dnf/cli/commands/__init__.py:235
 msgid "find what package provides the given value"
@@ -1219,7 +1219,7 @@ msgstr "hiển thị các vấn đề với gói/tính năng cung cấp"
 #: dnf/cli/commands/check.py:97
 #, python-brace-format
 msgid "{} has missing requires of {}"
-msgstr "{} thiếu phần phụ thuộc yêu cầu {}"
+msgstr "{} thiếu phụ thuộc bắt buộc {}"
 
 #: dnf/cli/commands/check.py:117
 #, python-brace-format
@@ -1303,7 +1303,7 @@ msgstr ""
 #: dnf/cli/commands/group.py:126
 #, python-format
 msgid "Warning: Group %s does not exist."
-msgstr ""
+msgstr "Cảnh báo: Nhóm %s không tồn tại."
 
 #: dnf/cli/commands/group.py:167
 msgid "Warning: No groups match:"
@@ -1311,27 +1311,27 @@ msgstr ""
 
 #: dnf/cli/commands/group.py:196
 msgid "Available Environment Groups:"
-msgstr ""
+msgstr "Các nhóm môi trường đang khả dụng:"
 
 #: dnf/cli/commands/group.py:198
 msgid "Installed Environment Groups:"
-msgstr ""
+msgstr "Các nhóm môi trường đã cài đặt:"
 
 #: dnf/cli/commands/group.py:205 dnf/cli/commands/group.py:291
 msgid "Installed Groups:"
-msgstr ""
+msgstr "Các nhóm đã cài đặt:"
 
 #: dnf/cli/commands/group.py:212 dnf/cli/commands/group.py:298
 msgid "Installed Language Groups:"
-msgstr ""
+msgstr "Các nhóm ngôn ngữ đã cài đặt:"
 
 #: dnf/cli/commands/group.py:222 dnf/cli/commands/group.py:305
 msgid "Available Groups:"
-msgstr ""
+msgstr "Các nhóm đang khả dụng:"
 
 #: dnf/cli/commands/group.py:229 dnf/cli/commands/group.py:312
 msgid "Available Language Groups:"
-msgstr ""
+msgstr "Các nhóm ngôn ngữ đang khả dụng:"
 
 #: dnf/cli/commands/group.py:319
 msgid "include optional packages from group"
@@ -1549,12 +1549,12 @@ msgstr ""
 #: dnf/cli/commands/mark.py:51
 #, python-format
 msgid "%s marked as user installed."
-msgstr ""
+msgstr "%s được đánh dấu là người dùng tự cài"
 
 #: dnf/cli/commands/mark.py:55
 #, python-format
 msgid "%s unmarked as user installed."
-msgstr ""
+msgstr "%s được bỏ đánh dấu là người dùng tự cài"
 
 #: dnf/cli/commands/mark.py:59
 #, python-format
@@ -1569,7 +1569,7 @@ msgstr "Lỗi:"
 #: dnf/cli/commands/mark.py:86
 #, python-format
 msgid "Package %s is not installed."
-msgstr ""
+msgstr "Gói %s chưa được cài đặt."
 
 #: dnf/cli/commands/module.py:54
 #, python-brace-format
@@ -1703,7 +1703,7 @@ msgstr ""
 #: dnf/cli/commands/repolist.py:37 dnf/cli/commands/updateinfo.py:46
 #: dnf/cli/commands/updateinfo.py:317 dnf/cli/commands/updateinfo.py:363
 msgid "unknown"
-msgstr ""
+msgstr "không rõ"
 
 #: dnf/cli/commands/repolist.py:39
 #, python-format
@@ -2126,7 +2126,7 @@ msgstr ""
 #. number (4 digits).
 #: dnf/cli/commands/repoquery.py:346
 msgid "%a %b %d %Y"
-msgstr ""
+msgstr "%a %d %b %Y"
 
 #: dnf/cli/commands/repoquery.py:357
 #, python-brace-format
@@ -2159,7 +2159,7 @@ msgstr "TỪ-KHOÁ"
 
 #: dnf/cli/commands/search.py:54
 msgid "Keyword to search for"
-msgstr "Từ khoá để tìm cho"
+msgstr "Từ khoá cần tìm"
 
 #: dnf/cli/commands/search.py:60 dnf/cli/output.py:459
 msgctxt "long"
@@ -2201,7 +2201,7 @@ msgstr ""
 
 #: dnf/cli/commands/search.py:133
 msgid "No matches found."
-msgstr ""
+msgstr "Không tìm thấy kết quả phù hợp."
 
 #: dnf/cli/commands/shell.py:48
 #, python-brace-format
@@ -2235,6 +2235,11 @@ msgid ""
 "    If no value is given it prints the current value.\n"
 "    If value is given it sets that value."
 msgstr ""
+"{} đ.số [giá_trị]\n"
+"  đ.số: debuglevel, errorlevel, obsoletes, gpgcheck, assumeyes, exclude,\n"
+"        repo_id.gpgcheck, repo_id.exclude\n"
+"    Nếu không cung cấp giá trị, lệnh sẽ in giá trị hiện tại.\n"
+"    Nếu có giá trị, lệnh sẽ thiết lập tuỳ chọn theo giá trị đó."
 
 #: dnf/cli/commands/shell.py:182
 #, python-brace-format
@@ -2251,6 +2256,11 @@ msgid ""
 "  enable: enable repositories. option = repository id\n"
 "  disable: disable repositories. option = repository id"
 msgstr ""
+"{} đ.số [tuỳ chọn]\n"
+"  list: liệt kê các kho phần mềm và trạng thái của chúng. tùy_chọn = [all | "
+"id | glob]\n"
+"  enable: bật các kho phần mềm. tùy_chọn = ID kho phần mềm\n"
+"  disable: tắt các kho phần mềm. tùy_chọn = ID kho phần mềm"
 
 #: dnf/cli/commands/shell.py:192
 #, python-brace-format
@@ -2302,7 +2312,7 @@ msgstr ""
 
 #: dnf/cli/commands/shell.py:285 dnf/cli/main.py:207
 msgid "Complete!"
-msgstr ""
+msgstr "Hoàn thành!"
 
 #: dnf/cli/commands/shell.py:295
 msgid "Leaving Shell"
@@ -2405,7 +2415,7 @@ msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:173
 msgid "all"
-msgstr ""
+msgstr "tất cả"
 
 #: dnf/cli/commands/updateinfo.py:176
 msgid "available"
@@ -2477,11 +2487,11 @@ msgstr ""
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "CVEs"
-msgstr ""
+msgstr "CVE"
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Description"
-msgstr ""
+msgstr "Mô tả"
 
 #: dnf/cli/commands/updateinfo.py:357
 msgid "Rights"
@@ -2502,15 +2512,15 @@ msgstr "Đã cài đặt"
 
 #: dnf/cli/commands/updateinfo.py:384
 msgid "false"
-msgstr ""
+msgstr "sai"
 
 #: dnf/cli/commands/updateinfo.py:384
 msgid "true"
-msgstr ""
+msgstr "đúng"
 
 #: dnf/cli/commands/upgrade.py:41
 msgid "upgrade a package or packages on your system"
-msgstr ""
+msgstr "nâng cấp một gói hoặc các gói trên hệ thống"
 
 #: dnf/cli/commands/upgrade.py:45
 msgid "Package to upgrade"
@@ -2610,7 +2620,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:183
 msgid "set install root"
-msgstr ""
+msgstr "thiết lập thư mục gốc cài đặt"
 
 #: dnf/cli/option_parser.py:186
 msgid "do not install documentations"
@@ -2618,7 +2628,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:189
 msgid "disable all plugins"
-msgstr ""
+msgstr "tắt tất cả các plugin"
 
 #: dnf/cli/option_parser.py:192
 msgid "enable plugins by name"
@@ -2768,11 +2778,11 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:315
 msgid "resolve to IPv4 addresses only"
-msgstr ""
+msgstr "chỉ phân giải ra địa chỉ IPv4"
 
 #: dnf/cli/option_parser.py:318
 msgid "resolve to IPv6 addresses only"
-msgstr ""
+msgstr "chỉ phân giải ra địa chỉ IPv6"
 
 #: dnf/cli/option_parser.py:321
 msgid "set directory to copy packages to"
@@ -2780,7 +2790,7 @@ msgstr ""
 
 #: dnf/cli/option_parser.py:324
 msgid "only download packages"
-msgstr ""
+msgstr "chỉ tải xuống các gói"
 
 #: dnf/cli/option_parser.py:327
 msgid "Use a transient overlay which will reset on reboot"
@@ -2850,7 +2860,7 @@ msgstr "Tên"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:464
 msgid "Epoch"
-msgstr ""
+msgstr "Epoch"
 
 #. Translators: This is the short version of 'Version'. You can
 #. use the full (unabbreviated) term 'Version' if you think that
@@ -2931,12 +2941,12 @@ msgstr "Từ kho"
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:492
 msgid "Packager"
-msgstr ""
+msgstr "Ng. đóng gói"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:494
 msgid "Buildtime"
-msgstr ""
+msgstr "T.gian dựng"
 
 #. Translators: This message should be no longer than 12 characters.
 #: dnf/cli/output.py:498
@@ -3015,46 +3025,46 @@ msgstr " Ngôn ngữ: %s"
 
 #: dnf/cli/output.py:749
 msgid " Mandatory Packages:"
-msgstr ""
+msgstr " Gói bắt buộc:"
 
 #: dnf/cli/output.py:750
 msgid " Default Packages:"
-msgstr ""
+msgstr " Gói mặc định:"
 
 #: dnf/cli/output.py:751
 msgid " Optional Packages:"
-msgstr ""
+msgstr " Gói tuỳ chọn:"
 
 #: dnf/cli/output.py:752
 msgid " Conditional Packages:"
-msgstr ""
+msgstr " Gói điều kiện:"
 
 #: dnf/cli/output.py:777
 #, python-format
 msgid "Environment Group: %s"
-msgstr ""
+msgstr "Nhóm môi trường: %s"
 
 #: dnf/cli/output.py:780
 #, python-format
 msgid " Environment-Id: %s"
-msgstr ""
+msgstr " Id môi trường: %s"
 
 #: dnf/cli/output.py:786
 msgid " Mandatory Groups:"
-msgstr ""
+msgstr " Nhóm bắt buộc:"
 
 #: dnf/cli/output.py:787
 msgid " Optional Groups:"
-msgstr ""
+msgstr " Nhóm tuỳ chọn:"
 
 #: dnf/cli/output.py:808
 msgid "Matched from:"
-msgstr ""
+msgstr "Khớp từ:"
 
 #: dnf/cli/output.py:822
 #, python-format
 msgid "Filename    : %s"
-msgstr ""
+msgstr "Tên tập tin    : %s"
 
 #: dnf/cli/output.py:847
 #, python-format
@@ -3092,26 +3102,26 @@ msgstr "Một lỗi đã xảy ra khi tính toán tổng dung lượng tải xu�
 #: dnf/cli/output.py:945
 #, python-format
 msgid "Total size: %s"
-msgstr ""
+msgstr "Tổng dung lượng: %s"
 
 #: dnf/cli/output.py:948
 #, python-format
 msgid "Total download size: %s"
-msgstr ""
+msgstr "Tổng dung lượng tải xuống: %s"
 
 #: dnf/cli/output.py:951
 #, python-format
 msgid "Installed size: %s"
-msgstr ""
+msgstr "Dung lượng cài đặt: %s"
 
 #: dnf/cli/output.py:969
 msgid "There was an error calculating installed size"
-msgstr ""
+msgstr "Một lỗi đã xảy ra khi tính toán dung lượng cài đặt"
 
 #: dnf/cli/output.py:973
 #, python-format
 msgid "Freed space: %s"
-msgstr ""
+msgstr "Dung lượng giải phóng: %s"
 
 #: dnf/cli/output.py:982
 msgid "Marking packages as installed by the group:"
@@ -3141,46 +3151,46 @@ msgstr ""
 #: dnf/cli/output.py:1050
 msgctxt "summary"
 msgid "Installing"
-msgstr ""
+msgstr "Sẽ cài đặt"
 
 #. TRANSLATORS: This is for a list of packages to be upgraded.
 #: dnf/cli/output.py:1052
 msgctxt "summary"
 msgid "Upgrading"
-msgstr ""
+msgstr "Sẽ nâng cấp"
 
 #. TRANSLATORS: This is for a list of packages to be reinstalled.
 #: dnf/cli/output.py:1054
 msgctxt "summary"
 msgid "Reinstalling"
-msgstr ""
+msgstr "Sẽ cài đặt lại"
 
 #: dnf/cli/output.py:1056
 msgid "Installing dependencies"
-msgstr ""
+msgstr "Đang cài đặt các phụ thuộc"
 
 #: dnf/cli/output.py:1057
 msgid "Installing weak dependencies"
-msgstr ""
+msgstr "Đang cài đặt các phụ thuộc lỏng lẻo"
 
 #. TRANSLATORS: This is for a list of packages to be removed.
 #: dnf/cli/output.py:1059
 msgid "Removing"
-msgstr ""
+msgstr "Sẽ gỡ bỏ"
 
 #: dnf/cli/output.py:1060
 msgid "Removing dependent packages"
-msgstr ""
+msgstr "Đang gỡ bỏ các gói phụ thuộc"
 
 #: dnf/cli/output.py:1061
 msgid "Removing unused dependencies"
-msgstr ""
+msgstr "Đang gỡ bỏ các phụ thuộc không dùng đến"
 
 #. TRANSLATORS: This is for a list of packages to be downgraded.
 #: dnf/cli/output.py:1063
 msgctxt "summary"
 msgid "Downgrading"
-msgstr ""
+msgstr "Sẽ hạ cấp"
 
 #: dnf/cli/output.py:1088
 msgid "Installing module profiles"
@@ -3208,27 +3218,27 @@ msgstr ""
 
 #: dnf/cli/output.py:1141
 msgid "Installing Environment Groups"
-msgstr ""
+msgstr "Đang cài đặt các nhóm môi trường"
 
 #: dnf/cli/output.py:1148
 msgid "Upgrading Environment Groups"
-msgstr ""
+msgstr "Đang nâng cấp các nhóm môi trường"
 
 #: dnf/cli/output.py:1155
 msgid "Removing Environment Groups"
-msgstr ""
+msgstr "Đang gỡ bỏ các nhóm môi trường"
 
 #: dnf/cli/output.py:1162
 msgid "Installing Groups"
-msgstr ""
+msgstr "Đang cài đặt các nhóm"
 
 #: dnf/cli/output.py:1169
 msgid "Upgrading Groups"
-msgstr ""
+msgstr "Đang nâng cấp các nhóm"
 
 #: dnf/cli/output.py:1176
 msgid "Removing Groups"
-msgstr ""
+msgstr "Đang gỡ bỏ các nhóm môi trường"
 
 #: dnf/cli/output.py:1192
 #, python-format
@@ -3236,11 +3246,13 @@ msgid ""
 "Skipping packages with conflicts:\n"
 "(add '%s' to command line to force their upgrade)"
 msgstr ""
+"Bỏ qua các gói bị xung đột:\n"
+"(thêm '%s' vào dòng lệnh để bắt buộc nâng cấp)"
 
 #: dnf/cli/output.py:1202
 #, python-format
 msgid "Skipping packages with broken dependencies%s"
-msgstr ""
+msgstr "Bỏ qua các gói với phụ thuộc bị hỏng%s"
 
 #: dnf/cli/output.py:1206
 msgid " or part of a group"
@@ -3689,7 +3701,7 @@ msgstr ""
 #: dnf/conf/config.py:376 dnf/conf/config.py:412
 #, python-format
 msgid "Unknown configuration option: %s = %s"
-msgstr "Tuỳ chọn cấu hình không rõ: %s = %s"
+msgstr "Tuỳ chọn cấu hình không xác định: %s = %s"
 
 #: dnf/conf/config.py:393
 #, python-format
@@ -3841,7 +3853,7 @@ msgstr ""
 #: dnf/drpm.py:61 dnf/repo.py:267
 #, python-format
 msgid "unsupported checksum type: %s"
-msgstr ""
+msgstr "loại mã kiểm tra không được hỗ trợ: %s"
 
 #: dnf/drpm.py:143
 msgid "Delta RPM rebuild failed"
@@ -3849,7 +3861,7 @@ msgstr "Tái tạo Delta RPM thất bại"
 
 #: dnf/drpm.py:145
 msgid "Checksum of the delta-rebuilt RPM failed"
-msgstr ""
+msgstr "Mã kiểm tra của delta RPM được dựng lại không hợp lệ"
 
 #: dnf/drpm.py:148
 msgid "done"
