@@ -4,13 +4,14 @@
 # Matej Marusak <mmarusak@redhat.com>, 2017. #zanata
 # Ondrej Sulek <feonsu@gmail.com>, 2020.
 # Marek Lach Bc <mareklachbc@tutanota.com>, 2020.
+# Damian Daniel <damian@danielovci.net>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-09-16 05:15+0000\n"
-"PO-Revision-Date: 2020-03-31 02:38+0000\n"
-"Last-Translator: Marek Lach Bc <mareklachbc@tutanota.com>\n"
+"PO-Revision-Date: 2026-09-17 05:22+0000\n"
+"Last-Translator: Damian Daniel <damian@danielovci.net>\n"
 "Language-Team: Slovak <https://translate.fedoraproject.org/projects/dnf/dnf-"
 "master/sk/>\n"
 "Language: sk\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.11.3\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -26,10 +27,9 @@ msgid "The following updates have been applied on '%s':"
 msgstr "Nasledujúce aktualizácie boli aplikované na '%s':"
 
 #: dnf/automatic/emitter.py:33
-#, fuzzy, python-format
-#| msgid "Updates applied on '%s'."
+#, python-format
 msgid "Updates completed at %s"
-msgstr "Aktualizácie aplikované na '%s':"
+msgstr "Aktualizácie dokončené o %s"
 
 #: dnf/automatic/emitter.py:34
 #, python-format
@@ -44,7 +44,7 @@ msgstr "Nasledujúce aktualizácie boli stiahnuté na '%s':"
 #: dnf/automatic/emitter.py:36
 #, python-format
 msgid "An error has occured on: '%s'"
-msgstr ""
+msgstr "Vyskytla sa chyba na: '%s'"
 
 #: dnf/automatic/emitter.py:93
 #, python-format
@@ -78,12 +78,12 @@ msgstr "Zlyhalo vykonávanie príkazu  '%s': návratová hodnota %d"
 
 #: dnf/automatic/main.py:57
 msgid "dbus module is not available, skipping systemd inhibitor lock"
-msgstr ""
+msgstr "Modul dbus nie je dostupný, preskakuje sa inhibičný zámok systemd"
 
 #: dnf/automatic/main.py:71
 #, python-format
 msgid "Failed to acquire systemd inhibitor lock: %s"
-msgstr ""
+msgstr "Nepodarilo sa získať inhibičný zámok systemd: %s"
 
 #: dnf/automatic/main.py:205
 #, python-format
@@ -97,11 +97,11 @@ msgstr "Neznáma možnosť nastavenia: %s = %s v %s"
 
 #: dnf/automatic/main.py:285 dnf/cli/cli.py:375
 msgid "GPG check FAILED"
-msgstr ""
+msgstr "GPG kontrola ZLYHALA"
 
 #: dnf/automatic/main.py:330
 msgid "Waiting for internet connection..."
-msgstr ""
+msgstr "Čaká sa na internetové pripojenie..."
 
 #: dnf/automatic/main.py:363
 msgid "Started dnf-automatic."
@@ -111,13 +111,13 @@ msgstr "dnf-automatic spustené."
 #, python-brace-format
 msgid "Sleep for {} second"
 msgid_plural "Sleep for {} seconds"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
+msgstr[0] "Spať na {} sekundu"
+msgstr[1] "Spať na {} sekundy"
+msgstr[2] "Spať na {} sekúnd"
 
 #: dnf/automatic/main.py:374
 msgid "System is off-line."
-msgstr ""
+msgstr "Systém je offline."
 
 #: dnf/automatic/main.py:407 dnf/cli/cli.py:326
 msgid "Transaction failed"
@@ -132,49 +132,53 @@ msgstr "Chyba: %s"
 #: dnf/base.py:151 dnf/base.py:492 dnf/base.py:494
 #, python-brace-format
 msgid "loading repo '{}' failure: {}"
-msgstr ""
+msgstr "zlyhanie pri načítavaní repozitára '{}': {}"
 
 #: dnf/base.py:153
 #, python-brace-format
 msgid "Loading repository '{}' has failed"
-msgstr ""
+msgstr "Načítanie repozitára '{}' zlyhalo"
 
 #: dnf/base.py:341
 msgid "Metadata timer caching disabled when running on metered connection."
 msgstr ""
+"Ukladanie metadát do vyrovnávacej pamäte pomocou časovača je zakázané pri "
+"meranom pripojení."
 
 #: dnf/base.py:346
 msgid "Metadata timer caching disabled when running on a battery."
 msgstr ""
+"Ukladanie metadát do vyrovnávacej pamäte pomocou časovača je zakázané pri "
+"napájaní z batérie."
 
 #: dnf/base.py:351
 msgid "Metadata timer caching disabled."
-msgstr ""
+msgstr "Ukladanie metadát do vyrovnávacej pamäte pomocou časovača je zakázané."
 
 #: dnf/base.py:356
 msgid "Metadata cache refreshed recently."
-msgstr ""
+msgstr "Vyrovnávacia pamäť metadát bola nedávno obnovená."
 
 #: dnf/base.py:362 dnf/cli/commands/__init__.py:91
 #, python-brace-format
 msgid "There are no enabled repositories in \"{}\"."
-msgstr ""
+msgstr "V \"{}\" nie sú žiadne povolené repozitáre."
 
 #: dnf/base.py:369
 #, python-format
 msgid "%s: will never be expired and will not be refreshed."
-msgstr ""
+msgstr "%s: nikdy nevyprší a nebude obnovovaný."
 
 #: dnf/base.py:371
 #, python-format
 msgid "%s: has expired and will be refreshed."
-msgstr ""
+msgstr "%s: vypršal a bude obnovený."
 
 #. expires within the checking period:
 #: dnf/base.py:375
 #, python-format
 msgid "%s: metadata will expire after %d seconds and will be refreshed now"
-msgstr ""
+msgstr "%s: metadáta vypršia o %d sekúnd a budú teraz obnovené"
 
 #: dnf/base.py:379
 #, python-format
@@ -184,7 +188,7 @@ msgstr ""
 #. performs the md sync
 #: dnf/base.py:385
 msgid "Metadata cache created."
-msgstr ""
+msgstr "Vyrovnávacia pamäť metadát bola vytvorená."
 
 #: dnf/base.py:418 dnf/base.py:486
 #, python-format
@@ -194,7 +198,7 @@ msgstr "%s: používajú sa metadáta z %s."
 #: dnf/base.py:430 dnf/base.py:499
 #, python-format
 msgid "Ignoring repositories: %s"
-msgstr ""
+msgstr "Ignorujú sa repozitáre: %s"
 
 #: dnf/base.py:433
 #, python-format
@@ -206,21 +210,23 @@ msgid ""
 "The downloaded packages were saved in cache until the next successful "
 "transaction."
 msgstr ""
+"Stiahnuté balíky boli uložené do vyrovnávacej pamäte až do nasledujúcej "
+"úspešnej transakcie."
 
 #: dnf/base.py:529
 #, python-format
 msgid "You can remove cached packages by executing '%s'."
-msgstr ""
+msgstr "Uložené balíky môžete odstrániť spustením príkazu '%s'."
 
 #: dnf/base.py:665
 #, python-format
 msgid "Invalid tsflag in config file: %s"
-msgstr ""
+msgstr "Neplatný tsflag v konfiguračnom súbore: %s"
 
 #: dnf/base.py:723
 #, python-format
 msgid "Failed to add groups file for repository: %s - %s"
-msgstr ""
+msgstr "Nepodarilo sa pridať súbor skupín pre repozitár: %s - %s"
 
 #: dnf/base.py:987
 msgid "Running transaction check"
@@ -228,7 +234,7 @@ msgstr "Spúšťa sa kontrola transakcie"
 
 #: dnf/base.py:995
 msgid "Error: transaction check vs depsolve:"
-msgstr ""
+msgstr "Chyba: kontrola transakcie oproti depsolve:"
 
 #: dnf/base.py:1001
 msgid "Transaction check succeeded."
@@ -241,11 +247,11 @@ msgstr "Spúšťa sa test transakcie"
 #: dnf/base.py:1014 dnf/base.py:1166
 #, python-brace-format
 msgid "RPM: {}"
-msgstr ""
+msgstr "RPM: {}"
 
 #: dnf/base.py:1015
 msgid "Transaction test error:"
-msgstr ""
+msgstr "Chyba testu transakcie:"
 
 #: dnf/base.py:1026
 msgid "Transaction test succeeded."
@@ -257,7 +263,7 @@ msgstr "Spúšťa sa transakcia"
 
 #: dnf/base.py:1084
 msgid "Disk Requirements:"
-msgstr ""
+msgstr "Požiadavky na disk:"
 
 #: dnf/base.py:1087
 #, python-brace-format
@@ -267,7 +273,7 @@ msgstr[0] ""
 
 #: dnf/base.py:1094
 msgid "Error Summary"
-msgstr ""
+msgstr "Súhrn chýb"
 
 #: dnf/base.py:1120
 #, python-brace-format
