@@ -31,13 +31,14 @@
 # Lucas Fernandes <lucas.af88@gmail.com>, 2021.
 # Tarcisio Oliveira <wyrquill@gmail.com>, 2022.
 # Ian Meyer <ianscuba1465@gmail.com>, 2023.
+# "Geraldo S. Simião Kutz" <geraldo.simiao.kutz@gmail.com>, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-10-06 06:51+0000\n"
-"PO-Revision-Date: 2025-03-02 00:38+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"PO-Revision-Date: 2026-10-07 00:11+0000\n"
+"Last-Translator: \"Geraldo S. Simião Kutz\" <geraldo.simiao.kutz@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/dnf/dnf-master/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -45,7 +46,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.10.2\n"
+"X-Generator: Weblate 2026.10\n"
 
 #: dnf/automatic/emitter.py:32
 #, python-format
@@ -105,12 +106,13 @@ msgstr "Falha ao executar o comando '%s': retornou %d"
 #: dnf/automatic/main.py:57
 msgid "dbus module is not available, skipping systemd inhibitor lock"
 msgstr ""
+"O módulo dbus não está disponível; ignorando o bloqueio de inibição do "
+"systemd"
 
 #: dnf/automatic/main.py:71
-#, fuzzy, python-format
-#| msgid "Failed to unlock system: %s"
+#, python-format
 msgid "Failed to acquire systemd inhibitor lock: %s"
-msgstr "Falha ao debloquear o sistema: %s"
+msgstr "Falha ao obter o bloqueio de inibição do systemd: %s"
 
 #: dnf/automatic/main.py:205
 #, python-format
@@ -481,6 +483,9 @@ msgid ""
 "either mark it as user-installed or change protected_packages configuration "
 "option."
 msgstr ""
+"Pacote protegido desnecessário: %s (e suas dependências) não pode ser "
+"removido; marque-o como instalado pelo usuário ou altere a opção de "
+"configuração protected_packages."
 
 #: dnf/base.py:2430 dnf/cli/cli.py:498
 #, python-format
@@ -747,12 +752,18 @@ msgid ""
 "inconsistencies when the transient overlay on /usr is discarded. See the "
 "usr_drift_protected_paths configuration option for more information."
 msgstr ""
+"Esta operação modificaria os seguintes caminhos, possivelmente introduzindo "
+"inconsistências quando a camada de sobreposição (*overlay*) transitória em `/"
+"usr` for descartada. Consulte a opção de configuração "
+"`usr_drift_protected_paths` para obter mais informações."
 
 #: dnf/cli/cli.py:267
 msgid ""
 "Operation aborted. Pass --setopt=usr_drift_protected_paths= to disable this "
 "check and proceed anyway."
 msgstr ""
+"Operação abortada. Passe --setopt=usr_drift_protected_paths= para desativar "
+"esta verificação e prosseguir assim mesmo."
 
 #: dnf/cli/cli.py:272
 msgid "Transient transactions are only supported on bootc systems."
@@ -1702,6 +1713,8 @@ msgid ""
 "Interact with Modules. WARNING: modularity is deprecated, and functionality "
 "will be removed in a future release of DNF5."
 msgstr ""
+"Interagir com módulos. AVISO: a modularidade está obsoleta e a "
+"funcionalidade será removida em uma versão futura do DNF5."
 
 #: dnf/cli/commands/module.py:368
 msgid "show only enabled modules"
@@ -1732,6 +1745,8 @@ msgid ""
 "WARNING: modularity is deprecated, and functionality will be removed in a "
 "future release of DNF5."
 msgstr ""
+"AVISO: a modularidade está obsoleta, e a funcionalidade será removida em uma "
+"versão futura do DNF5."
 
 #: dnf/cli/commands/module.py:415
 #, python-brace-format
@@ -1856,7 +1871,7 @@ msgstr "Pacotes disponíveis do repo.: "
 
 #: dnf/cli/commands/repolist.py:194
 msgid "Repo-unique-NEVRAs : "
-msgstr ""
+msgstr "Repo-único-NEVRA : "
 
 #: dnf/cli/commands/repolist.py:195
 msgid "Repo-size          : "
@@ -3632,7 +3647,7 @@ msgstr "Linha de comando  :"
 
 #: dnf/cli/output.py:1786
 msgid "Persistence    :"
-msgstr ""
+msgstr "Persistência   :"
 
 #: dnf/cli/output.py:1796 dnf/cli/output.py:1798
 msgid "Comment        :"
