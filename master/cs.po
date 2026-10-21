@@ -39,7 +39,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-20 05:16+0000\n"
+"POT-Creation-Date: 2026-10-21 05:18+0000\n"
 "PO-Revision-Date: 2026-06-17 11:49+0000\n"
 "Last-Translator: Jonáš Loskot "
 "<alius@users.noreply.translate.fedoraproject.org>\n"
@@ -126,7 +126,7 @@ msgstr "Neznámá hodnota konfigurace: %s=%s v %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Neznámá volba konfigurace: %s = %s v %s"
 
-#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:376
 msgid "GPG check FAILED"
 msgstr "Kontrola GPG selhala"
 
@@ -411,7 +411,7 @@ msgstr "Balíček %s není nainstalován, nelze ho downgradovat."
 
 #: dnf/base.py:2126 dnf/base.py:2145 dnf/base.py:2158 dnf/base.py:2189
 #: dnf/base.py:2259 dnf/base.py:2267 dnf/base.py:2287 dnf/base.py:2423
-#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:425
+#: dnf/cli/cli.py:488 dnf/cli/commands/__init__.py:425
 #: dnf/cli/commands/__init__.py:483 dnf/cli/commands/__init__.py:588
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/__init__.py:715
 #: dnf/cli/commands/install.py:153 dnf/cli/commands/reinstall.py:71
@@ -482,7 +482,7 @@ msgstr ""
 "– buď ho označte jako uživatelem nainstalovaný nebo změňte předvolbu "
 "nastavení protected_packages."
 
-#: dnf/base.py:2430 dnf/cli/cli.py:498
+#: dnf/base.py:2430 dnf/cli/cli.py:499
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Balíček je pro argument %s dostupný, ale není nainstalován."
@@ -520,48 +520,48 @@ msgstr ""
 "aktualizace {}"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2564
+#: dnf/base.py:2573
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Nelze načíst klíč pro balíček příkazového řádku: %s"
 
-#: dnf/base.py:2572
+#: dnf/base.py:2581
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Chybující balíček je: %s"
 
-#: dnf/base.py:2573
+#: dnf/base.py:2582
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG klíče jsou zkonfigurovány jako: %s"
 
-#: dnf/base.py:2585
+#: dnf/base.py:2598
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG klíč %s (0x%s) je již nainstalován"
 
-#: dnf/base.py:2621
+#: dnf/base.py:2634
 msgid "The key has been approved."
 msgstr "Klíč byl schválen."
 
-#: dnf/base.py:2624
+#: dnf/base.py:2637
 msgid "The key has been rejected."
 msgstr "Klíč byl odmítnut."
 
-#: dnf/base.py:2657
+#: dnf/base.py:2670
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Import klíče selhal (kód %d)"
 
-#: dnf/base.py:2659
+#: dnf/base.py:2672
 msgid "Key imported successfully"
 msgstr "Import klíče proběhl úspěšně"
 
-#: dnf/base.py:2663
+#: dnf/base.py:2676
 msgid "Didn't install any keys"
 msgstr "Nebyly instalovány žádné klíče"
 
-#: dnf/base.py:2666
+#: dnf/base.py:2679
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -572,31 +572,31 @@ msgstr ""
 "balíček nejsou správné.\n"
 "Zkontrolujte, zda URL klíčů jsou pro tento repozitář správně nastaveny."
 
-#: dnf/base.py:2677
+#: dnf/base.py:2690
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import klíče/ů nepomohl, špatný klíč(e)?"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2743
 #, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Možná jste měli na mysli: {}"
 
-#: dnf/base.py:2762
+#: dnf/base.py:2775
 #, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Balíček \"{}\" z místního repozitáře \"{}\" má nesprávný kontrolní součet"
 
-#: dnf/base.py:2765
+#: dnf/base.py:2778
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Některé balíčky z místního repozitáře mají nesprávný kontrolní součet"
 
-#: dnf/base.py:2768
+#: dnf/base.py:2781
 #, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Balíček \"{}\" z repozitáře \"{}\" má nesprávný kontrolní součet"
 
-#: dnf/base.py:2771
+#: dnf/base.py:2784
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -604,23 +604,23 @@ msgstr ""
 "Některé balíčky mají neplatnou mezipaměť, ale nemohou být staženy kvůli "
 "volbě \"--cacheonly\""
 
-#: dnf/base.py:2789 dnf/base.py:2809
+#: dnf/base.py:2802 dnf/base.py:2822
 msgid "No match for argument"
 msgstr "Žádná shoda pro argument"
 
-#: dnf/base.py:2797 dnf/base.py:2817
+#: dnf/base.py:2810 dnf/base.py:2830
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Veškeré shody byly odstraněny filtrem vynechání pro argument"
 
-#: dnf/base.py:2799
+#: dnf/base.py:2812
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Všechny shody byly odfiltrovány modulárním filtrováním pro argument"
 
-#: dnf/base.py:2815
+#: dnf/base.py:2828
 msgid "All matches were installed from a different repository for argument"
 msgstr "Všechny shody byly nainstalovány z jiného úložiště pro argument"
 
-#: dnf/base.py:2876
+#: dnf/base.py:2889
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Balíček %s je již nainstalován."
@@ -640,8 +640,8 @@ msgstr "Zpracování souboru “%s“ se nezdařilo: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Nedaří se načíst soubor „%s“: %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
-#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:877
+#: dnf/cli/cli.py:881 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "Chyba konfigurace: %s"
@@ -761,7 +761,7 @@ msgstr "Stahování balíčků:"
 msgid "Error downloading packages:"
 msgstr "Chyba stahování balíčků:"
 
-#: dnf/cli/cli.py:350
+#: dnf/cli/cli.py:351
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -769,7 +769,7 @@ msgstr ""
 "Nelze automaticky importovat klíče při spuštění bez obsluhy.\n"
 "Použijte \"-y\" k potlačení."
 
-#: dnf/cli/cli.py:371
+#: dnf/cli/cli.py:372
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
@@ -779,57 +779,57 @@ msgstr ""
 "Poznámka: tento zásuvný modul nemusí být ve výchozím nastavení nainstalován, "
 "protože je součástí balíčku „dnf-plugins-core“."
 
-#: dnf/cli/cli.py:407
+#: dnf/cli/cli.py:408
 #, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Seznamy změn pro {}"
 
-#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
+#: dnf/cli/cli.py:441 dnf/cli/cli.py:582 dnf/cli/cli.py:588
 msgid "Obsoleting Packages"
 msgstr "Zastaralé balíčky"
 
-#: dnf/cli/cli.py:469
+#: dnf/cli/cli.py:470
 msgid "No packages marked for distribution synchronization."
 msgstr "K synchronizaci distribuce nebyly určeny žádné balíčky."
 
-#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:397
+#: dnf/cli/cli.py:496 dnf/cli/commands/group.py:397
 #, python-format
 msgid "No package %s available."
 msgstr "Balíček %s není k dispozici."
 
-#: dnf/cli/cli.py:504
+#: dnf/cli/cli.py:505
 msgid "No packages marked for downgrade."
 msgstr "Žádné balíčky označené pro ponížení verze."
 
-#: dnf/cli/cli.py:555
+#: dnf/cli/cli.py:556
 msgid "Installed Packages"
 msgstr "Nainstalované balíčky"
 
-#: dnf/cli/cli.py:563
+#: dnf/cli/cli.py:564
 msgid "Available Packages"
 msgstr "Dostupné balíčky"
 
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:568
 msgid "Autoremove Packages"
 msgstr "Automaticky odstranitelné balíčky"
 
-#: dnf/cli/cli.py:569
+#: dnf/cli/cli.py:570
 msgid "Extra Packages"
 msgstr "Dodatečné balíčky"
 
-#: dnf/cli/cli.py:573
+#: dnf/cli/cli.py:574
 msgid "Available Upgrades"
 msgstr "Dostupné aktualizace"
 
-#: dnf/cli/cli.py:589
+#: dnf/cli/cli.py:590
 msgid "Recently Added Packages"
 msgstr "Nedávno přidané balíčky"
 
-#: dnf/cli/cli.py:593
+#: dnf/cli/cli.py:594
 msgid "No matching Packages to list"
 msgstr "Nenalezeny odpovídající balíčky"
 
-#: dnf/cli/cli.py:674
+#: dnf/cli/cli.py:675
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -837,17 +837,17 @@ msgstr ""
 "Nebyly nalezeny žádné shody. Pokud hledáte soubor, zkuste zadat úplnou cestu "
 "nebo použít na začátku zástupný znak („*/“)."
 
-#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:238
+#: dnf/cli/cli.py:744 dnf/cli/commands/shell.py:238
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Neznámý repozitář: '%s'"
 
-#: dnf/cli/cli.py:757
+#: dnf/cli/cli.py:758
 #, python-format
 msgid "No repository match: %s"
 msgstr "Žádná shoda repozitáře: %s"
 
-#: dnf/cli/cli.py:791
+#: dnf/cli/cli.py:792
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -855,12 +855,12 @@ msgstr ""
 "Tento příkaz musí být spuštěn s oprávněními superuživatele (na většině "
 "systémů pod uživatelem root)."
 
-#: dnf/cli/cli.py:821
+#: dnf/cli/cli.py:822
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Neexistující příkaz: %s. Použijte %s --help"
 
-#: dnf/cli/cli.py:824
+#: dnf/cli/cli.py:825
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -869,7 +869,7 @@ msgstr ""
 "Mohlo by se jednat o příkaz zásuvného modulu {PROG}, zkuste: \"{prog} "
 "install 'dnf-command(%s)'\""
 
-#: dnf/cli/cli.py:828
+#: dnf/cli/cli.py:829
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -878,7 +878,7 @@ msgstr ""
 "Může to být příkaz pluginu {prog}, ale načítání pluginů je momentálně "
 "zakázáno."
 
-#: dnf/cli/cli.py:886
+#: dnf/cli/cli.py:887
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -886,7 +886,7 @@ msgstr ""
 "--destdir nebo --downloaddir se musí použít s příkazem --downloadonly nebo "
 "download nebo system-upgrade."
 
-#: dnf/cli/cli.py:892
+#: dnf/cli/cli.py:893
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -894,7 +894,7 @@ msgstr ""
 "--enable, --set-enabled a --disable, --set-disabled musí být použity s "
 "příkazem config-manager."
 
-#: dnf/cli/cli.py:974
+#: dnf/cli/cli.py:975
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -903,12 +903,12 @@ msgstr ""
 "bezpečnostních zásad RPM (viz „gpgcheck“ v dnf.conf(5), jak tuto zprávu "
 "umlčet)"
 
-#: dnf/cli/cli.py:995
+#: dnf/cli/cli.py:996
 #, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Konfigurační soubor \"{}\" neexistuje"
 
-#: dnf/cli/cli.py:1031
+#: dnf/cli/cli.py:1032
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -916,29 +916,29 @@ msgstr ""
 "Nelze detekovat verzi vydání (pro zadání verze vydání použijte parametr '--"
 "releasever')"
 
-#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1106 dnf/cli/commands/repoquery.py:485
 #, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: není dovoleno s argumentem {}"
 
-#: dnf/cli/cli.py:1112
+#: dnf/cli/cli.py:1113
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Příkaz „%s“ již definován"
 
-#: dnf/cli/cli.py:1132
+#: dnf/cli/cli.py:1133
 msgid "Excludes in dnf.conf: "
 msgstr "Nezahrnuté v dnf.conf: "
 
-#: dnf/cli/cli.py:1135
+#: dnf/cli/cli.py:1136
 msgid "Includes in dnf.conf: "
 msgstr "Zahrnuté v dnf.conf: "
 
-#: dnf/cli/cli.py:1138
+#: dnf/cli/cli.py:1139
 msgid "Excludes in repo "
 msgstr "Nezahrnuté v repozitáři "
 
-#: dnf/cli/cli.py:1141
+#: dnf/cli/cli.py:1142
 msgid "Includes in repo "
 msgstr "Zahrnuté v repozitáři "
 

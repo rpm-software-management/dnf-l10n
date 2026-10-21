@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-20 05:16+0000\n"
+"POT-Creation-Date: 2026-10-21 05:18+0000\n"
 "PO-Revision-Date: 2026-08-18 02:04+0000\n"
 "Last-Translator: Nguyen Khang Nguyen <nnguyenkhang14@gmail.com>\n"
 "Language-Team: Vietnamese <https://translate.fedoraproject.org/projects/dnf/"
@@ -94,7 +94,7 @@ msgstr "Giá trị cấu hình không xác định: %s=%s trong %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Tuỳ chọn cấu hình không xác định: %s = %s trong %s"
 
-#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:376
 msgid "GPG check FAILED"
 msgstr "Kiểm tra chữ ký GPG THẤT BẠI"
 
@@ -378,7 +378,7 @@ msgstr "Gói %s chưa được cài đặt, không thể hạ cấp nó."
 
 #: dnf/base.py:2126 dnf/base.py:2145 dnf/base.py:2158 dnf/base.py:2189
 #: dnf/base.py:2259 dnf/base.py:2267 dnf/base.py:2287 dnf/base.py:2423
-#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:425
+#: dnf/cli/cli.py:488 dnf/cli/commands/__init__.py:425
 #: dnf/cli/commands/__init__.py:483 dnf/cli/commands/__init__.py:588
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/__init__.py:715
 #: dnf/cli/commands/install.py:153 dnf/cli/commands/reinstall.py:71
@@ -447,7 +447,7 @@ msgstr ""
 "bỏ, hãy đánh dấu nó là người dùng tự cài hoặc thay đổi tuỳ chọn cấu hình "
 "protected_packages."
 
-#: dnf/base.py:2430 dnf/cli/cli.py:498
+#: dnf/base.py:2430 dnf/cli/cli.py:499
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Gói cho đối số %s đang khả dụng, nhưng chưa được cài đặt."
@@ -484,48 +484,48 @@ msgstr ""
 "cập nhật"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2564
+#: dnf/base.py:2573
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Không thể lấy khóa cho gói cài đặt từ dòng lệnh: %s"
 
-#: dnf/base.py:2572
+#: dnf/base.py:2581
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Gói bị lỗi là: %s"
 
-#: dnf/base.py:2573
+#: dnf/base.py:2582
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "Các khoá GPG đã được cấu hình như sau: %s"
 
-#: dnf/base.py:2585
+#: dnf/base.py:2598
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "Khoá GPG tại %s (0x%s) đã được cài đặt"
 
-#: dnf/base.py:2621
+#: dnf/base.py:2634
 msgid "The key has been approved."
 msgstr "Khoá đã được phê duyệt."
 
-#: dnf/base.py:2624
+#: dnf/base.py:2637
 msgid "The key has been rejected."
 msgstr "Khoá đã bị từ chối."
 
-#: dnf/base.py:2657
+#: dnf/base.py:2670
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Nhập khoá thất bại (mã lỗi %d)"
 
-#: dnf/base.py:2659
+#: dnf/base.py:2672
 msgid "Key imported successfully"
 msgstr "Nhập khoá thành công"
 
-#: dnf/base.py:2663
+#: dnf/base.py:2676
 msgid "Didn't install any keys"
 msgstr "Chưa cài đặt khoá nào"
 
-#: dnf/base.py:2666
+#: dnf/base.py:2679
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -536,33 +536,33 @@ msgstr ""
 "chúng không chính xác với gói này.\n"
 "Hãy kiểm tra xem các URL khoá chính xác đã được cấu hình cho kho này."
 
-#: dnf/base.py:2677
+#: dnf/base.py:2690
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr ""
 "Việc nhập (các) khoá không giải quyết được vấn đề, có lẽ sai (các) khoá "
 "chăng?"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2743
 #, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Có thể ý bạn là: {}"
 
-#: dnf/base.py:2762
+#: dnf/base.py:2775
 #, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr ""
 "Gói \"{}\" từ kho phần mềm cục bộ \"{}\" có mã kiểm tra không chính xác"
 
-#: dnf/base.py:2765
+#: dnf/base.py:2778
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Một vài gói từ kho phần mềm cục bộ có mã kiểm tra không chính xác"
 
-#: dnf/base.py:2768
+#: dnf/base.py:2781
 #, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Gói \"{}\" từ kho phần mềm \"{}\" có mã kiểm tra không chính xác"
 
-#: dnf/base.py:2771
+#: dnf/base.py:2784
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -570,26 +570,26 @@ msgstr ""
 "Một số gói có bộ nhớ đệm không hợp lệ, nhưng không thể tải xuống vì tuỳ chọn "
 "\"--cacheonly\""
 
-#: dnf/base.py:2789 dnf/base.py:2809
+#: dnf/base.py:2802 dnf/base.py:2822
 msgid "No match for argument"
 msgstr "Không tìm thấy đối số phù hợp"
 
-#: dnf/base.py:2797 dnf/base.py:2817
+#: dnf/base.py:2810 dnf/base.py:2830
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr ""
 "Tất cả các kết quả tìm thấy đã bị loại bỏ do bộ lọc loại trừ cho đối số"
 
-#: dnf/base.py:2799
+#: dnf/base.py:2812
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Tất cả các kết quả tìm thấy đã bị loại bỏ do bộ lọc mô-đun cho đối số"
 
-#: dnf/base.py:2815
+#: dnf/base.py:2828
 msgid "All matches were installed from a different repository for argument"
 msgstr ""
 "Tất cả các kết quả tìm thấy đã được cài đặt từ một kho phần mềm khác cho đối "
 "số"
 
-#: dnf/base.py:2876
+#: dnf/base.py:2889
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Gói %s đã được cài đặt."
@@ -609,8 +609,8 @@ msgstr "Phân tích tập tin \"%s\" thất bại: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Không thể đọc tập tin \"%s\": %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
-#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:877
+#: dnf/cli/cli.py:881 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "Lỗi cấu hình: %s"
@@ -728,7 +728,7 @@ msgstr "Đang tải xuống các gói:"
 msgid "Error downloading packages:"
 msgstr "Lỗi khi tải xuống các gói:"
 
-#: dnf/cli/cli.py:350
+#: dnf/cli/cli.py:351
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -736,7 +736,7 @@ msgstr ""
 "Từ chối tự động nhập các khoá khi đang chạy ở chế độ không giám sát.\n"
 "Dùng \"-y\" để ghi đè."
 
-#: dnf/cli/cli.py:371
+#: dnf/cli/cli.py:372
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
@@ -746,57 +746,57 @@ msgstr ""
 "Plugin này có thể không được cài đặt mặc định, vì nó là một phần của gói "
 "'dnf-plugins-core'."
 
-#: dnf/cli/cli.py:407
+#: dnf/cli/cli.py:408
 #, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Nhật ký thay đổi của {}"
 
-#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
+#: dnf/cli/cli.py:441 dnf/cli/cli.py:582 dnf/cli/cli.py:588
 msgid "Obsoleting Packages"
 msgstr "Các gói lỗi thời"
 
-#: dnf/cli/cli.py:469
+#: dnf/cli/cli.py:470
 msgid "No packages marked for distribution synchronization."
 msgstr "Không có gói nào được đánh dấu để đồng bộ hoá bản phân phối."
 
-#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:397
+#: dnf/cli/cli.py:496 dnf/cli/commands/group.py:397
 #, python-format
 msgid "No package %s available."
 msgstr "Không có gói %s khả dụng."
 
-#: dnf/cli/cli.py:504
+#: dnf/cli/cli.py:505
 msgid "No packages marked for downgrade."
 msgstr "Không có gói nào được đánh dấu để hạ cấp."
 
-#: dnf/cli/cli.py:555
+#: dnf/cli/cli.py:556
 msgid "Installed Packages"
 msgstr "Các gói đã cài đặt"
 
-#: dnf/cli/cli.py:563
+#: dnf/cli/cli.py:564
 msgid "Available Packages"
 msgstr "Các gói đang khả dụng"
 
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:568
 msgid "Autoremove Packages"
 msgstr "Các gói tự động gỡ bỏ"
 
-#: dnf/cli/cli.py:569
+#: dnf/cli/cli.py:570
 msgid "Extra Packages"
 msgstr "Các gói bổ sung"
 
-#: dnf/cli/cli.py:573
+#: dnf/cli/cli.py:574
 msgid "Available Upgrades"
 msgstr "Các nâng cấp hiện có"
 
-#: dnf/cli/cli.py:589
+#: dnf/cli/cli.py:590
 msgid "Recently Added Packages"
 msgstr "Các gói đã thêm gần đây"
 
-#: dnf/cli/cli.py:593
+#: dnf/cli/cli.py:594
 msgid "No matching Packages to list"
 msgstr "Không có gói nào phù hợp để liệt kê"
 
-#: dnf/cli/cli.py:674
+#: dnf/cli/cli.py:675
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
@@ -804,17 +804,17 @@ msgstr ""
 "Không tìm thấy kết quả phù hợp. Nếu đang tìm kiếm một tập tin, hãy thử chỉ "
 "định đường dẫn đầy đủ hoặc sử dụng ký tự đại diện (\"*/\") ở đầu."
 
-#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:238
+#: dnf/cli/cli.py:744 dnf/cli/commands/shell.py:238
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Kho phần mềm không rõ: '%s'"
 
-#: dnf/cli/cli.py:757
+#: dnf/cli/cli.py:758
 #, python-format
 msgid "No repository match: %s"
 msgstr "Không tìm thấy kho phần mềm nào phù hợp: %s"
 
-#: dnf/cli/cli.py:791
+#: dnf/cli/cli.py:792
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -822,12 +822,12 @@ msgstr ""
 "Lệnh này cần được chạy với quyền của người dùng đặc quyền (dưới người dùng "
 "root trên gần như mọi hệ thống)."
 
-#: dnf/cli/cli.py:821
+#: dnf/cli/cli.py:822
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Không có lệnh nào: %s. Vui lòng sử dụng %s --help"
 
-#: dnf/cli/cli.py:824
+#: dnf/cli/cli.py:825
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -836,7 +836,7 @@ msgstr ""
 "Đây có thể là lệnh của plugin {PROG}, hãy thử: \"{prog} install 'dnf-"
 "command(%s)'\""
 
-#: dnf/cli/cli.py:828
+#: dnf/cli/cli.py:829
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -845,7 +845,7 @@ msgstr ""
 "Nó có thể là lệnh plugin của {prog}, nhưng việc tải các plugin hiện tại đang "
 "bị tắt."
 
-#: dnf/cli/cli.py:886
+#: dnf/cli/cli.py:887
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -853,7 +853,7 @@ msgstr ""
 "--destdir hoặc --downloaddir phải được dùng với lệnh --downloadonly hoặc "
 "download hoặc system-upgrade."
 
-#: dnf/cli/cli.py:892
+#: dnf/cli/cli.py:893
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -861,7 +861,7 @@ msgstr ""
 "--enable, --set-enabled và --disable, --set-disabled phải được dùng với lệnh "
 "config-manager."
 
-#: dnf/cli/cli.py:974
+#: dnf/cli/cli.py:975
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -870,12 +870,12 @@ msgstr ""
 "bảo mật RPM đang hoạt động (xem 'gpgcheck' trong dnf.conf(5) để biết cách "
 "tắt thông báo này)"
 
-#: dnf/cli/cli.py:995
+#: dnf/cli/cli.py:996
 #, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Tập tin cấu hình \"{}\" không tồn tại"
 
-#: dnf/cli/cli.py:1031
+#: dnf/cli/cli.py:1032
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -883,29 +883,29 @@ msgstr ""
 "Không thể phát hiện phiên bản phát hành (dùng '--releasever' để chỉ định "
 "phiên bản phát hành)"
 
-#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1106 dnf/cli/commands/repoquery.py:485
 #, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "đối số {}: không được cho phép với đối số {}"
 
-#: dnf/cli/cli.py:1112
+#: dnf/cli/cli.py:1113
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Lệnh \"%s\" đã được định nghĩa"
 
-#: dnf/cli/cli.py:1132
+#: dnf/cli/cli.py:1133
 msgid "Excludes in dnf.conf: "
 msgstr "Các mục loại trừ trong dnf.conf: "
 
-#: dnf/cli/cli.py:1135
+#: dnf/cli/cli.py:1136
 msgid "Includes in dnf.conf: "
 msgstr "Các mục bao gồm trong dnf.conf: "
 
-#: dnf/cli/cli.py:1138
+#: dnf/cli/cli.py:1139
 msgid "Excludes in repo "
 msgstr "Các mục loại trừ trong kho phần mềm "
 
-#: dnf/cli/cli.py:1141
+#: dnf/cli/cli.py:1142
 msgid "Includes in repo "
 msgstr "Các mục loại trừ trong kho phần mềm "
 

@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-20 05:16+0000\n"
+"POT-Creation-Date: 2026-10-21 05:18+0000\n"
 "PO-Revision-Date: 2024-10-13 10:38+0000\n"
 "Last-Translator: DK Guy <peter@nozen.dk>\n"
 "Language-Team: Danish <https://translate.fedoraproject.org/projects/dnf/dnf-"
@@ -100,7 +100,7 @@ msgstr "Ukendt konfigurationsværdi: %s=%s i %s; %s"
 msgid "Unknown configuration option: %s = %s in %s"
 msgstr "Ukendt konfigurationstilvalg: %s = %s i %s"
 
-#: dnf/automatic/main.py:285 dnf/cli/cli.py:375
+#: dnf/automatic/main.py:285 dnf/cli/cli.py:376
 msgid "GPG check FAILED"
 msgstr "GPG-tjek FEJLEDE"
 
@@ -385,7 +385,7 @@ msgstr "Pakken %s er ikke installeret, kan ikke nedgradere den."
 
 #: dnf/base.py:2126 dnf/base.py:2145 dnf/base.py:2158 dnf/base.py:2189
 #: dnf/base.py:2259 dnf/base.py:2267 dnf/base.py:2287 dnf/base.py:2423
-#: dnf/cli/cli.py:487 dnf/cli/commands/__init__.py:425
+#: dnf/cli/cli.py:488 dnf/cli/commands/__init__.py:425
 #: dnf/cli/commands/__init__.py:483 dnf/cli/commands/__init__.py:588
 #: dnf/cli/commands/__init__.py:636 dnf/cli/commands/__init__.py:715
 #: dnf/cli/commands/install.py:153 dnf/cli/commands/reinstall.py:71
@@ -454,7 +454,7 @@ msgid ""
 "option."
 msgstr ""
 
-#: dnf/base.py:2430 dnf/cli/cli.py:498
+#: dnf/base.py:2430 dnf/cli/cli.py:499
 #, python-format
 msgid "Packages for argument %s available, but not installed."
 msgstr "Pakker til argumentet %s tilgængelige, min ikke installeret."
@@ -492,48 +492,48 @@ msgstr ""
 "tilgængelige"
 
 #. raise an exception, because po.repoid is not in self.repos
-#: dnf/base.py:2564
+#: dnf/base.py:2573
 #, python-format
 msgid "Unable to retrieve a key for a commandline package: %s"
 msgstr "Kan ikke indhente en nøgle til en kommandolinjepakke: %s"
 
-#: dnf/base.py:2572
+#: dnf/base.py:2581
 #, python-format
 msgid ". Failing package is: %s"
 msgstr ". Mislykkede pakke er: %s"
 
-#: dnf/base.py:2573
+#: dnf/base.py:2582
 #, python-format
 msgid "GPG Keys are configured as: %s"
 msgstr "GPG-nøgler er konfigureret som: %s"
 
-#: dnf/base.py:2585
+#: dnf/base.py:2598
 #, python-format
 msgid "GPG key at %s (0x%s) is already installed"
 msgstr "GPG-nøgle på %s (0x%s) er allerede installeret"
 
-#: dnf/base.py:2621
+#: dnf/base.py:2634
 msgid "The key has been approved."
 msgstr "Nøglen er blevet godkendt."
 
-#: dnf/base.py:2624
+#: dnf/base.py:2637
 msgid "The key has been rejected."
 msgstr "Nøglen er blevet afvist."
 
-#: dnf/base.py:2657
+#: dnf/base.py:2670
 #, python-format
 msgid "Key import failed (code %d)"
 msgstr "Import af nøgle mislykkedes (kode %d)"
 
-#: dnf/base.py:2659
+#: dnf/base.py:2672
 msgid "Key imported successfully"
 msgstr "Nøglen blev importeret"
 
-#: dnf/base.py:2663
+#: dnf/base.py:2676
 msgid "Didn't install any keys"
 msgstr "Installerede ingen nøgler"
 
-#: dnf/base.py:2666
+#: dnf/base.py:2679
 #, python-format
 msgid ""
 "The GPG keys listed for the \"%s\" repository are already installed but they "
@@ -545,30 +545,30 @@ msgstr ""
 "Kontrollér at konfigurationen af nøgle-URL'er er korrekt for dette "
 "softwarearkiv."
 
-#: dnf/base.py:2677
+#: dnf/base.py:2690
 msgid "Import of key(s) didn't help, wrong key(s)?"
 msgstr "Import af nøgle(r) hjalp ikke, forkerte nøgle(r)?"
 
-#: dnf/base.py:2730
+#: dnf/base.py:2743
 #, python-brace-format
 msgid "  * Maybe you meant: {}"
 msgstr "  * Måske mente du: {}"
 
-#: dnf/base.py:2762
+#: dnf/base.py:2775
 #, python-brace-format
 msgid "Package \"{}\" from local repository \"{}\" has incorrect checksum"
 msgstr "Pakken \"{}\" fra lokalt softwarearkiv \"{}\" har ukorrekt tjeksum"
 
-#: dnf/base.py:2765
+#: dnf/base.py:2778
 msgid "Some packages from local repository have incorrect checksum"
 msgstr "Nogle pakker fra lokalt softwarearkiv har ukorrekte tjeksumme"
 
-#: dnf/base.py:2768
+#: dnf/base.py:2781
 #, python-brace-format
 msgid "Package \"{}\" from repository \"{}\" has incorrect checksum"
 msgstr "Pakken \"{}\" fra softwarearkivet \"{}\" har ukorrekt tjeksum"
 
-#: dnf/base.py:2771
+#: dnf/base.py:2784
 msgid ""
 "Some packages have invalid cache, but cannot be downloaded due to \"--"
 "cacheonly\" option"
@@ -576,23 +576,23 @@ msgstr ""
 "Nogle pakker har ugyldigt mellemlager, men kan ikke downloades pga. \"--"
 "cacheonly\"-tilvalg"
 
-#: dnf/base.py:2789 dnf/base.py:2809
+#: dnf/base.py:2802 dnf/base.py:2822
 msgid "No match for argument"
 msgstr "Intet match for argument"
 
-#: dnf/base.py:2797 dnf/base.py:2817
+#: dnf/base.py:2810 dnf/base.py:2830
 msgid "All matches were filtered out by exclude filtering for argument"
 msgstr "Alle match blev filtreret ud af ekskluder-filtrering for argument"
 
-#: dnf/base.py:2799
+#: dnf/base.py:2812
 msgid "All matches were filtered out by modular filtering for argument"
 msgstr "Alle match blev filtreret ud af modulær-filtrering for argument"
 
-#: dnf/base.py:2815
+#: dnf/base.py:2828
 msgid "All matches were installed from a different repository for argument"
 msgstr "Alle match blev installeret fra et andet softwarearkiv for argument"
 
-#: dnf/base.py:2876
+#: dnf/base.py:2889
 #, python-format
 msgid "Package %s is already installed."
 msgstr "Pakken %s er allerede installeret."
@@ -612,8 +612,8 @@ msgstr "Behandling af filen \"%s\" mislykkedes: %s"
 msgid "Cannot read file \"%s\": %s"
 msgstr "Kan ikke læse filen \"%s\": %s"
 
-#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:876
-#: dnf/cli/cli.py:880 dnf/cli/commands/alias.py:107
+#: dnf/cli/aliases.py:114 dnf/cli/aliases.py:128 dnf/cli/cli.py:877
+#: dnf/cli/cli.py:881 dnf/cli/commands/alias.py:107
 #, python-format
 msgid "Config error: %s"
 msgstr "Konfigurationsfejl: %s"
@@ -728,7 +728,7 @@ msgstr "Downloader pakker:"
 msgid "Error downloading packages:"
 msgstr "Fejl ved download af pakker:"
 
-#: dnf/cli/cli.py:350
+#: dnf/cli/cli.py:351
 msgid ""
 "Refusing to automatically import keys when running unattended.\n"
 "Use \"-y\" to override."
@@ -736,80 +736,80 @@ msgstr ""
 "Afviser automatisk import af nøgler ved baggrundskørsel.\n"
 "Brug \"-y\" til at overskrive."
 
-#: dnf/cli/cli.py:371
+#: dnf/cli/cli.py:372
 msgid ""
 "Try to add '--enableplugin=expired-pgp-keys' to resolve the problem. Note: "
 "This plugin might not be installed by default, as it is part of the 'dnf-"
 "plugins-core' package."
 msgstr ""
 
-#: dnf/cli/cli.py:407
+#: dnf/cli/cli.py:408
 #, python-brace-format
 msgid "Changelogs for {}"
 msgstr "Ændringslogge for {}"
 
-#: dnf/cli/cli.py:440 dnf/cli/cli.py:581 dnf/cli/cli.py:587
+#: dnf/cli/cli.py:441 dnf/cli/cli.py:582 dnf/cli/cli.py:588
 msgid "Obsoleting Packages"
 msgstr "Overflødiggør pakker"
 
-#: dnf/cli/cli.py:469
+#: dnf/cli/cli.py:470
 msgid "No packages marked for distribution synchronization."
 msgstr "Ingen pakker er markeret til distributionssynkronisering."
 
-#: dnf/cli/cli.py:495 dnf/cli/commands/group.py:397
+#: dnf/cli/cli.py:496 dnf/cli/commands/group.py:397
 #, python-format
 msgid "No package %s available."
 msgstr "Pakken %s er ikke tilgængelig."
 
-#: dnf/cli/cli.py:504
+#: dnf/cli/cli.py:505
 msgid "No packages marked for downgrade."
 msgstr "Ingen pakker mærket til nedgradering."
 
-#: dnf/cli/cli.py:555
+#: dnf/cli/cli.py:556
 msgid "Installed Packages"
 msgstr "Installerede pakker"
 
-#: dnf/cli/cli.py:563
+#: dnf/cli/cli.py:564
 msgid "Available Packages"
 msgstr "Tilgængelige pakker"
 
-#: dnf/cli/cli.py:567
+#: dnf/cli/cli.py:568
 msgid "Autoremove Packages"
 msgstr "Pakker som fjernes automatisk"
 
-#: dnf/cli/cli.py:569
+#: dnf/cli/cli.py:570
 msgid "Extra Packages"
 msgstr "Ekstra pakker"
 
-#: dnf/cli/cli.py:573
+#: dnf/cli/cli.py:574
 msgid "Available Upgrades"
 msgstr "Tilgængelige opgraderinger"
 
-#: dnf/cli/cli.py:589
+#: dnf/cli/cli.py:590
 msgid "Recently Added Packages"
 msgstr "Pakker som er tilføjet for nyligt"
 
-#: dnf/cli/cli.py:593
+#: dnf/cli/cli.py:594
 msgid "No matching Packages to list"
 msgstr "Ingen matchende pakker at vise"
 
-#: dnf/cli/cli.py:674
+#: dnf/cli/cli.py:675
 msgid ""
 "No matches found. If searching for a file, try specifying the full path or "
 "using a wildcard prefix (\"*/\") at the beginning."
 msgstr ""
 
-#: dnf/cli/cli.py:743 dnf/cli/commands/shell.py:238
+#: dnf/cli/cli.py:744 dnf/cli/commands/shell.py:238
 #, python-format
 msgid "Unknown repo: '%s'"
 msgstr "Ukendt softwarearkiv: *%s'"
 
-#: dnf/cli/cli.py:757
+#: dnf/cli/cli.py:758
 #, python-format
 msgid "No repository match: %s"
 msgstr "Ingen softwarearkiv match: %s"
 
-#: dnf/cli/cli.py:791
+#: dnf/cli/cli.py:792
 msgid ""
 "This command has to be run with superuser privileges (under the root user on "
 "most systems)."
@@ -817,12 +817,12 @@ msgstr ""
 "Kommandoen blev kørt med superbruger-rettigheder (under root-brugeren på de "
 "fleste systemer)."
 
-#: dnf/cli/cli.py:821
+#: dnf/cli/cli.py:822
 #, python-format
 msgid "No such command: %s. Please use %s --help"
 msgstr "Ingen sådan kommando: %s. Brug %s --help"
 
-#: dnf/cli/cli.py:824
+#: dnf/cli/cli.py:825
 #, python-format, python-brace-format
 msgid ""
 "It could be a {PROG} plugin command, try: \"{prog} install 'dnf-"
@@ -831,7 +831,7 @@ msgstr ""
 "Det kan være en {PROG}-plugin-kommando, prøv: \"{prog} install 'dnf-"
 "command(%s)'\""
 
-#: dnf/cli/cli.py:828
+#: dnf/cli/cli.py:829
 #, python-brace-format
 msgid ""
 "It could be a {prog} plugin command, but loading of plugins is currently "
@@ -840,7 +840,7 @@ msgstr ""
 "Det kan være en {prog}-plugin-kommando, men indlæsning af plugins er "
 "deaktiveret på nuværende tidspunkt."
 
-#: dnf/cli/cli.py:886
+#: dnf/cli/cli.py:887
 msgid ""
 "--destdir or --downloaddir must be used with --downloadonly or download or "
 "system-upgrade command."
@@ -848,7 +848,7 @@ msgstr ""
 "--destdir eller --downloaddir skal bruges med --downloadonly eller download- "
 "eller system-upgrade-kommando."
 
-#: dnf/cli/cli.py:892
+#: dnf/cli/cli.py:893
 msgid ""
 "--enable, --set-enabled and --disable, --set-disabled must be used with "
 "config-manager command."
@@ -856,7 +856,7 @@ msgstr ""
 "--enable, --set-enabled og --disable, --set-disabled skal bruges sammen med "
 "config-manager-kommandoen."
 
-#: dnf/cli/cli.py:974
+#: dnf/cli/cli.py:975
 msgid ""
 "Warning: Enforcing GPG signature check globally as per active RPM security "
 "policy (see 'gpgcheck' in dnf.conf(5) for how to squelch this message)"
@@ -865,12 +865,12 @@ msgstr ""
 "RPM-sikkerhedspolitik (se hvordan meddelelsen \"squelches\" i 'gpgcheck' i "
 "dnf.conf(5))"
 
-#: dnf/cli/cli.py:995
+#: dnf/cli/cli.py:996
 #, python-brace-format
 msgid "Config file \"{}\" does not exist"
 msgstr "Konfigurationsfilen \"{}\" findes ikke"
 
-#: dnf/cli/cli.py:1031
+#: dnf/cli/cli.py:1032
 msgid ""
 "Unable to detect release version (use '--releasever' to specify release "
 "version)"
@@ -878,29 +878,29 @@ msgstr ""
 "Kan ikke registrerer udgivelsesversion (brug '--releasever' til at angive "
 "udgivelsesversion)"
 
-#: dnf/cli/cli.py:1105 dnf/cli/commands/repoquery.py:485
+#: dnf/cli/cli.py:1106 dnf/cli/commands/repoquery.py:485
 #, python-brace-format
 msgid "argument {}: not allowed with argument {}"
 msgstr "argument {}: ikke tilladt med argument {}"
 
-#: dnf/cli/cli.py:1112
+#: dnf/cli/cli.py:1113
 #, python-format
 msgid "Command \"%s\" already defined"
 msgstr "Kommandoen \"%s\" er allerede defineret"
 
-#: dnf/cli/cli.py:1132
+#: dnf/cli/cli.py:1133
 msgid "Excludes in dnf.conf: "
 msgstr "Ekskluderer i dnf.conf: "
 
-#: dnf/cli/cli.py:1135
+#: dnf/cli/cli.py:1136
 msgid "Includes in dnf.conf: "
 msgstr "Inkluderer i dnf.conf: "
 
-#: dnf/cli/cli.py:1138
+#: dnf/cli/cli.py:1139
 msgid "Excludes in repo "
 msgstr "Ekskluderer i arkiv "
 
-#: dnf/cli/cli.py:1141
+#: dnf/cli/cli.py:1142
 msgid "Includes in repo "
 msgstr "Inkluderer i arkiv "
 
